@@ -1,0 +1,80 @@
+{
+  "id": "ns-class7",
+  "title": "Nova Scotia Class 7 Learner's Licence Knowledge Test",
+  "jurisdiction": "NS",
+  "derivedFrom": ["ns-class7-test-page"],
+  "verifiedAt": "2026-08-17",
+  "note": "Every value below is taken from the official Class 7 knowledge test page. Nothing here is hard-coded in application components; the UI and the mock-test engine read this file.",
+
+  "sectionsPassIndependently": true,
+  "sectionsRetakenIndependently": true,
+  "aggregateScoreDecidesOutcome": false,
+
+  "sections": [
+    {
+      "id": "rules",
+      "name": "Rules of the Road Test",
+      "shortName": "Rules of the Road",
+      "questionType": "rules",
+      "description": "Assesses your knowledge of the traffic laws and rules for safe driving.",
+      "questionCount": 20,
+      "passingCorrect": 16,
+      "timeLimitMinutes": 30,
+      "format": "multiple-choice"
+    },
+    {
+      "id": "signs",
+      "name": "Road Sign Recognition Test",
+      "shortName": "Road Signs",
+      "questionType": "sign",
+      "description": "Assesses your ability to recognize and understand the meaning of highway road signs.",
+      "questionCount": 20,
+      "passingCorrect": 16,
+      "timeLimitMinutes": 30,
+      "format": "multiple-choice"
+    }
+  ],
+
+  "retakeRules": {
+    "onlyRetakeFailedSections": true,
+    "onlineWaitingPeriod": "none",
+    "inPersonWaitingPeriod": "next day",
+    "note": "If you fail both parts you retake both parts. A new test fee applies to each attempt."
+  },
+
+  "eligibility": {
+    "minimumAge": 16,
+    "parentalConsentRequiredUnderAge": 18,
+    "otherRequirements": [
+      "Pass a vision test",
+      "Provide identification showing legal name and date of birth",
+      "No outstanding fines or privilege reinstatement fees",
+      "Licence not suspended and not otherwise prohibited from holding one"
+    ]
+  },
+
+  "administration": {
+    "channels": ["online", "in person"],
+    "onlineRequirements": [
+      "Desktop computer or laptop (not a phone or tablet)",
+      "A connected web camera",
+      "An email address"
+    ],
+    "languages": ["English", "French"],
+    "interpreterAvailable": true,
+    "verbalTestAvailable": true,
+    "feeCad": 15.03,
+    "resourcesAllowed": false
+  },
+
+  "preparation": {
+    "officialInstruction": "Review the Driver's Handbook to prepare for the Knowledge Test.",
+    "handbookUrl": "https://novascotia.ca/sns/rmv/licence/handbook.asp"
+  },
+
+  "afterPassing": [
+    "You do not receive the licence immediately and cannot drive right away",
+    "Visit Registry of Motor Vehicles or Access Nova Scotia to complete the remaining requirements",
+    "Pay the Learner's Licence fee and have your photo taken"
+  ]
+}

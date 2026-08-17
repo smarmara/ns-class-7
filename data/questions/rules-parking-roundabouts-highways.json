@@ -1,0 +1,676 @@
+[
+  {
+    "id": "rules-park-001",
+    "type": "rules",
+    "topic": "parking-and-stopping",
+    "subtopic": "distance from a crosswalk",
+    "question": "How close to a crosswalk may you park?",
+    "choices": [
+      "No closer than 5 metres",
+      "No closer than 7.5 metres",
+      "No closer than 10 metres",
+      "No closer than 15 metres"
+    ],
+    "correctChoice": 0,
+    "explanation": "You may not stop, stand or park on or within 5 metres of a crosswalk. Parking closer hides waiting pedestrians from approaching drivers.",
+    "incorrectChoiceExplanations": [
+      null,
+      "7.5 metres is the distance from the intersection of curb lines at an intersection.",
+      "10 metres is the distance on the approach to a flashing beacon, stop sign, yield sign or traffic control signal at the side of the roadway.",
+      "15 metres is the distance from the nearest rail of a railway crossing."
+    ],
+    "difficulty": "medium",
+    "tags": ["parking", "crosswalks"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 61" },
+      { "sourceId": "ns-mva", "section": "s.143(1)(b)" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-park-002",
+    "type": "rules",
+    "topic": "parking-and-stopping",
+    "subtopic": "distance from an intersection",
+    "question": "How close to an intersection may you park?",
+    "choices": [
+      "No closer than 7.5 metres",
+      "No closer than 5 metres",
+      "No closer than 10 metres",
+      "No closer than 3 metres"
+    ],
+    "correctChoice": 0,
+    "explanation": "You may not stop, stand or park within 7.5 metres from the intersection of curb lines. Keeping the corner clear preserves sight lines for turning drivers and crossing pedestrians.",
+    "incorrectChoiceExplanations": [
+      null,
+      "5 metres applies to crosswalks, fire hydrants and fire-station driveway entrances.",
+      "10 metres applies on the approach to a flashing beacon, stop sign, yield sign or traffic control signal.",
+      "3 metres is not one of the distances in the Motor Vehicle Act."
+    ],
+    "difficulty": "medium",
+    "tags": ["parking", "intersections"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 61" },
+      { "sourceId": "ns-mva", "section": "s.143(1)(d)" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-park-003",
+    "type": "rules",
+    "topic": "parking-and-stopping",
+    "subtopic": "fire hydrants",
+    "question": "The only space left on the street is right beside a fire hydrant. What clearance must you leave from it?",
+    "choices": [
+      "At least 5 metres",
+      "At least 10 metres",
+      "At least 15 metres",
+      "None, provided you stay with the vehicle"
+    ],
+    "correctChoice": 0,
+    "explanation": "You may not stop, stand or park within 5 metres of a fire hydrant, or within 5 metres of the driveway entrance to a fire station.",
+    "incorrectChoiceExplanations": [
+      null,
+      "10 metres applies to the approach to a flashing beacon, stop sign, yield sign or traffic control signal.",
+      "15 metres applies to a railway crossing.",
+      "Your vehicle is considered stopped or parked whether it is occupied or unoccupied, so staying with it makes no difference."
+    ],
+    "difficulty": "medium",
+    "tags": ["parking"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 61" },
+      { "sourceId": "ns-mva", "section": "s.143(1)(f), (g)" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-park-004",
+    "type": "rules",
+    "topic": "parking-and-stopping",
+    "subtopic": "railway crossings",
+    "question": "How close to the nearest rail of a railway crossing may you park?",
+    "choices": [
+      "No closer than 15 metres",
+      "No closer than 5 metres",
+      "No closer than 30 metres",
+      "No closer than 10 metres"
+    ],
+    "correctChoice": 0,
+    "explanation": "You may not stop, stand or park within 15 metres of the nearest rail of a railway crossing.",
+    "incorrectChoiceExplanations": [
+      null,
+      "5 metres applies to crosswalks and fire hydrants.",
+      "30 metres is the distance within which the 50 km/h speed limit applies as you approach a railway crossing — a different rule.",
+      "10 metres applies on the approach to a flashing beacon, stop sign, yield sign or traffic control signal."
+    ],
+    "difficulty": "hard",
+    "tags": ["parking", "railway"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 61" },
+      { "sourceId": "ns-mva", "section": "s.143(1)(m)" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-park-005",
+    "type": "rules",
+    "topic": "parking-and-stopping",
+    "subtopic": "curbside wheels",
+    "question": "When you park beside a curb, how close must your curbside wheels be to it?",
+    "choices": [
+      "Within 15 centimetres",
+      "Within 30 centimetres",
+      "Within 50 centimetres",
+      "There is no set distance"
+    ],
+    "correctChoice": 0,
+    "explanation": "Curbside wheels must be within 15 centimetres of the curb or edge of the road. Parking further out leaves your vehicle protruding into the travelled portion of the road.",
+    "incorrectChoiceExplanations": [
+      null,
+      "30 centimetres is twice the permitted distance.",
+      "Half a metre would leave your vehicle well into the traffic lane.",
+      "The handbook sets a specific distance of 15 centimetres."
+    ],
+    "difficulty": "medium",
+    "tags": ["parking", "parallel parking"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "pp. 61-62" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-park-006",
+    "type": "rules",
+    "topic": "parking-and-stopping",
+    "subtopic": "parking on a hill",
+    "question": "You are parking facing downhill on a Halifax street with a curb. Which way should you turn your front wheels?",
+    "choices": [
+      "To the right, so the vehicle would roll into the curb",
+      "To the left, away from the curb",
+      "Straight ahead",
+      "It makes no difference if you set the parking brake"
+    ],
+    "correctChoice": 0,
+    "explanation": "When parking on a hill, turn the front wheels so that if your vehicle rolls away it will roll into the curb and stop. Facing downhill with or without a curb, turn your wheels to the right. Apply the parking brake and place the shift lever in park.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Turning left when facing downhill would send a rolling vehicle out into traffic.",
+      "Straight wheels let a rolling vehicle run down the middle of the street.",
+      "The parking brake is required as well, but wheel position is your backup if it fails."
+    ],
+    "difficulty": "medium",
+    "tags": ["parking", "hills", "halifax"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 64" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-park-007",
+    "type": "rules",
+    "topic": "parking-and-stopping",
+    "subtopic": "parking on a hill",
+    "question": "You are parking facing uphill on a street WITH a curb. Which way should you turn your front wheels?",
+    "choices": [
+      "To the left, so the vehicle would roll back into the curb",
+      "To the right, toward the curb",
+      "Straight ahead",
+      "To the right, so the vehicle rolls off the road"
+    ],
+    "correctChoice": 0,
+    "explanation": "Facing uphill with a curb, turn your wheels to the left — if the vehicle rolls backwards, the rear of the front tyre catches the curb. Facing uphill WITHOUT a curb, turn your wheels to the right so the vehicle would roll off the highway rather than into traffic.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Turning right when facing uphill with a curb means a rolling vehicle heads out into the traffic lane.",
+      "Straight wheels give a rolling vehicle a clear run down the road.",
+      "Rolling off the road is the correct outcome only when there is no curb to catch the wheel."
+    ],
+    "difficulty": "hard",
+    "tags": ["parking", "hills"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 64" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-park-008",
+    "type": "rules",
+    "topic": "parking-and-stopping",
+    "subtopic": "maximum time",
+    "question": "For how long may a vehicle be parked on a street or highway?",
+    "choices": [
+      "No longer than 24 hours",
+      "No longer than 48 hours",
+      "No longer than 12 hours",
+      "Indefinitely, if the vehicle is registered and insured"
+    ],
+    "correctChoice": 0,
+    "explanation": "You may not park a vehicle on a street or highway for a period longer than 24 hours. Whenever your vehicle is left standing unattended, apply the parking brake and turn off the engine.",
+    "incorrectChoiceExplanations": [
+      null,
+      "48 hours is double the permitted period.",
+      "The handbook's limit is 24 hours, not 12.",
+      "Registration and insurance do not create a right to leave a vehicle on the road indefinitely."
+    ],
+    "difficulty": "medium",
+    "tags": ["parking"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 61" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-park-009",
+    "type": "rules",
+    "topic": "parking-and-stopping",
+    "subtopic": "double parking",
+    "question": "What is 'double parking', and is it permitted?",
+    "choices": [
+      "Stopping on the roadway side of another parked vehicle — it is not permitted",
+      "Parking across two marked spaces — permitted if you pay for both",
+      "Parking on both sides of a narrow street — permitted outside rush hour",
+      "Leaving a vehicle for more than 24 hours — permitted with a permit"
+    ],
+    "correctChoice": 0,
+    "explanation": "You may not stop or park on the roadway side of any vehicle already stopped. This is called double parking, and it forces other traffic to move around you into the oncoming lane.",
+    "incorrectChoiceExplanations": [
+      null,
+      "That is not what the handbook means by double parking.",
+      "Parking on both sides of a street is a separate matter governed by local signs and by-laws.",
+      "The 24-hour limit is a separate rule."
+    ],
+    "difficulty": "easy",
+    "tags": ["parking"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 61" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-park-010",
+    "type": "rules",
+    "topic": "parking-and-stopping",
+    "subtopic": "accessible parking",
+    "question": "Who may use a space marked for 'Persons with Mobility Disability'?",
+    "choices": [
+      "Only a driver with the appropriate permit or special licence plate",
+      "Any driver, for up to fifteen minutes",
+      "Any driver, if all other spaces are full",
+      "Any driver, if a passenger stays with the vehicle"
+    ],
+    "correctChoice": 0,
+    "explanation": "You may not park in a space designated for 'Persons with Mobility Disability' unless you have a permit or special plate. A permit must be hung from the rearview mirror.",
+    "incorrectChoiceExplanations": [
+      null,
+      "There is no short-stay exception.",
+      "A full lot does not create an entitlement to an accessible space.",
+      "The permit belongs to the person, not to whether the vehicle is occupied."
+    ],
+    "difficulty": "easy",
+    "tags": ["parking", "accessibility"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 61" },
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 83" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-park-011",
+    "type": "rules",
+    "topic": "parking-and-stopping",
+    "subtopic": "angle parking",
+    "question": "When preparing to angle park, how far out from the other parked cars should you remain as you approach?",
+    "choices": [
+      "At least 1.5 metres, parallel to the curb",
+      "About 30 centimetres",
+      "At least 3 metres",
+      "As close as possible, to keep the manoeuvre tight"
+    ],
+    "correctChoice": 0,
+    "explanation": "For angle parking, signal your intention and slow down, then remain parallel to the curb at least 1.5 metres out from the other parked cars. When your front end is even with the rear of the space, move slowly while turning the wheel toward the space.",
+    "incorrectChoiceExplanations": [
+      null,
+      "30 centimetres gives you no room to swing the front of the vehicle into the space.",
+      "3 metres would put you well into the next traffic lane.",
+      "Approaching too close means clipping the vehicle beside the space as you turn in."
+    ],
+    "difficulty": "hard",
+    "tags": ["parking", "angle parking"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 63" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-round-001",
+    "type": "rules",
+    "topic": "roundabouts",
+    "subtopic": "yielding on entry",
+    "question": "You are approaching one of Halifax's roundabouts. Who has the right of way?",
+    "choices": [
+      "Traffic already circulating in the roundabout — you must yield before entering",
+      "Traffic entering the roundabout, because it is moving faster",
+      "Whichever vehicle arrives at the circle first",
+      "Traffic entering from the largest road"
+    ],
+    "correctChoice": 0,
+    "explanation": "Vehicles entering a roundabout or rotary must yield to traffic in the circle. Drivers already in the circle have the right of way over entering traffic. Enter when there is a gap in traffic.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Entering traffic yields; that is the whole design principle of a roundabout.",
+      "Arrival order does not apply — circulating traffic always has priority.",
+      "Road size does not determine priority at a roundabout."
+    ],
+    "difficulty": "easy",
+    "tags": ["roundabouts", "right of way", "halifax"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 64" },
+      { "sourceId": "ns-mva", "section": "s.135(1)" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-round-002",
+    "type": "rules",
+    "topic": "roundabouts",
+    "subtopic": "direction of travel",
+    "question": "Which direction do vehicles travel around the central island of a roundabout or rotary?",
+    "choices": [
+      "Counterclockwise, keeping to the right of the central island",
+      "Clockwise, keeping to the left of the central island",
+      "Either direction, depending on the shortest route to your exit",
+      "Counterclockwise, but clockwise in a rotary"
+    ],
+    "correctChoice": 0,
+    "explanation": "All vehicles in the roundabout or rotary must travel to the right around the central island — that is, counterclockwise — until they reach the road where they want to exit.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Clockwise travel would put you head-on into circulating traffic.",
+      "The direction of travel is fixed, regardless of which exit you want.",
+      "Roundabouts and rotaries follow the same counterclockwise rule."
+    ],
+    "difficulty": "easy",
+    "tags": ["roundabouts"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 65" },
+      { "sourceId": "ns-mva", "section": "s.135(2)" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-round-003",
+    "type": "rules",
+    "topic": "roundabouts",
+    "subtopic": "exiting",
+    "question": "You are in the inside lane of a multi-lane roundabout and your exit is coming up. What should you do?",
+    "choices": [
+      "Move safely into the correct lane before your exit — never exit from an inside lane",
+      "Exit directly from the inside lane, signalling right",
+      "Slow down in the inside lane until a gap appears in the outer lane",
+      "Continue around the circle until the outer lane is empty"
+    ],
+    "correctChoice": 0,
+    "explanation": "If there is more than one lane in the circle, safely move into the correct lane before you come to the place where you intend to exit. Look, signal and use caution as you change lanes. Never exit a roundabout or rotary from an inside lane.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Cutting across the outer lane to exit is how roundabout sideswipes happen.",
+      "Slowing in a circulating lane creates a hazard for the traffic behind you.",
+      "Circulating repeatedly is not a substitute for making a proper lane change, though going around again is better than an unsafe exit."
+    ],
+    "difficulty": "medium",
+    "tags": ["roundabouts", "lane use"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 65" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-round-004",
+    "type": "rules",
+    "topic": "roundabouts",
+    "subtopic": "speed and pedestrians",
+    "question": "What speed are roundabouts designed for, and who else must you watch for?",
+    "choices": [
+      "30-50 km/h; you must always yield to pedestrians legally crossing and be courteous to cyclists",
+      "60-80 km/h; pedestrians are not permitted at roundabouts",
+      "20 km/h; cyclists must dismount",
+      "The posted highway limit; pedestrians use underpasses"
+    ],
+    "correctChoice": 0,
+    "explanation": "Slow down as you approach — roundabouts are designed for speeds of 30-50 km/h. Motorists must always yield to pedestrians who are legally crossing the road and be courteous towards cyclists who are sharing the road.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Roundabouts are low-speed intersections and pedestrians cross at them.",
+      "Cyclists share the road at roundabouts; there is no dismount requirement.",
+      "The design speed is well below highway speeds."
+    ],
+    "difficulty": "medium",
+    "tags": ["roundabouts", "pedestrians", "speed"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 64" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-hwy-001",
+    "type": "rules",
+    "topic": "highways-and-merging",
+    "subtopic": "entering a highway",
+    "question": "You are joining Highway 102 from an on-ramp. What is the correct way to merge?",
+    "choices": [
+      "Use the acceleration lane until your speed matches the traffic, then merge safely",
+      "Stop at the end of the ramp and wait for a large gap",
+      "Enter at ramp speed and let following traffic adjust",
+      "Merge as early as possible, before reaching the acceleration lane"
+    ],
+    "correctChoice": 0,
+    "explanation": "When entering the highway, use the acceleration lane until your vehicle's speed matches that of the other traffic, and then merge safely. You must yield to through traffic until a safe gap can be identified.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Stopping at the end of an acceleration lane leaves you with no speed and no room, and traffic behind does not expect it.",
+      "Merging far below the speed of traffic forces everyone else to brake and is a common cause of highway collisions.",
+      "The acceleration lane exists so you can build speed before joining; merging early wastes it."
+    ],
+    "difficulty": "medium",
+    "tags": ["highways", "merging", "halifax"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "pp. 66-67" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-hwy-002",
+    "type": "rules",
+    "topic": "highways-and-merging",
+    "subtopic": "leaving a highway",
+    "question": "You are leaving a 100-series highway at your exit. Where should you slow down?",
+    "choices": [
+      "In the deceleration lane, after signalling well in advance — not in the through lane",
+      "In the through lane, so you are already at ramp speed when you leave it",
+      "On the ramp itself, braking hard as soon as you enter it",
+      "Wherever there is the most space"
+    ],
+    "correctChoice": 0,
+    "explanation": "When leaving the highway, signal your turn well in advance and, without slowing down, enter the deceleration lane. Slow down there and proceed at the posted ramp speed limit. Slowing in the through lane exposes you to a rear-end collision.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Braking in the through lane is exactly what the deceleration lane exists to prevent.",
+      "Waiting until the ramp and then braking hard risks losing control on a curving ramp.",
+      "The deceleration lane is where the slowing belongs."
+    ],
+    "difficulty": "medium",
+    "tags": ["highways", "exiting"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 67" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-hwy-003",
+    "type": "rules",
+    "topic": "highways-and-merging",
+    "subtopic": "stopping on a highway",
+    "question": "Your vehicle breaks down on a 100-series highway. What should you do?",
+    "choices": [
+      "Move far off the road, and at night engage the emergency flashers or parking lights",
+      "Stop in the right-hand traffic lane and turn on your flashers",
+      "Stop in the left lane, where traffic is lighter",
+      "Continue driving on the shoulder until you reach an exit"
+    ],
+    "correctChoice": 0,
+    "explanation": "Never stop in the traffic lane. If a vehicle breakdown forces you to stop, move far off the road. Tie a white cloth on the aerial or left door handle, and if the breakdown occurs at night engage the vehicle's emergency flashers or parking lights.",
+    "incorrectChoiceExplanations": [
+      null,
+      "A stopped vehicle in a live lane at highway speed is extremely dangerous, flashers or not.",
+      "The left lane is a passing lane where drivers expect fast-moving traffic, not a stopped vehicle.",
+      "Driving on the shoulder puts you where disabled vehicles and pedestrians may be."
+    ],
+    "difficulty": "medium",
+    "tags": ["highways", "emergencies"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 67" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-hwy-004",
+    "type": "rules",
+    "topic": "highways-and-merging",
+    "subtopic": "merge signs",
+    "question": "You see a merge sign where two lanes are about to join into one. Who is responsible for the merge?",
+    "choices": [
+      "Drivers approaching from both lanes are equally responsible for merging smoothly and safely",
+      "The driver in the lane that continues has priority and need not adjust",
+      "The driver in the ending lane always has priority",
+      "The faster vehicle has priority"
+    ],
+    "correctChoice": 0,
+    "explanation": "The merge sign indicates an upcoming point where two separate traffic lanes are about to join and merge into one. Drivers approaching from both lanes are equally responsible for seeing that traffic merges smoothly and safely, and you should be ready to yield the right of way when necessary.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Both drivers share responsibility at a merge.",
+      "Neither lane has automatic priority at a merge.",
+      "Speed does not create priority."
+    ],
+    "difficulty": "medium",
+    "tags": ["highways", "merging", "signs"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 83" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-hwy-005",
+    "type": "rules",
+    "topic": "highways-and-merging",
+    "subtopic": "work zone lane closures",
+    "question": "A lane closure is signed ahead in a work zone. What is the correct approach?",
+    "choices": [
+      "Adjust your speed when you see the sign and merge as soon as safely possible",
+      "Stay in the closing lane at speed and merge at the last moment",
+      "Stop at the merge point and wait to be waved in",
+      "Move onto the shoulder to bypass the queue"
+    ],
+    "correctChoice": 0,
+    "explanation": "Adjust your speed when you see a merge or lane-closure sign, obey the 'Do Not Pass' sign, and merge as soon as safely possible. A common mistake is to approach the merge point at too high a speed in the lane to be closed and then push into the other lane at the last moment — that causes collisions.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The handbook names this specific behaviour as a cause of work-zone collisions.",
+      "Stopping in a live lane creates a rear-end hazard.",
+      "Using the shoulder to bypass traffic is not permitted and endangers road workers."
+    ],
+    "difficulty": "medium",
+    "tags": ["work zones", "merging"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 96" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-hwy-006",
+    "type": "rules",
+    "topic": "highways-and-merging",
+    "subtopic": "work zone speed",
+    "question": "What is the single biggest cause of collisions in work zones?",
+    "choices": [
+      "Vehicles travelling at different speeds",
+      "Poorly maintained road surfaces",
+      "Workers stepping into traffic",
+      "Insufficient signage"
+    ],
+    "correctChoice": 0,
+    "explanation": "The biggest hazard in a work zone is speed variation between vehicles. As you enter, adjust your speed gradually so that all vehicles move at the same reduced speed. Travel no more than the speed limit, and be aware that vehicles ahead may have slowed more than you have.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Rough surfaces are a signed hazard in work zones, but not the leading cause of collisions there.",
+      "The handbook's concern is drivers injuring workers, not workers causing collisions.",
+      "Work zones are extensively signed; driver inattention to those signs is the second-listed cause."
+    ],
+    "difficulty": "medium",
+    "tags": ["work zones", "speed"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 95-96" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-hwy-007",
+    "type": "rules",
+    "topic": "highways-and-merging",
+    "subtopic": "rest stops",
+    "question": "On a long highway trip, how often does the Driver's Handbook suggest stopping at rest areas?",
+    "choices": [
+      "At least once every 150-200 km",
+      "At least once every 400 km",
+      "Only when you feel drowsy",
+      "Only when refuelling"
+    ],
+    "correctChoice": 0,
+    "explanation": "Stop at indicated rest areas frequently, preferably at least once every 150-200 km. Breaks help prevent highway hypnosis, in which your eyes become fixed and you may experience momentary lapses of memory.",
+    "incorrectChoiceExplanations": [
+      null,
+      "400 km is well beyond the interval the handbook recommends.",
+      "By the time you feel drowsy, your reactions are already impaired.",
+      "Fuel range and driver alertness are not the same thing."
+    ],
+    "difficulty": "easy",
+    "tags": ["highways", "fatigue"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 67" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-back-001",
+    "type": "rules",
+    "topic": "parking-and-stopping",
+    "subtopic": "backing up",
+    "question": "You are backing out of a parking space. What is the recommended technique?",
+    "choices": [
+      "Turn your body and head to the right and look back over your right shoulder, scanning in all directions as you move slowly",
+      "Rely on the rearview mirror alone so you can keep both hands on the wheel",
+      "Reverse quickly to minimise the time you are in other drivers' way",
+      "Open your door and lean out to see behind you"
+    ],
+    "correctChoice": 0,
+    "explanation": "Whether you are backing straight or to the right or left, turn your body and head to the right and look back over your right shoulder. Hold the wheel firmly with one hand at the 12 o'clock position so you can scan over both shoulders, begin backing slowly, and continue to scan in all directions. You may remove your seat belt to turn and see properly when backing — remember to fasten it again before moving forward.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Mirrors leave blind spots where a child or object can be hidden from view.",
+      "Never back up unless you can do so safely; speed removes your ability to react.",
+      "Leaning out of an open door is unsafe and does not give a proper view."
+    ],
+    "difficulty": "medium",
+    "tags": ["backing", "parking"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 60" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  }
+]

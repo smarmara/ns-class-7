@@ -1,0 +1,614 @@
+[
+  {
+    "id": "rules-signals-001",
+    "type": "rules",
+    "topic": "traffic-signals",
+    "subtopic": "yellow signal",
+    "question": "You are approaching an intersection on Robie Street when the light turns yellow. What does a yellow signal require you to do?",
+    "choices": [
+      "Stop before entering the intersection, if you can stop safely",
+      "Speed up so you clear the intersection before the light turns red",
+      "Continue at your current speed — a yellow light means the light is about to turn green",
+      "Stop immediately, wherever your vehicle happens to be"
+    ],
+    "correctChoice": 0,
+    "explanation": "A yellow signal means you must stop before entering the intersection if you can do so safely. If you are already too close to stop safely, drive cautiously through the intersection.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Never speed up for a yellow signal to 'beat' the red.",
+      "Yellow always follows green and precedes red; it is a warning that the right of way is ending.",
+      "Stopping abruptly in the middle of an intersection, or hard enough to be rear-ended, is not what the rule asks for — the test is whether you can stop safely before entering."
+    ],
+    "difficulty": "easy",
+    "tags": ["signals", "yellow", "stopping"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "pp. 39-40", "note": "Traffic signal lights; Tips" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-signals-002",
+    "type": "rules",
+    "topic": "traffic-signals",
+    "subtopic": "turning on red",
+    "question": "At a red light with no sign prohibiting it, which turn are you permitted to make?",
+    "choices": [
+      "A right turn, after coming to a complete stop and making sure it is safe",
+      "A right turn, without stopping, if no one is coming",
+      "A left turn from any street onto any other street",
+      "No turn of any kind may be made on a red signal"
+    ],
+    "correctChoice": 0,
+    "explanation": "Unless a 'no turn on red' sign is posted, you may turn right on a red light after stopping and making sure you can turn safely.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The stop is not optional. A red signal requires all facing traffic to stop first.",
+      "A left turn on red is illegal, with one narrow exception: turning left from a one-way street onto another one-way street.",
+      "Right turns on red are permitted in Nova Scotia unless a sign says otherwise."
+    ],
+    "difficulty": "easy",
+    "tags": ["signals", "red", "turning"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 40", "note": "Tips on turning at a red signal" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-signals-003",
+    "type": "rules",
+    "topic": "traffic-signals",
+    "subtopic": "left turn on red",
+    "question": "In which single situation may you legally turn left on a red signal?",
+    "choices": [
+      "From a one-way street onto another one-way street",
+      "From a two-way street onto a one-way street",
+      "Whenever there is a dedicated left-turn lane",
+      "Whenever no oncoming traffic is visible"
+    ],
+    "correctChoice": 0,
+    "explanation": "It is illegal to make a left turn on a red light, except for left turns at a red light from a one-way street onto another one-way street. You must still stop first and make sure the way is clear.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Both streets must be one-way. Turning left on red from a two-way street is not permitted.",
+      "A turn lane governs where you turn from, not whether you may proceed against a red signal.",
+      "An empty road does not create a right to proceed through a red signal."
+    ],
+    "difficulty": "medium",
+    "tags": ["signals", "red", "left turn", "one-way"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 40" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-signals-004",
+    "type": "rules",
+    "topic": "traffic-signals",
+    "subtopic": "signals out of service",
+    "question": "A winter storm has knocked out the traffic lights at a busy Halifax intersection. How should you treat the intersection?",
+    "choices": [
+      "As a multi-stop intersection: come to a full stop, then proceed when you have the right of way and it is safe",
+      "As though the lights were green in the direction of the heavier road",
+      "As an uncontrolled intersection where the larger vehicle goes first",
+      "Slow down but keep moving so that traffic does not back up"
+    ],
+    "correctChoice": 0,
+    "explanation": "If the traffic signal lights are not working, treat the intersection as a multi-stop. Come to a full stop, then proceed when you have the right of way and it is safe to do so.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Road size does not confer right of way when the signals have failed.",
+      "Vehicle size never determines right of way.",
+      "A full stop is required, not merely slowing."
+    ],
+    "difficulty": "medium",
+    "tags": ["signals", "power failure", "intersections", "halifax"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 39" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-signals-005",
+    "type": "rules",
+    "topic": "traffic-signals",
+    "subtopic": "flashing signals",
+    "question": "What does a flashing red signal light mean?",
+    "choices": [
+      "The same as a stop sign — stop, and do not go until you can enter without interfering with approaching traffic",
+      "The same as a yield sign — slow down and give way if traffic is close",
+      "Slow down and proceed with caution",
+      "The signal is out of order and should be ignored"
+    ],
+    "correctChoice": 0,
+    "explanation": "A flashing red signal has the same meaning as a stop sign: stop, and do not go until you can enter the intersection without interfering with approaching traffic.",
+    "incorrectChoiceExplanations": [
+      null,
+      "A yield does not always require a stop; a flashing red always does.",
+      "That is the meaning of a flashing yellow (amber) signal, which works like a warning sign.",
+      "A flashing signal is working as intended and must be obeyed."
+    ],
+    "difficulty": "easy",
+    "tags": ["signals", "flashing"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 40" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-signals-006",
+    "type": "rules",
+    "topic": "traffic-signals",
+    "subtopic": "flashing signals",
+    "question": "A flashing yellow (amber) signal has the same meaning as which kind of sign?",
+    "choices": [
+      "A warning sign — slow down and proceed with caution",
+      "A stop sign — come to a complete stop",
+      "A yield sign — stop only if traffic is approaching",
+      "A speed limit sign — the posted limit is halved"
+    ],
+    "correctChoice": 0,
+    "explanation": "A flashing yellow or amber signal has the same meaning as a warning sign: slow down and proceed with caution.",
+    "incorrectChoiceExplanations": [
+      null,
+      "That is a flashing red signal.",
+      "A flashing amber does not require you to yield the right of way, only to proceed carefully.",
+      "Flashing signals say nothing about speed limits."
+    ],
+    "difficulty": "easy",
+    "tags": ["signals", "flashing"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 40" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-signals-007",
+    "type": "rules",
+    "topic": "traffic-signals",
+    "subtopic": "flashing green",
+    "question": "You are facing a flashing green signal light. What does it tell you?",
+    "choices": [
+      "Facing traffic may turn left, go straight ahead, or turn right",
+      "You may only go straight ahead",
+      "The light is about to change to yellow",
+      "Pedestrians are crossing and you must stop"
+    ],
+    "correctChoice": 0,
+    "explanation": "A flashing green signal means facing traffic may turn left, go straight ahead, or turn right. Oncoming traffic is being held, which is why the protected left turn is available.",
+    "incorrectChoiceExplanations": [
+      null,
+      "A flashing green permits all three movements, not just going straight.",
+      "The flashing green is a distinct signal phase, not a countdown to yellow.",
+      "You must always watch for pedestrians, but that is not what the flashing green indicates."
+    ],
+    "difficulty": "medium",
+    "tags": ["signals", "flashing", "left turn"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 41" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-signals-008",
+    "type": "rules",
+    "topic": "traffic-signals",
+    "subtopic": "lane control signals",
+    "question": "You are on a commuter route where lanes are controlled by overhead lane-control signals. A red X is displayed over your lane. What must you do?",
+    "choices": [
+      "Never drive in that lane, regardless of any other signs or signals",
+      "Drive in the lane but at a reduced speed",
+      "Drive in the lane only if the traffic light at the next intersection is green",
+      "Use the lane only for passing"
+    ],
+    "correctChoice": 0,
+    "explanation": "Never drive in a lane under a red X signal, regardless of any other signs or signals. You may drive in lanes under a green signal, but you must still obey all other signs and signals.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The red X closes the lane completely; speed is irrelevant.",
+      "The red X overrides other signals for that lane.",
+      "A closed lane is closed for every purpose."
+    ],
+    "difficulty": "medium",
+    "tags": ["signals", "lane control"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 41" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-signals-009",
+    "type": "rules",
+    "topic": "traffic-signals",
+    "subtopic": "green signal",
+    "question": "You have a green light and are going straight through an intersection. Who must you still yield to?",
+    "choices": [
+      "Pedestrians in the crosswalk, including persons in wheelchairs, and vehicles already in the intersection or approaching so closely as to be an immediate hazard",
+      "Nobody — a green light gives you an unconditional right of way",
+      "Only vehicles turning left from the opposite direction",
+      "Only pedestrians who have already reached the centre line"
+    ],
+    "correctChoice": 0,
+    "explanation": "A green signal means you may go when it is safe. You must still yield to pedestrians in the crosswalk, including persons in wheelchairs, and to other vehicles in the intersection or approaching so closely as to be an immediate hazard.",
+    "incorrectChoiceExplanations": [
+      null,
+      "A green light gives permission to proceed when safe, not priority over everyone.",
+      "Pedestrians and vehicles already in the intersection also have priority.",
+      "A pedestrian lawfully in the crosswalk has the right of way from the moment they enter it."
+    ],
+    "difficulty": "medium",
+    "tags": ["signals", "green", "right of way", "pedestrians"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 39" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-signals-010",
+    "type": "rules",
+    "topic": "traffic-signals",
+    "subtopic": "arrow signals",
+    "question": "You are waiting to turn left and the signal shows a yellow arrow. What should you do?",
+    "choices": [
+      "Stop, unless you are already too close to the intersection to stop safely",
+      "Complete your turn quickly before the arrow disappears",
+      "Treat it as a green arrow until it goes out",
+      "Reverse out of the turning lane"
+    ],
+    "correctChoice": 0,
+    "explanation": "A yellow arrow means you should stop, unless you are too close to the intersection to stop safely. In that case, drive cautiously through the intersection.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Rushing a turn on a yellow arrow is how left-turn collisions happen; the protected phase is ending.",
+      "A yellow arrow is the end of the protected turn, not a continuation of it.",
+      "Reversing in an intersection is dangerous and is never the answer."
+    ],
+    "difficulty": "medium",
+    "tags": ["signals", "arrows", "left turn"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 40" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-row-001",
+    "type": "rules",
+    "topic": "right-of-way",
+    "subtopic": "arriving together",
+    "question": "Two vehicles reach an uncontrolled intersection at the same time from different roads. Which driver must yield?",
+    "choices": [
+      "The driver on the left must yield to the vehicle on the right",
+      "The driver on the right must yield to the vehicle on the left",
+      "The driver travelling faster must yield",
+      "The driver on the narrower road must yield"
+    ],
+    "correctChoice": 0,
+    "explanation": "When two or more vehicles reach an intersection at the same time, the car to the left must yield the right of way. In practice: yield to the vehicle on your right.",
+    "incorrectChoiceExplanations": [
+      null,
+      "This reverses the rule. It is the driver on the left who gives way.",
+      "Speed does not decide right of way, and arriving fast does not earn priority.",
+      "Road width does not decide right of way at an uncontrolled intersection."
+    ],
+    "difficulty": "easy",
+    "tags": ["right of way", "intersections"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 44" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-row-002",
+    "type": "rules",
+    "topic": "right-of-way",
+    "subtopic": "opposing left turn",
+    "question": "You and an oncoming driver reach an intersection at the same time. You want to turn left; the oncoming driver is going straight through. What must you do?",
+    "choices": [
+      "Yield the right of way and wait until the turn can be made safely",
+      "Turn first, because a left turn takes longer to complete",
+      "Proceed together — the oncoming driver must slow for you",
+      "Sound your horn and complete the turn"
+    ],
+    "correctChoice": 0,
+    "explanation": "When two facing vehicles approach an intersection at the same time, both may move straight ahead or turn right. If one driver is going straight while the other wants to turn left, the driver turning left must yield the right of way and wait until the turn can be made safely.",
+    "incorrectChoiceExplanations": [
+      null,
+      "How long a manoeuvre takes has no bearing on who has the right of way.",
+      "The through driver is not required to slow down for a left-turning vehicle.",
+      "A horn is a warning device, not a way to claim right of way."
+    ],
+    "difficulty": "easy",
+    "tags": ["right of way", "left turn", "intersections"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 44" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-row-003",
+    "type": "rules",
+    "topic": "right-of-way",
+    "subtopic": "already in the intersection",
+    "question": "A vehicle is already within the intersection when you arrive at it. Who has the right of way?",
+    "choices": [
+      "The vehicle already in the intersection",
+      "Whichever vehicle is on the through road",
+      "You, if your light turned green first",
+      "The vehicle that signals first"
+    ],
+    "correctChoice": 0,
+    "explanation": "The vehicle already in the intersection has the right of way ahead of any car that has not yet entered it. Regardless of the right of way you feel you have, always be ready to yield to avoid a collision.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Being on the through road does not entitle you to drive into an occupied intersection.",
+      "A green light does not authorise you to enter an intersection that is not clear.",
+      "Signalling does not give you the right of way."
+    ],
+    "difficulty": "easy",
+    "tags": ["right of way", "intersections"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 44" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-row-004",
+    "type": "rules",
+    "topic": "right-of-way",
+    "subtopic": "leaving a driveway",
+    "question": "You are pulling out of a shopping centre parking lot onto a public street. What must you do?",
+    "choices": [
+      "Stop and yield the right of way to all other vehicles and to pedestrians",
+      "Merge at the speed of traffic without stopping",
+      "Yield only to vehicles, since pedestrians must watch for cars leaving lots",
+      "Proceed first, because vehicles on the street can see you"
+    ],
+    "correctChoice": 0,
+    "explanation": "When leaving a private driveway or parking lot you must stop and yield the right of way to all other vehicles and pedestrians. Within a business or residence district you must stop immediately before driving onto the sidewalk or the sidewalk area crossing an alleyway.",
+    "incorrectChoiceExplanations": [
+      null,
+      "You are entering the flow of traffic from outside it, so you have no priority and must stop.",
+      "Pedestrians crossing in front of you have the right of way.",
+      "Visibility does not create right of way."
+    ],
+    "difficulty": "easy",
+    "tags": ["right of way", "driveways", "pedestrians"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "pp. 45, 65" },
+      { "sourceId": "ns-mva", "section": "s.136", "note": "Driver emerging from an alley, driveway or building shall stop and shall yield to pedestrians" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-row-005",
+    "type": "rules",
+    "topic": "right-of-way",
+    "subtopic": "yield sign",
+    "question": "You are facing a yield sign as you approach an intersection. What does the sign require?",
+    "choices": [
+      "Reduce speed and give the right of way — stopping if necessary — to traffic in or closely approaching the intersection",
+      "Come to a complete stop every time, then proceed",
+      "Maintain your speed; other traffic must make room for you",
+      "Sound your horn and proceed with caution"
+    ],
+    "correctChoice": 0,
+    "explanation": "A yield sign means you must reduce speed as you approach the intersection and give the right of way, stopping if necessary, to any other traffic in or closely approaching the intersection.",
+    "incorrectChoiceExplanations": [
+      null,
+      "A yield does not require a stop every time — only when a stop is necessary to give way safely.",
+      "A yield sign places the obligation on you, not on the traffic you are joining.",
+      "Sounding the horn does not discharge your duty to yield."
+    ],
+    "difficulty": "easy",
+    "tags": ["right of way", "yield"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 80" },
+      { "sourceId": "ns-mva", "section": "s.134(3)" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-intersections-001",
+    "type": "rules",
+    "topic": "intersections",
+    "subtopic": "lane changes",
+    "question": "When is it acceptable to change lanes while moving through an intersection?",
+    "choices": [
+      "Never — make any lane change before entering the intersection",
+      "When the intersection is wide enough to allow it",
+      "When you realise you are in the wrong lane for your route",
+      "When there is no other traffic in the intersection"
+    ],
+    "correctChoice": 0,
+    "explanation": "Make a proper lane change before entering the intersection. Never change lanes while you are moving through one — other drivers do not expect it, and it puts you in a position where two vehicles can occupy the same space.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The width of the intersection does not change the rule.",
+      "If you are in the wrong lane, continue through and correct it afterwards — do not swerve inside the intersection.",
+      "You cannot rely on the intersection staying empty for the duration of your manoeuvre."
+    ],
+    "difficulty": "medium",
+    "tags": ["intersections", "lane change"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 44" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-intersections-002",
+    "type": "rules",
+    "topic": "intersections",
+    "subtopic": "waiting to turn left",
+    "question": "You are stopped in an intersection waiting for a gap to turn left. Why should you keep your front wheels pointed straight ahead?",
+    "choices": [
+      "If you are struck from behind, straight wheels keep you from being pushed into oncoming traffic",
+      "It reduces wear on the steering system",
+      "It makes your turn signal easier for oncoming drivers to see",
+      "It is required in order to hold your position in the intersection"
+    ],
+    "correctChoice": 0,
+    "explanation": "Do not turn the steering wheel to the left until you are sure you can complete the turn. If you are struck from the rear while stopped with the wheels turned left, your vehicle may be pushed into opposing traffic and cause another collision.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Mechanical wear is not the reason; this is a collision-survival rule.",
+      "Wheel position does not affect signal visibility.",
+      "There is no rule about wheel position for holding a position — the reason is what happens in a rear-end impact."
+    ],
+    "difficulty": "medium",
+    "tags": ["intersections", "left turn", "defensive driving"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "pp. 44, 54" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-intersections-003",
+    "type": "rules",
+    "topic": "intersections",
+    "subtopic": "definition",
+    "question": "Which statement about intersections and crosswalks is correct?",
+    "choices": [
+      "Every intersection has a crosswalk, and many of them are unmarked",
+      "Only intersections with painted lines have crosswalks",
+      "Crosswalks exist only where a pedestrian crosswalk sign is posted",
+      "Unmarked crosswalks exist only in rural areas"
+    ],
+    "correctChoice": 0,
+    "explanation": "Every intersection has a crosswalk. Many are unmarked — formed by the imaginary lines extending across the streets. Drivers must yield to pedestrians at all intersections, whether crosswalks are marked or unmarked.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Paint makes a crosswalk visible; it is not what creates it.",
+      "Signs draw attention to a crossing, but the legal crosswalk exists at every intersection.",
+      "Unmarked crosswalks are found everywhere, including on city streets."
+    ],
+    "difficulty": "medium",
+    "tags": ["intersections", "crosswalks", "pedestrians"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "pp. 42-43" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-intersections-004",
+    "type": "rules",
+    "topic": "intersections",
+    "subtopic": "stop line",
+    "question": "You are stopping at a stop sign where there is no painted stop line and no marked crosswalk. Where must you stop?",
+    "choices": [
+      "Far enough back to leave room for a pedestrian to cross safely",
+      "With your front bumper level with the stop sign post",
+      "Anywhere within one vehicle length of the sign",
+      "Just past the corner, where you can see cross traffic"
+    ],
+    "correctChoice": 0,
+    "explanation": "The stop must be completed at the clearly marked stop line, or at the nearest crosswalk line. If there is no painted crosswalk or stop line, you must stop far enough back to allow sufficient room for a pedestrian to cross safely — the unmarked crosswalk.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Sign posts are placed for visibility and are not the stopping reference.",
+      "There is no one-vehicle-length rule; the reference is the crosswalk, marked or not.",
+      "Rolling past the corner blocks the crosswalk. Stop first, then edge forward if you need to see."
+    ],
+    "difficulty": "medium",
+    "tags": ["intersections", "stop sign", "crosswalks"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 80" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-intersections-005",
+    "type": "rules",
+    "topic": "intersections",
+    "subtopic": "collision statistics",
+    "question": "Why does the Driver's Handbook place such emphasis on intersection rules?",
+    "choices": [
+      "More than half of all traffic collisions occur at intersections",
+      "Intersections are the only place where the right-of-way rules apply",
+      "Intersections are where most speeding tickets are issued",
+      "Pedestrians are prohibited from crossing anywhere else"
+    ],
+    "correctChoice": 0,
+    "explanation": "With more than half of all traffic collisions occurring at intersections, it is important to know and understand the rules of the road that apply there.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Right-of-way rules apply in many other places, including driveways, merges and roundabouts.",
+      "The handbook's point is about collisions, not enforcement.",
+      "Pedestrians may cross elsewhere, though outside a crosswalk they must yield to vehicles."
+    ],
+    "difficulty": "easy",
+    "tags": ["intersections", "safety"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 42" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-intersections-006",
+    "type": "rules",
+    "topic": "intersections",
+    "subtopic": "crossing guards",
+    "question": "A crossing guard steps into the roadway near a Halifax school and holds up a stop paddle facing you. What are you required to do?",
+    "choices": [
+      "Obey the crossing guard — failing to do so can put demerit points on your driving record",
+      "Proceed slowly around the guard if no children have stepped off the curb yet",
+      "Treat the paddle as advisory, since only peace officers can direct traffic",
+      "Stop only if the school zone lights are flashing"
+    ],
+    "correctChoice": 0,
+    "explanation": "Crossing guards signal drivers to stop by holding up a stop paddle facing the vehicle. Drivers must obey crossing guards appointed and employed for this purpose, and failing to do so can mean demerit points on your driving record.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The guard steps out before the children do, precisely so the roadway is clear first.",
+      "A crossing guard's direction is binding, and the Motor Vehicle Act point table treats failing to obey one as a serious offence.",
+      "The guard's paddle is the instruction; it does not depend on other lights."
+    ],
+    "difficulty": "medium",
+    "tags": ["intersections", "school", "crossing guard", "halifax"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 42" },
+      { "sourceId": "ns-mva", "section": "s.125A", "note": "Crossing guard; point table s.279 item 6 (6 points)" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  }
+]

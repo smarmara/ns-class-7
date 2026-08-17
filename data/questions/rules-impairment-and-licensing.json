@@ -1,0 +1,846 @@
+[
+  {
+    "id": "rules-impair-001",
+    "type": "rules",
+    "topic": "impairment",
+    "subtopic": "legal limit",
+    "question": "At what blood-alcohol content is a driver legally impaired?",
+    "choices": [
+      ".08 per cent or more — though you can be charged and convicted below this level if you show other symptoms of impairment",
+      ".08 per cent exactly, and never below",
+      ".05 per cent or more",
+      ".10 per cent or more"
+    ],
+    "correctChoice": 0,
+    "explanation": "Legal impairment is defined as having a blood-alcohol content (BAC) of .08 per cent or more. However, you can be charged and convicted below this level if you show other symptoms of impairment. Alcohol-induced impairment begins with the first drink.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The threshold is a floor, not an exact value, and impairment charges are possible below it.",
+      ".05 is where the roadside screening device registers a 'warn' and short-term suspensions apply, not the criminal threshold.",
+      ".10 is above the legal threshold."
+    ],
+    "difficulty": "easy",
+    "tags": ["impairment", "alcohol"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch6", "chapter": "Chapter 6", "page": "p. 153" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-impair-002",
+    "type": "rules",
+    "topic": "impairment",
+    "subtopic": "roadside screening",
+    "question": "A roadside screening device reads 'warn'. What does that indicate and what can follow?",
+    "choices": [
+      "A reading between .05 and .08 — police may issue a 7-, 15- or 30-day licence suspension depending on prior incidents in the past ten years",
+      "A reading over .08 — you will be arrested immediately",
+      "A reading below .05 — you will be allowed to leave with no consequence",
+      "The device has malfunctioned and the test must be repeated"
+    ],
+    "correctChoice": 0,
+    "explanation": "The roadside test indicates 'pass', 'warn' or 'fail'. A 'warn' means a reading between 50 mg/100 ml of blood (.05) and 80 mg/100 ml (.08). Police may issue a 7-day, 15-day or 30-day suspension of your licence based on whether you have had other similar incidents in the past ten years.",
+    "incorrectChoiceExplanations": [
+      null,
+      "A 'fail' reading is what leads to arrest and a breathalyzer test at the station.",
+      "A 'pass' means you will be permitted to leave if there are no other violations.",
+      "'Warn' is a valid result, not a malfunction."
+    ],
+    "difficulty": "hard",
+    "tags": ["impairment", "alcohol", "suspension"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch6", "chapter": "Chapter 6", "page": "p. 154" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-impair-003",
+    "type": "rules",
+    "topic": "impairment",
+    "subtopic": "refusing a test",
+    "question": "A police officer demands a breath sample and you refuse. What happens?",
+    "choices": [
+      "Refusing is itself an offence — you will be charged with failing to comply or refusing the breathalyzer",
+      "Nothing, since providing a sample is voluntary",
+      "You receive a warning on a first refusal",
+      "The officer must obtain a warrant before anything can follow"
+    ],
+    "correctChoice": 0,
+    "explanation": "It is an offence to refuse the breathalyzer or the roadside screening device. If you refuse, you will be charged with 'failing to comply' or 'refusing the breathalyzer'. The Administrative Licence Suspension Program provides for an immediate three-month suspension of driving privileges for failing the breathalyzer or refusing to give a breath sample.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Providing a sample when lawfully demanded is not optional.",
+      "There is no warning for a first refusal.",
+      "A lawful demand does not require a warrant."
+    ],
+    "difficulty": "medium",
+    "tags": ["impairment", "alcohol", "enforcement"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch6", "chapter": "Chapter 6", "page": "pp. 154, 156" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-impair-004",
+    "type": "rules",
+    "topic": "impairment",
+    "subtopic": "sobering up",
+    "question": "What is the only thing that removes alcohol from your system?",
+    "choices": [
+      "Time",
+      "Black coffee",
+      "A cold shower",
+      "Exercise, such as a jog around the block"
+    ],
+    "correctChoice": 0,
+    "explanation": "The only way to remove alcohol from your system is through time. It takes more than one hour to eliminate each standard drink. Black coffee, cold showers or a jog around the block will not remove the alcohol from your system — and as the effects start to wear off you may feel more in control while still being impaired.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Caffeine may make you feel more alert while leaving you just as impaired.",
+      "A cold shower changes how you feel, not your blood-alcohol level.",
+      "Exercise does not speed the liver's processing of alcohol."
+    ],
+    "difficulty": "easy",
+    "tags": ["impairment", "alcohol"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch6", "chapter": "Chapter 6", "page": "p. 154" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-impair-005",
+    "type": "rules",
+    "topic": "impairment",
+    "subtopic": "standard drink",
+    "question": "Which of these contain the same amount of alcohol as one another?",
+    "choices": [
+      "A 341 ml bottle of beer, 43 ml of spirits, and a 142 ml glass of unfortified wine",
+      "A bottle of beer and two glasses of wine",
+      "A glass of wine and three shots of spirits",
+      "Nothing — beer always contains less alcohol than wine or spirits"
+    ],
+    "correctChoice": 0,
+    "explanation": "A standard drink is a 340 ml (12 oz) bottle of beer, 43 ml (1.5 oz) of spirits, or a 142 ml (5 oz) glass of unfortified wine. They all contain the same amount of alcohol, so 'only having beer' offers no protection.",
+    "incorrectChoiceExplanations": [
+      null,
+      "One beer equals one standard glass of wine, not two.",
+      "One glass of wine equals about one shot of spirits, not three.",
+      "The alcohol content of a standard serving is the same for all three."
+    ],
+    "difficulty": "medium",
+    "tags": ["impairment", "alcohol"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch6", "chapter": "Chapter 6", "page": "p. 154" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-impair-006",
+    "type": "rules",
+    "topic": "impairment",
+    "subtopic": "first offence penalties",
+    "question": "For a first impaired-driving conviction in Nova Scotia, how long are driving privileges revoked?",
+    "choices": [
+      "One year from the date of conviction",
+      "Three months from the date of conviction",
+      "Three years from the date of conviction",
+      "Until the fine is paid"
+    ],
+    "correctChoice": 0,
+    "explanation": "A first impaired-driving offence carries applicable fines and revocation of driving privileges for one year from the date of conviction, plus reinstatement fees and completion of an Alcohol Assessment Program with Addiction Services. A second offence carries a three-year revocation.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The three-month figure is the immediate administrative suspension under the Administrative Licence Suspension Program, which is separate from the revocation on conviction.",
+      "Three years applies to a second offence.",
+      "Paying the fine does not restore driving privileges."
+    ],
+    "difficulty": "medium",
+    "tags": ["impairment", "alcohol", "penalties"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch6", "chapter": "Chapter 6", "page": "p. 157" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-impair-007",
+    "type": "rules",
+    "topic": "impairment",
+    "subtopic": "drug impairment",
+    "question": "Which of these can impair your ability to drive?",
+    "choices": [
+      "Prescription medicines, non-prescription medicines, herbal remedies and illegal drugs",
+      "Only illegal drugs",
+      "Only alcohol",
+      "Only medicines that carry a formal warning label"
+    ],
+    "correctChoice": 0,
+    "explanation": "Impairment can be caused by prescription and non-prescription medications, herbal remedies, illegal drugs or other substances. Pain killers, antidepressants, anti-nausea medicines, antihistamines, sedatives and muscle relaxants are among the drugs that may affect driving skills. Drinking in combination with drugs can cause serious impairment.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Ordinary over-the-counter medicines such as antihistamines can impair driving.",
+      "It is an offence to operate or have care or control of a motor vehicle while impaired by alcohol OR drugs.",
+      "The absence of a warning label does not mean a substance is safe to drive on — ask your pharmacist when in doubt."
+    ],
+    "difficulty": "easy",
+    "tags": ["impairment", "drugs"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch6", "chapter": "Chapter 6", "page": "pp. 155-156" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-impair-008",
+    "type": "rules",
+    "topic": "impairment",
+    "subtopic": "distracted driving",
+    "question": "Which use of a communications device is permitted while you are driving?",
+    "choices": [
+      "Using a hand-held phone to report an immediate emergency situation",
+      "Reading a text message while stopped at a red light",
+      "Making a short hand-held call in slow-moving traffic",
+      "Sending a text message using voice dictation while holding the phone"
+    ],
+    "correctChoice": 0,
+    "explanation": "It is an offence to use a hand-held cellular telephone or engage in text messaging on any communications device while operating a vehicle. The one exception is using a hand-held phone or other communications device to report an immediate emergency situation.",
+    "incorrectChoiceExplanations": [
+      null,
+      "You are still operating the vehicle when stopped in traffic; the exception is limited to emergencies.",
+      "The length of the call and the speed of traffic make no difference.",
+      "Holding the device is the problem, whatever method you use to compose the message."
+    ],
+    "difficulty": "medium",
+    "tags": ["distracted driving", "cell phones"],
+    "sourceRefs": [
+      { "sourceId": "ns-mva", "section": "s.100D(1), s.100D(2)", "note": "Point table s.279 item 15 assigns 4 demerit points" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-impair-010",
+    "type": "rules",
+    "topic": "impairment",
+    "subtopic": "distracted driving",
+    "question": "According to the Driver's Handbook, what is the most common cause of highway crashes in Nova Scotia?",
+    "choices": [
+      "Driver inattention — followed by failure to yield the right of way and then driver distraction",
+      "Alcohol",
+      "Operating too fast for the conditions",
+      "Poor weather and road conditions"
+    ],
+    "correctChoice": 0,
+    "explanation": "The handbook lists the most common causes of highway crashes in Nova Scotia in order of frequency: driver inattention first, then failure to yield the right of way, then driver distraction, followed by driver inexperience, alcohol, and operating too fast for the conditions. Weather and road conditions are not on the list — driver behaviour is the common thread.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Alcohol is a listed cause, but it is not the first one.",
+      "Operating too fast for the conditions is a listed cause, but it appears last in the handbook's list, not first.",
+      "Weather is not among the listed causes; every item on the handbook's list is a driver error."
+    ],
+    "difficulty": "medium",
+    "tags": ["driver distraction", "inattention", "crash causes"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 126" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-impair-011",
+    "type": "rules",
+    "topic": "impairment",
+    "subtopic": "distracted driving",
+    "question": "In its advice for avoiding collisions, what does the Driver's Handbook say about driver distraction?",
+    "choices": [
+      "Resist the temptation to become a spectator while you are driving",
+      "Keep the radio loud enough to stay alert",
+      "Use your phone only when you are stopped in traffic",
+      "Warn other drivers before you take your attention off the road"
+    ],
+    "correctChoice": 0,
+    "explanation": "For driver distraction, the handbook's solution is to resist the temptation to become a spectator. It also tells you to avoid distractions and to perform safety scans continuously — scanning in every direction for potential problems is your best defence.",
+    "incorrectChoiceExplanations": [
+      null,
+      "A loud radio is itself a distraction and masks the sounds you need to hear.",
+      "Hand-held phone use is an offence except to report an immediate emergency, and you are still operating the vehicle when stopped in traffic.",
+      "Attention cannot be shared — if your attention is not on the road you are no longer driving safely."
+    ],
+    "difficulty": "medium",
+    "tags": ["driver distraction", "safety", "cell phones"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 126" },
+      { "sourceId": "ns-handbook-ch1", "chapter": "Chapter 1", "page": "p. 11" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-impair-009",
+    "type": "rules",
+    "topic": "impairment",
+    "subtopic": "fatigue",
+    "question": "You are tired on a long drive home from Cape Breton. Which of these is specifically warned against?",
+    "choices": [
+      "Using cruise control while overtired",
+      "Opening a window for fresh air",
+      "Taking a one-to-two-minute walking break every hour",
+      "Keeping the temperature in your vehicle cool"
+    ],
+    "correctChoice": 0,
+    "explanation": "Never use cruise control when you are overtired — it removes one of the tasks keeping you engaged and makes it easier to drift off. You must be mentally alert and prepared to react in an instant. Cool temperatures, regular short breaks and keeping your mind active all help prevent highway hypnosis.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Fresh air is one of the ways to stay alert.",
+      "A one-to-two-minute walking break every hour is exactly what the handbook recommends.",
+      "Keeping the vehicle cool is recommended — a warm cabin makes you drowsy."
+    ],
+    "difficulty": "medium",
+    "tags": ["fatigue", "highway hypnosis"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch6", "chapter": "Chapter 6", "page": "p. 163" },
+      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 128" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-gdl-001",
+    "type": "rules",
+    "topic": "graduated-licensing",
+    "subtopic": "learner restrictions",
+    "question": "You hold a Class 7 learner's licence. Who may be in the vehicle with you?",
+    "choices": [
+      "An experienced supervising driver in the front passenger seat, and no other passengers",
+      "Any licensed driver in any seat, plus up to three passengers",
+      "An experienced driver in the front seat, plus family members in the rear",
+      "Anyone, as long as the supervising driver is over 25"
+    ],
+    "correctChoice": 0,
+    "explanation": "While you hold a learner's licence you must drive with an experienced driver in the front seat of the vehicle and no other passengers. An experienced driver is someone who has held a valid driver's licence for two years and is no longer in the GDL program.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The supervising driver must be in the front passenger seat, and no other passengers are permitted.",
+      "The 'no other passengers' rule has no exception for family.",
+      "The qualification is two years of licensed experience and no longer being in the GDL program — not an age."
+    ],
+    "difficulty": "easy",
+    "tags": ["GDL", "learner", "class 7"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch1", "chapter": "Chapter 1", "page": "pp. 10, 20" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-gdl-002",
+    "type": "rules",
+    "topic": "graduated-licensing",
+    "subtopic": "supervising driver",
+    "question": "Who is qualified to supervise you while you drive on a Class 7 learner's licence?",
+    "choices": [
+      "Someone who has held a valid driver's licence for two years and is no longer in the GDL program",
+      "Anyone who holds a full driver's licence, regardless of how long they have held it",
+      "Anyone aged 21 or over with a licence",
+      "A newly licensed (Class 5N) driver with two years' experience"
+    ],
+    "correctChoice": 0,
+    "explanation": "An experienced licensed driver who has had at least two years of driving experience and is not currently in the GDL program can teach you to drive. They must hold a valid Class 1, 2, 3, 4 or 5 licence for the type of vehicle being operated, and must be seated in the front passenger seat.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Two years of licensed experience is required.",
+      "Age alone does not qualify a supervising driver.",
+      "A Class 5N holder is still in the GDL program and cannot supervise. Nor can a driver in the restricted individual stage."
+    ],
+    "difficulty": "medium",
+    "tags": ["GDL", "learner", "class 7"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch1", "chapter": "Chapter 1", "page": "pp. 10, 20, 35" },
+      { "sourceId": "ns-handbook-intro-amendments", "page": "p. V", "note": "Restricted individuals cannot be a supervising driver" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-gdl-003",
+    "type": "rules",
+    "topic": "graduated-licensing",
+    "subtopic": "learner blood alcohol",
+    "question": "What blood-alcohol level must a Class 7 learner maintain while driving?",
+    "choices": [
+      "Zero",
+      "Below .05",
+      "Below .08",
+      "The same limit as any other driver"
+    ],
+    "correctChoice": 0,
+    "explanation": "While you hold a learner's licence, your blood-alcohol level must remain at zero. That means absolutely no drinking when driving. The zero requirement continues through the newly licensed and restricted individual stages of the GDL program.",
+    "incorrectChoiceExplanations": [
+      null,
+      ".05 is where the roadside screening device registers a 'warn' for fully licensed drivers.",
+      ".08 is the criminal threshold for drivers generally, not for novice drivers.",
+      "Novice drivers are held to a stricter standard than fully licensed ones."
+    ],
+    "difficulty": "easy",
+    "tags": ["GDL", "learner", "alcohol"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch1", "chapter": "Chapter 1", "page": "p. 10" },
+      { "sourceId": "ns-mva", "section": "s.100A(1)", "note": "Consumption of alcohol by novice drivers — concentration exceeding zero" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-gdl-004",
+    "type": "rules",
+    "topic": "graduated-licensing",
+    "subtopic": "learner licence validity",
+    "question": "For how long is a Class 7 learner's licence valid?",
+    "choices": [
+      "A maximum of 2 years",
+      "A maximum of 1 year",
+      "A maximum of 5 years",
+      "Until you turn 18"
+    ],
+    "correctChoice": 0,
+    "explanation": "A learner's licence is valid for a maximum of 2 years. You must pass the road test to enter the next GDL stage before your learner's licence expires; if you do not, you must rewrite the learner's test before you may renew it.",
+    "incorrectChoiceExplanations": [
+      null,
+      "One year was the previous rule. The official amendment pages published with the handbook changed it to 2 years, and the amendment takes precedence over the older chapter text.",
+      "Five years is the renewal period for a full driver's licence.",
+      "The validity period does not depend on your age."
+    ],
+    "difficulty": "medium",
+    "tags": ["GDL", "learner", "class 7"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-intro-amendments", "page": "p. VI", "note": "Learner's Licence Expiry — 2 years (previously 1 year)" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-gdl-005",
+    "type": "rules",
+    "topic": "graduated-licensing",
+    "subtopic": "road test waiting period",
+    "question": "How long must a learner normally wait before taking the road test, and how can that be shortened?",
+    "choices": [
+      "Six months, reduced to three months by completing an approved driver-training course of at least 25 hours classroom and 10 hours driving",
+      "Three months, with no way to shorten it",
+      "One year, reduced to six months with driver training",
+      "There is no waiting period once you feel ready"
+    ],
+    "correctChoice": 0,
+    "explanation": "Learners normally have to wait at least six months before taking a road test. You may shorten this to three months by completing an approved driver-training program with a minimum of 25 hours of classroom theory and 10 hours of driving time.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Three months is the reduced period available after driver training, not the default.",
+      "The default wait is six months, not a year.",
+      "There is a mandatory minimum waiting period in the GDL program."
+    ],
+    "difficulty": "medium",
+    "tags": ["GDL", "learner", "road test"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch1", "chapter": "Chapter 1", "page": "pp. 12-13, 20" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-gdl-006",
+    "type": "rules",
+    "topic": "graduated-licensing",
+    "subtopic": "learner demerit points",
+    "question": "How many demerit points will result in a six-month suspension for a Class 7 learner?",
+    "choices": ["Four or more", "Six or more", "Ten or more", "Two or more"],
+    "correctChoice": 0,
+    "explanation": "As a learner, if you get four or more demerit points your driving privileges will be suspended for six months. The suspension delays your road test and your move to the newly licensed stage. Newly licensed (Class 5N) drivers are suspended at six points, and other drivers at ten.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Six points is the suspension threshold for a newly licensed driver.",
+      "Ten points is the threshold for fully licensed drivers.",
+      "Two points triggers a warning letter for a learner, not a suspension."
+    ],
+    "difficulty": "medium",
+    "tags": ["GDL", "learner", "demerit points"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch1", "chapter": "Chapter 1", "page": "pp. 10, 30" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-gdl-007",
+    "type": "rules",
+    "topic": "graduated-licensing",
+    "subtopic": "learner prohibitions",
+    "question": "What may a Class 7 learner NOT do on a public road?",
+    "choices": [
+      "Drive a motorcycle or a farm tractor, except when being examined by an examiner",
+      "Drive after dark",
+      "Drive on a 100-series highway",
+      "Drive outside the county where the licence was issued"
+    ],
+    "correctChoice": 0,
+    "explanation": "It is illegal for a licensed learner to drive a motorcycle or a farm tractor on a public road except when being examined by an examiner. The learner-stage restrictions are the supervising-driver requirement, the no-other-passengers rule, and zero blood alcohol.",
+    "incorrectChoiceExplanations": [
+      null,
+      "There is no night-time curfew at the learner stage; the midnight-to-5 am curfew applies to newly licensed (Class 5N) drivers.",
+      "There is no restriction on which highways a GDL driver may use.",
+      "A Nova Scotia licence is valid throughout the province."
+    ],
+    "difficulty": "hard",
+    "tags": ["GDL", "learner", "class 7"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch1", "chapter": "Chapter 1", "page": "pp. 10, 20" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-gdl-008",
+    "type": "rules",
+    "topic": "graduated-licensing",
+    "subtopic": "dual-control exemption",
+    "question": "When may there be additional people in the vehicle beyond the supervising driver while a learner is driving?",
+    "choices": [
+      "In a dual-control vehicle with an approved instructor, up to three students may sit in the back seat",
+      "Whenever the learner's parent is the supervising driver",
+      "Whenever the extra passengers are also learners",
+      "Never, without exception"
+    ],
+    "correctChoice": 0,
+    "explanation": "There are two exemptions from the no-other-passengers rule: more than one Driver Enhancement Officer may be in a vehicle driven by a learner, and where a licensed learner is driving a vehicle equipped with dual control brakes accompanied by an instructor approved by the province, there may be up to three students in the back seat.",
+    "incorrectChoiceExplanations": [
+      null,
+      "A parent supervising does not create an exemption for other passengers.",
+      "Other learners are still passengers.",
+      "There are narrow exemptions, listed in the handbook."
+    ],
+    "difficulty": "hard",
+    "tags": ["GDL", "learner", "driving school"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch1", "chapter": "Chapter 1", "page": "p. 20" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-gdl-009",
+    "type": "rules",
+    "topic": "graduated-licensing",
+    "subtopic": "newly licensed curfew",
+    "question": "A newly licensed (Class 5N) driver is subject to a curfew. What are the hours and the exception?",
+    "choices": [
+      "No driving between midnight and 5:00 am, unless accompanied by an experienced driver in the front seat or exempted by the Registry of Motor Vehicles",
+      "No driving between 11:00 pm and 6:00 am, with no exceptions",
+      "No driving between midnight and 5:00 am, with no exceptions",
+      "There is no curfew at the newly licensed stage"
+    ],
+    "correctChoice": 0,
+    "explanation": "A Class 5N driver cannot drive between midnight and 5:00 am unless accompanied by an experienced driver who has held a Class 5 licence for at least two years and is not still in the GDL system — seated in the front seat — or unless exempted by the Registry of Motor Vehicles. Drivers who must travel to and from work in those hours can apply for an exemption, for a fee.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The curfew runs from midnight to 5:00 am.",
+      "There are two exceptions: an accompanying experienced driver, and an official exemption.",
+      "The curfew is one of the three main Class 5N restrictions."
+    ],
+    "difficulty": "medium",
+    "tags": ["GDL", "newly licensed", "curfew"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch1", "chapter": "Chapter 1", "page": "pp. 16-17, 21-22" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-gdl-010",
+    "type": "rules",
+    "topic": "graduated-licensing",
+    "subtopic": "newly licensed passengers",
+    "question": "How many passengers may a newly licensed (Class 5N) driver carry?",
+    "choices": [
+      "Only one passenger in the front seat, and no more rear-seat passengers than there are seat belts",
+      "Only one passenger in total",
+      "As many as the vehicle seats",
+      "No passengers at all"
+    ],
+    "correctChoice": 0,
+    "explanation": "A Class 5N driver may transport only one passenger in the front seat, and only as many rear-seat passengers as there are seat belts. For trucks, only one passenger is allowed in the front seat.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Rear-seat passengers are permitted up to the number of available seat belts.",
+      "The front seat is limited to one passenger regardless of how many the vehicle seats.",
+      "The no-passengers rule applies to the learner stage, not the newly licensed stage."
+    ],
+    "difficulty": "medium",
+    "tags": ["GDL", "newly licensed", "passengers"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch1", "chapter": "Chapter 1", "page": "pp. 16, 20-21" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-gdl-011",
+    "type": "rules",
+    "topic": "graduated-licensing",
+    "subtopic": "highways",
+    "question": "May a driver in the Graduated Driver Licensing program drive on 100-series highways?",
+    "choices": [
+      "Yes — there is no restriction on which highways you may use",
+      "No — GDL drivers are prohibited from 100-series highways",
+      "Only with a supervising driver, at any GDL stage",
+      "Only during daylight hours"
+    ],
+    "correctChoice": 0,
+    "explanation": "There is no restriction on which highways a GDL driver may use. A learner must still have a supervising driver in the front seat and no other passengers, and a Class 5N driver is still subject to the curfew and passenger limits — but the road itself is not restricted.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Some jurisdictions restrict novice drivers from freeways; Nova Scotia does not.",
+      "The supervising-driver requirement is a learner-stage rule, not a highway rule.",
+      "There is no daylight-only restriction tied to highway type."
+    ],
+    "difficulty": "medium",
+    "tags": ["GDL", "highways"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch1", "chapter": "Chapter 1", "page": "p. 20" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-gdl-012",
+    "type": "rules",
+    "topic": "graduated-licensing",
+    "subtopic": "restricted individual stage",
+    "question": "How many stages does the Nova Scotia Graduated Driver Licensing program now have?",
+    "choices": [
+      "Three: the learner's stage, the newly licensed stage, and the restricted individual stage",
+      "Two: the learner's stage and the newly licensed stage",
+      "Four, including a probationary stage",
+      "One, for drivers under 18 only"
+    ],
+    "correctChoice": 0,
+    "explanation": "On 1 April 2015 a third stage was added to the GDL program, called the restricted individual stage (Class 5R or 6R with condition 47). The three stages are the learner's licence stage, the newly licensed stage, and the restricted individual stage.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Two stages was the arrangement before 1 April 2015. The chapter text of the handbook still describes it that way; the official amendment pages supersede it.",
+      "A probationary licence exists, but it is issued after a demerit-point suspension and is not a GDL stage.",
+      "The GDL program applies to all new drivers, whatever their age."
+    ],
+    "difficulty": "medium",
+    "tags": ["GDL", "restricted individual"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-intro-amendments", "page": "p. V", "note": "Third stage added effective 2015-04-01" },
+      { "sourceId": "ns-handbook-landing", "note": "Amendment: Restricted Individual stage" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-gdl-013",
+    "type": "rules",
+    "topic": "graduated-licensing",
+    "subtopic": "restricted individual stage",
+    "question": "What restrictions apply during the restricted individual stage (Class 5R with condition 47)?",
+    "choices": [
+      "Zero alcohol or drugs in your body while driving, and you cannot act as a supervising driver",
+      "A midnight-to-5 am curfew and a one-passenger limit",
+      "No driving on 100-series highways",
+      "No restrictions — the stage is a formality"
+    ],
+    "correctChoice": 0,
+    "explanation": "In the restricted individual stage you must comply with two restrictions: zero alcohol or drugs in your body while driving, and you cannot be a supervising driver — you cannot teach someone to drive or supervise a newly licensed driver during the midnight-to-5 am curfew hours. You remain in this stage for 2 full years.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The curfew and passenger limits belong to the newly licensed (Class 5N) stage.",
+      "No GDL stage restricts which highways you may use.",
+      "The stage carries two real restrictions and lasts two full years."
+    ],
+    "difficulty": "hard",
+    "tags": ["GDL", "restricted individual"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-intro-amendments", "page": "p. V" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-gdl-014",
+    "type": "rules",
+    "topic": "graduated-licensing",
+    "subtopic": "eligibility",
+    "question": "What is the minimum age to apply for a Class 7 learner's licence in Nova Scotia, and what else is needed at that age?",
+    "choices": [
+      "16, with written consent from a parent or guardian if you are 16 or 17",
+      "16, with no additional requirement",
+      "18, with no exceptions",
+      "17, with written consent from a parent or guardian"
+    ],
+    "correctChoice": 0,
+    "explanation": "Any resident of Nova Scotia who is at least 16 years old may apply. If you are under 18 you must have written permission through a signed consent form, available from any Registry of Motor Vehicles or Access Nova Scotia office.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Written consent is required for applicants who are 16 or 17.",
+      "18 is the age at which no consent is needed, not the minimum age to apply.",
+      "The minimum age is 16, not 17."
+    ],
+    "difficulty": "easy",
+    "tags": ["GDL", "learner", "eligibility", "class 7"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch1", "chapter": "Chapter 1", "page": "pp. 6-7" },
+      { "sourceId": "ns-class7-test-page", "note": "Eligibility: you're 16 or older; written consent if 16 or 17" },
+      { "sourceId": "ns-reg-classification-drivers-licences", "section": "Class 7", "note": "Age 18 (16 with parental or guardian consent)" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-gdl-015",
+    "type": "rules",
+    "topic": "graduated-licensing",
+    "subtopic": "vision standards",
+    "question": "What vision standard must an applicant for a Class 7 licence meet?",
+    "choices": [
+      "Visual acuity of at least 20/40 (6/12) in at least one eye and a field of vision of at least 120 degrees with both eyes open",
+      "Visual acuity of at least 20/20 in both eyes",
+      "Visual acuity of at least 20/50 in the poorest eye and 20/30 in the better eye",
+      "There is no vision requirement for a learner's licence"
+    ],
+    "correctChoice": 0,
+    "explanation": "Applicants for Class 3, 5, 6, 7 and 8 licences must have visual acuity of not less than 20/40 (6/12) in at least one eye and a field of vision of not less than 120 degrees with both eyes open and examined together. If you can only pass using corrective lenses, your licence is issued with a condition requiring you to wear them.",
+    "incorrectChoiceExplanations": [
+      null,
+      "20/20 vision is not required for any class of licence.",
+      "The 20/50 and 20/30 figures are the higher standard for Class 1, 2 and 4 licences.",
+      "You must complete and pass a vision test to get your learner's licence."
+    ],
+    "difficulty": "hard",
+    "tags": ["GDL", "vision", "class 7"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch6", "chapter": "Chapter 6", "page": "p. 162" },
+      { "sourceId": "ns-handbook-ch1", "chapter": "Chapter 1", "page": "pp. 8-9" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-gdl-016",
+    "type": "rules",
+    "topic": "graduated-licensing",
+    "subtopic": "visitors",
+    "question": "You have just moved to Halifax with a valid driver's licence from another province. How long may you drive before you need a Nova Scotia licence?",
+    "choices": [
+      "Up to 90 days, provided you are at least 16 years old",
+      "Up to 30 days",
+      "Up to one year",
+      "You must exchange the licence before driving at all"
+    ],
+    "correctChoice": 0,
+    "explanation": "If you are a visitor to Nova Scotia or a new resident you can drive in the province for up to 90 days without getting a Nova Scotia driver's licence, provided you have a valid licence from another jurisdiction and are at least 16 years old. Note that if you have actually moved here, out-of-province licence plates are only good for 30 days.",
+    "incorrectChoiceExplanations": [
+      null,
+      "30 days is the period for driving with out-of-province plates after you move, which is a separate rule from the licence.",
+      "The licence period is 90 days, not a year.",
+      "A valid out-of-jurisdiction licence lets you drive for the first 90 days."
+    ],
+    "difficulty": "medium",
+    "tags": ["licensing", "new residents", "halifax"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch1", "chapter": "Chapter 1", "page": "p. 4" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-gdl-017",
+    "type": "rules",
+    "topic": "graduated-licensing",
+    "subtopic": "carrying your licence",
+    "question": "What must you do with your learner's licence while operating a motor vehicle?",
+    "choices": [
+      "Always carry it with you",
+      "Leave it at home so it cannot be lost",
+      "Keep it in the glove compartment of the vehicle you learned in",
+      "Carry a photocopy of it"
+    ],
+    "correctChoice": 0,
+    "explanation": "Remember to always carry your learner's licence with you when you are operating a motor vehicle. Driving without your licence in your possession is a violation of the Motor Vehicle Act.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The licence must be on your person when you drive.",
+      "The licence belongs with the driver, not with a particular vehicle.",
+      "A photocopy is not the licence."
+    ],
+    "difficulty": "easy",
+    "tags": ["GDL", "learner", "class 7"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch1", "chapter": "Chapter 1", "page": "pp. 9, 21" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-gdl-018",
+    "type": "rules",
+    "topic": "graduated-licensing",
+    "subtopic": "upgrading",
+    "question": "At which GDL stage may you first apply to upgrade to a higher class of licence (Class 1-4)?",
+    "choices": [
+      "The restricted individual stage",
+      "The learner's stage",
+      "The newly licensed stage",
+      "Only after leaving the GDL program entirely"
+    ],
+    "correctChoice": 0,
+    "explanation": "An upgrade to a higher licence class (1-4) is not allowed while you are a learner or a newly licensed driver. However, you can upgrade your licence while in the restricted individual stage.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Upgrades are barred at the learner stage.",
+      "Upgrades are barred at the newly licensed stage — this was the rule before the restricted individual stage was added.",
+      "The amendment specifically permits upgrading during the restricted individual stage, before you exit the program."
+    ],
+    "difficulty": "hard",
+    "tags": ["GDL", "restricted individual", "licence classes"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-intro-amendments", "page": "p. V", "note": "No upgrade while a learner or Newly Licensed Driver" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  }
+]

@@ -1,0 +1,839 @@
+[
+  {
+    "id": "signs-wz-001",
+    "type": "sign",
+    "topic": "signs-work-zone",
+    "subtopic": "work zone colour",
+    "question": "What colour marks a work zone sign?",
+    "choices": [
+      "Orange, with messages in black letters",
+      "Yellow, with messages in black letters",
+      "Red, with messages in white letters",
+      "Green, with messages in white letters"
+    ],
+    "correctChoice": 0,
+    "explanation": "Work zones are usually marked with orange warning signs. The orange signs with messages in black letters identify work zones and direct drivers as they travel through them. When you see these signs, go on high alert and follow their directions.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Yellow signs are permanent warning signs.",
+      "Red with white lettering is used for stop signs and prohibitions.",
+      "Green with white lettering is used for guidance signs."
+    ],
+    "difficulty": "easy",
+    "tags": ["work zone", "sign design", "colours"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 94" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-wz-002",
+    "type": "sign",
+    "topic": "signs-work-zone",
+    "subtopic": "human activity signs",
+    "question": "This sign shows a worker and has small orange flags at its lower corners. What does that combination tell you?",
+    "signId": "wz-workers-ahead",
+    "choices": [
+      "Workers are present on the site right now and are at risk of being struck",
+      "Work is scheduled to begin at this location next week",
+      "The work zone has ended",
+      "A survey crew is measuring the road"
+    ],
+    "correctChoice": 0,
+    "explanation": "Human activity signs are those with a symbol of a person. They are only used when the workplace is active — people are working and at risk of being struck. Red or orange flags are used on human activity signs when they are displayed close to the ground. Driving mistakes here have the potential to cause fatal injuries to road workers.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Human activity signs are removed or covered when no one is working.",
+      "The end of a work zone is signed END CONSTRUCTION.",
+      "Survey work has its own human activity sign."
+    ],
+    "difficulty": "medium",
+    "tags": ["work zone", "workers"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 97, 101" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-wz-003",
+    "type": "sign",
+    "topic": "signs-work-zone",
+    "subtopic": "traffic control person",
+    "question": "You see this sign approaching a work zone. What should you expect?",
+    "signId": "wz-traffic-control-person",
+    "choices": [
+      "A traffic control person may stop you with a Stop/Slow paddle — adjust your speed gradually to avoid rear-end collisions",
+      "A police checkpoint ahead",
+      "A pedestrian crossing ahead",
+      "A crossing guard for a school ahead"
+    ],
+    "correctChoice": 0,
+    "explanation": "Traffic control persons actively manage traffic past the workplace using Stop/Slow paddles. Traffic may be required to stop, so adjust your speed gradually to avoid rear-end collisions. Respect road workers and follow their directions — you are travelling through their workplace.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Police checkpoints are not signed with orange work-zone signs.",
+      "Pedestrian crossings use a different sign showing a walking figure.",
+      "School crossing guards are associated with school-area signs, not orange work-zone signs."
+    ],
+    "difficulty": "medium",
+    "tags": ["work zone", "traffic control person"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 94, 98, 101" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-wz-004",
+    "type": "sign",
+    "topic": "signs-work-zone",
+    "subtopic": "advance notice",
+    "question": "What does this sign tell you?",
+    "signId": "wz-construction-distance-ahead",
+    "choices": [
+      "Construction activities begin 1.5 km ahead — choose a different route or be prepared for delays",
+      "Construction has finished 1.5 km back",
+      "The speed limit is 1.5 km/h",
+      "The work zone is 1.5 km long"
+    ],
+    "correctChoice": 0,
+    "explanation": "This is an advance temporary condition sign: construction activities will begin 1.5 km ahead. Choose a different route or be prepared for delays. Advance signs with distances are used when drivers need time to prepare for conditions ahead.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The end of a work zone is signed END CONSTRUCTION.",
+      "The figure is a distance, not a speed.",
+      "The distance is to the start of the work, not its length."
+    ],
+    "difficulty": "medium",
+    "tags": ["work zone", "advance warning"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 98" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-wz-005",
+    "type": "sign",
+    "topic": "signs-work-zone",
+    "subtopic": "end construction",
+    "question": "What does this sign mean?",
+    "signId": "wz-end-construction",
+    "choices": [
+      "The road has returned to normal — expect no more impact from road work",
+      "Construction begins at this point",
+      "The road is permanently closed ahead",
+      "Construction is suspended for the day"
+    ],
+    "correctChoice": 0,
+    "explanation": "This sign means the road has returned to normal and you should expect no more impact from road work. Where the end point of a project is obvious, this sign is not often used.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The start of construction is signed with advance temporary condition signs.",
+      "A permanent closure would be signed and barricaded.",
+      "The sign marks the physical end of the work zone, not a schedule."
+    ],
+    "difficulty": "easy",
+    "tags": ["work zone"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 97" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-wz-006",
+    "type": "sign",
+    "topic": "signs-work-zone",
+    "subtopic": "uneven lanes",
+    "question": "What hazard does this work-zone sign warn about?",
+    "signId": "wz-uneven-lanes",
+    "choices": [
+      "A difference in elevation between the lanes — a tyre catching the edge could cause a loss of control",
+      "The road narrows but keeps the same number of lanes",
+      "Loose gravel that may be thrown up by other vehicles",
+      "A steep hill within the work zone"
+    ],
+    "correctChoice": 0,
+    "explanation": "This sign warns of a difference in elevation between the lanes. A tyre catching the edge could cause a vehicle to lose control. Change lanes deliberately and squarely rather than drifting across the lip.",
+    "incorrectChoiceExplanations": [
+      null,
+      "A narrowing without a change in lane count has its own sign.",
+      "Loose or rutted surfaces have a separate road-surface-conditions sign.",
+      "The stepped profile shows a height difference between lanes, not a gradient."
+    ],
+    "difficulty": "hard",
+    "tags": ["work zone", "road surface"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 99" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-wz-007",
+    "type": "sign",
+    "topic": "signs-work-zone",
+    "subtopic": "flashing arrow board",
+    "question": "A flashing light unit at a work zone displays a single arrow pointing right. What does it mean?",
+    "signId": "wz-flashing-arrow-right",
+    "choices": [
+      "The lane ahead is closed or obstructed — move over, passing only on the side the arrow indicates",
+      "Traffic may pass on either side of the unit",
+      "Traffic must stop at the unit",
+      "The unit is in caution mode and no lane is closed"
+    ],
+    "correctChoice": 0,
+    "explanation": "A flashing light unit displaying a left or right arrow means the lane ahead is closed and you will have to move over, or there is an obstruction you will have to drive around. When a single arrow head is displayed, it is safe to pass the unit but only on the side indicated by the arrow.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Passing on either side is safe only when TWO arrow heads are displayed at the same time.",
+      "The unit directs traffic around a closure; it does not require a stop.",
+      "Caution mode is shown by lamps in a straight line or bar — and even then, it does not indicate that it is safe to pass."
+    ],
+    "difficulty": "hard",
+    "tags": ["work zone", "lane closure"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 102-103" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-wz-008",
+    "type": "sign",
+    "topic": "signs-work-zone",
+    "subtopic": "flashing arrow board caution mode",
+    "question": "A flashing light unit shows its lamps in a straight line or bar. What does this 'caution' mode indicate?",
+    "choices": [
+      "A hazard such as a vehicle occupying a lane or workers laying out signs — it does NOT indicate that it is safe to pass",
+      "It is safe to pass on either side",
+      "The lane ahead is closed",
+      "The work zone has ended"
+    ],
+    "correctChoice": 0,
+    "explanation": "Lamps in a straight line or bar is called 'caution' mode. It is used to alert drivers to a hazard, such as a vehicle occupying a lane or workers laying out signs. The unit in caution mode does not indicate that it is safe to pass — drivers must evaluate the situation and decide based on the conditions present.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Two arrow heads displayed together is what indicates it is safe to pass on either side.",
+      "A closed lane is indicated by an arrow, not a bar.",
+      "The end of the work zone is signed END CONSTRUCTION."
+    ],
+    "difficulty": "hard",
+    "tags": ["work zone", "lane closure"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 103" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-wz-009",
+    "type": "sign",
+    "topic": "signs-work-zone",
+    "subtopic": "do not pass in a work zone",
+    "question": "A Do Not Pass sign is posted in a work zone before a merge point. What is its status?",
+    "choices": [
+      "It is a regulatory sign — disobeying it is an offence that warrants a ticket",
+      "It is advisory only within a work zone",
+      "It applies only when workers are present",
+      "It applies only to commercial vehicles"
+    ],
+    "correctChoice": 0,
+    "explanation": "Do Not Pass is used to create an orderly flow of traffic before a merge point, or to prevent passing where it is unsafe. This is a regulatory sign — you must obey its message, and disobeying it is an offence that warrants a ticket. Obeying it at merge points makes work zones safer.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The handbook is explicit that this is a regulatory sign, not advice.",
+      "The prohibition does not depend on whether workers are visible.",
+      "It applies to all drivers."
+    ],
+    "difficulty": "medium",
+    "tags": ["work zone", "passing", "regulatory"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 100" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-wz-010",
+    "type": "sign",
+    "topic": "signs-work-zone",
+    "subtopic": "construction ahead",
+    "question": "What does this sign tell you?",
+    "signId": "wz-construction-ahead",
+    "choices": [
+      "Construction is ahead — prepare for unusual road conditions and traffic moving at different speeds",
+      "Workers are on the site at this moment",
+      "The road ahead is closed to all traffic",
+      "A survey crew is working beside the road"
+    ],
+    "correctChoice": 0,
+    "explanation": "General work-zone signs warn of unusual conditions and prepare you for construction traffic that may be moving at a different speed. They remain in place until the road is returned to normal — unlike human activity signs, which are used only when workers are actually present.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Signs indicating that workers are present carry red or orange flags and are removed when the site is inactive.",
+      "A full closure would be barricaded and signed as such.",
+      "Survey work has its own specific human activity sign."
+    ],
+    "difficulty": "medium",
+    "tags": ["work zone"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 97, 101" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-guide-001",
+    "type": "sign",
+    "topic": "signs-guide",
+    "subtopic": "guide sign design",
+    "question": "What do guidance signs look like, and what do they do?",
+    "signId": "guide-destination",
+    "choices": [
+      "Rectangular, usually green with white letters — they provide information and directions, including route numbers and distances",
+      "Diamond-shaped and yellow — they warn of conditions ahead",
+      "Octagonal and red — they require you to stop",
+      "Rectangular and orange — they mark temporary conditions"
+    ],
+    "correctChoice": 0,
+    "explanation": "Guidance signs are rectangular, usually with a green background and white letters. They provide information and directions, including route numbers and distances. Other signs with different colours guide you to facilities, services and attractions.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Yellow diamonds are warning signs.",
+      "The octagon is reserved for stop signs.",
+      "Orange marks work zones."
+    ],
+    "difficulty": "easy",
+    "tags": ["guide", "sign design", "colours"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 83" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-guide-002",
+    "type": "sign",
+    "topic": "signs-guide",
+    "subtopic": "100-series highways",
+    "question": "What does this route marker tell you about the road?",
+    "signId": "route-102",
+    "choices": [
+      "It is a provincial 100-series highway with controlled access",
+      "It is a municipal street in Halifax",
+      "It is a gravel road maintained seasonally",
+      "It is a private road"
+    ],
+    "correctChoice": 0,
+    "explanation": "Highway 102 is a provincial highway with controlled access, also referred to as a 100-series highway. Access is permitted only at specially designed intersections called interchanges, which is why they need acceleration and deceleration lanes.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Municipal streets are signed with street-name signs.",
+      "Road surface is not indicated by a route marker.",
+      "100-series highways are public provincial roads."
+    ],
+    "difficulty": "easy",
+    "tags": ["guide", "highways", "halifax"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 94" },
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 66" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-guide-003",
+    "type": "sign",
+    "topic": "signs-guide",
+    "subtopic": "other guide colours",
+    "question": "You see a rectangular sign in a colour other than green — for example blue or brown. What is it most likely doing?",
+    "choices": [
+      "Guiding you to facilities, services or attractions",
+      "Warning you of a hazard ahead",
+      "Setting a speed limit for a special zone",
+      "Marking a work zone"
+    ],
+    "correctChoice": 0,
+    "explanation": "Guidance signs are rectangular, usually green with white letters, and give routes, directions and distances. Signs of other colours in the same family guide you to facilities, services and attractions rather than telling you what you must do.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Hazards are warned about with yellow diamonds.",
+      "Speed limits are set on white rectangular regulatory signs.",
+      "Work zones use orange signs."
+    ],
+    "difficulty": "medium",
+    "tags": ["guide", "sign design", "colours"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 83" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-guide-004",
+    "type": "sign",
+    "topic": "signs-guide",
+    "subtopic": "reading a destination sign",
+    "question": "A green sign reads 'Halifax 12 km'. What does the number tell you?",
+    "signId": "guide-destination",
+    "choices": [
+      "The remaining distance to that destination",
+      "The speed limit for the next section of road",
+      "The exit number for Halifax",
+      "The number of the highway you are joining"
+    ],
+    "correctChoice": 0,
+    "explanation": "Guidance signs provide information and directions, including route numbers and distances. On a destination sign the figure beside a place name is how far away it is.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Speed limits appear on white regulatory signs reading MAXIMUM.",
+      "Exit numbers are shown on separate exit signage.",
+      "Route numbers appear inside a shield-shaped route marker."
+    ],
+    "difficulty": "easy",
+    "tags": ["guide", "distances", "halifax"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 83, 94" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-guide-005",
+    "type": "sign",
+    "topic": "signs-guide",
+    "subtopic": "interchanges",
+    "question": "You are approaching an interchange on a controlled-access highway. What will the signs there tell you, and what is always required?",
+    "choices": [
+      "Whether to merge, yield or stop — and in every case you must yield to through traffic until there is a safe gap",
+      "Only the name of the road you are joining; through traffic must make room for you",
+      "The speed you must maintain through the interchange, with no yielding required",
+      "Nothing useful — interchanges are unsigned"
+    ],
+    "correctChoice": 0,
+    "explanation": "Signs will be posted to inform you whether to merge, yield or stop. In all these situations you are required to yield to through traffic until a safe gap can be identified before entering the highway. Give careful attention to the directions on the signs leading up to the interchange.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Traffic already on the highway has priority; you must find the gap.",
+      "Interchange signs govern how you join, not a mandatory speed, and yielding is always required.",
+      "Interchanges are extensively signed precisely because two groups of drivers are changing speed at once."
+    ],
+    "difficulty": "medium",
+    "tags": ["guide", "highways", "merging"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 66" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-lane-001",
+    "type": "sign",
+    "topic": "signs-lane-use",
+    "subtopic": "right turn only",
+    "question": "You are in a lane with this sign posted over it. What must you do at the intersection?",
+    "signId": "lane-right-turn-only",
+    "choices": [
+      "Turn right — you may only turn right from this lane",
+      "Turn right or go straight through",
+      "Turn right only if the light is green",
+      "Merge right before the intersection"
+    ],
+    "correctChoice": 0,
+    "explanation": "A right turn only lane sign indicates to drivers approaching an intersection in the designated lane that they must only turn right from that lane. Going straight from a turn-only lane cuts across drivers who correctly expect you to turn.",
+    "incorrectChoiceExplanations": [
+      null,
+      "A lane permitting both movements would show two arrows.",
+      "The lane restriction applies regardless of the signal.",
+      "The sign governs your movement at the intersection, not a lane change before it."
+    ],
+    "difficulty": "easy",
+    "tags": ["lane use", "turning"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 93" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-lane-002",
+    "type": "sign",
+    "topic": "signs-lane-use",
+    "subtopic": "straight or left",
+    "question": "What movements are permitted from a lane marked with this sign?",
+    "signId": "lane-straight-or-left",
+    "choices": [
+      "Straight through or a left turn",
+      "A left turn only",
+      "Straight through only",
+      "Any movement, including a right turn"
+    ],
+    "correctChoice": 0,
+    "explanation": "This sign indicates to drivers approaching an intersection in the designated lane that they must only proceed straight through or turn left.",
+    "incorrectChoiceExplanations": [
+      null,
+      "A left-turn-only lane would show a single left arrow.",
+      "A straight-only lane would show a single upward arrow.",
+      "A right turn is not among the permitted movements."
+    ],
+    "difficulty": "easy",
+    "tags": ["lane use", "turning"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 93" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-lane-003",
+    "type": "sign",
+    "topic": "signs-lane-use",
+    "subtopic": "two-way left turn lane",
+    "question": "This sign is posted over the centre lane of a multi-lane road. What is that lane for?",
+    "signId": "two-way-left-turn-lane",
+    "choices": [
+      "Left-turning vehicles from both directions only — never for passing",
+      "Passing slower traffic in either direction",
+      "An extra through lane in the direction of heaviest traffic",
+      "Emergency vehicles only"
+    ],
+    "correctChoice": 0,
+    "explanation": "This sign indicates that the designated lane is reserved for left-turning vehicles only, shared by traffic travelling in both directions. Never use this lane to pass or overtake another vehicle, and do not drive in it for an extended distance.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Using it to pass puts you head-on into a driver entering from the other direction.",
+      "That describes a lane controlled by overhead lane-control signals, which is a different arrangement.",
+      "It is not an emergency lane."
+    ],
+    "difficulty": "medium",
+    "tags": ["lane use", "turning"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 87, 93" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-pm-001",
+    "type": "sign",
+    "topic": "pavement-markings",
+    "subtopic": "line colours",
+    "question": "What do yellow lines and white lines each tell you about the traffic beside them?",
+    "choices": [
+      "Yellow lines separate lanes moving in opposite directions; white lines separate lanes moving in the same direction",
+      "Yellow lines separate lanes moving in the same direction; white lines separate opposing traffic",
+      "Yellow lines mark the edge of the road; white lines mark the centre",
+      "The colours are interchangeable and carry no meaning"
+    ],
+    "correctChoice": 0,
+    "explanation": "Yellow lines separate travel lanes moving in opposite directions. White lines separate travel lanes moving in the same direction. Single solid white lines are used as right-edge lines, and single solid yellow lines as left-edge lines on divided highways — so if you see the reverse, you are travelling in the wrong direction.",
+    "incorrectChoiceExplanations": [
+      null,
+      "This reverses the meaning of the two colours.",
+      "Both colours are used for edge lines and for lane separation, depending on the direction of adjacent traffic.",
+      "The colours carry specific, distinct meanings."
+    ],
+    "difficulty": "easy",
+    "tags": ["pavement markings", "lane use"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 84-85" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-pm-002",
+    "type": "sign",
+    "topic": "pavement-markings",
+    "subtopic": "double solid yellow",
+    "question": "What do these pavement markings mean?",
+    "signId": "pm-double-solid-yellow",
+    "choices": [
+      "You cannot cross them to pass in either direction",
+      "Passing with care is permitted in both directions",
+      "Passing is permitted only from the right-hand lane",
+      "The lanes travel in the same direction"
+    ],
+    "correctChoice": 0,
+    "explanation": "When the centre line consists of continuous double solid yellow lines, you cannot cross them to pass in either direction.",
+    "incorrectChoiceExplanations": [
+      null,
+      "That is the meaning of a broken yellow centre line.",
+      "Passing permission depends on which side has the broken line, and here neither does.",
+      "Yellow lines separate traffic moving in opposite directions."
+    ],
+    "difficulty": "easy",
+    "tags": ["pavement markings", "passing"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 84" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-pm-003",
+    "type": "sign",
+    "topic": "pavement-markings",
+    "subtopic": "broken yellow",
+    "question": "What do these pavement markings mean?",
+    "signId": "pm-broken-yellow",
+    "choices": [
+      "Passing with care is permitted in both directions",
+      "Passing is prohibited in both directions",
+      "The road is one-way",
+      "The lane to the right is a turning lane"
+    ],
+    "correctChoice": 0,
+    "explanation": "A yellow dotted or broken line is used as the centre line on a two-lane, two-way road where passing with care is permitted in both directions. 'With care' still means you need clear sight distance and a safe gap.",
+    "incorrectChoiceExplanations": [
+      null,
+      "A prohibition would be shown by a solid line on your side.",
+      "Yellow lines indicate traffic moving in opposite directions, so the road is two-way.",
+      "Turning lanes are marked with arrows and signs."
+    ],
+    "difficulty": "easy",
+    "tags": ["pavement markings", "passing"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 84" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-pm-004",
+    "type": "sign",
+    "topic": "pavement-markings",
+    "subtopic": "solid and broken yellow",
+    "question": "The centre line shows a solid yellow line on your side and a broken yellow line on the other side. May you pass?",
+    "signId": "pm-solid-and-broken-yellow",
+    "choices": [
+      "No — passing with care is permitted only if the broken line is on your side",
+      "Yes, because one of the lines is broken",
+      "Yes, but only if oncoming traffic is not visible",
+      "Yes, if you can complete the pass within 150 metres"
+    ],
+    "correctChoice": 0,
+    "explanation": "On a two-lane road, passing with care is permitted if the broken yellow line is on your side of the centreline markings. A solid line in your lane combined with a broken line in the approaching lane is one of the places the handbook lists where passing is always unsafe and usually illegal.",
+    "incorrectChoiceExplanations": [
+      null,
+      "It matters which side the broken line is on — it grants permission only to the traffic beside it.",
+      "The solid line usually marks a place with inadequate sight distance, which is precisely why you cannot see whether it is clear.",
+      "Distance does not override the marking."
+    ],
+    "difficulty": "medium",
+    "tags": ["pavement markings", "passing"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 84-85" },
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 59" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-pm-005",
+    "type": "sign",
+    "topic": "pavement-markings",
+    "subtopic": "white lines",
+    "question": "What do these pavement markings tell you?",
+    "signId": "pm-white-lane-line",
+    "choices": [
+      "The lanes carry traffic moving in the same direction, and the solid white lines are the road edges",
+      "The lanes carry traffic moving in opposite directions",
+      "Passing is prohibited",
+      "The road is a two-way left turn lane"
+    ],
+    "correctChoice": 0,
+    "explanation": "White lines separate travel lanes moving in the same direction. Single solid white lines are used as right-edge lines along the roadway and for guiding traffic travelling in the same direction.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Opposing traffic is separated by yellow lines.",
+      "A broken white line permits lane changes.",
+      "A two-way left turn lane is marked with double lines and signed with opposing left arrows."
+    ],
+    "difficulty": "medium",
+    "tags": ["pavement markings", "lane use"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 84-85" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-pm-006",
+    "type": "sign",
+    "topic": "pavement-markings",
+    "subtopic": "wrong-way check",
+    "question": "You are driving on a divided highway and notice a solid WHITE line on your left and a solid YELLOW line on your right. What does this tell you?",
+    "choices": [
+      "You are travelling in the wrong direction",
+      "You are in a passing lane",
+      "You are approaching an exit ramp",
+      "You are on a two-way road"
+    ],
+    "correctChoice": 0,
+    "explanation": "Single solid white lines are used as right-edge lines, and single solid yellow lines as left-edge lines on divided highways. If you see the reverse — yellow on your right and white on your left — you are travelling in the wrong direction.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Passing lanes are separated by broken white lines, not identified by edge-line colours.",
+      "Exit ramps are marked with continuity lines, which are wider than regular lane lines.",
+      "Divided highways carry one-way traffic on each roadway."
+    ],
+    "difficulty": "hard",
+    "tags": ["pavement markings", "divided highway", "wrong way"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 85" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-pm-007",
+    "type": "sign",
+    "topic": "pavement-markings",
+    "subtopic": "continuity lines",
+    "question": "What are continuity lines, and where would you see them?",
+    "choices": [
+      "Wider-than-normal lines painted at entry and exit ramps, showing the separation between the through lane and the ramp",
+      "Double yellow lines painted through an intersection",
+      "The lines that mark a pedestrian crosswalk",
+      "The lines that mark parking spaces along a street"
+    ],
+    "correctChoice": 0,
+    "explanation": "Continuity lines are painted on the highway at entry and exit ramps. They indicate the separation between the through lane and the entry or exit ramps, and they are wider than regular lane-separation lines.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Centre lines are not usually carried through an intersection.",
+      "Crosswalks are marked with transverse bars.",
+      "Parking spaces are marked separately and are not continuity lines."
+    ],
+    "difficulty": "hard",
+    "tags": ["pavement markings", "highways"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 86" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-pm-008",
+    "type": "sign",
+    "topic": "pavement-markings",
+    "subtopic": "exceptions",
+    "question": "In which situation do the rules about solid and broken lines NOT apply?",
+    "choices": [
+      "When a vehicle is entering or leaving the highway at a place other than an intersection",
+      "When you are running late",
+      "When there is no oncoming traffic",
+      "When the vehicle ahead is travelling below the speed limit"
+    ],
+    "correctChoice": 0,
+    "explanation": "The rules respecting solid and broken lines do not apply when a vehicle is entering or leaving the highway at a place other than an intersection; when a vehicle is completing a passing manoeuvre begun in accordance with the rules; when the lines are not clearly visible; or when it is reasonable or prudent to drive to the left of the lines because of weather or other conditions.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Being late is never a listed exception to any rule of the road.",
+      "An empty road does not suspend the markings.",
+      "A slow vehicle ahead does not create a right to cross a solid line."
+    ],
+    "difficulty": "hard",
+    "tags": ["pavement markings", "passing"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 85" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-pm-009",
+    "type": "sign",
+    "topic": "pavement-markings",
+    "subtopic": "single solid yellow centre line",
+    "question": "A single solid yellow line marks the centre of a highway. What does it permit?",
+    "choices": [
+      "Passing in either direction when traffic, sight distance and other conditions are ideal",
+      "No passing in either direction under any circumstances",
+      "Passing only from the right-hand side",
+      "Parking along the centre of the road"
+    ],
+    "correctChoice": 0,
+    "explanation": "A single solid yellow line marking the centre of a highway permits passing in either direction when traffic, sight distance, and other conditions are ideal. This is different from a DOUBLE solid yellow line, which you may not cross to pass in either direction.",
+    "incorrectChoiceExplanations": [
+      null,
+      "That is the double solid yellow line.",
+      "Passing is done to the left of the vehicle you are overtaking on a two-lane road.",
+      "Pavement markings do not authorise parking."
+    ],
+    "difficulty": "hard",
+    "tags": ["pavement markings", "passing"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 85" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-pm-010",
+    "type": "sign",
+    "topic": "pavement-markings",
+    "subtopic": "recognising markings",
+    "question": "Which markings tell you that passing with care is permitted in both directions?",
+    "choiceSignIds": [
+      "pm-broken-yellow",
+      "pm-double-solid-yellow",
+      "pm-solid-and-broken-yellow",
+      "pm-white-lane-line"
+    ],
+    "choices": [
+      "A grey road surface with a single dashed yellow line running down the middle.",
+      "A grey road surface with two continuous yellow lines running down the middle.",
+      "A grey road surface with one continuous yellow line and, beside it, a dashed yellow line.",
+      "A grey road surface with a dashed white line between two lanes and solid white edge lines."
+    ],
+    "correctChoice": 0,
+    "explanation": "A broken yellow centre line on a two-lane, two-way road permits passing with care in both directions. The broken line faces both directions of travel equally.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Double solid yellow lines prohibit passing in both directions.",
+      "Where one line is solid and one broken, only the traffic beside the broken line may pass.",
+      "White lines separate traffic moving in the same direction, so they are not centre-line markings at all."
+    ],
+    "difficulty": "medium",
+    "tags": ["pavement markings", "passing", "sign recognition"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 84-85" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  }
+]

@@ -1,0 +1,815 @@
+[
+  {
+    "id": "rules-ped-001",
+    "type": "rules",
+    "topic": "pedestrians-crosswalks",
+    "subtopic": "stopped vehicle at a crosswalk",
+    "question": "The vehicle ahead of you has stopped at a marked crosswalk on Spring Garden Road to let someone cross. What may you do?",
+    "choices": [
+      "Stay behind it — overtaking a vehicle stopped at a crosswalk for a pedestrian is an offence",
+      "Pass on the left if your lane is clear",
+      "Pass on the right if there is a second lane",
+      "Pass slowly once the pedestrian reaches the centre of the road"
+    ],
+    "correctChoice": 0,
+    "explanation": "Do not pass any vehicle that is stopped at a crosswalk to allow a pedestrian to cross. Where a vehicle has stopped at a crosswalk to yield to a pedestrian, it is an offence for a driver approaching from the rear to overtake and pass the stopped vehicle. The stopped vehicle hides the pedestrian from you and you from the pedestrian.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The pedestrian is walking toward your lane, hidden by the stopped vehicle.",
+      "A second lane does not make it legal; the offence is overtaking the stopped vehicle at all.",
+      "The pedestrian is most at risk in the second half of the crossing, which is your half of the road."
+    ],
+    "difficulty": "medium",
+    "tags": ["pedestrians", "crosswalks", "passing", "halifax"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 44" },
+      { "sourceId": "ns-mva", "section": "s.125(2)" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-ped-002",
+    "type": "rules",
+    "topic": "pedestrians-crosswalks",
+    "subtopic": "signal changes mid-crossing",
+    "question": "Your light turns green but a pedestrian is still in the crosswalk finishing their crossing. What must you do?",
+    "choices": [
+      "Allow the pedestrian to complete the crossing safely",
+      "Proceed, because the pedestrian is now crossing against the signal",
+      "Sound your horn to hurry them along",
+      "Move forward slowly until they step out of your lane"
+    ],
+    "correctChoice": 0,
+    "explanation": "If a traffic signal changes to yellow or red while a pedestrian remains in the street, you must allow the pedestrian to complete the crossing safely. If you are moving through an intersection on a green signal, look in all directions to make sure all pedestrians have finished crossing.",
+    "incorrectChoiceExplanations": [
+      null,
+      "A pedestrian who lawfully entered on the walk signal is entitled to finish the crossing.",
+      "The horn is for warning of danger, not for pressuring people out of the road.",
+      "Creeping toward a pedestrian is intimidating and leaves you no room if they stumble."
+    ],
+    "difficulty": "easy",
+    "tags": ["pedestrians", "crosswalks", "signals"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 43" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-ped-003",
+    "type": "rules",
+    "topic": "pedestrians-crosswalks",
+    "subtopic": "turning across a crosswalk",
+    "question": "You are turning right on a green light. A pedestrian steps off the curb into the crosswalk you are about to cross. Who has the right of way?",
+    "choices": [
+      "The pedestrian — those crossing with a green signal have the right of way over all vehicles, including those turning across their path",
+      "You, because you entered the intersection first",
+      "You, because a right turn on green does not need to yield",
+      "Whoever reaches the middle of the crosswalk first"
+    ],
+    "correctChoice": 0,
+    "explanation": "When crossing with a green signal, pedestrians have the right of way over all vehicles, including those turning across the paths of the pedestrians. For right turns you must wait for pedestrians to cross if they are in your path.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Entering the intersection first does not override a pedestrian's right of way in the crosswalk.",
+      "A turning driver crosses the pedestrian's path and must yield.",
+      "Right of way is not a race."
+    ],
+    "difficulty": "easy",
+    "tags": ["pedestrians", "crosswalks", "turning", "right of way"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "pp. 43, 54" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-ped-004",
+    "type": "rules",
+    "topic": "pedestrians-crosswalks",
+    "subtopic": "pedestrian signals",
+    "question": "At an intersection with 'Walk' and 'Don't Walk' signals, which signals must pedestrians obey?",
+    "choices": [
+      "The pedestrian signals, rather than the regular traffic signals",
+      "The regular traffic signals, since they control the intersection",
+      "Whichever signal shows first",
+      "Neither — pedestrians always have the right of way"
+    ],
+    "correctChoice": 0,
+    "explanation": "Where 'Walk' and 'Don't Walk' signals are operating, pedestrians must obey them rather than the regular traffic signals. Pedestrians crossing with the 'Walk' signal have the right of way just as they do while crossing with a green light.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Pedestrian signals exist precisely because pedestrian and vehicle phases are not always the same.",
+      "There is a defined hierarchy: the pedestrian signal governs.",
+      "A pedestrian crossing against the signal does not have the right of way, though drivers must still exercise due care."
+    ],
+    "difficulty": "medium",
+    "tags": ["pedestrians", "signals"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 43" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-ped-005",
+    "type": "rules",
+    "topic": "pedestrians-crosswalks",
+    "subtopic": "crossing outside a crosswalk",
+    "question": "A pedestrian is crossing a Halifax street in the middle of the block, well away from any crosswalk. What is the legal position?",
+    "choices": [
+      "The pedestrian must yield to vehicles on the roadway, but you still have a duty to exercise due care",
+      "The pedestrian has the right of way anywhere on the road",
+      "You may continue at speed, since the pedestrian is at fault",
+      "You must stop and wave the pedestrian across"
+    ],
+    "correctChoice": 0,
+    "explanation": "A pedestrian crossing a roadway at any point other than within a crosswalk must yield the right of way to vehicles on the roadway. That does not relieve a driver of the duty to exercise due care — you are still expected to avoid hitting someone.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Pedestrian priority applies within crosswalks, marked or unmarked.",
+      "Fault does not excuse a driver from the duty of due care.",
+      "Waving pedestrians across can push them into the path of a vehicle in the next lane; slow down and let the situation resolve safely instead."
+    ],
+    "difficulty": "hard",
+    "tags": ["pedestrians", "right of way", "halifax"],
+    "sourceRefs": [
+      { "sourceId": "ns-mva", "section": "s.125(5), s.125(6)" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-ped-006",
+    "type": "rules",
+    "topic": "pedestrians-crosswalks",
+    "subtopic": "divided roadway",
+    "question": "On a road divided into separate roadways by a median, when must you yield to a pedestrian in a crosswalk?",
+    "choices": [
+      "When the pedestrian is lawfully within, or stopped facing, the crosswalk on the roadway you are travelling on",
+      "Only once the pedestrian has crossed the median onto your side",
+      "Whenever a pedestrian is anywhere on the crosswalk, on either roadway",
+      "Only if a pedestrian crosswalk sign is posted"
+    ],
+    "correctChoice": 0,
+    "explanation": "Where traffic is divided into separate roadways by a median, the driver must yield to a pedestrian lawfully within a crosswalk, or stopped facing the crosswalk, on the roadway on which the vehicle is travelling.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The duty arises when the pedestrian is within or stopped facing the crosswalk on your roadway, not only once they have started across it.",
+      "The median divides the crossing into two stages; the duty attaches to your roadway.",
+      "The duty applies at crosswalks whether or not a sign is present."
+    ],
+    "difficulty": "hard",
+    "tags": ["pedestrians", "crosswalks", "divided highway"],
+    "sourceRefs": [
+      { "sourceId": "ns-mva", "section": "s.125(1)(b)" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-school-001",
+    "type": "rules",
+    "topic": "school-zones-and-buses",
+    "subtopic": "school zone speed",
+    "question": "You are driving on a street where the posted limit is 50 km/h and you enter a marked school zone while children are present. What is the maximum speed permitted?",
+    "choices": ["30 km/h", "40 km/h", "50 km/h", "25 km/h"],
+    "correctChoice": 0,
+    "explanation": "When children are present in a school zone it is an offence to drive in excess of 30 km/h where the approaching speed limit is 50 km/h, or 50 km/h where the approaching speed limit is higher than 50 km/h — whatever the time of day.",
+    "incorrectChoiceExplanations": [
+      null,
+      "40 km/h is not one of the school-area limits set by the Motor Vehicle Act.",
+      "50 km/h is the school-area limit only where the approaching limit was higher than 50 km/h.",
+      "25 km/h is not a Nova Scotia school-area limit."
+    ],
+    "difficulty": "easy",
+    "tags": ["school zone", "speed limits"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-landing", "note": "Amendment: school zone speeds" },
+      { "sourceId": "ns-mva", "section": "s.103(2)(a)(i)" },
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 51" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-school-002",
+    "type": "rules",
+    "topic": "school-zones-and-buses",
+    "subtopic": "school zone speed",
+    "question": "A school zone begins on a road where the approaching speed limit is 70 km/h. Children are present. What is the maximum speed in the school zone?",
+    "choices": ["50 km/h", "30 km/h", "70 km/h", "60 km/h"],
+    "correctChoice": 0,
+    "explanation": "Where the speed limit in effect immediately before the start of the school area is greater than 50 km/h, the school-area limit is 50 km/h. The 30 km/h limit applies only where the approaching limit was 50 km/h.",
+    "incorrectChoiceExplanations": [
+      null,
+      "30 km/h applies only where the approaching limit was 50 km/h.",
+      "The whole point of a school area is that the limit is reduced.",
+      "60 km/h is not one of the two school-area limits."
+    ],
+    "difficulty": "medium",
+    "tags": ["school zone", "speed limits"],
+    "sourceRefs": [
+      { "sourceId": "ns-mva", "section": "s.103(2)(a)(ii)" },
+      { "sourceId": "ns-handbook-landing", "note": "Amendment: school zone speeds" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-school-003",
+    "type": "rules",
+    "topic": "school-zones-and-buses",
+    "subtopic": "children present",
+    "question": "The reduced school-area speed limit applies only if a child is present. When is a child deemed to be present?",
+    "choices": [
+      "If a child is outdoors on the highway in the school area, or on land within 30 m of the centre line of the travelled portion of the highway",
+      "Only if a child is actually standing on the roadway",
+      "Only between 8 am and 4 pm on school days",
+      "Only when the school-zone warning lights are flashing"
+    ],
+    "correctChoice": 0,
+    "explanation": "Under the School Areas Regulations, a child is deemed to be present in a school area if a child is outdoors and on the highway in the school area, or on land within 30 m of the centre line of the travelled portion of the highway in the school area. A child in the schoolyard beside the road counts.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Children on land within 30 m of the centre line count too — such as in the schoolyard.",
+      "The school-zone limit applies whatever the time of day, including evenings and weekends.",
+      "Flashing lights are not what triggers the limit; the presence of a child is."
+    ],
+    "difficulty": "hard",
+    "tags": ["school zone", "speed limits", "regulations"],
+    "sourceRefs": [
+      { "sourceId": "ns-reg-school-areas", "citation": "N.S. Reg. 164/2012", "note": "Definition of a child being present" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-school-004",
+    "type": "rules",
+    "topic": "school-zones-and-buses",
+    "subtopic": "school bus red lights",
+    "question": "A school bus ahead of you stops and switches on alternately flashing red lights with its mechanical STOP sign extended. What must you do?",
+    "choices": [
+      "Stop — from behind or in front, on any road, including a road with a divided boulevard",
+      "Stop only if you are approaching from behind the bus",
+      "Slow to 30 km/h and pass carefully",
+      "Stop unless the road has a median separating the directions"
+    ],
+    "correctChoice": 0,
+    "explanation": "Red flashing lights are used when a school bus is stopped to pick up or discharge students. All drivers must halt from behind or in front of the bus. Do not pass a school bus with alternating flashing red lights at any time or place or from either direction, including a divided boulevard.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Drivers approaching from the front must stop too — children cross in front of the bus.",
+      "There is no reduced-speed alternative; you must stop.",
+      "The handbook makes the point explicitly: the rule applies including a divided boulevard."
+    ],
+    "difficulty": "easy",
+    "tags": ["school bus", "stopping"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 68" },
+      { "sourceId": "ns-mva", "section": "s.103(3)", "note": "Point table item 6 — 6 demerit points" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-school-005",
+    "type": "rules",
+    "topic": "school-zones-and-buses",
+    "subtopic": "school bus amber lights",
+    "question": "A school bus ahead of you turns on its amber flashing lights. What do they mean?",
+    "choices": [
+      "The bus is about to stop — passing is still allowed, but use extra caution and watch for the red lights",
+      "You must stop immediately behind the bus",
+      "The bus has broken down and should be passed at speed",
+      "Children are already crossing the road"
+    ],
+    "correctChoice": 0,
+    "explanation": "Amber flashing lights alert you that the bus is about to stop. Passing is allowed, but use extra caution and be alert for the red flashing lights that follow.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The requirement to stop attaches to the red lights and extended STOP sign.",
+      "Amber lights on a school bus signal an upcoming stop, not a breakdown.",
+      "Children board and cross once the bus has stopped and the red lights are on."
+    ],
+    "difficulty": "medium",
+    "tags": ["school bus"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 68" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-school-006",
+    "type": "rules",
+    "topic": "school-zones-and-buses",
+    "subtopic": "when to expect buses",
+    "question": "During which hours does the Driver's Handbook say school buses generally operate, so that drivers should be especially careful?",
+    "choices": [
+      "Roughly 7-9 am and 2-4 pm",
+      "Only between 8 am and 9 am",
+      "Continuously from 7 am to 6 pm",
+      "Only during the afternoon"
+    ],
+    "correctChoice": 0,
+    "explanation": "School buses generally operate around 7-9 am and 2-4 pm. During those hours drivers should be especially careful, because children waiting for the bus or getting off it might dart into the street unexpectedly.",
+    "incorrectChoiceExplanations": [
+      null,
+      "That covers only part of the morning run.",
+      "Buses do not run continuously through the day.",
+      "The morning run is just as busy as the afternoon one."
+    ],
+    "difficulty": "easy",
+    "tags": ["school bus"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 68" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-emerg-001",
+    "type": "rules",
+    "topic": "emergency-vehicles",
+    "subtopic": "approaching from behind",
+    "question": "An ambulance with flashing lights and siren is approaching from behind you. What should you do?",
+    "choices": [
+      "Move to the right edge or curb of the road and stop completely, staying stopped until it has passed",
+      "Speed up to stay ahead of it until you reach a wider section of road",
+      "Move to the left edge of the road and stop",
+      "Continue driving normally so you do not disrupt traffic"
+    ],
+    "correctChoice": 0,
+    "explanation": "As an emergency vehicle approaches from ahead or behind, move to the right edge or curb of the road and stop completely. Remain stopped until the emergency vehicle has passed, or until you are directed to move by a peace officer.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Accelerating keeps you in the emergency vehicle's way and is dangerous.",
+      "Moving left puts you where the emergency vehicle expects a clear path.",
+      "Police cars, ambulances and fire vehicles with flashing lights and sirens have the right of way."
+    ],
+    "difficulty": "easy",
+    "tags": ["emergency vehicles", "right of way"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 45" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-emerg-002",
+    "type": "rules",
+    "topic": "emergency-vehicles",
+    "subtopic": "slow down and move over",
+    "question": "You are driving on a 100 km/h highway and see a police vehicle stopped on the shoulder with its lights flashing. What speed must you not exceed as you pass?",
+    "choices": [
+      "60 km/h",
+      "100 km/h — the posted limit still applies",
+      "80 km/h",
+      "40 km/h"
+    ],
+    "correctChoice": 0,
+    "explanation": "You must not pass a stopped emergency vehicle that is exhibiting a flashing light at more than the posted speed limit or 60 km/h, whichever is less. On a 100 km/h highway that means slowing to 60 km/h.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The slow-down rule overrides the posted limit when it is higher than 60 km/h.",
+      "80 km/h is the default provincial limit but is not the slow-down figure.",
+      "40 km/h is not the figure set by the Motor Vehicle Act; 60 km/h is."
+    ],
+    "difficulty": "medium",
+    "tags": ["emergency vehicles", "speed limits", "move over"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-intro-amendments", "page": "p. VII", "note": "Slow down and move over amendment" },
+      { "sourceId": "ns-mva", "section": "s.106E(1)" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-emerg-003",
+    "type": "rules",
+    "topic": "emergency-vehicles",
+    "subtopic": "slow down and move over",
+    "question": "You are in the right-hand lane of a two-lane-each-way road, approaching a tow truck stopped at a collision with its lights flashing. Besides slowing down, what else must you do?",
+    "choices": [
+      "Move into the other lane farther from the stopped vehicle, if you can do so safely",
+      "Stop completely until the tow truck leaves",
+      "Sound your horn as you pass",
+      "Nothing more — slowing down is the whole requirement"
+    ],
+    "correctChoice": 0,
+    "explanation": "If you are on a road with two or more lanes in your direction, you must also move into another lane farther away from the stopped vehicle if you can do so safely. A tow truck stopped at the scene of a fire or collision, or assisting a vehicle, is covered by this rule.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The rule requires slowing and moving over, not stopping — stopping in a live lane creates a new hazard.",
+      "The horn is not part of this rule and would distract the people working at the scene.",
+      "On a multi-lane road the move-over obligation applies in addition to the speed reduction."
+    ],
+    "difficulty": "medium",
+    "tags": ["emergency vehicles", "move over", "lane use"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-intro-amendments", "page": "p. VII" },
+      { "sourceId": "ns-mva", "section": "s.106F(1)", "note": "s.106D(1)(bb) includes tow trucks at the scene of a fire or accident" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-emerg-004",
+    "type": "rules",
+    "topic": "emergency-vehicles",
+    "subtopic": "divided highway exception",
+    "question": "On a divided highway, when do the slow-down and move-over rules NOT apply to you?",
+    "choices": [
+      "When the stopped emergency vehicle is on the other side of the median",
+      "When you are travelling below the posted speed limit",
+      "When there is only one lane in your direction",
+      "When it is daylight and visibility is good"
+    ],
+    "correctChoice": 0,
+    "explanation": "You do not need to slow down or move over if the emergency vehicle is on the other side of the median on a divided highway. Where traffic is divided into separate roadways by a median, the rule applies only to a vehicle on the same roadway the emergency vehicle is stopped on or beside.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Your speed does not exempt you; the 60 km/h ceiling applies regardless.",
+      "With one lane you cannot move over, but you must still slow down.",
+      "Conditions and time of day make no difference to this rule."
+    ],
+    "difficulty": "hard",
+    "tags": ["emergency vehicles", "move over", "divided highway"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-intro-amendments", "page": "p. VII" },
+      { "sourceId": "ns-mva", "section": "s.106F(2)" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-emerg-005",
+    "type": "rules",
+    "topic": "emergency-vehicles",
+    "subtopic": "following distance",
+    "question": "How closely may you follow an emergency fire vehicle that is responding to a call?",
+    "choices": [
+      "No closer than 150 metres",
+      "No closer than 60 metres",
+      "No closer than 30 metres",
+      "There is no set distance as long as you can stop safely"
+    ],
+    "correctChoice": 0,
+    "explanation": "Never follow an emergency fire vehicle within 150 metres. The same 150-metre distance applies to driving or parking near an emergency vehicle that has stopped to investigate a collision or give assistance.",
+    "incorrectChoiceExplanations": [
+      null,
+      "60 metres is the limit on how closely a commercial vehicle may follow another vehicle, not the fire-vehicle distance.",
+      "30 metres is the distance at which the 50 km/h limit applies when approaching a railway crossing.",
+      "The handbook sets a specific distance: 150 metres."
+    ],
+    "difficulty": "medium",
+    "tags": ["emergency vehicles", "following distance"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 45" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-emerg-006",
+    "type": "rules",
+    "topic": "emergency-vehicles",
+    "subtopic": "fire hoses",
+    "question": "A fire hose is stretched across the road at the scene of a fire. What may you do?",
+    "choices": [
+      "Do not drive over it unless a police officer or firefighter instructs you to",
+      "Drive over it slowly, since hoses are built to take vehicle weight",
+      "Drive over it only if it appears to be empty",
+      "Move it aside yourself and continue"
+    ],
+    "correctChoice": 0,
+    "explanation": "Never drive a motor vehicle over a fire hose unless instructed to do so by a police officer or a firefighter. Damaging a charged hose can cut off water to the crew fighting the fire.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Driving over a hose can damage it and endanger the firefighters relying on it.",
+      "You cannot reliably tell from a vehicle whether a hose is charged.",
+      "Handling fire equipment at an active scene is not a driver's role."
+    ],
+    "difficulty": "easy",
+    "tags": ["emergency vehicles"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 45" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-transit-001",
+    "type": "rules",
+    "topic": "transit-buses",
+    "subtopic": "yielding to a transit bus",
+    "question": "A Halifax Transit bus is stopped at a bus stop on a 50 km/h street and signals its intention to pull back into traffic ahead of you. What must you do?",
+    "choices": [
+      "Yield the right of way to let the bus re-enter the lane, if you can do so safely",
+      "Maintain your speed — buses must wait for a gap like anyone else",
+      "Yield only if the bus has already started moving",
+      "Sound your horn and pass on the left"
+    ],
+    "correctChoice": 0,
+    "explanation": "Where a transit bus is stopped at a bus stop and is signalling its intent to re-enter the flow of traffic, the driver of every other vehicle must yield the right of way to the bus unless the driver cannot yield in safety. The duty applies where the posted speed limit is 60 km/h or less and you are approaching the bus from the rear.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Nova Scotia law reverses the usual rule for prescribed transit buses on roads posted at 60 km/h or less.",
+      "The duty arises once the bus has signalled its intention, not after it has moved.",
+      "Passing defeats the purpose of the rule, which is to let the bus rejoin traffic."
+    ],
+    "difficulty": "medium",
+    "tags": ["transit bus", "right of way", "halifax"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-intro-amendments", "page": "p. VIII" },
+      { "sourceId": "ns-mva", "section": "s.124A(2)" },
+      { "sourceId": "ns-reg-yield-transit-buses", "citation": "N.S. Reg. 163/2011", "note": "Halifax Regional Municipality is a prescribed transit operator" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-transit-002",
+    "type": "rules",
+    "topic": "transit-buses",
+    "subtopic": "when the rule applies",
+    "question": "The duty to yield to a transit bus re-entering traffic applies on roads with what posted speed limit?",
+    "choices": [
+      "60 km/h or less",
+      "Any speed limit",
+      "80 km/h or less",
+      "50 km/h only"
+    ],
+    "correctChoice": 0,
+    "explanation": "You must yield to a transit bus signalling its intent to re-enter traffic whenever the posted speed limit is 60 km/h or less and it is safe to do so. On faster roads the ordinary right-of-way rules apply.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The rule is limited to lower-speed roads, where a merging bus does not create a large speed differential.",
+      "80 km/h is the default provincial limit, not the threshold for this rule.",
+      "The threshold is 60 km/h or less, which includes but is not limited to 50 km/h streets."
+    ],
+    "difficulty": "medium",
+    "tags": ["transit bus", "speed limits"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-intro-amendments", "page": "p. VIII" },
+      { "sourceId": "ns-mva", "section": "s.124A(2)" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-transit-003",
+    "type": "rules",
+    "topic": "transit-buses",
+    "subtopic": "school buses excluded",
+    "question": "Does the rule requiring you to yield to a bus re-entering traffic apply to school buses?",
+    "choices": [
+      "No — the transit bus yield rule does not apply to school buses",
+      "Yes, it applies to every bus on the road",
+      "Yes, but only when the school bus is empty",
+      "Only during school hours"
+    ],
+    "correctChoice": 0,
+    "explanation": "The yield-to-transit-bus rule does not apply to school buses. School buses are governed by their own rules — you must stop for alternately flashing red lights and an extended STOP sign, from either direction.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The rule is limited to prescribed classes of transit bus.",
+      "Whether a school bus is occupied does not bring it within this rule.",
+      "Time of day does not extend the rule to school buses."
+    ],
+    "difficulty": "medium",
+    "tags": ["transit bus", "school bus"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-intro-amendments", "page": "p. VIII", "note": "This rule does not apply to school buses" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-share-001",
+    "type": "rules",
+    "topic": "sharing-the-road",
+    "subtopic": "motorcycles",
+    "question": "How much of a traffic lane is a motorcycle rider entitled to?",
+    "choices": [
+      "A full highway lane",
+      "Half a lane, so a car may share it",
+      "Only the right-hand portion of the lane",
+      "Whatever space is left after larger vehicles have positioned themselves"
+    ],
+    "correctChoice": 0,
+    "explanation": "The driver of a motorcycle is entitled to a full highway lane. This is both a right and a safety precaution — riders need room to move within the lane to avoid hazards. Allow extra space so both of you can react to quick stops.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Sharing a lane with a motorcycle removes the rider's escape room.",
+      "Riders position themselves within the lane according to hazards, traffic and visibility.",
+      "Vehicle size does not reduce another road user's entitlement to a lane."
+    ],
+    "difficulty": "easy",
+    "tags": ["motorcycles", "lane use"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 69" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-share-002",
+    "type": "rules",
+    "topic": "sharing-the-road",
+    "subtopic": "cyclists",
+    "question": "Under the Motor Vehicle Act, what is a cyclist's status on the road?",
+    "choices": [
+      "Cyclists have the same rights and responsibilities as motorists",
+      "Cyclists must always ride on the sidewalk where one exists",
+      "Cyclists have the right of way in every situation",
+      "Cyclists are not bound by traffic signs or signals"
+    ],
+    "correctChoice": 0,
+    "explanation": "According to the Nova Scotia Motor Vehicle Act, cyclists have the same rights and responsibilities as motorists. Riders of bicycles must obey the same traffic rules and regulations that apply to all road users, and motorists must respect a cyclist's right to share the road.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Bicycles are treated as road vehicles, not sidewalk traffic.",
+      "Equal rights are not automatic priority; cyclists yield in the same circumstances a driver would.",
+      "Cyclists must obey signs and signals like any other driver."
+    ],
+    "difficulty": "easy",
+    "tags": ["bicycles", "sharing the road"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "pp. 69-70" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-share-003",
+    "type": "rules",
+    "topic": "sharing-the-road",
+    "subtopic": "right hook",
+    "question": "You are about to turn right and a cyclist is travelling straight ahead in the same direction, close to the curb. What is the safe and correct action?",
+    "choices": [
+      "If it is not safe to pass before turning, slow down and move in behind the cyclist before making the turn",
+      "Accelerate past the cyclist and turn immediately in front of them",
+      "Turn wide from the centre of the road so the cyclist can pass on your right",
+      "Sound your horn so the cyclist stops and lets you turn"
+    ],
+    "correctChoice": 0,
+    "explanation": "This is the 'right hook' collision. Motorists misjudge how fast bicycles travel, pass, and then turn directly across the cyclist's path. Scan the side of the road for cyclists, and if it is not safe to pass before turning, slow down and move behind the cyclist before making the turn. Do not pass and cut.",
+    "incorrectChoiceExplanations": [
+      null,
+      "This is exactly the manoeuvre that causes right-hook collisions. Experienced cyclists travel at 25-35 km/h on the flat.",
+      "Turning wide from the centre invites the cyclist into the space you are about to occupy.",
+      "The horn does not make the manoeuvre safe and may startle the rider into the traffic lane."
+    ],
+    "difficulty": "medium",
+    "tags": ["bicycles", "turning", "sharing the road"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 71" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-share-004",
+    "type": "rules",
+    "topic": "sharing-the-road",
+    "subtopic": "dooring",
+    "question": "You have parked on a Halifax street and are about to open your door into the traffic side. What should you do first?",
+    "choices": [
+      "Look behind you for approaching cyclists and do not open the door unless it is safe",
+      "Open the door quickly so you are exposed for the shortest time",
+      "Open the door a crack and wait for cyclists to go around",
+      "Rely on your side mirror alone"
+    ],
+    "correctChoice": 0,
+    "explanation": "'Getting doored' is one of the common car-bike collisions. When exiting your car, look behind you for approaching cyclists, and do not open your door unless it is safe to do so. Check for traffic before opening your door.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Speed of opening is exactly the problem — a fast-opening door gives a cyclist no time to react.",
+      "A partly open door is still an obstruction that appears without warning.",
+      "A mirror leaves a blind spot; turn and look."
+    ],
+    "difficulty": "easy",
+    "tags": ["bicycles", "parking", "halifax"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "pp. 62, 71" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-share-005",
+    "type": "rules",
+    "topic": "sharing-the-road",
+    "subtopic": "large vehicles",
+    "question": "How closely may the driver of a commercial motor vehicle follow another vehicle on a highway outside a business or residential district?",
+    "choices": [
+      "No closer than 60 metres, except when overtaking and passing",
+      "No closer than 150 metres at all times",
+      "No closer than 30 metres",
+      "There is no specific distance for commercial vehicles"
+    ],
+    "correctChoice": 0,
+    "explanation": "It is illegal for the driver of a commercial motor vehicle to follow within 60 metres of another vehicle. This rule applies when travelling on a highway outside a business or residential district, but does not apply when overtaking and passing another vehicle.",
+    "incorrectChoiceExplanations": [
+      null,
+      "150 metres is the distance for following an emergency fire vehicle.",
+      "30 metres relates to the reduced speed limit approaching a railway crossing.",
+      "The Motor Vehicle Act sets a specific 60-metre distance for commercial vehicles."
+    ],
+    "difficulty": "hard",
+    "tags": ["commercial vehicles", "following distance"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "pp. 67-68" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-share-006",
+    "type": "rules",
+    "topic": "sharing-the-road",
+    "subtopic": "truck blind spots",
+    "question": "What simple check tells you whether the driver of a large truck can see your vehicle?",
+    "choices": [
+      "If you cannot see the truck driver in the truck's side mirror, the driver cannot see you",
+      "If your headlights are reflecting off the trailer, you are visible",
+      "If you are within two car lengths, you are always visible",
+      "If the truck's turn signal is off, the driver has already seen you"
+    ],
+    "correctChoice": 0,
+    "explanation": "Truckers have serious blind spots immediately in front of the cab, on either side, and well behind. The rule of thumb is: if you can't see the truck driver in the truck's side mirror, the trucker can't see you.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Reflections tell you nothing about the driver's line of sight.",
+      "Being close to a truck usually puts you deeper into a blind spot, not out of one.",
+      "A signal not being on is not evidence that the driver has seen you."
+    ],
+    "difficulty": "medium",
+    "tags": ["commercial vehicles", "blind spots"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 138" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-share-007",
+    "type": "rules",
+    "topic": "sharing-the-road",
+    "subtopic": "slow-moving vehicles",
+    "question": "You see an orange triangular slow-moving-vehicle sign on the back of a vehicle ahead. What does it tell you?",
+    "choices": [
+      "The vehicle cannot maintain a speed over 40 km/h under normal conditions, so reduce your speed",
+      "The vehicle is carrying a wide load",
+      "The vehicle is a student driver",
+      "The vehicle is being towed"
+    ],
+    "correctChoice": 0,
+    "explanation": "A slow-moving-vehicle sign must be displayed at the rear of a farm tractor, the load hauled by a tractor, and any other vehicle that cannot maintain a speed over 40 km/h under normal conditions. When you see this sign, reduce your speed.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Wide loads are marked with flashing amber lights and warning signs, not the slow-moving-vehicle triangle.",
+      "There is no such meaning attached to this sign.",
+      "Towing is indicated by warning signals or emergency flashers."
+    ],
+    "difficulty": "medium",
+    "tags": ["slow moving vehicle", "rural"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 129" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  }
+]

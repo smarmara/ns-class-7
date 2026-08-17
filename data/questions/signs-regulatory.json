@@ -1,0 +1,636 @@
+[
+  {
+    "id": "signs-reg-001",
+    "type": "sign",
+    "topic": "signs-regulatory",
+    "subtopic": "stop",
+    "question": "What does this sign require you to do?",
+    "signId": "stop",
+    "choices": [
+      "Come to a complete stop and make sure the way is clear before proceeding",
+      "Slow down and proceed if no traffic is coming",
+      "Stop only if a vehicle or pedestrian is approaching",
+      "Yield to traffic on the right and continue"
+    ],
+    "correctChoice": 0,
+    "explanation": "A stop sign means you must bring your vehicle to a complete stop and be sure the way is clear before proceeding. The eight-sided shape is used only for stop signs, so you can recognise it even from behind or when it is obscured.",
+    "incorrectChoiceExplanations": [
+      null,
+      "A rolling stop is not a stop. The vehicle must come to rest.",
+      "The stop is required every time, regardless of other traffic.",
+      "That describes a yield sign, which is a triangle."
+    ],
+    "difficulty": "easy",
+    "tags": ["regulatory", "stop"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 80" },
+      { "sourceId": "ns-reg-traffic-signs", "citation": "N.S. Reg. 165/2012" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-reg-002",
+    "type": "sign",
+    "topic": "signs-regulatory",
+    "subtopic": "yield",
+    "question": "What must you do when facing this sign?",
+    "signId": "yield",
+    "choices": [
+      "Reduce speed and give the right of way — stopping if necessary — to traffic in or closely approaching the intersection",
+      "Come to a complete stop every time",
+      "Proceed without slowing, as other traffic must give way to you",
+      "Stop and wait for a signal from other drivers"
+    ],
+    "correctChoice": 0,
+    "explanation": "A yield sign means you must reduce speed as you approach the intersection and give the right of way — stopping if necessary — to any other traffic in, or closely approaching, the intersection.",
+    "incorrectChoiceExplanations": [
+      null,
+      "A yield requires a stop only when a stop is necessary to give way safely.",
+      "The obligation to give way is on you.",
+      "You do not need another driver's permission; you need a safe gap."
+    ],
+    "difficulty": "easy",
+    "tags": ["regulatory", "yield"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 80" },
+      { "sourceId": "ns-mva", "section": "s.134(3)" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-reg-003",
+    "type": "sign",
+    "topic": "signs-regulatory",
+    "subtopic": "recognise the stop sign",
+    "question": "Which of these signs requires every driver to bring the vehicle to a complete stop?",
+    "choiceSignIds": ["stop", "yield", "do-not-enter", "no-parking"],
+    "choices": [
+      "An eight-sided sign with a red background and the word STOP in white capital letters.",
+      "A downward-pointing triangle with a red border and a white centre, containing the word YIELD.",
+      "A white rectangular sign containing a red circle with a wide white horizontal bar across it.",
+      "A white sign with the letter P inside a red circle with a red diagonal line through it, and arrows pointing both ways beneath."
+    ],
+    "correctChoice": 0,
+    "explanation": "The octagonal shape is reserved for stop signs alone. That is deliberate: you can identify it by shape at a distance, in poor light, or when snow obscures the lettering.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The triangle is a yield sign — reduce speed and give way, stopping only if necessary.",
+      "The red circle with a white horizontal bar means do not enter.",
+      "The crossed-out P prohibits parking in either direction of the sign."
+    ],
+    "difficulty": "easy",
+    "tags": ["regulatory", "sign recognition", "shapes"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 80, 104" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-reg-004",
+    "type": "sign",
+    "topic": "signs-regulatory",
+    "subtopic": "do not enter",
+    "question": "You are about to turn into a street and see this sign facing you. What does it mean?",
+    "signId": "do-not-enter",
+    "choices": [
+      "Do not enter — you must not drive into this roadway",
+      "The road ahead is closed for construction",
+      "No stopping along this section of road",
+      "Road narrows ahead"
+    ],
+    "correctChoice": 0,
+    "explanation": "This sign means do not enter. It is commonly posted at the exit end of a one-way street or an off-ramp to stop drivers travelling the wrong way.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Construction closures are signed with orange work-zone signs.",
+      "No stopping is shown by a crossed-out S with arrows beneath.",
+      "Road narrows is a yellow diamond warning sign."
+    ],
+    "difficulty": "easy",
+    "tags": ["regulatory", "prohibition", "one-way"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 89" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-reg-005",
+    "type": "sign",
+    "topic": "signs-regulatory",
+    "subtopic": "one way",
+    "question": "What does this sign tell you?",
+    "signId": "one-way",
+    "choices": [
+      "Traffic is allowed to travel only in the direction of the arrow",
+      "The lane ahead ends and you must merge",
+      "Turn right at the next intersection",
+      "Traffic from the right has the right of way"
+    ],
+    "correctChoice": 0,
+    "explanation": "A one-way sign indicates to drivers that traffic is allowed to travel only in the direction of the arrow. Entering against it would put you head-on into oncoming traffic.",
+    "incorrectChoiceExplanations": [
+      null,
+      "A lane ending is shown by a yellow diamond warning sign.",
+      "This is not a direction instruction for your route; it describes how the street operates.",
+      "Right-of-way is not conveyed by a one-way sign."
+    ],
+    "difficulty": "easy",
+    "tags": ["regulatory", "one-way"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 89" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-reg-006",
+    "type": "sign",
+    "topic": "signs-regulatory",
+    "subtopic": "do not pass",
+    "question": "What does this sign mean?",
+    "signId": "do-not-pass",
+    "choices": [
+      "Do not pass",
+      "Passing is permitted",
+      "Two-way traffic ahead",
+      "Merging traffic ahead"
+    ],
+    "correctChoice": 0,
+    "explanation": "Two cars in a red circle with a line through it means do not pass. The red circle with a diagonal slash is the standard way Nova Scotia signs deny permission for a manoeuvre.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Passing permitted is shown by two cars in a GREEN circle with no slash.",
+      "Two-way traffic is a yellow diamond with two opposing arrows.",
+      "Merging is a yellow diamond with two lines joining."
+    ],
+    "difficulty": "easy",
+    "tags": ["regulatory", "prohibition", "passing"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 79, 83, 89" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-reg-007",
+    "type": "sign",
+    "topic": "signs-regulatory",
+    "subtopic": "green circle",
+    "question": "In Nova Scotia sign design, what does a symbol enclosed in a GREEN circle indicate?",
+    "signId": "passing-permitted",
+    "choices": [
+      "Permission — the manoeuvre shown is allowed",
+      "Prohibition — the manoeuvre shown is not allowed",
+      "A warning of a hazard ahead",
+      "Guidance toward a service or facility"
+    ],
+    "correctChoice": 0,
+    "explanation": "Signs with a green circle give permission, as indicated by the symbol inside. Signs with a red circle and a slash deny permission. This sign shows two cars in a green circle, which means passing is permitted.",
+    "incorrectChoiceExplanations": [
+      null,
+      "That is the red circle with a diagonal slash.",
+      "Warnings are yellow diamonds with black symbols.",
+      "Guidance signs are rectangular, usually green with white letters."
+    ],
+    "difficulty": "medium",
+    "tags": ["regulatory", "sign design", "passing"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 79, 83" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-reg-008",
+    "type": "sign",
+    "topic": "signs-regulatory",
+    "subtopic": "no right turn on red",
+    "question": "You are stopped at a red light and see this sign. What must you do?",
+    "signId": "no-right-turn-on-red",
+    "choices": [
+      "Wait for the green light before making your right turn",
+      "Turn right after stopping, as you normally would",
+      "Turn right only if no pedestrians are present",
+      "Make a left turn instead"
+    ],
+    "correctChoice": 0,
+    "explanation": "This sign prohibits a right turn on a red signal. You must wait for the green light before making your right turn. Without such a sign, a right turn on red is permitted after stopping and making sure it is safe.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The sign removes the general permission to turn right on red at this intersection.",
+      "The prohibition is absolute while the signal is red, whether or not pedestrians are present.",
+      "A left turn on red is illegal except from a one-way street onto another one-way street."
+    ],
+    "difficulty": "medium",
+    "tags": ["regulatory", "prohibition", "signals", "turning"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 89" },
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 40" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-reg-009",
+    "type": "sign",
+    "topic": "signs-regulatory",
+    "subtopic": "no u-turn",
+    "question": "What does this sign prohibit?",
+    "signId": "no-u-turn",
+    "choices": [
+      "Turning to go in the opposite direction",
+      "Turning left",
+      "Making a three-point turn in a driveway",
+      "Reversing"
+    ],
+    "correctChoice": 0,
+    "explanation": "No U-turn permitted: do not turn to go in the opposite direction at this location.",
+    "incorrectChoiceExplanations": [
+      null,
+      "No left turn is shown by a single left-curving arrow crossed out.",
+      "The sign governs manoeuvres on the roadway it is posted on.",
+      "There is no reversing prohibition indicated by this sign."
+    ],
+    "difficulty": "easy",
+    "tags": ["regulatory", "prohibition", "turning"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 89" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-reg-010",
+    "type": "sign",
+    "topic": "signs-regulatory",
+    "subtopic": "no parking",
+    "question": "What does this sign mean?",
+    "signId": "no-parking",
+    "choices": [
+      "No parking in either direction of this sign",
+      "No stopping at any time",
+      "Parking permitted for persons with a permit",
+      "Paid parking area"
+    ],
+    "correctChoice": 0,
+    "explanation": "The crossed-out P with arrows pointing both ways means no parking in either direction of this sign. Be aware that not all parking by-laws are posted on signs.",
+    "incorrectChoiceExplanations": [
+      null,
+      "No stopping is a stricter rule with its own sign — you may not even pause there.",
+      "Accessible parking is signed with a blue background and a white wheelchair symbol.",
+      "There is no payment indication on this sign."
+    ],
+    "difficulty": "easy",
+    "tags": ["regulatory", "prohibition", "parking"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 88" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-reg-011",
+    "type": "sign",
+    "topic": "signs-regulatory",
+    "subtopic": "no parking vs no stopping",
+    "question": "Which sign means you may not even pause to let a passenger out?",
+    "choiceSignIds": ["no-stopping", "no-parking", "accessible-parking", "no-turns"],
+    "choices": [
+      "A white sign with the letter S inside a red circle with a red diagonal line through it, and arrows pointing both ways beneath.",
+      "A white sign with the letter P inside a red circle with a red diagonal line through it, and arrows pointing both ways beneath.",
+      "A sign with a blue background and a white symbol of a person seated in a wheelchair.",
+      "A white sign with two opposing curved arrows inside a red circle with a red diagonal line through it."
+    ],
+    "correctChoice": 0,
+    "explanation": "The crossed-out S is the No Stopping sign, and it is the stricter of the two: you may not stop at all, even briefly. The crossed-out P prohibits parking but does not by itself prohibit a momentary stop.",
+    "incorrectChoiceExplanations": [
+      null,
+      "No parking is less restrictive than no stopping.",
+      "The blue wheelchair symbol reserves a space for a permit holder.",
+      "The two opposing arrows crossed out mean no turns."
+    ],
+    "difficulty": "medium",
+    "tags": ["regulatory", "prohibition", "parking", "sign recognition"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 88-89" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-reg-012",
+    "type": "sign",
+    "topic": "signs-regulatory",
+    "subtopic": "accessible parking",
+    "question": "What does this sign indicate, and what is needed to use the space?",
+    "signId": "accessible-parking",
+    "choices": [
+      "The space is reserved for persons with a mobility disability who hold a special licence plate or permit, hung from the rearview mirror",
+      "The space is reserved for medical staff",
+      "The space is free parking for anyone for up to one hour",
+      "The space is reserved for emergency vehicles"
+    ],
+    "correctChoice": 0,
+    "explanation": "The accessible parking sign means the space is reserved for persons with a mobility disability who have a special licence plate or permit. The permit must be hung from the rearview mirror.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The sign is about mobility, not occupation.",
+      "There is no free-parking period; using the space without a permit is an offence.",
+      "Emergency vehicle spaces are signed differently."
+    ],
+    "difficulty": "easy",
+    "tags": ["regulatory", "parking", "accessibility"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 83" },
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 61" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-reg-013",
+    "type": "sign",
+    "topic": "signs-regulatory",
+    "subtopic": "maximum speed",
+    "question": "You see this sign on a clear, dry day, then rain begins and visibility drops. What speed should you drive?",
+    "signId": "maximum-speed-50",
+    "choices": [
+      "Below 50 km/h — the posted figure is the maximum under ideal conditions",
+      "Exactly 50 km/h, because that is the posted limit",
+      "50 km/h, unless a lower limit is posted for rain",
+      "Whatever speed the traffic around you is travelling"
+    ],
+    "correctChoice": 0,
+    "explanation": "Speed signs indicate the maximum speed allowable under ideal conditions. Reduce your speed when poor conditions exist or visibility is restricted. Your speed must always be reasonable and prudent for the traffic, surface, width of the highway, and conditions at the time.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The posted number is a ceiling, not a target.",
+      "There is no separate rain limit; the general obligation to drive prudently does the work.",
+      "Matching surrounding traffic does not excuse driving too fast for conditions."
+    ],
+    "difficulty": "medium",
+    "tags": ["regulatory", "speed limits", "conditions"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 90" },
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 50" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-reg-014",
+    "type": "sign",
+    "topic": "signs-regulatory",
+    "subtopic": "keep right of island",
+    "question": "What does this sign instruct you to do?",
+    "signId": "keep-right-of-island",
+    "choices": [
+      "Keep to the right of the traffic island or obstruction ahead",
+      "Turn right at the next intersection",
+      "Merge right because the left lane ends",
+      "The road curves to the right"
+    ],
+    "correctChoice": 0,
+    "explanation": "This sign instructs you to keep to the right of the traffic island or obstruction ahead. It is a regulatory instruction, not a warning.",
+    "incorrectChoiceExplanations": [
+      null,
+      "It concerns which side of an obstruction to pass, not your route.",
+      "A lane ending is signed with a yellow diamond warning sign.",
+      "A curve is signed with a yellow diamond showing a bending arrow."
+    ],
+    "difficulty": "medium",
+    "tags": ["regulatory", "lane position"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 90" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-reg-015",
+    "type": "sign",
+    "topic": "signs-regulatory",
+    "subtopic": "hazard markers",
+    "question": "This hazard marker has black stripes sloping down to the right. What should you do?",
+    "signId": "hazard-marker-keep-right",
+    "choices": [
+      "Drive to the right of the sign",
+      "Drive to the left of the sign",
+      "Stop and wait for oncoming traffic to clear",
+      "Reduce speed to 30 km/h"
+    ],
+    "correctChoice": 0,
+    "explanation": "On a hazard warning marker, if the black lines are sloped to the right, drive to the right of the sign. If they are sloped to the left, drive to the left of the sign. Where both are posted, drive between them.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The stripes slope toward the side you should pass on; these slope right.",
+      "A hazard marker guides you around an obstruction; it does not require a stop.",
+      "The marker carries no speed instruction."
+    ],
+    "difficulty": "hard",
+    "tags": ["regulatory", "hazard markers"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 90" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-reg-016",
+    "type": "sign",
+    "topic": "signs-regulatory",
+    "subtopic": "sign colours and shapes",
+    "question": "What do the most common regulatory signs look like?",
+    "choices": [
+      "Rectangular or square with a white background and either black or red lettering",
+      "Diamond-shaped with black symbols on a yellow background",
+      "Rectangular with a green background and white letters",
+      "Diamond-shaped with black symbols on an orange background"
+    ],
+    "correctChoice": 0,
+    "explanation": "The most common regulatory signs are rectangular or square with a white background and either black or red lettering. Many combine graphics and symbols. Regulatory signs indicate the laws affecting the use of the highway, and you must obey them unless directed otherwise by a peace officer.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Yellow diamonds are warning signs.",
+      "Green rectangles with white letters are guidance signs.",
+      "Orange diamonds are temporary condition (work zone) signs."
+    ],
+    "difficulty": "easy",
+    "tags": ["regulatory", "sign design", "shapes", "colours"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 80, 83" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-reg-017",
+    "type": "sign",
+    "topic": "signs-regulatory",
+    "subtopic": "truck route",
+    "question": "What does this sign tell truck drivers?",
+    "signId": "truck-route",
+    "choices": [
+      "Truck traffic may proceed only in the direction indicated by the arrow",
+      "Trucks are prohibited on this road",
+      "A truck weigh station is ahead",
+      "Trucks are entering the roadway ahead"
+    ],
+    "correctChoice": 0,
+    "explanation": "The truck route sign means truck traffic may proceed only in the direction indicated by the arrow or arrows.",
+    "incorrectChoiceExplanations": [
+      null,
+      "A prohibition would be shown with a red circle and slash.",
+      "There is no weigh-station indication on this sign.",
+      "Trucks entering is a yellow diamond warning sign."
+    ],
+    "difficulty": "medium",
+    "tags": ["regulatory", "trucks"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 88" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-reg-018",
+    "type": "sign",
+    "topic": "signs-regulatory",
+    "subtopic": "defacing signs",
+    "question": "What does the Driver's Handbook say about defacing, destroying or removing traffic signs and signals?",
+    "choices": [
+      "It is an offence",
+      "It is permitted if the sign is no longer needed",
+      "It is a civil matter between the driver and the municipality",
+      "It applies only to signs on provincial highways"
+    ],
+    "correctChoice": 0,
+    "explanation": "It is an offence to deface, destroy, or remove traffic signs or signals. Missing or damaged signs remove the information other drivers rely on.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Only the traffic authority decides when a sign is removed.",
+      "It is an offence, not merely a civil matter.",
+      "The rule is not limited to provincial highways."
+    ],
+    "difficulty": "easy",
+    "tags": ["regulatory", "offences"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 103" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-reg-019",
+    "type": "sign",
+    "topic": "signs-regulatory",
+    "subtopic": "maximum speed",
+    "question": "What does this sign mean on the road where it is posted?",
+    "signId": "maximum-speed-80",
+    "choices": [
+      "The maximum speed is 80 km/h — and you must drive slower when conditions are poor",
+      "The minimum speed is 80 km/h",
+      "Traffic normally travels at 80 km/h regardless of conditions",
+      "The recommended speed through the next section is 80 km/h"
+    ],
+    "correctChoice": 0,
+    "explanation": "A speed sign indicates the maximum speed allowable under ideal conditions — here 80 km/h. Reduce your speed when poor conditions exist or visibility is restricted.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Speed signs set a ceiling, not a floor.",
+      "The posted figure is a maximum under ideal conditions, not a target for every condition.",
+      "Speed limit signs are regulatory; advisory speeds are given on warning signs."
+    ],
+    "difficulty": "easy",
+    "tags": ["regulatory", "speed limits"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 90" },
+      { "sourceId": "ns-reg-traffic-signs", "citation": "RB-1" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-reg-020",
+    "type": "sign",
+    "topic": "signs-regulatory",
+    "subtopic": "no left turn",
+    "question": "What does this sign prohibit?",
+    "signId": "no-left-turn",
+    "choices": [
+      "Turning left",
+      "Turning right",
+      "Making a U-turn",
+      "Stopping on the left side of the road"
+    ],
+    "correctChoice": 0,
+    "explanation": "This sign prohibits turning left at the location. The red circle with a diagonal slash is the standard Nova Scotia way of denying permission for the manoeuvre shown.",
+    "incorrectChoiceExplanations": [
+      null,
+      "A crossed-out right-pointing arrow is the no-right-turn sign.",
+      "A U-turn is prohibited by its own sign showing a crossed-out U-shaped arrow.",
+      "Stopping and parking restrictions use crossed-out P and S signs, not turn arrows."
+    ],
+    "difficulty": "easy",
+    "tags": ["regulatory", "prohibition", "turning"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 89" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-reg-021",
+    "type": "sign",
+    "topic": "signs-regulatory",
+    "subtopic": "no right turn",
+    "question": "You are approaching an intersection and see this sign. What must you not do?",
+    "signId": "no-right-turn",
+    "choices": [
+      "Turn right at this intersection",
+      "Continue straight through",
+      "Turn left at this intersection",
+      "Stop at the intersection"
+    ],
+    "correctChoice": 0,
+    "explanation": "This sign prohibits turning right at the intersection. The red circle with a diagonal slash denies permission for the manoeuvre shown — here a right turn.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The sign restricts a turn, not straight-through travel.",
+      "Turning left is governed by its own no-left-turn sign where it is prohibited.",
+      "The sign restricts a manoeuvre; stopping rules are separate."
+    ],
+    "difficulty": "easy",
+    "tags": ["regulatory", "prohibition", "turning"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 88-89" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  }
+]

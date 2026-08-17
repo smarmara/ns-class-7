@@ -1,0 +1,487 @@
+{
+  "manifestVersion": 1,
+  "description": "Registry of official Nova Scotia sources that the question bank is derived from. Hashes are maintained by `pnpm sources:check`. Never edit contentHash by hand.",
+  "hashAlgorithm": "sha256",
+  "policy": {
+    "verificationMaxAgeDays": 210,
+    "staleWarnDays": 150,
+    "comment": "A question whose newest supporting source has not been verified within verificationMaxAgeDays fails `pnpm content:validate`."
+  },
+  "precedenceLevels": {
+    "1": "Statute in force (Motor Vehicle Act)",
+    "2": "Regulation in force under a statute in force",
+    "3": "Current official RMV / Government of Nova Scotia guidance, including printed handbook amendments",
+    "4": "Driver's Handbook chapter body text (may be older than the amendments above)",
+    "9": "Monitoring only — not currently a basis for any active question"
+  },
+  "sources": [
+    {
+      "id": "ns-class7-test-page",
+      "title": "Take a driver knowledge test: Learner's Licence (class 7)",
+      "url": "https://www.novascotia.ca/take-driver-knowledge-test-learners-licence-class-7",
+      "type": "government-service-page",
+      "jurisdiction": "NS",
+      "authority": "Government of Nova Scotia / Registry of Motor Vehicles",
+      "precedence": 3,
+      "status": "current",
+      "retrievedAt": "2026-08-17",
+      "verifiedAt": "2026-08-17",
+      "sections": [
+        "What you're tested on",
+        "If you don't pass the Knowledge Test",
+        "Eligibility",
+        "How long it takes",
+        "Cost"
+      ],
+      "notes": "Authority for the exam configuration in data/exam-config/class7.json: two 20-question multiple-choice sections (Rules of the Road, Road Sign Recognition), 16/20 to pass each, 30 minutes per part, sections retaken independently.",
+      "contentHash": "b662437ea1335c92e4680b5bf2460dd83123a4f85629a1a6f3538041ac9f16cc",
+      "previousHash": null,
+      "http": {
+        "lastModified": "Mon, 17 Aug 2026 13:40:47 GMT",
+        "etag": null
+      }
+    },
+    {
+      "id": "ns-handbook-landing",
+      "title": "Nova Scotia Driver's Handbook (landing page and amendments)",
+      "url": "https://novascotia.ca/sns/rmv/licence/handbook.asp",
+      "type": "handbook-landing",
+      "jurisdiction": "NS",
+      "authority": "Registry of Motor Vehicles",
+      "precedence": 3,
+      "status": "current",
+      "retrievedAt": "2026-08-17",
+      "verifiedAt": "2026-08-17",
+      "sections": [
+        "Amendments and updates"
+      ],
+      "notes": "CRITICAL: this page carries amendments that supersede wording in the older chapter PDFs. Treated at precedence 3 so it outranks every handbook chapter (precedence 4). Amendments currently relied on: school-zone speeds; $2,000 collision-reporting threshold; yield to transit buses; addition of the Restricted Individual GDL stage effective 2015-04-01.",
+      "contentHash": "eb24d6d1b30b850acd1ac2d774ebc1aa577f48d9bd013b416653a9a2e2a5264c",
+      "previousHash": null,
+      "http": {
+        "lastModified": null,
+        "etag": null
+      }
+    },
+    {
+      "id": "ns-handbook-intro-amendments",
+      "title": "Nova Scotia Driver's Handbook — Introduction, contents and printed amendment pages",
+      "url": "https://novascotia.ca/sns/rmv/handbook/DH-1_intro.pdf",
+      "type": "handbook-amendment",
+      "jurisdiction": "NS",
+      "authority": "Registry of Motor Vehicles",
+      "precedence": 3,
+      "status": "current",
+      "retrievedAt": "2026-08-17",
+      "verifiedAt": "2026-08-17",
+      "effectiveFrom": "2017-01-01",
+      "sections": [
+        "Important Graduated Driver Licence Changes (pp. V-VI)",
+        "Emergency vehicles — slow down and move over (p. VII)",
+        "Yield to transit buses (p. VIII)"
+      ],
+      "notes": "Front matter of the 2017 reprint. Pages V-VIII are the official amendment pages and OUTRANK the chapter bodies: 3-stage GDL with the Restricted Individual stage, 2-year learner's licence validity, slow-down-and-move-over at 60 km/h, and the transit-bus yield rule. Copyright: Crown copyright, Province of Nova Scotia. Referenced as fact, never reproduced.",
+      "contentHash": "3e001e9eafd791b72e0cd3f354432f44055e5b3407f4266aff49a03622194ae8",
+      "previousHash": null,
+      "http": {
+        "lastModified": "Mon, 16 Aug 2021 13:55:52 GMT",
+        "etag": "\"b4e0626da692d71:0\""
+      }
+    },
+    {
+      "id": "ns-handbook-ch1",
+      "title": "Driver's Handbook, Chapter 1 — Your Driver's Licence",
+      "url": "https://novascotia.ca/sns/rmv/handbook/DH-Chapter1.pdf",
+      "type": "handbook-chapter",
+      "jurisdiction": "NS",
+      "authority": "Registry of Motor Vehicles",
+      "precedence": 4,
+      "status": "current",
+      "retrievedAt": "2026-08-17",
+      "verifiedAt": "2026-08-17",
+      "sections": [
+        "Getting a Learner's Licence (Class 7), pp. 6-9",
+        "Restrictions, p. 10",
+        "Newly Licensed Drivers, pp. 16-17",
+        "Demerit Points, pp. 28-30",
+        "Classes of Driver's Licences, pp. 33-35"
+      ],
+      "notes": "Body text predates the 2015 GDL changes in ns-handbook-intro-amendments and the 2014 repeal of the novice-BAC demerit entry. Do not rely on p.10 licence-validity wording or the pp.28-29 point table without checking the amendment pages and the Motor Vehicle Act point table (s.279).",
+      "contentHash": "4dc0ccbf89d4320aa7f0b61d6c5c058bfe2c776f2dd486f4ab0f5773ffaeb638",
+      "previousHash": null,
+      "http": {
+        "lastModified": "Mon, 16 Aug 2021 13:55:39 GMT",
+        "etag": "\"a402e65a692d71:0\""
+      }
+    },
+    {
+      "id": "ns-handbook-ch2",
+      "title": "Driver's Handbook, Chapter 2 — Rules of the Road",
+      "url": "https://novascotia.ca/sns/rmv/handbook/DH-Chapter2.pdf",
+      "type": "handbook-chapter",
+      "jurisdiction": "NS",
+      "authority": "Registry of Motor Vehicles",
+      "precedence": 4,
+      "status": "current",
+      "retrievedAt": "2026-08-17",
+      "verifiedAt": "2026-08-17",
+      "sections": [
+        "Traffic Control, pp. 39-41",
+        "Right of way, pp. 42-45",
+        "Emergency vehicles, p. 45",
+        "Basic Rules, pp. 46-53",
+        "Turning / Following / Changing lanes, pp. 54-56",
+        "Overtaking and passing, pp. 57-59",
+        "Parking and stopping, pp. 61-64",
+        "Roundabouts and rotaries, pp. 64-65",
+        "Controlled-access highways, pp. 66-67",
+        "School buses, p. 68",
+        "Motorcycles and bicycles, pp. 69-76"
+      ],
+      "contentHash": "53222f5623811ced8dea48f04d1693be3d0fec0c2c9c7cdcd8a47ee98d399b8c",
+      "previousHash": null,
+      "http": {
+        "lastModified": "Mon, 16 Aug 2021 13:55:41 GMT",
+        "etag": "\"30a8b766a692d71:0\""
+      }
+    },
+    {
+      "id": "ns-handbook-ch3",
+      "title": "Driver's Handbook, Chapter 3 — Signs, Pavement Markings and Work Zones",
+      "url": "https://novascotia.ca/sns/rmv/handbook/DH-Chapter3.pdf",
+      "type": "handbook-chapter",
+      "jurisdiction": "NS",
+      "authority": "Registry of Motor Vehicles",
+      "precedence": 4,
+      "status": "current",
+      "retrievedAt": "2026-08-17",
+      "verifiedAt": "2026-08-17",
+      "sections": [
+        "Regulatory Signs, pp. 80-83",
+        "Warning Signs, p. 83",
+        "Guidance Signs, p. 83",
+        "Pavement Markings, pp. 84-87",
+        "Examples of Signs and Their Meanings, pp. 88-94",
+        "Construction or Work Zones, pp. 94-103"
+      ],
+      "contentHash": "db44111b63026889a390d430e71577d001e7acec7b86e58b90c5ba59b44ffa93",
+      "previousHash": null,
+      "http": {
+        "lastModified": "Mon, 16 Aug 2021 13:55:40 GMT",
+        "etag": "\"27c04e66a692d71:0\""
+      }
+    },
+    {
+      "id": "ns-handbook-ch4",
+      "title": "Driver's Handbook, Chapter 4 — Safety",
+      "url": "https://novascotia.ca/sns/rmv/handbook/DH-Chapter4.pdf",
+      "type": "handbook-chapter",
+      "jurisdiction": "NS",
+      "authority": "Registry of Motor Vehicles",
+      "precedence": 4,
+      "status": "current",
+      "retrievedAt": "2026-08-17",
+      "verifiedAt": "2026-08-17",
+      "sections": [
+        "Maintaining your vehicle, pp. 107-111",
+        "Lighting equipment, pp. 112-113",
+        "Special lights, p. 114",
+        "Seat belts, child restraints and the law, pp. 117-119",
+        "Airbags, p. 120",
+        "Stopping and braking, p. 125",
+        "Slow-moving vehicles, p. 129"
+      ],
+      "contentHash": "7bfac2bf8599b4a4813cf9082ef87677e3dec9e251aff5256ea4c43f21d169bc",
+      "previousHash": null,
+      "http": {
+        "lastModified": "Mon, 16 Aug 2021 13:55:55 GMT",
+        "etag": "\"c852fd6ea692d71:0\""
+      }
+    },
+    {
+      "id": "ns-handbook-ch5",
+      "title": "Driver's Handbook, Chapter 5 — Adverse Driving Conditions",
+      "url": "https://novascotia.ca/sns/rmv/handbook/DH-Chapter5.pdf",
+      "type": "handbook-chapter",
+      "jurisdiction": "NS",
+      "authority": "Registry of Motor Vehicles",
+      "precedence": 4,
+      "status": "current",
+      "retrievedAt": "2026-08-17",
+      "verifiedAt": "2026-08-17",
+      "sections": [
+        "Nighttime driving, pp. 136-137",
+        "Rain, snow and fog, pp. 137-140",
+        "Tips for dealing with slippery surfaces, p. 141",
+        "Emergencies, pp. 143-148",
+        "Collisions, pp. 149-150"
+      ],
+      "notes": "p.149 in the PDF shows both a $2,000 and a $1,000 collision-reporting threshold overlaid. The amendment on ns-handbook-landing states $2,000; that value wins on precedence.",
+      "contentHash": "ac7b160dd4814709366c7848537e8fceca25245933f49be5b77cf648d20cbcd0",
+      "previousHash": null,
+      "http": {
+        "lastModified": "Mon, 16 Aug 2021 13:55:48 GMT",
+        "etag": "\"7ed866aa692d71:0\""
+      }
+    },
+    {
+      "id": "ns-handbook-ch6",
+      "title": "Driver's Handbook, Chapter 6 — Driving and Impairment",
+      "url": "https://novascotia.ca/sns/rmv/handbook/DH-Chapter6.pdf",
+      "type": "handbook-chapter",
+      "jurisdiction": "NS",
+      "authority": "Registry of Motor Vehicles",
+      "precedence": 4,
+      "status": "current",
+      "retrievedAt": "2026-08-17",
+      "verifiedAt": "2026-08-17",
+      "sections": [
+        "Alcohol and Drugs, pp. 153-155",
+        "Getting caught, p. 154",
+        "Drug impairment, pp. 155-156",
+        "Administrative Licence Suspension Program, p. 156",
+        "Vision, p. 162",
+        "Driver fatigue, p. 163"
+      ],
+      "contentHash": "93450ec31b3b286643b0c9e46b68160786efd9e5993d0bdd19217423b66eea9f",
+      "previousHash": null,
+      "http": {
+        "lastModified": "Mon, 16 Aug 2021 13:55:45 GMT",
+        "etag": "\"f843da68a692d71:0\""
+      }
+    },
+    {
+      "id": "ns-mva",
+      "title": "Motor Vehicle Act, R.S.N.S. 1989, c. 293 (consolidated)",
+      "url": "https://nslegislature.ca/legislative-business/bills-statutes/consolidated-public-statutes/motor-vehicle-act",
+      "documentUrl": "https://nslegislature.ca/sites/default/files/legc/statutes/motor%20vehicle.pdf",
+      "type": "statute",
+      "jurisdiction": "NS",
+      "authority": "Nova Scotia Legislature — Office of the Legislative Counsel",
+      "precedence": 1,
+      "status": "current",
+      "retrievedAt": "2026-08-17",
+      "verifiedAt": "2026-08-17",
+      "consolidatedTo": "2026-05-01",
+      "sections": [
+        "s.100A novice-driver zero blood alcohol",
+        "s.100D hand-held cellular telephones and text messaging",
+        "s.101 careful and prudent speed",
+        "s.102 prima facie speed limits",
+        "s.103 school area speed limits",
+        "s.106A speeding in excess of posted limit",
+        "s.106D-106F emergency vehicles: definition, 60 km/h, move over",
+        "s.124A duty respecting transit bus",
+        "s.125 pedestrian right of way at crosswalks",
+        "s.125A crossing guards",
+        "s.135 rotary or roundabout",
+        "s.136 driveways",
+        "s.138-139 parking on highway",
+        "s.143 no stopping, standing or parking",
+        "s.279 point system table"
+      ],
+      "notes": "The statute is the highest authority for every numeric legal fact in the bank. Still the operative traffic statute: the Traffic Safety Act that would replace it is NOT PROCLAIMED IN FORCE (see ns-tsa-proclamations).",
+      "contentHash": "e823e246e58330fb49127aae909961e82265953463c5a4b3f2c66c6f2ab44d19",
+      "previousHash": null,
+      "http": {
+        "lastModified": "Mon, 06 Jul 2026 14:12:25 GMT",
+        "etag": "\"3852f9-655f1dd1af26d\""
+      }
+    },
+    {
+      "id": "ns-reg-classification-drivers-licences",
+      "title": "Classification of Drivers' Licenses Regulations (Motor Vehicle Act)",
+      "url": "https://novascotia.ca/just/regulations/regs/mvclasdl.htm",
+      "type": "regulation",
+      "jurisdiction": "NS",
+      "authority": "Office of the Registrar of Regulations",
+      "precedence": 2,
+      "status": "current",
+      "retrievedAt": "2026-08-17",
+      "verifiedAt": "2026-08-17",
+      "sections": [
+        "Section 1 — licence class table, Class 5, Class 7, Class 8"
+      ],
+      "notes": "Authority for what a Class 7 licence permits and its minimum age (18, or 16 with parental/guardian consent).",
+      "contentHash": "096de8ec69b5af3b5e66d8939773458a045f6dbc2b857e257d2e12705b105ce4",
+      "previousHash": null,
+      "http": {
+        "lastModified": "Fri, 06 Sep 2024 14:31:14 GMT",
+        "etag": "\"a327586d690db1:0\""
+      }
+    },
+    {
+      "id": "ns-reg-traffic-signs",
+      "title": "Traffic Signs Regulations (Motor Vehicle Act)",
+      "url": "https://novascotia.ca/just/regulations/regs/mvtrafficsigns.htm",
+      "type": "regulation",
+      "jurisdiction": "NS",
+      "authority": "Office of the Registrar of Regulations",
+      "precedence": 2,
+      "status": "current",
+      "retrievedAt": "2026-08-17",
+      "verifiedAt": "2026-08-17",
+      "citation": "N.S. Reg. 165/2012, amended to N.S. Reg. 178/2023",
+      "effectiveFrom": "2012-09-01",
+      "sections": [
+        "s.3 adoption of the Manual of Uniform Traffic Control Devices for Canada",
+        "s.4-5 official sign descriptions and lettering",
+        "s.8 table of signs",
+        "Schedule — sign depictions"
+      ],
+      "notes": "Authority for the shapes, colours and legends used by the original SVG sign artwork in data/signs. The artwork is drawn from these legal specifications, not traced from Crown illustrations.",
+      "contentHash": "6ee7a5cd66469b906190a12de36cb484460bfaeff7ad13efc2a666883f7cbcff",
+      "previousHash": null,
+      "http": {
+        "lastModified": "Fri, 03 Nov 2023 12:55:54 GMT",
+        "etag": "\"fb16861455eda1:0\""
+      }
+    },
+    {
+      "id": "ns-reg-school-areas",
+      "title": "School Areas Regulations (Motor Vehicle Act)",
+      "url": "https://novascotia.ca/just/regulations/regs/mvschoolareas.htm",
+      "type": "regulation",
+      "jurisdiction": "NS",
+      "authority": "Office of the Registrar of Regulations",
+      "precedence": 2,
+      "status": "current",
+      "retrievedAt": "2026-08-17",
+      "verifiedAt": "2026-08-17",
+      "citation": "N.S. Reg. 164/2012",
+      "effectiveFrom": "2012-09-01",
+      "sections": [
+        "Definition of school area (WC-1 sign to RB-1/R-102 sign)",
+        "Reduced limits apply only if a child is present",
+        "A child is deemed present if outdoors on the highway, or on land within 30 m of the centre line"
+      ],
+      "contentHash": "ca5a10e4046ab658e2cc23860d720c6bd2be08f0d1eceb78ad591cc80cb47376",
+      "previousHash": null,
+      "http": {
+        "lastModified": "Sun, 10 Dec 2017 22:20:38 GMT",
+        "etag": "\"7dd46f1b572d31:0\""
+      }
+    },
+    {
+      "id": "ns-reg-yield-transit-buses",
+      "title": "Yield to Transit Buses Regulations (Motor Vehicle Act)",
+      "url": "https://novascotia.ca/just/regulations/regs/mvyield.htm",
+      "type": "regulation",
+      "jurisdiction": "NS",
+      "authority": "Office of the Registrar of Regulations",
+      "precedence": 2,
+      "status": "current",
+      "retrievedAt": "2026-08-17",
+      "verifiedAt": "2026-08-17",
+      "citation": "N.S. Reg. 163/2011",
+      "effectiveFrom": "2011-05-01",
+      "sections": [
+        "Prescribed transit operators: Halifax Regional Municipality, Kings Transit Authority, Strait Area Transit Co-operative Ltd, Transit Cape Breton",
+        "Prescribed rear signage, minimum 30 cm x 30 cm"
+      ],
+      "notes": "Prescribes the classes of bus and the signage for Motor Vehicle Act s.124A. Halifax Transit is a prescribed operator, which is why Halifax-flavoured transit-bus scenarios are province-wide law and not a municipal rule.",
+      "contentHash": "b0242d94819c4f6825a23da7ed3eedafbe720942c331922c88480993be04a04d",
+      "previousHash": null,
+      "http": {
+        "lastModified": "Sun, 10 Dec 2017 22:20:38 GMT",
+        "etag": "\"5dbb7b1b572d31:0\""
+      }
+    },
+    {
+      "id": "ns-regs-by-act-index",
+      "title": "Nova Scotia Regulations by Act — Office of the Registrar of Regulations",
+      "url": "https://novascotia.ca/just/regulations/regsbyact.htm",
+      "type": "regulation-index",
+      "jurisdiction": "NS",
+      "authority": "Office of the Registrar of Regulations",
+      "precedence": 9,
+      "status": "monitoring",
+      "retrievedAt": "2026-08-17",
+      "verifiedAt": "2026-08-17",
+      "notes": "Watched so that a NEW regulation appearing under the Motor Vehicle Act (or the Traffic Safety Act) is noticed. Not itself a basis for any question.",
+      "contentHash": "02941d0d44e88db6beaec30419a95adb772ce9ff3de845ca7ee738e0ab924e2b",
+      "previousHash": null,
+      "http": {
+        "lastModified": "Fri, 07 Aug 2026 19:26:57 GMT",
+        "etag": "\"bae35b6a226dd1:0\""
+      }
+    },
+    {
+      "id": "ns-tsa-changes-page",
+      "title": "Changes to traffic safety legislation (Traffic Safety Act)",
+      "url": "https://novascotia.ca/changes-to-traffic-safety-legislation/",
+      "type": "government-service-page",
+      "jurisdiction": "NS",
+      "authority": "Nova Scotia Department of Public Works",
+      "precedence": 9,
+      "status": "monitoring",
+      "retrievedAt": "2026-08-17",
+      "verifiedAt": "2026-08-17",
+      "notes": "As retrieved 2026-08-17 this page states the Traffic Safety Act 'passed in the Nova Scotia Legislature in October 2025 and will come into effect in 2026' and instructs readers to 'Continue to follow the Motor Vehicle Act until then'. Nothing here may be taught as current law.",
+      "contentHash": "4979adb9337f2dd2bb46e989854f788bc0d8ce75f1a4868a58fc235031b2f6a4",
+      "previousHash": null,
+      "http": {
+        "lastModified": "Thu, 30 Jul 2026 13:42:10 GMT",
+        "etag": null
+      }
+    },
+    {
+      "id": "ns-tsa-bill-130",
+      "title": "Bill 130 — Traffic Safety Act (Assembly 65, Session 1)",
+      "url": "https://nslegislature.ca/legislative-business/bills-statutes/bills/assembly-65-session-1/bill-130",
+      "type": "bill",
+      "jurisdiction": "NS",
+      "authority": "Nova Scotia Legislature",
+      "precedence": 9,
+      "status": "future",
+      "retrievedAt": "2026-08-17",
+      "verifiedAt": "2026-08-17",
+      "notes": "Enacted as S.N.S. 2025, c. 20. Royal Assent alone does not bring it into force.",
+      "contentHash": "a25569f80f8e74d1a73207ae5ff9180a898546eacf4001752c00b4c904b2d348",
+      "previousHash": null,
+      "http": {
+        "lastModified": null,
+        "etag": null
+      }
+    },
+    {
+      "id": "ns-tsa-proclamations",
+      "title": "Proclamations of Nova Scotia Statutes",
+      "url": "https://www.nslegislature.ca/legislation/proclamations-nova-scotia-statutes",
+      "type": "legislative-status",
+      "jurisdiction": "NS",
+      "authority": "Nova Scotia Legislature — Office of the Legislative Counsel",
+      "precedence": 9,
+      "status": "monitoring",
+      "retrievedAt": "2026-08-17",
+      "verifiedAt": "2026-08-17",
+      "notes": "THE commencement gate. As retrieved 2026-08-17 this page lists 'Traffic Safety Act 2025, c. 20 -- NOT PROCLAIMED IN FORCE' (and likewise the earlier Traffic Safety Act 2018, c. 29). data/exam-config/legal-status.json mirrors this and is what the app and validator read. When this page changes, `pnpm sources:check` flags it and a maintainer must review before any `future` content is promoted.",
+      "watchFor": "Traffic Safety Act",
+      "contentHash": "1b028bbce54aaa0720641d5bb971a0face0529b17103c481344e0ec307582c0d",
+      "previousHash": null,
+      "http": {
+        "lastModified": null,
+        "etag": null
+      }
+    },
+    {
+      "id": "ns-royal-gazette-part-2",
+      "title": "Royal Gazette Part II — Regulations",
+      "url": "https://novascotia.ca/just/regulations/rg2issues.htm",
+      "type": "gazette",
+      "jurisdiction": "NS",
+      "authority": "Office of the Registrar of Regulations",
+      "precedence": 9,
+      "status": "monitoring",
+      "retrievedAt": "2026-08-17",
+      "verifiedAt": "2026-08-17",
+      "notes": "Newly filed regulations appear here before consolidated regulation pages are rebuilt, so this is watched as an early-warning feed for changes that have not yet reached the pages above.",
+      "contentHash": "58f17a1023668133b531a53d067a5909ae242461c6d65e07a7764a6141d38801",
+      "previousHash": null,
+      "http": {
+        "lastModified": "Fri, 07 Aug 2026 11:48:03 GMT",
+        "etag": "\"5863769a6226dd1:0\""
+      }
+    }
+  ]
+}

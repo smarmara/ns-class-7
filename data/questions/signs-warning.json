@@ -1,0 +1,662 @@
+[
+  {
+    "id": "signs-warn-001",
+    "type": "sign",
+    "topic": "signs-warning",
+    "subtopic": "warning sign design",
+    "question": "What shape and colour are most warning signs?",
+    "choices": [
+      "Diamond-shaped, with black lettering or symbols on a yellow background",
+      "Rectangular, with black lettering on a white background",
+      "Diamond-shaped, with black symbols on an orange background",
+      "Five-sided, with a fluorescent yellow-green background"
+    ],
+    "correctChoice": 0,
+    "explanation": "Most warning signs are diamond-shaped with black lettering or symbols on a yellow background. They caution you about changing road conditions ahead.",
+    "incorrectChoiceExplanations": [
+      null,
+      "White rectangles with black lettering are regulatory signs.",
+      "Orange diamonds mark temporary conditions in work zones.",
+      "The five-sided fluorescent yellow-green sign is the school area sign."
+    ],
+    "difficulty": "easy",
+    "tags": ["warning", "sign design", "shapes"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 83" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-warn-002",
+    "type": "sign",
+    "topic": "signs-warning",
+    "subtopic": "slippery when wet",
+    "question": "What does this sign warn you about?",
+    "signId": "slippery-when-wet",
+    "choices": [
+      "The road ahead may be slippery when wet",
+      "There is loose gravel ahead",
+      "A sharp curve is ahead",
+      "The road ahead floods regularly"
+    ],
+    "correctChoice": 0,
+    "explanation": "This sign warns that the road ahead is slippery when wet. Reduce speed, increase your following distance, and make only gentle inputs with the brake, accelerator and steering.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Loose surface conditions in a work zone have their own orange sign.",
+      "A curve is shown by a bending arrow on a yellow diamond.",
+      "The skid marks under the car indicate loss of traction, not standing water."
+    ],
+    "difficulty": "easy",
+    "tags": ["warning", "traction", "conditions"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 83" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-warn-003",
+    "type": "sign",
+    "topic": "signs-warning",
+    "subtopic": "signal ahead",
+    "question": "You see this sign on a road you do not know well. What should you do?",
+    "signId": "traffic-signal-ahead",
+    "choices": [
+      "Prepare to stop — traffic signal lights are ahead and may be red when you arrive",
+      "Expect a stop sign at the next intersection",
+      "Expect a flashing beacon that only requires you to slow",
+      "Prepare for a railway crossing"
+    ],
+    "correctChoice": 0,
+    "explanation": "This sign warns of traffic signal lights ahead. It is used where the signals may not be visible in time — over a crest, around a bend, or at the end of a fast section of road — so slow down and be ready to stop.",
+    "incorrectChoiceExplanations": [
+      null,
+      "A stop sign ahead is shown by a small red octagon inside the yellow diamond.",
+      "The sign shows a full three-lamp signal head, not a single beacon.",
+      "Railway crossings are marked with a crossbuck at the crossing itself."
+    ],
+    "difficulty": "easy",
+    "tags": ["warning", "signals"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 83" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-warn-004",
+    "type": "sign",
+    "topic": "signs-warning",
+    "subtopic": "stop ahead",
+    "question": "What does this sign tell you?",
+    "signId": "stop-sign-ahead",
+    "choices": [
+      "There is a stop sign ahead — begin slowing now",
+      "You must stop at this sign",
+      "The road ahead is closed",
+      "Traffic signals are ahead"
+    ],
+    "correctChoice": 0,
+    "explanation": "This is a warning that a stop sign is ahead. It gives you time to slow down where the stop sign itself might come into view too late.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The requirement to stop attaches to the actual stop sign, not to this advance warning.",
+      "A road closure is signed with orange work-zone signs or barricades.",
+      "Traffic signals ahead is a different warning sign showing a signal head."
+    ],
+    "difficulty": "easy",
+    "tags": ["warning", "stop"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 83" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-warn-005",
+    "type": "sign",
+    "topic": "signs-warning",
+    "subtopic": "merge",
+    "question": "You see this sign. What does it mean and who must adjust?",
+    "signId": "merge",
+    "choices": [
+      "Two lanes are about to join into one, and drivers in both lanes are equally responsible for merging safely",
+      "The lane you are in ends and you must stop",
+      "You have priority over the joining traffic",
+      "Traffic must merge only after the lanes have joined"
+    ],
+    "correctChoice": 0,
+    "explanation": "The merge sign indicates an upcoming point where two separate traffic lanes are about to join and merge into one. Drivers approaching from both lanes are equally responsible for seeing that traffic merges smoothly and safely. Be ready to yield the right of way when necessary.",
+    "incorrectChoiceExplanations": [
+      null,
+      "A merge does not require you to stop; it requires you to adjust speed and position.",
+      "Neither lane has automatic priority at a merge.",
+      "Merging is done before the lanes physically join, not after."
+    ],
+    "difficulty": "medium",
+    "tags": ["warning", "merging", "highways"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 83, 93" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-warn-006",
+    "type": "sign",
+    "topic": "signs-warning",
+    "subtopic": "road narrows",
+    "question": "What does this sign warn you about?",
+    "signId": "road-narrows",
+    "choices": [
+      "The road narrows ahead",
+      "The right lane ends ahead",
+      "A narrow bridge or structure is ahead",
+      "Two-way traffic begins ahead"
+    ],
+    "correctChoice": 0,
+    "explanation": "This sign warns that the road narrows ahead. Quite often hazard warning signs will also be posted to alert drivers to keep to the left or right, or between the signs if both are posted — for example on the approach to a bridge.",
+    "incorrectChoiceExplanations": [
+      null,
+      "A lane ending is shown with one lane tapering into the other, not both edges converging.",
+      "A narrow structure has its own sign, showing two vertical bars.",
+      "Two-way traffic is shown by two opposing arrows."
+    ],
+    "difficulty": "medium",
+    "tags": ["warning", "road width"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 91" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-warn-007",
+    "type": "sign",
+    "topic": "signs-warning",
+    "subtopic": "hidden intersection",
+    "question": "This sign is posted on a rural road. What does it tell you?",
+    "signId": "hidden-intersection",
+    "choices": [
+      "Drivers on the side road ahead do not have a clear view of approaching traffic — use caution and be prepared to slow down",
+      "The intersection ahead is controlled by a stop sign",
+      "The road ahead ends at a T-intersection",
+      "The side road ahead is closed"
+    ],
+    "correctChoice": 0,
+    "explanation": "This sign warns of a hidden intersection ahead: drivers on the side road at the intersection ahead don't have a clear view of approaching traffic. Use caution and be prepared to slow down.",
+    "incorrectChoiceExplanations": [
+      null,
+      "A stop sign ahead has its own warning sign showing a red octagon.",
+      "A T-intersection would show the road ending, not crossing.",
+      "Closures are signed with orange work-zone signs."
+    ],
+    "difficulty": "medium",
+    "tags": ["warning", "intersections", "rural"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 91" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-warn-008",
+    "type": "sign",
+    "topic": "signs-warning",
+    "subtopic": "steep decline",
+    "question": "What does this sign warn about, and what does the handbook suggest?",
+    "signId": "steep-decline",
+    "choices": [
+      "A steep decline ahead — you may need to use a lower gear",
+      "A steep climb ahead — build speed before you reach it",
+      "Trucks are entering the road ahead",
+      "The road surface is uneven ahead"
+    ],
+    "correctChoice": 0,
+    "explanation": "This sign warns of a steep decline ahead. You may need to use a lower gear so that engine braking helps control your speed, rather than relying on the brakes all the way down and overheating them.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The symbol shows a vehicle nose-down, descending.",
+      "Trucks entering has its own sign showing a side road.",
+      "Uneven surfaces are signed in work zones with an orange sign."
+    ],
+    "difficulty": "medium",
+    "tags": ["warning", "hills"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 91" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-warn-009",
+    "type": "sign",
+    "topic": "signs-warning",
+    "subtopic": "divided highway ends",
+    "question": "What does this sign mean?",
+    "signId": "divided-highway-ends",
+    "choices": [
+      "The divided highway ends and there will be two-way traffic beyond this section",
+      "A divided highway begins ahead",
+      "The right lane ends ahead",
+      "You are entering a one-way street"
+    ],
+    "correctChoice": 0,
+    "explanation": "Divided highway ends: there is two-way traffic beyond this section of the highway. It is often followed by a two-way traffic sign to reinforce the message. Passing rules and oncoming traffic now apply again.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The divided highway AHEAD sign shows the roadway splitting, not converging.",
+      "A lane ending is a different sign, with one lane tapering.",
+      "A one-way street is indicated by a black rectangular sign with an arrow."
+    ],
+    "difficulty": "medium",
+    "tags": ["warning", "divided highway"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 91" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-warn-010",
+    "type": "sign",
+    "topic": "signs-warning",
+    "subtopic": "divided highway ahead",
+    "question": "What does this sign mean?",
+    "signId": "divided-highway-ahead",
+    "choices": [
+      "A divided highway is ahead — the road transitions from undivided to divided",
+      "The divided highway ends ahead",
+      "A roundabout is ahead",
+      "There is an obstruction in the middle of the road"
+    ],
+    "correctChoice": 0,
+    "explanation": "Divided highway ahead: a transition from an undivided to a divided highway. Keep right of the median as the roadway splits.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The 'ends' sign shows the two roadways converging back into one.",
+      "A roundabout would be shown as a circular arrangement of arrows.",
+      "Obstructions are marked with hazard markers or a keep-right sign."
+    ],
+    "difficulty": "medium",
+    "tags": ["warning", "divided highway"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 92" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-warn-011",
+    "type": "sign",
+    "topic": "signs-warning",
+    "subtopic": "curve with advisory speed",
+    "question": "This sign is posted with a smaller speed sign beneath it. What does that speed figure represent?",
+    "signId": "right-curve",
+    "choices": [
+      "The safe speed for the curve",
+      "The minimum speed you must maintain through the curve",
+      "The maximum legal speed for the whole road ahead",
+      "The speed at which the curve was surveyed"
+    ],
+    "correctChoice": 0,
+    "explanation": "A curve warning sign posted with a speed sign indicates the safe speed for that turn. Reduce your speed before you enter the curve so that you do not need to brake in it — braking in a curve on a slippery road can be enough to start a skid.",
+    "incorrectChoiceExplanations": [
+      null,
+      "It is an advisory maximum for the curve, not a minimum.",
+      "It applies to the curve, not to the road generally.",
+      "It is a driving instruction, not survey data."
+    ],
+    "difficulty": "medium",
+    "tags": ["warning", "curves", "speed"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 92" },
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "pp. 51-52" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-warn-012",
+    "type": "sign",
+    "topic": "signs-warning",
+    "subtopic": "checkerboard",
+    "question": "What does the black-and-white checkerboard pattern on this sign tell you?",
+    "signId": "sharp-turn-right",
+    "choices": [
+      "Slow down — there is a sharp turn or bend in the roadway, and the arrow shows its direction",
+      "The road ends here",
+      "A railway crossing is ahead",
+      "A pedestrian crossing is ahead"
+    ],
+    "correctChoice": 0,
+    "explanation": "The checkerboard design is a warning to slow down, and the arrow indicates the direction of the roadway. This marks a sharp turn or bend, usually where a driver who carried too much speed would leave the road.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The arrow shows where the road goes, so it does not end.",
+      "Railway crossings use a crossbuck.",
+      "Pedestrian crossings use a sign with a walking figure."
+    ],
+    "difficulty": "medium",
+    "tags": ["warning", "curves"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 92" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-warn-013",
+    "type": "sign",
+    "topic": "signs-warning",
+    "subtopic": "chevrons",
+    "question": "You see several of these signs posted in a group along the outside of a bend. What is their purpose?",
+    "signId": "chevron-right",
+    "choices": [
+      "To guide drivers around a sharp curve in the road",
+      "To mark the boundary of a work zone",
+      "To indicate the number of lanes ahead",
+      "To mark a series of driveways"
+    ],
+    "correctChoice": 0,
+    "explanation": "Chevron (arrow) signs are posted in groups to guide drivers around sharp curves in the road. Seeing several of them lets you read the shape and severity of the bend before you are in it.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Work zones are marked with orange signs.",
+      "Lane counts are shown on lane-use and guide signs.",
+      "Driveways are not marked with chevrons."
+    ],
+    "difficulty": "medium",
+    "tags": ["warning", "curves"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 93" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-warn-014",
+    "type": "sign",
+    "topic": "signs-warning",
+    "subtopic": "low clearance",
+    "question": "What does this sign tell you?",
+    "signId": "low-clearance",
+    "choices": [
+      "There is an underpass ahead with the overhead clearance shown",
+      "The road narrows to the width shown",
+      "There is a weight limit ahead",
+      "The bridge ahead can be opened for boats"
+    ],
+    "correctChoice": 0,
+    "explanation": "Low clearance: there is an underpass ahead, with the overhead clearance as shown on the sign. If your vehicle or load is taller than the figure shown, you must find another route.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The arrows on this sign point at each other vertically, indicating height, not width.",
+      "Weight limits are posted with a different sign.",
+      "A bridge opening for boats has its own sign."
+    ],
+    "difficulty": "medium",
+    "tags": ["warning", "clearance"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 93" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-warn-015",
+    "type": "sign",
+    "topic": "signs-warning",
+    "subtopic": "right lane ends",
+    "question": "You are in the right lane and see this sign. What should you do?",
+    "signId": "right-lane-ends",
+    "choices": [
+      "Prepare to merge left in good time, before you reach the point where the lane ends",
+      "Maintain your speed and position — the other lane must make room at the last moment",
+      "Stop and wait for a gap",
+      "Move onto the shoulder to continue straight"
+    ],
+    "correctChoice": 0,
+    "explanation": "This sign warns that the right lane ends ahead. It gives advance notice so that traffic can form a single lane in plenty of time. It is often used with the Do Not Pass sign. If you are in the right lane, merge left as soon as you can do it safely.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Approaching the merge point at speed in the closing lane and pushing in at the last moment is a named cause of collisions.",
+      "Stopping in a live lane creates a rear-end hazard.",
+      "The shoulder is not a traffic lane."
+    ],
+    "difficulty": "medium",
+    "tags": ["warning", "merging", "lane use"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 92, 98" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-warn-016",
+    "type": "sign",
+    "topic": "signs-warning",
+    "subtopic": "narrow structure",
+    "question": "What does this sign warn about?",
+    "signId": "narrow-structure",
+    "choices": [
+      "A narrow structure ahead whose clear road width is less than the width of the approach road",
+      "A low bridge ahead",
+      "A bridge that can be opened for boats",
+      "A one-lane road ahead"
+    ],
+    "correctChoice": 0,
+    "explanation": "A narrow structure ahead — such as a road, bridge, culvert, underpass or overpass — has a clear road width less than the width of the approach road. Slow down and position yourself carefully.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Low clearance is a separate sign concerning height, not width.",
+      "A bridge that opens for boats has its own sign.",
+      "The sign warns of reduced width, not necessarily a single lane."
+    ],
+    "difficulty": "hard",
+    "tags": ["warning", "bridges"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 92" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-warn-017",
+    "type": "sign",
+    "topic": "signs-warning",
+    "subtopic": "bump",
+    "question": "What does this sign warn about?",
+    "signId": "bump",
+    "choices": [
+      "A bump or rough road ahead — slow down",
+      "A speed hump you must stop at",
+      "A steep hill ahead",
+      "A drainage dip that floods"
+    ],
+    "correctChoice": 0,
+    "explanation": "A bump or rough road is ahead. Slow down: hitting a bump at speed can unsettle the vehicle, and on a motorcycle or bicycle it can cause a loss of control.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The sign warns of a bump; it does not require a stop.",
+      "A hill is shown with a sloped line and a vehicle.",
+      "The sign shows a raised hump, not a dip."
+    ],
+    "difficulty": "easy",
+    "tags": ["warning", "road surface"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 91" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-warn-018",
+    "type": "sign",
+    "topic": "signs-warning",
+    "subtopic": "truck entering",
+    "question": "What does this sign tell you to expect?",
+    "signId": "truck-entering",
+    "choices": [
+      "Trucks may be entering or leaving the roadway ahead and may be moving slower than through traffic",
+      "A truck route begins ahead",
+      "Trucks are prohibited beyond this point",
+      "A truck inspection station is ahead"
+    ],
+    "correctChoice": 0,
+    "explanation": "This sign warns that trucks are entering or leaving the road ahead. Slow-moving heavy vehicles joining a faster road create a large speed difference, which is one of the main causes of collisions.",
+    "incorrectChoiceExplanations": [
+      null,
+      "A truck route is a white regulatory sign with an arrow.",
+      "A prohibition would use a red circle and slash.",
+      "The sign is a warning about traffic movement, not a facility."
+    ],
+    "difficulty": "medium",
+    "tags": ["warning", "trucks"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 83" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-warn-019",
+    "type": "sign",
+    "topic": "signs-warning",
+    "subtopic": "animal crossing",
+    "question": "You see this sign on a rural Nova Scotia highway at dusk. What should you do?",
+    "signId": "animal-crossing",
+    "choices": [
+      "Slow down, look well ahead, and use your high beams when it is safe to do so",
+      "Sound your horn continuously to scare animals away",
+      "Speed up to pass through the area quickly",
+      "Ignore it — the sign only applies during hunting season"
+    ],
+    "correctChoice": 0,
+    "explanation": "Animal crossing signs warn you where there is a known danger of large animals such as moose, deer or cattle stepping out onto the road. Look well ahead, and at night use your high beams when possible — remembering to dim them within 150 metres of an approaching vehicle. Animals may appear from anywhere, not only where the sign is posted.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Continuous horn use is not the recommended response and can startle an animal into the road.",
+      "Speed reduces the time you have to react to an animal that is already on the road.",
+      "The hazard exists year round, and is greatest at dawn and dusk."
+    ],
+    "difficulty": "medium",
+    "tags": ["warning", "animals", "rural", "night driving"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 146" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-warn-020",
+    "type": "sign",
+    "topic": "signs-warning",
+    "subtopic": "two-way traffic",
+    "question": "What does this sign tell you?",
+    "signId": "two-way-traffic",
+    "choices": [
+      "The section of road you are on is a two-way road and the normal two-way rules apply",
+      "You may use either lane freely",
+      "Passing is permitted in both directions",
+      "The road ahead is one-way"
+    ],
+    "correctChoice": 0,
+    "explanation": "This sign indicates to drivers that the section of road they are travelling on is a two-way road, and that the normal rules of the road for two-way operation apply. It is commonly posted after a divided section ends.",
+    "incorrectChoiceExplanations": [
+      null,
+      "On a two-way road you must keep right except when passing, turning left or avoiding an obstruction.",
+      "Whether passing is permitted is shown by the pavement markings and the passing signs.",
+      "This is the opposite of a one-way indication."
+    ],
+    "difficulty": "medium",
+    "tags": ["warning", "two-way traffic"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 94" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-warn-021",
+    "type": "sign",
+    "topic": "signs-warning",
+    "subtopic": "speed limit change ahead",
+    "question": "What does this sign tell you?",
+    "signId": "speed-limit-change-ahead",
+    "choices": [
+      "The maximum speed limit changes ahead — be prepared to adjust your speed accordingly",
+      "The speed limit shown applies from this point onward",
+      "There is a speed camera ahead",
+      "The advisory speed for a curve ahead"
+    ],
+    "correctChoice": 0,
+    "explanation": "This yellow warning sign gives advance notice of a change in the maximum speed limit ahead, so you can be prepared to adjust your speed accordingly. The new limit takes effect at the white regulatory speed sign, not at this warning.",
+    "incorrectChoiceExplanations": [
+      null,
+      "This is a warning of a change ahead; the regulatory white sign is where the new limit begins.",
+      "Enforcement equipment is not what this sign indicates.",
+      "A curve advisory speed is posted beneath a curve warning sign."
+    ],
+    "difficulty": "medium",
+    "tags": ["warning", "speed limits"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 90" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-warn-022",
+    "type": "sign",
+    "topic": "signs-warning",
+    "subtopic": "sign recognition",
+    "question": "Which of these signs warns that the road ahead may be slippery when wet?",
+    "choiceSignIds": ["slippery-when-wet", "bump", "right-curve", "merge"],
+    "choices": [
+      "A yellow diamond with a black car symbol above two wavy skid marks.",
+      "A yellow diamond with a black horizontal line that rises into a rounded hump.",
+      "A yellow diamond with a black arrow that bends to the right as it rises.",
+      "A yellow diamond with a straight black arrow and a second line joining it from the right."
+    ],
+    "correctChoice": 0,
+    "explanation": "The wavy skid marks under the car are the visual cue for lost traction. All four are yellow diamond warning signs, so the symbol inside is what distinguishes them.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The rising hump warns of a bump or rough road.",
+      "The bending arrow warns of a curve to the right.",
+      "The joining lines warn of a merge."
+    ],
+    "difficulty": "easy",
+    "tags": ["warning", "sign recognition"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 83, 91-93" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  }
+]

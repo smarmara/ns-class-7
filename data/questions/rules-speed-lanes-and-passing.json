@@ -1,0 +1,802 @@
+[
+  {
+    "id": "rules-speed-001",
+    "type": "rules",
+    "topic": "speed-limits",
+    "subtopic": "default limits",
+    "question": "Unless otherwise posted, what is the maximum speed permitted on a highway in Nova Scotia?",
+    "choices": ["80 km/h", "100 km/h", "90 km/h", "70 km/h"],
+    "correctChoice": 0,
+    "explanation": "Unless otherwise posted, the maximum speed permitted on any highway in Nova Scotia is 80 km/h. Your speed must still be reasonable and prudent for the traffic, the surface and width of the highway, and the conditions at the time.",
+    "incorrectChoiceExplanations": [
+      null,
+      "100 km/h and higher limits are posted on some 100-series highways, but that is not the default.",
+      "90 km/h is not a Nova Scotia default limit.",
+      "70 km/h is not the default; it is the speed below which four-way flashers may be required on a posted climbing lane."
+    ],
+    "difficulty": "easy",
+    "tags": ["speed limits"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 50" },
+      { "sourceId": "ns-mva", "section": "s.102" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-speed-002",
+    "type": "rules",
+    "topic": "speed-limits",
+    "subtopic": "default limits",
+    "question": "What is the speed limit in business and residential districts unless otherwise posted?",
+    "choices": ["50 km/h", "40 km/h", "60 km/h", "30 km/h"],
+    "correctChoice": 0,
+    "explanation": "In business and residential districts the speed limit is 50 km/h. Regardless of the posted limit, your speed must be reasonable and prudent for the conditions.",
+    "incorrectChoiceExplanations": [
+      null,
+      "40 km/h is not a Nova Scotia default limit.",
+      "60 km/h is the threshold for the transit-bus yield rule and the emergency-vehicle slow-down speed, not the district limit.",
+      "30 km/h is the school-area limit where the approaching limit is 50 km/h."
+    ],
+    "difficulty": "easy",
+    "tags": ["speed limits", "urban"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 50" },
+      { "sourceId": "ns-mva", "section": "s.102" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-speed-003",
+    "type": "rules",
+    "topic": "speed-limits",
+    "subtopic": "railway crossings",
+    "question": "The maximum speed limit is set at 50 km/h when you approach within what distance of a railway crossing?",
+    "choices": ["30 metres", "15 metres", "60 metres", "100 metres"],
+    "correctChoice": 0,
+    "explanation": "The maximum speed limit is 50 km/h when approaching within 30 metres of a railway crossing. This is one of a list of situations in which the 50 km/h limit applies regardless of the general posted limit.",
+    "incorrectChoiceExplanations": [
+      null,
+      "15 metres is the distance from the nearest rail within which you may not park.",
+      "60 metres is the commercial-vehicle following distance.",
+      "100 metres is the distance from which brake lights must be visible in normal sunlight."
+    ],
+    "difficulty": "hard",
+    "tags": ["speed limits", "railway"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 51" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-speed-004",
+    "type": "rules",
+    "topic": "speed-limits",
+    "subtopic": "obstructed intersections",
+    "question": "In which of these situations is the maximum speed limit set at 50 km/h?",
+    "choices": [
+      "Within 15 metres of an intersection where your view is reduced to less than 60 metres along the intersecting highway",
+      "Within 15 metres of any intersection, without exception",
+      "Within 60 metres of any intersection",
+      "Whenever you are within sight of an intersection"
+    ],
+    "correctChoice": 0,
+    "explanation": "The 50 km/h limit applies within 15 metres of an intersection where your view is reduced to less than 60 metres in either direction along any intersecting highway. The exception is when travelling on a through street or highway, or at traffic-controlled intersections.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The rule is about restricted sight lines, and it does not apply on through streets or at controlled intersections.",
+      "The 60-metre figure is the sight distance, not the distance from the intersection.",
+      "Merely seeing an intersection ahead does not trigger the limit."
+    ],
+    "difficulty": "hard",
+    "tags": ["speed limits", "intersections"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 51" },
+      { "sourceId": "ns-mva", "section": "s.102" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-speed-005",
+    "type": "rules",
+    "topic": "speed-limits",
+    "subtopic": "driving too slowly",
+    "question": "What does the Driver's Handbook say about driving well below the posted speed limit in ideal conditions?",
+    "choices": [
+      "It can be dangerous, and a driver blocking traffic should stop where it is safe and let the traffic pass",
+      "It is always the safest choice",
+      "It is illegal only on 100-series highways",
+      "It is acceptable as long as you use your four-way flashers"
+    ],
+    "correctChoice": 0,
+    "explanation": "Driving below the posted limit in ideal conditions can be dangerous. A vehicle moving considerably below the posted limit is much more likely to cause or be involved in a crash. You should not drive so slowly as to block the normal and reasonable flow of traffic; a slow driver must stop where it is safe to do so and allow blocked traffic to pass.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Large speed differences between vehicles are themselves a hazard, especially beyond a crest or around a curve.",
+      "The principle applies on all roads, not just 100-series highways.",
+      "Four-way flashers are for specific situations such as a stalled vehicle or a posted climbing lane, not a licence to obstruct traffic."
+    ],
+    "difficulty": "medium",
+    "tags": ["speed limits", "safety"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "pp. 47-48" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-speed-006",
+    "type": "rules",
+    "topic": "speed-limits",
+    "subtopic": "posted limits are maxima",
+    "question": "What does a posted maximum speed sign actually indicate?",
+    "choices": [
+      "The maximum speed allowable under ideal conditions — you must reduce speed when conditions are poor",
+      "The speed you are expected to travel at in all conditions",
+      "A minimum speed for that section of road",
+      "An average speed measured over the whole trip"
+    ],
+    "correctChoice": 0,
+    "explanation": "Speed signs indicate the maximum speed allowable under ideal conditions. Reduce your speed when poor conditions exist or visibility is restricted. Despite posted limits, you must drive at a speed and in a manner that will not endanger life, limb or property.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Rain, fog, snow and heavy traffic all require a speed below the posted limit.",
+      "Maximum signs set a ceiling, not a floor.",
+      "Speed limits apply at every moment, not on average."
+    ],
+    "difficulty": "easy",
+    "tags": ["speed limits", "signs", "conditions"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 90" },
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 50" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-follow-001",
+    "type": "rules",
+    "topic": "following-and-stopping",
+    "subtopic": "two-second rule",
+    "question": "How does the two-second rule tell you that you are following too closely?",
+    "choices": [
+      "You reach a fixed landmark before you finish counting 'one thousand and two' after the vehicle ahead passes it",
+      "You cannot see the other vehicle's mirrors",
+      "You cannot read the other vehicle's licence plate",
+      "Two vehicles fit between you and the vehicle ahead"
+    ],
+    "correctChoice": 0,
+    "explanation": "Pick a landmark ahead. When the vehicle you are following passes it, count 'one thousand and one, one thousand and two'. If you reach the landmark before you finish counting, you are following too close.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Mirror visibility is the check for whether a truck driver can see you, not a following-distance measure.",
+      "There is no plate-reading rule in the handbook.",
+      "The rule is measured in time, not vehicle lengths, because a safe gap grows with speed."
+    ],
+    "difficulty": "easy",
+    "tags": ["following distance"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 49" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-follow-002",
+    "type": "rules",
+    "topic": "following-and-stopping",
+    "subtopic": "increasing following distance",
+    "question": "In which of these situations should you allow MORE than a two-second following distance?",
+    "choices": [
+      "On slippery roads, in fog or rain, when carrying a heavy load, or when following a large commercial vehicle",
+      "Only when driving at night",
+      "Only when following a motorcycle",
+      "Only on 100-series highways"
+    ],
+    "correctChoice": 0,
+    "explanation": "The two-second rule is enough for most driving, but allow more distance on slippery roads, when visibility is reduced by fog, rain, snow or sun glare, when following large commercial vehicles that block your view, when carrying a heavy load, and when following a smaller vehicle such as a motorcycle that can stop more quickly than you.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Night driving is one of several reasons, not the only one.",
+      "Motorcycles are one case in the handbook's list, but not the only one.",
+      "Following distance matters on every road."
+    ],
+    "difficulty": "medium",
+    "tags": ["following distance", "conditions"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 49" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-follow-003",
+    "type": "rules",
+    "topic": "following-and-stopping",
+    "subtopic": "stopping distance",
+    "question": "Even in ideal conditions, roughly how much distance does a vehicle travelling at 80 km/h need to come to a complete stop?",
+    "choices": [
+      "More than 140 metres",
+      "About 40 metres",
+      "About 80 metres",
+      "About 250 metres"
+    ],
+    "correctChoice": 0,
+    "explanation": "Even in ideal conditions, a vehicle travelling at 80 km/h requires more than 140 metres (460 feet) to stop completely. Stopping distance combines the distance covered during your reaction time with the braking distance.",
+    "incorrectChoiceExplanations": [
+      null,
+      "40 metres is far shorter than the reaction distance alone at highway speed.",
+      "80 metres underestimates the total; the handbook's figure is more than 140 metres.",
+      "250 metres overstates the figure for 80 km/h."
+    ],
+    "difficulty": "medium",
+    "tags": ["stopping distance", "speed"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 47" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-follow-004",
+    "type": "rules",
+    "topic": "following-and-stopping",
+    "subtopic": "braking vs steering",
+    "question": "At speeds above 40 km/h, when you must avoid an obstacle, which is generally preferred?",
+    "choices": [
+      "Evasive steering, because you need less distance to steer around an object than to stop",
+      "Hard braking, because stopping is always safest",
+      "Accelerating past the obstacle",
+      "Pumping the brakes repeatedly"
+    ],
+    "correctChoice": 0,
+    "explanation": "Whenever you have a choice of braking or steering to avoid a collision, it is generally best to use evasive steering rather than braking, or to combine threshold braking with steering. Steering is preferred above 40 km/h because you need less distance to steer around an object than to come to a complete stop.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Above 40 km/h you often simply do not have the distance to stop.",
+      "Accelerating reduces your remaining options and increases impact energy.",
+      "Pumping is specifically wrong on a vehicle with ABS — press steadily and firmly instead."
+    ],
+    "difficulty": "hard",
+    "tags": ["braking", "emergency", "steering"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 125" },
+      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 143" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-follow-005",
+    "type": "rules",
+    "topic": "following-and-stopping",
+    "subtopic": "ABS",
+    "question": "Your vehicle has an antilock braking system (ABS) and you need to stop hard. What is the correct technique?",
+    "choices": [
+      "Press the brake steadily and firmly and do not pump it — a slight vibration and pulsing noise is normal",
+      "Pump the brake pedal rapidly",
+      "Apply the parking brake at the same time",
+      "Release the brake as soon as you feel vibration"
+    ],
+    "correctChoice": 0,
+    "explanation": "ABS prevents the brakes from locking. If your vehicle has ABS, press the brake steadily and firmly. Do not pump the brake, and do not release it until you have control of the vehicle or it has stopped. A slight vibration and pulsing noise is normal.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Pumping defeats the system, which is already modulating the brakes for you.",
+      "The parking brake is not part of normal emergency braking and can upset the vehicle.",
+      "The vibration is the system working; releasing the brake lengthens your stop."
+    ],
+    "difficulty": "medium",
+    "tags": ["braking", "ABS"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 125" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-lane-001",
+    "type": "rules",
+    "topic": "lane-use",
+    "subtopic": "keeping right",
+    "question": "On a multi-lane highway, what is the correct use of the left lane?",
+    "choices": [
+      "It is a transition lane for passing — travelling at the speed limit does not entitle you to stay in it",
+      "It is for any driver travelling at the posted speed limit",
+      "It is reserved for vehicles turning left at the next exit",
+      "It is the lane slower vehicles should use"
+    ],
+    "correctChoice": 0,
+    "explanation": "On a multi-lane highway slower vehicles should travel in the right lane. Driving at the speed limit doesn't entitle you to 'camp' in the left lane. The left lane is a transition lane designed for passing. If you remain in it, other drivers may try to pass you on the right, which is less safe.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Matching the speed limit does not create a right to occupy the passing lane indefinitely.",
+      "Exits on 100-series highways are usually to the right.",
+      "This reverses the rule — slower traffic belongs in the right lane."
+    ],
+    "difficulty": "medium",
+    "tags": ["lane use", "highways"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "pp. 46, 59" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-lane-002",
+    "type": "rules",
+    "topic": "lane-use",
+    "subtopic": "driving on the right",
+    "question": "Drivers must drive on the right side of the road except in which circumstances?",
+    "choices": [
+      "When passing, turning left, or avoiding an obstruction",
+      "When the road is empty",
+      "When the left lane is smoother",
+      "When travelling faster than the posted limit"
+    ],
+    "correctChoice": 0,
+    "explanation": "Drivers must drive on the right side of the road except when passing, turning left, or avoiding an obstruction. Slow-moving traffic must drive as closely as practical to the right edge or curb.",
+    "incorrectChoiceExplanations": [
+      null,
+      "An empty road does not change which side you drive on.",
+      "Road surface quality is not one of the exceptions.",
+      "Exceeding the speed limit is never a lawful reason for anything."
+    ],
+    "difficulty": "easy",
+    "tags": ["lane use"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 46" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-lane-003",
+    "type": "rules",
+    "topic": "lane-use",
+    "subtopic": "lane change steps",
+    "question": "You are changing lanes on the Bedford Highway. In what order should you carry out the manoeuvre?",
+    "choices": [
+      "Check mirrors, check your blind spot and signal, check again for fast-approaching traffic, then steer gradually across",
+      "Signal, brake, then move across quickly",
+      "Move across first, then signal to tell others what you have done",
+      "Check mirrors only, then move across at a steady speed"
+    ],
+    "correctChoice": 0,
+    "explanation": "Check your mirrors for a safe gap; check your blind spot by looking over your shoulder in the direction of the change and signal; check again to be certain no vehicle is approaching too fast from behind; then steer gradually into the new lane. Do not slow down — maintain the same speed or gently increase it.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Braking during a lane change invites a rear-end collision and is not part of the procedure.",
+      "A signal after the fact gives no one a chance to react.",
+      "Mirrors do not cover your blind spots; a shoulder check is required."
+    ],
+    "difficulty": "medium",
+    "tags": ["lane change", "blind spots", "halifax"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 56" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-lane-004",
+    "type": "rules",
+    "topic": "lane-use",
+    "subtopic": "two-way left turn lane",
+    "question": "A centre lane is marked as a two-way left turn lane. Which use of it is permitted?",
+    "choices": [
+      "Moving into it close to your exit point to wait for a gap and complete a left turn",
+      "Using it to pass a slower vehicle",
+      "Driving along it for several blocks before your turn",
+      "Using it as an extra through lane during rush hour"
+    ],
+    "correctChoice": 0,
+    "explanation": "The centre lane is reserved exclusively as a two-way left turn lane: traffic travelling in both directions shares it when making left turns. Move into it as close to your exit point as possible, and do not drive in it for an extended distance. Never use it to pass or overtake.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Never use this lane to pass or overtake another vehicle — vehicles may be entering it head-on.",
+      "You should not drive in the lane for an extended distance.",
+      "It is not a through lane at any time of day."
+    ],
+    "difficulty": "medium",
+    "tags": ["lane use", "turning", "pavement markings"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 87" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-lane-005",
+    "type": "rules",
+    "topic": "lane-use",
+    "subtopic": "climbing lanes",
+    "question": "You are on a two-lane highway with a climbing lane. Who has the right of way, and what should slower vehicles do?",
+    "choices": [
+      "The vehicle on the right has the right of way; all traffic keeps right unless passing, and vehicles under 70 km/h use four-way flashers where a sign directs",
+      "The vehicle in the left lane has the right of way because it is passing",
+      "Traffic may use either lane freely until the climbing lane ends",
+      "Slower vehicles should move into the left lane to let faster traffic use the right lane"
+    ],
+    "correctChoice": 0,
+    "explanation": "Climbing lanes let faster traffic pass slower traffic. All traffic must keep to the right unless passing. Vehicles travelling at less than 70 km/h must use four-way flashers when a posted sign on the right-hand side of the road directs it. Traffic wishing to pass uses the left lane and returns right when the pass is complete. The vehicle on the right has the right of way.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Passing does not confer right of way; the vehicle on the right has it.",
+      "Keeping right unless passing applies throughout the climbing lane.",
+      "This reverses the arrangement; slower traffic stays right."
+    ],
+    "difficulty": "hard",
+    "tags": ["lane use", "climbing lane", "rural"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 86" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-turn-001",
+    "type": "rules",
+    "topic": "turning",
+    "subtopic": "right turn position",
+    "question": "Why should you stay close to the right-hand edge of the road when making a right turn?",
+    "choices": [
+      "So that another vehicle cannot move between your vehicle and the curb",
+      "So that you can complete the turn without signalling",
+      "So that you can take the corner at a higher speed",
+      "So that you end up in the left lane of the new road"
+    ],
+    "correctChoice": 0,
+    "explanation": "For right turns, stay close to the right-hand edge of the road so that another vehicle — including a cyclist — cannot move between your vehicle and the curb. Reduce speed before the turn, do a shoulder check, yield the right of way, and wait for pedestrians in your path.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Signalling is always required; lane position does not replace it.",
+      "You should reduce speed before making a turn, not increase it.",
+      "A right turn should finish in the right-hand lane of the new road."
+    ],
+    "difficulty": "medium",
+    "tags": ["turning", "lane position", "bicycles"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 54" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-turn-002",
+    "type": "rules",
+    "topic": "turning",
+    "subtopic": "two-way to two-way left turn",
+    "question": "You are turning left from a two-way road onto another two-way road. Which lanes should you use?",
+    "choices": [
+      "Turn from the lane closest to the centre line into the lane just right of the centre line, then move to the right curb lane when you can",
+      "Turn from the right curb lane into the right curb lane",
+      "Turn from the lane closest to the centre line directly into the right curb lane",
+      "Turn from whichever lane is clearest into whichever lane is clearest"
+    ],
+    "correctChoice": 0,
+    "explanation": "For a left turn from a two-way road onto a two-way road, turn from the lane closest to the centre line into the lane right of the centre line. Then, when you can do so safely, move into the right curb lane.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Turning left from the right curb lane cuts across the traffic beside you.",
+      "Crossing straight into the far lane sweeps across a lane other traffic may be occupying.",
+      "Turns have defined lane paths so that other drivers can predict where you will end up."
+    ],
+    "difficulty": "hard",
+    "tags": ["turning", "lane position"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 55" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-turn-003",
+    "type": "rules",
+    "topic": "turning",
+    "subtopic": "multiple turning lanes",
+    "question": "An intersection has two left-turn lanes and you are in the right-hand one. Where should you end up?",
+    "choices": [
+      "In the corresponding receiving lane — stay in the lane you started in from beginning to end of the turn",
+      "In the leftmost lane of the new road",
+      "In whichever lane has the most space",
+      "In the curb lane, so you can turn right at the next corner"
+    ],
+    "correctChoice": 0,
+    "explanation": "Finish your turn in the proper lane. If there are two turning lanes, stay in the lane you are in from the beginning to the end of the turn. If you begin turning in the right turning lane, you will enter the next roadway in the right receiving lane.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Crossing into the far lane during the turn puts you into the path of the vehicle beside you.",
+      "Choosing a lane mid-turn is unpredictable for the driver turning alongside you.",
+      "Change lanes after completing the turn, not during it."
+    ],
+    "difficulty": "medium",
+    "tags": ["turning", "lane position"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 55" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-turn-004",
+    "type": "rules",
+    "topic": "turning",
+    "subtopic": "signalling",
+    "question": "Which statement about signalling before a turn is correct?",
+    "choices": [
+      "Signalling does not give you the right of way — you must still make sure the way is clear and safe",
+      "Once you have signalled, other traffic must make room for you",
+      "A signal is only necessary if another vehicle is close behind you",
+      "Hand signals are always preferable to signal lights"
+    ],
+    "correctChoice": 0,
+    "explanation": "Use your signal lights to show your driving intentions, but signalling does not give you the right of way. You must make sure the way is clear and safe before starting, stopping or turning.",
+    "incorrectChoiceExplanations": [
+      null,
+      "A signal announces an intention; it does not create a right to carry it out.",
+      "Signals are required to turn at an intersection, change lanes, start from a parked position and stop from a moving position.",
+      "Hand signals may be used but cautiously, since they may not be seen as readily as vehicle signals."
+    ],
+    "difficulty": "easy",
+    "tags": ["turning", "signalling"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 53" },
+      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 113" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-pass-001",
+    "type": "rules",
+    "topic": "passing",
+    "subtopic": "signal and horn",
+    "question": "What must you do before overtaking and passing another vehicle on a two-way road?",
+    "choices": [
+      "Signal your intention to pass and sound your horn",
+      "Flash your high beams at the vehicle ahead",
+      "Signal only — the horn is for emergencies",
+      "Move left first, then signal"
+    ],
+    "correctChoice": 0,
+    "explanation": "You must signal your intention to pass and sound your horn before overtaking and passing another vehicle. The horn signal places the driver of the vehicle you are passing under a legal obligation to help you to pass: they must give way and must not increase speed until you have completely passed.",
+    "incorrectChoiceExplanations": [
+      null,
+      "High beams are not the prescribed signal; at night you should use low beams until the pass is complete.",
+      "In Nova Scotia sounding the horn before passing is required, not optional.",
+      "Signal before you move, so that drivers around you know what you intend."
+    ],
+    "difficulty": "medium",
+    "tags": ["passing", "horn", "signalling"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "pp. 57-58" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-pass-002",
+    "type": "rules",
+    "topic": "passing",
+    "subtopic": "sight distance",
+    "question": "On a curve or hill, how far must you be able to see ahead before passing is considered safe?",
+    "choices": ["At least 150 metres", "At least 60 metres", "At least 100 metres", "At least 300 metres"],
+    "correctChoice": 0,
+    "explanation": "Passing is always unsafe and usually illegal on any curve or hill where you cannot see at least 150 metres ahead. Since curves and hills obstruct the view of the road, do not pass or back up within a curve.",
+    "incorrectChoiceExplanations": [
+      null,
+      "60 metres is the commercial-vehicle following distance and the distance for dimming high beams when following.",
+      "100 metres is the distance from which brake lights must be visible.",
+      "300 metres is the visibility threshold that requires headlights."
+    ],
+    "difficulty": "hard",
+    "tags": ["passing", "sight distance"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 59" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-pass-003",
+    "type": "rules",
+    "topic": "passing",
+    "subtopic": "two-lane roads",
+    "question": "On a two-lane road, the vehicle ahead of you has already pulled out to pass a slow truck. What should you do?",
+    "choices": [
+      "Wait for the first vehicle to complete its pass safely, then consider passing yourself",
+      "Follow it out and pass both vehicles together",
+      "Pass on the right while the other driver is out of the lane",
+      "Pull out alongside it so you are ready to go"
+    ],
+    "correctChoice": 0,
+    "explanation": "Whenever there are only two lanes, never follow another vehicle that has already begun to pass a slower-moving vehicle. Wait for the first vehicle to pass safely and then proceed.",
+    "incorrectChoiceExplanations": [
+      null,
+      "You cannot see past the passing vehicle, and you have nowhere to go if oncoming traffic appears.",
+      "Passing on the right on a two-lane road puts you on the shoulder and in the blind side of the truck.",
+      "Sitting in the oncoming lane waiting is exactly the position that produces head-on collisions."
+    ],
+    "difficulty": "medium",
+    "tags": ["passing", "rural"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 57" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-pass-004",
+    "type": "rules",
+    "topic": "passing",
+    "subtopic": "completing a pass",
+    "question": "How do you know you have NOT passed safely?",
+    "choices": [
+      "The vehicle you passed has to slow down to let you back into your lane",
+      "You had to use the full width of the passing lane",
+      "You could see the vehicle's headlights in your rearview mirror before returning",
+      "You signalled before returning to your lane"
+    ],
+    "correctChoice": 0,
+    "explanation": "You have not passed safely if the vehicle you have passed must slow down to allow you back into your correct lane. Move right when the headlights of the vehicle you have passed are visible in your rearview mirror.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Using the passing lane is what it is for.",
+      "Seeing the passed vehicle's headlights in your mirror is exactly the cue that you may safely return.",
+      "Signalling your return is correct procedure."
+    ],
+    "difficulty": "medium",
+    "tags": ["passing"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 58" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-pass-005",
+    "type": "rules",
+    "topic": "passing",
+    "subtopic": "being passed",
+    "question": "Another driver sounds their horn and begins to pass you. What are you required to do?",
+    "choices": [
+      "Give way — move to the right edge of the pavement and never increase your speed",
+      "Maintain your position so the other driver can judge the gap",
+      "Speed up so the pass takes less time",
+      "Move left to block the manoeuvre until it is safe"
+    ],
+    "correctChoice": 0,
+    "explanation": "When you are being passed you must help the other driver to pass. If the driver of the passing car sounds the horn, move to the right edge of the pavement. Never increase your speed — the vehicle being passed must not increase speed until it has been completely passed.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The law places a positive obligation on you to give way, not merely to hold your line.",
+      "Speeding up strands the passing driver in the oncoming lane.",
+      "Blocking a pass is dangerous and is the opposite of the legal duty."
+    ],
+    "difficulty": "medium",
+    "tags": ["passing"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "pp. 57, 59" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-pass-006",
+    "type": "rules",
+    "topic": "passing",
+    "subtopic": "passing at night",
+    "question": "When passing another vehicle at night, which headlights should you use?",
+    "choices": [
+      "Low beams, until you have completed the pass",
+      "High beams throughout, so you can see further",
+      "Parking lights only",
+      "Four-way flashers"
+    ],
+    "correctChoice": 0,
+    "explanation": "When passing at night, use low-beam headlights until you have completed your pass. High beams would dazzle the driver you are overtaking through their mirrors.",
+    "incorrectChoiceExplanations": [
+      null,
+      "High beams must be dimmed within 60 metres when following a vehicle and within 150 metres of an approaching one.",
+      "It is illegal to use parking lights instead of headlights when lights are required.",
+      "Four-way flashers are for emergency situations such as a stalled vehicle."
+    ],
+    "difficulty": "medium",
+    "tags": ["passing", "night driving", "headlights"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 57" },
+      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 136" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-pass-007",
+    "type": "rules",
+    "topic": "passing",
+    "subtopic": "where passing is prohibited",
+    "question": "Which of these is a place where passing is always unsafe and usually illegal?",
+    "choices": [
+      "Wherever there is a double solid yellow line",
+      "Wherever there is a broken yellow line on your side",
+      "Wherever there is a broken white line",
+      "On any multi-lane highway"
+    ],
+    "correctChoice": 0,
+    "explanation": "Passing is always unsafe and usually illegal wherever there is a double solid yellow line, and wherever there is a solid yellow line in your lane combined with a broken line in the approaching lane. Other prohibited places include intersections in cities and towns, railway crossings, marked rural intersections, and any curve or hill without 150 metres of visibility.",
+    "incorrectChoiceExplanations": [
+      null,
+      "A broken yellow line on your side of the centre markings is where passing with care is permitted.",
+      "Broken white lines separate lanes travelling in the same direction and permit lane changes.",
+      "Multi-lane highways are where passing is normally done."
+    ],
+    "difficulty": "easy",
+    "tags": ["passing", "pavement markings"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 59" },
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 84" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-pass-008",
+    "type": "rules",
+    "topic": "passing",
+    "subtopic": "passing on the right",
+    "question": "On a highway with two or more substantially continuous lanes in your direction, when may you pass another vehicle on the right?",
+    "choices": [
+      "When that vehicle is making a left turn",
+      "Whenever the right lane is moving faster",
+      "Never — passing on the right is always prohibited",
+      "Only when the vehicle ahead signals you past"
+    ],
+    "correctChoice": 0,
+    "explanation": "On highways with two or more substantially continuous lanes you may pass another vehicle from the right or left, and in particular you may pass on the right if that vehicle is making a left turn. Be aware that passing on the right places your vehicle on the blind side of the car you are passing.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Relative lane speed is not by itself a licence to undertake, and it is less safe than passing on the left.",
+      "It is permitted in the circumstances described in the handbook, though it carries extra risk.",
+      "No driver can authorise another to pass; the rules do."
+    ],
+    "difficulty": "hard",
+    "tags": ["passing", "lane use"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 59" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  }
+]

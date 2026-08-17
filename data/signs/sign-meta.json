@@ -1,0 +1,377 @@
+{
+  "description": "Metadata for the original sign artwork. `label` is the sign's meaning (used in answers and explanations). `visualDescription` is shape, colour and symbols ONLY — never the meaning — because it is the accessible name shown to screen-reader users, and a description that stated the meaning would answer sign-recognition questions outright. `basis` records which official source establishes the design and meaning. The matching SVG artwork lives in src/signs/registry.tsx, keyed by the same id.",
+  "signs": {
+    "stop": {
+      "label": "Stop",
+      "category": "regulatory",
+      "visualDescription": "An eight-sided sign with a red background and the word STOP in white capital letters.",
+      "basis": "Traffic Signs Regulations: block capital white letters on a red background; Driver's Handbook ch.3 p.80."
+    },
+    "yield": {
+      "label": "Yield",
+      "category": "regulatory",
+      "visualDescription": "A downward-pointing triangle with a red border and a white centre, containing the word YIELD.",
+      "basis": "Traffic Signs Regulations: red inverted triangle with a white centre; Driver's Handbook ch.3 p.80."
+    },
+    "maximum-speed-50": {
+      "label": "Maximum speed 50 km/h",
+      "category": "regulatory",
+      "visualDescription": "A white rectangular sign with black lettering reading MAXIMUM, the number 50, and km/h.",
+      "basis": "Driver's Handbook ch.3 p.90; Traffic Signs Regulations RB-1."
+    },
+    "maximum-speed-80": {
+      "label": "Maximum speed 80 km/h",
+      "category": "regulatory",
+      "visualDescription": "A white rectangular sign with black lettering reading MAXIMUM, the number 80, and km/h.",
+      "basis": "Driver's Handbook ch.3 p.90; Traffic Signs Regulations RB-1."
+    },
+    "speed-limit-change-ahead": {
+      "label": "Change in maximum speed limit ahead",
+      "category": "warning",
+      "visualDescription": "A yellow diamond containing a small white speed-limit panel showing MAXIMUM 50 km/h.",
+      "basis": "Driver's Handbook ch.3 p.90."
+    },
+    "one-way": {
+      "label": "One way — traffic may travel only in the direction of the arrow",
+      "category": "regulatory",
+      "visualDescription": "A wide black rectangular sign with a white arrow pointing right and the words ONE WAY.",
+      "basis": "Driver's Handbook ch.3 p.89."
+    },
+    "do-not-enter": {
+      "label": "Do not enter",
+      "category": "prohibition",
+      "visualDescription": "A white rectangular sign containing a red circle with a wide white horizontal bar across it.",
+      "basis": "Driver's Handbook ch.3 p.89."
+    },
+    "do-not-pass": {
+      "label": "Do not pass",
+      "category": "prohibition",
+      "visualDescription": "A white sign showing two car silhouettes inside a red circle with a red diagonal line through it.",
+      "basis": "Driver's Handbook ch.3 p.83: two cars in a red circle with a line through it means do not pass."
+    },
+    "passing-permitted": {
+      "label": "Passing permitted",
+      "category": "regulatory",
+      "visualDescription": "A white sign showing two car silhouettes inside a green circle with no line through it.",
+      "basis": "Driver's Handbook ch.3 p.83: two cars in a green circle means that passing is permitted."
+    },
+    "no-left-turn": {
+      "label": "No left turn",
+      "category": "prohibition",
+      "visualDescription": "A white sign with a left-pointing curved arrow inside a red circle with a red diagonal line through it.",
+      "basis": "Driver's Handbook ch.3 p.89."
+    },
+    "no-right-turn": {
+      "label": "No right turn",
+      "category": "prohibition",
+      "visualDescription": "A white sign with a right-pointing curved arrow inside a red circle with a red diagonal line through it.",
+      "basis": "Driver's Handbook ch.3 pp.88-89."
+    },
+    "no-right-turn-on-red": {
+      "label": "No right turn on a red signal — wait for the green light",
+      "category": "prohibition",
+      "visualDescription": "A white sign with a right-curving arrow crossed out in red, above the words ON RED.",
+      "basis": "Driver's Handbook ch.3 p.89."
+    },
+    "no-u-turn": {
+      "label": "No U-turn",
+      "category": "prohibition",
+      "visualDescription": "A white sign with a U-shaped arrow inside a red circle with a red diagonal line through it.",
+      "basis": "Driver's Handbook ch.3 p.89."
+    },
+    "no-turns": {
+      "label": "No turns",
+      "category": "prohibition",
+      "visualDescription": "A white sign with two opposing curved arrows inside a red circle with a red diagonal line through it.",
+      "basis": "Driver's Handbook ch.3 p.88."
+    },
+    "no-parking": {
+      "label": "No parking in either direction of this sign",
+      "category": "prohibition",
+      "visualDescription": "A white sign with the letter P inside a red circle with a red diagonal line through it, and arrows pointing both ways beneath.",
+      "basis": "Driver's Handbook ch.3 p.88."
+    },
+    "no-stopping": {
+      "label": "No stopping",
+      "category": "prohibition",
+      "visualDescription": "A white sign with the letter S inside a red circle with a red diagonal line through it, and arrows pointing both ways beneath.",
+      "basis": "Driver's Handbook ch.3 p.89."
+    },
+    "accessible-parking": {
+      "label": "Parking reserved for persons with a mobility disability",
+      "category": "regulatory",
+      "visualDescription": "A sign with a blue background and a white symbol of a person seated in a wheelchair.",
+      "basis": "Driver's Handbook ch.3 p.83."
+    },
+    "truck-route": {
+      "label": "Truck route — trucks may proceed only in the direction of the arrow",
+      "category": "guide",
+      "visualDescription": "A white rectangular sign reading TRUCK ROUTE with a black truck symbol and a right-pointing arrow.",
+      "basis": "Driver's Handbook ch.3 p.88."
+    },
+    "keep-right-of-island": {
+      "label": "Keep to the right of the traffic island or obstruction",
+      "category": "regulatory",
+      "visualDescription": "A white sign with a black upward arrow bending to the right around a black oval shape.",
+      "basis": "Driver's Handbook ch.3 p.90."
+    },
+    "hazard-marker-keep-right": {
+      "label": "Hazard marker — drive to the right of this sign",
+      "category": "regulatory",
+      "visualDescription": "A tall yellow rectangular sign with black diagonal stripes sloping down to the right.",
+      "basis": "Driver's Handbook ch.3 p.90: if the black lines are sloped to the right, drive to the right of the sign."
+    },
+    "slippery-when-wet": {
+      "label": "Slippery when wet",
+      "category": "warning",
+      "visualDescription": "A yellow diamond with a black car symbol above two wavy skid marks.",
+      "basis": "Driver's Handbook ch.3 p.83."
+    },
+    "traffic-signal-ahead": {
+      "label": "Traffic signal lights ahead",
+      "category": "warning",
+      "visualDescription": "A yellow diamond containing a black traffic-light housing with red, amber and green lamps.",
+      "basis": "Driver's Handbook ch.3 p.83."
+    },
+    "stop-sign-ahead": {
+      "label": "Stop sign ahead",
+      "category": "warning",
+      "visualDescription": "A yellow diamond containing a small red eight-sided sign with the word STOP and an arrow pointing to it.",
+      "basis": "Driver's Handbook ch.3 p.83."
+    },
+    "merge": {
+      "label": "Merge — prepare to merge with other vehicles",
+      "category": "warning",
+      "visualDescription": "A yellow diamond with a straight black arrow and a second line joining it from the right.",
+      "basis": "Driver's Handbook ch.3 pp.83, 93."
+    },
+    "road-narrows": {
+      "label": "Road narrows ahead",
+      "category": "warning",
+      "visualDescription": "A yellow diamond with two black lines that angle inward toward each other as they rise.",
+      "basis": "Driver's Handbook ch.3 p.91."
+    },
+    "hidden-intersection": {
+      "label": "Hidden intersection ahead",
+      "category": "warning",
+      "visualDescription": "A yellow diamond with a black cross shape where one arm is drawn as a broken line.",
+      "basis": "Driver's Handbook ch.3 p.91."
+    },
+    "steep-decline": {
+      "label": "Steep decline ahead — you may need to use a lower gear",
+      "category": "warning",
+      "visualDescription": "A yellow diamond with a black truck symbol tilted nose-down on a descending slope.",
+      "basis": "Driver's Handbook ch.3 p.91."
+    },
+    "bump": {
+      "label": "Bump or rough road ahead",
+      "category": "warning",
+      "visualDescription": "A yellow diamond with a black horizontal line that rises into a rounded hump.",
+      "basis": "Driver's Handbook ch.3 p.91."
+    },
+    "divided-highway-ends": {
+      "label": "Divided highway ends — two-way traffic beyond this point",
+      "category": "warning",
+      "visualDescription": "A yellow diamond with two black lanes that converge from a split into a single roadway.",
+      "basis": "Driver's Handbook ch.3 p.91."
+    },
+    "divided-highway-ahead": {
+      "label": "Divided highway ahead",
+      "category": "warning",
+      "visualDescription": "A yellow diamond with a single black lane that splits into two around a central divider.",
+      "basis": "Driver's Handbook ch.3 p.92."
+    },
+    "right-curve": {
+      "label": "Curve to the right ahead",
+      "category": "warning",
+      "visualDescription": "A yellow diamond with a black arrow that bends to the right as it rises.",
+      "basis": "Driver's Handbook ch.3 p.92."
+    },
+    "sharp-turn-right": {
+      "label": "Sharp turn or bend in the roadway ahead",
+      "category": "warning",
+      "visualDescription": "A yellow diamond with a black right-angled arrow above a black-and-white checkerboard band.",
+      "basis": "Driver's Handbook ch.3 p.92: checkerboard design is a warning to slow down; the arrow indicates the direction of the roadway."
+    },
+    "chevron-right": {
+      "label": "Chevron — the roadway turns sharply in the direction shown",
+      "category": "warning",
+      "visualDescription": "A tall yellow rectangular sign with a single large black arrowhead pointing to the right.",
+      "basis": "Driver's Handbook ch.3 p.93: chevron signs are posted in groups to guide drivers around sharp curves."
+    },
+    "low-clearance": {
+      "label": "Low clearance — overhead clearance as shown",
+      "category": "warning",
+      "visualDescription": "A yellow diamond with two facing black arrows separated by a gap, above a height measurement.",
+      "basis": "Driver's Handbook ch.3 p.93."
+    },
+    "right-lane-ends": {
+      "label": "Right lane ends ahead",
+      "category": "warning",
+      "visualDescription": "A yellow diamond with two black lanes where the right-hand one tapers and ends.",
+      "basis": "Driver's Handbook ch.3 p.92."
+    },
+    "narrow-structure": {
+      "label": "Narrow structure ahead",
+      "category": "warning",
+      "visualDescription": "A yellow diamond with two black vertical bars close together and lane lines passing between them.",
+      "basis": "Driver's Handbook ch.3 p.92."
+    },
+    "truck-entering": {
+      "label": "Truck entering the roadway ahead",
+      "category": "warning",
+      "visualDescription": "A yellow diamond with a black truck symbol on a side road joining a main road.",
+      "basis": "Driver's Handbook ch.3 p.83."
+    },
+    "animal-crossing": {
+      "label": "Watch for large animals crossing the road",
+      "category": "warning",
+      "visualDescription": "A yellow diamond with the black silhouette of a moose.",
+      "basis": "Driver's Handbook ch.5 p.146: animal crossing signs warn where there is a known danger of large animals such as moose, deer or cattle."
+    },
+    "school-area": {
+      "label": "School area",
+      "category": "school",
+      "visualDescription": "A five-sided sign with a fluorescent yellow-green background and two black figures of children walking.",
+      "basis": "Driver's Handbook ch.3 p.80: five-sided, fluorescent yellow-green, two school children pedestrian symbols in black; standard across Nova Scotia since 1 June 2001."
+    },
+    "school-crosswalk": {
+      "label": "School crosswalk",
+      "category": "school",
+      "visualDescription": "A five-sided fluorescent yellow-green sign with black figures of children above a striped crossing.",
+      "basis": "Driver's Handbook ch.3 p.88."
+    },
+    "pedestrian-crosswalk": {
+      "label": "Pedestrian crosswalk",
+      "category": "pedestrian-cyclist",
+      "visualDescription": "A sign with a black figure of a walking person, above a striped crossing.",
+      "basis": "Driver's Handbook ch.3 p.88; Traffic Signs Regulations: black symbol of a pedestrian on a white background."
+    },
+    "playground": {
+      "label": "Playground ahead — reduce speed and watch for children",
+      "category": "pedestrian-cyclist",
+      "visualDescription": "A fluorescent yellow-green diamond with the black silhouette of a running child.",
+      "basis": "Driver's Handbook ch.3 p.88."
+    },
+    "bicycle-route": {
+      "label": "Bicycle route — share the road with cyclists",
+      "category": "pedestrian-cyclist",
+      "visualDescription": "A yellow diamond with the black silhouette of a bicycle.",
+      "basis": "Driver's Handbook ch.2 pp.69-70: cyclists have the same rights and responsibilities as motorists and drivers must share the road."
+    },
+    "railway-crossbuck": {
+      "label": "Railway crossing (crossbuck)",
+      "category": "railway",
+      "visualDescription": "Two long white blades crossed in an X shape with a red reflective border.",
+      "basis": "Driver's Handbook ch.3 p.81: a crossbuck sign with a white background and a red reflective border, used at the crossing itself."
+    },
+    "railway-tracks-tab": {
+      "label": "Number of sets of tracks at this crossing",
+      "category": "railway",
+      "visualDescription": "A small white rectangular plate showing the numeral 2, mounted below a crossing sign.",
+      "basis": "Driver's Handbook ch.3 p.81: a smaller sign below the crossbuck indicates if there is more than one set of tracks."
+    },
+    "lane-right-turn-only": {
+      "label": "Right turn only from this lane",
+      "category": "lane-use",
+      "visualDescription": "A white rectangular sign with a single black arrow curving to the right.",
+      "basis": "Driver's Handbook ch.3 p.93."
+    },
+    "lane-straight-or-left": {
+      "label": "Straight through or left turn only from this lane",
+      "category": "lane-use",
+      "visualDescription": "A white rectangular sign with two black arrows: one pointing straight up, one curving to the left.",
+      "basis": "Driver's Handbook ch.3 p.93."
+    },
+    "two-way-left-turn-lane": {
+      "label": "Two-way left turn lane — reserved for left-turning vehicles from both directions",
+      "category": "lane-use",
+      "visualDescription": "A white rectangular sign with two black arrows curving to the left, one pointing up and one pointing down.",
+      "basis": "Driver's Handbook ch.3 p.93."
+    },
+    "route-102": {
+      "label": "Highway 102 — a 100-series controlled-access provincial highway",
+      "category": "guide",
+      "visualDescription": "A shield-shaped sign with a white background and the black numerals 102, above the words NOVA SCOTIA.",
+      "basis": "Driver's Handbook ch.3 p.94."
+    },
+    "guide-destination": {
+      "label": "Guide sign — information, directions and distances",
+      "category": "guide",
+      "visualDescription": "A green rectangular sign with white lettering reading Halifax 12 km.",
+      "basis": "Driver's Handbook ch.3 p.83: guidance signs are rectangular, usually with a green background and white letters."
+    },
+    "two-way-traffic": {
+      "label": "Two-way traffic — normal two-way rules of the road apply",
+      "category": "warning",
+      "visualDescription": "A yellow diamond with two black arrows side by side, one pointing up and one pointing down.",
+      "basis": "Driver's Handbook ch.3 p.94."
+    },
+    "wz-construction-ahead": {
+      "label": "Construction ahead — prepare for unusual road conditions",
+      "category": "work-zone",
+      "visualDescription": "An orange diamond with a black symbol of a person shovelling.",
+      "basis": "Driver's Handbook ch.3 pp.94-101: work zones are marked with orange warning signs with messages in black letters."
+    },
+    "wz-workers-ahead": {
+      "label": "Workers are active at the site",
+      "category": "work-zone",
+      "visualDescription": "An orange diamond with a black figure of a worker, with small orange flags mounted at its lower corners.",
+      "basis": "Driver's Handbook ch.3 p.101: human activity signs are used only when workers are present; red/orange flags are used on them."
+    },
+    "wz-traffic-control-person": {
+      "label": "Traffic control person ahead",
+      "category": "work-zone",
+      "visualDescription": "An orange diamond with a black figure holding a paddle on a pole.",
+      "basis": "Driver's Handbook ch.3 p.101."
+    },
+    "wz-construction-distance-ahead": {
+      "label": "Construction activities begin a stated distance ahead",
+      "category": "work-zone",
+      "visualDescription": "An orange diamond containing the text 1.5 km with a downward arrow.",
+      "basis": "Driver's Handbook ch.3 p.98."
+    },
+    "wz-end-construction": {
+      "label": "The road has returned to normal — expect no more impact from road work",
+      "category": "work-zone",
+      "visualDescription": "An orange rectangular sign with the black words END CONSTRUCTION.",
+      "basis": "Driver's Handbook ch.3 p.97."
+    },
+    "wz-uneven-lanes": {
+      "label": "Difference in elevation between the lanes",
+      "category": "work-zone",
+      "visualDescription": "An orange diamond with a black stepped profile showing one surface higher than the next.",
+      "basis": "Driver's Handbook ch.3 p.99."
+    },
+    "wz-flashing-arrow-right": {
+      "label": "Flashing light unit with a right arrow — the lane ahead is closed, move over",
+      "category": "work-zone",
+      "visualDescription": "A black panel with a bright arrow of lamps pointing to the right.",
+      "basis": "Driver's Handbook ch.3 p.103."
+    },
+    "pm-double-solid-yellow": {
+      "label": "Double solid yellow centre line — you may not cross to pass in either direction",
+      "category": "pavement-marking",
+      "visualDescription": "A grey road surface with two continuous yellow lines running down the middle.",
+      "basis": "Driver's Handbook ch.3 p.84."
+    },
+    "pm-broken-yellow": {
+      "label": "Broken yellow centre line — passing with care is permitted in both directions",
+      "category": "pavement-marking",
+      "visualDescription": "A grey road surface with a single dashed yellow line running down the middle.",
+      "basis": "Driver's Handbook ch.3 p.84."
+    },
+    "pm-solid-and-broken-yellow": {
+      "label": "Solid yellow line beside a broken yellow line — only the side with the broken line may pass",
+      "category": "pavement-marking",
+      "visualDescription": "A grey road surface with one continuous yellow line and, beside it, a dashed yellow line.",
+      "basis": "Driver's Handbook ch.3 pp.84-85."
+    },
+    "pm-white-lane-line": {
+      "label": "White lane line — separates lanes of traffic moving in the same direction",
+      "category": "pavement-marking",
+      "visualDescription": "A grey road surface with a dashed white line between two lanes and solid white edge lines.",
+      "basis": "Driver's Handbook ch.3 pp.84-85."
+    }
+  }
+}

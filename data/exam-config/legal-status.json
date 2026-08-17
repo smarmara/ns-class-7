@@ -1,0 +1,53 @@
+{
+  "description": "The commencement gate for the Motor Vehicle Act -> Traffic Safety Act transition. The quiz engine reads `activeLawVersion` and will only serve questions whose lawVersion matches an entry marked inForce. Promoting Traffic Safety Act content is a deliberate, reviewed edit to this file — never an automatic consequence of a crawler noticing a source change or of the calendar year advancing.",
+  "activeLawVersion": "mva",
+  "lastReviewedAt": "2026-08-17",
+  "reviewedBy": "initial build",
+
+  "lawVersions": [
+    {
+      "id": "mva",
+      "title": "Motor Vehicle Act, R.S.N.S. 1989, c. 293",
+      "inForce": true,
+      "inForceSince": "1989-01-01",
+      "consolidatedTo": "2026-05-01",
+      "evidence": {
+        "sourceId": "ns-mva",
+        "observation": "Consolidated statute published by the Office of the Legislative Counsel, consolidation footer dated MAY 1, 2026."
+      },
+      "note": "The operative traffic statute in Nova Scotia. All `current` questions are written against this."
+    },
+    {
+      "id": "tsa-2025",
+      "title": "Traffic Safety Act, S.N.S. 2025, c. 20",
+      "inForce": false,
+      "inForceSince": null,
+      "evidence": {
+        "sourceId": "ns-tsa-proclamations",
+        "observedAt": "2026-08-17",
+        "observation": "Proclamations of Nova Scotia Statutes lists: \"Traffic Safety Act / 2025, c. 20 -- NOT PROCLAIMED IN FORCE\". The Department of Public Works page (ns-tsa-changes-page) separately instructs readers to \"Continue to follow the Motor Vehicle Act until then.\""
+      },
+      "note": "Royal Assent in October 2025 does NOT bring the Act into force. Questions carrying lawVersion \"tsa-2025\" must have legalStatus \"future\" and are excluded from every practice and mock-test pool."
+    },
+    {
+      "id": "tsa-2018",
+      "title": "Traffic Safety Act, S.N.S. 2018, c. 29",
+      "inForce": false,
+      "inForceSince": null,
+      "evidence": {
+        "sourceId": "ns-tsa-proclamations",
+        "observedAt": "2026-08-17",
+        "observation": "Listed as \"NOT PROCLAIMED IN FORCE\"."
+      },
+      "note": "An earlier Traffic Safety Act that was never proclaimed. Recorded so that its existence is not mistaken for commencement of the 2025 Act."
+    }
+  ],
+
+  "promotionChecklist": [
+    "Confirm on the Proclamations of Nova Scotia Statutes page that the Act (or the specific sections) are proclaimed in force, with a date.",
+    "Confirm the Order in Council / Royal Gazette Part II entry that effects the proclamation.",
+    "Confirm the Government of Nova Scotia guidance page no longer says to continue following the Motor Vehicle Act.",
+    "Only then set inForce/inForceSince for the law version, change activeLawVersion, and move affected questions from `future` to `current` and the displaced ones to `superseded` with an effectiveTo date.",
+    "Run `pnpm content:validate` and `pnpm test` before shipping."
+  ]
+}

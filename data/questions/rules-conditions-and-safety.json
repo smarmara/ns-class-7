@@ -1,0 +1,1029 @@
+[
+  {
+    "id": "rules-adverse-001",
+    "type": "rules",
+    "topic": "adverse-conditions",
+    "subtopic": "headlight hours",
+    "question": "During which period must headlights be used?",
+    "choices": [
+      "From half an hour after sunset to half an hour before sunrise",
+      "From sunset to sunrise",
+      "From one hour after sunset to one hour before sunrise",
+      "Only when street lighting is absent"
+    ],
+    "correctChoice": 0,
+    "explanation": "Headlights must be used during the period beginning half an hour after sunset to half an hour before sunrise. Lights are also required any time visibility is limited by fog, rain, snow or other atmospheric conditions, and whenever there is not enough light to see a person 300 metres ahead.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The legal period starts half an hour after sunset, not at sunset.",
+      "The margin is half an hour, not a full hour.",
+      "The requirement is based on time and visibility, not on whether street lights are present."
+    ],
+    "difficulty": "medium",
+    "tags": ["headlights", "night driving"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 112" },
+      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 136" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-adverse-002",
+    "type": "rules",
+    "topic": "adverse-conditions",
+    "subtopic": "daytime running lights",
+    "question": "During the hours when lights are required, is it acceptable to drive using only your daytime running lights or parking lights?",
+    "choices": [
+      "No — it is illegal to use parking lights or daytime running lights instead of headlights",
+      "Yes, if the road is well lit",
+      "Yes, daytime running lights satisfy the requirement",
+      "Yes, provided you are in a city"
+    ],
+    "correctChoice": 0,
+    "explanation": "During times when lights are required, it is illegal to use parking lights or daytime running lights instead of headlights. Daytime running lights typically do not illuminate the road ahead and often do not light your tail lights at all, leaving you invisible from behind.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Street lighting does not remove the requirement to show headlights.",
+      "Daytime running lights improve your visibility by day; they are not a substitute for headlights.",
+      "The rule is province-wide."
+    ],
+    "difficulty": "medium",
+    "tags": ["headlights", "night driving"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 112" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-adverse-003",
+    "type": "rules",
+    "topic": "adverse-conditions",
+    "subtopic": "dimming high beams",
+    "question": "By law, at what distance must you dim your high beams for an approaching vehicle and for a vehicle you are following?",
+    "choices": [
+      "Within 150 metres of an approaching vehicle and 60 metres when following",
+      "Within 60 metres of an approaching vehicle and 150 metres when following",
+      "Within 100 metres in both cases",
+      "Within 300 metres in both cases"
+    ],
+    "correctChoice": 0,
+    "explanation": "By law headlights must be dimmed within 150 metres of an approaching vehicle and within 60 metres when following a vehicle on any highway. You need a greater distance for oncoming traffic because the light shines directly into the other driver's eyes.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The two distances are the other way round.",
+      "The Motor Vehicle Act distinguishes between approaching and following.",
+      "300 metres is the visibility threshold that requires headlights to be switched on."
+    ],
+    "difficulty": "hard",
+    "tags": ["headlights", "night driving"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 136" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-adverse-004",
+    "type": "rules",
+    "topic": "adverse-conditions",
+    "subtopic": "fog",
+    "question": "You are driving through thick fog on the way to Peggy's Cove. Which headlights should you use?",
+    "choices": [
+      "Low beams only — high beams reflect off the fog and make it harder to see",
+      "High beams, to punch through the fog",
+      "Parking lights, so you dazzle no one",
+      "No lights at all during daylight hours"
+    ],
+    "correctChoice": 0,
+    "explanation": "Rain, snow and fog reduce visibility. Slow down gradually, avoid sudden stops, increase your following distance, and use low beams only. The light from high beams reflects off the precipitation, making it more difficult to see ahead.",
+    "incorrectChoiceExplanations": [
+      null,
+      "High beams bounce off water droplets and produce a wall of glare.",
+      "Do not use parking lights when driving, especially when adverse conditions reduce visibility.",
+      "Lights are required any time visibility is limited by fog, whatever the hour."
+    ],
+    "difficulty": "easy",
+    "tags": ["fog", "headlights", "conditions"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 137" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-adverse-005",
+    "type": "rules",
+    "topic": "adverse-conditions",
+    "subtopic": "rain",
+    "question": "What following distance should you allow in the rain?",
+    "choices": [
+      "Four or more seconds",
+      "Two seconds, as usual",
+      "One second, since traffic moves more slowly",
+      "Three car lengths"
+    ],
+    "correctChoice": 0,
+    "explanation": "When it rains, drive more slowly than usual, use low-beam headlights and windshield wipers, and increase your normal following distance to four or more seconds. Stopping distances on slippery pavement are from two to ten times farther than on dry pavement.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Two seconds is the fair-weather minimum, not a wet-road figure.",
+      "Reducing your gap in the rain is the opposite of what is required.",
+      "Following distance is measured in time, not vehicle lengths."
+    ],
+    "difficulty": "medium",
+    "tags": ["rain", "following distance"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 139" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-adverse-006",
+    "type": "rules",
+    "topic": "adverse-conditions",
+    "subtopic": "rain",
+    "question": "When is a road most dangerous during a rain shower?",
+    "choices": [
+      "In the first 10 to 15 minutes after rain begins to fall",
+      "Once the road is thoroughly soaked",
+      "Only after the rain stops",
+      "When puddles have formed at the edges"
+    ],
+    "correctChoice": 0,
+    "explanation": "Roads are most dangerous for the first 10 to 15 minutes after rain begins to fall, especially if it has not rained for a while. Oil from the asphalt and residues left by vehicles mix with dirt, dust, rubber and rain water to create a slick surface.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Sustained rain washes the oil film away.",
+      "The hazard is greatest at the start of the rain, not after it ends.",
+      "Standing water is a hydroplaning hazard, but the handbook identifies the first minutes of rain as the most dangerous period."
+    ],
+    "difficulty": "medium",
+    "tags": ["rain", "traction"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 139" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-adverse-007",
+    "type": "rules",
+    "topic": "adverse-conditions",
+    "subtopic": "hydroplaning",
+    "question": "In a standard passenger car on wet pavement, at roughly what speed may the tyres ride completely on top of the water?",
+    "choices": ["About 85 km/h", "About 55 km/h", "About 110 km/h", "About 40 km/h"],
+    "correctChoice": 0,
+    "explanation": "Partial hydroplaning starts at about 55 km/h and increases with speed. At about 85 km/h the tyres may be riding totally on top of the water, at which point there is no friction available to brake, accelerate or corner. When roads are wet, reduce your speed to avoid hydroplaning.",
+    "incorrectChoiceExplanations": [
+      null,
+      "55 km/h is where partial hydroplaning begins, not where the tyres lose contact completely.",
+      "Total hydroplaning can occur well below 110 km/h.",
+      "40 km/h is below the speed at which hydroplaning starts in a standard passenger car."
+    ],
+    "difficulty": "hard",
+    "tags": ["rain", "hydroplaning", "traction"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 139" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-adverse-008",
+    "type": "rules",
+    "topic": "adverse-conditions",
+    "subtopic": "black ice",
+    "question": "A vehicle travelling at 30 km/h needs about 6 metres to stop on dry pavement. Roughly how far does it need on black ice?",
+    "choices": ["About 52 metres", "About 12 metres", "About 22 metres", "About 100 metres"],
+    "correctChoice": 0,
+    "explanation": "Stopping distances for a vehicle travelling at 30 km/h are approximately 6 metres on dry pavement, 22 metres on packed snow, and 52 metres on black ice — roughly nine times the dry-road distance.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Doubling the dry-road distance badly underestimates ice.",
+      "22 metres is the figure for packed snow, not black ice.",
+      "100 metres overstates the handbook's figure for 30 km/h."
+    ],
+    "difficulty": "hard",
+    "tags": ["winter", "ice", "stopping distance"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 140" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-adverse-009",
+    "type": "rules",
+    "topic": "adverse-conditions",
+    "subtopic": "bridges and overpasses",
+    "question": "Why do the MacKay and Macdonald bridges, and highway overpasses generally, deserve extra caution in freezing weather?",
+    "choices": [
+      "Condensation on bridges and overpasses freezes before the rest of the road, and they take longer to thaw",
+      "Bridge decks are always salted less than roads",
+      "Wind is the only additional hazard on a bridge",
+      "Bridge surfaces are made of a material that never ices"
+    ],
+    "correctChoice": 0,
+    "explanation": "Condensation on shaded sections of highway and on bridges and overpasses will freeze before the rest of the road. Shaded sections, bridges and overpasses also take longer than other parts of the highway to thaw, because cold air circulates both above and below the deck.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The handbook's explanation is about how bridge decks lose heat, not about salting practice.",
+      "Wind is a real factor, but the handbook's point here is the earlier formation of ice.",
+      "Bridge decks ice more readily than ordinary road, not less."
+    ],
+    "difficulty": "medium",
+    "tags": ["winter", "ice", "halifax"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "pp. 140, 146" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-adverse-010",
+    "type": "rules",
+    "topic": "adverse-conditions",
+    "subtopic": "temperature and traction",
+    "question": "At which temperature are road surfaces the most slippery?",
+    "choices": ["Near 0°C", "Near -10°C", "Near -20°C", "Temperature makes no difference to grip"],
+    "correctChoice": 0,
+    "explanation": "Road surfaces are far more slippery near 0°C than at colder temperatures of -10°C or -20°C. Near freezing, a thin film of water forms on the ice and acts as a lubricant. Early-morning frost can be a serious problem during the fall and spring months.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Colder ice gives better grip than ice near the melting point.",
+      "At -20°C ice is at its least slippery of these options.",
+      "Temperature has a large effect on how much grip ice offers."
+    ],
+    "difficulty": "hard",
+    "tags": ["winter", "ice", "traction"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 141" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-adverse-011",
+    "type": "rules",
+    "topic": "adverse-conditions",
+    "subtopic": "four-wheel drive",
+    "question": "What does four-wheel drive do for you on a slippery road?",
+    "choices": [
+      "It helps you get moving, but you cannot stop any quicker on a slippery surface",
+      "It shortens your stopping distance proportionally",
+      "It prevents skidding entirely",
+      "It removes the need for winter tyres"
+    ],
+    "correctChoice": 0,
+    "explanation": "Even if you have four-wheel traction, you cannot stop any quicker on a slippery road surface. Vehicles in four-wheel drive also handle differently than in two-wheel mode. Having four-wheel drive may create a false sense of security — drive cautiously.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Braking grip depends on the tyre-road friction, which four-wheel drive does not change.",
+      "Four-wheel drive does not prevent skids; it can make them harder to anticipate.",
+      "The handbook recommends snow or all-season tyres on all four wheels for winter traction."
+    ],
+    "difficulty": "medium",
+    "tags": ["winter", "traction", "four-wheel drive"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 141" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-adverse-012",
+    "type": "rules",
+    "topic": "adverse-conditions",
+    "subtopic": "snow plows",
+    "question": "Several snow plows are staggered across the lanes of a highway, clearing them together. What should you do?",
+    "choices": [
+      "Do not try to pass between them — stay back until it is clearly safe",
+      "Pass between them one lane at a time",
+      "Pass on the right shoulder",
+      "Sound your horn so they make room"
+    ],
+    "correctChoice": 0,
+    "explanation": "On highways, several snow plows may be staggered across the road, clearing all lanes at the same time by passing a ridge of snow from plow to plow. Do not try to pass between them. There is not enough room to pass safely, and the ridge of wet snow can throw your vehicle out of control. Some plows have a wing extending up to three metres to the right of the vehicle.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The space between staggered plows is where the ridge of snow is being transferred.",
+      "The shoulder is where the outermost plow is throwing snow, and a wing may extend three metres out.",
+      "Plow operators cannot simply move over; they are clearing the road as a team."
+    ],
+    "difficulty": "medium",
+    "tags": ["winter", "snow plows", "passing"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 148" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-adverse-013",
+    "type": "rules",
+    "topic": "adverse-conditions",
+    "subtopic": "studded tyres",
+    "question": "During what period are studded tyres legal in Nova Scotia?",
+    "choices": [
+      "Between 15 October and 30 April only",
+      "Between 1 November and 31 March only",
+      "All year round",
+      "Only when a winter storm warning is in effect"
+    ],
+    "correctChoice": 0,
+    "explanation": "Studded tyres are legal in Nova Scotia between 15 October and 30 April only. Outside that window they damage bare pavement.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The permitted window is wider than November to March.",
+      "Studded tyres are not permitted year round.",
+      "The permission is defined by calendar dates, not by weather warnings."
+    ],
+    "difficulty": "medium",
+    "tags": ["winter", "tyres"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 109" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-emergencies-001",
+    "type": "rules",
+    "topic": "collisions-and-emergencies",
+    "subtopic": "tyre blowout",
+    "question": "A front tyre blows out at highway speed. What should you do?",
+    "choices": [
+      "Do not brake — hold the steering wheel firmly, ease off the accelerator slowly, and steer to a safe stop off the highway",
+      "Brake hard immediately to reduce speed",
+      "Accelerate briefly to regain control",
+      "Steer sharply onto the shoulder"
+    ],
+    "correctChoice": 0,
+    "explanation": "A tyre blowout can cause tremendous steering and wheel vibration. Do not use the brake. Hold the steering wheel firmly, ease your foot off the accelerator slowly, and try to steer the vehicle to a safe stop off the highway.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Braking hard on a blown tyre unbalances the vehicle and can send it into a spin.",
+      "Accelerating adds energy to an already unstable vehicle.",
+      "Sharp steering inputs with a deflated tyre can flip or spin the car."
+    ],
+    "difficulty": "medium",
+    "tags": ["emergencies", "tyres"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 144" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-emergencies-002",
+    "type": "rules",
+    "topic": "collisions-and-emergencies",
+    "subtopic": "brake failure",
+    "question": "Your brakes fail. What is the recommended sequence?",
+    "choices": [
+      "Pump the brake pedal several times to build pressure; if that fails, apply the parking brake gently but firmly while holding the release button",
+      "Apply the parking brake as hard and as fast as possible",
+      "Switch off the engine immediately",
+      "Steer into the curb at speed"
+    ],
+    "correctChoice": 0,
+    "explanation": "If your brakes fail, try pumping the brake pedal several times to build up enough hydraulic pressure to stop. If that doesn't work, apply the parking brake gently but firmly while holding the release button — holding the button lets you manually increase or decrease braking pressure. Once stopped, do not attempt to drive away; get help.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Yanking the parking brake on locks the rear wheels and can spin the vehicle.",
+      "Switching off the engine costs you power steering and power braking assistance.",
+      "Deliberately striking the curb at speed risks losing control entirely."
+    ],
+    "difficulty": "hard",
+    "tags": ["emergencies", "brakes"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 144" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-emergencies-003",
+    "type": "rules",
+    "topic": "collisions-and-emergencies",
+    "subtopic": "wheels off the pavement",
+    "question": "Your right wheels drop off the pavement onto a soft shoulder. What should you do?",
+    "choices": [
+      "Resist the urge to whip back onto the pavement; when it is safe and your steering is under control, move back on smoothly",
+      "Steer back onto the pavement immediately and sharply",
+      "Brake hard while still on the shoulder",
+      "Accelerate to climb back up over the edge"
+    ],
+    "correctChoice": 0,
+    "explanation": "Returning to the highway from the shoulder can be extremely dangerous. Resist the urge to whip the vehicle immediately back onto the pavement — you may lose control. When it is safe and your steering is under control, move the wheel smoothly back onto the pavement, keeping your eyes forward on the centre of your lane.",
+    "incorrectChoiceExplanations": [
+      null,
+      "A sharp correction is the classic cause of an over-correction rollover or a head-on crossover.",
+      "Hard braking with two wheels on a low-friction shoulder produces a yaw.",
+      "Extra speed makes the return to the pavement more violent, not less."
+    ],
+    "difficulty": "medium",
+    "tags": ["emergencies", "recovery"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 146" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-emergencies-004",
+    "type": "rules",
+    "topic": "collisions-and-emergencies",
+    "subtopic": "reporting a collision",
+    "question": "Within what time and at what damage threshold must a collision be reported?",
+    "choices": [
+      "Within 24 hours, if the collision involves personal injury, death, or property damage of $2,000 or more",
+      "Within 7 days, if damage exceeds $1,000",
+      "Within 24 hours, only if someone is injured",
+      "Within 48 hours, for any collision"
+    ],
+    "correctChoice": 0,
+    "explanation": "The driver of a vehicle involved in a collision must stop immediately. You must file a report within 24 hours with the local police, the RCMP or the Registry of Motor Vehicles if the collision involves personal injury, death, or property damage of $2,000 or more.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Older printings of the handbook show a $1,000 figure; the current amendment sets the threshold at $2,000 and the reporting period at 24 hours.",
+      "Property damage of $2,000 or more must also be reported, even with no injuries.",
+      "The period is 24 hours."
+    ],
+    "difficulty": "medium",
+    "tags": ["collisions", "reporting"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-landing", "note": "Amendment: property damage of $2,000 or more must be reported" },
+      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 149" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-emergencies-005",
+    "type": "rules",
+    "topic": "collisions-and-emergencies",
+    "subtopic": "duties after a collision",
+    "question": "You are involved in a collision. What must you provide, and to whom?",
+    "choices": [
+      "Your name, address and vehicle permit to the person struck, the other driver or occupant, or a witness — and give all reasonable assistance to anyone injured",
+      "Only your insurance policy number, and only to the police",
+      "Your driver's licence number, and only if asked",
+      "Nothing, until your insurer has been contacted"
+    ],
+    "correctChoice": 0,
+    "explanation": "If you are involved in a collision you must provide your name, address and the vehicle permit for the vehicle you are driving to the person struck, to the driver or occupant of the other vehicle, or to a witness. You must also give all reasonable assistance to any injured person. It is an offence to leave the scene of a collision.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The obligation runs to the other people involved, not only to the police.",
+      "The duty is not conditional on being asked.",
+      "You cannot wait for your insurer; the duty to exchange information and assist is immediate."
+    ],
+    "difficulty": "medium",
+    "tags": ["collisions", "reporting"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 149" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-emergencies-006",
+    "type": "rules",
+    "topic": "collisions-and-emergencies",
+    "subtopic": "unattended vehicle",
+    "question": "You back into an unattended parked car and cannot find the owner. What must you do?",
+    "choices": [
+      "Take reasonable steps to locate and notify the owner, and if you cannot, notify the police within 24 hours",
+      "Leave a note; nothing further is required",
+      "Nothing, if the damage looks minor",
+      "Report it to your insurer within 30 days"
+    ],
+    "correctChoice": 0,
+    "explanation": "If you are involved in a collision that damages an unattended vehicle or property, you and every driver involved must take reasonable steps to locate and notify the owner. If you are unable to locate and notify the owner, you must notify the police within 24 hours.",
+    "incorrectChoiceExplanations": [
+      null,
+      "A note is a reasonable step, but if you cannot notify the owner you must still tell the police within 24 hours.",
+      "The obligation does not depend on how the damage looks.",
+      "Notifying your insurer does not discharge the duty to notify the owner or the police."
+    ],
+    "difficulty": "medium",
+    "tags": ["collisions", "reporting", "parking"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 150" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-emergencies-007",
+    "type": "rules",
+    "topic": "collisions-and-emergencies",
+    "subtopic": "downed power lines",
+    "question": "A power line has come down across your vehicle. What is the safest course of action?",
+    "choices": [
+      "Stay in the vehicle if at all possible, and do not touch the ground or anything outside it",
+      "Get out immediately and run clear",
+      "Step out carefully, keeping one hand on the vehicle for balance",
+      "Push the wire off with a dry wooden object"
+    ],
+    "correctChoice": 0,
+    "explanation": "Stay in the vehicle if at all possible. Do not touch the ground or anything outside the vehicle. If you must exit because of other circumstances such as fire, jump clear with both feet together, not touching any other part of the vehicle, then shuffle with both feet together until you are at least 20 metres away.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Stepping out normally puts you in contact with the vehicle and the ground at the same time, completing a circuit.",
+      "Touching the vehicle and the ground simultaneously is exactly what kills people in this situation.",
+      "Nothing you have in the car can be relied on to insulate you from a live line."
+    ],
+    "difficulty": "hard",
+    "tags": ["emergencies", "power lines", "winter"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 147" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-emergencies-008",
+    "type": "rules",
+    "topic": "collisions-and-emergencies",
+    "subtopic": "stalled on railway tracks",
+    "question": "Your vehicle stalls on a railway crossing. What is the first thing you should do?",
+    "choices": [
+      "Immediately move everyone out of the vehicle and well away from the tracks and the vehicle",
+      "Try to restart the engine before doing anything else",
+      "Stay in the vehicle and call for assistance",
+      "Put the vehicle in neutral and try to rock it free"
+    ],
+    "correctChoice": 0,
+    "explanation": "If your vehicle is blocked in or stalls on the railway tracks, immediately move everyone out of the vehicle and well away from the tracks and the vehicle. Then post a lookout in each direction, and only if there is no train in sight try to push the vehicle clear or restart it. Some trains require more than a kilometre of stopping distance.",
+    "incorrectChoiceExplanations": [
+      null,
+      "People come out first; the vehicle is replaceable and a train cannot stop for it.",
+      "Staying in a vehicle on live tracks is the most dangerous option.",
+      "Attempting to free the vehicle comes after everyone is clear and a lookout is posted."
+    ],
+    "difficulty": "medium",
+    "tags": ["emergencies", "railway"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 82" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-emergencies-009",
+    "type": "rules",
+    "topic": "collisions-and-emergencies",
+    "subtopic": "railway crossing gates",
+    "question": "You are already crossing railway tracks when the warning lights begin flashing and the gates start to come down. What should you do?",
+    "choices": [
+      "Keep moving and clear the crossing — the gate on the far side will not block you in",
+      "Stop immediately and reverse off the tracks",
+      "Stop and wait for the gates to lift again",
+      "Stop and sound your horn"
+    ],
+    "correctChoice": 0,
+    "explanation": "If you happen to be crossing the tracks and the warning lights begin flashing or gates start to come down, do not stop — keep moving. The warning signals allow enough time for you to finish driving through the crossing before the train arrives, and the gate on the far side will not block you in. If you stop and try to back up, your vehicle may stall.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Reversing on a crossing risks stalling with the vehicle still on the tracks.",
+      "Stopping on the tracks is the worst possible outcome.",
+      "The horn does nothing to move you off the tracks."
+    ],
+    "difficulty": "medium",
+    "tags": ["emergencies", "railway"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 82" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-safety-001",
+    "type": "rules",
+    "topic": "vehicle-and-driver-safety",
+    "subtopic": "seat belts",
+    "question": "Who is legally required to wear a seat belt in Nova Scotia, and who is responsible for younger passengers?",
+    "choices": [
+      "Everyone 16 and older must wear one where a belted seating position is available; the driver is responsible for ensuring passengers under 16 are belted",
+      "Only the driver and front-seat passenger",
+      "Everyone 18 and older; younger passengers are responsible for themselves",
+      "Only occupants of the front seats, at any age"
+    ],
+    "correctChoice": 0,
+    "explanation": "Everyone 16 years of age and older, whether a driver or passenger, is required by law to wear a seat belt if a seating position with a seat belt is available to them. A driver is responsible for ensuring that all passengers under 16 are wearing a seat belt where a belted seating position is available.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The requirement applies to every seating position with a belt.",
+      "The age at which a passenger becomes responsible for themselves is 16, not 18.",
+      "Rear-seat occupants must be belted too."
+    ],
+    "difficulty": "easy",
+    "tags": ["seat belts", "child safety"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 117" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-safety-002",
+    "type": "rules",
+    "topic": "vehicle-and-driver-safety",
+    "subtopic": "airbags and child restraints",
+    "question": "Where must a rear-facing child restraint never be placed?",
+    "choices": [
+      "In a seating position where there is an airbag",
+      "In the rear seat of a two-door car",
+      "Behind the driver's seat",
+      "In any seat with a lap-and-shoulder belt"
+    ],
+    "correctChoice": 0,
+    "explanation": "A rear-facing child restraint must never be used in a seating position where there is an airbag — too much force is exerted on the restraint by the deploying airbag. Children under 12 years of age should not be located in a seating position where there is an airbag.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The rear seat is the recommended location for child restraints.",
+      "Behind the driver is a normal, safe position for a child restraint.",
+      "Lap-and-shoulder belts are how child restraints are secured."
+    ],
+    "difficulty": "easy",
+    "tags": ["child safety", "airbags"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 120" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-safety-003",
+    "type": "rules",
+    "topic": "vehicle-and-driver-safety",
+    "subtopic": "child restraints",
+    "question": "A child weighs more than 18 kg (40 lb) but is under 145 cm (4'9\") tall. When must the child ride in a booster seat?",
+    "choices": [
+      "If they are younger than 9 years of age, unless they have reached 145 cm in height",
+      "Only until their fifth birthday",
+      "Only if they weigh less than 25 kg",
+      "Booster seats are recommended but never required"
+    ],
+    "correctChoice": 0,
+    "explanation": "Children who weigh more than 18 kg (40 lb) but are under 145 cm (4'9\") tall must ride in a booster seat meeting Canadian Motor Vehicle Safety Standard 213.2 if they are younger than 9 years of age, unless they have reached 145 cm in height. A booster helps position the seat belt correctly across the child's body.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The age threshold in the handbook is 9, not 5.",
+      "The weight thresholds govern which restraint type applies, not whether a booster is required.",
+      "Boosters are a legal requirement in the circumstances described."
+    ],
+    "difficulty": "hard",
+    "tags": ["child safety", "booster seats"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 117" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-safety-004",
+    "type": "rules",
+    "topic": "vehicle-and-driver-safety",
+    "subtopic": "tyres",
+    "question": "What is the minimum tread depth your tyres should have?",
+    "choices": ["1.5 millimetres", "0.8 millimetres", "3 millimetres", "5 millimetres"],
+    "correctChoice": 0,
+    "explanation": "Have a qualified person check your tyres for a tread depth of at least 1.5 millimetres, as well as for bumps, bulges, knots, exposed cords or deep cuts in the tread or sidewall.",
+    "incorrectChoiceExplanations": [
+      null,
+      "0.8 mm is below the figure the handbook gives.",
+      "3 mm is a good tread depth, but not the minimum stated.",
+      "5 mm is close to the depth of a new tyre, not a minimum."
+    ],
+    "difficulty": "medium",
+    "tags": ["tyres", "vehicle maintenance"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 109" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-safety-005",
+    "type": "rules",
+    "topic": "vehicle-and-driver-safety",
+    "subtopic": "special lights",
+    "question": "Which vehicles may display a flashing blue light?",
+    "choices": [
+      "Only a police vehicle or a vehicle being used by a conservation officer",
+      "Any emergency vehicle",
+      "Snow plows and service vehicles",
+      "Volunteer fire chiefs' vehicles"
+    ],
+    "correctChoice": 0,
+    "explanation": "A flashing blue light can be used only on a police vehicle or a vehicle being used by a conservation officer. Flashing amber is required on school buses and may be used on service vehicles; flashing red visible from the front is limited to ambulances, police and fire vehicles, school buses taking on or unloading passengers, and vehicles used by the chief or deputy chief of a volunteer fire department.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Ambulances and fire vehicles use flashing red, not blue.",
+      "Service vehicles such as snow plows use flashing amber.",
+      "A volunteer fire chief's vehicle may display a flashing red light."
+    ],
+    "difficulty": "hard",
+    "tags": ["vehicle lights", "emergency vehicles"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 114" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-safety-006",
+    "type": "rules",
+    "topic": "vehicle-and-driver-safety",
+    "subtopic": "windshield obstructions",
+    "question": "What may legally be placed at the lower driver's corner of the windshield?",
+    "choices": [
+      "Only the official inspection sticker",
+      "Any parking permit or decal",
+      "A dashboard camera mount",
+      "Nothing at all"
+    ],
+    "correctChoice": 0,
+    "explanation": "Do not block your view through the windshield or windows. Only the official inspection sticker is allowed at the lower driver's corner of the windshield. A motor vehicle must not have any ornaments or decorations, inside or outside, that obstruct the driver's vision or distract their attention.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Permits and decals in the driver's field of view obstruct vision.",
+      "Anything mounted in that corner obstructs the driver's view.",
+      "The inspection sticker is specifically permitted there."
+    ],
+    "difficulty": "medium",
+    "tags": ["vehicle safety", "visibility"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "pp. 114, 124" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-safety-007",
+    "type": "rules",
+    "topic": "vehicle-and-driver-safety",
+    "subtopic": "head restraints",
+    "question": "How should a head restraint be adjusted?",
+    "choices": [
+      "So the top edge extends about seven centimetres above your eye level",
+      "As low as it will go, to avoid blocking your view",
+      "Level with the top of your shoulders",
+      "It does not matter, as long as it is not removed"
+    ],
+    "correctChoice": 0,
+    "explanation": "Head restraints are designed to support the back of your head and minimise whiplash. Many are set too low to be effective. Adjust yours so that the top edge extends seven centimetres (two to three inches) above your eye level.",
+    "incorrectChoiceExplanations": [
+      null,
+      "A restraint set too low acts as a pivot for the head in a rear-end impact.",
+      "Shoulder level is far too low to support the head.",
+      "Adjustment is what makes the restraint effective."
+    ],
+    "difficulty": "medium",
+    "tags": ["vehicle safety", "driving position"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 122" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-safety-008",
+    "type": "rules",
+    "topic": "vehicle-and-driver-safety",
+    "subtopic": "steering",
+    "question": "Which hand positions on the steering wheel does the Driver's Handbook recommend?",
+    "choices": [
+      "Ten-and-two, with nine-and-three also acceptable",
+      "Twelve o'clock with one hand",
+      "Eight-and-four, low on the wheel",
+      "One hand at six o'clock"
+    ],
+    "correctChoice": 0,
+    "explanation": "Grip the steering wheel firmly at the 'ten-and-two' hand position; the 'nine-and-three' position is also acceptable. Your hands should be spaced apart on the upper part of the wheel for best control, with a relaxed grasp.",
+    "incorrectChoiceExplanations": [
+      null,
+      "One hand at 12 o'clock is the position used specifically while backing up, not for normal driving.",
+      "Hands low on the wheel reduce your ability to make a large, controlled steering input.",
+      "A single hand at the bottom of the wheel gives almost no control."
+    ],
+    "difficulty": "easy",
+    "tags": ["driving position", "steering"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 122" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-safety-009",
+    "type": "rules",
+    "topic": "vehicle-and-driver-safety",
+    "subtopic": "collision causes",
+    "question": "According to the Driver's Handbook, what is the most frequent cause of highway crashes in Nova Scotia?",
+    "choices": [
+      "Driver inattention",
+      "Mechanical failure",
+      "Poor road design",
+      "Adverse weather"
+    ],
+    "correctChoice": 0,
+    "explanation": "Most highway crashes are caused by driver error, and the handbook lists driver inattention first among the most common causes in Nova Scotia — ahead of failure to yield right of way, driver distraction, driver inexperience, alcohol, and operating too fast for conditions.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Mechanical failure is far less common than driver error.",
+      "Road design is not among the listed leading causes.",
+      "Weather contributes, but the listed cause is operating too fast for the conditions — a driver decision."
+    ],
+    "difficulty": "medium",
+    "tags": ["safety", "collisions"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 126" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-safety-010",
+    "type": "rules",
+    "topic": "vehicle-and-driver-safety",
+    "subtopic": "blind spots",
+    "question": "Where are a vehicle's blind spots, and how do you check them?",
+    "choices": [
+      "Usually to the back left and back right — turn your head and look over your shoulder",
+      "Directly ahead — lean forward to see past the pillar",
+      "Directly behind — use the rearview mirror",
+      "They are eliminated entirely by correctly adjusted mirrors"
+    ],
+    "correctChoice": 0,
+    "explanation": "Rear and side view mirrors help you see what is behind your vehicle, but there is an area on each side that you cannot see with your mirrors. These blind spots are usually to the back left and back right. Make it a practice to turn your head and look over your shoulder, especially before changing lanes or turning.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Pillars do create obstructions, but the blind spots the handbook describes are to the rear quarters.",
+      "The rearview mirror covers the area directly behind you, which is why it is not a blind spot.",
+      "No mirror adjustment removes the need for a shoulder check."
+    ],
+    "difficulty": "easy",
+    "tags": ["blind spots", "lane change"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 48" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-safety-011",
+    "type": "rules",
+    "topic": "vehicle-and-driver-safety",
+    "subtopic": "loads",
+    "question": "Your load extends more than one metre beyond the rear of your vehicle during daylight. What must you display?",
+    "choices": [
+      "A red flag at least 300 millimetres in length and width, clearly visible at all times",
+      "A white cloth of any size",
+      "An amber flashing light",
+      "Nothing during daylight hours"
+    ],
+    "correctChoice": 0,
+    "explanation": "During daylight hours, display a red flag at the rear of a load whenever the load extends more than one metre beyond the rear of the bed or body of a vehicle. The red flag must be at least 300 millimetres in length and width and clearly visible at all times. After dark, display an amber or red light plainly visible for 60 metres from the rear of the load.",
+    "incorrectChoiceExplanations": [
+      null,
+      "A white cloth on the aerial or door handle is the distress signal for a broken-down vehicle.",
+      "An amber or red light is the requirement after dark, not during daylight.",
+      "A marker is required whenever the load projects more than a metre."
+    ],
+    "difficulty": "hard",
+    "tags": ["loads", "vehicle safety"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 130" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-safety-012",
+    "type": "rules",
+    "topic": "vehicle-and-driver-safety",
+    "subtopic": "vehicle inspection",
+    "question": "How often must a motor vehicle registered in Nova Scotia be inspected?",
+    "choices": [
+      "Every year, at an official inspection station by an authorized inspection mechanic",
+      "Every two years, at any garage",
+      "Only when it is sold",
+      "Only if it is more than ten years old"
+    ],
+    "correctChoice": 0,
+    "explanation": "All motor vehicles registered in Nova Scotia must be inspected every year to make sure they meet safety standards, and the same is true for trailers towed on provincial roads. Inspections must be performed at an official inspection station by an authorized inspection mechanic.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Inspections are annual and must be done at an official station.",
+      "Inspection is a continuing requirement of registration, not a sale formality.",
+      "Vehicle age does not exempt a vehicle from annual inspection."
+    ],
+    "difficulty": "easy",
+    "tags": ["vehicle inspection"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 107" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-safety-013",
+    "type": "rules",
+    "topic": "vehicle-and-driver-safety",
+    "subtopic": "defensive driving",
+    "question": "What is the essence of defensive driving?",
+    "choices": [
+      "Reducing your own driving mistakes and anticipating the mistakes of others, then guarding against them",
+      "Driving well below the speed limit at all times",
+      "Staying as far from other vehicles as physically possible",
+      "Reacting quickly once a hazard has developed"
+    ],
+    "correctChoice": 0,
+    "explanation": "The essence of defensive driving is to reduce your own driving mistakes and to anticipate the mistakes of others — both drivers and pedestrians — and guard against them. Skilled drivers identify situations that require attention, anticipate what others might do, decide how to deal with it, and execute a suitable course of action.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Driving considerably below the limit in good conditions is itself a hazard.",
+      "Space margins matter, but anticipation is what defines defensive driving.",
+      "Defensive driving is about acting before the hazard develops, not reacting after."
+    ],
+    "difficulty": "easy",
+    "tags": ["defensive driving", "safety"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 127" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-safety-014",
+    "type": "rules",
+    "topic": "vehicle-and-driver-safety",
+    "subtopic": "distractions inside the vehicle",
+    "question": "May you hang a decorative ornament from your rear-view mirror if it could distract your attention while you are driving?",
+    "choices": [
+      "No — a motor vehicle must not carry ornaments or decorations that obstruct your vision or distract your attention",
+      "Yes, as long as it does not block the windshield",
+      "Yes, but only if it is smaller than a cell phone",
+      "Only when driving below 50 km/h"
+    ],
+    "correctChoice": 0,
+    "explanation": "A motor vehicle must not have any ornaments or decorations, inside or outside, that obstruct the vision or distract the attention of the driver. This is both a handbook safety rule and a requirement of the Motor Vehicle Act.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The rule is about vision and attention, not windshield coverage — a dangling ornament can draw your eye at a critical moment.",
+      "Size is not the test; distraction is.",
+      "The rule applies at every speed."
+    ],
+    "difficulty": "easy",
+    "tags": ["vehicle equipment", "driver distraction", "visibility"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 114" },
+      { "sourceId": "ns-mva", "section": "s.184(5)" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  }
+]

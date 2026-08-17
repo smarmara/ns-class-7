@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Test artifacts
+test-results/
+playwright-report/
+*.tsbuildinfo
+
+# Generated analysis reports (kept out of version control)
+reports/
+.sources/reports/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.log
