@@ -1,19 +1,62 @@
-# Dependencies
+# ---------------------------------------------------------------- dependencies
 node_modules/
 
-# Build output
+# --------------------------------------------------------------- build output
 dist/
-
-# Test artifacts
-test-results/
-playwright-report/
+# Subdirectory build used by the GitHub Pages regression suite.
+dist-pages/
 *.tsbuildinfo
 
-# Generated analysis reports (kept out of version control)
+# ------------------------------------------------------------- test artefacts
+test-results/
+playwright-report/
+
+# ------------------------------------------------- generated analysis reports
+# Regenerated on demand by the audit scripts; not source.
 reports/
 .sources/reports/
 
-# OS / editor noise
+# --------------------------------------------------------- local scratch work
+.scratch/
+
+# -------------------------------------------------------- local environment
+.env
+.env.*
+!.env.example
+
+# ------------------------------------------------------- OS and editor noise
 .DS_Store
 Thumbs.db
 *.log
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# ------------------------------------------------------- native build output
+#
+# The android/ and ios/ PROJECTS are intentionally committed: they carry the
+# manifest hardening, version wiring and generated icon sets, and regenerating
+# them would silently drop those. Only build artefacts and signing material are
+# ignored. None of it affects the web build or the Pages deployment.
+android/build/
+android/app/build/
+android/.gradle/
+android/local.properties
+android/app/release/
+android/.idea/
+android/app/src/main/assets/public/
+android/app/src/main/assets/capacitor.config.json
+android/app/src/main/assets/capacitor.plugins.json
+ios/App/build/
+ios/App/App/public/
+ios/App/App/capacitor.config.json
+ios/App/Pods/
+ios/App/App.xcworkspace/xcuserdata/
+ios/App/App.xcodeproj/xcuserdata/
+ios/DerivedData/
+
+# Signing material must never be committed.
+*.keystore
+*.jks
+*.p12
+*.mobileprovision

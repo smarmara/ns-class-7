@@ -1,0 +1,429 @@
+/* =========================================================================
+   Question screens — viewport-first.
+
+   The screen claims the space between the safe areas and the navigation, then
+   distributes it: stem and answers get what they need, and any artwork takes
+   what is left. It still scrolls when content genuinely does not fit — a long
+   question, enlarged text, or a very small phone — because clipping a question
+   is never acceptable.
+   ========================================================================= */
+
+.quiz {
+  gap: var(--space-3);
+}
+
+.quiz-bar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 40px;
+}
+
+.quiz-back,
+.quiz-save {
+  width: 40px;
+  height: 40px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border: none;
+  background: none;
+  border-radius: var(--radius-pill);
+  color: var(--text-muted);
+  cursor: pointer;
+  text-decoration: none;
+}
+.quiz-back:hover,
+.quiz-save:hover {
+  background: var(--surface-2);
+  color: var(--text);
+}
+.quiz-back svg,
+.quiz-back .app-icon {
+  width: 15px;
+  height: 15px;
+}
+.quiz-save svg {
+  width: 17px;
+  height: 17px;
+}
+.quiz-save[aria-pressed='true'] {
+  color: var(--accent);
+}
+
+/* Align the back and save controls with the content edge. */
+.quiz-back {
+  margin-left: -8px;
+}
+.quiz-save {
+  margin-right: -8px;
+}
+
+.quiz-topic {
+  flex: 1;
+  min-width: 0;
+  font-size: var(--text-caption);
+  font-weight: var(--weight-medium);
+  color: var(--text-muted);
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.quiz-count {
+  font-size: var(--text-caption);
+  font-weight: var(--weight-strong);
+  font-variant-numeric: tabular-nums;
+  color: var(--text-muted);
+}
+.quiz-count-sep {
+  opacity: 0.5;
+  margin: 0 1px;
+}
+
+.quiz-rail {
+  display: block;
+  height: 3px;
+  border-radius: var(--radius-pill);
+  background: var(--surface-3);
+  overflow: hidden;
+  margin-top: -4px;
+}
+.quiz-rail-fill {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--accent);
+  transition: width 260ms ease;
+}
+
+.quiz-focus {
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  flex: 1;
+  min-height: 0;
+}
+
+.question-stem {
+  margin: 0;
+  font-size: var(--text-title);
+  font-weight: var(--weight-strong);
+  line-height: 1.28;
+  letter-spacing: -0.014em;
+  color: var(--text);
+}
+
+/* Artwork is sized from the height actually available, so a sign shrinks
+   before answer text is ever compressed. Official artwork is never filtered,
+   recoloured or distorted — only scaled, at its natural aspect ratio. */
+.sign-stage {
+  display: grid;
+  place-items: center;
+  flex: 0 1 auto;
+  min-height: 0;
+  padding: var(--space-1) 0;
+}
+.sign-stage img,
+.sign-stage svg {
+  max-height: min(30dvh, 210px);
+  max-width: min(72vw, 260px);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.choices {
+  border: none;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.choice {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  width: 100%;
+  min-height: 52px;
+  padding: 11px 13px;
+  text-align: left;
+  background: var(--surface);
+  border: 1.5px solid transparent;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  font: inherit;
+  font-size: var(--text-body-sm);
+  line-height: 1.35;
+  color: var(--text);
+  cursor: pointer;
+  transition:
+    transform 120ms ease,
+    border-color 120ms ease,
+    background-color 120ms ease;
+}
+
+.choice:hover:not(:disabled) {
+  border-color: var(--border-strong);
+}
+.choice:active:not(:disabled) {
+  transform: scale(0.99);
+}
+.choice:disabled {
+  cursor: default;
+}
+
+.choice-marker {
+  width: 26px;
+  height: 26px;
+  flex: none;
+  border-radius: var(--radius-pill);
+  display: grid;
+  place-items: center;
+  font-size: var(--text-caption);
+  font-weight: var(--weight-strong);
+  background: var(--surface-2);
+  color: var(--text-muted);
+}
+
+.choice-text {
+  flex: 1;
+  min-width: 0;
+  display: block;
+}
+
+.choice-sign {
+  display: block;
+}
+.choice-sign img,
+.choice-sign svg {
+  max-height: min(14dvh, 96px);
+  width: auto;
+  height: auto;
+}
+
+.choice[data-state='selected'] {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+.choice[data-state='selected'] .choice-marker {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.choice[data-state='correct'] {
+  border-color: var(--good-border);
+  background: var(--good-soft);
+}
+.choice[data-state='correct'] .choice-marker {
+  background: var(--good);
+  color: #fff;
+}
+
+.choice[data-state='incorrect'] {
+  border-color: var(--bad-border);
+  background: var(--bad-soft);
+}
+.choice[data-state='incorrect'] .choice-marker {
+  background: var(--bad);
+  color: #fff;
+}
+
+/* Correctness is never colour alone: an icon and a worded verdict carry it. */
+.choice-verdict {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 5px;
+  font-size: var(--text-micro);
+  font-weight: var(--weight-strong);
+}
+.choice-verdict svg {
+  width: 12px;
+  height: 12px;
+  flex: none;
+}
+.choice[data-state='correct'] .choice-verdict {
+  color: var(--good);
+}
+.choice[data-state='incorrect'] .choice-verdict {
+  color: var(--bad);
+}
+
+.choice-why {
+  display: block;
+  margin-top: 4px;
+  font-size: var(--text-micro);
+  font-weight: var(--weight-regular);
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* ---- feedback ---------------------------------------------------------- */
+
+.feedback {
+  margin-top: auto;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  display: grid;
+  gap: var(--space-2);
+}
+.feedback[data-correct='true'] {
+  background: var(--good-soft);
+  border-color: var(--good-border);
+}
+.feedback[data-correct='false'] {
+  background: var(--surface);
+  border-color: var(--border-strong);
+}
+
+.feedback-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.feedback-verdict {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-weight: var(--weight-strong);
+  font-size: var(--text-body-sm);
+}
+.feedback-verdict svg {
+  width: 15px;
+  height: 15px;
+}
+.feedback-verdict[data-correct='true'] {
+  color: var(--good);
+}
+.feedback-verdict[data-correct='false'] {
+  color: var(--text);
+}
+
+.feedback-xp {
+  font-size: var(--text-caption);
+  font-weight: var(--weight-strong);
+  color: var(--xp);
+  background: var(--xp-soft);
+  padding: 3px 9px;
+  border-radius: var(--radius-pill);
+}
+
+.feedback-body {
+  margin: 0;
+  font-size: var(--text-caption);
+  line-height: 1.45;
+  color: var(--text);
+}
+
+.feedback-more {
+  justify-self: start;
+  background: none;
+  border: none;
+  padding: 2px 0;
+  font: inherit;
+  font-size: var(--text-caption);
+  font-weight: var(--weight-medium);
+  color: var(--accent);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.feedback-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.source-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex: none;
+  white-space: nowrap;
+  font-size: var(--text-caption);
+  font-weight: var(--weight-medium);
+  color: var(--text-muted);
+  text-decoration: none;
+  min-height: 40px;
+}
+.source-link:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+.source-link svg {
+  width: 10px;
+  height: 10px;
+}
+
+.feedback-continue {
+  margin: 0;
+  padding: 10px 20px;
+  min-height: 44px;
+}
+
+.quiz-after {
+  display: flex;
+  justify-content: center;
+}
+.quiz-flag {
+  background: none;
+  border: none;
+  font: inherit;
+  font-size: var(--text-caption);
+  color: var(--text-muted);
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 8px;
+  min-height: 40px;
+}
+.quiz-flag[aria-pressed='true'] {
+  color: var(--accent);
+  font-weight: var(--weight-medium);
+}
+
+/* Short screens give up decorative space and artwork height first — never
+   type size, touch targets or answer distinction. */
+@media (max-height: 720px) {
+  .quiz {
+    gap: var(--space-2);
+  }
+  .question {
+    gap: var(--space-2);
+  }
+  .sign-stage img,
+  .sign-stage svg {
+    max-height: min(24dvh, 160px);
+  }
+  .choice {
+    min-height: 48px;
+    padding: 9px 12px;
+  }
+}
+
+@media (min-width: 900px) {
+  /* Question content stays narrow and focused on a wide screen rather than
+     stretching the phone layout across the browser. */
+  .quiz {
+    max-width: 620px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}

@@ -6,14 +6,17 @@ export function Card({
   title,
   action,
   className,
+  id,
 }: {
   children: ReactNode;
   title?: ReactNode;
   action?: ReactNode;
   className?: string;
+  /** Anchor target, for in-page navigation between sections. */
+  id?: string;
 }) {
   return (
-    <section className={className ? `card ${className}` : 'card'}>
+    <section id={id} className={className ? `card ${className}` : 'card'}>
       {(title || action) && (
         <div className="card-title">
           {typeof title === 'string' ? <h2>{title}</h2> : title}

@@ -3,66 +3,230 @@
    Mobile-first. Light and dark are both first-class.
    ========================================================================= */
 
+/* ---------------------------------------------------------------- fonts */
+
+/*
+ * Google Sans, self-hosted.
+ *
+ * One variable file per subset covers the whole 400–700 weight range, so the
+ * entire typographic system costs two small woff2 files and no remote request.
+ * This app is an offline-capable PWA heading for iOS and Android packaging: a
+ * fonts.googleapis.com dependency would break typography the moment the device
+ * is offline, and would not survive being wrapped in a native shell at all.
+ *
+ * Files came from the official Google Fonts CDN (fonts.gstatic.com); the
+ * family is licensed under the SIL Open Font License, whose text is kept
+ * beside the files in src/assets/fonts/OFL.txt.
+ *
+ * `font-display: swap` keeps text readable from the first paint — the fallback
+ * stack is metrically close enough that the swap is not disruptive, and
+ * blocking a learner's question behind a font download never is worth it.
+ */
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('./assets/fonts/google-sans-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('./assets/fonts/google-sans-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0,
+    U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
 :root {
-  --bg: #f6f7f9;
+  color-scheme: light dark;
+
+  /* -- typeface ---------------------------------------------------------
+     Google Sans first, then the platform UI face. If the bundled file ever
+     fails to load, the fallback is a system sans of similar proportions
+     rather than a serif — the layout stays intact, only the voice changes. */
+  --font: 'Google Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+
+  /* -- type scale -------------------------------------------------------
+     Semantic steps, not a pile of arbitrary sizes. clamp() lets the display
+     and section sizes grow on larger phones without pushing viewport-first
+     screens into scrolling on small ones. */
+  --text-display: clamp(1.5rem, 1.28rem + 1.1vw, 1.9rem);
+  --text-title: clamp(1.22rem, 1.1rem + 0.6vw, 1.45rem);
+  --text-heading: 1.06rem;
+  --text-body: 1rem;
+  --text-body-sm: 0.92rem;
+  --text-caption: 0.82rem;
+  --text-micro: 0.75rem;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-strong: 600;
+  --weight-display: 700;
+
+  /* -- spacing ---------------------------------------------------------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+
+  /* -- radii ------------------------------------------------------------
+     large  → hero and major feature surfaces
+     medium → modules and cards
+     small  → controls
+     pill   → genuine chips and compact statuses only */
+  --radius-lg: 22px;
+  --radius: 16px;
+  --radius-sm: 10px;
+  --radius-pill: 999px;
+
+  /* -- surfaces --------------------------------------------------------- */
+  --bg: #f7f6f4;
   --surface: #ffffff;
-  --surface-2: #f0f2f5;
-  --surface-3: #e6e9ee;
-  --border: #d9dde4;
-  --border-strong: #b9c0cb;
+  --surface-elevated: #ffffff;
+  --surface-2: #f1f0ed;
+  --surface-3: #e5e4e0;
+  --border: #e3e2de;
+  --border-strong: #c2c1bc;
 
-  --text: #171a1f;
-  --text-muted: #5b6472;
-  --text-faint: #838d9c;
+  --text: #14161c;
+  --text-muted: #575d6b;
+  --text-faint: #6b7280;
 
-  --accent: #0f6d8c;
-  --accent-hover: #0c586f;
-  --accent-soft: #e2f1f6;
+  /* -- accent: Halifax blue identity; semantic feedback stays separate. */
+  --accent: var(--brand);
+  --accent-hover: var(--brand-deep);
+  --accent-soft: var(--brand-soft);
+  --accent-strong: var(--brand-deep);
   --on-accent: #ffffff;
 
-  --good: #16704a;
-  --good-soft: #e3f3ec;
-  --good-border: #7cc3a4;
+  --accent-2: var(--mastery);
+  --accent-2-soft: #f4e7f7;
 
-  --bad: #a32626;
+  --good: #146b45;
+  --good-soft: #e2f3ea;
+  --good-border: #78c1a1;
+
+  --bad: #a12727;
   --bad-soft: #fbe9e9;
   --bad-border: #e09a9a;
 
-  --warn: #8a5a08;
-  --warn-soft: #fdf2dd;
-  --warn-border: #e0bf7c;
+  --warn: #825408;
+  --warn-soft: #fdf1da;
+  --warn-border: #ddba76;
 
-  --radius: 14px;
-  --radius-sm: 9px;
-  --radius-lg: 20px;
+  /* XP and milestone accents: a calm gold. Text pairs must hold 4.5:1. */
+  --xp: #8a5a00;
+  --xp-soft: #fbf0d8;
+  --xp-border: #dcb25e;
 
-  --shadow-sm: 0 1px 2px rgb(16 24 40 / 0.06), 0 1px 3px rgb(16 24 40 / 0.05);
-  --shadow-md: 0 4px 10px rgb(16 24 40 / 0.07), 0 2px 4px rgb(16 24 40 / 0.05);
+  /* -- brand identity and achievement palette --------------------------
+     A compact Halifax-inspired set for the study levels and medal artwork.
+     Strictly additive: nothing declared above is redefined, so navigation,
+     semantic feedback, sign categories and the dark surfaces are untouched.
 
-  --nav-height: 62px;
+     Semantic feedback is deliberately NOT re-imported. --good, --bad and
+     --warn already hold those slots and were chosen to clear 4.5:1 as text,
+     which the Halifax green, orange and red do not; adding them would mean
+     two near-identical sets with the weaker one failing contrast. The
+     Halifax semantics map onto the existing tokens instead of joining them:
+     success -> --good, warning -> --warn, danger -> --bad.
+
+     Halifax Navy is an accent here, never a surface. The dark theme keeps
+     its neutral charcoal; see the dark blocks below, which this does not
+     touch. */
+  --brand: #00558c;
+  --brand-light: #428bca;
+  --brand-deep: #002b49;
+  --brand-soft: #e9f3f9;
+  --on-brand: #ffffff;
+
+  /* Mustard, as a *fill* for achievement emphasis. Distinct in role from
+     --xp, which is the text-safe gold used for XP numerals and never fills
+     an area; and from --accent-2, a UI accent rather than a medal tier. */
+  --achievement: #ffb500;
+  --mastery: #9b26b6;
+
+  /* -- steering-wheel medal asset --------------------------------------
+     Read by src/assets/medals/steering-wheel-base.svg. The geometry never
+     changes: a level or medal-tier variant sets these five values and
+     nothing else. Deliberately theme-independent — a medal earned in light
+     mode is the same medal in dark mode. */
+  --wheel-primary: var(--brand-light);
+  --wheel-primary-light: #7ab5e3;
+  --wheel-primary-dark: var(--brand);
+  --wheel-structure: #2e3f52;
+  --wheel-hub: var(--brand-light);
+
+  /* -- sign category accents -------------------------------------------
+     These tint the *category surface* only. Official sign artwork is never
+     recoloured, filtered or inverted — see .sign-thumb. */
+  --cat-regulatory: #b03535;
+  --cat-regulatory-soft: #fceceb;
+  --cat-warning: #8a6a08;
+  --cat-warning-soft: #fdf3d9;
+  --cat-work-zone: #a1560f;
+  --cat-work-zone-soft: #fdeede;
+  --cat-guide: #17694f;
+  --cat-guide-soft: #e2f2ec;
+  --cat-other: #3d4a86;
+  --cat-other-soft: #eaecf8;
+
+  --focus: var(--accent);
+
+  --shadow-sm: 0 1px 2px rgb(16 24 40 / 0.05), 0 1px 3px rgb(16 24 40 / 0.04);
+  --shadow-md: 0 6px 16px rgb(16 24 40 / 0.07), 0 2px 5px rgb(16 24 40 / 0.04);
+  --shadow-lg: 0 14px 34px rgb(16 24 40 / 0.1), 0 4px 10px rgb(16 24 40 / 0.05);
+
+  --nav-height: 60px;
   --content-max: 720px;
-
-  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
-    sans-serif;
 }
 
+/*
+ * Dark palette, in three states.
+ *
+ * The learner can pick Automatic, Light or Dark in Profile; the choice is
+ * written to `data-theme` on <html>. Automatic leaves the attribute off and
+ * follows the system, which is why the media query excludes an explicit
+ * light choice rather than applying unconditionally.
+ *
+ * The two token lists below are identical by design, and
+ * tests/theme.test.ts asserts they stay identical.
+ */
 @media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #101317;
-    --surface: #191d23;
-    --surface-2: #21262e;
-    --surface-3: #2a3039;
-    --border: #2f3641;
-    --border-strong: #47505d;
+  :root:not([data-theme='light']) {
+    --bg: #0e1014;
+    --surface: #181b21;
+    --surface-elevated: #1f232a;
+    --surface-2: #212630;
+    --surface-3: #2b313c;
+    --border: #2c323d;
+    --border-strong: #454e5c;
 
     --text: #eef1f5;
-    --text-muted: #a4aebc;
-    --text-faint: #7b8695;
+    --text-muted: #a8b2c0;
+    --text-faint: #8b95a4;
 
-    --accent: #59c0dd;
-    --accent-hover: #7fd0e7;
-    --accent-soft: #16323c;
-    --on-accent: #071319;
+    /* Brand blue is lifted for dark-surface contrast; charcoal remains the
+       page and card foundation. */
+    --accent: #7ab5e3;
+    --accent-hover: #a8d2ef;
+    --accent-soft: #17344a;
+    --accent-strong: #d6ebfa;
+    --on-accent: #002b49;
+
+    --accent-2: #d6a5e3;
+    --accent-2-soft: #33243a;
 
     --good: #6fd6a6;
     --good-soft: #14302a;
@@ -76,9 +240,82 @@
     --warn-soft: #322715;
     --warn-border: #6d5726;
 
-    --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.3);
-    --shadow-md: 0 4px 12px rgb(0 0 0 / 0.4);
+    --xp: #e6c25a;
+    --xp-soft: #33291a;
+    --xp-border: #6d5726;
+
+    --cat-regulatory: #f0a09a;
+    --cat-regulatory-soft: #341d1d;
+    --cat-warning: #e5c274;
+    --cat-warning-soft: #302713;
+    --cat-work-zone: #f0ac74;
+    --cat-work-zone-soft: #331f12;
+    --cat-guide: #74d3ab;
+    --cat-guide-soft: #122c25;
+    --cat-other: #a3adde;
+    --cat-other-soft: #1f2340;
+
+    --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.35);
+    --shadow-md: 0 6px 16px rgb(0 0 0 / 0.45);
+    --shadow-lg: 0 16px 36px rgb(0 0 0 / 0.55);
   }
+}
+
+/* Explicit dark choice, regardless of the system setting. */
+:root[data-theme='dark'] {
+  --bg: #0e1014;
+  --surface: #181b21;
+  --surface-elevated: #1f232a;
+  --surface-2: #212630;
+  --surface-3: #2b313c;
+  --border: #2c323d;
+  --border-strong: #454e5c;
+
+  --text: #eef1f5;
+  --text-muted: #a8b2c0;
+  --text-faint: #8b95a4;
+
+  /* Brand blue is lifted for dark-surface contrast; charcoal remains the
+     page and card foundation. */
+  --accent: #7ab5e3;
+  --accent-hover: #a8d2ef;
+  --accent-soft: #17344a;
+  --accent-strong: #d6ebfa;
+  --on-accent: #002b49;
+
+  --accent-2: #d6a5e3;
+  --accent-2-soft: #33243a;
+
+  --good: #6fd6a6;
+  --good-soft: #14302a;
+  --good-border: #2f6d55;
+
+  --bad: #f09a9a;
+  --bad-soft: #351b1c;
+  --bad-border: #7a3b3b;
+
+  --warn: #e5be74;
+  --warn-soft: #322715;
+  --warn-border: #6d5726;
+
+  --xp: #e6c25a;
+  --xp-soft: #33291a;
+  --xp-border: #6d5726;
+
+  --cat-regulatory: #f0a09a;
+  --cat-regulatory-soft: #341d1d;
+  --cat-warning: #e5c274;
+  --cat-warning-soft: #302713;
+  --cat-work-zone: #f0ac74;
+  --cat-work-zone-soft: #331f12;
+  --cat-guide: #74d3ab;
+  --cat-guide-soft: #122c25;
+  --cat-other: #a3adde;
+  --cat-other-soft: #1f2340;
+
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.35);
+  --shadow-md: 0 6px 16px rgb(0 0 0 / 0.45);
+  --shadow-lg: 0 16px 36px rgb(0 0 0 / 0.55);
 }
 
 *,
@@ -105,20 +342,22 @@ h1,
 h2,
 h3,
 h4 {
-  line-height: 1.25;
+  line-height: 1.22;
   margin: 0 0 0.4em;
-  font-weight: 650;
-  letter-spacing: -0.011em;
+  font-weight: var(--weight-strong);
+  letter-spacing: -0.014em;
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: var(--text-display);
+  font-weight: var(--weight-display);
+  letter-spacing: -0.022em;
 }
 h2 {
-  font-size: 1.15rem;
+  font-size: var(--text-title);
 }
 h3 {
-  font-size: 1rem;
+  font-size: var(--text-heading);
 }
 
 p {
@@ -131,18 +370,127 @@ a {
   text-underline-offset: 2px;
 }
 
+/* Native buttons have a UA default of `color: ButtonText` (near-black in both
+   schemes), which silently breaks dark mode wherever a button does not set
+   its own colour. Pin every button to the primary text token unless a more
+   specific rule (e.g. `.btn`) overrides it. */
+button {
+  color: var(--text);
+}
+
 :focus-visible {
-  outline: 3px solid var(--accent);
+  outline: 3px solid var(--focus);
   outline-offset: 2px;
   border-radius: 4px;
+}
+
+/* ------------------------------------------------- hosted Font Awesome icons */
+
+/*
+ * Pro icons arrive from the hosted Kit at runtime (src/ui/Icon.tsx). The Kit
+ * runs in SVG-with-JS mode: it finds each `<i class="app-icon fa-regular fa-…">`
+ * and swaps in an inline `<svg>`, carrying the original classes across — which
+ * is why every `… svg { width: … }` rule in this stylesheet keeps working
+ * untouched once the Kit has loaded.
+ *
+ * `.app-icon` is this project's class, and it deliberately avoids Font Awesome's
+ * `fa-` namespace — FA reads the first `fa-*` class as the icon name, so a
+ * marker called `fa-icon` would make every glyph resolve as an icon literally
+ * named "icon". Its job is the state
+ * BEFORE the swap, and the state where the swap never happens at all: a
+ * contributor without a Pro licence, a blocked request, a first visit with no
+ * network. An `<i>` with no content collapses to zero, so without this the
+ * layout would shift the moment icons appeared. Reserving the box means the
+ * page is laid out identically either way, and the only difference is whether
+ * a glyph is drawn in the space.
+ */
+.app-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  flex: none;
+  /* No fallback glyph: every icon in this app sits beside a text label, so an
+     empty box reads as "no icon" rather than as a broken character. */
+  font-style: normal;
+}
+
+/*
+ * Where the app sizes icons in pixels, size the reserved box the same way, so
+ * the pre-Kit and post-Kit boxes match exactly rather than approximately.
+ * These mirror the `… svg` rules elsewhere in the stylesheets; the replaced
+ * `<svg>` matches both and they agree, so there is nothing to reconcile.
+ */
+.nav-icon .app-icon {
+  width: 17px;
+  height: 17px;
+}
+.btn .app-icon {
+  width: 17px;
+  height: 17px;
+}
+.row-icon .app-icon,
+.metric-icon .app-icon {
+  width: 15px;
+  height: 15px;
+}
+
+/* ------------------------------------------------------------ touch UX */
+
+/*
+ * Long-press selection.
+ *
+ * Inside a native WebView a long press on a button starts a text selection and
+ * pops up a selection toolbar — so tapping an answer slightly too slowly, or
+ * pausing on a Sign Match tile, looks like the app is glitching.
+ *
+ * This is applied ONLY to controls: buttons, links styled as controls, the
+ * navigation, answer choices and the game surfaces. It is deliberately NOT
+ * global — explanations, source citations and legal references are exactly the
+ * text a learner may want to select and copy, and taking that away to fix a
+ * button would be a bad trade.
+ */
+button,
+.nav a,
+.choice,
+.tile,
+.btn,
+.icon-toggle {
+  -webkit-user-select: none;
+  user-select: none;
+  /* Removes the grey flash Android draws over a tapped element; the app has
+     its own pressed states. */
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* iOS: suppress the callout bubble on controls only, for the same reason. */
+button,
+.nav a,
+.choice,
+.tile,
+.btn {
+  -webkit-touch-callout: none;
 }
 
 /* --------------------------------------------------------------- layout */
 
 .app {
+  min-height: 100vh; /* fallback for browsers without dvh */
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
+}
+
+/*
+ * `--shell-space` is the chrome the main column has to live inside: the bottom
+ * navigation plus both safe-area insets. Viewport-first screens size
+ * themselves against it rather than guessing at 100vh, which is what produces
+ * the classic "a few pixels of pointless scroll" bug on mobile Safari.
+ */
+:root {
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --shell-space: calc(var(--nav-height) + var(--safe-top) + var(--safe-bottom));
 }
 
 .main {
@@ -150,12 +498,33 @@ a {
   width: 100%;
   max-width: var(--content-max);
   margin: 0 auto;
-  padding: 16px 16px calc(var(--nav-height) + 28px);
+  padding: var(--space-4) var(--space-4) calc(var(--nav-height) + var(--safe-bottom) + 24px);
+  padding-top: calc(var(--space-4) + var(--safe-top));
 }
 
 @media (min-width: 900px) {
   .main {
     padding-bottom: 48px;
+    padding-top: var(--space-6);
+  }
+}
+
+/*
+ * Viewport-first screens (Home, any question) claim exactly the space between
+ * the safe areas and the navigation and lay their content out inside it. They
+ * are free to scroll when the content genuinely does not fit — long questions,
+ * enlarged text, small screens — because clipping content is never acceptable.
+ */
+.screen {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  min-height: calc(100dvh - var(--shell-space) - 40px);
+}
+
+@media (min-width: 900px) {
+  .screen {
+    min-height: 0;
   }
 }
 
@@ -189,10 +558,11 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
-  height: calc(var(--nav-height) + env(safe-area-inset-bottom));
-  padding-bottom: env(safe-area-inset-bottom);
-  background: color-mix(in srgb, var(--surface) 92%, transparent);
-  backdrop-filter: blur(12px);
+  height: calc(var(--nav-height) + var(--safe-bottom));
+  padding-bottom: var(--safe-bottom);
+  background: color-mix(in srgb, var(--surface) 88%, transparent);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border-top: 1px solid var(--border);
   display: flex;
   z-index: 40;
@@ -200,6 +570,7 @@ a {
 
 .nav a {
   flex: 1;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -207,28 +578,46 @@ a {
   gap: 3px;
   text-decoration: none;
   color: var(--text-muted);
-  font-size: 0.68rem;
-  font-weight: 550;
-  letter-spacing: 0.01em;
-  padding: 6px 2px;
+  font-size: var(--text-micro);
+  font-weight: var(--weight-medium);
+  letter-spacing: 0;
+  padding: 5px 2px;
+  margin: 5px 3px;
+  border-radius: var(--radius-sm);
+  min-height: 44px; /* touch target, independent of the label size */
+  transition: background-color 140ms ease;
 }
 
+/* The selected surface covers the whole destination — icon and label together
+   — rather than a pill floating behind the icon alone. */
 .nav a[aria-current='page'] {
   color: var(--accent);
-}
-
-.nav a[aria-current='page'] .nav-icon {
+  font-weight: var(--weight-strong);
   background: var(--accent-soft);
 }
 
+.nav a > span:last-child {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .nav-icon {
-  width: 30px;
-  height: 26px;
-  border-radius: 8px;
   display: grid;
   place-items: center;
-  font-size: 1.02rem;
   line-height: 1;
+}
+
+.nav-icon svg {
+  width: 17px;
+  height: 17px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav a {
+    transition: none;
+  }
 }
 
 @media (min-width: 900px) {
@@ -337,17 +726,6 @@ a {
   background: var(--surface-3);
 }
 
-.btn-ghost {
-  background: transparent;
-  color: var(--accent);
-  border-color: transparent;
-  padding: 8px 10px;
-  min-height: 40px;
-}
-.btn-ghost:hover {
-  background: var(--accent-soft);
-}
-
 .btn-block {
   width: 100%;
 }
@@ -368,32 +746,6 @@ a {
   font-weight: 550;
   line-height: 1.45;
   margin: 0 0 14px;
-}
-
-.question-meta {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 12px;
-}
-
-.chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  background: var(--surface-2);
-  border: 1px solid var(--border);
-  color: var(--text-muted);
-  border-radius: 999px;
-  padding: 3px 10px;
-  font-size: 0.74rem;
-  font-weight: 550;
-}
-.chip-accent {
-  background: var(--accent-soft);
-  color: var(--accent);
-  border-color: transparent;
 }
 
 .sign-stage {
@@ -432,6 +784,7 @@ a {
   width: 100%;
   text-align: left;
   font: inherit;
+  color: var(--text);
   padding: 13px 14px;
   background: var(--surface);
   border: 1.5px solid var(--border);
@@ -444,6 +797,11 @@ a {
 }
 .choice:hover:not(:disabled) {
   border-color: var(--border-strong);
+}
+/* An idle, unanswered choice lifts on hover so it reads as clickable; once a
+   choice is marked (selected/correct/incorrect) the state colour must win. */
+.choice:hover:not(:disabled):not([data-state='selected']):not([data-state='correct']):not([data-state='incorrect']) {
+  background: var(--surface-2);
 }
 .choice:disabled {
   cursor: default;
@@ -529,34 +887,6 @@ a {
   margin-top: 5px;
 }
 
-/* explanation ------------------------------------------------------------ */
-
-.verdict {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  font-weight: 700;
-  font-size: 1rem;
-  padding: 11px 14px;
-  border-radius: var(--radius-sm);
-  margin-bottom: 12px;
-  border: 1px solid transparent;
-}
-.verdict[data-correct='true'] {
-  background: var(--good-soft);
-  color: var(--good);
-  border-color: var(--good-border);
-}
-.verdict[data-correct='false'] {
-  background: var(--bad-soft);
-  color: var(--bad);
-  border-color: var(--bad-border);
-}
-.verdict-icon {
-  font-size: 1.15rem;
-  line-height: 1;
-}
-
 .explanation {
   margin-bottom: 12px;
 }
@@ -627,51 +957,6 @@ a {
 }
 .meter + .meter {
   margin-top: 13px;
-}
-
-.readiness {
-  text-align: center;
-  padding: 6px 0 2px;
-}
-.readiness-score {
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1;
-  font-variant-numeric: tabular-nums;
-  letter-spacing: -0.03em;
-}
-.readiness-unit {
-  font-size: 1.1rem;
-  color: var(--text-muted);
-  font-weight: 600;
-}
-.readiness-caption {
-  color: var(--text-muted);
-  font-size: 0.85rem;
-  margin: 6px 0 0;
-}
-
-.stat-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(96px, 1fr));
-  gap: 10px;
-}
-.stat {
-  background: var(--surface-2);
-  border-radius: var(--radius-sm);
-  padding: 11px 12px;
-  border: 1px solid var(--border);
-}
-.stat-value {
-  font-size: 1.35rem;
-  font-weight: 700;
-  font-variant-numeric: tabular-nums;
-  line-height: 1.1;
-}
-.stat-label {
-  font-size: 0.74rem;
-  color: var(--text-muted);
-  margin-top: 2px;
 }
 
 /* --------------------------------------------------------------- lists */
@@ -789,19 +1074,6 @@ a {
   background: var(--accent-soft);
   border-color: transparent;
 }
-
-/* Release update notice: a slim, non-obstructing bar above the content. */
-.update-banner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
-  padding: 8px 12px;
-  font-size: 0.84rem;
-  background: var(--accent-soft);
-  border-bottom: 1px solid var(--border);
-}
 .update-banner .btn {
   padding: 5px 12px;
   font-size: 0.82rem;
@@ -814,15 +1086,6 @@ a {
   text-align: center;
   margin: 22px 0 4px;
 }
-
-/* ---------------------------------------------------------- quiz shell */
-
-.quiz-progress {
-  display: flex;
-  align-items: center;
-  gap: 11px;
-  margin-bottom: 14px;
-}
 .quiz-progress .meter-track {
   flex: 1;
 }
@@ -832,38 +1095,8 @@ a {
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
-
-.quiz-actions {
-  display: flex;
-  gap: 9px;
-  align-items: center;
-  margin-top: 14px;
-  flex-wrap: wrap;
-}
 .quiz-actions .btn {
   flex: 1 1 auto;
-}
-
-.icon-toggle {
-  background: var(--surface-2);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  min-height: 42px;
-  min-width: 46px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  cursor: pointer;
-  font: inherit;
-  font-size: 0.82rem;
-  color: var(--text-muted);
-  padding: 0 11px;
-}
-.icon-toggle[aria-pressed='true'] {
-  background: var(--accent-soft);
-  border-color: var(--accent);
-  color: var(--accent);
 }
 
 /* ------------------------------------------------------------ exam mode */
@@ -1042,24 +1275,404 @@ a {
   color: var(--text-muted);
 }
 
+.sign-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 10px 0 4px;
+}
+.sign-jump-chip {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+  padding: 5px 10px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.sign-jump-chip:hover,
+.sign-jump-chip:focus-visible {
+  color: var(--text);
+  border-color: var(--border-strong, var(--border));
+}
+/* The active filter, set by ?category= — the chips are the only place the
+   catalogue's category selection lives. */
+.sign-jump-chip[data-selected] {
+  color: var(--text);
+  background: var(--surface-3, var(--surface));
+  border-color: var(--text-muted);
+  font-weight: var(--weight-strong);
+}
+.sign-jump-count {
+  font-variant-numeric: tabular-nums;
+  color: var(--text-faint, var(--text-muted));
+}
+
+.sign-category-blurb {
+  margin: 0 0 12px;
+}
+
+/*
+ * Catalogue grid. Cards are wide enough that a long semantic name wraps to a
+ * few readable lines rather than being squeezed; the column count drops
+ * instead of the type size, so signs stay large enough to study on a phone.
+ */
 .sign-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(104px, 1fr));
-  gap: 11px;
+  grid-template-columns: repeat(auto-fill, minmax(132px, 1fr));
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 700px) {
+  .sign-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(158px, 1fr));
+    gap: 12px;
+  }
+}
+/* The card is the <li>; the figure and the related-signs disclosure stack
+   inside it, so the figure must not be absolutely filling the cell. */
+.sign-gallery > li {
+  display: flex;
+  flex-direction: column;
 }
 .sign-gallery figure {
   margin: 0;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   background: var(--surface-2);
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
-  padding: 11px 7px;
+  padding: 12px 9px 10px;
+}
+/*
+ * A fixed-height box every sign is centred inside. Signs keep their true
+ * aspect ratio — tall overhead signs and wide directional signs are bounded by
+ * the box rather than cropped or stretched into a common square.
+ */
+.sign-card-art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 84px;
+  margin-bottom: 9px;
+}
+.sign-card-art img,
+.sign-card-art svg {
+  object-fit: contain;
 }
 .sign-gallery figcaption {
   font-size: 0.74rem;
   color: var(--text-muted);
-  margin-top: 7px;
   line-height: 1.35;
+  margin-top: auto;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+.sign-card-name {
+  display: block;
+}
+.sign-gallery-badge {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: var(--surface-3, var(--surface));
+  border: 1px solid var(--border);
+  font-size: 0.58rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-faint, var(--text-muted));
+}
+
+/* -------------------------------------------------- engagement & journey */
+
+.nav-icon svg,
+.nav-icon .app-icon {
+  width: 21px;
+  height: 21px;
+}
+@media (min-width: 900px) {
+  .nav-icon svg,
+  .nav-icon .app-icon {
+    width: 19px;
+    height: 19px;
+  }
+}
+
+.btn svg {
+  width: 17px;
+  height: 17px;
+}
+
+.eyebrow {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.ring {
+  position: relative;
+}
+.ring svg {
+  display: block;
+}
+.ring-track {
+  fill: none;
+  stroke: var(--surface-3);
+}
+.ring-fill {
+  fill: none;
+  stroke: var(--accent);
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.5s ease;
+}
+.ring[data-tone='gold'] .ring-fill {
+  stroke: var(--xp);
+}
+/*
+ * The value and its caption are centred as a single tight block.
+ *
+ * A grid here stretched its two implicit rows to half the ring each, which
+ * centred the number in the top half and the caption in the bottom half — the
+ * number ended up floating well above the ring's middle. Flex column with
+ * justify-content centre keeps the pair together on the true centre.
+ */
+.ring-center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  text-align: center;
+  line-height: 1.1;
+}
+
+@media (max-width: 540px) {
+  .hero-main {
+    flex-direction: column;
+    text-align: center;
+    gap: 14px;
+  }
+  .hero-stats {
+    justify-content: center;
+  }
+}
+
+/* mastery ---------------------------------------------------------------- */
+
+.mastery-bar {
+  display: inline-flex;
+  gap: 3px;
+  align-items: center;
+}
+.mastery-seg {
+  width: 6px;
+  height: 12px;
+  border-radius: 3px;
+  background: var(--surface-3);
+}
+.mastery-seg[data-filled='true'] {
+  background: var(--accent);
+}
+.mastery-seg[data-filled='true'][data-stage='mastered'] {
+  background: var(--xp);
+}
+.mastery-label {
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.mastery-label[data-stage='new'] {
+  color: var(--text-faint);
+}
+.mastery-label[data-stage='learning'],
+.mastery-label[data-stage='developing'] {
+  color: var(--accent);
+}
+.mastery-label[data-stage='strong'] {
+  color: var(--good);
+}
+.mastery-label[data-stage='mastered'] {
+  color: var(--xp);
+}
+
+/* question feedback panel ------------------------------------------------ */
+
+.feedback {
+  margin-top: 14px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  padding: 14px;
+  animation: feedback-in 0.2s ease;
+}
+.feedback[data-correct='true'] {
+  border-color: var(--good-border);
+  background: color-mix(in srgb, var(--good-soft) 55%, var(--surface));
+}
+.feedback[data-correct='false'] {
+  border-color: var(--bad-border);
+  background: color-mix(in srgb, var(--bad-soft) 55%, var(--surface));
+}
+.feedback-head {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 10px;
+}
+.feedback-head .verdict {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  font-size: 1.05rem;
+}
+.feedback-xp {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: var(--xp);
+  background: var(--xp-soft);
+  border: 1px solid var(--xp-border);
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+.feedback-continue {
+  width: 100%;
+  margin-top: 12px;
+}
+
+@keyframes feedback-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* tactile choices -------------------------------------------------------- */
+
+.choice {
+  padding: 15px 15px;
+  font-size: 1rem;
+  box-shadow: var(--shadow-sm);
+}
+.choice:hover:not(:disabled):not([data-state='selected']):not([data-state='correct']):not([data-state='incorrect']) {
+  background: var(--surface-2);
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-md);
+}
+.choice .choice-verdict {
+  font-size: 0.74rem;
+}
+
+/* session summary -------------------------------------------------------- */
+
+.xp-summary {
+  margin-top: 16px;
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+}
+.xp-summary-total {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--xp);
+}
+.xp-summary-total svg {
+  width: 18px;
+  height: 18px;
+}
+.xp-summary-lines {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 0.84rem;
+  color: var(--text-muted);
+}
+.topic-improved {
+  margin-top: 16px;
+}
+.topic-improved ul {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.topic-improved li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+.continue-next {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  font-weight: 600;
+}
+.continue-next svg {
+  width: 16px;
+  height: 16px;
+}
+.path-topic.is-next .path-node {
+  border-color: var(--accent);
+  background: var(--accent);
+}
+.path-topic.is-next .path-node svg {
+  color: var(--on-accent);
+}
+.path-node.path-level-4 {
+  border-color: var(--xp);
+  background: var(--xp);
+}
+.path-node.path-level-4 svg {
+  color: var(--on-accent);
+}
+.path-complete .btn {
+  margin-left: auto;
+}
+
+.big-verdict .mock-xp {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 9px;
+  font-weight: 650;
+  color: var(--xp);
+}
+.mock-xp svg {
+  width: 16px;
+  height: 16px;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1069,4 +1682,909 @@ a {
     animation-duration: 0.001ms !important;
     transition-duration: 0.001ms !important;
   }
+}
+
+/* =========================================================================
+   Premium mobile pass — Home, Learn, Signs, Progress, compact quiz
+   ========================================================================= */
+
+/* ------------------------------------------------------------------ home */
+
+.home {
+  gap: var(--space-4);
+}
+
+.home-greet {
+  margin: 0;
+}
+.home-greet h1 {
+  margin: 0 0 2px;
+}
+.home-greet p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: var(--text-body-sm);
+}
+
+/* Continue learning — the strongest thing on the screen. A single accent
+   surface rather than a card with a button inside it. */
+.hero-module {
+  display: grid;
+  gap: var(--space-2);
+  padding: var(--space-5);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(150deg, var(--accent) 0%, var(--accent-2) 130%);
+  color: var(--on-accent);
+  text-decoration: none;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-module::after {
+  /* A soft light source, not a decorative blob: it gives the surface depth
+     without competing with the text. */
+  content: '';
+  position: absolute;
+  inset: -60% -30% auto auto;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: rgb(255 255 255 / 0.1);
+  pointer-events: none;
+}
+
+.hero-module > * {
+  position: relative;
+}
+
+.hero-eyebrow {
+  font-size: var(--text-micro);
+  font-weight: var(--weight-strong);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.82;
+}
+
+.hero-title {
+  font-size: var(--text-title);
+  font-weight: var(--weight-display);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.hero-meta {
+  font-size: var(--text-body-sm);
+  opacity: 0.86;
+}
+
+.hero-bar {
+  display: block;
+  height: 6px;
+  border-radius: var(--radius-pill);
+  background: rgb(255 255 255 / 0.26);
+  overflow: hidden;
+  margin-top: var(--space-1);
+}
+.hero-bar-fill {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: #fff;
+}
+
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: var(--space-2);
+  font-weight: var(--weight-strong);
+  font-size: var(--text-body-sm);
+}
+.hero-cta svg {
+  width: 13px;
+  height: 13px;
+}
+
+/* ---- bento: one large progress ring beside compact metrics -------------- */
+
+.bento {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: var(--space-3);
+}
+
+.bento-ring {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: var(--space-2);
+  padding: var(--space-4) var(--space-3);
+  background: var(--surface);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: inherit;
+  box-shadow: var(--shadow-sm);
+}
+
+.bento-ring-note {
+  font-size: var(--text-micro);
+  color: var(--text-muted);
+  font-weight: var(--weight-medium);
+}
+
+.ring-value {
+  font-size: 1.65rem;
+  font-weight: var(--weight-display);
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+.ring-cap {
+  font-size: var(--text-micro);
+  line-height: 1.2;
+  color: var(--text-muted);
+}
+
+.bento-side {
+  display: grid;
+  gap: var(--space-3);
+  align-content: start;
+}
+
+.metric {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  background: var(--surface);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+}
+
+.metric-icon {
+  width: 32px;
+  height: 32px;
+  flex: none;
+  border-radius: var(--radius-sm);
+  display: grid;
+  place-items: center;
+}
+.metric-icon svg {
+  width: 15px;
+  height: 15px;
+}
+.metric-icon[data-tone='streak'] {
+  background: var(--warn-soft);
+  color: var(--warn);
+}
+.metric-icon[data-tone='xp'] {
+  background: var(--xp-soft);
+  color: var(--xp);
+}
+
+.metric-body {
+  display: grid;
+  min-width: 0;
+}
+.metric-value {
+  font-size: 1.2rem;
+  font-weight: var(--weight-display);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+.metric-label {
+  font-size: var(--text-micro);
+  color: var(--text-muted);
+}
+
+.metric-goal {
+  padding-block: var(--space-2);
+}
+.metric-goal .metric-body {
+  width: 100%;
+  gap: 6px;
+}
+.goal-bar {
+  display: block;
+  height: 5px;
+  border-radius: var(--radius-pill);
+  background: var(--surface-3);
+  overflow: hidden;
+}
+.goal-bar-fill {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--xp);
+}
+
+/* ---- focus next -------------------------------------------------------- */
+
+.focus-next {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 2px var(--space-3);
+  padding: var(--space-4);
+  background: var(--surface);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: inherit;
+  box-shadow: var(--shadow-sm);
+}
+
+.focus-eyebrow {
+  grid-column: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: var(--text-micro);
+  font-weight: var(--weight-strong);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.focus-eyebrow svg {
+  width: 13px;
+  height: 13px;
+}
+
+.focus-title {
+  grid-column: 1;
+  font-size: var(--text-heading);
+  font-weight: var(--weight-strong);
+  letter-spacing: -0.01em;
+}
+
+.focus-sub {
+  grid-column: 1;
+  font-size: var(--text-caption);
+  color: var(--text-muted);
+}
+
+.focus-cta {
+  grid-column: 2;
+  grid-row: 1 / span 3;
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-pill);
+  background: var(--accent-soft);
+  color: var(--accent);
+  display: grid;
+  place-items: center;
+}
+.focus-cta svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* Small phones: tighten decorative spacing first, never the type. */
+@media (max-height: 700px), (max-width: 340px) {
+  .home {
+    gap: var(--space-3);
+  }
+  .hero-module {
+    padding: var(--space-4);
+  }
+  .bento-ring {
+    padding: var(--space-3);
+  }
+}
+
+/* -------------------------------------------- shared content-screen parts */
+
+.screen-head {
+  margin: 0 0 var(--space-5);
+}
+.screen-head h1 {
+  margin: 0 0 4px;
+}
+.screen-head p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: var(--text-body-sm);
+}
+
+/* A section label, not a card header — headings carry the hierarchy so the
+   supporting content underneath does not need a box around it. */
+.section-title {
+  font-size: var(--text-caption);
+  font-weight: var(--weight-strong);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: var(--space-6) 0 var(--space-3);
+}
+
+/* Open rows on the page background: one surface per row, no outer card. */
+.row-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-2);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background: var(--surface);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  color: inherit;
+  box-shadow: var(--shadow-sm);
+  min-height: 56px;
+}
+
+.row-icon {
+  width: 32px;
+  height: 32px;
+  flex: none;
+  border-radius: var(--radius-sm);
+  display: grid;
+  place-items: center;
+}
+.row-icon svg {
+  width: 15px;
+  height: 15px;
+}
+.row-icon[data-tone='bad'] {
+  background: var(--bad-soft);
+  color: var(--bad);
+}
+.row-icon[data-tone='warn'] {
+  background: var(--warn-soft);
+  color: var(--warn);
+}
+.row-icon[data-tone='accent'] {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.row-body {
+  display: grid;
+  flex: 1;
+  min-width: 0;
+}
+.row-title {
+  font-weight: var(--weight-medium);
+  font-size: var(--text-body-sm);
+}
+.row-sub {
+  font-size: var(--text-caption);
+  color: var(--text-muted);
+}
+
+.row-score {
+  font-weight: var(--weight-strong);
+  font-size: var(--text-body-sm);
+  font-variant-numeric: tabular-nums;
+}
+.row-score[data-band='weak'] {
+  color: var(--bad);
+}
+.row-score[data-band='strong'] {
+  color: var(--good);
+}
+
+.row-chevron {
+  width: 11px;
+  height: 11px;
+  flex: none;
+  color: var(--text-faint);
+}
+
+/* -------------------------------------------------------------- progress */
+
+.progress-hero {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-5);
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  /* Course progress and Recommended next are separate cards and must read as
+     separate cards: neither carried a margin, so their shadows touched. */
+  margin-bottom: var(--space-4);
+}
+.progress-hero-copy h2 {
+  margin: 0 0 4px;
+  font-size: var(--text-heading);
+}
+.progress-hero-copy p {
+  margin: 0;
+  font-size: var(--text-caption);
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+.progress-hero-note {
+  margin-top: 6px !important;
+}
+.ring-value-lg {
+  font-size: 2.1rem;
+}
+
+.split-meters {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+}
+.split-meter {
+  display: grid;
+  gap: 4px;
+  padding: var(--space-3) var(--space-4);
+  background: var(--surface);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+}
+.split-meter-label {
+  font-size: var(--text-micro);
+  color: var(--text-muted);
+}
+.split-meter-value {
+  font-size: 1.35rem;
+  font-weight: var(--weight-display);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+.split-meter-track {
+  display: block;
+  height: 5px;
+  border-radius: var(--radius-pill);
+  background: var(--surface-3);
+  overflow: hidden;
+  margin-top: 2px;
+}
+.split-meter-fill {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--accent);
+}
+
+.split-meter-sub {
+  font-size: var(--text-micro);
+  color: var(--text-muted);
+  line-height: 1.35;
+}
+
+/* Fresh-learner call to action: two distinct choices, practice first. */
+.progress-cta {
+  display: grid;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+  padding: var(--space-5);
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+.progress-cta h2 {
+  margin: 0;
+  font-size: var(--text-heading);
+}
+.progress-cta p {
+  margin: 0;
+  font-size: var(--text-caption);
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+.progress-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: var(--space-2);
+}
+.progress-cta-row .btn,
+.progress-cta-row .btn-quiet {
+  text-decoration: none;
+}
+
+/* One horizontal statistic band instead of a fourth row of identical cards. */
+.stat-band {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+.stat-cell {
+  display: grid;
+  gap: 2px;
+  padding: var(--space-4) var(--space-2);
+  text-align: center;
+}
+.stat-cell + .stat-cell {
+  border-left: 1px solid var(--border);
+}
+.stat-cell-value {
+  font-size: 1.4rem;
+  font-weight: var(--weight-display);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+.stat-cell-label {
+  font-size: var(--text-micro);
+  color: var(--text-muted);
+}
+
+.engagement-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+}
+
+.goal-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background: var(--surface);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+}
+.goal-row-label {
+  display: block;
+  font-size: var(--text-micro);
+  color: var(--text-muted);
+}
+.goal-row-value {
+  display: block;
+  font-weight: var(--weight-medium);
+  font-size: var(--text-body-sm);
+}
+.goal-bar-wide {
+  margin-top: var(--space-2);
+  height: 7px;
+}
+
+.btn-quiet {
+  background: var(--surface-2);
+  color: var(--text);
+  border: none;
+  padding: 8px 14px;
+  font-size: var(--text-caption);
+  font-weight: var(--weight-medium);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  min-height: 40px;
+}
+.btn-quiet:hover {
+  background: var(--surface-3);
+}
+
+.verified-note {
+  margin-top: var(--space-6);
+  font-size: var(--text-caption);
+  color: var(--text-muted);
+}
+
+/* Home fills the viewport rather than stranding a block of dead space above
+   the navigation: the bento row absorbs whatever height is left over, within
+   sane bounds, so the ring reads as a real panel instead of a small badge. */
+.home .bento {
+  flex: 1 1 auto;
+  min-height: 156px;
+  max-height: 264px;
+}
+.home .bento-ring,
+.home .bento-side {
+  height: 100%;
+}
+.home .bento-side {
+  align-content: space-between;
+}
+.home .hero-module {
+  padding-block: clamp(16px, 2.4dvh, 24px);
+}
+
+@media (min-width: 900px) {
+  .home .bento {
+    max-height: 220px;
+  }
+}
+
+/* ------------------------------------------------- levels and medals ---- */
+
+.metric-icon[data-tone='medal'] {
+  background: var(--accent-2-soft);
+  color: var(--accent-2);
+}
+
+.metric-value-sm {
+  font-size: 1rem;
+  letter-spacing: -0.01em;
+}
+
+.metric-of {
+  font-size: 0.85rem;
+  font-weight: var(--weight-medium);
+  color: var(--text-muted);
+}
+
+.metric-level .metric-body {
+  width: 100%;
+  gap: 5px;
+}
+
+.goal-bar-level {
+  background: var(--accent);
+}
+
+.level-card {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.level-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.level-now {
+  font-size: var(--text-title);
+  font-weight: var(--weight-display);
+  letter-spacing: -0.02em;
+}
+
+.level-next {
+  font-size: var(--text-caption);
+  color: var(--text-muted);
+}
+
+/* The full ladder, so the destination is never hidden. Reached stages are
+   marked by weight and a filled dot as well as colour. */
+.level-ladder {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 2px;
+}
+
+.level-ladder li {
+  display: grid;
+  justify-items: center;
+  gap: 5px;
+  flex: 1;
+  min-width: 0;
+}
+
+.level-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: var(--radius-pill);
+  background: var(--surface-3);
+}
+
+.level-ladder li[data-reached='true'] .level-dot {
+  background: var(--accent);
+}
+
+.level-ladder li[data-current='true'] .level-dot {
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.level-name {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.level-ladder li[data-current='true'] .level-name {
+  color: var(--accent);
+  font-weight: var(--weight-strong);
+}
+
+.level-note {
+  margin: 0;
+  font-size: var(--text-caption);
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+.medal-groups {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.medal-group h3 {
+  margin: 0 0 2px;
+  font-size: var(--text-body-sm);
+  font-weight: var(--weight-strong);
+}
+
+.medal-group-sub,
+.medal-empty {
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-caption);
+  color: var(--text-muted);
+}
+
+.medal-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-2);
+}
+
+.medal {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  background: var(--surface);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  font-size: var(--text-body-sm);
+}
+
+.medal svg:not(.steering-wheel-badge):not(.yield-sign-badge) {
+  width: 18px;
+  height: 18px;
+  flex: none;
+  color: var(--text-faint);
+}
+
+.steering-wheel-badge {
+  display: block;
+  flex: none;
+  overflow: visible;
+}
+.medal .steering-wheel-badge { width: 64px; height: 64px; }
+.medal .yield-sign-badge { width: 64px; height: 64px; }
+.medal-group:nth-child(2) .steering-wheel-badge { width: 84px; height: 84px; }
+.medal-group:nth-child(2) .yield-sign-badge { width: 84px; height: 84px; }
+.medal-group:nth-child(3) .steering-wheel-badge { width: 72px; height: 72px; }
+.medal-group:nth-child(3) .yield-sign-badge { width: 72px; height: 72px; }
+.steering-wheel-badge[data-earned='false'] { filter: saturate(.12); opacity: .62; }
+.steering-wheel-badge[data-earned='true'] { filter: drop-shadow(0 2px 2px rgb(0 43 73 / .15)); }
+.steering-wheel-badge__bezel { vector-effect: non-scaling-stroke; }
+.steering-wheel-badge-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(72px, 1fr)); gap: 1rem; padding: 1rem; }
+.steering-wheel-badge-gallery .steering-wheel-badge { width: 72px; height: 72px; }
+
+/* ------------------------------------------------ achievement collection / showroom */
+.achievement-page-section, .showroom-section {
+  display: grid;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+.achievement-page-section h2, .showroom-section h2 { margin: 0; }
+.achievement-section-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+.achievement-section-heading > span { color: var(--accent); font-weight: var(--weight-strong); }
+.achievement-copy { margin: 0; color: var(--text-muted); font-size: var(--text-caption); }
+.achievement-level-row, .showroom-levels, .showroom-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: var(--space-3); }
+.achievement-level-card, .showroom-card, .achievement-tile, .showroom-topic { min-width: 0; display: grid; justify-items: center; gap: 5px; padding: var(--space-3); text-align: center; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-sm); }
+.achievement-level-card[data-current='true'] { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.achievement-level-card[data-reached='false'] .steering-wheel-badge { filter: saturate(.08); opacity: .55; }
+.achievement-level-card small, .showroom-card small, .achievement-tile small, .showroom-topic small { color: var(--text-muted); font-size: var(--text-micro); overflow-wrap: anywhere; }
+.achievement-grid, .showroom-topic-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: var(--space-3); }
+.achievement-grid--section { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.achievement-grid--exam { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
+.achievement-tile[data-earned='false'] { background: var(--surface-2); }
+.achievement-tile[data-earned='false'] .steering-wheel-badge, .showroom-topic small { }
+.achievement-awards {
+  display: grid;
+  gap: var(--space-3);
+}
+.achievement-award {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  padding: var(--space-4);
+  text-align: center;
+  background: linear-gradient(145deg, var(--surface), var(--surface-2));
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  box-shadow: 0 0 0 3px var(--accent-soft), var(--shadow-md);
+  overflow: hidden;
+  animation: achievement-award-in 420ms ease-out both;
+}
+.achievement-award::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(110deg, transparent 35%, rgb(255 255 255 / .28) 50%, transparent 65%);
+  transform: translateX(-100%);
+  animation: achievement-award-sweep 900ms ease-out 180ms both;
+}
+.achievement-award__eyebrow {
+  color: var(--accent-strong);
+  font-size: var(--text-micro);
+  font-weight: var(--weight-strong);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.achievement-award__visual { z-index: 1; }
+.achievement-award strong, .achievement-award span { z-index: 1; }
+.achievement-award > span:last-child { color: var(--text-muted); font-size: var(--text-caption); }
+.achievement-award[data-state='mastered'] { border-color: var(--xp); box-shadow: 0 0 0 3px var(--xp-soft), var(--shadow-md); }
+.achievement-award[data-state='mastered'] .achievement-award__eyebrow { color: var(--xp); }
+@keyframes achievement-award-in {
+  from { opacity: 0; transform: translateY(8px) scale(.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes achievement-award-sweep { to { transform: translateX(100%); } }
+@media (prefers-reduced-motion: reduce) {
+  .achievement-award, .achievement-award::after { animation: none; }
+}
+.showroom-topic { justify-items: start; grid-template-columns: 64px minmax(0, 1fr); text-align: left; align-items: center; }
+.showroom-topic span, .showroom-topic small { grid-column: 2; }
+.showroom-topic .steering-wheel-badge { grid-row: 1 / span 2; }
+.showroom-topic small { grid-row: 2; }
+.showroom-state { padding: 2px 7px; border-radius: var(--radius-pill); font-size: var(--text-micro); }
+.showroom-state--complete { color: var(--good); background: var(--good-soft); }
+.showroom-state--current { color: var(--accent-strong); background: var(--accent); }
+.showroom-state--future { color: var(--text-muted); background: var(--surface-2); }
+.showroom-rail { display: flex; justify-content: space-between; gap: 4px; padding: var(--space-3) 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.showroom-rail > div { display: grid; justify-items: center; gap: 4px; min-width: 0; flex: 1; }
+.showroom-rail span { font-size: var(--text-micro); color: var(--text-muted); overflow-wrap: anywhere; text-align: center; }
+.showroom-rail [data-state='current'] span { color: var(--accent); font-weight: var(--weight-strong); }
+.showroom-pair { display: flex; gap: var(--space-2); align-items: center; }
+.showroom-size-row { display: flex; align-items: end; flex-wrap: wrap; gap: var(--space-4); }
+.showroom-size-row > div { display: grid; justify-items: center; gap: 4px; color: var(--text-muted); font-size: var(--text-micro); }
+.showroom-surface { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-4); padding: var(--space-4); border-radius: var(--radius); }
+.showroom-surface--light { background: #f7f6f4; color: #14161c; }
+.showroom-surface--dark { background: #0e1014; color: #eef1f5; }
+.palette-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: var(--space-2); }
+.palette-swatch { display: grid; grid-template-columns: 28px 1fr; gap: 2px 8px; align-items: center; padding: 8px; border: 1px solid var(--border); border-radius: var(--radius-sm); }
+.palette-swatch > span { width: 28px; height: 28px; border-radius: 6px; grid-row: 1 / span 3; border: 1px solid rgb(0 0 0 / .12); }
+.palette-swatch strong, .palette-swatch small, .palette-swatch code { overflow-wrap: anywhere; }
+.palette-swatch small, .palette-swatch code { color: var(--text-muted); font-size: var(--text-micro); }
+.palette-samples { display: flex; flex-wrap: wrap; gap: var(--space-2); align-items: center; }
+.showroom-selected { padding: 8px 12px; color: var(--accent-strong); background: var(--accent); border-radius: var(--radius-sm); }
+.showroom-progress { display: block; width: 130px; height: 8px; background: var(--surface-3); border-radius: var(--radius-pill); overflow: hidden; }
+.showroom-progress i { display: block; width: 65%; height: 100%; background: var(--accent); }
+.showroom-feedback { padding: 7px 10px; border-radius: var(--radius-sm); font-size: var(--text-caption); }
+.showroom-feedback--good { color: var(--good); background: var(--good-soft); }
+.showroom-feedback--warn { color: var(--warn); background: var(--warn-soft); }
+.showroom-feedback--bad { color: var(--bad); background: var(--bad-soft); }
+
+@media (max-width: 520px) {
+  .showroom-topic-grid, .achievement-grid { grid-template-columns: 1fr; }
+  .achievement-grid--section, .achievement-grid--exam { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .showroom-levels { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .showroom-levels .showroom-card:last-child { grid-column: 1 / -1; }
+  .achievement-level-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* Earned state is carried by the wording underneath as well as the colour. */
+.medal[data-earned='true'] svg {
+  color: var(--xp);
+}
+
+.medal[data-earned='false'] {
+  opacity: 0.72;
+}
+
+.medal span {
+  display: grid;
+  min-width: 0;
+}
+
+.medal small {
+  font-size: var(--text-micro);
+  color: var(--text-muted);
 }

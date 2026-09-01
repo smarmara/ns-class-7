@@ -37,7 +37,7 @@
       "contentHash": "b662437ea1335c92e4680b5bf2460dd83123a4f85629a1a6f3538041ac9f16cc",
       "previousHash": null,
       "http": {
-        "lastModified": "Mon, 17 Aug 2026 13:40:47 GMT",
+        "lastModified": "Wed, 19 Aug 2026 16:15:48 GMT",
         "etag": null
       }
     },
@@ -251,6 +251,55 @@
       }
     },
     {
+      "id": "ns-handbook-ch7",
+      "title": "Driver's Handbook, Chapter 7 — Vehicle Registration and Insurance",
+      "url": "https://novascotia.ca/sns/rmv/handbook/DH-Chapter7.pdf",
+      "type": "handbook-chapter",
+      "jurisdiction": "NS",
+      "authority": "Registry of Motor Vehicles",
+      "precedence": 4,
+      "status": "current",
+      "retrievedAt": "2026-08-19",
+      "verifiedAt": "2026-08-19",
+      "sections": [
+        "Vehicle registration, pp. 167-172",
+        "Annual safety inspection, p. 173",
+        "Vehicle insurance and financial responsibility, pp. 173-175",
+        "Documents to carry in vehicle, p. 176"
+      ],
+      "notes": "Chapter 7 covers vehicle registration and insurance. Most content is owner administration (registration process, fees, renewal) which is excluded from Class 7 assessment. Driver-facing duties (carry permit, carry insurance, carry inspection report) are assessed. Volatile admin details (fine amounts, renewal periods by regulation) are not tested.",
+      "contentHash": "df74baf0704c5e2121dd753a62baca8fed26cd1ed5811ed535a1b643350f0b9f",
+      "previousHash": "",
+      "http": {
+        "lastModified": "Mon, 16 Aug 2021 13:55:39 GMT",
+        "etag": "\"7f673565a692d71:0\""
+      }
+    },
+    {
+      "id": "ns-handbook-ch8",
+      "title": "Driver's Handbook, Chapter 8 — Motorcycles",
+      "url": "https://novascotia.ca/sns/rmv/handbook/DH-Chapter8.pdf",
+      "type": "handbook-chapter",
+      "jurisdiction": "NS",
+      "authority": "Registry of Motor Vehicles",
+      "precedence": 4,
+      "status": "current",
+      "retrievedAt": "2026-08-19",
+      "verifiedAt": "2026-08-19",
+      "sections": [
+        "Motorcycle licensing (Class LM, 6N, 6), pp. 179-183",
+        "Motorcycle safety information, pp. 184-189",
+        "Motorcycle operation techniques, pp. 190-204"
+      ],
+      "notes": "Chapter 8 is motorcycle-rider-specific material (licensing, operation, safety equipment, riding techniques). Motorist-facing concepts (motorcycles entitled to full lane, visibility) are assessed in Chapter 2 (rules-share-001). Chapter 8 itself is excluded from Class 7 assessment scope.",
+      "contentHash": "99539c407fba0e9e549f2988a1a5e3be613f7897dfe83b7811279469a08dd28d",
+      "previousHash": "",
+      "http": {
+        "lastModified": "Mon, 16 Aug 2021 13:55:50 GMT",
+        "etag": "\"f716d76ba692d71:0\""
+      }
+    },
+    {
       "id": "ns-mva",
       "title": "Motor Vehicle Act, R.S.N.S. 1989, c. 293 (consolidated)",
       "url": "https://nslegislature.ca/legislative-business/bills-statutes/consolidated-public-statutes/motor-vehicle-act",
@@ -264,6 +313,7 @@
       "verifiedAt": "2026-08-17",
       "consolidatedTo": "2026-05-01",
       "sections": [
+        "s.18 duty to carry vehicle permit",
         "s.100A novice-driver zero blood alcohol",
         "s.100D hand-held cellular telephones and text messaging",
         "s.101 careful and prudent speed",
@@ -278,6 +328,10 @@
         "s.136 driveways",
         "s.138-139 parking on highway",
         "s.143 no stopping, standing or parking",
+        "s.171B passing distance for cyclists",
+        "s.204 liability insurance card",
+        "s.230 liability policy required",
+        "s.235 amount of financial responsibility ($500,000)",
         "s.279 point system table"
       ],
       "notes": "The statute is the highest authority for every numeric legal fact in the bank. Still the operative traffic statute: the Traffic Safety Act that would replace it is NOT PROCLAIMED IN FORCE (see ns-tsa-proclamations).",
@@ -388,6 +442,64 @@
       }
     },
     {
+      "id": "ns-reg-seat-belt-child-restraint",
+      "title": "Seat Belt and Child Restraint System Regulations (Motor Vehicle Act)",
+      "url": "https://novascotia.ca/just/regulations/regs/mvseatb.htm",
+      "type": "regulation",
+      "jurisdiction": "NS",
+      "authority": "Office of the Registrar of Regulations",
+      "precedence": 2,
+      "status": "current",
+      "retrievedAt": "2026-08-19",
+      "verifiedAt": "2026-08-19",
+      "citation": "N.S. Reg. 221/2005 amended to N.S. Reg. 188/2020",
+      "effectiveFrom": "2007-01-01",
+      "sections": [
+        "s.3 children less than 9 years old must be secured in child restraint system",
+        "s.4 classification: infants (<1 year OR <10 kg), young children (≥1 year AND ≥10 kg AND <18 kg), older children (<9 years AND ≥18 kg AND <145 cm)",
+        "s.4(2) child ≥18 kg AND ≥145 cm not required to use child restraint",
+        "s.5(2) rear-facing restraint must not be used in seat with active frontal airbag",
+        "s.6 young child restraint standards (CMVSS 213, 213.1, 213.3, 213.4, 213.5)",
+        "s.7 older child booster seat standards (CMVSS 213.2)"
+      ],
+      "notes": "Governs child restraint requirements in Nova Scotia. Current law as of December 15, 2020 (N.S. Reg. 188/2020). Defines three classes of child passengers and their restraint requirements. A child who weighs at least 18 kg AND has standing height at least 145 cm is not required to use a child restraint system.",
+      "contentHash": "48b03621d71b51f61cb5b9161699fcf78efe490112346ba6ec44a89f799ec9b5",
+      "previousHash": "",
+      "http": {
+        "lastModified": "Fri, 08 Jan 2021 19:36:34 GMT",
+        "etag": "\"cde7d192f5e5d61:0\""
+      }
+    },
+    {
+      "id": "ns-reg-studded-tires",
+      "title": "Studded Tires Regulations (Motor Vehicle Act)",
+      "url": "https://novascotia.ca/just/regulations/regs/mv4579.htm",
+      "type": "regulation",
+      "jurisdiction": "NS",
+      "authority": "Office of the Registrar of Regulations",
+      "precedence": 2,
+      "status": "current",
+      "retrievedAt": "2026-08-19",
+      "verifiedAt": "2026-08-19",
+      "citation": "N.S. Reg. 45/79 amended to N.S. Reg. 73/2014",
+      "effectiveFrom": "1979-03-27",
+      "sections": [
+        "s.1 permitted period: October 15 to May 31 (fire department vehicles exempt)",
+        "s.1(a) studs must not protrude more than 1/8 inch from tread",
+        "s.1(b) stud diameter must not exceed 1/2 inch",
+        "s.1(c) maximum 130 studs per tire (vehicles <10,000 lbs) or 175 studs (vehicles ≥10,000 lbs)",
+        "s.1(d) studs must be equal in number on left and right sides",
+        "s.1(e) studs must be securely embedded"
+      ],
+      "notes": "Governs studded tire use in Nova Scotia. Current law as of May 20, 2014 (N.S. Reg. 73/2014). Permitted period is October 15 to May 31. Note: Driver's Handbook states April 30, but current regulation states May 31. Regulation controls.",
+      "contentHash": "69f5172b4d3342f6909d81d05bc5fd286eb986bd0d5226a749caafb53cbcfe48",
+      "previousHash": "",
+      "http": {
+        "lastModified": "Sun, 10 Dec 2017 22:20:38 GMT",
+        "etag": "\"5d9a421b572d31:0\""
+      }
+    },
+    {
       "id": "ns-regs-by-act-index",
       "title": "Nova Scotia Regulations by Act — Office of the Registrar of Regulations",
       "url": "https://novascotia.ca/just/regulations/regsbyact.htm",
@@ -396,14 +508,14 @@
       "authority": "Office of the Registrar of Regulations",
       "precedence": 9,
       "status": "monitoring",
-      "retrievedAt": "2026-08-17",
-      "verifiedAt": "2026-08-17",
-      "notes": "Watched so that a NEW regulation appearing under the Motor Vehicle Act (or the Traffic Safety Act) is noticed. Not itself a basis for any question.",
-      "contentHash": "02941d0d44e88db6beaec30419a95adb772ce9ff3de845ca7ee738e0ab924e2b",
-      "previousHash": null,
+      "retrievedAt": "2026-08-31",
+      "verifiedAt": "2026-08-31",
+      "notes": "Watched so that a NEW regulation appearing under the Motor Vehicle Act (or the Traffic Safety Act) is noticed. Not itself a basis for any question. Triage 2026-08-31: index updated with N.S. Reg. 190/2026-194/2026 (Marshland variation order, offshore petroleum, employment support and income assistance). The Motor Vehicle Act section was diffed line by line against the stored snapshot and is byte-identical, so no regulation this app depends on was added, removed or amended. No question affected.",
+      "contentHash": "3a190a807d95d78f97dfaf7194a4a8653b59ce35007800424a135d003826a29f",
+      "previousHash": "6f857d88f55a573baeeeda6498e8de23f6bb59e430cbb47701ddb23a502592c0",
       "http": {
-        "lastModified": "Fri, 07 Aug 2026 19:26:57 GMT",
-        "etag": "\"bae35b6a226dd1:0\""
+        "lastModified": "Wed, 26 Aug 2026 11:57:31 GMT",
+        "etag": "\"4bceb135235dd1:0\""
       }
     },
     {
@@ -473,15 +585,84 @@
       "authority": "Office of the Registrar of Regulations",
       "precedence": 9,
       "status": "monitoring",
-      "retrievedAt": "2026-08-17",
-      "verifiedAt": "2026-08-17",
-      "notes": "Newly filed regulations appear here before consolidated regulation pages are rebuilt, so this is watched as an early-warning feed for changes that have not yet reached the pages above.",
-      "contentHash": "58f17a1023668133b531a53d067a5909ae242461c6d65e07a7764a6141d38801",
+      "retrievedAt": "2026-08-21",
+      "verifiedAt": "2026-08-21",
+      "notes": "Newly filed regulations appear here before consolidated regulation pages are rebuilt, so this is watched as an early-warning feed for changes that have not yet reached the pages above. Triage 2026-08-21: Issue No. 17 (N.S. Reg. 179/2026-187/2026) added. Reviewed against the issue PDF - the regulations are made under the Municipal Government, Costs and Fees, Health Authorities, Income Tax, Petroleum Products Pricing, Land Registration and Non-resident Deed Transfer Tax Acts. Nothing under the Motor Vehicle Act or the Traffic Safety Act, so no question is affected.",
+      "contentHash": "15eb2f073f304dc5b226a7d8f71fba7af31fe748a24b6f11a265092eb758800f",
+      "previousHash": "58f17a1023668133b531a53d067a5909ae242461c6d65e07a7764a6141d38801",
+      "http": {
+        "lastModified": "Fri, 21 Aug 2026 12:17:45 GMT",
+        "etag": "\"5c96b0126731dd1:0\""
+      }
+    },
+    {
+      "id": "ns-rmv-gdl-system",
+      "title": "Registry of Motor Vehicles — Graduated Drivers Licence System",
+      "url": "https://novascotia.ca/sns/rmv/licence/gradlic.asp",
+      "type": "government-service-page",
+      "jurisdiction": "NS",
+      "authority": "Government of Nova Scotia / Registry of Motor Vehicles",
+      "precedence": 3,
+      "status": "current",
+      "sections": [
+        "The three phases of Graduated Driver Licence system",
+        "Learner's Licence phase"
+      ],
+      "notes": "Current operational GDL guidance. Authority for the Class 7 minimum practice period of 12 months, reduced to 9 months with a recognized driver education or training program. Supersedes the 6/3-month rule printed in Driver's Handbook Chapter 1, which changed on 1 April 2016.",
+      "contentHash": "9d66a2f0b124b0d4d39944fe74cf32c36aeb2722f1e69fb30a87a147bb8e4b99",
       "previousHash": null,
       "http": {
-        "lastModified": "Fri, 07 Aug 2026 11:48:03 GMT",
-        "etag": "\"5863769a6226dd1:0\""
-      }
+        "lastModified": null,
+        "etag": null
+      },
+      "retrievedAt": "2026-08-19",
+      "verifiedAt": "2026-08-19"
+    },
+    {
+      "id": "ns-rmv-who-takes-exam",
+      "title": "Registry of Motor Vehicles — Who Takes the Exam",
+      "url": "https://novascotia.ca/sns/rmv/licence/appexam.asp",
+      "type": "government-service-page",
+      "jurisdiction": "NS",
+      "authority": "Government of Nova Scotia / Registry of Motor Vehicles",
+      "precedence": 3,
+      "status": "current",
+      "sections": [
+        "Learner's Licence road test eligibility",
+        "Driver education/training reduction"
+      ],
+      "notes": "Current road-test eligibility guidance. States the 12-month wait runs from the date the Learner's Licence was issued, reduced to 9 months on completing a driver education/training course approved by the Registrar of Motor Vehicles.",
+      "contentHash": "2f46ad88ce8e0513a460a15cdc0791bd02be9cd6b6dcb7e78548fb20c16ca5b1",
+      "previousHash": null,
+      "http": {
+        "lastModified": null,
+        "etag": null
+      },
+      "retrievedAt": "2026-08-19",
+      "verifiedAt": "2026-08-19"
+    },
+    {
+      "id": "ns-rmv-point-system",
+      "title": "Registry of Motor Vehicles — The Point System",
+      "url": "https://novascotia.ca/sns/rmv/licence/point.asp",
+      "type": "government-service-page",
+      "jurisdiction": "NS",
+      "authority": "Government of Nova Scotia / Registry of Motor Vehicles",
+      "precedence": 3,
+      "status": "current",
+      "sections": [
+        "Demerit point table",
+        "Point accumulation consequences"
+      ],
+      "notes": "Current demerit-point schedule and the point thresholds that trigger an interview or a six-month suspension for learner, newly licensed and other drivers.",
+      "contentHash": "77ac53a49fd1207358132f35038b1b8f3d1ea69af893fd22294d168d1cb970d6",
+      "previousHash": null,
+      "http": {
+        "lastModified": null,
+        "etag": null
+      },
+      "retrievedAt": "2026-08-19",
+      "verifiedAt": "2026-08-19"
     }
   ]
 }

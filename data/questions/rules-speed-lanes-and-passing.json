@@ -5,7 +5,12 @@
     "topic": "speed-limits",
     "subtopic": "default limits",
     "question": "Unless otherwise posted, what is the maximum speed permitted on a highway in Nova Scotia?",
-    "choices": ["80 km/h", "100 km/h", "90 km/h", "70 km/h"],
+    "choices": [
+      "80 km/h",
+      "100 km/h",
+      "90 km/h",
+      "70 km/h"
+    ],
     "correctChoice": 0,
     "explanation": "Unless otherwise posted, the maximum speed permitted on any highway in Nova Scotia is 80 km/h. Your speed must still be reasonable and prudent for the traffic, the surface and width of the highway, and the conditions at the time.",
     "incorrectChoiceExplanations": [
@@ -15,10 +20,19 @@
       "70 km/h is not the default; it is the speed below which four-way flashers may be required on a posted climbing lane."
     ],
     "difficulty": "easy",
-    "tags": ["speed limits"],
+    "tags": [
+      "speed limits"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 50" },
-      { "sourceId": "ns-mva", "section": "s.102" }
+      {
+        "sourceId": "ns-handbook-ch2",
+        "chapter": "Chapter 2",
+        "page": "p. 50"
+      },
+      {
+        "sourceId": "ns-mva",
+        "section": "s.102"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -30,7 +44,12 @@
     "topic": "speed-limits",
     "subtopic": "default limits",
     "question": "What is the speed limit in business and residential districts unless otherwise posted?",
-    "choices": ["50 km/h", "40 km/h", "60 km/h", "30 km/h"],
+    "choices": [
+      "50 km/h",
+      "40 km/h",
+      "60 km/h",
+      "30 km/h"
+    ],
     "correctChoice": 0,
     "explanation": "In business and residential districts the speed limit is 50 km/h. Regardless of the posted limit, your speed must be reasonable and prudent for the conditions.",
     "incorrectChoiceExplanations": [
@@ -40,10 +59,20 @@
       "30 km/h is the school-area limit where the approaching limit is 50 km/h."
     ],
     "difficulty": "easy",
-    "tags": ["speed limits", "urban"],
+    "tags": [
+      "speed limits",
+      "urban"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 50" },
-      { "sourceId": "ns-mva", "section": "s.102" }
+      {
+        "sourceId": "ns-handbook-ch2",
+        "chapter": "Chapter 2",
+        "page": "p. 50"
+      },
+      {
+        "sourceId": "ns-mva",
+        "section": "s.102"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -55,7 +84,12 @@
     "topic": "speed-limits",
     "subtopic": "railway crossings",
     "question": "The maximum speed limit is set at 50 km/h when you approach within what distance of a railway crossing?",
-    "choices": ["30 metres", "15 metres", "60 metres", "100 metres"],
+    "choices": [
+      "30 metres",
+      "15 metres",
+      "60 metres",
+      "100 metres"
+    ],
     "correctChoice": 0,
     "explanation": "The maximum speed limit is 50 km/h when approaching within 30 metres of a railway crossing. This is one of a list of situations in which the 50 km/h limit applies regardless of the general posted limit.",
     "incorrectChoiceExplanations": [
@@ -65,9 +99,16 @@
       "100 metres is the distance from which brake lights must be visible in normal sunlight."
     ],
     "difficulty": "hard",
-    "tags": ["speed limits", "railway"],
+    "tags": [
+      "speed limits",
+      "railway"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 51" }
+      {
+        "sourceId": "ns-handbook-ch2",
+        "chapter": "Chapter 2",
+        "page": "p. 51"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -94,10 +135,20 @@
       "Merely seeing an intersection ahead does not trigger the limit."
     ],
     "difficulty": "hard",
-    "tags": ["speed limits", "intersections"],
+    "tags": [
+      "speed limits",
+      "intersections"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 51" },
-      { "sourceId": "ns-mva", "section": "s.102" }
+      {
+        "sourceId": "ns-handbook-ch2",
+        "chapter": "Chapter 2",
+        "page": "p. 51"
+      },
+      {
+        "sourceId": "ns-mva",
+        "section": "s.102"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -124,9 +175,16 @@
       "Four-way flashers are for specific situations such as a stalled vehicle or a posted climbing lane, not a licence to obstruct traffic."
     ],
     "difficulty": "medium",
-    "tags": ["speed limits", "safety"],
+    "tags": [
+      "speed limits",
+      "safety"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "pp. 47-48" }
+      {
+        "sourceId": "ns-handbook-ch2",
+        "chapter": "Chapter 2",
+        "page": "pp. 47-48"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -153,10 +211,22 @@
       "Speed limits apply at every moment, not on average."
     ],
     "difficulty": "easy",
-    "tags": ["speed limits", "signs", "conditions"],
+    "tags": [
+      "speed limits",
+      "signs",
+      "conditions"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 90" },
-      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 50" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 90"
+      },
+      {
+        "sourceId": "ns-handbook-ch2",
+        "chapter": "Chapter 2",
+        "page": "p. 50"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -183,9 +253,15 @@
       "The rule is measured in time, not vehicle lengths, because a safe gap grows with speed."
     ],
     "difficulty": "easy",
-    "tags": ["following distance"],
+    "tags": [
+      "following distance"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 49" }
+      {
+        "sourceId": "ns-handbook-ch2",
+        "chapter": "Chapter 2",
+        "page": "p. 49"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -212,9 +288,16 @@
       "Following distance matters on every road."
     ],
     "difficulty": "medium",
-    "tags": ["following distance", "conditions"],
+    "tags": [
+      "following distance",
+      "conditions"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 49" }
+      {
+        "sourceId": "ns-handbook-ch2",
+        "chapter": "Chapter 2",
+        "page": "p. 49"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -241,9 +324,16 @@
       "250 metres overstates the figure for 80 km/h."
     ],
     "difficulty": "medium",
-    "tags": ["stopping distance", "speed"],
+    "tags": [
+      "stopping distance",
+      "speed"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 47" }
+      {
+        "sourceId": "ns-handbook-ch2",
+        "chapter": "Chapter 2",
+        "page": "p. 47"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -270,10 +360,22 @@
       "Pumping is specifically wrong on a vehicle with ABS — press steadily and firmly instead."
     ],
     "difficulty": "hard",
-    "tags": ["braking", "emergency", "steering"],
+    "tags": [
+      "braking",
+      "emergency",
+      "steering"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 125" },
-      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 143" }
+      {
+        "sourceId": "ns-handbook-ch4",
+        "chapter": "Chapter 4",
+        "page": "p. 125"
+      },
+      {
+        "sourceId": "ns-handbook-ch5",
+        "chapter": "Chapter 5",
+        "page": "p. 143"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -300,12 +402,55 @@
       "The vibration is the system working; releasing the brake lengthens your stop."
     ],
     "difficulty": "medium",
-    "tags": ["braking", "ABS"],
+    "tags": [
+      "braking",
+      "ABS"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 125" }
+      {
+        "sourceId": "ns-handbook-ch4",
+        "chapter": "Chapter 4",
+        "page": "p. 125"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-follow-006",
+    "type": "rules",
+    "topic": "following-and-stopping",
+    "subtopic": "braking",
+    "question": "You brake hard in a vehicle without ABS and the wheels lock. What does the Handbook tell you to do?",
+    "choices": [
+      "Pump the brake pedal rapidly until the vehicle stops",
+      "Press harder to hold the wheels locked until you stop",
+      "Release the brakes fully and steer around the hazard",
+      "Ease off the brakes slightly, then reapply pressure"
+    ],
+    "correctChoice": 3,
+    "explanation": "The Handbook's braking advice is to begin early with light pressure and ease off as the vehicle comes to a stop, increasing pressure gradually when you need to slow more quickly. Threshold braking means firm, steady pressure while avoiding a lock-up; if the wheels do lock, ease off slightly and then reapply. The advice differs for a vehicle with ABS, where you press steadily and firmly and do not pump.",
+    "incorrectChoiceExplanations": [
+      "Pumping is not the technique the Handbook gives, and it is specifically wrong with ABS.",
+      "Locked wheels lengthen the stop and cost you steering control.",
+      "Releasing entirely gives up braking you still need; ease off only enough to unlock.",
+      null
+    ],
+    "difficulty": "hard",
+    "tags": [
+      "braking",
+      "vehicle control"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch4",
+        "chapter": "Chapter 4",
+        "page": "p. 125"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
     "lawVersion": "mva"
   },
   {
@@ -329,9 +474,16 @@
       "This reverses the rule — slower traffic belongs in the right lane."
     ],
     "difficulty": "medium",
-    "tags": ["lane use", "highways"],
+    "tags": [
+      "lane use",
+      "highways"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "pp. 46, 59" }
+      {
+        "sourceId": "ns-handbook-ch2",
+        "chapter": "Chapter 2",
+        "page": "pp. 46, 59"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -358,9 +510,15 @@
       "Exceeding the speed limit is never a lawful reason for anything."
     ],
     "difficulty": "easy",
-    "tags": ["lane use"],
+    "tags": [
+      "lane use"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 46" }
+      {
+        "sourceId": "ns-handbook-ch2",
+        "chapter": "Chapter 2",
+        "page": "p. 46"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -387,9 +545,17 @@
       "Mirrors do not cover your blind spots; a shoulder check is required."
     ],
     "difficulty": "medium",
-    "tags": ["lane change", "blind spots", "halifax"],
+    "tags": [
+      "lane change",
+      "blind spots",
+      "halifax"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 56" }
+      {
+        "sourceId": "ns-handbook-ch2",
+        "chapter": "Chapter 2",
+        "page": "p. 56"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -416,9 +582,17 @@
       "It is not a through lane at any time of day."
     ],
     "difficulty": "medium",
-    "tags": ["lane use", "turning", "pavement markings"],
+    "tags": [
+      "lane use",
+      "turning",
+      "pavement markings"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 87" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 87"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -445,9 +619,17 @@
       "This reverses the arrangement; slower traffic stays right."
     ],
     "difficulty": "hard",
-    "tags": ["lane use", "climbing lane", "rural"],
+    "tags": [
+      "lane use",
+      "climbing lane",
+      "rural"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 86" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 86"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -474,9 +656,17 @@
       "A right turn should finish in the right-hand lane of the new road."
     ],
     "difficulty": "medium",
-    "tags": ["turning", "lane position", "bicycles"],
+    "tags": [
+      "turning",
+      "lane position",
+      "bicycles"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 54" }
+      {
+        "sourceId": "ns-handbook-ch2",
+        "chapter": "Chapter 2",
+        "page": "p. 54"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -503,9 +693,16 @@
       "Turns have defined lane paths so that other drivers can predict where you will end up."
     ],
     "difficulty": "hard",
-    "tags": ["turning", "lane position"],
+    "tags": [
+      "turning",
+      "lane position"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 55" }
+      {
+        "sourceId": "ns-handbook-ch2",
+        "chapter": "Chapter 2",
+        "page": "p. 55"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -532,9 +729,16 @@
       "Change lanes after completing the turn, not during it."
     ],
     "difficulty": "medium",
-    "tags": ["turning", "lane position"],
+    "tags": [
+      "turning",
+      "lane position"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 55" }
+      {
+        "sourceId": "ns-handbook-ch2",
+        "chapter": "Chapter 2",
+        "page": "p. 55"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -561,10 +765,21 @@
       "Hand signals may be used but cautiously, since they may not be seen as readily as vehicle signals."
     ],
     "difficulty": "easy",
-    "tags": ["turning", "signalling"],
+    "tags": [
+      "turning",
+      "signalling"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 53" },
-      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 113" }
+      {
+        "sourceId": "ns-handbook-ch2",
+        "chapter": "Chapter 2",
+        "page": "p. 53"
+      },
+      {
+        "sourceId": "ns-handbook-ch4",
+        "chapter": "Chapter 4",
+        "page": "p. 113"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -591,9 +806,17 @@
       "Signal before you move, so that drivers around you know what you intend."
     ],
     "difficulty": "medium",
-    "tags": ["passing", "horn", "signalling"],
+    "tags": [
+      "passing",
+      "horn",
+      "signalling"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "pp. 57-58" }
+      {
+        "sourceId": "ns-handbook-ch2",
+        "chapter": "Chapter 2",
+        "page": "pp. 57-58"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -605,7 +828,12 @@
     "topic": "passing",
     "subtopic": "sight distance",
     "question": "On a curve or hill, how far must you be able to see ahead before passing is considered safe?",
-    "choices": ["At least 150 metres", "At least 60 metres", "At least 100 metres", "At least 300 metres"],
+    "choices": [
+      "At least 150 metres",
+      "At least 60 metres",
+      "At least 100 metres",
+      "At least 300 metres"
+    ],
     "correctChoice": 0,
     "explanation": "Passing is always unsafe and usually illegal on any curve or hill where you cannot see at least 150 metres ahead. Since curves and hills obstruct the view of the road, do not pass or back up within a curve.",
     "incorrectChoiceExplanations": [
@@ -615,9 +843,16 @@
       "300 metres is the visibility threshold that requires headlights."
     ],
     "difficulty": "hard",
-    "tags": ["passing", "sight distance"],
+    "tags": [
+      "passing",
+      "sight distance"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 59" }
+      {
+        "sourceId": "ns-handbook-ch2",
+        "chapter": "Chapter 2",
+        "page": "p. 59"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -644,9 +879,16 @@
       "Sitting in the oncoming lane waiting is exactly the position that produces head-on collisions."
     ],
     "difficulty": "medium",
-    "tags": ["passing", "rural"],
+    "tags": [
+      "passing",
+      "rural"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 57" }
+      {
+        "sourceId": "ns-handbook-ch2",
+        "chapter": "Chapter 2",
+        "page": "p. 57"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -673,9 +915,15 @@
       "Signalling your return is correct procedure."
     ],
     "difficulty": "medium",
-    "tags": ["passing"],
+    "tags": [
+      "passing"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 58" }
+      {
+        "sourceId": "ns-handbook-ch2",
+        "chapter": "Chapter 2",
+        "page": "p. 58"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -702,9 +950,15 @@
       "Blocking a pass is dangerous and is the opposite of the legal duty."
     ],
     "difficulty": "medium",
-    "tags": ["passing"],
+    "tags": [
+      "passing"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "pp. 57, 59" }
+      {
+        "sourceId": "ns-handbook-ch2",
+        "chapter": "Chapter 2",
+        "page": "pp. 57, 59"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -731,10 +985,22 @@
       "Four-way flashers are for emergency situations such as a stalled vehicle."
     ],
     "difficulty": "medium",
-    "tags": ["passing", "night driving", "headlights"],
+    "tags": [
+      "passing",
+      "night driving",
+      "headlights"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 57" },
-      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 136" }
+      {
+        "sourceId": "ns-handbook-ch2",
+        "chapter": "Chapter 2",
+        "page": "p. 57"
+      },
+      {
+        "sourceId": "ns-handbook-ch5",
+        "chapter": "Chapter 5",
+        "page": "p. 136"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -761,10 +1027,21 @@
       "Multi-lane highways are where passing is normally done."
     ],
     "difficulty": "easy",
-    "tags": ["passing", "pavement markings"],
+    "tags": [
+      "passing",
+      "pavement markings"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 59" },
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 84" }
+      {
+        "sourceId": "ns-handbook-ch2",
+        "chapter": "Chapter 2",
+        "page": "p. 59"
+      },
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 84"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -791,9 +1068,16 @@
       "No driver can authorise another to pass; the rules do."
     ],
     "difficulty": "hard",
-    "tags": ["passing", "lane use"],
+    "tags": [
+      "passing",
+      "lane use"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 59" }
+      {
+        "sourceId": "ns-handbook-ch2",
+        "chapter": "Chapter 2",
+        "page": "p. 59"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",

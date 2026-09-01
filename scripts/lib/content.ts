@@ -9,7 +9,9 @@ export const SNAPSHOT_DIR = path.join(ROOT, 'data', 'sources', 'snapshots');
 export const EXAM_CONFIG_PATH = path.join(ROOT, 'data', 'exam-config', 'class7.json');
 export const LEGAL_STATUS_PATH = path.join(ROOT, 'data', 'exam-config', 'legal-status.json');
 export const SIGN_META_PATH = path.join(ROOT, 'data', 'signs', 'sign-meta.json');
+export const SIGN_FIDELITY_PATH = path.join(ROOT, 'data', 'signs', 'sign-fidelity.json');
 export const SIGN_ART_PATH = path.join(ROOT, 'src', 'signs', 'registry.tsx');
+export const OFFICIAL_CROPS_DIR = path.join(ROOT, 'public', 'signs', 'ns-official');
 
 export interface LoadedQuestion {
   /** Question file the record came from, for error messages. */
@@ -56,11 +58,25 @@ export async function loadQuestions(): Promise<LoadedQuestion[]> {
  */
 export async function loadSignArtIds(): Promise<Set<string>> {
   const src = await readFile(SIGN_ART_PATH, 'utf8');
-  const body = src.slice(src.indexOf('SIGN_ART'));
+  const body = src.slice(src.indexOf('SIGN_ART'), src.indexOf('SIGN_ART_IDS'));
   const ids = new Set<string>();
   // Matches both `'kebab-id':` and bare `identifier:` keys at object depth 1.
   for (const match of body.matchAll(/^\s{2}(?:'([a-z0-9-]+)'|([a-zA-Z][a-zA-Z0-9]*)):\s/gm)) {
     ids.add(match[1] ?? match[2]!);
+  }
+  return ids;
+}
+
+/**
+ * Official Schedule designations that have a crop file registered in the
+ * artwork registry. Read by regex for the same reasons as loadSignArtIds.
+ */
+export async function loadOfficialCropDesignations(): Promise<Set<string>> {
+  const src = await readFile(SIGN_ART_PATH, 'utf8');
+  const body = src.slice(src.indexOf('OFFICIAL_CROPS'), src.indexOf('OFFICIAL_CROP_IDS'));
+  const ids = new Set<string>();
+  for (const match of body.matchAll(/^\s{2}'([A-Za-z0-9]+(?:-[A-Za-z0-9]+)*)':\s*'/gm)) {
+    ids.add(match[1]!);
   }
   return ids;
 }

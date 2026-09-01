@@ -1,6 +1,7 @@
 /// <reference types="vite-plugin-pwa/client" />
 import { create } from 'zustand';
 import { registerSW } from 'virtual:pwa-register';
+import { shouldRegisterServiceWorker } from '@/native/platform';
 
 /**
  * Service-worker lifecycle wiring.
@@ -15,6 +16,13 @@ import { registerSW } from 'virtual:pwa-register';
  *    and defers showing it while a test is running.
  *  - `onOfflineReady` — the first install has cached everything needed to
  *    work offline; shown once as a small notice.
+ *
+ * None of this applies inside a native build. There the web assets are already
+ * inside the binary, so a worker would cache a second copy of local files, and
+ * its "a new version is waiting" lifecycle would be a promise the app cannot
+ * keep — native updates arrive through the App Store and Play Store. So the
+ * worker is simply not registered on native, and `updateAvailable` stays false,
+ * which keeps the update banner off screen as well.
  */
 
 interface PwaState {
@@ -40,6 +48,7 @@ export const usePwa = create<PwaState>(() => ({
 /** Register the worker and wire the update lifecycle exactly once. */
 export function initPwa(): void {
   if (started) return;
+  if (!shouldRegisterServiceWorker()) return;
   started = true;
   apply = registerSW({
     immediate: true,

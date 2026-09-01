@@ -1,0 +1,132 @@
+name: Deploy to GitHub Pages
+
+# Production deployment. Runs only from the default branch, and only after the
+# full verification gate passes — a broken build must never reach learners.
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deployment at a time. `cancel-in-progress: false` so a queued deploy
+# finishes rather than being cut off half-published.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    name: Verify
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm exec playwright install --with-deps chromium
+
+      - name: Lint
+        run: pnpm lint
+      - name: Typecheck
+        run: pnpm typecheck
+      - name: Validate content
+        run: pnpm content:validate
+      - name: Content quality
+        run: pnpm content:quality
+      - name: Syllabus coverage
+        run: pnpm content:syllabus
+      - name: Topic progression
+        run: pnpm content:progression
+      - name: Sign approvals
+        run: pnpm signs:approval:check
+      - name: Learner sign audit
+        run: pnpm signs:learner-audit
+      - name: Unit tests
+        run: pnpm test
+      - name: End-to-end tests
+        run: pnpm test:e2e
+      - name: GitHub Pages subpath tests
+        run: pnpm pages:test
+
+      - name: Upload Playwright report on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 7
+
+  build:
+    name: Build Pages artifact
+    needs: verify
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Build
+        # The base path is derived from the repository, never hard-coded, so a
+        # fork deploys to its own URL with no edits. `configure-pages` reports
+        # the real base_path — '' for a user/organisation site or a custom
+        # domain, '/<repo>' for a project site — which is exactly the
+        # distinction the app needs.
+        env:
+          VITE_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+        run: pnpm build
+
+      - name: Offline audit
+        # The deployed bundle must need no network to teach. Runs against the
+        # artifact that is about to be published, not a separate build.
+        run: pnpm native:offline:check
+
+      - name: Upload Pages artifact
+        # Only dist/ is published: no source, tests, docs, native projects,
+        # source snapshots or git history reach the public site.
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+# Note: the official source monitor (`pnpm sources:check:ci`) is deliberately
+# NOT part of this workflow. It makes live requests to novascotia.ca and
+# nslegislature.ca, and a government site being briefly unreachable must not
+# block a deployment of already-verified content. It runs in ci.yml and on a
+# schedule instead, where a genuine change fails loudly and waits for a human
+# to read the diff. Nothing in CI ever runs it with --accept.

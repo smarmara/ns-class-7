@@ -1,0 +1,1630 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-19T15:10:11.643Z",
+  "classifications": {
+    "wz-workers-ahead": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "work-zone",
+      "displayName": "Workers Ahead"
+    },
+    "wz-uneven-lanes": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "work-zone",
+      "displayName": "Uneven Lanes"
+    },
+    "wz-traffic-control-person": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "work-zone",
+      "displayName": "Traffic Control Person Ahead"
+    },
+    "tar": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Fresh Tar"
+    },
+    "survey-work": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Survey Crew Ahead"
+    },
+    "wz-end-construction": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "work-zone",
+      "displayName": "End Construction"
+    },
+    "wz-construction-ahead": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "work-zone",
+      "displayName": "Construction Ahead"
+    },
+    "wz-construction-distance-ahead": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "work-zone",
+      "displayName": "Construction Next Distance Shown"
+    },
+    "shape-stop": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "shape",
+      "displayName": "Stop Sign Shape — Octagon"
+    },
+    "shape-regulatory-sign": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "shape",
+      "displayName": "Regulatory Sign Shape — Vertical Rectangle"
+    },
+    "shape-guide-sign": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "shape",
+      "displayName": "Guide Sign Shape — Horizontal Rectangle"
+    },
+    "road-surface-hazard": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Road Surface Hazard"
+    },
+    "work-road-narrows": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "work-zone",
+      "displayName": "Road Narrows (Work Zone)"
+    },
+    "work-right-lane-ends": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "work-zone",
+      "displayName": "Right Lane Ends (Work Zone)"
+    },
+    "shape-yield": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "shape",
+      "displayName": "Yield Sign Shape — Inverted Triangle"
+    },
+    "shape-warning-sign": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "shape",
+      "displayName": "Warning Sign Shape — Diamond"
+    },
+    "shape-school-zone": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "shape",
+      "displayName": "School Zone Sign Shape — Pentagon"
+    },
+    "prepare-to-stop": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Prepare to Stop"
+    },
+    "school-area": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "school",
+      "displayName": "School Area"
+    },
+    "truck-entering": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Truck Entering"
+    },
+    "traffic-signal-ahead": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Traffic Signal Ahead"
+    },
+    "stop-sign-ahead": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Stop Sign Ahead"
+    },
+    "steep-decline": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Steep Decline"
+    },
+    "slippery-when-wet": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Slippery When Wet"
+    },
+    "sharp-turn-right": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Sharp Turn Right"
+    },
+    "road-narrows": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Road Narrows"
+    },
+    "right-lane-ends": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Right Lane Ends"
+    },
+    "right-curve": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Right Curve"
+    },
+    "railway-crossing-ahead": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "railway",
+      "displayName": "Railway Crossing Ahead"
+    },
+    "playground": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Playground"
+    },
+    "narrow-structure": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Narrow Structure"
+    },
+    "merge": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Merge"
+    },
+    "divided-highway-ends": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Divided Highway Ends"
+    },
+    "fire-truck-entrance": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Fire Truck Entrance"
+    },
+    "hidden-intersection": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Hidden Intersection"
+    },
+    "low-clearance": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Low Clearance"
+    },
+    "divided-highway-ahead": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Divided Highway Ahead"
+    },
+    "chevron-right": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Chevron — Keep Right"
+    },
+    "bump": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Bump"
+    },
+    "bridge-opening": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Bridge Opening"
+    },
+    "animal-crossing": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Animal Crossing"
+    },
+    "hazard-marker-keep-right": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Hazard Marker — Keep Right"
+    },
+    "hazard-marker-keep-left": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Hazard Marker — Keep Left"
+    },
+    "truck-route": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Truck Route"
+    },
+    "no-stopping": {
+      "scope": "reference",
+      "hasMeta": true,
+      "inQuiz": false,
+      "category": "other",
+      "displayName": "No Stopping"
+    },
+    "accessible-parking": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Accessible Parking"
+    },
+    "no-parking": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "No Parking"
+    },
+    "two-way-left-turn-lane": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Two-Way Left Turn Lane"
+    },
+    "RB-42R": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Straight or Right Turn"
+    },
+    "lane-straight-or-left": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Straight or Left Turn"
+    },
+    "lane-right-turn-only": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Right Turn Only"
+    },
+    "RB-41L": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Left Turn Only"
+    },
+    "RB-40": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Bicycles Yield at High Speed Ramp"
+    },
+    "RB-39": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Bicycles Yield to Pedestrians"
+    },
+    "RB-38": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Turning Vehicles Yield to Bicycles and Pedestrians"
+    },
+    "RB-37": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Turning Vehicles Yield to Bicycles"
+    },
+    "RB-36": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Yield Centre Lane to Opposing Traffic"
+    },
+    "RB-35": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Slower Traffic Keep Right"
+    },
+    "RB-34": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Keep Right Except to Pass"
+    },
+    "RB-33S2": {
+      "scope": "variant",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Ends Tab"
+    },
+    "RB-33S1": {
+      "scope": "variant",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Do Not Pass Bicycles Tab"
+    },
+    "RB-33": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Motor Vehicle Passing Prohibited"
+    },
+    "passing-permitted": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Passing Permitted"
+    },
+    "do-not-pass": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Do Not Pass"
+    },
+    "keep-right-of-island": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Keep Right of Island"
+    },
+    "two-way-traffic": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Two-Way Traffic"
+    },
+    "do-not-enter": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Do Not Enter"
+    },
+    "one-way": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "One Way"
+    },
+    "RB-18": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Left Turn Signal"
+    },
+    "no-right-turn-on-red": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "No Right Turn on Red"
+    },
+    "RB-17L": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "No Left Turn on Red"
+    },
+    "no-u-turn": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "No U-Turn"
+    },
+    "RB-15A": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Restrictive Turn Control — Left or Right Turn Only"
+    },
+    "no-turns": {
+      "scope": "reference",
+      "hasMeta": true,
+      "inQuiz": false,
+      "category": "other",
+      "displayName": "No Turns"
+    },
+    "RB-14R": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Restrictive Turn Control — Right Turn Only"
+    },
+    "RB-14L": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Restrictive Turn Control — Left Turn Only"
+    },
+    "RB-11S1": {
+      "scope": "variant",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Except Buses Tab"
+    },
+    "no-right-turn": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "No Right Turn"
+    },
+    "no-left-turn": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "No Left Turn"
+    },
+    "RB-10": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Through Traffic Prohibited"
+    },
+    "RB-9S": {
+      "scope": "variant",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Except Bicycles Tab"
+    },
+    "speed-limit-change-ahead": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Maximum Speed Ahead"
+    },
+    "RB-4": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Minimum Speed"
+    },
+    "RB-3": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Night Speed"
+    },
+    "RB-2": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Trucks Maximum Speed"
+    },
+    "maximum-speed-80": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Maximum Speed 80 km/h"
+    },
+    "railway-tracks-tab": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "railway",
+      "displayName": "Number of Railway Tracks Tab"
+    },
+    "railway-crossbuck": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "railway",
+      "displayName": "Railway Crossing Crossbuck"
+    },
+    "RA-8": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "In-Street School Crosswalk"
+    },
+    "RA-5R": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Overhead Pedestrian Crosswalk — Symbol Facing Right"
+    },
+    "RA-5L": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Overhead Pedestrian Crosswalk — Symbol Facing Left"
+    },
+    "RA-4R": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Pedestrian Crosswalk — Symbol Facing Right"
+    },
+    "pedestrian-crosswalk": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Pedestrian Crosswalk"
+    },
+    "RA-3R": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "School Crosswalk — Symbol Facing Right"
+    },
+    "school-crosswalk": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "school",
+      "displayName": "School Crosswalk"
+    },
+    "yield": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Yield"
+    },
+    "RA-1S5": {
+      "scope": "variant",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "All Way Tab"
+    },
+    "RA-1S4": {
+      "scope": "variant",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "4-Way Tab"
+    },
+    "RA-1S3": {
+      "scope": "variant",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Pictographic All-Way Stop Tab — Y-Intersection"
+    },
+    "RA-1S2": {
+      "scope": "variant",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Pictographic All-Way Stop Tab — Four-Way Intersection"
+    },
+    "RA-1S1": {
+      "scope": "variant",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Pictographic All-Way Stop Tab — T-Intersection"
+    },
+    "RA-1B": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Bilingual Stop — Stop / Arrêt"
+    },
+    "stop": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Stop"
+    },
+    "route-102": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Highway 102 Route Marker"
+    },
+    "pm-white-lane-line": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "pavement-marking",
+      "displayName": "Broken White Lane Line"
+    },
+    "pm-solid-and-broken-yellow": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "pavement-marking",
+      "displayName": "Solid and Broken Yellow Centre Line"
+    },
+    "pm-double-solid-yellow": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "pavement-marking",
+      "displayName": "Double Solid Yellow Centre Line"
+    },
+    "pm-broken-yellow": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "pavement-marking",
+      "displayName": "Broken Yellow Centre Line"
+    },
+    "overhead-work": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Overhead Work Ahead"
+    },
+    "guide-destination": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Destination / Direction Guide Sign"
+    },
+    "flashing-double-arrow": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Flashing Double Arrow — Pass Either Side"
+    },
+    "wz-flashing-arrow-right": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "work-zone",
+      "displayName": "Flashing Arrow — Keep Right"
+    },
+    "construction-traffic": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Construction Traffic Ahead"
+    },
+    "blasting-ahead": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Blasting Zone Ahead"
+    },
+    "RC-6-OPTIONAL": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Seat Belt Use Required — Symbol Only"
+    },
+    "RC-6": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Seat Belt Use Required — Provincial Law"
+    },
+    "RC-5": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Littering Prohibited"
+    },
+    "RC-4R": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Stop Line — Arrow Pointing Left"
+    },
+    "RC-4L": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Stop Line — Arrow Pointing Right"
+    },
+    "RC-2": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "No Fishing From Bridge"
+    },
+    "RB-107": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Roundabout Lane — Left Exit Only"
+    },
+    "RB-106": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Roundabout Lane — Left, Through or Right Exit"
+    },
+    "RB-105": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Roundabout Two-Lane Designation — Left or Through and Through or Right"
+    },
+    "RB-104S": {
+      "scope": "variant",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Roundabout Right Lane Tab"
+    },
+    "RB-104": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Roundabout Lane — Through or Right Exit"
+    },
+    "RB-103": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Roundabout Lane — Right Exit Only"
+    },
+    "RB-102S": {
+      "scope": "variant",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Roundabout Centre Lane Tab"
+    },
+    "RB-102": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Roundabout Lane — Through Only"
+    },
+    "RB-101": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Roundabout Lane — Left Exit or Through"
+    },
+    "RB-100S": {
+      "scope": "variant",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Roundabout Left Lane Tab"
+    },
+    "RB-100": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Roundabout Lane — Left Exit or Through (Island Symbol)"
+    },
+    "RB-99": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Roundabout Lane — Left Exit Only (Island Symbol)"
+    },
+    "RB-98": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Roundabout Lane — Left, Through or Right Exit (Island Symbol)"
+    },
+    "RB-97": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Roundabout Lane — Left or Right Exit (Island Symbol)"
+    },
+    "RB-96": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Engine Brake Prohibited"
+    },
+    "RB-94R": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Shared Sidewalk Organization — Bicycles Keep Left, Pedestrians Keep Right"
+    },
+    "RB-94L": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Shared Sidewalk Organization — Pedestrians Keep Left, Bicycles Keep Right"
+    },
+    "RB-93": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Shared Pathway"
+    },
+    "RB-92": {
+      "scope": "variant",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Reserved Bicycle Lane Ends"
+    },
+    "maximum-speed-50": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Maximum Speed 50 km/h"
+    },
+    "RB-91": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Reserved Bicycle Lane — Side-Mounted"
+    },
+    "RB-90": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Reserved Bicycle Lane — Overhead"
+    },
+    "RB-89": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Automobiles and Motorcycles Prohibited"
+    },
+    "RB-88": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Automobiles Prohibited"
+    },
+    "RB-87": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "All-Terrain Vehicles Prohibited"
+    },
+    "RB-86": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Pedestrians and Motorcycles Prohibited"
+    },
+    "RB-85": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Motorcycles Prohibited"
+    },
+    "RB-84": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "In-Line Skating Prohibited"
+    },
+    "RB-81A": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Reserved Lane, Three or More Vehicle Types — Side-Mounted"
+    },
+    "RB-81": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Reserved Lane — Side-Mounted"
+    },
+    "RB-80S2": {
+      "scope": "variant",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Reserved Lane Ends Tab"
+    },
+    "RB-80S1": {
+      "scope": "variant",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Reserved Lane Begins Tab"
+    },
+    "RB-80A": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Reserved Lane, Three or More Vehicle Types — Overhead"
+    },
+    "RB-80": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Reserved Lane — Overhead"
+    },
+    "RB-79T": {
+      "scope": "variant",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Dismount and Walk Tab"
+    },
+    "RB-79": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Dismount and Walk"
+    },
+    "RB-78": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Cycling Prohibited on Sidewalks"
+    },
+    "RB-77": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Truck Inspection Station Exit"
+    },
+    "RB-76": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Truck Inspection Station Ahead"
+    },
+    "RB-73R": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Cross Other Side — Cross to the Left"
+    },
+    "RB-73L": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Cross Other Side — Cross to the Right"
+    },
+    "RB-70": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Dangerous Goods Prohibited"
+    },
+    "RB-69": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Dangerous Goods Route"
+    },
+    "RB-68": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Lane Use Restriction — Trucks Prohibited in Lane"
+    },
+    "RB-67": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Cycling Prohibited"
+    },
+    "RB-66": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Pedestrians Prohibited"
+    },
+    "RB-65": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Snowmobiles Prohibited"
+    },
+    "RB-64": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Snowmobile Route"
+    },
+    "RB-63B": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Vehicle Combination Bridge Weight Restriction"
+    },
+    "RB-63A": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Bridge Weight Restriction"
+    },
+    "RB-63": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Weight Limit Control"
+    },
+    "RB-62": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Truck Prohibition"
+    },
+    "RB-61SC": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Truck Route Arrows — Times Shown (White on Black)"
+    },
+    "RB-61SB": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Truck Route Arrows"
+    },
+    "RB-61SA": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Truck Route Arrows — Times Shown"
+    },
+    "RB-57A": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "No Stopping on Pavement"
+    },
+    "RB-57": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "No Stopping — Times Shown"
+    },
+    "RB-53": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Parking Permitted"
+    },
+    "RB-52A": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "No Parking on Pavement"
+    },
+    "RB-52": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "No Parking — Times Shown"
+    },
+    "RB-49": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Three-Lane Control — Left Turn, Straight, Right Turn"
+    },
+    "RB-48S": {
+      "scope": "variant",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Centre Lane Tab"
+    },
+    "RB-47R": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Two-Lane Control — Left Lane Straight or Right Turn, Right Lane Right Turn"
+    },
+    "RB-47L": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Two-Lane Control — Left Lane Left Turn, Right Lane Straight or Left Turn"
+    },
+    "RB-47E": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Two-Lane Control — Left Lane Left Turn, Right Lane Straight, Left or Right Turn"
+    },
+    "RB-47D": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Two-Lane Control — Left Lane Straight or Left Turn, Right Lane Straight"
+    },
+    "RB-47C": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Two-Lane Control — Left Lane Straight, Right Lane Straight or Right Turn"
+    },
+    "RB-47B": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Two-Lane Control — Left Lane Left Turn, Right Lane Straight or Right Turn"
+    },
+    "RB-47A": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Two-Lane Control — Left Lane Straight or Left Turn, Right Lane Right Turn"
+    },
+    "RB-46R": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Two-Lane Control — Both Lanes Right Turn"
+    },
+    "RB-46L": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Two-Lane Control — Both Lanes Left Turn"
+    },
+    "RB-46B": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Two-Lane Control — Left Lane Left Turn, Right Lane Straight"
+    },
+    "RB-46A": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Two-Lane Control — Left Lane Straight, Right Lane Right Turn"
+    },
+    "RB-45": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Straight Ahead Only"
+    },
+    "RB-44": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Straight, Left or Right Turn"
+    },
+    "RB-43": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Left or Right Turn Only"
+    },
+    "R-204": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "All-Terrain Vehicle Route"
+    },
+    "R-203": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "End No Lane Change"
+    },
+    "R-202": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "No Lane Change — Overhead"
+    },
+    "R-201": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "No Lane Change"
+    },
+    "R-200": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "No Lane Change Ahead"
+    },
+    "R-130": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Shared Sidewalk"
+    },
+    "R-129": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Do Not Pass Here to Crosswalk"
+    },
+    "R-128": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Trucks Right Lane Only Next Distance Shown"
+    },
+    "R-127": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Truck Report to / Bypass Weigh Scale"
+    },
+    "R-126": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Report to Scale When Directed"
+    },
+    "R-125": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Trucks Over 4500 kg Report to Scale"
+    },
+    "R-124": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Shut Off Your Radio Transmitter"
+    },
+    "R-123": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Gross Weight"
+    },
+    "R-122": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Vehicles Over 12 Tonnes 15 km/h on Bridge"
+    },
+    "R-121": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Vehicles Over 12 Tonnes Reduce Speed"
+    },
+    "R-120": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "All Traffic Exit Right"
+    },
+    "R-119": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "All Traffic Exit Left"
+    },
+    "R-118": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Road Closed Detour — Right"
+    },
+    "R-117": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Road Closed Detour — Left"
+    },
+    "R-116": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Street Closed — Local Traffic Only"
+    },
+    "R-115": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Do Not Cross Median"
+    },
+    "R-114": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Do Not Drive on Paved Shoulder"
+    },
+    "R-113": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Keep Off Median"
+    },
+    "R-112": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Slow Moving Vehicles Prohibited"
+    },
+    "R-110": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Emergency Parking Only"
+    },
+    "R-109": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Tow-Away Zone"
+    },
+    "R-108": {
+      "scope": "variant",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Time Tab"
+    },
+    "R-107": {
+      "scope": "variant",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Except Authorized Vehicles Tab"
+    },
+    "R-105": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Except With Green Arrow"
+    },
+    "R-104T": {
+      "scope": "variant",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "School Area Maximum Speed 50 Tab"
+    },
+    "R-103T": {
+      "scope": "variant",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "School Area Maximum Speed 30 Tab"
+    },
+    "R-102T": {
+      "scope": "variant",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "End School Area Tab"
+    },
+    "R-102": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "End School Area"
+    },
+    "R-101": {
+      "scope": "reference",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Through Traffic Keep Right"
+    },
+    "R-100": {
+      "scope": "developer-only",
+      "hasMeta": false,
+      "inQuiz": false,
+      "category": "regulatory",
+      "displayName": "Wrong Way"
+    },
+    "bicycle-route": {
+      "scope": "core",
+      "hasMeta": true,
+      "inQuiz": true,
+      "category": "other",
+      "displayName": "Bicycle Route"
+    }
+  }
+}

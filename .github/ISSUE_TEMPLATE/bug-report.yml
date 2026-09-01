@@ -1,0 +1,71 @@
+name: Bug report
+description: Something in the app does not work
+title: '[Bug]: '
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If the app teaches something *factually wrong*, please use the
+        **Content or source correction** template instead — that needs a source
+        and is handled differently.
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead.
+      placeholder: |
+        1. Opened Learn → Traffic signals
+        2. Answered the first question
+        3. Expected the explanation to appear; the screen went blank instead
+    validations:
+      required: true
+
+  - type: input
+    id: where
+    attributes:
+      label: Where
+      description: The screen, or the URL after the # if you can see it.
+      placeholder: '#/study/signs/regulatory'
+    validations:
+      required: false
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: How are you using it
+      options:
+        - Browser on a phone
+        - Browser on a computer
+        - Installed as an app (added to home screen)
+        - Not sure
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+      placeholder: Safari 18 on iOS 18.2 / Chrome 131 on Android 15
+    validations:
+      required: false
+
+  - type: input
+    id: versions
+    attributes:
+      label: App version and Content version
+      description: Both are shown at the bottom of the Sources page.
+      placeholder: App 0.1.0 · Content a1b2c3d4
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: data
+    attributes:
+      label: Before submitting
+      options:
+        - label: >-
+            I understand my progress is stored only in this browser, and that
+            screenshots I attach may show my own study progress.
+          required: false

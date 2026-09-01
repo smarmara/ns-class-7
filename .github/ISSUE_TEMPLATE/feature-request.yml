@@ -1,0 +1,40 @@
+name: Feature request
+description: Suggest an improvement
+title: '[Feature]: '
+labels: ['enhancement']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggestions are welcome, with one honest caveat: accuracy work and bug
+        fixes come first. A feature that makes the app larger or harder to verify
+        is a harder sell than one that helps someone learn a rule properly.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve
+      description: Describe the difficulty you hit while studying, not the solution.
+      placeholder: >-
+        I kept forgetting which parking distance went with which hazard, and there
+        was no way to see them side by side.
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: What you have in mind
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Does this fit the project
+      description: |
+        This app has deliberate limits: no accounts, no backend, no analytics,
+        no tracking, and everything works offline.
+      options:
+        - label: This does not require an account, a server or collecting any learner data.
+          required: true

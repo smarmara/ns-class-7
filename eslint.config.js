@@ -51,7 +51,7 @@ export default tseslint.config(
     },
   },
   {
-    files: ['scripts/**/*.ts', 'vite.config.ts', 'playwright.config.ts'],
+    files: ['scripts/**/*.{ts,tsx}', 'vite.config.ts', 'playwright.config.ts'],
     extends: [js.configs.recommended, ...tseslint.configs.recommended],
     languageOptions: {
       ecmaVersion: 2022,

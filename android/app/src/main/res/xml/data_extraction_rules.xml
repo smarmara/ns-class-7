@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Learner data must not leave the device.
+
+  Android 12+ splits backup into cloud backup (Google Drive) and device-to-device
+  transfer. Both are disabled here: the app tells the learner, in its own Privacy
+  section, that their study history never leaves this device, and Auto Backup
+  silently uploading an IndexedDB copy of their answers to a Google account would
+  make that untrue.
+
+  The app provides an explicit, learner-initiated backup instead — Sources →
+  "Back up progress" — which produces a JSON file they choose where to put.
+  Uninstalling therefore deletes local progress, which is documented behaviour.
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="root" />
+        <exclude domain="database" />
+        <exclude domain="sharedpref" />
+        <exclude domain="external" />
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="root" />
+        <exclude domain="database" />
+        <exclude domain="sharedpref" />
+        <exclude domain="external" />
+    </device-transfer>
+</data-extraction-rules>

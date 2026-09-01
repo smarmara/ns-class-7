@@ -19,6 +19,9 @@ const NAVY: RGBA = [15, 23, 42, 255];
 const TEAL: RGBA = [89, 192, 221, 255];
 const WHITE: RGBA = [255, 255, 255, 255];
 const TRANSPARENT: RGBA = [0, 0, 0, 0];
+/** Splash surfaces, matching app.identity.json. */
+const SPLASH_LIGHT: RGBA = [248, 250, 252, 255];
+const SPLASH_DARK: RGBA = [16, 19, 23, 255];
 
 class Canvas {
   readonly pixels: Uint8Array;
@@ -198,6 +201,65 @@ function drawIcon(size: number, { maskable }: { maskable: boolean }): Canvas {
   return canvas;
 }
 
+/**
+ * Just the mark — octagon and numeral — with no background, drawn at a given
+ * scale about the centre. Shared by every native variant so the artwork is
+ * identical everywhere and only the framing changes.
+ */
+function drawMark(canvas: Canvas, markSize: number): void {
+  const cx = canvas.size / 2;
+  const cy = canvas.size / 2;
+  canvas.fillPolygon(octagon(cx, cy, markSize * 0.4), TEAL);
+  canvas.fillPolygon(octagon(cx, cy, markSize * 0.33), NAVY);
+  for (const part of sevenGlyph(cx, cy - markSize * 0.02, markSize * 0.2)) {
+    canvas.fillPolygon(part, WHITE);
+  }
+}
+
+/**
+ * Full-bleed square master for @capacitor/assets.
+ *
+ * Deliberately opaque corner to corner: iOS rejects app icons containing an
+ * alpha channel, and the platforms apply their own corner rounding, so a
+ * pre-rounded icon with transparent corners would come out with dark notches.
+ */
+function drawNativeIcon(size: number): Canvas {
+  const canvas = new Canvas(size);
+  canvas.fill(NAVY);
+  drawMark(canvas, size);
+  return canvas;
+}
+
+/**
+ * Android adaptive foreground: transparent, with the mark inside the safe
+ * zone. Android crops adaptive icons to whatever shape the launcher wants and
+ * may animate them, so only the middle ~66% is guaranteed visible.
+ */
+function drawAdaptiveForeground(size: number): Canvas {
+  const canvas = new Canvas(size);
+  canvas.fill(TRANSPARENT);
+  drawMark(canvas, size * 0.62);
+  return canvas;
+}
+
+function drawSolid(size: number, colour: RGBA): Canvas {
+  const canvas = new Canvas(size);
+  canvas.fill(colour);
+  return canvas;
+}
+
+/**
+ * Splash master. The mark sits small on a plain brand surface — no text, no
+ * screenshot, no government marks. It exists to cover WebView start-up, and it
+ * is dismissed from JS the moment React mounts rather than being held.
+ */
+function drawSplash(size: number, background: RGBA): Canvas {
+  const canvas = new Canvas(size);
+  canvas.fill(background);
+  drawMark(canvas, size * 0.14);
+  return canvas;
+}
+
 async function main() {
   const outDir = path.join(ROOT, 'public', 'icons');
   await mkdir(outDir, { recursive: true });
@@ -212,11 +274,38 @@ async function main() {
   for (const target of targets) {
     const png = drawIcon(target.size, { maskable: target.maskable }).toPng();
     const file = path.join(outDir, target.file);
-    await writeFile(file, png);
-    console.log(
-      `${target.file.padEnd(26)} ${String(png.length).padStart(7)} bytes  sha256:${createHash('sha256').update(png).digest('hex').slice(0, 12)}`,
-    );
+    await report(file, png);
   }
+
+  /*
+   * Native masters for @capacitor/assets (`pnpm native:assets`), which fans
+   * these out into every iOS and Android size. Generated from the same vector
+   * primitives as the web icons rather than upscaled from a favicon, so the
+   * 1024px iOS icon is genuinely sharp.
+   */
+  const assetsDir = path.join(ROOT, 'assets');
+  await mkdir(assetsDir, { recursive: true });
+
+  const nativeTargets: [string, Canvas][] = [
+    ['icon.png', drawNativeIcon(1024)],
+    ['icon-only.png', drawNativeIcon(1024)],
+    ['icon-foreground.png', drawAdaptiveForeground(1024)],
+    ['icon-background.png', drawSolid(1024, NAVY)],
+    ['splash.png', drawSplash(2732, SPLASH_LIGHT)],
+    ['splash-dark.png', drawSplash(2732, SPLASH_DARK)],
+  ];
+
+  for (const [name, canvas] of nativeTargets) {
+    await report(path.join(assetsDir, name), canvas.toPng());
+  }
+}
+
+async function report(file: string, png: Buffer): Promise<void> {
+  await writeFile(file, png);
+  const name = path.relative(ROOT, file);
+  console.log(
+    `${name.padEnd(34)} ${String(png.length).padStart(8)} bytes  sha256:${createHash('sha256').update(png).digest('hex').slice(0, 12)}`,
+  );
 }
 
 main().catch((err) => {

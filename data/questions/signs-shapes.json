@@ -1,0 +1,212 @@
+[
+  {
+    "id": "signs-shape-001",
+    "type": "sign",
+    "topic": "signs-shapes",
+    "subtopic": "shape recognition",
+    "question": "You can see that a sign has eight sides, but snow is covering the face. What sign should you expect?",
+    "signId": "shape-stop",
+    "choices": [
+      "A stop sign",
+      "A yield sign",
+      "A warning sign",
+      "A school zone sign"
+    ],
+    "correctChoice": 0,
+    "explanation": "The octagon (eight-sided) shape is reserved exclusively for stop signs in Nova Scotia. Even when the face is obscured, the shape alone tells you to prepare to stop.",
+    "incorrectChoiceExplanations": [
+      null,
+      "A yield sign is an inverted triangle, not an octagon.",
+      "Warning signs are diamond-shaped.",
+      "School zone signs are five-sided (pentagon)."
+    ],
+    "difficulty": "easy",
+    "tags": ["sign shapes", "stop", "recognition"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 80" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-18",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-shape-002",
+    "type": "sign",
+    "topic": "signs-shapes",
+    "subtopic": "shape recognition",
+    "question": "Which shape normally identifies a yield sign?",
+    "choiceSignIds": ["shape-yield", "shape-stop", "shape-warning-sign", "shape-school-zone"],
+    "choices": [
+      "An inverted triangular silhouette.",
+      "An eight-sided silhouette.",
+      "A diamond-shaped silhouette.",
+      "A five-sided school-house-shaped silhouette."
+    ],
+    "correctChoice": 0,
+    "explanation": "The inverted triangle is reserved for yield signs. Its distinctive shape lets you recognise a yield sign even from behind or at a distance.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The octagon is reserved for stop signs.",
+      "The diamond shape is used for warning signs.",
+      "The pentagon shape is reserved for school zone signs."
+    ],
+    "difficulty": "easy",
+    "tags": ["sign shapes", "yield", "recognition"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 80" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-18",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-shape-003",
+    "type": "sign",
+    "topic": "signs-shapes",
+    "subtopic": "shape recognition",
+    "question": "You see a diamond-shaped sign ahead. What kind of information does this shape normally convey?",
+    "signId": "shape-warning-sign",
+    "choices": [
+      "A warning of a hazard or condition ahead",
+      "A regulatory instruction you must obey",
+      "Route or destination guidance",
+      "A school zone restriction"
+    ],
+    "correctChoice": 0,
+    "explanation": "Diamond-shaped signs are used for warnings — they alert you to hazards or conditions ahead such as curves, intersections, or slippery roads.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Regulatory signs are typically vertical rectangles.",
+      "Guide signs are horizontal rectangles.",
+      "School zone signs are five-sided pentagons."
+    ],
+    "difficulty": "easy",
+    "tags": ["sign shapes", "warning", "recognition"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 80" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-18",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-shape-004",
+    "type": "sign",
+    "topic": "signs-shapes",
+    "subtopic": "shape recognition",
+    "question": "A green horizontal rectangular sign is posted beside the road. What type of information does this sign normally provide?",
+    "signId": "shape-guide-sign",
+    "choices": [
+      "Route, destination, or direction guidance",
+      "A regulatory instruction you must obey",
+      "A warning of a hazard ahead",
+      "A school zone speed limit"
+    ],
+    "correctChoice": 0,
+    "explanation": "Horizontal rectangular signs — typically green with white lettering — provide guide information such as route numbers, destinations, and distances.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Regulatory signs are typically vertical rectangles, usually white with black or red lettering.",
+      "Warning signs are diamond-shaped and yellow.",
+      "School zone signs are five-sided pentagons."
+    ],
+    "difficulty": "easy",
+    "tags": ["sign shapes", "guide", "recognition"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 80" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-18",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-shape-005",
+    "type": "sign",
+    "topic": "signs-shapes",
+    "subtopic": "shape recognition",
+    "question": "You see a five-sided sign shaped like a school house. What does this shape tell you?",
+    "signId": "shape-school-zone",
+    "choices": [
+      "You are entering a school zone — watch for children",
+      "You must stop completely",
+      "You must yield to other traffic",
+      "A hazard is ahead"
+    ],
+    "correctChoice": 0,
+    "explanation": "The five-sided pentagon shape is reserved for school zone signs. It alerts you that you are entering an area where children may be present and extra caution is needed.",
+    "incorrectChoiceExplanations": [
+      null,
+      "A stop sign is an octagon (eight sides).",
+      "A yield sign is an inverted triangle.",
+      "A warning sign is a diamond."
+    ],
+    "difficulty": "easy",
+    "tags": ["sign shapes", "school zone", "recognition"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 80" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-18",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-shape-006",
+    "type": "sign",
+    "topic": "signs-shapes",
+    "subtopic": "shape recognition",
+    "question": "A white vertical rectangular sign is posted at an intersection. What type of sign is this most likely to be?",
+    "signId": "shape-regulatory-sign",
+    "choices": [
+      "A regulatory sign stating a rule you must obey",
+      "A warning of a hazard ahead",
+      "A guide sign showing distances to towns",
+      "A school zone sign"
+    ],
+    "correctChoice": 0,
+    "explanation": "Vertical rectangular signs — typically white with black or red lettering — are regulatory signs. They state laws and rules that drivers must obey, such as speed limits or turn restrictions.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Warning signs are diamond-shaped and yellow.",
+      "Guide signs are horizontal rectangles, typically green.",
+      "School zone signs are five-sided pentagons."
+    ],
+    "difficulty": "easy",
+    "tags": ["sign shapes", "regulatory", "recognition"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 80" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-18",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-shape-007",
+    "type": "sign",
+    "topic": "signs-shapes",
+    "subtopic": "shape recognition",
+    "question": "You see a sign with an inverted triangular shape. What sign should you expect?",
+    "signId": "shape-yield",
+    "choices": [
+      "A yield sign",
+      "A stop sign",
+      "A warning sign",
+      "A school zone sign"
+    ],
+    "correctChoice": 0,
+    "explanation": "The inverted triangle shape is reserved exclusively for yield signs. Its distinctive shape lets you recognise a yield sign even from behind or at a distance, and tells you to reduce speed and give the right of way to other traffic.",
+    "incorrectChoiceExplanations": [
+      null,
+      "A stop sign is an octagon (eight sides).",
+      "Warning signs are diamond-shaped.",
+      "School zone signs are five-sided pentagons."
+    ],
+    "difficulty": "easy",
+    "tags": ["sign shapes", "yield", "recognition"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 80" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
+  }
+]

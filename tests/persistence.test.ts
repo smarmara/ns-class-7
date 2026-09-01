@@ -1,8 +1,7 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
-import { emptyProgress, PROGRESS_VERSION, type Progress } from '@/engine/learning/types';
 
 // idb-keyval needs a real IndexedDB; in jsdom we stub it with an in-memory map
-// so the persistence layer's own logic is what is under test.
+// so the raw device layer's own logic is what is under test.
 const store = new Map<string, unknown>();
 vi.mock('idb-keyval', () => ({
   get: vi.fn(async (key: string) => store.get(key)),
@@ -15,12 +14,15 @@ vi.mock('idb-keyval', () => ({
 }));
 
 const {
-  clearProgress,
   clearMockSession,
+  idbRead,
+  idbRemove,
+  idbWrite,
   loadMockSession,
-  loadProgress,
+  lsRead,
+  lsRemove,
+  lsWrite,
   saveMockSession,
-  saveProgress,
 } = await import('@/store/persistence');
 
 const { createMockSession } = await import('@/engine/exam/mockTest');
@@ -31,67 +33,20 @@ beforeEach(() => {
   localStorage.clear();
 });
 
-describe('progress persistence', () => {
-  it('returns empty progress when nothing has been stored', async () => {
-    const progress = await loadProgress();
-    expect(progress.version).toBe(PROGRESS_VERSION);
-    expect(progress.attempts).toEqual([]);
-    expect(progress.questions).toEqual({});
+describe('raw device storage', () => {
+  it('writes and reads IndexedDB values', async () => {
+    await idbWrite('raw-key', { a: 1 });
+    expect(await idbRead('raw-key')).toEqual({ a: 1 });
+    await idbRemove('raw-key');
+    expect(await idbRead('raw-key')).toBeNull();
   });
 
-  it('round trips a saved progress record', async () => {
-    const progress: Progress = {
-      ...emptyProgress(),
-      questions: {
-        'rules-signals-001': {
-          questionId: 'rules-signals-001',
-          seen: 3,
-          correct: 2,
-          incorrect: 1,
-          lastSeenAt: '2026-08-17T10:00:00.000Z',
-          lastResult: 'correct',
-          streak: 1,
-          box: 2,
-          dueAt: '2026-08-18T10:00:00.000Z',
-          bookmarked: true,
-          flaggedForReview: false,
-        },
-      },
-      attempts: [
-        {
-          questionId: 'rules-signals-001',
-          topic: 'traffic-signals',
-          type: 'rules',
-          correct: true,
-          at: '2026-08-17T10:00:00.000Z',
-          mode: 'quick',
-        },
-      ],
-      streak: { current: 4, longest: 9, lastStudyDate: '2026-08-17' },
-    };
-
-    await saveProgress(progress);
-    expect(await loadProgress()).toEqual(progress);
-  });
-
-  it('migrates an older payload instead of discarding the learner history', async () => {
-    store.set('ns-class7:progress:v1', {
-      version: 0,
-      questions: { a: { questionId: 'a', seen: 5 } },
-    });
-
-    const loaded = await loadProgress();
-    expect(loaded.version).toBe(PROGRESS_VERSION);
-    expect(loaded.questions['a']).toBeDefined();
-    expect(loaded.attempts).toEqual([]);
-    expect(loaded.mockTests).toEqual([]);
-    expect(loaded.streak).toEqual({ current: 0, longest: 0, lastStudyDate: null });
-  });
-
-  it('clears everything on reset', async () => {
-    await saveProgress({ ...emptyProgress(), streak: { current: 3, longest: 3, lastStudyDate: 'x' } });
-    await clearProgress();
-    expect((await loadProgress()).streak.current).toBe(0);
+  it('reads and removes localStorage strings', () => {
+    expect(lsRead('raw-key')).toBeNull();
+    lsWrite('raw-key', 'v');
+    expect(lsRead('raw-key')).toBe('v');
+    lsRemove('raw-key');
+    expect(lsRead('raw-key')).toBeNull();
   });
 });
 
@@ -127,10 +82,8 @@ describe('mock session persistence', () => {
 
   it('clears the stored session when a full reset happens', async () => {
     saveMockSession(createMockSession(examConfig, activeQuestions, 3));
-    await clearProgress();
     clearMockSession();
     expect(loadMockSession()).toBeNull();
-    expect(loadProgress()).resolves.toMatchObject({ streak: { current: 0 } });
   });
 
   it('returns null rather than throwing on a corrupt payload', () => {

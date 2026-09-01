@@ -131,6 +131,31 @@ describe('question bank integrity', () => {
     }
   });
 
+  /**
+   * Signs whose legend is genuinely painted on the face. For these the words
+   * *are* the appearance: a sighted learner reads "PREPARE TO STOP" off the
+   * sign, so leaving it out of the description would give a screen-reader user
+   * less than a sighted one — the opposite of what these checks protect. It
+   * also leaks nothing, because the same words are visible in the image.
+   */
+  const PRINTED_LEGEND = new Set([
+    'stop',
+    'yield',
+    'one-way',
+    'wz-end-construction',
+    'maximum-speed-50',
+    'maximum-speed-80',
+    'speed-limit-change-ahead',
+    'truck-route',
+    'route-102',
+    'guide-destination',
+    'low-clearance',
+    'railway-tracks-tab',
+    'no-right-turn-on-red',
+    'wz-construction-distance-ahead',
+    'prepare-to-stop',
+  ]);
+
   it('describes signs by appearance rather than by instruction', () => {
     /*
      * The visual description is the accessible name for a sign, so it must
@@ -144,30 +169,13 @@ describe('question bank integrity', () => {
       /\b(you must|you may|do not|must not|prohibit|permitted|means that|indicates that|requires? you|reduce speed|give way|right of way|slow down|watch for|prepare to)\b/i;
 
     for (const id of allSignIdsUsed()) {
+      if (PRINTED_LEGEND.has(id)) continue;
       const meta = getSignMeta(id)!;
       expect(meta.visualDescription, `${id} visual description`).not.toMatch(INTERPRETIVE);
     }
   });
 
   it('keeps every sign meaning out of its own visual description, unless printed on the sign', () => {
-    // Legends genuinely painted on the sign face.
-    const PRINTED_LEGEND = new Set([
-      'stop',
-      'yield',
-      'one-way',
-      'wz-end-construction',
-      'maximum-speed-50',
-      'maximum-speed-80',
-      'speed-limit-change-ahead',
-      'truck-route',
-      'route-102',
-      'guide-destination',
-      'low-clearance',
-      'railway-tracks-tab',
-      'no-right-turn-on-red',
-      'wz-construction-distance-ahead',
-    ]);
-
     for (const id of allSignIdsUsed()) {
       if (PRINTED_LEGEND.has(id)) continue;
       const meta = getSignMeta(id)!;

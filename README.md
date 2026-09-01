@@ -1,381 +1,323 @@
-# Nova Scotia Class 7 Study
+# NS Class 7 Study
 
-An independent, mobile-first study app for the **Nova Scotia Class 7 Learner's Licence knowledge
-test**, built as a PWA that works offline.
+A free, independent study app for the **Nova Scotia Class 7 learner's licence
+knowledge test** — road rules, road signs and full practice exams. It runs
+entirely in your browser, works offline, and needs no account.
 
-> **This is not an official app.** It is not affiliated with, endorsed by, or connected to the
-> Government of Nova Scotia, Access Nova Scotia, or the Registry of Motor Vehicles. The questions
-> are original practice questions written from official sources — they are not the questions used
-> on the real examination, and nobody outside the Registry has those.
-
-The goal is not "a quiz app". The goal is a study system whose every claim about Nova Scotia road
-law can be traced back to an official source, and which is honest about what it does and does not
-know.
+> **This is not an official app.** It is an independent project, not affiliated
+> with or endorsed by the Government of Nova Scotia, Access Nova Scotia or the
+> Registry of Motor Vehicles. Every question is original, written from published
+> official sources — they are not the questions used on the real examination,
+> and nobody outside the Registry has those.
 
 ---
 
-## What you get
+## Try it
 
-| Area | What it does |
+**Deployment URL: configured after the repository is published.**
+
+Once GitHub Pages is enabled, the app lives at
+`https://<owner>.github.io/<repository>/` and opens straight into Home — no
+sign-up, no onboarding, nothing between you and the first question.
+
+Running it locally takes two commands: see [Development](#development).
+
+---
+
+## What it includes
+
+| | |
 | --- | --- |
-| **Dashboard** | Readiness score with its calculation shown, per-section progress, accuracy, streak, weak and strong topics, last mock result, content-verified date |
-| **Quick Practice** | Mixed set weighted toward weak areas and anything due for review |
-| **Study by topic** | 21 Rules of the Road topics, each with per-topic accuracy |
-| **Road signs** | Drills by category plus a browsable gallery of all 60 signs |
-| **Mock test** | Full simulation of the official two-part format, timed, with per-section pass/fail |
-| **Review** | Mistakes queue, weak-area drill, saved (bookmarked) questions |
-| **Sources** | What the bank is based on, the Traffic Safety Act status, and a data reset |
+| **Learn** | 31 topics across the rules of the road, each tracked from first attempt to Mastered |
+| **Road signs** | Category drills over 232 approved sign visuals, 221 of them the Province's own published images |
+| **Practice exams** | The real two-part format: 20 rules + 20 signs, 16/20 to pass each part, timed, scored independently |
+| **Sign Catalogue** | Every sign in the app, browsable, with meanings |
+| **Sign Match** | A fast recognition game with a best-streak record |
+| **Progress** | XP, study levels, per-topic mastery and a recommended next topic |
+| **Achievements** | Steering-wheel and yield medals for topics, categories and exam tiers |
+| **Sources** | Exactly what the app is based on, when it was last verified, and what is still uncertain |
 
-243 questions across 30 topics, every one carrying at least one official source reference.
+It is a PWA: install it to your home screen and study with no connection —
+questions, explanations, every sign image and the fonts are all bundled. The one
+thing that is not is the interface icons, which are Font Awesome Pro and load
+from a hosted Kit; they are decorative, every one sits beside a text label, and
+the app works fully without them.
 
 ---
 
-## Running it
+## Why this exists
 
-Requires Node 20+ and pnpm.
+Nova Scotia publishes everything you need to pass the Class 7 test — a Handbook,
+the Motor Vehicle Act, the regulations — but it is spread across PDFs and
+legislation pages, and some of it disagrees with itself. The Handbook chapters
+still describe a two-stage graduated licensing programme; the amendment pages
+printed with the same Handbook replaced it with three stages in 2015.
+
+Most free practice apps solve that by not caring: they collect plausible-sounding
+questions and never say where a rule came from. If one of them is wrong you have
+no way to tell.
+
+This project takes the opposite approach. Every question cites the specific
+source it came from, sources are monitored for changes, and content that is not
+current law is not served at all. The point is not the quiz — it is being able
+to check the answer.
+
+---
+
+## Test format
+
+The app models the **published structure** of the Nova Scotia Class 7 knowledge
+test, taken from the official
+[knowledge test page](https://www.novascotia.ca/take-driver-knowledge-test-learners-licence-class-7):
+
+- **Rules of the Road** — 20 multiple-choice questions, 16 correct to pass
+- **Road Sign Recognition** — 20 multiple-choice questions, 16 correct to pass
+- 30 minutes per part; each part is passed or failed **independently**, so a
+  strong score on one cannot rescue the other
+
+Those numbers live in `data/exam-config/class7.json`, not in application code, so
+they change when the Province changes them.
+
+**What this app cannot claim:** the real question bank is private. These are
+original questions written from the same source material the test is drawn from.
+Working through them is good preparation. It is not a guarantee of anything, and
+the app never presents a score as a probability of passing.
+
+---
+
+## Content approach
+
+This is the part that makes the project more than a static quiz bank.
+
+**Official sources only.** Government of Nova Scotia and Nova Scotia Legislature
+material. No driving-school sites, no SEO practice-test sites, no forums.
+
+**A source registry.** [`data/sources/source-manifest.json`](data/sources/source-manifest.json)
+records every source with its URL, authority, retrieval date, verification date
+and a content hash. Every question points into it.
+
+**Source monitoring.** `pnpm sources:check` re-fetches all 26 monitored sources,
+normalises them to visible text, and compares hashes. A change **fails CI on
+purpose** and writes a report naming every question that depends on that source.
+Nothing is auto-accepted — a government page changing is a signal for a person to
+read a diff, not permission for a crawler to rewrite what learners are taught.
+
+**Precedence, when sources disagree.** Statute in force beats regulations, which
+beat current RMV guidance and Handbook amendments, which beat the older Handbook
+chapter text. The app teaches the amendments.
+
+**Current law only.** Nova Scotia has enacted a Traffic Safety Act that will
+replace the Motor Vehicle Act, but as verified on 2026-08-31 the Legislature's
+Proclamations page still lists it as `NOT PROCLAIMED IN FORCE`. Royal Assent is
+not commencement. Content written against it is marked `future` and is not
+served; the validator fails the build if anything is marked current against a law
+that is not in force.
+
+**Content validation.** `pnpm content:validate` fails on a question with no
+source, an unknown source id, a numeric fact with no locatable citation, a
+near-duplicate, or an expired question still marked current.
+
+**Core and reference signs.** Signs are split into a Core set the test actually
+assesses (80/80 covered) and a wider reference catalogue. All 232 visuals carry a
+human approval record with a fingerprint, so approved artwork cannot drift
+unnoticed.
+
+---
+
+## Privacy
+
+Everything stays in your browser.
+
+- **No accounts.** Nothing to sign up for.
+- **No backend.** There is no server to talk to; the app is static files.
+- **No analytics, tracking or advertising.** None. No Firebase, no Sentry, no tag
+  managers.
+- **Your progress never leaves your device.** It lives in IndexedDB with a
+  localStorage mirror. We could not read it if we wanted to.
+- **Export is yours.** Sources → *Back up progress* writes a JSON file you keep.
+
+Two honest caveats:
+
+**The host sees you load the page.** The app itself collects nothing, but it is
+served like any website, so the hosting provider and your network see ordinary
+request metadata (an IP address, which files were fetched). That is true of every
+website and outside the app's control. Official source links open government
+websites, which have their own privacy policies.
+
+**The interface icons come from Font Awesome.** They are Font Awesome Pro, which
+is licensed per seat and so cannot be shipped inside an open-source repository —
+your browser fetches them from `kit.fontawesome.com` and `ka-p.fontawesome.com`
+when the app loads. Font Awesome therefore sees that request, like any CDN would.
+No progress, answer or study data is involved: those requests carry nothing but
+the icon fetch itself, and the app sends nothing to Font Awesome. It is the only
+third-party host the app contacts, and blocking it costs you the icons and
+nothing else.
+
+Because storage is per-origin, progress does not follow you between
+`localhost`, a Pages URL and a future custom domain. Use the backup file to move
+it.
+
+---
+
+## Install as an app
+
+It is a PWA, so no store is involved:
+
+- **iOS/Safari** — Share → *Add to Home Screen*
+- **Android/Chrome** — menu → *Install app* / *Add to Home Screen*
+- **Desktop Chrome/Edge** — install icon in the address bar
+
+Once installed it launches full-screen and works offline. Updates arrive the next
+time you open it online: the app tells you a new version is ready and waits for
+you to accept, so an update can never interrupt a practice exam.
+
+---
+
+## Development
+
+Requires **Node 22+** and **pnpm 10+** (pinned in `.nvmrc` and `packageManager`).
 
 ```bash
 pnpm install
 pnpm dev            # http://localhost:5173
 ```
 
-Other commands:
+Browsers for the end-to-end tests, once:
 
 ```bash
-pnpm lint               # eslint (flat config, zero errors required)
-pnpm build              # typecheck + production build (with service worker)
-pnpm preview            # serve the production build
-pnpm test               # unit and integration tests (vitest)
-pnpm test:e2e           # browser tests (playwright, mobile + desktop)
-pnpm content:validate   # question-bank integrity checks
-pnpm sources:check      # fetch official sources and detect changes
-pnpm sources:check:ci   # same, but exit non-zero if anything changed (CI)
-pnpm icons:generate     # regenerate the PWA icons
-pnpm verify             # content:validate + test + build
+pnpm exec playwright install --with-deps chromium
 ```
+
+### Verification
+
+```bash
+pnpm verify
+```
+
+The full gate, the same one CI runs: lint, typecheck, content validation, source
+monitoring, sign approvals, unit tests, end-to-end tests, the GitHub Pages
+subpath suite, a production build, and an offline audit. It must pass before a
+change can be merged or deployed.
+
+Useful individually:
+
+```bash
+pnpm test                # unit and integration tests
+pnpm test:e2e            # browser tests, mobile and desktop
+pnpm content:validate    # question bank integrity
+pnpm content:progression # every topic can reach Complete and Mastered
+pnpm signs:approval:check
+pnpm pages:preview       # serve the built app at /ns-class-7-study/
+pnpm release:audit       # is this repository safe to publish?
+```
+
+### Content maintenance
+
+```bash
+pnpm sources:check           # fetch official sources, report changes
+pnpm sources:check --accept  # record a reviewed change as the new baseline
+```
+
+A change writes a readable report to `.sources/reports/` listing the diff and
+every dependent question. The review workflow is in
+[CONTRIBUTING.md](CONTRIBUTING.md#when-a-source-changes).
 
 ---
 
-## Architecture
-
-The content layer knows nothing about React, and the UI knows nothing about where content came
-from. A rule change is a data edit, never a component edit.
+## Project structure
 
 ```
-data/                        ← the content layer (no code)
-  exam-config/class7.json      official test format, derived from the Class 7 page
-  exam-config/legal-status.json  which law is IN FORCE — the commencement gate
-  sources/source-manifest.json   the official source registry + content hashes
-  sources/snapshots/             normalized-text baseline per source (for real diffs)
-  questions/*.json               the question bank, one file per topic group
-  signs/sign-meta.json           sign meanings + accessible descriptions
+data/                    the content layer — no code
+  exam-config/             official test format; which law is in force
+  sources/                 source registry, hashes, normalised snapshots
+  questions/               the question bank, one file per topic group
+  signs/                   sign metadata, fidelity, approvals
 
 src/
-  content/       typed loading and filtering of everything in data/
-  engine/
-    random.ts        seeded PRNG — makes sessions reproducible and tests deterministic
-    quiz/            question selection, choice shuffling, scoring
-    learning/        spaced repetition, weak-topic detection, readiness
-    exam/            mock-test session lifecycle
-  store/         zustand stores + IndexedDB/localStorage persistence
-  signs/         original SVG sign artwork (drawing only — meanings live in data/)
-  ui/            shared components, question renderer, quiz session driver
-  routes/        one file per screen (each lazy-loaded on navigation)
+  content/                 typed loading and filtering of everything in data/
+  engine/                  quiz, learning, exam, progression, achievements
+  store/                   zustand stores, IndexedDB + localStorage persistence
+  signs/                   sign artwork and resolution
+  ui/  routes/             components and screens
+  native/                  Capacitor shell edges (no-ops on the web)
 
-scripts/         validation, source monitoring, PDF ingestion, icon generation
-tests/           unit and integration tests
-e2e/             Playwright browser tests
+scripts/                 validation, source monitoring, audits, release tooling
+tests/  e2e/             unit tests and browser tests
 ```
 
-### Why the seeded PRNG
-
-Every selection and shuffle is driven by a seed. That buys three things: a mock test can be
-restored byte-identically after a refresh, randomisation tests are deterministic rather than
-flaky, and a reported bug can be reproduced from its seed.
-
-### How answer shuffling stays safe
-
-`question.correctChoice` always refers to the choices **as authored**. Shuffling never rewrites it;
-instead a `displayOrder` array maps presented positions back to authored indices. There is no code
-path where reordering can change which answer is correct — and `tests/selection.test.ts` asserts
-this over 200 seeds.
-
-Choices that refer to other choices by position (`"Both of the above"`) are detected and left
-unshuffled. The bank does not currently use any, but the guard means a future one cannot silently
-corrupt a test.
+The content layer knows nothing about React, and the UI knows nothing about
+where content came from. A rule change is a data edit, never a component edit.
 
 ---
 
-## Where the content comes from
+## Deployment
 
-Official Government of Nova Scotia and Nova Scotia Legislature sources only. No driving-school
-sites, no SEO practice-test sites, no forums, no Quizlet.
+The app is a fully static bundle. GitHub Pages is the first host, not a
+dependency — the same `dist/` works on Cloudflare Pages, Netlify, Vercel or any
+static web host.
 
-**Precedence — higher wins when sources conflict:**
+- `.github/workflows/ci.yml` validates pull requests and non-default branches,
+  and sweeps the official sources weekly. It never deploys.
+- `.github/workflows/deploy-pages.yml` runs the same verification on `main`, then
+  builds and publishes. **A failed verification stops the deployment.**
 
-1. **Statute in force** — Motor Vehicle Act, R.S.N.S. 1989, c. 293
-2. **Regulations in force** — Traffic Signs, School Areas, Yield to Transit Buses, Classification
-   of Drivers' Licenses
-3. **Current RMV guidance and printed handbook amendments**
-4. **Driver's Handbook chapter body text** (which may be older than the amendments)
+The base path is configurable, never hard-coded: the Pages workflow derives it
+from the repository name, so a fork deploys to its own URL with no edits, and a
+custom domain needs only for the variable to be unset. Routing is hash-based
+(`#/learn`), which is what lets a static host serve deep links and refreshes
+without any server rewrite rules.
 
-That ordering matters in practice. The handbook chapters still describe a two-stage GDL programme
-and a one-year learner's licence; the official amendment pages published with the same handbook
-supersede both. The app teaches the amendments.
+One deployment detail that is not in the code: the Font Awesome Kit is
+restricted to an allow-list of domains, so a new host has to be added in the
+Font Awesome account before the Pro icons appear. Missing icons on a fresh
+deploy are almost always that. A fork without a Font Awesome Pro licence sets
+`FA_KIT_URL` at build time — to its own Kit, or to an empty string to ship no
+Kit at all.
 
-**Test format** comes from the
-[official Class 7 knowledge test page](https://www.novascotia.ca/take-driver-knowledge-test-learners-licence-class-7)
-and lives in `data/exam-config/class7.json`. Nothing about the format is hard-coded in components.
-
-Full attribution and copyright analysis: [LEGAL_AND_SOURCES.md](LEGAL_AND_SOURCES.md).
-
----
-
-## The Traffic Safety Act transition
-
-Nova Scotia enacted a Traffic Safety Act (S.N.S. 2025, c. 20) that will eventually replace the
-Motor Vehicle Act. **Royal Assent is not commencement.**
-
-As verified on 2026-08-17, the Legislature's
-[Proclamations of Nova Scotia Statutes](https://www.nslegislature.ca/legislation/proclamations-nova-scotia-statutes)
-page lists:
-
-```
-Traffic Safety Act
-2025, c. 20 -- NOT PROCLAIMED IN FORCE
-```
-
-and the Department of Public Works
-[changes page](https://novascotia.ca/changes-to-traffic-safety-legislation/) instructs readers to
-"Continue to follow the Motor Vehicle Act until then."
-
-This is modelled explicitly rather than assumed:
-
-- `data/exam-config/legal-status.json` records each law version, whether it is `inForce`, and the
-  **evidence** for that claim including the source and the date observed.
-- Every question carries a `lawVersion`. The loader serves a question only if its `legalStatus`
-  is `current` **and** its law version is in force.
-- A question written against the Traffic Safety Act must be `legalStatus: "future"`. The validator
-  **fails the build** if anything is marked `current` against a law version that is not in force.
-- Nothing is promoted because the calendar year changed, because a crawler saw a page update, or
-  because the Act exists. Promotion is a deliberate edit following the
-  `promotionChecklist` in `legal-status.json`.
-
-Currently the app ships **no** Traffic Safety Act content. That is intentional: the official
-sources do not yet state the new provisions in enough detail to write questions from, and inventing
-them would be exactly the failure mode this project exists to avoid. The machinery is in place and
-tested (`tests/content-integrity.test.ts`) so that content can be added and gated when the details
-are published.
+Publication steps: [docs/OPEN_SOURCE_RELEASE.md](docs/OPEN_SOURCE_RELEASE.md).
 
 ---
 
-## Maintainer workflows
+## Contributing
 
-### Checking for source changes
+Contributions are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
 
-```bash
-pnpm sources:check              # fetch, compare, write a report (read-only)
-pnpm sources:check --accept     # also record the new hashes + snapshots as the baseline
-pnpm sources:check --ci         # exit non-zero if anything changed (used by CI)
-pnpm sources:check --only=ns-mva
-```
+One thing to know first: **content changes are not copy edits.** Anything that
+changes what the app teaches needs a citation to an official Nova Scotia source,
+with the section or page, and the date you checked it. A wrong rule here is a
+safety problem, not a typo. Code changes are ordinary open-source work.
 
-Pages are normalised to visible text before hashing, so a CSS rebuild, a new analytics tag or
-whitespace churn does not raise a false alarm — but a changed number or an added sentence does.
-`tests/source-check.test.ts` and `tests/source-diff.test.ts` pin that behaviour.
-
-**The checker never edits a question.** A government page changing is a signal for a human to read
-a diff, not a licence for a crawler to rewrite what a learner is taught.
-
-#### Snapshots and real diffs
-
-Alongside the manifest hash, the checker keeps a **normalized-text snapshot** per source at
-`data/sources/snapshots/<source-id>.txt`. When a source changes, the report includes a genuine
-old-versus-new diff (context lines, `-` removals, `+` additions, bounded to keep it readable)
-instead of just "hash differs". `scripts/lib/diff.ts` is a small Myers-diff implementation with no
-runtime dependencies.
-
-Snapshot lifecycle:
-
-- Sources whose content is **unchanged** get their snapshot written automatically on every run —
-  this simply records the verified baseline (a first run after this feature shipped captures all
-  baselines at once).
-- A **changed** or **first-seen** source is never snapshotted without `--accept`, so the review
-  artifact is never polluted by unreviewed bytes.
-
-### Reviewing a detected legal change
-
-When `pnpm sources:check` reports a change it writes `.sources/reports/source-check-<timestamp>.md`
-listing the changed source, its precedence, old and new hashes, a **readable diff of the old vs new
-normalized text**, and **every question that depends on it**. Then:
-
-1. Read the current source and work out what actually changed — the diff shows you what to focus on.
-2. If a rule the app teaches has changed, set the affected questions to
-   `"legalStatus": "under_review"` with a `reviewReason`. They immediately stop being served —
-   they do not wait for a release.
-3. Re-verify each question against the new text. Rewrite it, or retire it (below).
-4. Update the question's `verifiedAt`, and the source's `verifiedAt` once a human has re-read it.
-5. `pnpm sources:check --accept` to record the new baseline hash **and** the new snapshot. A future
-   change is now diffable against the newly accepted text.
-6. `pnpm content:validate && pnpm test`.
-
-Note that `--accept` deliberately does **not** touch `verifiedAt`: a matching hash proves the bytes
-are the same, not that a person has re-read the rule.
-
-### Adding a question
-
-Add an object to the appropriate file in `data/questions/`. Required fields are enforced by the
-validator:
-
-```jsonc
-{
-  "id": "rules-passing-009",              // unique, stable, human-meaningful
-  "type": "rules",                        // "rules" | "sign"
-  "topic": "passing",                     // must be in the taxonomy in src/content/types.ts
-  "question": "…",
-  "choices": ["…", "…", "…", "…"],
-  "correctChoice": 0,                     // index into choices AS AUTHORED
-  "explanation": "…",                     // why the right answer is right
-  "incorrectChoiceExplanations": [null, "…", "…", "…"],  // null at the correct index
-  "difficulty": "medium",
-  "tags": ["passing"],
-  "sourceRefs": [
-    { "sourceId": "ns-mva", "section": "s.115(1)", "note": "…" }
-  ],
-  "legalStatus": "current",
-  "verifiedAt": "2026-08-17",
-  "lawVersion": "mva"
-}
-```
-
-Rules the validator enforces, each of which fails the build:
-
-- at least one source reference, and every `sourceId` must exist in the manifest;
-- any question stating a **number, distance, age, fine or limit** must have a source reference with
-  a `section`, `chapter`, `page` or `note` — naming a document is not enough to locate a fact;
-- `correctChoice` must point at a real choice, and no two choices may be textually identical
-  (which would make two answers correct);
-- no duplicate ids and no near-duplicate questions (fingerprinted on stem + sign + correct answer);
-- `current` only if the law version is in force; `under_review` must carry a `reviewReason`;
-- sign references must resolve to both metadata and artwork;
-- for identify-the-sign questions the choice text must be the sign's `visualDescription` verbatim,
-  because that string is the accessible name;
-- the source's `verifiedAt` must be within the policy window in the manifest.
-
-### Retiring an outdated question
-
-Do not delete it — the audit trail is the point.
-
-```jsonc
-"legalStatus": "superseded",
-"effectiveTo": "2027-01-01",
-"reviewReason": "School-area limit changed by N.S. Reg. …; replaced by rules-school-009"
-```
-
-It stops being served immediately and stays in the repository as the record of what was taught and
-when.
-
-### Adding a road sign
-
-1. Add metadata to `data/signs/sign-meta.json` — `label` (the meaning), `category`,
-   `visualDescription`, and `basis` (which official source specifies the design).
-2. Add the SVG to `SIGN_ART` in `src/signs/registry.tsx`, keyed by the same id, composed from the
-   blanks in `src/signs/shapes.tsx`.
-3. `pnpm content:validate` will fail if either half is missing.
-
-`visualDescription` must describe **shape, colour and symbols only — never the meaning.** It is the
-accessible name for the artwork, so a description that stated the meaning would hand screen-reader
-users the answer to every recognition question. Legends actually painted on the sign (STOP, YIELD,
-MAXIMUM 50) are fair to state, because a sighted user reads them too. Both halves of this rule are
-asserted in `tests/content-integrity.test.ts`.
-
-### Re-ingesting official documents
-
-The handbook PDFs and the consolidated Motor Vehicle Act live in `.sources/` as a **local research
-cache** — never shipped, never republished.
-
-```bash
-pnpm sources:ingest                                    # handbook PDFs -> text
-pnpm exec tsx scripts/extract-pdf.ts in.pdf out.txt    # any other PDF
-```
+Reporting a content error without writing any code is genuinely valuable — there
+is an issue template for it.
 
 ---
 
-## Testing
+## Licensing
 
-Continuous integration (`.github/workflows/ci.yml`) runs on every push to `main` and every pull
-request:
+**Project code and content: [MIT](LICENSE).** That covers the application source,
+tooling, tests, the original practice questions and explanations, the interface
+text and the original SVG artwork.
 
-1. `pnpm lint` — no lint errors.
-2. `pnpm content:validate` — question-bank integrity.
-3. `pnpm test` — unit and integration tests.
-4. `pnpm build` — typecheck + production build.
-5. `pnpm sources:check --ci` — fetches every monitored government source and **fails the build** if
-   any has changed or could not be fetched. A change here is a review signal, never auto-promoted
-   content.
-6. A separate end-to-end job (after the checks pass) installs Playwright's Chromium and runs
-   `pnpm test:e2e` on both the mobile and desktop projects.
+**Third-party and government material is not relicensed by being here.** The
+official Nova Scotia road-sign images are Crown copyright; Google Sans is under
+the SIL Open Font License; Font Awesome icons are licensed by Fonticons, Inc.
+(the free-tier icons are bundled under CC BY 4.0, the Pro icons are referenced by
+name and loaded from the maintainer's Kit — a fork gets no Pro licence and should
+read §4.2 before deploying); npm dependencies keep their own licences.
 
-The tests are deterministic: the seeded PRNG (`src/engine/random.ts`) means randomisation tests and
-the mock-test lifecycle produce the same outcome on every run and every machine, so CI is not a
-source of flakes.
-
-```bash
-pnpm test        # 138 unit/integration tests
-pnpm test:e2e    # 40 browser tests (20 each on Pixel 7 and Desktop Chrome)
-```
-
-Unit coverage: scoring and independent section pass/fail, randomisation invariants, spaced
-repetition, weak-topic calculation, readiness, progress persistence and migration, mock-session
-lifecycle and serialisation, source-manifest parsing, HTML normalisation for change detection,
-the old-vs-new diff renderer and snapshot lifecycle, and content integrity (sources, legal-status
-filtering, exam config, numeric-fact traceability).
-
-E2E covers the learner journey end to end: answering with explanations and sources, bookmarking,
-topic and sign drills, the mock test including mid-test non-disclosure and refresh recovery,
-per-section scoring, the sources page, data reset, and accessibility (keyboard operation, skip
-link, labelled fieldsets, no horizontal overflow on a phone).
-
-### Accessibility
-
-- Keyboard operable throughout, with visible focus rings.
-- Choices are a labelled `<fieldset>`; each question's stem is the group label.
-- **Correct/incorrect is never conveyed by colour alone** — every marked choice carries an icon and
-  the words "Correct answer" or "Your answer — incorrect".
-- Sign artwork has an accessible description of what it looks like, so recognition questions are
-  answerable non-visually without being given away.
-- Focus moves to the top of each new question so keyboard users are not stranded.
-- Light and dark themes, both meeting contrast requirements.
-- `prefers-reduced-motion` respected.
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) is the full inventory, including
+where the position is genuinely uncertain and what a fork may not assume.
+[LEGAL_AND_SOURCES.md](LEGAL_AND_SOURCES.md) has the detailed source attribution
+and copyright analysis.
 
 ---
 
-## Local context
+## Disclaimer
 
-The law is province-wide. Halifax appears only to make scenarios concrete — Halifax Transit buses,
-urban crosswalks, roundabouts, the bridges in freezing weather, Highway 102 merges. There is no
-separate "Halifax driving law" dataset. Where a Halifax detail matters legally it is because
-provincial law says so: Halifax Regional Municipality is a *prescribed* transit operator under the
-Yield to Transit Buses Regulations, which is why the transit-bus rule applies to Halifax Transit
-and is cited that way.
+This is an independent study tool for the Nova Scotia Class 7 learner's licence
+knowledge test. It is **not affiliated with or endorsed by the Government of Nova
+Scotia**, Access Nova Scotia, or the Registry of Motor Vehicles.
 
----
-
-## Privacy
-
-Everything stays on the device. Progress is in IndexedDB (with a localStorage fallback); the
-in-flight mock test mirrors to localStorage because that write is synchronous and must survive an
-abrupt refresh. No account, no server, no analytics, no network calls at runtime. "Reset all
-progress" on the Sources page erases everything.
-
----
-
-## Licence and disclaimer
-
-Application code, question text, explanations, UI copy and sign artwork in this repository are
-original work. Official Nova Scotia material is used as a cited factual research layer and is not
-republished. No government logos or branding are used. See
-[LEGAL_AND_SOURCES.md](LEGAL_AND_SOURCES.md).
-
-Study aids are not legal advice. Always confirm current requirements with the Registry of Motor
-Vehicles.
+It is a study aid, not legal advice. The Motor Vehicle Act and its regulations
+are the law. Always confirm current requirements, fees and test arrangements with
+the Registry of Motor Vehicles.

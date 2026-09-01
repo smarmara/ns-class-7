@@ -18,11 +18,16 @@ import { toAuthoredIndex } from '@/engine/quiz/selection';
 import type { MockTestRecord } from '@/engine/learning/types';
 import { useMockExam } from '@/store/useMockExam';
 import { useProgress } from '@/store/useProgress';
-import { Banner, Card, Disclaimer, Meter, PageHead } from '@/ui/components';
+import { useEngagement } from '@/store/useEngagement';
+import { Banner, Card, Disclaimer, PageHead } from '@/ui/components';
+import { XpIcon } from '@/ui/icons';
 import { Explanation, QuestionView } from '@/ui/QuestionView';
+import { getNewAchievementEvents } from '@/engine/engagement/achievementEvents';
+import { AchievementAwardCard } from '@/ui/AchievementAwardCard';
 
-export function MockTest() {
+export function PracticeExam() {
   const { session, restored, restore, start, abandon } = useMockExam();
+  const history = useProgress((s) => s.progress.mockTests);
 
   useEffect(() => {
     restore();
@@ -30,18 +35,30 @@ export function MockTest() {
 
   if (!restored) return <p className="muted">Loading…</p>;
 
-  if (!session) return <MockIntro onStart={() => start(activeQuestions)} />;
+  if (!session) return <PracticeExamIntro onStart={() => start(activeQuestions)} history={history} />;
   if (session.status === 'complete') {
-    return <MockResults session={session} onRestart={() => start(activeQuestions)} onExit={abandon} />;
+    return (
+      <PracticeResults
+        session={session}
+        onRestart={() => start(activeQuestions)}
+        onExit={abandon}
+      />
+    );
   }
   // Remounting the runner per part resets the submit confirmation, so a
   // freshly started part can never open on the "submit this part?" card.
-  return <MockRunner key={session.currentSectionIndex} session={session} />;
+  return <PracticeRunner key={session.currentSectionIndex} session={session} />;
 }
 
 /* ------------------------------------------------------------------ intro */
 
-function MockIntro({ onStart }: { onStart: () => void }) {
+function PracticeExamIntro({
+  onStart,
+  history,
+}: {
+  onStart: () => void;
+  history: MockTestRecord[];
+}) {
   const shortfall = examConfig.sections
     .map((s) => ({
       section: s,
@@ -49,9 +66,11 @@ function MockIntro({ onStart }: { onStart: () => void }) {
     }))
     .filter((x) => x.available < x.section.questionCount);
 
+  const recent = [...history].reverse();
+
   return (
     <>
-      <PageHead title="Mock test">
+      <PageHead title="Practice exam">
         A full simulation of the official Class 7 knowledge test format
       </PageHead>
 
@@ -90,7 +109,7 @@ function MockIntro({ onStart }: { onStart: () => void }) {
             <p>
               The active question bank is short for:{' '}
               {shortfall.map((x) => `${x.section.shortName} (${x.available}/${x.section.questionCount})`).join(', ')}
-              . The mock test cannot be started until more questions are verified.
+              . The practice exam cannot be started until more questions are verified.
             </p>
           </Banner>
         </div>
@@ -98,9 +117,34 @@ function MockIntro({ onStart }: { onStart: () => void }) {
 
       <div className="section-gap">
         <button type="button" className="btn btn-block" onClick={onStart} disabled={shortfall.length > 0}>
-          Start mock test
+          Start practice exam
         </button>
       </div>
+
+      {recent.length > 0 && (
+        <div className="section-gap">
+          <h2 className="section-title">Practice exam history</h2>
+          {recent.map((record) => (
+            <div key={record.id} className="result-section" data-passed={record.passed}>
+              <span className="result-badge">{record.passed ? 'Pass' : 'Fail'}</span>
+              <div className="tile-body">
+                <div className="tile-title">
+                  {record.sections
+                    .map((s) => `${s.shortName} ${s.correct}/${s.questionCount}`)
+                    .join(' · ')}
+                </div>
+                <div className="tile-sub">
+                  {new Date(record.completedAt).toLocaleDateString('en-CA', {
+                    year: 'numeric',
+                    month: 'short',
+                    day: 'numeric',
+                  })}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
 
       <div className="section-gap">
         <Banner icon="ℹ️">
@@ -118,7 +162,7 @@ function MockIntro({ onStart }: { onStart: () => void }) {
 
 /* ----------------------------------------------------------------- runner */
 
-function MockRunner({ session }: { session: MockSession }) {
+function PracticeRunner({ session }: { session: MockSession }) {
   const { answer, goToQuestion, nextQuestion, previousQuestion, submitSection, startSection, tick } =
     useMockExam();
 
@@ -207,57 +251,80 @@ function MockRunner({ session }: { session: MockSession }) {
   const isLastQuestion = session.currentQuestionIndex === questions.length - 1;
 
   return (
-    <>
+    <div className="screen exam">
+      {/*
+        Everything the official format requires stays on screen: which part,
+        the timer, the question number, how many are answered, the question,
+        its artwork and its answers. What was removed is decoration — the page
+        header, the card around the question, and the oversized progress meter.
+      */}
+      <h1 className="sr-only">
+        {config.name} — question {session.currentQuestionIndex + 1} of {questions.length}
+      </h1>
+
       <div className="exam-bar">
-        <div>
-          <div className="exam-section-name">{config.shortName}</div>
-          <div className="tiny muted">
+        <div className="exam-bar-id">
+          <span className="exam-section-name">{config.shortName}</span>
+          <span className="exam-part">
             Part {sectionIndex + 1} of {examConfig.sections.length}
-          </div>
+          </span>
         </div>
+        <span className="exam-qcount">
+          {session.currentQuestionIndex + 1}
+          <span className="quiz-count-sep">/</span>
+          {questions.length}
+        </span>
         <Timer remainingMs={section.remainingMs} />
       </div>
 
-      <div className="quiz-progress">
-        <Meter
-          label="Questions answered"
-          value={answered}
-          max={questions.length}
-          display={`${answered} of ${questions.length} answered`}
+      <div
+        className="quiz-rail"
+        role="progressbar"
+        aria-label="Questions answered"
+        aria-valuenow={answered}
+        aria-valuemin={0}
+        aria-valuemax={questions.length}
+        aria-valuetext={`${answered} of ${questions.length} answered`}
+      >
+        <span
+          className="quiz-rail-fill"
+          style={{ width: `${(answered / questions.length) * 100}%` }}
         />
       </div>
 
-      <div ref={headingRef} tabIndex={-1} style={{ outline: 'none' }}>
-        <Card>
-          <QuestionView
-            prepared={prepared}
-            selected={selectedDisplay}
-            reveal="hidden"
-            onSelect={handleSelect}
-            questionNumber={session.currentQuestionIndex + 1}
-            questionTotal={questions.length}
-          />
-
-          <div className="quiz-actions">
-            <button
-              type="button"
-              className="btn btn-secondary"
-              onClick={previousQuestion}
-              disabled={session.currentQuestionIndex === 0}
-            >
-              Previous
-            </button>
-            {!isLastQuestion && (
-              <button type="button" className="btn" onClick={nextQuestion}>
-                Next
-              </button>
-            )}
-          </div>
-        </Card>
+      <div ref={headingRef} tabIndex={-1} className="quiz-focus">
+        {/* `quiet` suppresses XP and reward chrome: a practice exam should feel
+            like an exam. Progress is still recorded and reported afterwards. */}
+        <QuestionView
+          prepared={prepared}
+          selected={selectedDisplay}
+          reveal="hidden"
+          onSelect={handleSelect}
+          questionNumber={session.currentQuestionIndex + 1}
+          questionTotal={questions.length}
+          quiet
+        />
       </div>
 
-      <Card className="section-gap" title="Jump to a question">
-        <div className="exam-grid">
+      <div className="exam-actions">
+        <button
+          type="button"
+          className="btn btn-secondary"
+          onClick={previousQuestion}
+          disabled={session.currentQuestionIndex === 0}
+        >
+          Previous
+        </button>
+        {!isLastQuestion && (
+          <button type="button" className="btn" onClick={nextQuestion}>
+            Next
+          </button>
+        )}
+      </div>
+
+      <div className="exam-nav">
+        <span className="exam-nav-label">{answered} of {questions.length} answered</span>
+        <div className="exam-grid" role="group" aria-label="Jump to a question">
           {questions.map((q, i) => (
             <button
               key={q.id}
@@ -271,7 +338,7 @@ function MockRunner({ session }: { session: MockSession }) {
             </button>
           ))}
         </div>
-      </Card>
+      </div>
 
       <div className="section-gap">
         {!confirmSubmit ? (
@@ -304,7 +371,7 @@ function MockRunner({ session }: { session: MockSession }) {
           </Card>
         )}
       </div>
-    </>
+    </div>
   );
 }
 
@@ -328,7 +395,7 @@ function Timer({ remainingMs }: { remainingMs: number }) {
 
 /* ---------------------------------------------------------------- results */
 
-function MockResults({
+function PracticeResults({
   session,
   onRestart,
   onExit,
@@ -339,6 +406,8 @@ function MockResults({
 }) {
   const recordMockTest = useProgress((s) => s.recordMockTest);
   const recordAnswer = useProgress((s) => s.recordAnswer);
+  const progress = useProgress((s) => s.progress);
+  const [progressBefore] = useState(progress);
   const recordedRef = useRef(false);
 
   const result = useMemo(
@@ -382,6 +451,7 @@ function MockResults({
       missedQuestionIds: result.sections.flatMap((s) => s.missedQuestionIds),
     };
     recordMockTest(record);
+    useEngagement.getState().awardMock();
   }, [session, result, recordAnswer, recordMockTest]);
 
   const missed = result.sections
@@ -390,10 +460,11 @@ function MockResults({
     .filter((q): q is Question => Boolean(q));
 
   const missedTopics = countBy(missed.map((q) => q.topic));
+  const achievementEvents = getNewAchievementEvents(activeQuestions, progressBefore, progress, 'exam');
 
   return (
     <>
-      <PageHead title="Mock test results" />
+      <PageHead title="Practice exam results" />
 
       <div className="big-verdict" data-passed={result.passed}>
         <h2>{result.passed ? 'Passed' : 'Not passed'}</h2>
@@ -403,6 +474,9 @@ function MockResults({
             : `You would need to retake: ${result.sectionsToRetake
                 .map((id) => examConfig.sections.find((s) => s.id === id)?.shortName ?? id)
                 .join(' and ')}.`}
+        </p>
+        <p className="mock-xp">
+          <XpIcon /> +50 XP for completing a timed practice test
         </p>
       </div>
 
@@ -430,6 +504,12 @@ function MockResults({
           every part.
         </p>
       </Card>
+
+      {achievementEvents.length > 0 && (
+        <div className="achievement-awards section-gap" aria-label="New achievements">
+          {achievementEvents.map((event) => <AchievementAwardCard key={event.id} event={event} />)}
+        </div>
+      )}
 
       {missedTopics.length > 0 && (
         <Card className="section-gap" title="Suggested study areas">
@@ -480,7 +560,7 @@ function MockResults({
 
       <div className="section-gap btn-row">
         <button type="button" className="btn" onClick={onRestart}>
-          Take another mock test
+          Take another practice exam
         </button>
         <button type="button" className="btn btn-secondary" onClick={onExit}>
           Back to dashboard

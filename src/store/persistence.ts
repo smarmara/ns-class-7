@@ -1,21 +1,22 @@
-import { get as idbGet, set as idbSet, del as idbDel } from 'idb-keyval';
-import type { Progress } from '@/engine/learning/types';
-import { PROGRESS_VERSION, emptyProgress } from '@/engine/learning/types';
+import { del as idbDel, get as idbGet, set as idbSet } from 'idb-keyval';
 import type { MockSession } from '@/engine/exam/mockTest';
 
 /**
- * Local-only persistence. No account, no server, no network.
+ * Raw device storage. No account, no server, no network.
  *
- * Progress lives in IndexedDB (room to grow, survives large histories).
- * The in-flight mock exam additionally mirrors to localStorage because that
- * write is synchronous: an unexpected refresh mid-test must not lose answers,
- * and an IndexedDB write may not have flushed in time.
+ * This module owns the lowest-level browser I/O used by the learner-storage
+ * layer (see learnerStorage.ts). The in-flight mock exam additionally lives
+ * here and is written synchronously to localStorage: an unexpected refresh
+ * mid-test must not lose answers, and an IndexedDB write may not have flushed
+ * in time.
+ *
+ * The learner-storage layer is the only consumer of these primitives — UI
+ * components never touch storage APIs directly.
  */
 
-const PROGRESS_KEY = 'ns-class7:progress:v1';
-const MOCK_KEY = 'ns-class7:mock-session:v1';
+export const MOCK_KEY = 'ns-class7:mock-session:v1';
 
-function hasLocalStorage(): boolean {
+export function hasLocalStorage(): boolean {
   try {
     return typeof localStorage !== 'undefined';
   } catch {
@@ -23,107 +24,77 @@ function hasLocalStorage(): boolean {
   }
 }
 
-export async function loadProgress(): Promise<Progress> {
+export async function idbRead<T>(key: string): Promise<T | null> {
   try {
-    const stored = await idbGet<Progress>(PROGRESS_KEY);
-    if (stored && stored.version === PROGRESS_VERSION) return stored;
-    if (stored) return migrate(stored);
+    return (await idbGet<T>(key)) ?? null;
   } catch {
     // IndexedDB can be unavailable in private-browsing modes; fall through.
+    return null;
   }
-
-  if (hasLocalStorage()) {
-    try {
-      const raw = localStorage.getItem(PROGRESS_KEY);
-      if (raw) {
-        const parsed = JSON.parse(raw) as Progress;
-        return parsed.version === PROGRESS_VERSION ? parsed : migrate(parsed);
-      }
-    } catch {
-      // Corrupt payload — start clean rather than crashing the app.
-    }
-  }
-  return emptyProgress();
 }
 
-export async function saveProgress(progress: Progress): Promise<void> {
+export async function idbWrite(key: string, value: unknown): Promise<void> {
   try {
-    await idbSet(PROGRESS_KEY, progress);
+    await idbSet(key, value);
   } catch {
-    if (hasLocalStorage()) {
-      try {
-        localStorage.setItem(PROGRESS_KEY, JSON.stringify(progress));
-      } catch {
-        // Storage full or blocked. The session still works in memory.
-      }
-    }
+    // Storage full or blocked. The session still works in memory.
   }
 }
 
-export async function clearProgress(): Promise<void> {
+export async function idbRemove(key: string): Promise<void> {
   try {
-    await idbDel(PROGRESS_KEY);
+    await idbDel(key);
   } catch {
     /* ignore */
   }
-  if (hasLocalStorage()) {
-    try {
-      localStorage.removeItem(PROGRESS_KEY);
-    } catch {
-      /* ignore */
-    }
+}
+
+export function lsRead(key: string): string | null {
+  if (!hasLocalStorage()) return null;
+  try {
+    return localStorage.getItem(key);
+  } catch {
+    return null;
+  }
+}
+
+export function lsWrite(key: string, value: string): void {
+  if (!hasLocalStorage()) return;
+  try {
+    localStorage.setItem(key, value);
+  } catch {
+    // Storage full or blocked. The session still works in memory.
+  }
+}
+
+export function lsRemove(key: string): void {
+  if (!hasLocalStorage()) return;
+  try {
+    localStorage.removeItem(key);
+  } catch {
+    /* ignore */
   }
 }
 
 /** Drop the in-flight mock exam (part of a full reset of learner data). */
 export function clearMockSession(): void {
-  if (!hasLocalStorage()) return;
-  try {
-    localStorage.removeItem(MOCK_KEY);
-  } catch {
-    /* ignore */
-  }
+  lsRemove(MOCK_KEY);
 }
 
 /** Synchronous so an in-flight exam survives an abrupt reload. */
 export function saveMockSession(session: MockSession | null): void {
-  if (!hasLocalStorage()) return;
-  try {
-    if (session === null) localStorage.removeItem(MOCK_KEY);
-    else localStorage.setItem(MOCK_KEY, JSON.stringify(session));
-  } catch {
-    /* ignore */
-  }
+  if (session === null) lsRemove(MOCK_KEY);
+  else lsWrite(MOCK_KEY, JSON.stringify(session));
 }
 
 export function loadMockSession(): MockSession | null {
-  if (!hasLocalStorage()) return null;
+  const raw = lsRead(MOCK_KEY);
+  if (!raw) return null;
   try {
-    const raw = localStorage.getItem(MOCK_KEY);
-    if (!raw) return null;
     const parsed = JSON.parse(raw) as MockSession;
     if (!Array.isArray(parsed.sections)) return null;
     return parsed;
   } catch {
     return null;
   }
-}
-
-/**
- * Forward-migration hook.
- *
- * Older payloads are accepted and normalised rather than discarded, so a
- * schema change does not silently wipe a learner's history.
- */
-function migrate(old: Partial<Progress>): Progress {
-  const base = emptyProgress();
-  return {
-    ...base,
-    ...old,
-    version: PROGRESS_VERSION,
-    questions: old.questions ?? base.questions,
-    attempts: old.attempts ?? base.attempts,
-    mockTests: old.mockTests ?? base.mockTests,
-    streak: old.streak ?? base.streak,
-  };
 }

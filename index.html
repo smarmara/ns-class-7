@@ -7,9 +7,52 @@
     <meta name="theme-color" content="#0f172a" />
     <meta
       name="description"
-      content="An independent, unofficial study aid for the Nova Scotia Class 7 Learner's Licence knowledge test. Not affiliated with the Government of Nova Scotia."
+      content="Free, independent study app for the Nova Scotia Class 7 learner's licence knowledge test: road rules, road signs and practice exams. Works offline. Not affiliated with the Government of Nova Scotia."
     />
-    <title>NS Class 7 Study — unofficial learner's licence practice</title>
+    <meta name="color-scheme" content="light dark" />
+
+    <!--
+      Social preview. Deliberately minimal: enough for a shared link to look
+      like something rather than a bare URL, and no more. There is no image
+      because there is no marketing site to point one at — the app is the
+      destination.
+
+      The wording avoids "official", "approved" and "guaranteed" for the same
+      reason the app does: this is an independent project and must never read
+      as a government service.
+    -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="NS Class 7 Study" />
+    <meta
+      property="og:description"
+      content="Free, independent study app for the Nova Scotia Class 7 learner's licence knowledge test. Road rules, road signs and practice exams, offline and with no account."
+    />
+    <meta name="twitter:card" content="summary" />
+
+    <title>NS Class 7 Study — Nova Scotia learner's licence practice</title>
+    <script>
+      /*
+       * Theme bootstrap — runs before the first paint, deliberately inline and
+       * synchronous.
+       *
+       * The stored appearance normally reaches the document from React, which
+       * is one paint too late: a dark-mode learner opening the app sees a white
+       * flash first. That is unpleasant in a browser and much worse in a native
+       * shell, where it reads as the app breaking on launch. Six lines here
+       * remove it entirely.
+       *
+       * Automatic writes no attribute, leaving prefers-color-scheme in charge —
+       * the same contract as src/store/useAppearance.ts.
+       */
+      try {
+        var saved = localStorage.getItem('ns-class7:appearance');
+        if (saved === 'light' || saved === 'dark') {
+          document.documentElement.setAttribute('data-theme', saved);
+        }
+      } catch (e) {
+        /* Storage disabled. Automatic is a safe default. */
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

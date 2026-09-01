@@ -230,3 +230,75 @@ If a question is wrong, out of date, or unsupported by its cited source, that is
 highest severity in this project. It should be fixed by re-reading the official source, correcting
 or retiring the question, and updating `verifiedAt` — following the maintainer workflow in the
 README.
+
+---
+
+## 7. Bundled third-party assets
+
+Both are self-hosted so the app works offline and can be packaged for iOS and
+Android. Neither is fetched from a CDN at runtime.
+
+### 7.1 Google Sans — SIL Open Font License 1.1
+
+The application typeface. Two subset files of the official variable font
+(weights 400–700) live in `src/assets/fonts/`, downloaded from the official
+Google Fonts CDN (`fonts.gstatic.com`).
+
+The font's own metadata records the provenance and licence:
+
+- Copyright 2025 The Google Sans Project Authors (github.com/googlefonts/googlesans)
+- Licence URL: https://openfontlicense.org
+
+The licence text is kept beside the files in `src/assets/fonts/OFL.txt`. The OFL
+requires that the font not be sold on its own and that this notice travel with
+the files; both hold here.
+
+### 7.2 Font Awesome icons — Free (CC BY 4.0) and Pro (licensed)
+
+The app's icon language is Font Awesome **Classic Regular** throughout. The two
+tiers are delivered differently, and the difference is a licensing one.
+
+**Free tier — bundled.** Ten glyphs come from
+`@fortawesome/free-regular-svg-icons`, licensed **CC BY 4.0**
+(https://fontawesome.com/license/free). Attribution: *Icons by Font Awesome*.
+CC BY permits redistribution, so they are imported one at a time and bundled by
+`src/ui/icons.tsx`. They need no network.
+
+**Pro tier — referenced, loaded at runtime.** Twelve glyphs come from the
+project owner's Font Awesome **Pro** licence, delivered by the project's hosted
+Kit (`kit.fontawesome.com`, licence `pro`, v7.3.1 — configured in
+`app.identity.json`, injected into the HTML by `vite.config.ts`, overridable
+with `FA_KIT_URL`). Three are Pro-only (`book-open-cover`,
+`diamond-turn-right`, `ballot-check`) and carry the primary navigation; the rest
+exist in the free tier only as Solid, and Regular cuts keep the icon language
+consistent.
+
+`src/ui/Icon.tsx` contains **icon names only** — it emits
+`<i class="app-icon fa-regular fa-fire">` and the Kit's script replaces that
+with the artwork in the visitor's browser. No Pro path data, SVG, webfont or
+`@fortawesome/pro-*` package is in this repository, which is what makes the
+repository publishable: naming an icon distributes nothing, whereas copying its
+geometry would distribute per-seat artwork to unlicensed people.
+
+Three things a future maintainer should know:
+
+- **The Kit is the app's only runtime network dependency.** Everything a learner
+  studies is bundled. The icons are decorative — each sits beside a text label —
+  and `e2e/font-awesome-kit.spec.ts` blocks `*.fontawesome.com` and walks the
+  journey to prove the app is fully usable without them. `.app-icon` in
+  `src/styles.css` reserves each slot so nothing reflows.
+- **A fork gets no Pro licence.** MIT covers this project's code and cannot
+  grant Font Awesome Pro rights. A fork sets `FA_KIT_URL` to its own Kit, sets
+  it empty to ship no icons, or substitutes free-tier glyphs. See
+  [THIRD_PARTY_NOTICES.md §4.2](THIRD_PARTY_NOTICES.md).
+- **Keep the Pro list minimal.** `src/ui/kitIcons.ts` is the declared inventory
+  and `tests/icon-kit.test.tsx` keeps it in step with what the app actually
+  uses. Anything the free tier provides in Classic Regular belongs on the free
+  tier.
+
+The Kit id itself is a public client-side identifier — it appears in the page
+source of every site that uses a Kit — so it lives in `app.identity.json` with
+the rest of the app's identity and is not treated as a credential. Font Awesome
+*account* credentials and npm registry tokens are credentials, are not in this
+repository, and `pnpm release:audit` checks for them.
+

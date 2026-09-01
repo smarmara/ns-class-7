@@ -20,9 +20,17 @@
       "The five-sided fluorescent yellow-green sign is the school area sign."
     ],
     "difficulty": "easy",
-    "tags": ["warning", "sign design", "shapes"],
+    "tags": [
+      "warning",
+      "sign design",
+      "shapes"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 83" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 83"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -50,9 +58,17 @@
       "The skid marks under the car indicate loss of traction, not standing water."
     ],
     "difficulty": "easy",
-    "tags": ["warning", "traction", "conditions"],
+    "tags": [
+      "warning",
+      "traction",
+      "conditions"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 83" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 83"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -80,9 +96,16 @@
       "Railway crossings are marked with a crossbuck at the crossing itself."
     ],
     "difficulty": "easy",
-    "tags": ["warning", "signals"],
+    "tags": [
+      "warning",
+      "signals"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 83" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 83"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -110,9 +133,16 @@
       "Traffic signals ahead is a different warning sign showing a signal head."
     ],
     "difficulty": "easy",
-    "tags": ["warning", "stop"],
+    "tags": [
+      "warning",
+      "stop"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 83" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 83"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -140,9 +170,17 @@
       "Merging is done before the lanes physically join, not after."
     ],
     "difficulty": "medium",
-    "tags": ["warning", "merging", "highways"],
+    "tags": [
+      "warning",
+      "merging",
+      "highways"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 83, 93" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "pp. 83, 93"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -170,9 +208,16 @@
       "Two-way traffic is shown by two opposing arrows."
     ],
     "difficulty": "medium",
-    "tags": ["warning", "road width"],
+    "tags": [
+      "warning",
+      "road width"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 91" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 91"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -200,9 +245,17 @@
       "Closures are signed with orange work-zone signs."
     ],
     "difficulty": "medium",
-    "tags": ["warning", "intersections", "rural"],
+    "tags": [
+      "warning",
+      "intersections",
+      "rural"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 91" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 91"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -230,9 +283,16 @@
       "Uneven surfaces are signed in work zones with an orange sign."
     ],
     "difficulty": "medium",
-    "tags": ["warning", "hills"],
+    "tags": [
+      "warning",
+      "hills"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 91" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 91"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -260,9 +320,16 @@
       "A one-way street is indicated by a black rectangular sign with an arrow."
     ],
     "difficulty": "medium",
-    "tags": ["warning", "divided highway"],
+    "tags": [
+      "warning",
+      "divided highway"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 91" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 91"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -290,9 +357,16 @@
       "Obstructions are marked with hazard markers or a keep-right sign."
     ],
     "difficulty": "medium",
-    "tags": ["warning", "divided highway"],
+    "tags": [
+      "warning",
+      "divided highway"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 92" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 92"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -320,10 +394,22 @@
       "It is a driving instruction, not survey data."
     ],
     "difficulty": "medium",
-    "tags": ["warning", "curves", "speed"],
+    "tags": [
+      "warning",
+      "curves",
+      "speed"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 92" },
-      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "pp. 51-52" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 92"
+      },
+      {
+        "sourceId": "ns-handbook-ch2",
+        "chapter": "Chapter 2",
+        "page": "pp. 51-52"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -351,9 +437,16 @@
       "Pedestrian crossings use a sign with a walking figure."
     ],
     "difficulty": "medium",
-    "tags": ["warning", "curves"],
+    "tags": [
+      "warning",
+      "curves"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 92" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 92"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -381,9 +474,16 @@
       "Driveways are not marked with chevrons."
     ],
     "difficulty": "medium",
-    "tags": ["warning", "curves"],
+    "tags": [
+      "warning",
+      "curves"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 93" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 93"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -411,9 +511,16 @@
       "A bridge opening for boats has its own sign."
     ],
     "difficulty": "medium",
-    "tags": ["warning", "clearance"],
+    "tags": [
+      "warning",
+      "clearance"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 93" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 93"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -441,9 +548,17 @@
       "The shoulder is not a traffic lane."
     ],
     "difficulty": "medium",
-    "tags": ["warning", "merging", "lane use"],
+    "tags": [
+      "warning",
+      "merging",
+      "lane use"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 92, 98" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "pp. 92, 98"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -471,9 +586,16 @@
       "The sign warns of reduced width, not necessarily a single lane."
     ],
     "difficulty": "hard",
-    "tags": ["warning", "bridges"],
+    "tags": [
+      "warning",
+      "bridges"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 92" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 92"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -501,9 +623,16 @@
       "The sign shows a raised hump, not a dip."
     ],
     "difficulty": "easy",
-    "tags": ["warning", "road surface"],
+    "tags": [
+      "warning",
+      "road surface"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 91" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 91"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -531,9 +660,16 @@
       "The sign is a warning about traffic movement, not a facility."
     ],
     "difficulty": "medium",
-    "tags": ["warning", "trucks"],
+    "tags": [
+      "warning",
+      "trucks"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 83" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 83"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -561,9 +697,18 @@
       "The hazard exists year round, and is greatest at dawn and dusk."
     ],
     "difficulty": "medium",
-    "tags": ["warning", "animals", "rural", "night driving"],
+    "tags": [
+      "warning",
+      "animals",
+      "rural",
+      "night driving"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 146" }
+      {
+        "sourceId": "ns-handbook-ch5",
+        "chapter": "Chapter 5",
+        "page": "p. 146"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -591,9 +736,16 @@
       "This is the opposite of a one-way indication."
     ],
     "difficulty": "medium",
-    "tags": ["warning", "two-way traffic"],
+    "tags": [
+      "warning",
+      "two-way traffic"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 94" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 94"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -621,9 +773,16 @@
       "A curve advisory speed is posted beneath a curve warning sign."
     ],
     "difficulty": "medium",
-    "tags": ["warning", "speed limits"],
+    "tags": [
+      "warning",
+      "speed limits"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 90" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 90"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -635,7 +794,12 @@
     "topic": "signs-warning",
     "subtopic": "sign recognition",
     "question": "Which of these signs warns that the road ahead may be slippery when wet?",
-    "choiceSignIds": ["slippery-when-wet", "bump", "right-curve", "merge"],
+    "choiceSignIds": [
+      "slippery-when-wet",
+      "bump",
+      "right-curve",
+      "merge"
+    ],
     "choices": [
       "A yellow diamond with a black car symbol above two wavy skid marks.",
       "A yellow diamond with a black horizontal line that rises into a rounded hump.",
@@ -651,12 +815,93 @@
       "The joining lines warn of a merge."
     ],
     "difficulty": "easy",
-    "tags": ["warning", "sign recognition"],
+    "tags": [
+      "warning",
+      "sign recognition"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 83, 91-93" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "pp. 83, 91-93"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-warn-023",
+    "type": "sign",
+    "topic": "signs-warning",
+    "subtopic": "fire truck entrance",
+    "question": "What does this sign tell you to expect?",
+    "signId": "fire-truck-entrance",
+    "choices": [
+      "A fire station open to the public ahead",
+      "Emergency vehicles parked clear of the roadway",
+      "Fire trucks may be entering or leaving the road here",
+      "You must pull over for an approaching fire truck"
+    ],
+    "correctChoice": 2,
+    "explanation": "This sign marks a location where fire trucks enter and leave the road, such as a fire station driveway. Expect a large vehicle to pull out or turn in, possibly in a hurry, and be ready to give way.",
+    "incorrectChoiceExplanations": [
+      "The sign warns about vehicle movements, not about a building you can visit.",
+      "It warns of vehicles crossing your path, not of parked ones.",
+      null,
+      "That duty applies whenever an emergency vehicle approaches with its lights on, not because of this sign."
+    ],
+    "difficulty": "easy",
+    "tags": [
+      "warning",
+      "emergency vehicles"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 91"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-warn-024",
+    "type": "sign",
+    "topic": "signs-warning",
+    "subtopic": "bridge opening",
+    "question": "What does this sign warn you about?",
+    "signId": "bridge-opening",
+    "choices": [
+      "A bridge ahead can be opened to let boats through",
+      "A bridge ahead is narrower than the road you are on",
+      "A bridge ahead has a low overhead clearance",
+      "A bridge ahead ices over before the rest of the road"
+    ],
+    "correctChoice": 0,
+    "explanation": "This sign marks a movable bridge — one that can be opened to permit the passage of boats. Traffic is stopped while the bridge is open, so be prepared to wait.",
+    "incorrectChoiceExplanations": [
+      null,
+      "A narrow structure ahead has its own warning sign.",
+      "Low clearance is shown by a separate sign giving the height available.",
+      "Bridges do freeze first, but that is a driving condition rather than what this sign shows."
+    ],
+    "difficulty": "easy",
+    "tags": [
+      "warning",
+      "bridges"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 92"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
     "lawVersion": "mva"
   }
 ]

@@ -12,6 +12,7 @@ export function Mistakes() {
 
   return (
     <QuizSession
+      sessionKey="review:mistakes"
       title="Your mistakes"
       subtitle="Questions you last answered incorrectly, or flagged to review again"
       pool={pool}
@@ -24,7 +25,7 @@ export function Mistakes() {
         body: (
           <p>
             Everything you have answered, you got right last time.{' '}
-            <Link to="/practice">Keep practising</Link>.
+            <Link to="/practice/quick">Keep practising</Link>.
           </p>
         ),
       }}
@@ -39,6 +40,7 @@ export function Saved() {
 
   return (
     <QuizSession
+      sessionKey="review:saved"
       title="Saved questions"
       subtitle="The questions you bookmarked"
       pool={pool}
@@ -51,7 +53,7 @@ export function Saved() {
         body: (
           <p>
             Tap <strong>Save</strong> on any question to keep it here.{' '}
-            <Link to="/practice">Start practising</Link>.
+            <Link to="/practice/quick">Start practising</Link>.
           </p>
         ),
       }}
@@ -66,6 +68,7 @@ export function WeakAreas() {
 
   return (
     <QuizSession
+      sessionKey="review:weak"
       title="Weak areas"
       subtitle="Drawn only from the topics you are scoring lowest in"
       pool={pool}
@@ -78,7 +81,7 @@ export function WeakAreas() {
         body: (
           <p>
             A topic shows up here once you have answered at least 3 of its questions with 75%
-            accuracy or below. <Link to="/practice">Answer some questions</Link> and check back.
+            accuracy or below. <Link to="/practice/quick">Answer some questions</Link> and check back.
           </p>
         ),
       }}

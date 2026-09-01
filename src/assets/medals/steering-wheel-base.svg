@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" fill="none" role="presentation" aria-hidden="true" focusable="false">
+  <!--
+    Master steering-wheel medal shape.
+
+    Colour and geometry are separable. Every colour resolves through a CSS
+    custom property with a built in fallback, so this file renders correctly on
+    its own and can be recoloured for a study level or a medal tier by setting
+    the tokens on any ancestor when it is inlined. Nothing below assumes "blue".
+
+      wheel-primary        rim and, by default, the centre cap
+      wheel-primary-light  upper rim shoulder highlight
+      wheel-primary-dark   reserved: tiers wanting a distinct deep accent
+      wheel-structure      spoke assembly and hub surround
+      wheel-hub            centre cap, when it should differ from the rim
+
+    (Each is a custom property, so prefix those names with a double hyphen.
+    They cannot be written that way in here: XML forbids it inside a comment.)
+
+    Shading deliberately carries no colour of its own. The single gradient is
+    white to transparent to black, laid over the flat token fills, so a
+    recolour needs no gradient edits and several differently coloured copies can
+    be inlined on one page without their gradient ids fighting.
+  -->
+  <style>
+    .sw-structure { fill: var(--wheel-structure, #2e3f52); }
+    .sw-hub       { fill: var(--wheel-hub, var(--wheel-primary, #428bca)); }
+    .sw-rim-line  { stroke: var(--wheel-primary, #428bca); }
+    .sw-highlight { stroke: var(--wheel-primary-light, #7ab5e3); }
+    .sw-shade     { stroke: url(#sw-shade); }
+    .sw-shade-in  { fill: url(#sw-shade); }
+  </style>
+
+  <defs>
+    <!-- Colour free: light at the top, shadow at the bottom, nothing in between. -->
+    <linearGradient id="sw-shade" x1="0.34" y1="0" x2="0.66" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.26" />
+      <stop offset="0.48" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="0.62" stop-color="#000000" stop-opacity="0" />
+      <stop offset="1" stop-color="#000000" stop-opacity="0.24" />
+    </linearGradient>
+  </defs>
+
+  <!--
+    The spoke frame: ONE closed path, not three paddles that overlap.
+
+    Read clockwise from the left rim end. The top edge is a single smooth pair
+    of cubics running the full width, gently waisted so the bar is thicker where
+    it leaves the hub. The underside returns along the right, coves into the
+    lower spoke through a quadratic fillet whose control point sits exactly on
+    the sharp corner it replaces (tangent horizontal going in, vertical coming
+    out, so there is no seam), runs down and back up the tapering leg, and coves
+    out again through the mirrored fillet.
+
+    Every spoke end sits at r=168 while the rim's inner edge is r=160, so all
+    three tuck 8 units under the rim and no join can show a gap.
+
+    Symmetry is exact: mirroring x to 512 minus x maps the path onto itself, and
+    the leg is centred on 256 at both its top (216..296) and its foot (224..288).
+  -->
+  <g id="wheel-structure" class="sw-structure">
+    <path id="spoke-assembly" d="M 88 224
+      C 150 234 200 216 256 216
+      C 312 216 362 234 424 224
+      L 424 288
+      C 394 292 362 293 330 293
+      Q 296 293 296 327
+      Q 294 376 288 424
+      L 224 424
+      Q 218 376 216 327
+      Q 216 293 182 293
+      C 150 293 118 292 88 288
+      Z" />
+  </g>
+
+  <!--
+    The same geometry once more for the light-to-shadow pass. Reusing the path
+    by reference keeps the outline written exactly once, so the shading can
+    never drift out of register with the shape it sits on. The clone takes its
+    fill from this element, not from the original, which is why the recolour
+    still works per copy.
+  -->
+  <use id="spoke-assembly-shade" href="#spoke-assembly" class="sw-shade-in" opacity="0.75" />
+
+  <!--
+    The rim is a stroked circle rather than a donut path: r=185 with a 50 wide
+    stroke gives an outer diameter of 420 and an inner of 320, and the thickness
+    stays trivially adjustable. Drawn after the frame so it covers the three
+    spoke ends; the shade circle is the same geometry laid over the flat colour.
+  -->
+  <g id="wheel-rim">
+    <circle id="wheel-rim-base" class="sw-rim-line" cx="256" cy="256" r="185" stroke-width="50" />
+    <circle id="wheel-rim-shade" class="sw-shade" cx="256" cy="256" r="185" stroke-width="50" />
+  </g>
+
+  <!--
+    Centre assembly, drawn last of the solids so it caps the frame. The dark
+    ring hides the middle of the T; the frame underneath stays continuous, so
+    the hub finishes the shape rather than holding three loose spokes together.
+  -->
+  <g id="hub">
+    <circle id="hub-outer" class="sw-structure" cx="256" cy="256" r="64" />
+    <circle id="hub-outer-shade" class="sw-shade-in" cx="256" cy="256" r="64" opacity="0.7" />
+    <circle id="hub-inner" class="sw-hub" cx="256" cy="256" r="45" />
+    <circle id="hub-inner-shade" class="sw-shade-in" cx="256" cy="256" r="45" />
+  </g>
+
+  <!-- One soft arc along the upper left shoulder. The only decoration in the file. -->
+  <g id="highlights">
+    <path id="wheel-rim-highlight" class="sw-highlight" d="M74 224 A185 185 0 0 1 224 74"
+      stroke-width="13" stroke-linecap="round" opacity="0.55" />
+  </g>
+</svg>

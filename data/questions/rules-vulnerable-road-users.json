@@ -811,5 +811,63 @@
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
     "lawVersion": "mva"
+  },
+  {
+    "id": "rules-share-008",
+    "type": "rules",
+    "topic": "sharing-the-road",
+    "subtopic": "left cross",
+    "question": "You are turning left at an intersection and a cyclist is approaching from the opposite direction. What should you do?",
+    "choices": [
+      "Wait for the cyclist to pass before completing your turn",
+      "Turn in front of the cyclist if there appears to be enough room",
+      "Sound your horn and turn at the same time",
+      "Accelerate to clear the intersection before the cyclist arrives"
+    ],
+    "correctChoice": 0,
+    "explanation": "This is the 'left cross' collision. Motorists misjudge the speed of an oncoming cyclist and turn in front of them. Motorists should always stop and wait for oncoming traffic, including bicycles, to pass before turning. Cyclists can travel faster than you think.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Turning in front of an oncoming cyclist is exactly the left-cross collision. Cyclists travel faster than most drivers expect.",
+      "A horn does not make the turn safe and may startle the rider.",
+      "Accelerating to beat the cyclist is the misjudgment that causes left-cross collisions."
+    ],
+    "difficulty": "medium",
+    "tags": ["bicycles", "turning", "intersections", "sharing the road"],
+    "sourceRefs": [
+      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 71" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-share-009",
+    "type": "rules",
+    "topic": "sharing-the-road",
+    "subtopic": "passing distance",
+    "question": "You are passing a cyclist travelling in the same direction on a two-lane road. What does the Motor Vehicle Act require?",
+    "choices": [
+      "Leave at least one metre of open space between your vehicle and the cyclist; you may cross the centre line if it is safe to do so",
+      "Leave at least half a metre of space and stay in your lane",
+      "Pass as quickly as possible to minimize the time beside the cyclist",
+      "Only pass when the cyclist signals it is safe"
+    ],
+    "correctChoice": 0,
+    "explanation": "The Motor Vehicle Act requires a driver passing a cyclist travelling in the same direction to leave at least one metre of open space between the vehicle and the cyclist. If there is not enough room in your lane, you may cross the centre line to pass the bicycle, but only if you can do so safely.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Half a metre is not enough; the law requires at least one metre.",
+      "Speed does not replace the distance requirement; you must leave at least one metre regardless of how quickly you pass.",
+      "The driver has the duty to pass safely; the cyclist does not need to signal permission."
+    ],
+    "difficulty": "medium",
+    "tags": ["bicycles", "passing", "sharing the road"],
+    "sourceRefs": [
+      { "sourceId": "ns-mva", "section": "s.171B(1), s.171B(2)" }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
   }
 ]

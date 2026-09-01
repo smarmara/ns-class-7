@@ -12,6 +12,8 @@ import manifestJson from '@data/sources/source-manifest.json';
 
 export * from './types';
 export * from './signs';
+export * from './learner-signs';
+export * from './sign-variants';
 
 export const examConfig = examConfigJson as ExamConfig;
 export const legalStatus = legalStatusJson as LegalStatusConfig;

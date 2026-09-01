@@ -16,14 +16,47 @@
     "content:validate": "tsx scripts/content-validate.ts",
     "content:coverage": "tsx scripts/content-coverage.ts",
     "content:quality": "tsx scripts/content-quality.ts",
+    "content:syllabus": "tsx scripts/content-syllabus.ts",
+    "content:progression": "tsx scripts/topic-progression-audit.ts",
+    "signs:audit": "tsx --tsconfig tsconfig.app.json scripts/sign-fidelity-report.tsx",
+    "signs:learner-audit": "tsx --tsconfig tsconfig.app.json scripts/sign-learner-audit.ts",
+    "signs:gallery": "tsx --tsconfig tsconfig.app.json scripts/sign-gallery.ts",
+    "signs:gallery:review": "tsx --tsconfig tsconfig.app.json scripts/sign-gallery-review.ts",
+    "signs:approval:check": "tsx --tsconfig tsconfig.app.json scripts/sign-approval-check.ts",
+    "signs:approval:release": "tsx --tsconfig tsconfig.app.json scripts/sign-approval-release.ts",
     "mock:analyze": "tsx scripts/mock-analyze.ts",
     "sources:check": "tsx scripts/sources-check.ts",
     "sources:check:ci": "tsx scripts/sources-check.ts --ci",
     "sources:ingest": "tsx scripts/ingest-handbook.ts",
-    "verify": "pnpm lint && pnpm typecheck && pnpm content:validate && pnpm sources:check:ci && pnpm test && pnpm test:e2e && pnpm build",
-    "icons:generate": "tsx scripts/generate-icons.ts"
+    "verify": "pnpm lint && pnpm typecheck && pnpm content:validate && pnpm sources:check:ci && pnpm signs:approval:check && pnpm test && pnpm test:e2e && pnpm pages:test && pnpm build && pnpm native:offline:check",
+    "icons:generate": "tsx scripts/generate-icons.ts",
+    "native:offline:check": "tsx scripts/native-offline-audit.ts",
+    "native:stamp": "tsx scripts/native-build-guard.ts --stamp",
+    "native:guard": "tsx scripts/native-build-guard.ts --check",
+    "native:sync": "pnpm build && pnpm native:stamp && pnpm native:version && cap sync",
+    "native:verify": "pnpm native:guard && pnpm native:offline:check",
+    "native:android": "pnpm native:sync && cap run android",
+    "native:open:android": "cap open android",
+    "native:ios": "pnpm native:sync && cap run ios",
+    "native:open:ios": "cap open ios",
+    "native:assets": "capacitor-assets generate --android --ios --iconBackgroundColor \"#0f172a\" --iconBackgroundColorDark \"#0f172a\" --splashBackgroundColor \"#f8fafc\" --splashBackgroundColorDark \"#101317\"",
+    "native:live": "tsx scripts/native-live-reload.ts",
+    "native:doctor": "tsx scripts/native-doctor.ts",
+    "native:version": "tsx scripts/native-version-sync.ts",
+    "pages:build": "tsc -b && tsx scripts/pages.ts build",
+    "pages:preview": "tsc -b && tsx scripts/pages.ts preview --base ns-class-7-study --out dist-pages",
+    "pages:serve": "tsx scripts/pages.ts preview --base ns-class-7-study --out dist-pages",
+    "pages:test": "playwright test --config=playwright.pages.config.ts",
+    "release:audit": "tsx scripts/release-audit.ts"
   },
   "dependencies": {
+    "@capacitor/app": "8.1.1",
+    "@capacitor/browser": "8.0.4",
+    "@capacitor/core": "8.5.0",
+    "@capacitor/filesystem": "8.1.3",
+    "@capacitor/share": "8.0.1",
+    "@capacitor/splash-screen": "8.0.2",
+    "@capacitor/status-bar": "8.0.3",
     "idb-keyval": "^6.2.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
@@ -31,7 +64,12 @@
     "zustand": "^5.0.4"
   },
   "devDependencies": {
+    "@capacitor/android": "8.5.0",
+    "@capacitor/assets": "3.0.5",
+    "@capacitor/cli": "8.5.0",
+    "@capacitor/ios": "8.5.0",
     "@eslint/js": "^10.0.1",
+    "@fortawesome/free-regular-svg-icons": "^7.3.1",
     "@playwright/test": "^1.52.0",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -58,7 +96,12 @@
   "packageManager": "pnpm@10.17.1",
   "pnpm": {
     "onlyBuiltDependencies": [
-      "esbuild"
+      "esbuild",
+      "sharp"
     ]
+  },
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=10.0.0"
   }
 }

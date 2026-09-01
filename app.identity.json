@@ -1,0 +1,46 @@
+{
+  "$comment": [
+    "Single source of truth for how this app identifies itself.",
+    "Consumed by capacitor.config.ts (native), vite.config.ts (PWA manifest) and",
+    "src/appIdentity.ts (in-app About/version display).",
+    "",
+    "appId is PROVISIONAL. Confirm it before production signing or store submission:",
+    "once an Android package name or iOS bundle identifier is published it cannot be",
+    "changed without shipping a different app. It deliberately contains no reference",
+    "to Nova Scotia government, RMV or Access Nova Scotia, so it cannot be read as",
+    "implying official affiliation."
+  ],
+  "appId": "com.class7study.ns",
+  "appIdStatus": "provisional",
+  "appName": "NS Class 7 Study",
+  "shortName": "NS Class 7",
+  "longName": "Nova Scotia Class 7 Study — unofficial",
+  "description": "An independent, unofficial study aid for the Nova Scotia Class 7 Learner's Licence knowledge test.",
+  "themeColor": "#0f172a",
+  "backgroundColor": "#f8fafc",
+  "splashBackgroundColor": {
+    "light": "#f8fafc",
+    "dark": "#101317"
+  },
+  "fontAwesomeKit": {
+    "$comment": [
+      "Font Awesome Pro hosted Kit, used by the deployed web app under the maintainer's",
+      "Font Awesome Pro licence.",
+      "",
+      "A Kit id is a public, client-side identifier — it is designed to appear in page",
+      "markup — so it is not a secret and is not treated as one. What must never enter",
+      "this repository is Pro icon ARTWORK: path data, SVG files, webfonts or the Pro",
+      "npm packages. `pnpm release:audit` enforces that distinction.",
+      "",
+      "A fork should point this at its own Kit. Contributors without a Pro licence can",
+      "still run and develop the app: the Kit simply does not load, icon boxes stay",
+      "reserved, and every control keeps its text label.",
+      "",
+      "Override at build time with FA_KIT_URL if you need a different Kit without",
+      "editing this file."
+    ],
+    "url": "https://kit.fontawesome.com/7eba2de703.js",
+    "style": "fa-regular",
+    "version": "7.3.1"
+  }
+}

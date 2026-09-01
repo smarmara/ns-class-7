@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" fill="none" role="presentation" aria-hidden="true" focusable="false">
+  <!-- Generic yield-shaped achievement geometry. It contains no official sign text or symbol. -->
+  <style>
+    .ys-frame { fill: var(--yield-primary, #00558c); }
+    .ys-face { fill: var(--yield-inner, #dcecf7); }
+    .ys-edge { stroke: var(--yield-inner-edge, #002b49); }
+    .ys-highlight { stroke: var(--yield-primary-light, #428bca); }
+    .ys-shade { fill: url(#ys-shade); }
+  </style>
+  <defs>
+    <linearGradient id="ys-shade" x1="0.28" y1="0" x2="0.72" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.22" />
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="1" stop-color="#000000" stop-opacity="0.2" />
+    </linearGradient>
+  </defs>
+  <g id="yield-frame" class="ys-frame">
+    <path d="M128 86H384Q416 86 430 112Q435 124 428 140L288 392Q277 414 256 414Q235 414 224 392L84 140Q77 124 82 112Q96 86 128 86Z" />
+  </g>
+  <g id="yield-face" class="ys-face">
+    <path d="M150 124H362Q382 124 390 141Q393 149 388 160L274 370Q267 384 256 384Q245 384 238 370L124 160Q119 149 122 141Q130 124 150 124Z" />
+  </g>
+  <path id="yield-face-edge" class="ys-edge" d="M150 124H362Q382 124 390 141Q393 149 388 160L274 370Q267 384 256 384Q245 384 238 370L124 160Q119 149 122 141Q130 124 150 124Z" fill="none" stroke-width="8" opacity=".8" />
+  <path id="yield-face-shade" class="ys-shade" d="M150 124H362Q382 124 390 141Q393 149 388 160L274 370Q267 384 256 384Q245 384 238 370L124 160Q119 149 122 141Q130 124 150 124Z" opacity=".7" />
+  <path id="yield-highlight" class="ys-highlight" d="M108 145Q118 106 154 106H358" fill="none" stroke-width="11" stroke-linecap="round" opacity=".55" />
+</svg>

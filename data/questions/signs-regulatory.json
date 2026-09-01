@@ -21,10 +21,20 @@
       "That describes a yield sign, which is a triangle."
     ],
     "difficulty": "easy",
-    "tags": ["regulatory", "stop"],
+    "tags": [
+      "regulatory",
+      "stop"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 80" },
-      { "sourceId": "ns-reg-traffic-signs", "citation": "N.S. Reg. 165/2012" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 80"
+      },
+      {
+        "sourceId": "ns-reg-traffic-signs",
+        "citation": "N.S. Reg. 165/2012"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -52,10 +62,20 @@
       "You do not need another driver's permission; you need a safe gap."
     ],
     "difficulty": "easy",
-    "tags": ["regulatory", "yield"],
+    "tags": [
+      "regulatory",
+      "yield"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 80" },
-      { "sourceId": "ns-mva", "section": "s.134(3)" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 80"
+      },
+      {
+        "sourceId": "ns-mva",
+        "section": "s.134(3)"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -67,10 +87,15 @@
     "topic": "signs-regulatory",
     "subtopic": "recognise the stop sign",
     "question": "Which of these signs requires every driver to bring the vehicle to a complete stop?",
-    "choiceSignIds": ["stop", "yield", "do-not-enter", "no-parking"],
+    "choiceSignIds": [
+      "stop",
+      "yield",
+      "do-not-enter",
+      "no-parking"
+    ],
     "choices": [
       "An eight-sided sign with a red background and the word STOP in white capital letters.",
-      "A downward-pointing triangle with a red border and a white centre, containing the word YIELD.",
+      "A downward-pointing triangle with a broad red border and a white centre.",
       "A white rectangular sign containing a red circle with a wide white horizontal bar across it.",
       "A white sign with the letter P inside a red circle with a red diagonal line through it, and arrows pointing both ways beneath."
     ],
@@ -83,9 +108,17 @@
       "The crossed-out P prohibits parking in either direction of the sign."
     ],
     "difficulty": "easy",
-    "tags": ["regulatory", "sign recognition", "shapes"],
+    "tags": [
+      "regulatory",
+      "sign recognition",
+      "shapes"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 80, 104" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "pp. 80, 104"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -109,13 +142,21 @@
     "incorrectChoiceExplanations": [
       null,
       "Construction closures are signed with orange work-zone signs.",
-      "No stopping is shown by a crossed-out S with arrows beneath.",
+      "No stopping is shown by a crossed-out black octagon with arrows beneath.",
       "Road narrows is a yellow diamond warning sign."
     ],
     "difficulty": "easy",
-    "tags": ["regulatory", "prohibition", "one-way"],
+    "tags": [
+      "regulatory",
+      "prohibition",
+      "one-way"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 89" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 89"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -143,9 +184,16 @@
       "Right-of-way is not conveyed by a one-way sign."
     ],
     "difficulty": "easy",
-    "tags": ["regulatory", "one-way"],
+    "tags": [
+      "regulatory",
+      "one-way"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 89" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 89"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -173,9 +221,17 @@
       "Merging is a yellow diamond with two lines joining."
     ],
     "difficulty": "easy",
-    "tags": ["regulatory", "prohibition", "passing"],
+    "tags": [
+      "regulatory",
+      "prohibition",
+      "passing"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 79, 83, 89" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "pp. 79, 83, 89"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -203,9 +259,17 @@
       "Guidance signs are rectangular, usually green with white letters."
     ],
     "difficulty": "medium",
-    "tags": ["regulatory", "sign design", "passing"],
+    "tags": [
+      "regulatory",
+      "sign design",
+      "passing"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 79, 83" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "pp. 79, 83"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -233,10 +297,23 @@
       "A left turn on red is illegal except from a one-way street onto another one-way street."
     ],
     "difficulty": "medium",
-    "tags": ["regulatory", "prohibition", "signals", "turning"],
+    "tags": [
+      "regulatory",
+      "prohibition",
+      "signals",
+      "turning"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 89" },
-      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 40" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 89"
+      },
+      {
+        "sourceId": "ns-handbook-ch2",
+        "chapter": "Chapter 2",
+        "page": "p. 40"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -264,9 +341,17 @@
       "There is no reversing prohibition indicated by this sign."
     ],
     "difficulty": "easy",
-    "tags": ["regulatory", "prohibition", "turning"],
+    "tags": [
+      "regulatory",
+      "prohibition",
+      "turning"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 89" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 89"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -294,9 +379,17 @@
       "There is no payment indication on this sign."
     ],
     "difficulty": "easy",
-    "tags": ["regulatory", "prohibition", "parking"],
+    "tags": [
+      "regulatory",
+      "prohibition",
+      "parking"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 88" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 88"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -308,25 +401,39 @@
     "topic": "signs-regulatory",
     "subtopic": "no parking vs no stopping",
     "question": "Which sign means you may not even pause to let a passenger out?",
-    "choiceSignIds": ["no-stopping", "no-parking", "accessible-parking", "no-turns"],
+    "choiceSignIds": [
+      "no-stopping",
+      "no-parking",
+      "accessible-parking",
+      "no-turns"
+    ],
     "choices": [
-      "A white sign with the letter S inside a red circle with a red diagonal line through it, and arrows pointing both ways beneath.",
+      "A white sign with a black octagon inside a red circle with a red diagonal line through it, and arrows pointing both ways beneath.",
       "A white sign with the letter P inside a red circle with a red diagonal line through it, and arrows pointing both ways beneath.",
-      "A sign with a blue background and a white symbol of a person seated in a wheelchair.",
+      "A tall white sign with a crossed-out black P above a blue-and-white wheelchair symbol and the words ACCESSIBLE PARKING BY PERMIT ONLY, with arrows beneath.",
       "A white sign with two opposing curved arrows inside a red circle with a red diagonal line through it."
     ],
     "correctChoice": 0,
-    "explanation": "The crossed-out S is the No Stopping sign, and it is the stricter of the two: you may not stop at all, even briefly. The crossed-out P prohibits parking but does not by itself prohibit a momentary stop.",
+    "explanation": "The crossed-out black octagon is the No Stopping sign, and it is the stricter of the two: you may not stop at all, even briefly. The crossed-out P prohibits parking but does not by itself prohibit a momentary stop.",
     "incorrectChoiceExplanations": [
       null,
       "No parking is less restrictive than no stopping.",
-      "The blue wheelchair symbol reserves a space for a permit holder.",
+      "The accessible-parking control combines a crossed-out P, permit wording, and the blue wheelchair symbol.",
       "The two opposing arrows crossed out mean no turns."
     ],
     "difficulty": "medium",
-    "tags": ["regulatory", "prohibition", "parking", "sign recognition"],
+    "tags": [
+      "regulatory",
+      "prohibition",
+      "parking",
+      "sign recognition"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 88-89" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "pp. 88-89"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -354,10 +461,22 @@
       "Emergency vehicle spaces are signed differently."
     ],
     "difficulty": "easy",
-    "tags": ["regulatory", "parking", "accessibility"],
+    "tags": [
+      "regulatory",
+      "parking",
+      "accessibility"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 83" },
-      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 61" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 83"
+      },
+      {
+        "sourceId": "ns-handbook-ch2",
+        "chapter": "Chapter 2",
+        "page": "p. 61"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -385,10 +504,22 @@
       "Matching surrounding traffic does not excuse driving too fast for conditions."
     ],
     "difficulty": "medium",
-    "tags": ["regulatory", "speed limits", "conditions"],
+    "tags": [
+      "regulatory",
+      "speed limits",
+      "conditions"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 90" },
-      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 50" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 90"
+      },
+      {
+        "sourceId": "ns-handbook-ch2",
+        "chapter": "Chapter 2",
+        "page": "p. 50"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -416,9 +547,16 @@
       "A curve is signed with a yellow diamond showing a bending arrow."
     ],
     "difficulty": "medium",
-    "tags": ["regulatory", "lane position"],
+    "tags": [
+      "regulatory",
+      "lane position"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 90" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 90"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -446,9 +584,16 @@
       "The marker carries no speed instruction."
     ],
     "difficulty": "hard",
-    "tags": ["regulatory", "hazard markers"],
+    "tags": [
+      "regulatory",
+      "hazard markers"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 90" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 90"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -475,9 +620,18 @@
       "Orange diamonds are temporary condition (work zone) signs."
     ],
     "difficulty": "easy",
-    "tags": ["regulatory", "sign design", "shapes", "colours"],
+    "tags": [
+      "regulatory",
+      "sign design",
+      "shapes",
+      "colours"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 80, 83" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "pp. 80, 83"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -505,9 +659,16 @@
       "Trucks entering is a yellow diamond warning sign."
     ],
     "difficulty": "medium",
-    "tags": ["regulatory", "trucks"],
+    "tags": [
+      "regulatory",
+      "trucks"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 88" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 88"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -534,9 +695,16 @@
       "The rule is not limited to provincial highways."
     ],
     "difficulty": "easy",
-    "tags": ["regulatory", "offences"],
+    "tags": [
+      "regulatory",
+      "offences"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 103" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 103"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -564,10 +732,20 @@
       "Speed limit signs are regulatory; advisory speeds are given on warning signs."
     ],
     "difficulty": "easy",
-    "tags": ["regulatory", "speed limits"],
+    "tags": [
+      "regulatory",
+      "speed limits"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 90" },
-      { "sourceId": "ns-reg-traffic-signs", "citation": "RB-1" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 90"
+      },
+      {
+        "sourceId": "ns-reg-traffic-signs",
+        "citation": "RB-1"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -595,9 +773,17 @@
       "Stopping and parking restrictions use crossed-out P and S signs, not turn arrows."
     ],
     "difficulty": "easy",
-    "tags": ["regulatory", "prohibition", "turning"],
+    "tags": [
+      "regulatory",
+      "prohibition",
+      "turning"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 89" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 89"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -625,12 +811,57 @@
       "The sign restricts a manoeuvre; stopping rules are separate."
     ],
     "difficulty": "easy",
-    "tags": ["regulatory", "prohibition", "turning"],
+    "tags": [
+      "regulatory",
+      "prohibition",
+      "turning"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 88-89" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "pp. 88-89"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-reg-022",
+    "type": "sign",
+    "topic": "signs-regulatory",
+    "subtopic": "hazard markers",
+    "question": "The black stripes on this hazard marker slope down to the left. Which side of it should you pass?",
+    "signId": "hazard-marker-keep-left",
+    "choices": [
+      "Pass to the right of the sign",
+      "Pass to the left of the sign",
+      "Either side — the marker is only advisory",
+      "Slow down but hold your lane position"
+    ],
+    "correctChoice": 1,
+    "explanation": "The stripes slope down toward the side you are meant to pass. Sloping down to the left means drive to the left of the sign. The matching marker with stripes sloping to the right tells you to pass on the right; both are used to steer traffic safely around an obstruction.",
+    "incorrectChoiceExplanations": [
+      "That is the instruction given by the marker whose stripes slope down to the right.",
+      null,
+      "It is a regulatory instruction, not a suggestion.",
+      "The marker exists because something is blocking your path, so holding your line is exactly what it warns against."
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "regulatory",
+      "hazard marker"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 90"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
     "lawVersion": "mva"
   }
 ]

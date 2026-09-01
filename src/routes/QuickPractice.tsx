@@ -9,6 +9,7 @@ import { QuizSession } from '@/ui/QuizSession';
 export function QuickPractice() {
   return (
     <QuizSession
+      sessionKey="quick"
       title="Quick Practice"
       subtitle="A mixed set weighted toward your weak areas and anything due for review"
       pool={activeQuestions}

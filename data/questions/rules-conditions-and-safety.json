@@ -20,13 +20,28 @@
       "The requirement is based on time and visibility, not on whether street lights are present."
     ],
     "difficulty": "medium",
-    "tags": ["headlights", "night driving"],
+    "tags": [
+      "headlights",
+      "night driving"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 112" },
-      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 136" }
+      {
+        "sourceId": "ns-handbook-ch4",
+        "chapter": "Chapter 4",
+        "page": "p. 112"
+      },
+      {
+        "sourceId": "ns-handbook-ch5",
+        "chapter": "Chapter 5",
+        "page": "p. 136"
+      },
+      {
+        "sourceId": "ns-mva",
+        "section": "s. 178"
+      }
     ],
     "legalStatus": "current",
-    "verifiedAt": "2026-08-17",
+    "verifiedAt": "2026-08-19",
     "lawVersion": "mva"
   },
   {
@@ -50,12 +65,24 @@
       "The rule is province-wide."
     ],
     "difficulty": "medium",
-    "tags": ["headlights", "night driving"],
+    "tags": [
+      "headlights",
+      "night driving"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 112" }
+      {
+        "sourceId": "ns-handbook-ch4",
+        "chapter": "Chapter 4",
+        "page": "p. 112"
+      },
+      {
+        "sourceId": "ns-handbook-ch5",
+        "chapter": "Chapter 5",
+        "page": "p. 137"
+      }
     ],
     "legalStatus": "current",
-    "verifiedAt": "2026-08-17",
+    "verifiedAt": "2026-08-19",
     "lawVersion": "mva"
   },
   {
@@ -79,12 +106,23 @@
       "300 metres is the visibility threshold that requires headlights to be switched on."
     ],
     "difficulty": "hard",
-    "tags": ["headlights", "night driving"],
+    "tags": [
+      "headlights",
+      "night driving"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 136" }
+      {
+        "sourceId": "ns-handbook-ch5",
+        "chapter": "Chapter 5",
+        "page": "p. 136"
+      },
+      {
+        "sourceId": "ns-mva",
+        "section": "s. 178"
+      }
     ],
     "legalStatus": "current",
-    "verifiedAt": "2026-08-17",
+    "verifiedAt": "2026-08-19",
     "lawVersion": "mva"
   },
   {
@@ -108,9 +146,17 @@
       "Lights are required any time visibility is limited by fog, whatever the hour."
     ],
     "difficulty": "easy",
-    "tags": ["fog", "headlights", "conditions"],
+    "tags": [
+      "fog",
+      "headlights",
+      "conditions"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 137" }
+      {
+        "sourceId": "ns-handbook-ch4",
+        "chapter": "Chapter 4",
+        "page": "p. 117"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -137,9 +183,16 @@
       "Following distance is measured in time, not vehicle lengths."
     ],
     "difficulty": "medium",
-    "tags": ["rain", "following distance"],
+    "tags": [
+      "rain",
+      "following distance"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 139" }
+      {
+        "sourceId": "ns-handbook-ch5",
+        "chapter": "Chapter 5",
+        "page": "p. 139"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -166,9 +219,16 @@
       "Standing water is a hydroplaning hazard, but the handbook identifies the first minutes of rain as the most dangerous period."
     ],
     "difficulty": "medium",
-    "tags": ["rain", "traction"],
+    "tags": [
+      "rain",
+      "traction"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 139" }
+      {
+        "sourceId": "ns-handbook-ch5",
+        "chapter": "Chapter 5",
+        "page": "p. 139"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -180,7 +240,12 @@
     "topic": "adverse-conditions",
     "subtopic": "hydroplaning",
     "question": "In a standard passenger car on wet pavement, at roughly what speed may the tyres ride completely on top of the water?",
-    "choices": ["About 85 km/h", "About 55 km/h", "About 110 km/h", "About 40 km/h"],
+    "choices": [
+      "About 85 km/h",
+      "About 55 km/h",
+      "About 110 km/h",
+      "About 40 km/h"
+    ],
     "correctChoice": 0,
     "explanation": "Partial hydroplaning starts at about 55 km/h and increases with speed. At about 85 km/h the tyres may be riding totally on top of the water, at which point there is no friction available to brake, accelerate or corner. When roads are wet, reduce your speed to avoid hydroplaning.",
     "incorrectChoiceExplanations": [
@@ -190,9 +255,17 @@
       "40 km/h is below the speed at which hydroplaning starts in a standard passenger car."
     ],
     "difficulty": "hard",
-    "tags": ["rain", "hydroplaning", "traction"],
+    "tags": [
+      "rain",
+      "hydroplaning",
+      "traction"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 139" }
+      {
+        "sourceId": "ns-handbook-ch5",
+        "chapter": "Chapter 5",
+        "page": "p. 139"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -204,7 +277,12 @@
     "topic": "adverse-conditions",
     "subtopic": "black ice",
     "question": "A vehicle travelling at 30 km/h needs about 6 metres to stop on dry pavement. Roughly how far does it need on black ice?",
-    "choices": ["About 52 metres", "About 12 metres", "About 22 metres", "About 100 metres"],
+    "choices": [
+      "About 52 metres",
+      "About 12 metres",
+      "About 22 metres",
+      "About 100 metres"
+    ],
     "correctChoice": 0,
     "explanation": "Stopping distances for a vehicle travelling at 30 km/h are approximately 6 metres on dry pavement, 22 metres on packed snow, and 52 metres on black ice — roughly nine times the dry-road distance.",
     "incorrectChoiceExplanations": [
@@ -214,9 +292,17 @@
       "100 metres overstates the handbook's figure for 30 km/h."
     ],
     "difficulty": "hard",
-    "tags": ["winter", "ice", "stopping distance"],
+    "tags": [
+      "winter",
+      "ice",
+      "stopping distance"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 140" }
+      {
+        "sourceId": "ns-handbook-ch5",
+        "chapter": "Chapter 5",
+        "page": "p. 140"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -243,9 +329,17 @@
       "Bridge decks ice more readily than ordinary road, not less."
     ],
     "difficulty": "medium",
-    "tags": ["winter", "ice", "halifax"],
+    "tags": [
+      "winter",
+      "ice",
+      "halifax"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "pp. 140, 146" }
+      {
+        "sourceId": "ns-handbook-ch5",
+        "chapter": "Chapter 5",
+        "page": "pp. 140, 146"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -257,7 +351,12 @@
     "topic": "adverse-conditions",
     "subtopic": "temperature and traction",
     "question": "At which temperature are road surfaces the most slippery?",
-    "choices": ["Near 0°C", "Near -10°C", "Near -20°C", "Temperature makes no difference to grip"],
+    "choices": [
+      "Near 0°C",
+      "Near -10°C",
+      "Near -20°C",
+      "Temperature makes no difference to grip"
+    ],
     "correctChoice": 0,
     "explanation": "Road surfaces are far more slippery near 0°C than at colder temperatures of -10°C or -20°C. Near freezing, a thin film of water forms on the ice and acts as a lubricant. Early-morning frost can be a serious problem during the fall and spring months.",
     "incorrectChoiceExplanations": [
@@ -267,9 +366,17 @@
       "Temperature has a large effect on how much grip ice offers."
     ],
     "difficulty": "hard",
-    "tags": ["winter", "ice", "traction"],
+    "tags": [
+      "winter",
+      "ice",
+      "traction"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 141" }
+      {
+        "sourceId": "ns-handbook-ch5",
+        "chapter": "Chapter 5",
+        "page": "p. 141"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -296,9 +403,17 @@
       "The handbook recommends snow or all-season tyres on all four wheels for winter traction."
     ],
     "difficulty": "medium",
-    "tags": ["winter", "traction", "four-wheel drive"],
+    "tags": [
+      "winter",
+      "traction",
+      "four-wheel drive"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 141" }
+      {
+        "sourceId": "ns-handbook-ch5",
+        "chapter": "Chapter 5",
+        "page": "p. 141"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -325,9 +440,17 @@
       "Plow operators cannot simply move over; they are clearing the road as a team."
     ],
     "difficulty": "medium",
-    "tags": ["winter", "snow plows", "passing"],
+    "tags": [
+      "winter",
+      "snow plows",
+      "passing"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 148" }
+      {
+        "sourceId": "ns-handbook-ch5",
+        "chapter": "Chapter 5",
+        "page": "p. 148"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -340,13 +463,13 @@
     "subtopic": "studded tyres",
     "question": "During what period are studded tyres legal in Nova Scotia?",
     "choices": [
-      "Between 15 October and 30 April only",
+      "Between 15 October and 31 May only",
       "Between 1 November and 31 March only",
       "All year round",
       "Only when a winter storm warning is in effect"
     ],
     "correctChoice": 0,
-    "explanation": "Studded tyres are legal in Nova Scotia between 15 October and 30 April only. Outside that window they damage bare pavement.",
+    "explanation": "Studded tyres are legal in Nova Scotia between 15 October and 31 May only. Outside that window they damage bare pavement. The Studded Tires Regulations (N.S. Reg. 45/79, amended by N.S. Reg. 73/2014) set this permitted period.",
     "incorrectChoiceExplanations": [
       null,
       "The permitted window is wider than November to March.",
@@ -354,12 +477,316 @@
       "The permission is defined by calendar dates, not by weather warnings."
     ],
     "difficulty": "medium",
-    "tags": ["winter", "tyres"],
+    "tags": [
+      "winter",
+      "tyres"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 109" }
+      {
+        "sourceId": "ns-handbook-ch5",
+        "chapter": "Chapter 5",
+        "page": "p. 141"
+      },
+      {
+        "sourceId": "ns-reg-studded-tires",
+        "citation": "N.S. Reg. 45/79 amended to N.S. Reg. 73/2014",
+        "section": "s.1"
+      }
     ],
     "legalStatus": "current",
-    "verifiedAt": "2026-08-17",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-adverse-014",
+    "type": "rules",
+    "topic": "adverse-conditions",
+    "subtopic": "skids",
+    "question": "Your vehicle starts to skid on a slippery road. What does the Handbook tell you to do first?",
+    "choices": [
+      "Apply the brakes firmly to stop as quickly as you can",
+      "Shift down a gear to slow the driven wheels",
+      "Take your foot off the gas pedal and let the vehicle slow",
+      "Turn the steering wheel sharply the other way"
+    ],
+    "correctChoice": 2,
+    "explanation": "Take your foot off the gas and allow the vehicle to slow, using evasive steering to avoid a collision. Once it has slowed enough, try threshold braking. The three things the Handbook names as starting a skid are shifting gears, applying the brakes and moving the steering wheel suddenly — so doing any of them harder is the wrong instinct.",
+    "incorrectChoiceExplanations": [
+      "Braking is one of the three actions the Handbook names as causing a skid.",
+      "Shifting gears is also named as a cause of a skid.",
+      null,
+      "A sudden steering movement is the third cause the Handbook names."
+    ],
+    "difficulty": "hard",
+    "tags": [
+      "skids",
+      "traction"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch5",
+        "chapter": "Chapter 5",
+        "page": "p. 146"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-adverse-015",
+    "type": "rules",
+    "topic": "adverse-conditions",
+    "subtopic": "slippery surfaces",
+    "question": "How should you use the brake, accelerator and steering wheel on a slippery road?",
+    "choices": [
+      "Brake firmly and early, then steer as you normally would",
+      "Make only slight and gentle movements with all three",
+      "Accelerate briskly so the tyres keep their grip",
+      "Steer sharply so the tyres bite into the surface"
+    ],
+    "correctChoice": 1,
+    "explanation": "Sudden braking or accelerating can start a skid, so make only slight and gentle movements with the brake, accelerator and steering wheel. Allow more time for the journey, and where it is safe you can test the surface by applying the brakes slightly — if a tyre locks, release the brakes immediately.",
+    "incorrectChoiceExplanations": [
+      "Firm braking is exactly what breaks traction on a slippery surface.",
+      null,
+      "Hard acceleration spins the driven wheels rather than improving grip.",
+      "Sharp steering asks more of the tyres than a slippery surface can give."
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "traction",
+      "vehicle control"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch5",
+        "chapter": "Chapter 5",
+        "page": "p. 141"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-adverse-016",
+    "type": "rules",
+    "topic": "adverse-conditions",
+    "subtopic": "speed for conditions",
+    "question": "How much does the Handbook say you should cut your speed on packed snow, and on ice?",
+    "choices": [
+      "By about a quarter on packed snow, and by half on ice",
+      "No reduction is needed if the vehicle has four-wheel drive",
+      "You may keep to the posted limit, since that is the legal maximum",
+      "By more than half on packed snow, and slow to a crawl on ice"
+    ],
+    "correctChoice": 3,
+    "explanation": "Reduce your speed by more than half for packed snow, and slow to a crawl on ice. A posted speed limit is the maximum for good conditions — it is never a statement that the speed is safe in snow, ice, rain or fog, and you are still required to drive at a speed that suits the conditions.",
+    "incorrectChoiceExplanations": [
+      "The Handbook asks for more than half, not a quarter.",
+      "Four-wheel drive helps you get moving; it does not shorten your stopping distance.",
+      "The posted limit applies to good conditions and is a maximum, not a safe speed.",
+      null
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "speed",
+      "winter driving"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch5",
+        "chapter": "Chapter 5",
+        "page": "p. 140"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-adverse-017",
+    "type": "rules",
+    "topic": "adverse-conditions",
+    "subtopic": "wet weather",
+    "question": "You have driven through deep water and your brakes no longer feel normal. What should you do?",
+    "choices": [
+      "Drive faster so the airflow dries the brakes out",
+      "Ride the brake lightly with your left foot while giving light gas, until they work normally",
+      "Pump the pedal hard several times to force the water out",
+      "Stop and wait for the brakes to dry before driving on"
+    ],
+    "correctChoice": 1,
+    "explanation": "Wet brakes are less effective, which is why the Handbook tells you to test your brakes regularly when driving in the rain. If they do not respond normally, apply some pressure to the brake pedal with your left foot while applying light pressure to the gas pedal with your right, and continue until the brakes work normally again.",
+    "incorrectChoiceExplanations": [
+      "Speed does not dry brakes, and it lengthens the stop you may suddenly need.",
+      null,
+      "Hard pumping is not the technique the Handbook gives for wet brakes.",
+      "Waiting leaves you stopped with brakes you have not confirmed; drying them takes seconds while moving."
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "rain",
+      "braking"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch5",
+        "chapter": "Chapter 5",
+        "page": "p. 139"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-adverse-018",
+    "type": "rules",
+    "topic": "adverse-conditions",
+    "subtopic": "hydroplaning",
+    "question": "What is the Handbook's advice for avoiding hydroplaning on a wet road?",
+    "choices": [
+      "Brake firmly as you enter standing water",
+      "Pump the brakes to clear water from the tread",
+      "Reduce your speed — the risk grows as speed rises",
+      "Increase speed so the tyres cut through the water"
+    ],
+    "correctChoice": 2,
+    "explanation": "Wet pavement combined with speed and improper tyre pressure can lift the tyres onto a film of water. Partial hydroplaning starts at about 55 km/h in a standard car and increases with speed; at about 85 km/h the tyres may ride completely on top of the water. At that point no friction is available to brake, accelerate or corner, and a gust of wind or a slight turn can cause an uncontrollable skid. The remedy is simply to slow down when roads are wet.",
+    "incorrectChoiceExplanations": [
+      "Braking needs the grip that hydroplaning has removed.",
+      "Pumping the brakes does nothing about a film of water under the tyre.",
+      null,
+      "Speed is the cause, not the cure — the tyres ride higher on the water as speed rises."
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "rain",
+      "hydroplaning"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch5",
+        "chapter": "Chapter 5",
+        "page": "p. 139"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-adverse-019",
+    "type": "rules",
+    "topic": "adverse-conditions",
+    "subtopic": "night driving",
+    "question": "An oncoming driver does not dim their high beams. What should you do?",
+    "choices": [
+      "Switch to high beam so the other driver dims theirs",
+      "Look straight at the oncoming lights to judge the gap",
+      "Close your eyes briefly until the vehicle has passed",
+      "Stay on low beam, keep right, and look slightly to the right of the lights"
+    ],
+    "correctChoice": 3,
+    "explanation": "Keep your own lights on low beam even if the other driver does not dim. Stay on the right side of the road and use the edge of the road as a guide, reduce your speed, and watch the road as far ahead as you can — looking slightly to the right so you are not staring into the oncoming headlights.",
+    "incorrectChoiceExplanations": [
+      "Two sets of high beams leave both drivers dazzled.",
+      "Looking straight at the lights is what destroys your night vision.",
+      "Closing your eyes means driving blind at full speed.",
+      null
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "night driving",
+      "glare"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch5",
+        "chapter": "Chapter 5",
+        "page": "pp. 136–137"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-adverse-020",
+    "type": "rules",
+    "topic": "adverse-conditions",
+    "subtopic": "reduced visibility",
+    "question": "Fog thickens until you can barely see, so you pull well off the road and stop. What next?",
+    "choices": [
+      "Turn on the emergency flashers, leave from the passenger side, and stay away from the road",
+      "Stay in the driver's seat with your headlights on until it lifts",
+      "Stand behind the vehicle to warn approaching traffic",
+      "Walk along the shoulder to the nearest exit"
+    ],
+    "correctChoice": 0,
+    "explanation": "If you have extreme trouble seeing, pull as far off the roadway as possible, stop, secure the vehicle and turn on its emergency flashers. Then leave the car from the passenger side and stay away from the road. A vehicle stopped near the travelled lanes can be struck by traffic that can see no better than you could, so the safe place is away from both the car and the roadway.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Staying in a vehicle parked near live lanes in fog leaves you where a collision would happen.",
+      "Standing behind the vehicle puts you directly in the path of anything that hits it.",
+      "Walking along the shoulder in fog puts you on the roadway where you cannot be seen."
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "fog",
+      "reduced visibility"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch5",
+        "chapter": "Chapter 5",
+        "page": "p. 138"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-adverse-021",
+    "type": "rules",
+    "topic": "adverse-conditions",
+    "subtopic": "lighting",
+    "question": "Apart from the night-time period, when does the law require you to switch on your headlights?",
+    "choices": [
+      "When you cannot clearly see a person on the highway 300 metres ahead",
+      "When you cannot clearly see a person 150 metres ahead",
+      "Whenever your windscreen wipers are running",
+      "Only once other drivers have switched theirs on"
+    ],
+    "correctChoice": 0,
+    "explanation": "Headlights and rear lamps are required from half an hour after sunset to half an hour before sunrise, and at any other time when fog, rain, snow or another atmospheric condition — or insufficient light — makes a person on the highway not clearly discernible at 300 metres. This is a legal requirement under the Motor Vehicle Act, not a recommendation.",
+    "incorrectChoiceExplanations": [
+      null,
+      "150 metres is the distance for dimming your high beams for an approaching vehicle, not the lighting trigger.",
+      "Rain heavy enough for wipers often triggers the rule, but the wipers are not the legal test.",
+      "The duty is yours and does not depend on what other drivers do."
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "lighting",
+      "reduced visibility"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch5",
+        "chapter": "Chapter 5",
+        "page": "p. 136"
+      },
+      {
+        "sourceId": "ns-mva",
+        "section": "s. 178"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
     "lawVersion": "mva"
   },
   {
@@ -383,9 +810,16 @@
       "Sharp steering inputs with a deflated tyre can flip or spin the car."
     ],
     "difficulty": "medium",
-    "tags": ["emergencies", "tyres"],
+    "tags": [
+      "emergencies",
+      "tyres"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 144" }
+      {
+        "sourceId": "ns-handbook-ch5",
+        "chapter": "Chapter 5",
+        "page": "p. 144"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -412,9 +846,16 @@
       "Deliberately striking the curb at speed risks losing control entirely."
     ],
     "difficulty": "hard",
-    "tags": ["emergencies", "brakes"],
+    "tags": [
+      "emergencies",
+      "brakes"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 144" }
+      {
+        "sourceId": "ns-handbook-ch5",
+        "chapter": "Chapter 5",
+        "page": "p. 144"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -441,9 +882,16 @@
       "Extra speed makes the return to the pavement more violent, not less."
     ],
     "difficulty": "medium",
-    "tags": ["emergencies", "recovery"],
+    "tags": [
+      "emergencies",
+      "recovery"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 146" }
+      {
+        "sourceId": "ns-handbook-ch5",
+        "chapter": "Chapter 5",
+        "page": "p. 146"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -470,10 +918,20 @@
       "The period is 24 hours."
     ],
     "difficulty": "medium",
-    "tags": ["collisions", "reporting"],
+    "tags": [
+      "collisions",
+      "reporting"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-landing", "note": "Amendment: property damage of $2,000 or more must be reported" },
-      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 149" }
+      {
+        "sourceId": "ns-handbook-landing",
+        "note": "Amendment: property damage of $2,000 or more must be reported"
+      },
+      {
+        "sourceId": "ns-handbook-ch5",
+        "chapter": "Chapter 5",
+        "page": "p. 149"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -500,9 +958,16 @@
       "You cannot wait for your insurer; the duty to exchange information and assist is immediate."
     ],
     "difficulty": "medium",
-    "tags": ["collisions", "reporting"],
+    "tags": [
+      "collisions",
+      "reporting"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 149" }
+      {
+        "sourceId": "ns-handbook-ch5",
+        "chapter": "Chapter 5",
+        "page": "p. 149"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -529,9 +994,17 @@
       "Notifying your insurer does not discharge the duty to notify the owner or the police."
     ],
     "difficulty": "medium",
-    "tags": ["collisions", "reporting", "parking"],
+    "tags": [
+      "collisions",
+      "reporting",
+      "parking"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 150" }
+      {
+        "sourceId": "ns-handbook-ch5",
+        "chapter": "Chapter 5",
+        "page": "p. 150"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -558,9 +1031,17 @@
       "Nothing you have in the car can be relied on to insulate you from a live line."
     ],
     "difficulty": "hard",
-    "tags": ["emergencies", "power lines", "winter"],
+    "tags": [
+      "emergencies",
+      "power lines",
+      "winter"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch5", "chapter": "Chapter 5", "page": "p. 147" }
+      {
+        "sourceId": "ns-handbook-ch5",
+        "chapter": "Chapter 5",
+        "page": "p. 147"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -587,9 +1068,16 @@
       "Attempting to free the vehicle comes after everyone is clear and a lookout is posted."
     ],
     "difficulty": "medium",
-    "tags": ["emergencies", "railway"],
+    "tags": [
+      "emergencies",
+      "railway"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 82" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 82"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -616,9 +1104,16 @@
       "The horn does nothing to move you off the tracks."
     ],
     "difficulty": "medium",
-    "tags": ["emergencies", "railway"],
+    "tags": [
+      "emergencies",
+      "railway"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 82" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 82"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -645,9 +1140,16 @@
       "Rear-seat occupants must be belted too."
     ],
     "difficulty": "easy",
-    "tags": ["seat belts", "child safety"],
+    "tags": [
+      "seat belts",
+      "child safety"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 117" }
+      {
+        "sourceId": "ns-handbook-ch4",
+        "chapter": "Chapter 4",
+        "page": "p. 117"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -674,12 +1176,24 @@
       "Lap-and-shoulder belts are how child restraints are secured."
     ],
     "difficulty": "easy",
-    "tags": ["child safety", "airbags"],
+    "tags": [
+      "child safety",
+      "airbags"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 120" }
+      {
+        "sourceId": "ns-handbook-ch4",
+        "chapter": "Chapter 4",
+        "page": "p. 120"
+      },
+      {
+        "sourceId": "ns-reg-seat-belt-child-restraint",
+        "citation": "N.S. Reg. 221/2005 amended to N.S. Reg. 188/2020",
+        "section": "s.5(2)"
+      }
     ],
     "legalStatus": "current",
-    "verifiedAt": "2026-08-17",
+    "verifiedAt": "2026-08-19",
     "lawVersion": "mva"
   },
   {
@@ -703,9 +1217,16 @@
       "Boosters are a legal requirement in the circumstances described."
     ],
     "difficulty": "hard",
-    "tags": ["child safety", "booster seats"],
+    "tags": [
+      "child safety",
+      "booster seats"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 117" }
+      {
+        "sourceId": "ns-handbook-ch4",
+        "chapter": "Chapter 4",
+        "page": "p. 117"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -717,7 +1238,12 @@
     "topic": "vehicle-and-driver-safety",
     "subtopic": "tyres",
     "question": "What is the minimum tread depth your tyres should have?",
-    "choices": ["1.5 millimetres", "0.8 millimetres", "3 millimetres", "5 millimetres"],
+    "choices": [
+      "1.5 millimetres",
+      "0.8 millimetres",
+      "3 millimetres",
+      "5 millimetres"
+    ],
     "correctChoice": 0,
     "explanation": "Have a qualified person check your tyres for a tread depth of at least 1.5 millimetres, as well as for bumps, bulges, knots, exposed cords or deep cuts in the tread or sidewall.",
     "incorrectChoiceExplanations": [
@@ -727,9 +1253,16 @@
       "5 mm is close to the depth of a new tyre, not a minimum."
     ],
     "difficulty": "medium",
-    "tags": ["tyres", "vehicle maintenance"],
+    "tags": [
+      "tyres",
+      "vehicle maintenance"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 109" }
+      {
+        "sourceId": "ns-handbook-ch4",
+        "chapter": "Chapter 4",
+        "page": "p. 109"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -756,9 +1289,16 @@
       "A volunteer fire chief's vehicle may display a flashing red light."
     ],
     "difficulty": "hard",
-    "tags": ["vehicle lights", "emergency vehicles"],
+    "tags": [
+      "vehicle lights",
+      "emergency vehicles"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 114" }
+      {
+        "sourceId": "ns-handbook-ch4",
+        "chapter": "Chapter 4",
+        "page": "p. 114"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -785,9 +1325,16 @@
       "The inspection sticker is specifically permitted there."
     ],
     "difficulty": "medium",
-    "tags": ["vehicle safety", "visibility"],
+    "tags": [
+      "vehicle safety",
+      "visibility"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "pp. 114, 124" }
+      {
+        "sourceId": "ns-handbook-ch4",
+        "chapter": "Chapter 4",
+        "page": "pp. 114, 124"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -814,9 +1361,16 @@
       "Adjustment is what makes the restraint effective."
     ],
     "difficulty": "medium",
-    "tags": ["vehicle safety", "driving position"],
+    "tags": [
+      "vehicle safety",
+      "driving position"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 122" }
+      {
+        "sourceId": "ns-handbook-ch4",
+        "chapter": "Chapter 4",
+        "page": "p. 122"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -843,9 +1397,16 @@
       "A single hand at the bottom of the wheel gives almost no control."
     ],
     "difficulty": "easy",
-    "tags": ["driving position", "steering"],
+    "tags": [
+      "driving position",
+      "steering"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 122" }
+      {
+        "sourceId": "ns-handbook-ch4",
+        "chapter": "Chapter 4",
+        "page": "p. 122"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -872,9 +1433,16 @@
       "Weather contributes, but the listed cause is operating too fast for the conditions — a driver decision."
     ],
     "difficulty": "medium",
-    "tags": ["safety", "collisions"],
+    "tags": [
+      "safety",
+      "collisions"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 126" }
+      {
+        "sourceId": "ns-handbook-ch4",
+        "chapter": "Chapter 4",
+        "page": "p. 126"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -901,9 +1469,16 @@
       "No mirror adjustment removes the need for a shoulder check."
     ],
     "difficulty": "easy",
-    "tags": ["blind spots", "lane change"],
+    "tags": [
+      "blind spots",
+      "lane change"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 48" }
+      {
+        "sourceId": "ns-handbook-ch2",
+        "chapter": "Chapter 2",
+        "page": "p. 48"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -930,9 +1505,16 @@
       "A marker is required whenever the load projects more than a metre."
     ],
     "difficulty": "hard",
-    "tags": ["loads", "vehicle safety"],
+    "tags": [
+      "loads",
+      "vehicle safety"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 130" }
+      {
+        "sourceId": "ns-handbook-ch4",
+        "chapter": "Chapter 4",
+        "page": "p. 130"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -959,9 +1541,15 @@
       "Vehicle age does not exempt a vehicle from annual inspection."
     ],
     "difficulty": "easy",
-    "tags": ["vehicle inspection"],
+    "tags": [
+      "vehicle inspection"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 107" }
+      {
+        "sourceId": "ns-handbook-ch4",
+        "chapter": "Chapter 4",
+        "page": "p. 107"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -988,9 +1576,16 @@
       "Defensive driving is about acting before the hazard develops, not reacting after."
     ],
     "difficulty": "easy",
-    "tags": ["defensive driving", "safety"],
+    "tags": [
+      "defensive driving",
+      "safety"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 127" }
+      {
+        "sourceId": "ns-handbook-ch4",
+        "chapter": "Chapter 4",
+        "page": "p. 127"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -1017,13 +1612,425 @@
       "The rule applies at every speed."
     ],
     "difficulty": "easy",
-    "tags": ["vehicle equipment", "driver distraction", "visibility"],
+    "tags": [
+      "vehicle equipment",
+      "driver distraction",
+      "visibility"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 114" },
-      { "sourceId": "ns-mva", "section": "s.184(5)" }
+      {
+        "sourceId": "ns-handbook-ch4",
+        "chapter": "Chapter 4",
+        "page": "p. 114"
+      },
+      {
+        "sourceId": "ns-mva",
+        "section": "s.184(5)"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-safety-015",
+    "type": "rules",
+    "topic": "vehicle-and-driver-safety",
+    "subtopic": "vehicle condition",
+    "question": "Your vehicle passed its annual inspection eight months ago but has since developed a serious fault. What does the Handbook say about driving it?",
+    "choices": [
+      "It is illegal to operate a vehicle in an unfit or dangerous condition",
+      "It may be driven until the next annual inspection falls due",
+      "It may be driven only between sunrise and sunset",
+      "It may be driven if the fault does not affect the brakes"
+    ],
+    "correctChoice": 0,
+    "explanation": "Operating a vehicle in an unfit or dangerous condition is illegal. Passing the annual inspection is not a guarantee that the vehicle will stay roadworthy for the year, which is why the Handbook asks you to check it regularly. A police officer or an inspector appointed by the Minister may inspect your vehicle at any time and order an unsafe one off the road until it is fixed.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The inspection certifies the vehicle on the day it was tested, not for the year ahead.",
+      "There is no daylight exemption for an unsafe vehicle.",
+      "The rule covers the condition of the whole vehicle, not the brakes alone."
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "vehicle safety",
+      "inspection"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch4",
+        "chapter": "Chapter 4",
+        "page": "p. 108"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-safety-016",
+    "type": "rules",
+    "topic": "vehicle-and-driver-safety",
+    "subtopic": "exhaust system",
+    "question": "Why does the Handbook tell you to check the exhaust system, and the floor and trunk, for holes?",
+    "choices": [
+      "Rust holes let rain in and damage the upholstery",
+      "A leak makes the engine use noticeably more fuel",
+      "Poisonous exhaust gases can leak into the passenger compartment",
+      "Holes reduce the ground clearance of the vehicle"
+    ],
+    "correctChoice": 2,
+    "explanation": "A hole in the exhaust is usually noisy or changes the sound of the engine, but the serious danger is poisonous gas. Holes in the exhaust, floor or trunk let toxic fumes seep into the passenger compartment. That matters most in winter, when windows and vents are generally closed.",
+    "incorrectChoiceExplanations": [
+      "Water damage is a nuisance; the Handbook's concern here is toxic gas.",
+      "Fuel use is not the reason the Handbook gives.",
+      null,
+      "Ground clearance is unrelated to holes in the exhaust or floor."
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "vehicle safety",
+      "exhaust"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch4",
+        "chapter": "Chapter 4",
+        "page": "p. 111"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-safety-017",
+    "type": "rules",
+    "topic": "vehicle-and-driver-safety",
+    "subtopic": "emergency flashers",
+    "question": "The Handbook gives examples of when emergency flashers should be used. Which is one of them?",
+    "choices": [
+      "Whenever you park at the side of a residential street",
+      "When your vehicle is stalled in a roadway",
+      "Whenever you are driving in heavy rain",
+      "When another vehicle is overtaking you on a hill"
+    ],
+    "correctChoice": 1,
+    "explanation": "Emergency flashers are for emergency situations. The Handbook gives two examples: a vehicle stalled in a roadway, and a vehicle climbing a hill that cannot hold the minimum posted speed where a sign directs it, such as \"Use 4-way flashers below 70 km/h\". They are not a parking aid and are no substitute for headlights.",
+    "incorrectChoiceExplanations": [
+      "Ordinary parking calls for parking lights or reflectors, not flashers.",
+      null,
+      "Poor visibility calls for headlights; flashers are for an emergency.",
+      "Being overtaken is a normal manoeuvre and needs no flashers."
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "vehicle safety",
+      "lighting"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch4",
+        "chapter": "Chapter 4",
+        "page": "p. 113"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-safety-018",
+    "type": "rules",
+    "topic": "vehicle-and-driver-safety",
+    "subtopic": "seat belts",
+    "question": "How does the Handbook say a seat belt should be worn?",
+    "choices": [
+      "Lap belt across the stomach with the shoulder belt under the arm",
+      "Lap belt left loose so it does not restrict breathing",
+      "Shoulder belt alone, with the lap belt tucked behind you",
+      "Lap belt as low on the hips as possible, shoulder belt clear of face and neck"
+    ],
+    "correctChoice": 3,
+    "explanation": "The lap portion goes as low on the hips as possible and the shoulder portion must not lie across the face or neck. Belts must be kept in good working order and must not be altered in any way that reduces their effectiveness. Belts are worn during pregnancy too, with the lap portion under the abdomen and as low over the hips as possible.",
+    "incorrectChoiceExplanations": [
+      "Across the stomach the belt loads soft tissue instead of the pelvis, and a belt under the arm leaves the upper body unrestrained.",
+      "A loose belt lets the body move before the belt takes any load.",
+      "Both portions are needed; each restrains a different part of the body.",
+      null
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "passenger safety",
+      "seat belts"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch4",
+        "chapter": "Chapter 4",
+        "page": "p. 119"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-safety-019",
+    "type": "rules",
+    "topic": "vehicle-and-driver-safety",
+    "subtopic": "seat belts",
+    "question": "Some drivers argue a seat belt could trap them in a fire or under water. What does the Handbook say about that?",
+    "choices": [
+      "About one injury collision in ten involves fire or submersion",
+      "A belt should be released as soon as a collision begins",
+      "Fewer than 1% of injury collisions involve fire or submersion",
+      "Belts may be left off in vehicles fitted with airbags"
+    ],
+    "correctChoice": 2,
+    "explanation": "Fewer than 1 per cent of injury-producing collisions involve fire or submersion — and in those rare cases wearing a belt greatly increases your chance of staying conscious, which is what lets you get out. Airbags provide extra protection in severe frontal collisions but do not replace a seat belt.",
+    "incorrectChoiceExplanations": [
+      "The Handbook puts the figure below 1 per cent, not near 10.",
+      "Releasing a belt during a collision removes the protection at the moment it is needed.",
+      null,
+      "The Handbook is explicit that airbags do not replace seat belts."
+    ],
+    "difficulty": "hard",
+    "tags": [
+      "passenger safety",
+      "seat belts"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch4",
+        "chapter": "Chapter 4",
+        "page": "p. 116"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-safety-020",
+    "type": "rules",
+    "topic": "vehicle-and-driver-safety",
+    "subtopic": "carrying passengers",
+    "question": "Which of these does the Handbook say you must not do?",
+    "choices": [
+      "Take passengers on or let them off at the side of the road",
+      "Carry passengers in a truck cargo space that has fixed seats",
+      "Let a passenger enter or leave while the vehicle is moving",
+      "Stop at the curb to let a passenger out"
+    ],
+    "correctChoice": 2,
+    "explanation": "Passengers and goods may be taken on or let off only at the curb or side of the road, and no one may enter or leave while the vehicle is moving. Passengers may ride in a truck's cargo space only where seats are securely affixed to the floor or frame, and no one may ride in a travel trailer or mobile home while it is being towed.",
+    "incorrectChoiceExplanations": [
+      "That is exactly where the Handbook says passengers should be taken on and let off.",
+      "This is permitted where the seats are securely affixed to the floor or frame.",
+      null,
+      "Stopping at the curb is the correct way to let someone out."
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "passenger safety",
+      "carrying passengers"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch4",
+        "chapter": "Chapter 4",
+        "page": "p. 120"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-safety-021",
+    "type": "rules",
+    "topic": "vehicle-and-driver-safety",
+    "subtopic": "driving position",
+    "question": "How does the Handbook say your seat should be adjusted?",
+    "choices": [
+      "So your chest is as close to the steering wheel as you can get it",
+      "So your line of vision falls halfway between the top of the wheel and the top of the windshield",
+      "So your leg is straight when a pedal is pressed to the floor",
+      "So you can just see the front of the hood over the wheel"
+    ],
+    "correctChoice": 1,
+    "explanation": "Sit up straight with the small of your back against the seat back. Adjust the seat so your right foot rests on the floor between the pedals with a slight bend in the leg, and so your line of vision falls about halfway between the top of the steering wheel and the top of the windshield. You should not need excessive force to press any pedal to the floor.",
+    "incorrectChoiceExplanations": [
+      "Sitting too close reduces control and puts you nearer the airbag.",
+      null,
+      "A slight bend in the leg is what the Handbook asks for, not a straight leg.",
+      "Seeing the hood is not the reference the Handbook uses."
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "driving position",
+      "vehicle control"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch4",
+        "chapter": "Chapter 4",
+        "page": "p. 121"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-safety-022",
+    "type": "rules",
+    "topic": "vehicle-and-driver-safety",
+    "subtopic": "steering",
+    "question": "Which steering method does the Handbook give for sharp turns and emergencies?",
+    "choices": [
+      "Hand-over-hand, bringing the lower hand up to the top of the wheel",
+      "Letting the wheel slide back through your hands",
+      "Steering with one hand at the top of the wheel",
+      "Shuffling your grip around the wheel as you turn"
+    ],
+    "correctChoice": 0,
+    "explanation": "Use the hand-over-hand method for sharp turns and emergencies, and again to unwind the wheel afterwards. Do not let the wheel slide back through your hands — you have little control over how fast it returns or where it stops, which is especially noticeable in front-wheel-drive vehicles. In normal driving the Handbook asks you to keep your grip in one place rather than shuffling it.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The Handbook warns against this specifically; you lose control of the return.",
+      "One hand gives too little control for a sharp turn or an emergency.",
+      "The Handbook asks you not to shuffle your grip around the wheel."
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "steering",
+      "vehicle control"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch4",
+        "chapter": "Chapter 4",
+        "page": "p. 123"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-safety-023",
+    "type": "rules",
+    "topic": "vehicle-and-driver-safety",
+    "subtopic": "towing",
+    "question": "You have to move a disabled vehicle using another vehicle. What does the Handbook say?",
+    "choices": [
+      "Someone must sit in the towed vehicle and use its brakes to keep the cable tight",
+      "The towed vehicle should be left empty so no one is at risk",
+      "The tow can be used to bump-start the disabled engine",
+      "Emergency flashers should be off so other drivers are not confused"
+    ],
+    "correctChoice": 0,
+    "explanation": "Professional towing is strongly recommended. If you must tow, display warning signals or emergency flashers and make sure the vehicle is securely attached, and someone must sit in the disabled vehicle to work the brakes and keep the tow cable tight. Do not tow a vehicle with power brakes and steering if its engine cannot run, and never try to start a disabled vehicle by towing it.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Someone is needed in the towed vehicle to brake and keep the cable tight.",
+      "The Handbook says towing to start a vehicle is dangerous and can damage both.",
+      "Warning signals or flashers should be displayed, not switched off."
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "towing",
+      "breakdowns"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch4",
+        "chapter": "Chapter 4",
+        "page": "p. 131"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-safety-024",
+    "type": "rules",
+    "topic": "vehicle-and-driver-safety",
+    "subtopic": "vehicle interior",
+    "question": "Why does the Handbook tell you to secure loose objects inside your vehicle?",
+    "choices": [
+      "They can set off the airbag sensors in a collision",
+      "They can slide under a pedal and restrict its operation",
+      "They add enough weight to affect fuel consumption",
+      "They can block the air coming from the heater vents"
+    ],
+    "correctChoice": 1,
+    "explanation": "Loose items can become lodged under the brake or gas pedal and stop it working properly. The same interior check covers keeping seat belts clean, so moisture does not damage the mechanism, and looking for cuts or fraying in the webbing and wear at the anchor points.",
+    "incorrectChoiceExplanations": [
+      "Airbag sensors respond to the impact, not to loose cargo.",
+      null,
+      "Fuel use is not the safety concern here.",
+      "Blocked vents are a comfort issue, not the hazard the Handbook names."
+    ],
+    "difficulty": "easy",
+    "tags": [
+      "vehicle safety",
+      "interior"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch4",
+        "chapter": "Chapter 4",
+        "page": "p. 110"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-reg-001",
+    "type": "rules",
+    "topic": "vehicle-and-driver-safety",
+    "subtopic": "documents to carry",
+    "question": "What documents must be in your vehicle when you are driving?",
+    "choices": [
+      "Vehicle permit, liability insurance card, and safety inspection report",
+      "Driver's licence and vehicle permit only",
+      "Insurance card and registration certificate",
+      "Driver's licence and insurance card only"
+    ],
+    "correctChoice": 0,
+    "explanation": "Three documents must be in the vehicle: the vehicle permit, liability insurance card, and safety inspection report. Your driver's licence must also be carried on your person when driving, but it is separate from the vehicle documents. The vehicle permit must be in the vehicle or in your immediate possession; the insurance card and inspection report must be in the vehicle. These duties are confirmed by Motor Vehicle Act s.18 (permit) and s.204 (insurance).",
+    "incorrectChoiceExplanations": [
+      null,
+      "Missing the liability insurance card and safety inspection report. Both must be in the vehicle, in addition to the vehicle permit.",
+      "Missing the vehicle permit. A registration certificate is issued once when you buy the vehicle; the vehicle permit is the document that must be carried.",
+      "Missing the vehicle permit and safety inspection report. Both must be in the vehicle."
+    ],
+    "difficulty": "easy",
+    "tags": [
+      "vehicle documents",
+      "insurance",
+      "inspection"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch7",
+        "chapter": "Chapter 7",
+        "page": "p. 176"
+      },
+      {
+        "sourceId": "ns-mva",
+        "section": "s.18, s.204"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
     "lawVersion": "mva"
   }
 ]

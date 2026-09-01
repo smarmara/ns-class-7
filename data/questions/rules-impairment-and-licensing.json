@@ -20,12 +20,23 @@
       ".10 is above the legal threshold."
     ],
     "difficulty": "easy",
-    "tags": ["impairment", "alcohol"],
+    "tags": [
+      "impairment",
+      "alcohol"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch6", "chapter": "Chapter 6", "page": "p. 153" }
+      {
+        "sourceId": "ns-handbook-ch6",
+        "chapter": "Chapter 6",
+        "page": "p. 154"
+      },
+      {
+        "sourceId": "ns-mva",
+        "section": "s.279C"
+      }
     ],
     "legalStatus": "current",
-    "verifiedAt": "2026-08-17",
+    "verifiedAt": "2026-08-19",
     "lawVersion": "mva"
   },
   {
@@ -49,9 +60,17 @@
       "'Warn' is a valid result, not a malfunction."
     ],
     "difficulty": "hard",
-    "tags": ["impairment", "alcohol", "suspension"],
+    "tags": [
+      "impairment",
+      "alcohol",
+      "suspension"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch6", "chapter": "Chapter 6", "page": "p. 154" }
+      {
+        "sourceId": "ns-handbook-ch6",
+        "chapter": "Chapter 6",
+        "page": "p. 154"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -78,12 +97,24 @@
       "A lawful demand does not require a warrant."
     ],
     "difficulty": "medium",
-    "tags": ["impairment", "alcohol", "enforcement"],
+    "tags": [
+      "impairment",
+      "alcohol",
+      "enforcement"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch6", "chapter": "Chapter 6", "page": "pp. 154, 156" }
+      {
+        "sourceId": "ns-handbook-ch6",
+        "chapter": "Chapter 6",
+        "page": "pp. 154, 156"
+      },
+      {
+        "sourceId": "ns-mva",
+        "section": "s.279A"
+      }
     ],
     "legalStatus": "current",
-    "verifiedAt": "2026-08-17",
+    "verifiedAt": "2026-08-19",
     "lawVersion": "mva"
   },
   {
@@ -107,9 +138,16 @@
       "Exercise does not speed the liver's processing of alcohol."
     ],
     "difficulty": "easy",
-    "tags": ["impairment", "alcohol"],
+    "tags": [
+      "impairment",
+      "alcohol"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch6", "chapter": "Chapter 6", "page": "p. 154" }
+      {
+        "sourceId": "ns-handbook-ch6",
+        "chapter": "Chapter 6",
+        "page": "p. 154"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -136,9 +174,16 @@
       "The alcohol content of a standard serving is the same for all three."
     ],
     "difficulty": "medium",
-    "tags": ["impairment", "alcohol"],
+    "tags": [
+      "impairment",
+      "alcohol"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch6", "chapter": "Chapter 6", "page": "p. 154" }
+      {
+        "sourceId": "ns-handbook-ch6",
+        "chapter": "Chapter 6",
+        "page": "p. 154"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -165,9 +210,17 @@
       "Paying the fine does not restore driving privileges."
     ],
     "difficulty": "medium",
-    "tags": ["impairment", "alcohol", "penalties"],
+    "tags": [
+      "impairment",
+      "alcohol",
+      "penalties"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch6", "chapter": "Chapter 6", "page": "p. 157" }
+      {
+        "sourceId": "ns-handbook-ch6",
+        "chapter": "Chapter 6",
+        "page": "p. 157"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -194,9 +247,16 @@
       "The absence of a warning label does not mean a substance is safe to drive on — ask your pharmacist when in doubt."
     ],
     "difficulty": "easy",
-    "tags": ["impairment", "drugs"],
+    "tags": [
+      "impairment",
+      "drugs"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch6", "chapter": "Chapter 6", "page": "pp. 155-156" }
+      {
+        "sourceId": "ns-handbook-ch6",
+        "chapter": "Chapter 6",
+        "page": "pp. 155-156"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -223,9 +283,16 @@
       "Holding the device is the problem, whatever method you use to compose the message."
     ],
     "difficulty": "medium",
-    "tags": ["distracted driving", "cell phones"],
+    "tags": [
+      "distracted driving",
+      "cell phones"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-mva", "section": "s.100D(1), s.100D(2)", "note": "Point table s.279 item 15 assigns 4 demerit points" }
+      {
+        "sourceId": "ns-mva",
+        "section": "s.100D(1), s.100D(2)",
+        "note": "Point table s.279 item 15 assigns 4 demerit points"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -235,29 +302,37 @@
     "id": "rules-impair-010",
     "type": "rules",
     "topic": "impairment",
-    "subtopic": "distracted driving",
-    "question": "According to the Driver's Handbook, what is the most common cause of highway crashes in Nova Scotia?",
+    "subtopic": "collision causes",
+    "question": "The Handbook lists the common causes of highway crashes in Nova Scotia alongside what a driver should do about each. What does it give as the answer to the alcohol-related cause?",
     "choices": [
-      "Driver inattention — followed by failure to yield the right of way and then driver distraction",
-      "Alcohol",
-      "Operating too fast for the conditions",
-      "Poor weather and road conditions"
+      "Allow one hour for each drink before driving",
+      "Don't drink and drive, and watch for unusual driving behaviour in others",
+      "Drive more slowly than usual after drinking",
+      "Keep to familiar roads after drinking"
     ],
-    "correctChoice": 0,
-    "explanation": "The handbook lists the most common causes of highway crashes in Nova Scotia in order of frequency: driver inattention first, then failure to yield the right of way, then driver distraction, followed by driver inexperience, alcohol, and operating too fast for the conditions. Weather and road conditions are not on the list — driver behaviour is the common thread.",
+    "correctChoice": 1,
+    "explanation": "In the Handbook's table of collision causes, the alcohol entry is answered with two things: don't drink and drive, and pay attention and watch for unusual driving behaviour in other drivers. Nova Scotia's zero blood-alcohol rule for novice drivers is a separate and stricter requirement on top of this general advice.",
     "incorrectChoiceExplanations": [
+      "Timing rules of thumb are unreliable; the Handbook does not offer one.",
       null,
-      "Alcohol is a listed cause, but it is not the first one.",
-      "Operating too fast for the conditions is a listed cause, but it appears last in the handbook's list, not first.",
-      "Weather is not among the listed causes; every item on the handbook's list is a driver error."
+      "Reducing speed does not restore judgement, reaction time or coordination.",
+      "A familiar road does not make an impaired driver safe."
     ],
     "difficulty": "medium",
-    "tags": ["driver distraction", "inattention", "crash causes"],
+    "tags": [
+      "driver distraction",
+      "inattention",
+      "crash causes"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 126" }
+      {
+        "sourceId": "ns-handbook-ch4",
+        "chapter": "Chapter 4",
+        "page": "p. 126"
+      }
     ],
     "legalStatus": "current",
-    "verifiedAt": "2026-08-17",
+    "verifiedAt": "2026-08-19",
     "lawVersion": "mva"
   },
   {
@@ -281,10 +356,22 @@
       "Attention cannot be shared — if your attention is not on the road you are no longer driving safely."
     ],
     "difficulty": "medium",
-    "tags": ["driver distraction", "safety", "cell phones"],
+    "tags": [
+      "driver distraction",
+      "safety",
+      "cell phones"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 126" },
-      { "sourceId": "ns-handbook-ch1", "chapter": "Chapter 1", "page": "p. 11" }
+      {
+        "sourceId": "ns-handbook-ch4",
+        "chapter": "Chapter 4",
+        "page": "p. 126"
+      },
+      {
+        "sourceId": "ns-handbook-ch1",
+        "chapter": "Chapter 1",
+        "page": "p. 11"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -311,10 +398,21 @@
       "Keeping the vehicle cool is recommended — a warm cabin makes you drowsy."
     ],
     "difficulty": "medium",
-    "tags": ["fatigue", "highway hypnosis"],
+    "tags": [
+      "fatigue",
+      "highway hypnosis"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch6", "chapter": "Chapter 6", "page": "p. 163" },
-      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 128" }
+      {
+        "sourceId": "ns-handbook-ch6",
+        "chapter": "Chapter 6",
+        "page": "p. 163"
+      },
+      {
+        "sourceId": "ns-handbook-ch4",
+        "chapter": "Chapter 4",
+        "page": "p. 128"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -341,9 +439,17 @@
       "The qualification is two years of licensed experience and no longer being in the GDL program — not an age."
     ],
     "difficulty": "easy",
-    "tags": ["GDL", "learner", "class 7"],
+    "tags": [
+      "GDL",
+      "learner",
+      "class 7"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch1", "chapter": "Chapter 1", "page": "pp. 10, 20" }
+      {
+        "sourceId": "ns-handbook-ch1",
+        "chapter": "Chapter 1",
+        "page": "pp. 10, 20"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -370,13 +476,28 @@
       "A Class 5N holder is still in the GDL program and cannot supervise. Nor can a driver in the restricted individual stage."
     ],
     "difficulty": "medium",
-    "tags": ["GDL", "learner", "class 7"],
+    "tags": [
+      "GDL",
+      "learner",
+      "class 7"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch1", "chapter": "Chapter 1", "page": "pp. 10, 20, 35" },
-      { "sourceId": "ns-handbook-intro-amendments", "page": "p. V", "note": "Restricted individuals cannot be a supervising driver" }
+      {
+        "sourceId": "ns-handbook-ch1",
+        "chapter": "Chapter 1",
+        "page": "pp. 10, 20, 35"
+      },
+      {
+        "sourceId": "ns-handbook-intro-amendments",
+        "page": "p. V"
+      },
+      {
+        "sourceId": "ns-mva",
+        "section": "s. 70A(1)"
+      }
     ],
     "legalStatus": "current",
-    "verifiedAt": "2026-08-17",
+    "verifiedAt": "2026-08-19",
     "lawVersion": "mva"
   },
   {
@@ -400,10 +521,22 @@
       "Novice drivers are held to a stricter standard than fully licensed ones."
     ],
     "difficulty": "easy",
-    "tags": ["GDL", "learner", "alcohol"],
+    "tags": [
+      "GDL",
+      "learner",
+      "alcohol"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch1", "chapter": "Chapter 1", "page": "p. 10" },
-      { "sourceId": "ns-mva", "section": "s.100A(1)", "note": "Consumption of alcohol by novice drivers — concentration exceeding zero" }
+      {
+        "sourceId": "ns-handbook-ch1",
+        "chapter": "Chapter 1",
+        "page": "p. 10"
+      },
+      {
+        "sourceId": "ns-mva",
+        "section": "s.100A(1)",
+        "note": "Consumption of alcohol by novice drivers — concentration exceeding zero"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -430,9 +563,17 @@
       "The validity period does not depend on your age."
     ],
     "difficulty": "medium",
-    "tags": ["GDL", "learner", "class 7"],
+    "tags": [
+      "GDL",
+      "learner",
+      "class 7"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-intro-amendments", "page": "p. VI", "note": "Learner's Licence Expiry — 2 years (previously 1 year)" }
+      {
+        "sourceId": "ns-handbook-intro-amendments",
+        "page": "p. VI",
+        "note": "Learner's Licence Expiry — 2 years (previously 1 year)"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -443,52 +584,75 @@
     "type": "rules",
     "topic": "graduated-licensing",
     "subtopic": "road test waiting period",
-    "question": "How long must a learner normally wait before taking the road test, and how can that be shortened?",
+    "question": "How long must you hold a Class 7 learner's licence before the road test, and how can that be shortened?",
     "choices": [
-      "Six months, reduced to three months by completing an approved driver-training course of at least 25 hours classroom and 10 hours driving",
-      "Three months, with no way to shorten it",
-      "One year, reduced to six months with driver training",
-      "There is no waiting period once you feel ready"
+      "Six months, reduced to three by an approved driver education course",
+      "Nine months, with no reduction available",
+      "Twelve months, reduced to nine by an approved driver education course",
+      "There is no minimum once you feel ready"
     ],
-    "correctChoice": 0,
-    "explanation": "Learners normally have to wait at least six months before taking a road test. You may shorten this to three months by completing an approved driver-training program with a minimum of 25 hours of classroom theory and 10 hours of driving time.",
+    "correctChoice": 2,
+    "explanation": "The minimum practice period is 12 months, counted from the date your learner's licence was issued. It drops to 9 months if you complete a driver education or training course approved by the Registrar of Motor Vehicles and your instructor confirms you are ready for the road test. The six-month and three-month figures printed in older editions of the Driver's Handbook were replaced on 1 April 2016.",
     "incorrectChoiceExplanations": [
+      "That was the rule in older Handbook printings; it changed on 1 April 2016.",
+      "Nine months is the reduced period after approved driver education, not the default.",
       null,
-      "Three months is the reduced period available after driver training, not the default.",
-      "The default wait is six months, not a year.",
-      "There is a mandatory minimum waiting period in the GDL program."
+      "The practice period is a minimum set by the Registry, not a judgement call."
     ],
     "difficulty": "medium",
-    "tags": ["GDL", "learner", "road test"],
+    "tags": [
+      "GDL",
+      "learner",
+      "road test"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch1", "chapter": "Chapter 1", "page": "pp. 12-13, 20" }
+      {
+        "sourceId": "ns-rmv-gdl-system",
+        "section": "Learner's Licence phase — minimum practice period"
+      },
+      {
+        "sourceId": "ns-rmv-who-takes-exam",
+        "section": "Exceptions to the 12 month waiting period"
+      }
     ],
     "legalStatus": "current",
-    "verifiedAt": "2026-08-17",
+    "verifiedAt": "2026-08-19",
     "lawVersion": "mva"
   },
   {
     "id": "rules-gdl-006",
     "type": "rules",
     "topic": "graduated-licensing",
-    "subtopic": "learner demerit points",
-    "question": "How many demerit points will result in a six-month suspension for a Class 7 learner?",
-    "choices": ["Four or more", "Six or more", "Ten or more", "Two or more"],
-    "correctChoice": 0,
-    "explanation": "As a learner, if you get four or more demerit points your driving privileges will be suspended for six months. The suspension delays your road test and your move to the newly licensed stage. Newly licensed (Class 5N) drivers are suspended at six points, and other drivers at ten.",
+    "subtopic": "demerit points",
+    "question": "You hold a Class 7 learner's licence and reach four demerit points. What happens?",
+    "choices": [
+      "Your licence is suspended for six months automatically",
+      "You must attend an interview with a Driver Enhancement Officer, including a re-examination",
+      "You are sent a warning letter and nothing more",
+      "Nothing — points only count once you hold a full licence"
+    ],
+    "correctChoice": 1,
+    "explanation": "On the Registry's point table, four points at the learner stage brings an interview with a Driver Enhancement Officer, and that interview includes a complete driver's re-examination. The thresholds are stage-specific: a newly licensed driver is also interviewed at four points but is suspended for six months at six, while other drivers are interviewed at six and suspended at ten. Points stay on your record for two years from the date of the conviction.",
     "incorrectChoiceExplanations": [
+      "Six points suspends a newly licensed driver; the learner row of the table sets no suspension figure.",
       null,
-      "Six points is the suspension threshold for a newly licensed driver.",
-      "Ten points is the threshold for fully licensed drivers.",
-      "Two points triggers a warning letter for a learner, not a suspension."
+      "The current point table has no warning-letter step.",
+      "Points are assigned to your record from the learner stage onwards."
     ],
     "difficulty": "medium",
-    "tags": ["GDL", "learner", "demerit points"],
+    "tags": [
+      "GDL",
+      "learner",
+      "demerit points"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch1", "chapter": "Chapter 1", "page": "pp. 10, 30" }
+      {
+        "sourceId": "ns-rmv-point-system",
+        "section": "This table shows how the assignment of points would affect you"
+      }
     ],
     "legalStatus": "current",
-    "verifiedAt": "2026-08-17",
+    "verifiedAt": "2026-08-19",
     "lawVersion": "mva"
   },
   {
@@ -512,9 +676,17 @@
       "A Nova Scotia licence is valid throughout the province."
     ],
     "difficulty": "hard",
-    "tags": ["GDL", "learner", "class 7"],
+    "tags": [
+      "GDL",
+      "learner",
+      "class 7"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch1", "chapter": "Chapter 1", "page": "pp. 10, 20" }
+      {
+        "sourceId": "ns-handbook-ch1",
+        "chapter": "Chapter 1",
+        "page": "pp. 10, 20"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -541,9 +713,17 @@
       "There are narrow exemptions, listed in the handbook."
     ],
     "difficulty": "hard",
-    "tags": ["GDL", "learner", "driving school"],
+    "tags": [
+      "GDL",
+      "learner",
+      "driving school"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch1", "chapter": "Chapter 1", "page": "p. 20" }
+      {
+        "sourceId": "ns-handbook-ch1",
+        "chapter": "Chapter 1",
+        "page": "p. 20"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -556,13 +736,13 @@
     "subtopic": "newly licensed curfew",
     "question": "A newly licensed (Class 5N) driver is subject to a curfew. What are the hours and the exception?",
     "choices": [
-      "No driving between midnight and 5:00 am, unless accompanied by an experienced driver in the front seat or exempted by the Registry of Motor Vehicles",
+      "No driving between midnight and 5:00 am, unless a supervising driver is with you or you are exempted",
       "No driving between 11:00 pm and 6:00 am, with no exceptions",
       "No driving between midnight and 5:00 am, with no exceptions",
       "There is no curfew at the newly licensed stage"
     ],
     "correctChoice": 0,
-    "explanation": "A Class 5N driver cannot drive between midnight and 5:00 am unless accompanied by an experienced driver who has held a Class 5 licence for at least two years and is not still in the GDL system — seated in the front seat — or unless exempted by the Registry of Motor Vehicles. Drivers who must travel to and from work in those hours can apply for an exemption, for a fee.",
+    "explanation": "A Class 5N driver cannot drive between midnight and 5:00 am unless accompanied by a supervising driver — someone who has held a Class 5 licence for at least two years and is no longer in the GDL program — seated in the front seat, or unless exempted by the Registry of Motor Vehicles. Drivers who must travel to and from work in those hours can apply for an exemption, for a fee. Since 2015 the role has been called a supervising driver rather than an experienced driver, and a restricted individual (Class 5R) may not act as one.",
     "incorrectChoiceExplanations": [
       null,
       "The curfew runs from midnight to 5:00 am.",
@@ -570,12 +750,24 @@
       "The curfew is one of the three main Class 5N restrictions."
     ],
     "difficulty": "medium",
-    "tags": ["GDL", "newly licensed", "curfew"],
+    "tags": [
+      "GDL",
+      "newly licensed",
+      "curfew"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch1", "chapter": "Chapter 1", "page": "pp. 16-17, 21-22" }
+      {
+        "sourceId": "ns-handbook-ch1",
+        "chapter": "Chapter 1",
+        "page": "pp. 16-17, 21-22"
+      },
+      {
+        "sourceId": "ns-handbook-intro-amendments",
+        "page": "p. V"
+      }
     ],
     "legalStatus": "current",
-    "verifiedAt": "2026-08-17",
+    "verifiedAt": "2026-08-19",
     "lawVersion": "mva"
   },
   {
@@ -599,9 +791,17 @@
       "The no-passengers rule applies to the learner stage, not the newly licensed stage."
     ],
     "difficulty": "medium",
-    "tags": ["GDL", "newly licensed", "passengers"],
+    "tags": [
+      "GDL",
+      "newly licensed",
+      "passengers"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch1", "chapter": "Chapter 1", "page": "pp. 16, 20-21" }
+      {
+        "sourceId": "ns-handbook-ch1",
+        "chapter": "Chapter 1",
+        "page": "pp. 16, 20-21"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -628,9 +828,16 @@
       "There is no daylight-only restriction tied to highway type."
     ],
     "difficulty": "medium",
-    "tags": ["GDL", "highways"],
+    "tags": [
+      "GDL",
+      "highways"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch1", "chapter": "Chapter 1", "page": "p. 20" }
+      {
+        "sourceId": "ns-handbook-ch1",
+        "chapter": "Chapter 1",
+        "page": "p. 20"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -657,10 +864,20 @@
       "The GDL program applies to all new drivers, whatever their age."
     ],
     "difficulty": "medium",
-    "tags": ["GDL", "restricted individual"],
+    "tags": [
+      "GDL",
+      "restricted individual"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-intro-amendments", "page": "p. V", "note": "Third stage added effective 2015-04-01" },
-      { "sourceId": "ns-handbook-landing", "note": "Amendment: Restricted Individual stage" }
+      {
+        "sourceId": "ns-handbook-intro-amendments",
+        "page": "p. V",
+        "note": "Third stage added effective 2015-04-01"
+      },
+      {
+        "sourceId": "ns-handbook-landing",
+        "note": "Amendment: Restricted Individual stage"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -687,9 +904,15 @@
       "The stage carries two real restrictions and lasts two full years."
     ],
     "difficulty": "hard",
-    "tags": ["GDL", "restricted individual"],
+    "tags": [
+      "GDL",
+      "restricted individual"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-intro-amendments", "page": "p. V" }
+      {
+        "sourceId": "ns-handbook-intro-amendments",
+        "page": "p. V"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -716,11 +939,27 @@
       "The minimum age is 16, not 17."
     ],
     "difficulty": "easy",
-    "tags": ["GDL", "learner", "eligibility", "class 7"],
+    "tags": [
+      "GDL",
+      "learner",
+      "eligibility",
+      "class 7"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch1", "chapter": "Chapter 1", "page": "pp. 6-7" },
-      { "sourceId": "ns-class7-test-page", "note": "Eligibility: you're 16 or older; written consent if 16 or 17" },
-      { "sourceId": "ns-reg-classification-drivers-licences", "section": "Class 7", "note": "Age 18 (16 with parental or guardian consent)" }
+      {
+        "sourceId": "ns-handbook-ch1",
+        "chapter": "Chapter 1",
+        "page": "pp. 6-7"
+      },
+      {
+        "sourceId": "ns-class7-test-page",
+        "note": "Eligibility: you're 16 or older; written consent if 16 or 17"
+      },
+      {
+        "sourceId": "ns-reg-classification-drivers-licences",
+        "section": "Class 7",
+        "note": "Age 18 (16 with parental or guardian consent)"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -747,10 +986,22 @@
       "You must complete and pass a vision test to get your learner's licence."
     ],
     "difficulty": "hard",
-    "tags": ["GDL", "vision", "class 7"],
+    "tags": [
+      "GDL",
+      "vision",
+      "class 7"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch6", "chapter": "Chapter 6", "page": "p. 162" },
-      { "sourceId": "ns-handbook-ch1", "chapter": "Chapter 1", "page": "pp. 8-9" }
+      {
+        "sourceId": "ns-handbook-ch6",
+        "chapter": "Chapter 6",
+        "page": "p. 162"
+      },
+      {
+        "sourceId": "ns-handbook-ch1",
+        "chapter": "Chapter 1",
+        "page": "pp. 8-9"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -777,9 +1028,17 @@
       "A valid out-of-jurisdiction licence lets you drive for the first 90 days."
     ],
     "difficulty": "medium",
-    "tags": ["licensing", "new residents", "halifax"],
+    "tags": [
+      "licensing",
+      "new residents",
+      "halifax"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch1", "chapter": "Chapter 1", "page": "p. 4" }
+      {
+        "sourceId": "ns-handbook-ch1",
+        "chapter": "Chapter 1",
+        "page": "p. 4"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -806,9 +1065,17 @@
       "A photocopy is not the licence."
     ],
     "difficulty": "easy",
-    "tags": ["GDL", "learner", "class 7"],
+    "tags": [
+      "GDL",
+      "learner",
+      "class 7"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch1", "chapter": "Chapter 1", "page": "pp. 9, 21" }
+      {
+        "sourceId": "ns-handbook-ch1",
+        "chapter": "Chapter 1",
+        "page": "pp. 9, 21"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -835,12 +1102,213 @@
       "The amendment specifically permits upgrading during the restricted individual stage, before you exit the program."
     ],
     "difficulty": "hard",
-    "tags": ["GDL", "restricted individual", "licence classes"],
+    "tags": [
+      "GDL",
+      "restricted individual",
+      "licence classes"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-intro-amendments", "page": "p. V", "note": "No upgrade while a learner or Newly Licensed Driver" }
+      {
+        "sourceId": "ns-handbook-intro-amendments",
+        "page": "p. V",
+        "note": "No upgrade while a learner or Newly Licensed Driver"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-gdl-019",
+    "type": "rules",
+    "topic": "graduated-licensing",
+    "subtopic": "newly licensed stage",
+    "question": "You have passed your road test and hold a Class 5N licence. How long must you stay at this stage?",
+    "choices": [
+      "At least six months",
+      "At least one year",
+      "At least two years",
+      "Until you turn 21"
+    ],
+    "correctChoice": 2,
+    "explanation": "A newly licensed driver holds Class 5N for at least two full years. The Motor Vehicle Act defines a newly licensed driver as someone with less than two years of experience as a licensed driver, not counting time held on a Class 7 or Class 8 licence — so practice as a learner does not count towards it. If your licence is suspended during this stage, the two-year period starts again from the date it is restored.",
+    "incorrectChoiceExplanations": [
+      "Six months is roughly the learner-stage waiting period, not the newly licensed stage.",
+      "One year is shorter than the Act allows.",
+      null,
+      "The stage is defined by driving experience, not by your age."
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "gdl",
+      "licence stages"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch1",
+        "chapter": "Chapter 1",
+        "page": "pp. 16, 21"
+      },
+      {
+        "sourceId": "ns-mva",
+        "section": "s. 70A"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-gdl-020",
+    "type": "rules",
+    "topic": "graduated-licensing",
+    "subtopic": "exiting GDL",
+    "question": "What must you do to finish the Graduated Driver Licensing program and hold a full Class 5 licence?",
+    "choices": [
+      "Simply wait five years from your road test date",
+      "Hold 5N for two years, complete driver training, then finish the restricted stage",
+      "Pass a second road test after you turn 21",
+      "Nothing — the full licence is issued automatically"
+    ],
+    "correctChoice": 1,
+    "explanation": "Since April 2015 the program has had three stages. You must hold Class 5N for at least two years, complete an approved driver-training program and register the certificate with the Registry, and then complete the two-year restricted individual stage (Class 5R with condition 47). The Motor Vehicle Act sets the same two conditions for removing newly licensed status: two years of experience and a recognised driver improvement program. If you do not complete these steps you stay in the GDL program indefinitely, with its restrictions still applying.",
+    "incorrectChoiceExplanations": [
+      "Time alone does not remove the restrictions; the training and the restricted stage are required.",
+      null,
+      "There is no second road test, and progression does not depend on your age.",
+      "Nothing is automatic — you must complete the steps or remain in the program."
+    ],
+    "difficulty": "hard",
+    "tags": [
+      "gdl",
+      "licence stages"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-intro-amendments",
+        "page": "pp. V–VI"
+      },
+      {
+        "sourceId": "ns-mva",
+        "section": "s. 70A(3)"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-gdl-021",
+    "type": "rules",
+    "topic": "graduated-licensing",
+    "subtopic": "gdl restrictions",
+    "question": "Which restriction applies at every stage of the Graduated Driver Licensing program?",
+    "choices": [
+      "A midnight-to-5:00 am curfew",
+      "Zero alcohol in your body while driving",
+      "A ban on driving 100-series highways",
+      "A limit of one passenger in the front seat"
+    ],
+    "correctChoice": 1,
+    "explanation": "Zero alcohol applies at all three stages — learner, newly licensed and restricted individual — and at the restricted stage it extends to zero drugs as well. It does not end when you pass the road test. The curfew and the front-seat passenger limit belong to the newly licensed stage only, and a learner may carry no passenger other than the supervising driver.",
+    "incorrectChoiceExplanations": [
+      "The curfew applies at the newly licensed stage, not to learners or restricted drivers.",
+      null,
+      "No GDL stage restricts which highways you may use.",
+      "The one-passenger front-seat limit is a newly licensed restriction."
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "gdl",
+      "alcohol"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch1",
+        "chapter": "Chapter 1",
+        "page": "pp. 10, 16, 21"
+      },
+      {
+        "sourceId": "ns-handbook-intro-amendments",
+        "page": "p. V"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-impair-012",
+    "type": "rules",
+    "topic": "impairment",
+    "subtopic": "emotional and physical stress",
+    "question": "You are angry after an argument and need to drive home. What does the Handbook advise?",
+    "choices": [
+      "Stay off the road until you can give driving your full attention",
+      "Drive slowly to calm down before merging into traffic",
+      "Turn on the radio to distract yourself from the anger",
+      "Drive home quickly so the drive is over sooner"
+    ],
+    "correctChoice": 0,
+    "explanation": "If you are angry or excited, take a deep breath and, if necessary, take a short walk. Stay off the road until you can give driving your full attention. Strong emotions and driving do not mix well — mistakes can and do happen.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Driving slowly while angry does not remove the impairment; the Handbook says to stay off the road.",
+      "A radio is itself a distraction and does not address the emotional impairment.",
+      "Rushing home while angry increases risk; the Handbook says to stay off the road until you can focus."
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "impairment",
+      "emotional stress",
+      "fatigue"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch6",
+        "chapter": "Chapter 6",
+        "page": "p. 161"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "rules-impair-013",
+    "type": "rules",
+    "topic": "impairment",
+    "subtopic": "medical fitness to drive",
+    "question": "You have developed a medical condition that may affect your ability to drive safely. What may Service Nova Scotia require?",
+    "choices": [
+      "A Driver's Medical Examination Report from a physician",
+      "A note from a pharmacist confirming your medication",
+      "A statutory declaration that you are fit to drive",
+      "Nothing — medical conditions do not affect your licence"
+    ],
+    "correctChoice": 0,
+    "explanation": "If you have any medical condition that may interfere with the safe operation of a motor vehicle, you may need to see a physician for a Driver's Medical Examination Report. Service Nova Scotia may refuse to issue or renew a driver's licence if there are identified concerns with your ability to operate a motor vehicle.",
+    "incorrectChoiceExplanations": [
+      null,
+      "A pharmacist's note does not address fitness to drive; a physician's report is what the program requires.",
+      "A statutory declaration is not the mechanism the licensing program uses to assess medical fitness.",
+      "Medical conditions that affect safe operation are exactly what the licensing program reviews."
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "impairment",
+      "medical fitness",
+      "licensing"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch6",
+        "chapter": "Chapter 6",
+        "page": "pp. 159-160"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
     "lawVersion": "mva"
   }
 ]

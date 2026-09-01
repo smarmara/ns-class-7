@@ -1,0 +1,141 @@
+/* =========================================================================
+   Practice exam — the same viewport-first architecture as practice, with
+   the exam chrome the official format requires and none of the reward
+   chrome.
+   ========================================================================= */
+
+.exam {
+  gap: var(--space-3);
+}
+
+.exam-bar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 0;
+  background: none;
+  border: none;
+  min-height: 40px;
+}
+
+.exam-bar-id {
+  display: grid;
+  flex: 1;
+  min-width: 0;
+}
+
+.exam-section-name {
+  font-size: var(--text-body-sm);
+  font-weight: var(--weight-strong);
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.exam-part {
+  font-size: var(--text-micro);
+  color: var(--text-muted);
+}
+
+.exam-qcount {
+  font-size: var(--text-caption);
+  font-weight: var(--weight-strong);
+  font-variant-numeric: tabular-nums;
+  color: var(--text-muted);
+}
+
+/* The timer is exam-critical, so it stays legible and tabular; `data-low`
+   raises the contrast rather than relying on colour alone — the digits
+   themselves are the primary signal. */
+.exam-timer {
+  font-variant-numeric: tabular-nums;
+  font-weight: var(--weight-strong);
+  font-size: var(--text-body-sm);
+  padding: 5px 10px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+  color: var(--text);
+}
+.exam-timer[data-low='true'] {
+  background: var(--bad-soft);
+  color: var(--bad);
+}
+
+.exam-actions {
+  display: flex;
+  gap: var(--space-2);
+}
+.exam-actions .btn {
+  flex: 1;
+  margin: 0;
+  min-height: 44px;
+}
+
+.exam-nav {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.exam-nav-label {
+  font-size: var(--text-micro);
+  color: var(--text-muted);
+}
+
+/* A compact two-row pad rather than a card full of buttons: it stays on
+   screen, so no required navigation is hidden to win vertical space. */
+.exam-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 4px;
+}
+
+.exam-grid button {
+  aspect-ratio: 1;
+  min-height: 28px;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--text-muted);
+  font: inherit;
+  font-size: 0.7rem;
+  font-weight: var(--weight-medium);
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+}
+
+/* Answered state carries a filled surface *and* an accessible label
+   ("Question 4, answered"), never colour alone. */
+.exam-grid button[data-answered='true'] {
+  background: var(--accent-soft);
+  border-color: var(--accent-soft);
+  color: var(--accent);
+  font-weight: var(--weight-strong);
+}
+
+.exam-grid button[aria-current='true'] {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+  color: var(--text);
+}
+
+@media (max-height: 820px) {
+  .exam {
+    gap: var(--space-2);
+  }
+  .exam-grid {
+    gap: 3px;
+  }
+  .exam-grid button {
+    min-height: 22px;
+  }
+}
+
+@media (min-width: 900px) {
+  .exam {
+    max-width: 620px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}

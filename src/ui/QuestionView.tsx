@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { TOPIC_LABELS, getSource, getSignMeta } from '@/content';
 import type { Question, SourceReference } from '@/content/types';
 import {
@@ -7,6 +8,7 @@ import {
   type PreparedQuestion,
 } from '@/engine/quiz/selection';
 import { SignArt } from '@/signs/SignArt';
+import { CorrectIcon, ExternalIcon, IncorrectIcon } from './icons';
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
 
@@ -26,8 +28,27 @@ interface QuestionViewProps {
   onSelect: (displayIndex: number) => void;
   questionNumber?: number;
   questionTotal?: number;
+  /** Practice: show a prominent Continue action inside the feedback panel. */
+  onContinue?: () => void;
+  continueLabel?: string;
+  /** XP earned by this answer, shown in the feedback panel. Never negative. */
+  xpEarned?: number;
+  /**
+   * Practice exams suppress XP and other reward chrome so an exam feels like an
+   * exam. Progress is still recorded and reported after submission.
+   */
+  quiet?: boolean;
 }
 
+/**
+ * The question itself: stem, optional artwork, answers, and — once answered —
+ * a compact feedback panel.
+ *
+ * The layout is deliberately flat. A normal question has to fit a phone
+ * viewport without scrolling, and every nested card costs ~32px of padding
+ * that buys nothing. Sign artwork is sized against the *available height*
+ * rather than a fixed canvas, so it gives way before answer text does.
+ */
 export function QuestionView({
   prepared,
   selected,
@@ -35,6 +56,10 @@ export function QuestionView({
   onSelect,
   questionNumber,
   questionTotal,
+  onContinue,
+  continueLabel = 'Continue',
+  xpEarned,
+  quiet = false,
 }: QuestionViewProps) {
   const { question } = prepared;
   const choices = displayChoices(prepared);
@@ -42,6 +67,7 @@ export function QuestionView({
   const correctIndex = correctDisplayIndex(prepared);
   const marked = reveal !== 'hidden' && selected !== null;
   const gotItRight = marked && selected === correctIndex;
+  const hasArtwork = Boolean(question.signId);
 
   const groupLabel =
     questionNumber && questionTotal
@@ -49,25 +75,21 @@ export function QuestionView({
       : question.question;
 
   return (
-    <div>
-      <div className="question-meta">
-        <span className="chip chip-accent">{TOPIC_LABELS[question.topic] ?? question.topic}</span>
-        <span className="chip">{question.difficulty}</span>
-        {question.type === 'sign' && <span className="chip">Road sign</span>}
-      </div>
-
+    <div className="question" data-artwork={hasArtwork}>
       <p className="question-stem" id={`stem-${question.id}`}>
         {question.question}
       </p>
 
       {question.signId && (
         <div className="sign-stage">
-          <SignArt signId={question.signId} size={168} />
+          {/* Rendered at its natural aspect ratio and never filtered or
+              recoloured — official artwork must appear exactly as issued. */}
+          <SignArt signId={question.signId} size={220} />
         </div>
       )}
 
       <fieldset className="choices" aria-describedby={`stem-${question.id}`}>
-        <legend>{groupLabel}</legend>
+        <legend className="sr-only">{groupLabel}</legend>
         {choices.map((choice, i) => {
           const state = choiceState(i, selected, correctIndex, reveal);
           const signId = choiceSignIds?.[i];
@@ -90,18 +112,24 @@ export function QuestionView({
                 {signId ? (
                   <>
                     <span className="choice-sign">
-                      <SignArt signId={signId} size={104} decorative />
+                      <SignArt signId={signId} size={96} decorative />
                     </span>
                     <span className="sr-only">{choice}</span>
                   </>
                 ) : (
                   choice
                 )}
+                {/* State is never colour alone: an icon and a worded verdict
+                    carry it too. */}
                 {state === 'correct' && (
-                  <span className="choice-verdict">✓ Correct answer</span>
+                  <span className="choice-verdict">
+                    <CorrectIcon /> Correct answer
+                  </span>
                 )}
                 {state === 'incorrect' && (
-                  <span className="choice-verdict">✗ Your answer — incorrect</span>
+                  <span className="choice-verdict">
+                    <IncorrectIcon /> Your answer — incorrect
+                  </span>
                 )}
                 {why && <span className="choice-why">{why}</span>}
               </span>
@@ -110,17 +138,89 @@ export function QuestionView({
         })}
       </fieldset>
 
-      {marked && (
-        <div className="section-gap">
-          <p className="verdict" data-correct={gotItRight} role="status">
-            <span className="verdict-icon" aria-hidden="true">
-              {gotItRight ? '✓' : '✗'}
+      {marked && reveal === 'immediate' && (
+        <FeedbackPanel
+          question={question}
+          correct={gotItRight}
+          {...(quiet ? {} : { xpEarned: xpEarned ?? 0 })}
+          {...(onContinue ? { onContinue, continueLabel } : {})}
+        />
+      )}
+
+      {marked && reveal === 'review' && (
+        <div className="feedback" data-correct={gotItRight}>
+          <div className="feedback-head">
+            <span className="feedback-verdict" data-correct={gotItRight}>
+              {gotItRight ? <CorrectIcon /> : <IncorrectIcon />}
+              {gotItRight ? 'Correct' : 'Not quite'}
             </span>
-            {gotItRight ? 'Correct' : 'Not quite'}
-          </p>
-          <Explanation question={question} />
+          </div>
+          <p className="feedback-body">{question.explanation}</p>
+          <SourceRefs refs={question.sourceRefs} />
         </div>
       )}
+    </div>
+  );
+}
+
+/**
+ * Compact feedback.
+ *
+ * Answering must not make the page lurch: the panel is sized for a normal
+ * explanation, and anything longer collapses behind "More detail" rather than
+ * pushing Continue off the bottom of the screen. Wording is factual either way
+ * — a wrong answer gets an explanation, never a penalty.
+ */
+export function FeedbackPanel({
+  question,
+  correct,
+  xpEarned,
+  onContinue,
+  continueLabel = 'Continue',
+}: {
+  question: Question;
+  correct: boolean;
+  xpEarned?: number;
+  onContinue?: () => void;
+  continueLabel?: string;
+}) {
+  const [expanded, setExpanded] = useState(false);
+  const explanation = question.explanation;
+  const isLong = explanation.length > 180;
+  // Trim trailing punctuation before the ellipsis so the truncation does not
+  // read as "speed...." where the cut lands after a full stop.
+  const shown = isLong && !expanded
+    ? `${explanation.slice(0, 165).replace(/[\s.,;:]+$/, '')}…`
+    : explanation;
+
+  return (
+    <div className="feedback" data-correct={correct} role="status">
+      <div className="feedback-head">
+        <span className="feedback-verdict" data-correct={correct}>
+          {correct ? <CorrectIcon /> : <IncorrectIcon />}
+          {correct ? 'Correct' : 'Not quite'}
+        </span>
+        {typeof xpEarned === 'number' && xpEarned > 0 && (
+          <span className="feedback-xp">+{xpEarned} XP</span>
+        )}
+      </div>
+
+      <p className="feedback-body">{shown}</p>
+
+      {isLong && !expanded && (
+        <button type="button" className="feedback-more" onClick={() => setExpanded(true)}>
+          More detail
+        </button>
+      )}
+
+      <div className="feedback-actions">
+        <SourceRefs refs={question.sourceRefs} compact />
+        {onContinue && (
+          <button type="button" className="btn feedback-continue" onClick={onContinue}>
+            {continueLabel}
+          </button>
+        )}
+      </div>
     </div>
   );
 }
@@ -136,8 +236,31 @@ export function Explanation({ question }: { question: Question }) {
   );
 }
 
-export function SourceRefs({ refs }: { refs: SourceReference[] }) {
+/**
+ * Official sources stay one tap away everywhere. In feedback they collapse to
+ * a single compact link so transparency costs no vertical space on a phone.
+ */
+export function SourceRefs({ refs, compact = false }: { refs: SourceReference[]; compact?: boolean }) {
   if (refs.length === 0) return null;
+
+  if (compact) {
+    const first = refs[0]!;
+    const source = getSource(first.sourceId);
+    const where = [first.section, first.chapter, first.page].filter(Boolean).join(', ');
+    return (
+      <a
+        className="source-link"
+        href={first.url ?? source?.url}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Official source
+        {where && <span className="sr-only"> — {where}</span>}
+        <ExternalIcon />
+      </a>
+    );
+  }
+
   return (
     <div className="sources">
       <h4>Official source</h4>
@@ -168,6 +291,11 @@ export function SourceRefs({ refs }: { refs: SourceReference[] }) {
 export function SignCaption({ signId }: { signId: string }) {
   const meta = getSignMeta(signId);
   return <>{meta?.label ?? signId}</>;
+}
+
+/** The topic label for a question, used by the compact quiz header. */
+export function questionTopicLabel(question: Question): string {
+  return TOPIC_LABELS[question.topic] ?? question.topic;
 }
 
 function choiceState(

@@ -1,87 +1,133 @@
 name: CI
 
+# Validation only. This workflow never publishes anything — deployment lives in
+# deploy-pages.yml and runs solely from the default branch.
 on:
-  push:
-    branches: [main]
   pull_request:
+  push:
+    branches-ignore:
+      - main
   workflow_dispatch:
+  schedule:
+    # Weekly source sweep, so a change in Nova Scotia law or guidance is noticed
+    # even during a quiet period with no pull requests.
+    - cron: '17 9 * * 1'
 
-env:
-  CI: true
-  NODE_VERSION: 22
-  PNPM_VERSION: 10.17.1
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  check:
-    name: Lint, validate, test and build
+  verify:
+    name: Verify
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Set up pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: ${{ env.PNPM_VERSION }}
-
-      - name: Set up Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-          cache: pnpm
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Lint
-        run: pnpm lint
-
-      - name: Validate content
-        run: pnpm content:validate
-
-      - name: Unit tests
-        run: pnpm test
-
-      - name: Build
-        run: pnpm build
-
-      - name: Check official sources
-        # Fetches every monitored government source and fails the build if any
-        # has changed (or could not be fetched). A change here is a signal for
-        # a maintainer to review the diff report — never auto-promoted content.
-        run: pnpm sources:check:ci
-
-  e2e:
-    name: End-to-end tests
-    runs-on: ubuntu-latest
-    needs: check
     timeout-minutes: 30
+
     steps:
       - uses: actions/checkout@v4
 
       - name: Set up pnpm
+        # Version comes from `packageManager` in package.json, so there is one
+        # place to change it.
         uses: pnpm/action-setup@v4
-        with:
-          version: ${{ env.PNPM_VERSION }}
 
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: ${{ env.NODE_VERSION }}
+          node-version-file: .nvmrc
           cache: pnpm
 
       - name: Install dependencies
+        # Frozen lockfile: a validation run must test the dependency tree the
+        # repository actually declares, never a silently updated one.
         run: pnpm install --frozen-lockfile
 
       - name: Install Playwright browsers
         run: pnpm exec playwright install --with-deps chromium
 
-      - name: Run end-to-end tests
+      - name: Lint
+        run: pnpm lint
+
+      - name: Typecheck
+        run: pnpm typecheck
+
+      - name: Validate content
+        run: pnpm content:validate
+
+      - name: Content quality
+        run: pnpm content:quality
+
+      - name: Syllabus coverage
+        run: pnpm content:syllabus
+
+      - name: Topic progression
+        run: pnpm content:progression
+
+      - name: Sign approvals
+        run: pnpm signs:approval:check
+
+      - name: Learner sign audit
+        run: pnpm signs:learner-audit
+
+      - name: Unit tests
+        run: pnpm test
+
+      - name: End-to-end tests
         run: pnpm test:e2e
 
-      - name: Upload test report on failure
+      - name: GitHub Pages subpath tests
+        # Proves the app still works when mounted at /<repository>/ rather than
+        # at the domain root — the failure mode a root-served preview hides.
+        run: pnpm pages:test
+
+      - name: Production build
+        run: pnpm build
+
+      - name: Offline audit
+        run: pnpm native:offline:check
+
+      - name: Upload Playwright report on failure
         if: failure()
         uses: actions/upload-artifact@v4
         with:
           name: playwright-report
           path: playwright-report/
           retention-days: 7
+
+  sources:
+    name: Official source monitor
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    # A separate job, deliberately: it makes live requests to novascotia.ca and
+    # nslegislature.ca, so when it fails you can see at a glance that the code
+    # is fine and it is the *source material* that moved.
+    #
+    # It is allowed to fail the run. That is the point of the whole
+    # source-monitoring architecture: if Nova Scotia changes a rule the app
+    # teaches, somebody must read the diff and decide what it means before the
+    # question bank is trusted again. A red build is the mechanism that makes
+    # that happen instead of the change going unnoticed.
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+
+      - name: Check official sources for changes
+        # Read-only by design. It never runs with --accept, so a change in
+        # Nova Scotia source material fails loudly and waits for a human to
+        # read the diff and decide what it means for the question bank.
+        run: pnpm sources:check:ci
+
+      - name: Upload source-change report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-check-report
+          path: .sources/reports/
+          retention-days: 30
+          if-no-files-found: ignore

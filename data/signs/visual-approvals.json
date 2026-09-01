@@ -1,0 +1,2303 @@
+{
+  "schemaVersion": 2,
+  "approvals": {
+    "wz-workers-ahead": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:20:21.478Z",
+      "fingerprint": "179d3bfa648541707215ccb9f2b66443e87b86c762786df108a0c9ecb96f6885",
+      "schemaVersion": 2,
+      "displayName": "Workers Ahead",
+      "assetPath": "/signs/ns-official/work-workers-ahead.png",
+      "designation": "work-workers-ahead",
+      "previousApprovals": []
+    },
+    "wz-uneven-lanes": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:20:22.468Z",
+      "fingerprint": "625513ec07b3dfe54db0acbbe9f2640eb3e17557296ec7123f2d54b72992924e",
+      "schemaVersion": 2,
+      "displayName": "Uneven Lanes",
+      "assetPath": "/signs/ns-official/work-uneven-lanes.png",
+      "designation": "work-uneven-lanes",
+      "previousApprovals": []
+    },
+    "wz-traffic-control-person": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:20:23.890Z",
+      "fingerprint": "5fd890a243b2f1f444c9d73fec3b446e906bb9d14ad2b1fbae1d0609065a037a",
+      "schemaVersion": 2,
+      "displayName": "Traffic Control Person Ahead",
+      "assetPath": "/signs/ns-official/work-traffic-control-person.png",
+      "designation": "work-traffic-control-person",
+      "previousApprovals": []
+    },
+    "tar": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:20:25.485Z",
+      "fingerprint": "b56d53bfc1d312d873db16d12e45c8da03a9cdec30ea530a99ee418f4df2e694",
+      "schemaVersion": 2,
+      "displayName": "Fresh Tar",
+      "assetPath": "/signs/ns-official/work-tar.png",
+      "designation": "work-tar",
+      "previousApprovals": []
+    },
+    "survey-work": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:20:27.285Z",
+      "fingerprint": "2ec3f8a77fe994bf025c2e84c761c9d9817a5faba26b31016e0689eebd4e0a1f",
+      "schemaVersion": 2,
+      "displayName": "Survey Crew Ahead",
+      "assetPath": "/signs/ns-official/work-survey-work.png",
+      "designation": "work-survey-work",
+      "previousApprovals": []
+    },
+    "wz-end-construction": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:20:28.965Z",
+      "fingerprint": "96f822a4939cf9742b6191d7201d7503b14d01d37e49fb7eee9260a556ce4181",
+      "schemaVersion": 2,
+      "displayName": "End Construction",
+      "assetPath": "/signs/ns-official/work-end-construction.png",
+      "designation": "work-end-construction",
+      "previousApprovals": []
+    },
+    "wz-construction-ahead": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:20:31.190Z",
+      "fingerprint": "34f82dc1ee1668e6e8fc4e7ccbc76cd735b29f28441ce929acec12ab1e604990",
+      "schemaVersion": 2,
+      "displayName": "Construction Ahead",
+      "assetPath": "/signs/ns-official/work-construction-zone.png",
+      "designation": "work-construction-zone",
+      "previousApprovals": []
+    },
+    "wz-construction-distance-ahead": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:20:34.922Z",
+      "fingerprint": "5af5ed4fe1abc7c0e8e05ebbf0d0aa06c822397f29e207132783d12c6ca959f1",
+      "schemaVersion": 2,
+      "displayName": "Construction Next Distance Shown",
+      "assetPath": "/signs/ns-official/work-construction-distance.png",
+      "designation": "work-construction-distance",
+      "previousApprovals": []
+    },
+    "shape-stop": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:20:39.772Z",
+      "fingerprint": "c37f16a91cdef73eb1dde4a73f8e55e1d2bcf1335ae7c9981558558575409980",
+      "schemaVersion": 2,
+      "displayName": "Stop Sign Shape — Octagon",
+      "previousApprovals": []
+    },
+    "shape-regulatory-sign": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:20:42.259Z",
+      "fingerprint": "8431e13092c8fbc2c308c0bc104391d2417f8fae6c24455cffa7f547e0829341",
+      "schemaVersion": 2,
+      "displayName": "Regulatory Sign Shape — Vertical Rectangle",
+      "previousApprovals": []
+    },
+    "shape-guide-sign": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:20:43.852Z",
+      "fingerprint": "1b53462e17eb8e9458cd5d46253297e4182d4eefc7522e155d5b10fa837158d8",
+      "schemaVersion": 2,
+      "displayName": "Guide Sign Shape — Horizontal Rectangle",
+      "previousApprovals": []
+    },
+    "road-surface-hazard": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:20:45.916Z",
+      "fingerprint": "146de4563949b14874ca7e119ef347400d9cc33682d5e692dbc94ef3cbe7b9e5",
+      "schemaVersion": 2,
+      "displayName": "Road Surface Hazard",
+      "assetPath": "/signs/ns-official/work-road-surface-hazard.png",
+      "designation": "work-road-surface-hazard",
+      "previousApprovals": []
+    },
+    "work-road-narrows": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:20:48.938Z",
+      "fingerprint": "982b1046b296e98ec6ddfedfd89c2d9714c578b048f81e4156bc46926cd302b8",
+      "schemaVersion": 2,
+      "displayName": "Road Narrows (Work Zone)",
+      "assetPath": "/signs/ns-official/work-road-narrows.png",
+      "designation": "work-road-narrows",
+      "previousApprovals": []
+    },
+    "work-right-lane-ends": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:20:52.517Z",
+      "fingerprint": "4989830bdbc9a07d8f5254c3876a97b8e1cd8b63704d247f1361aba26c29706a",
+      "schemaVersion": 2,
+      "displayName": "Right Lane Ends (Work Zone)",
+      "assetPath": "/signs/ns-official/work-right-lane-ends.png",
+      "designation": "work-right-lane-ends",
+      "previousApprovals": []
+    },
+    "shape-yield": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:20:54.827Z",
+      "fingerprint": "f870d368bb241701fcaf10771cd647b13354c5f70c47aaa5d5604c9300081c04",
+      "schemaVersion": 2,
+      "displayName": "Yield Sign Shape — Inverted Triangle",
+      "previousApprovals": []
+    },
+    "shape-warning-sign": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:20:56.402Z",
+      "fingerprint": "4c15312042f20f718cafd7392704bb8a2653db0028929345944a94e9282e9b43",
+      "schemaVersion": 2,
+      "displayName": "Warning Sign Shape — Diamond",
+      "previousApprovals": []
+    },
+    "shape-school-zone": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:20:58.466Z",
+      "fingerprint": "16287496f328f4f9ac17d3d16840c0d893f38553795f26d302120bc8aa970e7e",
+      "schemaVersion": 2,
+      "displayName": "School Zone Sign Shape — Pentagon",
+      "previousApprovals": []
+    },
+    "prepare-to-stop": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:00.150Z",
+      "fingerprint": "d838a75239cd20eb14adc4ea259569308a9a629065516abd0a0d48a7eee85229",
+      "schemaVersion": 2,
+      "displayName": "Prepare to Stop",
+      "assetPath": "/signs/ns-official/work-prepare-to-stop.png",
+      "designation": "work-prepare-to-stop",
+      "previousApprovals": []
+    },
+    "school-area": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:01.755Z",
+      "fingerprint": "d7d11e11ce840ca1eb2fde42a3801eda6027a8566babe3a327f58599a0fe7e93",
+      "schemaVersion": 2,
+      "displayName": "School Area",
+      "assetPath": "/signs/ns-official/WC-1.png",
+      "designation": "WC-1",
+      "previousApprovals": []
+    },
+    "truck-entering": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:03.862Z",
+      "fingerprint": "7cb640f3c3b011eb109427b2c4bf2e2ad13c5532a2e96a2ac5fc9a9f67cf9f6e",
+      "schemaVersion": 2,
+      "displayName": "Truck Entering",
+      "assetPath": "/signs/ns-official/warning-truck-entering.png",
+      "designation": "warning-truck-entering",
+      "previousApprovals": []
+    },
+    "traffic-signal-ahead": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:05.814Z",
+      "fingerprint": "01f78ddb21addb68f08873a8c60972dce36e7679043396e2b40a336a247fa227",
+      "schemaVersion": 2,
+      "displayName": "Traffic Signal Ahead",
+      "assetPath": "/signs/ns-official/warning-traffic-signal-ahead.png",
+      "designation": "warning-traffic-signal-ahead",
+      "previousApprovals": []
+    },
+    "stop-sign-ahead": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:06.856Z",
+      "fingerprint": "1be143cd0269135ffbbeae9268f0be8a4ad4efa58c936e80c93f9cd9fc000062",
+      "schemaVersion": 2,
+      "displayName": "Stop Sign Ahead",
+      "assetPath": "/signs/ns-official/warning-stop-sign-ahead.png",
+      "designation": "warning-stop-sign-ahead",
+      "previousApprovals": []
+    },
+    "steep-decline": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:07.723Z",
+      "fingerprint": "d49c2978db1fbd8570fa829b54a0a2b5ef9b9da5179d162f885cf397d0a5039d",
+      "schemaVersion": 2,
+      "displayName": "Steep Decline",
+      "assetPath": "/signs/ns-official/warning-steep-decline.png",
+      "designation": "warning-steep-decline",
+      "previousApprovals": []
+    },
+    "slippery-when-wet": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:08.397Z",
+      "fingerprint": "4d87a63cce0fc8c4c391f3e5664e682efb4899767f944f2db6112eae2c588c47",
+      "schemaVersion": 2,
+      "displayName": "Slippery When Wet",
+      "assetPath": "/signs/ns-official/warning-slippery-when-wet.png",
+      "designation": "warning-slippery-when-wet",
+      "previousApprovals": []
+    },
+    "sharp-turn-right": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:09.890Z",
+      "fingerprint": "554f58f9de3d6fe2a18ca082c2adc18d24710b0e199254237fa4f93dfb5fc771",
+      "schemaVersion": 2,
+      "displayName": "Sharp Turn Right",
+      "assetPath": "/signs/ns-official/warning-sharp-turn-right.png",
+      "designation": "warning-sharp-turn-right",
+      "previousApprovals": []
+    },
+    "road-narrows": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:10.656Z",
+      "fingerprint": "0734ef18ed9f8b7264f5d7c0758d229803f4b0acea393aa3465fbc37faf42d77",
+      "schemaVersion": 2,
+      "displayName": "Road Narrows",
+      "assetPath": "/signs/ns-official/warning-road-narrows.png",
+      "designation": "warning-road-narrows",
+      "previousApprovals": []
+    },
+    "right-lane-ends": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:11.232Z",
+      "fingerprint": "d416c5287d0e74822381b72425401b8861fed705380e26d72dec86e1717ebc79",
+      "schemaVersion": 2,
+      "displayName": "Right Lane Ends",
+      "assetPath": "/signs/ns-official/warning-right-lane-ends.png",
+      "designation": "warning-right-lane-ends",
+      "previousApprovals": []
+    },
+    "right-curve": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:11.940Z",
+      "fingerprint": "33b82184ac6f6c98469c20bfe1cc318141adeab4ee52647990c94eec43429849",
+      "schemaVersion": 2,
+      "displayName": "Right Curve",
+      "assetPath": "/signs/ns-official/warning-right-curve.png",
+      "designation": "warning-right-curve",
+      "previousApprovals": []
+    },
+    "railway-crossing-ahead": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:13.493Z",
+      "fingerprint": "4561fa9c1b0239c4e4f6b57f7ae9d86d402dd82bcb23e33fc46af81b1fa50889",
+      "schemaVersion": 2,
+      "displayName": "Railway Crossing Ahead",
+      "assetPath": "/signs/ns-official/warning-railway-crossing-ahead.png",
+      "designation": "warning-railway-crossing-ahead",
+      "previousApprovals": []
+    },
+    "playground": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:14.585Z",
+      "fingerprint": "2d4a3da0b23c28d8acd6ff7d0119ebf99136ebe597d182170279f0e2cf12f05d",
+      "schemaVersion": 2,
+      "displayName": "Playground",
+      "assetPath": "/signs/ns-official/warning-playground.png",
+      "designation": "warning-playground",
+      "previousApprovals": []
+    },
+    "narrow-structure": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:15.536Z",
+      "fingerprint": "c79cfa2dbd32075c9c1de26b4ec78b4599fe9fdacf81b827b2ffd1e21006b22d",
+      "schemaVersion": 2,
+      "displayName": "Narrow Structure",
+      "assetPath": "/signs/ns-official/warning-narrow-structure.png",
+      "designation": "warning-narrow-structure",
+      "previousApprovals": []
+    },
+    "merge": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:17.828Z",
+      "fingerprint": "0c07bdb0b7b62e01ddddcc984b819c34d183bf24df2d792d4a6f769c844b6f12",
+      "schemaVersion": 2,
+      "displayName": "Merge",
+      "assetPath": "/signs/ns-official/warning-merge.png",
+      "designation": "warning-merge",
+      "previousApprovals": []
+    },
+    "divided-highway-ends": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:19.801Z",
+      "fingerprint": "334cbba2f10304ccf03e91a7ce2d5e460500a14fbe013d08e3108041427a05ef",
+      "schemaVersion": 2,
+      "displayName": "Divided Highway Ends",
+      "assetPath": "/signs/ns-official/warning-divided-highway-ends.png",
+      "designation": "warning-divided-highway-ends",
+      "previousApprovals": []
+    },
+    "fire-truck-entrance": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:20.694Z",
+      "fingerprint": "347b4bab8f3aa81d93a901592a73d5709f5788b6f9d2fe98b70b69bb7e4d08b9",
+      "schemaVersion": 2,
+      "displayName": "Fire Truck Entrance",
+      "assetPath": "/signs/ns-official/warning-fire-truck-entrance.png",
+      "designation": "warning-fire-truck-entrance",
+      "previousApprovals": []
+    },
+    "hidden-intersection": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:21.581Z",
+      "fingerprint": "d0009609f27b1ec70732285e045ffad68a42ee7627ebcfbb0925c884abcd8d6e",
+      "schemaVersion": 2,
+      "displayName": "Hidden Intersection",
+      "assetPath": "/signs/ns-official/warning-hidden-intersection.png",
+      "designation": "warning-hidden-intersection",
+      "previousApprovals": []
+    },
+    "low-clearance": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:22.497Z",
+      "fingerprint": "7e6196258e69370ce2fb75b117beae884076b9c0782077c07cff0f4b93f4dec0",
+      "schemaVersion": 2,
+      "displayName": "Low Clearance",
+      "assetPath": "/signs/ns-official/warning-low-clearance.png",
+      "designation": "warning-low-clearance",
+      "previousApprovals": []
+    },
+    "divided-highway-ahead": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:24.427Z",
+      "fingerprint": "b614b2a14d9ce340f0ac580736e8e8ca6a595c27ba87b9239cffb38bd4cf52ef",
+      "schemaVersion": 2,
+      "displayName": "Divided Highway Ahead",
+      "assetPath": "/signs/ns-official/warning-divided-highway-ahead.png",
+      "designation": "warning-divided-highway-ahead",
+      "previousApprovals": []
+    },
+    "chevron-right": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:25.850Z",
+      "fingerprint": "232c40d430a51461435fb88bb5623cc2d3be7ddb8a71d85603f0a7c333a89e9e",
+      "schemaVersion": 2,
+      "displayName": "Chevron — Keep Right",
+      "assetPath": "/signs/ns-official/warning-chevron-right.png",
+      "designation": "warning-chevron-right",
+      "previousApprovals": []
+    },
+    "bump": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:27.098Z",
+      "fingerprint": "29940e00de1a09ee1413c1d415fe96ccfbdd516479356da65324abcbaa6e23ab",
+      "schemaVersion": 2,
+      "displayName": "Bump",
+      "assetPath": "/signs/ns-official/warning-bump.png",
+      "designation": "warning-bump",
+      "previousApprovals": []
+    },
+    "bridge-opening": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:27.783Z",
+      "fingerprint": "d2bd254516260a4eb92cb3067760ad3385e5b4ab624300be5f21af4e72b4efdc",
+      "schemaVersion": 2,
+      "displayName": "Bridge Opening",
+      "assetPath": "/signs/ns-official/warning-bridge-opening.png",
+      "designation": "warning-bridge-opening",
+      "previousApprovals": []
+    },
+    "animal-crossing": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:30.043Z",
+      "fingerprint": "dbd1e01cc38175256f09e07eb758b2a76a972f1ed093d12b4bc678f07ec86e9b",
+      "schemaVersion": 2,
+      "displayName": "Animal Crossing",
+      "assetPath": "/signs/ns-official/warning-animal-crossing.png",
+      "designation": "warning-animal-crossing",
+      "previousApprovals": []
+    },
+    "hazard-marker-keep-right": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:35.407Z",
+      "fingerprint": "8db66c8af7e51e28c43a2632fc6debc9a2214010c83f93f8addef686c6ebe425",
+      "schemaVersion": 2,
+      "displayName": "Hazard Marker — Keep Right",
+      "assetPath": "/signs/ns-official/regulatory-hazard-marker-keep-right.png",
+      "designation": "regulatory-hazard-marker-keep-right",
+      "previousApprovals": []
+    },
+    "hazard-marker-keep-left": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:36.285Z",
+      "fingerprint": "9004d564b404c93e058b3e45593ec264ea4b7bff5710dc6bd3bcca269d0245ba",
+      "schemaVersion": 2,
+      "displayName": "Hazard Marker — Keep Left",
+      "assetPath": "/signs/ns-official/regulatory-hazard-marker-keep-left.png",
+      "designation": "regulatory-hazard-marker-keep-left",
+      "previousApprovals": []
+    },
+    "truck-route": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:39.661Z",
+      "fingerprint": "2eadb79157903af6447942c895e4274c4fba3dbf8a83cfa1a85c5cadd9acc3c5",
+      "schemaVersion": 2,
+      "displayName": "Truck Route",
+      "assetPath": "/signs/ns-official/RB-61.png",
+      "designation": "RB-61",
+      "previousApprovals": []
+    },
+    "no-stopping": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:42.787Z",
+      "fingerprint": "8cbb09af1f6eae3abdc2b83d116b19ed1eaa4faed79266a9e7a9e7752c19a5e3",
+      "schemaVersion": 2,
+      "displayName": "No Stopping",
+      "assetPath": "/signs/ns-official/RB-55.png",
+      "designation": "RB-55",
+      "previousApprovals": []
+    },
+    "accessible-parking": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:44.154Z",
+      "fingerprint": "99cc49792e1feb2f006a54aff84a05654423f549dec86b5fd21fcd907551da13",
+      "schemaVersion": 2,
+      "displayName": "Accessible Parking",
+      "assetPath": "/signs/ns-official/RB-52B.png",
+      "designation": "RB-52B",
+      "previousApprovals": []
+    },
+    "no-parking": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:45.449Z",
+      "fingerprint": "dedd7d66cd2da8f2f09efc8e675a3e5d47dd000639bbe172ec920c6db46b6d4d",
+      "schemaVersion": 2,
+      "displayName": "No Parking",
+      "assetPath": "/signs/ns-official/RB-51.png",
+      "designation": "RB-51",
+      "previousApprovals": []
+    },
+    "two-way-left-turn-lane": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:48.044Z",
+      "fingerprint": "65a845bd55f5a1b0b673eb0a207ab8921016ed3560e204caf51b17d713dad472",
+      "schemaVersion": 2,
+      "displayName": "Two-Way Left Turn Lane",
+      "assetPath": "/signs/ns-official/RB-48.png",
+      "designation": "RB-48",
+      "previousApprovals": []
+    },
+    "RB-42R": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:50.945Z",
+      "fingerprint": "b7bca1047df2a6a76b1470488f0d00d65fddba72e70163b3df69a4699c4f51d4",
+      "schemaVersion": 2,
+      "displayName": "Straight or Right Turn",
+      "assetPath": "/signs/ns-official/RB-42R.png",
+      "designation": "RB-42R",
+      "previousApprovals": []
+    },
+    "lane-straight-or-left": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:57.755Z",
+      "fingerprint": "551391000cdedafbf3eed8447ad7472dbe86c07dfecdd0c3cf7176846810722d",
+      "schemaVersion": 2,
+      "displayName": "Straight or Left Turn",
+      "assetPath": "/signs/ns-official/RB-42L.png",
+      "designation": "RB-42L",
+      "previousApprovals": []
+    },
+    "lane-right-turn-only": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:58.986Z",
+      "fingerprint": "33f4cb8074cdc4a8ace37d869fa7bcec04f34c18eca838200db46a7e9eea6a72",
+      "schemaVersion": 2,
+      "displayName": "Right Turn Only",
+      "assetPath": "/signs/ns-official/RB-41R.png",
+      "designation": "RB-41R",
+      "previousApprovals": []
+    },
+    "RB-41L": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:21:59.952Z",
+      "fingerprint": "feb0b655c4198c39249c29670e4e31eafc161a88ce44d152f8f5914c621efb9c",
+      "schemaVersion": 2,
+      "displayName": "Left Turn Only",
+      "assetPath": "/signs/ns-official/RB-41L.png",
+      "designation": "RB-41L",
+      "previousApprovals": []
+    },
+    "RB-40": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:22:07.012Z",
+      "fingerprint": "76a7b03d656859071929906e7ca063471c8f04fc275c3a636e0cc2ffafe3e19f",
+      "schemaVersion": 2,
+      "displayName": "Bicycles Yield at High Speed Ramp",
+      "assetPath": "/signs/ns-official/RB-40.png",
+      "designation": "RB-40",
+      "previousApprovals": []
+    },
+    "RB-39": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:22:08.566Z",
+      "fingerprint": "2c58a18f2c146e136c4910976ea7d205e902679b85b63b862d985f71a78635b2",
+      "schemaVersion": 2,
+      "displayName": "Bicycles Yield to Pedestrians",
+      "assetPath": "/signs/ns-official/RB-39.png",
+      "designation": "RB-39",
+      "previousApprovals": []
+    },
+    "RB-38": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:22:12.221Z",
+      "fingerprint": "0de607259d4a39b6e5362e2df3bf225555687115b963cdb3c75c100f93e88bf2",
+      "schemaVersion": 2,
+      "displayName": "Turning Vehicles Yield to Bicycles and Pedestrians",
+      "assetPath": "/signs/ns-official/RB-38.png",
+      "designation": "RB-38",
+      "previousApprovals": []
+    },
+    "RB-37": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:22:18.285Z",
+      "fingerprint": "edb87a790d7769e581dd3ccb6addcc29440189dddc2ee8c96020a18e25fe4292",
+      "schemaVersion": 2,
+      "displayName": "Turning Vehicles Yield to Bicycles",
+      "assetPath": "/signs/ns-official/RB-37.png",
+      "designation": "RB-37",
+      "previousApprovals": []
+    },
+    "RB-36": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:22:24.398Z",
+      "fingerprint": "0999ed8a3462a7ed1d67401f095e8eee1fab8ce8ac386b0966dbfe92d2f5fd0a",
+      "schemaVersion": 2,
+      "displayName": "Yield Centre Lane to Opposing Traffic",
+      "assetPath": "/signs/ns-official/RB-36.png",
+      "designation": "RB-36",
+      "previousApprovals": []
+    },
+    "RB-35": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:22:28.341Z",
+      "fingerprint": "04c68b1f19a118be3e3bacc9a739aabb5d53ad12aadda13e9a89f782c96016f3",
+      "schemaVersion": 2,
+      "displayName": "Slower Traffic Keep Right",
+      "assetPath": "/signs/ns-official/RB-35.png",
+      "designation": "RB-35",
+      "previousApprovals": []
+    },
+    "RB-34": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:22:30.604Z",
+      "fingerprint": "294a5d5a353ceff41753647ba7c8671a57cc52edfe9e7d0cc439e386eabe3ee6",
+      "schemaVersion": 2,
+      "displayName": "Keep Right Except to Pass",
+      "assetPath": "/signs/ns-official/RB-34.png",
+      "designation": "RB-34",
+      "previousApprovals": []
+    },
+    "RB-33S2": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:22:31.938Z",
+      "fingerprint": "b72c4af24cd9151729187fc84ff1a25a8a0dffd2cf8b567de44d5294c2ec66c3",
+      "schemaVersion": 2,
+      "displayName": "Ends Tab",
+      "assetPath": "/signs/ns-official/RB-33S2.png",
+      "designation": "RB-33S2",
+      "previousApprovals": []
+    },
+    "RB-33S1": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:22:33.897Z",
+      "fingerprint": "68bf26883c61f9449046d0f68b5b805c48372bea21566cb302e1c49ab55b3eba",
+      "schemaVersion": 2,
+      "displayName": "Do Not Pass Bicycles Tab",
+      "assetPath": "/signs/ns-official/RB-33S1.png",
+      "designation": "RB-33S1",
+      "previousApprovals": []
+    },
+    "RB-33": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:22:39.287Z",
+      "fingerprint": "bfed0a0decfcd69af39881782f0e535e00a422753e8bddd126eae7d5b31989f2",
+      "schemaVersion": 2,
+      "displayName": "Motor Vehicle Passing Prohibited",
+      "assetPath": "/signs/ns-official/RB-33.png",
+      "designation": "RB-33",
+      "previousApprovals": []
+    },
+    "passing-permitted": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:22:40.111Z",
+      "fingerprint": "5b362f8453a219a469ca8d74f930869f9f0920756cf276efe3a83f7509cda3a5",
+      "schemaVersion": 2,
+      "displayName": "Passing Permitted",
+      "assetPath": "/signs/ns-official/RB-32.png",
+      "designation": "RB-32",
+      "previousApprovals": []
+    },
+    "do-not-pass": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:22:41.364Z",
+      "fingerprint": "379292e10d3da8fa99c31c0f28b83ab61f25a720275dbc740964c41e02548fbf",
+      "schemaVersion": 2,
+      "displayName": "Do Not Pass",
+      "assetPath": "/signs/ns-official/RB-31.png",
+      "designation": "RB-31",
+      "previousApprovals": []
+    },
+    "keep-right-of-island": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:22:45.110Z",
+      "fingerprint": "691523f5172ccd99e6c936a7c0f6532b26875aade8f5700adc1137ee54154a40",
+      "schemaVersion": 2,
+      "displayName": "Keep Right of Island",
+      "assetPath": "/signs/ns-official/RB-25.png",
+      "designation": "RB-25",
+      "previousApprovals": []
+    },
+    "two-way-traffic": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:22:46.047Z",
+      "fingerprint": "0b0fb8e908410fec7c93b48dbbb978fef0e9ca1fde9daacf13d167ce37e3aaea",
+      "schemaVersion": 2,
+      "displayName": "Two-Way Traffic",
+      "assetPath": "/signs/ns-official/RB-24.png",
+      "designation": "RB-24",
+      "previousApprovals": []
+    },
+    "do-not-enter": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:22:46.651Z",
+      "fingerprint": "d04af4fe950669fdadb7b048020492f9811c45c21916e89aa2cdd9f15672bdaa",
+      "schemaVersion": 2,
+      "displayName": "Do Not Enter",
+      "assetPath": "/signs/ns-official/RB-23.png",
+      "designation": "RB-23",
+      "previousApprovals": []
+    },
+    "one-way": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:22:47.625Z",
+      "fingerprint": "e1c7b1aac85ac66c648e00fc5ef9a7c760aec2a1a0c78a3593dad4dbcdd831ee",
+      "schemaVersion": 2,
+      "displayName": "One Way",
+      "assetPath": "/signs/ns-official/RB-21.png",
+      "designation": "RB-21",
+      "previousApprovals": []
+    },
+    "RB-18": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:22:51.151Z",
+      "fingerprint": "7b1ff619735b2d4867a0dbc5967723b96b8ccc35e1f9828ec0dbfdd81d33bab3",
+      "schemaVersion": 2,
+      "displayName": "Left Turn Signal",
+      "assetPath": "/signs/ns-official/RB-18.png",
+      "designation": "RB-18",
+      "previousApprovals": []
+    },
+    "no-right-turn-on-red": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:22:52.977Z",
+      "fingerprint": "128924c15a4350a02f4eb1cb837a250025eb938385db6aca7a45187a14ec8930",
+      "schemaVersion": 2,
+      "displayName": "No Right Turn on Red",
+      "assetPath": "/signs/ns-official/RB-17R.png",
+      "designation": "RB-17R",
+      "previousApprovals": []
+    },
+    "RB-17L": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:22:53.864Z",
+      "fingerprint": "8f49a8d9293b0e7e1657d07d1f88ea638fd9e2658e38f1fc37fb453a2614f88b",
+      "schemaVersion": 2,
+      "displayName": "No Left Turn on Red",
+      "assetPath": "/signs/ns-official/RB-17L.png",
+      "designation": "RB-17L",
+      "previousApprovals": []
+    },
+    "no-u-turn": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:22:54.847Z",
+      "fingerprint": "cc5a81b2f721b1fcf81929bec1191861c77d836e51887b4558123ebdbc7b9bdb",
+      "schemaVersion": 2,
+      "displayName": "No U-Turn",
+      "assetPath": "/signs/ns-official/RB-16.png",
+      "designation": "RB-16",
+      "previousApprovals": []
+    },
+    "RB-15A": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:22:58.474Z",
+      "fingerprint": "bb1e01ccf9469daf00857b2bb99ddd61549e8f418658bc3e27e9e14bd97ced56",
+      "schemaVersion": 2,
+      "displayName": "Restrictive Turn Control — Left or Right Turn Only",
+      "assetPath": "/signs/ns-official/RB-15A.png",
+      "designation": "RB-15A",
+      "previousApprovals": []
+    },
+    "no-turns": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:22:59.586Z",
+      "fingerprint": "7f124215fc70c696385d2947ee8c4e05c59fddfacadf7a9a77fa794387a95108",
+      "schemaVersion": 2,
+      "displayName": "No Turns",
+      "assetPath": "/signs/ns-official/RB-15.png",
+      "designation": "RB-15",
+      "previousApprovals": []
+    },
+    "RB-14R": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:23:01.463Z",
+      "fingerprint": "ab5f471d28631dc923509918464ad6712958b6352e8e5484a2a986077c9ae617",
+      "schemaVersion": 2,
+      "displayName": "Restrictive Turn Control — Right Turn Only",
+      "assetPath": "/signs/ns-official/RB-14R.png",
+      "designation": "RB-14R",
+      "previousApprovals": []
+    },
+    "RB-14L": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:23:02.397Z",
+      "fingerprint": "579aa5c42dee0e15489a3d8864790a2d0241404cf3edad4302aa2b7218799d2c",
+      "schemaVersion": 2,
+      "displayName": "Restrictive Turn Control — Left Turn Only",
+      "assetPath": "/signs/ns-official/RB-14L.png",
+      "designation": "RB-14L",
+      "previousApprovals": []
+    },
+    "RB-11S1": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:23:04.029Z",
+      "fingerprint": "1b4a4265fd9642ab26990221231c84001c56ceeef88ccddc93e87e51ae42408f",
+      "schemaVersion": 2,
+      "displayName": "Except Buses Tab",
+      "assetPath": "/signs/ns-official/RB-11S1.png",
+      "designation": "RB-11S1",
+      "previousApprovals": []
+    },
+    "no-right-turn": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:23:05.298Z",
+      "fingerprint": "94e6696400f1bc7e1197edff8b8e7fa132098d8b037a7ebea4494e39677203d6",
+      "schemaVersion": 2,
+      "displayName": "No Right Turn",
+      "assetPath": "/signs/ns-official/RB-11R.png",
+      "designation": "RB-11R",
+      "previousApprovals": []
+    },
+    "no-left-turn": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:23:06.252Z",
+      "fingerprint": "0904e9e4076379f02e9aa12bedfbc9127ef89bca3aff3c59a06528744df5334a",
+      "schemaVersion": 2,
+      "displayName": "No Left Turn",
+      "assetPath": "/signs/ns-official/RB-11L.png",
+      "designation": "RB-11L",
+      "previousApprovals": []
+    },
+    "RB-10": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:23:07.139Z",
+      "fingerprint": "c7fc5229a45bb0b7d3b0ca5f44d2c278b53f1390d63045f6a67ca53c8092998c",
+      "schemaVersion": 2,
+      "displayName": "Through Traffic Prohibited",
+      "assetPath": "/signs/ns-official/RB-10.png",
+      "designation": "RB-10",
+      "previousApprovals": []
+    },
+    "RB-9S": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:23:11.329Z",
+      "fingerprint": "15843100f798bbe154d301a337a6855abc987097e591afb80daedabf64365d79",
+      "schemaVersion": 2,
+      "displayName": "Except Bicycles Tab",
+      "assetPath": "/signs/ns-official/RB-9S.png",
+      "designation": "RB-9S",
+      "previousApprovals": []
+    },
+    "speed-limit-change-ahead": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:23:14.307Z",
+      "fingerprint": "6498f48068def9b9d5746ba10bee5fdb7d4725f3590b51f09c799923d6fc051b",
+      "schemaVersion": 2,
+      "displayName": "Maximum Speed Ahead",
+      "assetPath": "/signs/ns-official/RB-5.png",
+      "designation": "RB-5",
+      "previousApprovals": []
+    },
+    "RB-4": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:23:16.135Z",
+      "fingerprint": "561ab31b344ba5ad4751d7e8dc6cd7815105de27d0afc112a9c2a167e1879879",
+      "schemaVersion": 2,
+      "displayName": "Minimum Speed",
+      "assetPath": "/signs/ns-official/RB-4.png",
+      "designation": "RB-4",
+      "previousApprovals": []
+    },
+    "RB-3": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:23:17.962Z",
+      "fingerprint": "e0c88e057ecad5ede7200d92f6ffa6175ca5cdb0d83e5589cf3c4dfabcabdd66",
+      "schemaVersion": 2,
+      "displayName": "Night Speed",
+      "assetPath": "/signs/ns-official/RB-3.png",
+      "designation": "RB-3",
+      "previousApprovals": []
+    },
+    "RB-2": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:23:20.205Z",
+      "fingerprint": "1e7232ed3c4ac61eac23b4af704894c79a13b512bc26fc66addcfb2d72487ec5",
+      "schemaVersion": 2,
+      "displayName": "Trucks Maximum Speed",
+      "assetPath": "/signs/ns-official/RB-2.png",
+      "designation": "RB-2",
+      "previousApprovals": []
+    },
+    "maximum-speed-80": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:23:22.081Z",
+      "fingerprint": "78bad8ef6af2ab06b3df1eaf1762b39fb8e2ecd53d604277bcd3367ec36c9869",
+      "schemaVersion": 2,
+      "displayName": "Maximum Speed 80 km/h",
+      "assetPath": "/signs/ns-official/RB-1.png",
+      "designation": "RB-1",
+      "previousApprovals": []
+    },
+    "railway-tracks-tab": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:28:26.403Z",
+      "fingerprint": "edbf32bda7f8d39871b603a912f20a2e3e475a470ca281256bda310ebb785aa8",
+      "schemaVersion": 2,
+      "displayName": "Number of Railway Tracks Tab",
+      "assetPath": "/signs/ns-official/railway-tracks-tab.png",
+      "designation": "railway-tracks-tab",
+      "previousApprovals": []
+    },
+    "railway-crossbuck": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:28:28.082Z",
+      "fingerprint": "01afe71576ab42dfd4cb93c7ca695fca926057cf2ad32add3d531d244987e126",
+      "schemaVersion": 2,
+      "displayName": "Railway Crossing Crossbuck",
+      "assetPath": "/signs/ns-official/railway-crossbuck.png",
+      "designation": "railway-crossbuck",
+      "previousApprovals": []
+    },
+    "RA-8": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:28:29.408Z",
+      "fingerprint": "efbf112aa21ea783dabeefe6e643822894c6f59d769af1bbf19e5c418d809827",
+      "schemaVersion": 2,
+      "displayName": "In-Street School Crosswalk",
+      "assetPath": "/signs/ns-official/RA-8.png",
+      "designation": "RA-8",
+      "previousApprovals": []
+    },
+    "RA-5R": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:28:32.683Z",
+      "fingerprint": "c90902977e871b1226eb3ff97cba012a3ff07ba3c1305c1a14d18f0cefdcbe6e",
+      "schemaVersion": 2,
+      "displayName": "Overhead Pedestrian Crosswalk — Symbol Facing Right",
+      "assetPath": "/signs/ns-official/RA-5R.png",
+      "designation": "RA-5R",
+      "previousApprovals": []
+    },
+    "RA-5L": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:28:33.673Z",
+      "fingerprint": "4ead522d4d380269b0956ea876a322020cc0133fba101d50cd0e7c7a51b4a36a",
+      "schemaVersion": 2,
+      "displayName": "Overhead Pedestrian Crosswalk — Symbol Facing Left",
+      "assetPath": "/signs/ns-official/RA-5L.png",
+      "designation": "RA-5L",
+      "previousApprovals": []
+    },
+    "RA-4R": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:28:36.041Z",
+      "fingerprint": "9531009c848222789ffc54bbd344f6c25101827cb812889ee9bd79ba80925cc5",
+      "schemaVersion": 2,
+      "displayName": "Pedestrian Crosswalk — Symbol Facing Right",
+      "assetPath": "/signs/ns-official/RA-4R.png",
+      "designation": "RA-4R",
+      "previousApprovals": []
+    },
+    "pedestrian-crosswalk": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:28:36.911Z",
+      "fingerprint": "724269ad51bd4d8b2de6b4cb9ab86297ee5ed5ba5e37f644526ea7d2ee18ba23",
+      "schemaVersion": 2,
+      "displayName": "Pedestrian Crosswalk",
+      "assetPath": "/signs/ns-official/RA-4L.png",
+      "designation": "RA-4L",
+      "previousApprovals": []
+    },
+    "RA-3R": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:28:41.122Z",
+      "fingerprint": "a83217aba9eb7710568870c9d0d2f880d539fbf943c4beb9da47e44e365a97fe",
+      "schemaVersion": 2,
+      "displayName": "School Crosswalk — Symbol Facing Right",
+      "assetPath": "/signs/ns-official/RA-3R.png",
+      "designation": "RA-3R",
+      "previousApprovals": []
+    },
+    "school-crosswalk": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:28:41.930Z",
+      "fingerprint": "817161cf2d20c1509d4d0cb990a0cf7b19f0c890008fb48c8746e51484ce0d97",
+      "schemaVersion": 2,
+      "displayName": "School Crosswalk",
+      "assetPath": "/signs/ns-official/RA-3L.png",
+      "designation": "RA-3L",
+      "previousApprovals": []
+    },
+    "yield": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:28:45.849Z",
+      "fingerprint": "47b78a090ecce0b3b828d7c0132912b0b66c64962d31cf2cdf9dc374bba16440",
+      "schemaVersion": 2,
+      "displayName": "Yield",
+      "assetPath": "/signs/ns-official/RA-2.png",
+      "designation": "RA-2",
+      "previousApprovals": []
+    },
+    "RA-1S5": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:28:46.857Z",
+      "fingerprint": "a1e6f72a57898cf31df25d965df876e650bfd8fb80d0f2a5f5bcd79932cc4177",
+      "schemaVersion": 2,
+      "displayName": "All Way Tab",
+      "assetPath": "/signs/ns-official/RA-1S5.png",
+      "designation": "RA-1S5",
+      "previousApprovals": []
+    },
+    "RA-1S4": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:28:47.680Z",
+      "fingerprint": "d0bebb614b0004773ae197b0d23fc656305282c04b7720ae61726229450cbadc",
+      "schemaVersion": 2,
+      "displayName": "4-Way Tab",
+      "assetPath": "/signs/ns-official/RA-1S4.png",
+      "designation": "RA-1S4",
+      "previousApprovals": []
+    },
+    "RA-1S3": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:28:50.152Z",
+      "fingerprint": "f7ca3e318e0ed83377d3ddaf8ae56bf3e1c66b1fa39493b28cbe3c8cb2136c03",
+      "schemaVersion": 2,
+      "displayName": "Pictographic All-Way Stop Tab — Y-Intersection",
+      "assetPath": "/signs/ns-official/RA-1S3.png",
+      "designation": "RA-1S3",
+      "previousApprovals": []
+    },
+    "RA-1S2": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:28:52.549Z",
+      "fingerprint": "15bc216ce8ab8b528ea2318d032bec53f61ab9e9319940e5511c4dc406579acc",
+      "schemaVersion": 2,
+      "displayName": "Pictographic All-Way Stop Tab — Four-Way Intersection",
+      "assetPath": "/signs/ns-official/RA-1S2.png",
+      "designation": "RA-1S2",
+      "previousApprovals": []
+    },
+    "RA-1S1": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:28:53.740Z",
+      "fingerprint": "1683c1e01d2ecfd94f11d7d1b6e9e1404726183fe503a88c181cd925a3fa3240",
+      "schemaVersion": 2,
+      "displayName": "Pictographic All-Way Stop Tab — T-Intersection",
+      "assetPath": "/signs/ns-official/RA-1S1.png",
+      "designation": "RA-1S1",
+      "previousApprovals": []
+    },
+    "RA-1B": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:28:55.096Z",
+      "fingerprint": "9602be313727af9fe52c8ba6b38e0dd3ebe4a2388a2ca0b387b36aa55559f03f",
+      "schemaVersion": 2,
+      "displayName": "Bilingual Stop — Stop / Arrêt",
+      "assetPath": "/signs/ns-official/RA-1B.png",
+      "designation": "RA-1B",
+      "previousApprovals": []
+    },
+    "stop": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:28:55.790Z",
+      "fingerprint": "7162414d08ab8c98080b0321fce50a7675a9c933aaf83cb57bf4e76c2ea3225c",
+      "schemaVersion": 2,
+      "displayName": "Stop",
+      "assetPath": "/signs/ns-official/RA-1.png",
+      "designation": "RA-1",
+      "previousApprovals": []
+    },
+    "route-102": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:28:58.555Z",
+      "fingerprint": "ca99092a9715fb755a36a99620f81b806dc393ea14e8122df649ade80a1bd392",
+      "schemaVersion": 2,
+      "displayName": "Highway 102 Route Marker",
+      "assetPath": "/signs/ns-official/guide-route-102.png",
+      "designation": "guide-route-102",
+      "previousApprovals": []
+    },
+    "pm-white-lane-line": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:29:00.120Z",
+      "fingerprint": "bd03cc0732af5b7eadc5c33511dea75beef4e4af2c0d88bef99700a3c9b86c92",
+      "schemaVersion": 2,
+      "displayName": "Broken White Lane Line",
+      "previousApprovals": []
+    },
+    "pm-solid-and-broken-yellow": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:29:01.835Z",
+      "fingerprint": "1e3cfa6068bd793893dae60d15d41281db656f9dc0e58a4ee0c7f4ee69a4c5ac",
+      "schemaVersion": 2,
+      "displayName": "Solid and Broken Yellow Centre Line",
+      "previousApprovals": []
+    },
+    "pm-double-solid-yellow": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:29:02.946Z",
+      "fingerprint": "ff6916bef7359e2bf86a81fbc8563d81db333b713f2c80f0fd574fd160119d6b",
+      "schemaVersion": 2,
+      "displayName": "Double Solid Yellow Centre Line",
+      "previousApprovals": []
+    },
+    "pm-broken-yellow": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:29:05.089Z",
+      "fingerprint": "5d0c4c20a7923420dff176781ee5444b9a1c39c833bda7429a106335ef01c506",
+      "schemaVersion": 2,
+      "displayName": "Broken Yellow Centre Line",
+      "previousApprovals": []
+    },
+    "overhead-work": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:29:06.952Z",
+      "fingerprint": "7c511fbf49d055d148c8777e5a5e60866d1762abd0b584a0bebff81d16e5093d",
+      "schemaVersion": 2,
+      "displayName": "Overhead Work Ahead",
+      "assetPath": "/signs/ns-official/work-overhead-work.png",
+      "designation": "work-overhead-work",
+      "previousApprovals": []
+    },
+    "guide-destination": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:29:08.543Z",
+      "fingerprint": "3e1da94dfd68ec2feb72de0ac2bb3964f97441a73a1e372a3a849cfd151195b2",
+      "schemaVersion": 2,
+      "displayName": "Destination / Direction Guide Sign",
+      "previousApprovals": []
+    },
+    "flashing-double-arrow": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:29:10.451Z",
+      "fingerprint": "c9af6ca9a36705c2966d480f6ee949a3f3fc18284d97797dc3e4492fe7175087",
+      "schemaVersion": 2,
+      "displayName": "Flashing Double Arrow — Pass Either Side",
+      "assetPath": "/signs/ns-official/work-flashing-double-arrow.png",
+      "designation": "work-flashing-double-arrow",
+      "previousApprovals": []
+    },
+    "wz-flashing-arrow-right": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:29:19.135Z",
+      "fingerprint": "4cec510d4730a69fd6ca2bf4cd2c1903f3151384fa1b8e5a661bff32297e623a",
+      "schemaVersion": 2,
+      "displayName": "Flashing Arrow — Keep Right",
+      "assetPath": "/signs/ns-official/work-flashing-directional-arrow.png",
+      "designation": "work-flashing-directional-arrow",
+      "previousApprovals": []
+    },
+    "construction-traffic": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:29:20.786Z",
+      "fingerprint": "21d5e61dc61dabfcf6cdeb4d85a75640d8d81b1979cedeeca627537ae15ee738",
+      "schemaVersion": 2,
+      "displayName": "Construction Traffic Ahead",
+      "assetPath": "/signs/ns-official/work-construction-traffic.png",
+      "designation": "work-construction-traffic",
+      "previousApprovals": []
+    },
+    "blasting-ahead": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:29:21.577Z",
+      "fingerprint": "bfff4b34f9036a571a396f08f447332e81d1cdd8e3adfee98b4fc4133f634e51",
+      "schemaVersion": 2,
+      "displayName": "Blasting Zone Ahead",
+      "assetPath": "/signs/ns-official/work-blasting-ahead.png",
+      "designation": "work-blasting-ahead",
+      "previousApprovals": []
+    },
+    "RC-6-OPTIONAL": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:29:23.891Z",
+      "fingerprint": "49f3bf7990b1c905fcce4edc759789c16624d7e8885398d86855b49e9b742af0",
+      "schemaVersion": 2,
+      "displayName": "Seat Belt Use Required — Symbol Only",
+      "assetPath": "/signs/ns-official/RC-6%20(OPTIONAL).png",
+      "designation": "RC-6-OPTIONAL",
+      "previousApprovals": []
+    },
+    "RC-6": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:29:26.782Z",
+      "fingerprint": "0db04907041e336c8c9b3be0c2f276e138a72e236700c9f743e073b454c5d61b",
+      "schemaVersion": 2,
+      "displayName": "Seat Belt Use Required — Provincial Law",
+      "assetPath": "/signs/ns-official/RC-6.png",
+      "designation": "RC-6",
+      "previousApprovals": []
+    },
+    "RC-5": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:29:27.749Z",
+      "fingerprint": "bdc3a2c5429cb088ffc5b89c9bdd19fa27ec84a0334a3ab788fccb7b2321c9da",
+      "schemaVersion": 2,
+      "displayName": "Littering Prohibited",
+      "assetPath": "/signs/ns-official/RC-5.png",
+      "designation": "RC-5",
+      "previousApprovals": []
+    },
+    "RC-4R": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:29:31.792Z",
+      "fingerprint": "9429e46ae89e5abf65ce02b05ea49e29138c3662b052177e7e143252b5e946ff",
+      "schemaVersion": 2,
+      "displayName": "Stop Line — Arrow Pointing Left",
+      "assetPath": "/signs/ns-official/RC-4R.png",
+      "designation": "RC-4R",
+      "previousApprovals": []
+    },
+    "RC-4L": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:29:32.850Z",
+      "fingerprint": "7f8cae23164379904ea5b88065c8caabb741b7660a6016a9885ce03c32bfa6d8",
+      "schemaVersion": 2,
+      "displayName": "Stop Line — Arrow Pointing Right",
+      "assetPath": "/signs/ns-official/RC-4L.png",
+      "designation": "RC-4L",
+      "previousApprovals": []
+    },
+    "RC-2": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:29:35.140Z",
+      "fingerprint": "b19a9c03ca418516f25d9f799f6a9a32360fed16d695d6b35f63f8a1a9449f21",
+      "schemaVersion": 2,
+      "displayName": "No Fishing From Bridge",
+      "assetPath": "/signs/ns-official/RC-2.png",
+      "designation": "RC-2",
+      "previousApprovals": []
+    },
+    "RB-107": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:29:38.197Z",
+      "fingerprint": "fb000ea599fa614a6c342048c976d9702c1d4b0fb8989e534c2c99e44380e39a",
+      "schemaVersion": 2,
+      "displayName": "Roundabout Lane — Left Exit Only",
+      "assetPath": "/signs/ns-official/RB-107.png",
+      "designation": "RB-107",
+      "previousApprovals": []
+    },
+    "RB-106": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:29:41.611Z",
+      "fingerprint": "ceae538fe46273964e740d8a834f36e9364858ce551b2cda5a9f412d2259d287",
+      "schemaVersion": 2,
+      "displayName": "Roundabout Lane — Left, Through or Right Exit",
+      "assetPath": "/signs/ns-official/RB-106.png",
+      "designation": "RB-106",
+      "previousApprovals": []
+    },
+    "RB-105": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:29:43.107Z",
+      "fingerprint": "d1065ec88dd68384fbf8a93764a76a3618777aad9ecbf84781c9c1217754911e",
+      "schemaVersion": 2,
+      "displayName": "Roundabout Two-Lane Designation — Left or Through and Through or Right",
+      "assetPath": "/signs/ns-official/RB-105.png",
+      "designation": "RB-105",
+      "previousApprovals": []
+    },
+    "RB-104S": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:29:44.959Z",
+      "fingerprint": "a42414c7c9cc1867aa934b3328f4806b901a4bff14f5e5af055a61d516973393",
+      "schemaVersion": 2,
+      "displayName": "Roundabout Right Lane Tab",
+      "assetPath": "/signs/ns-official/RB-104S.png",
+      "designation": "RB-104S",
+      "previousApprovals": []
+    },
+    "RB-104": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:29:47.360Z",
+      "fingerprint": "63ce379095693b1601ab64079cd99fe256570ea8f16defc624da7409255dc79b",
+      "schemaVersion": 2,
+      "displayName": "Roundabout Lane — Through or Right Exit",
+      "assetPath": "/signs/ns-official/RB-104.png",
+      "designation": "RB-104",
+      "previousApprovals": []
+    },
+    "RB-103": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:29:48.783Z",
+      "fingerprint": "3fbf8ef42d0e1a0da6876386df46f3e1365d11577ff66502a8fa657b2995490f",
+      "schemaVersion": 2,
+      "displayName": "Roundabout Lane — Right Exit Only",
+      "assetPath": "/signs/ns-official/RB-103.png",
+      "designation": "RB-103",
+      "previousApprovals": []
+    },
+    "RB-102S": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:29:50.303Z",
+      "fingerprint": "4e999aaf34c7fd1efa9249eff8f7b5aaca7ef058075c9aecd1902e4fd475c28e",
+      "schemaVersion": 2,
+      "displayName": "Roundabout Centre Lane Tab",
+      "assetPath": "/signs/ns-official/RB-102S.png",
+      "designation": "RB-102S",
+      "previousApprovals": []
+    },
+    "RB-102": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:29:52.109Z",
+      "fingerprint": "fc28989bc90e71089b2b51499275862953dd7e25f93283a12e696c656fe181cc",
+      "schemaVersion": 2,
+      "displayName": "Roundabout Lane — Through Only",
+      "assetPath": "/signs/ns-official/RB-102.png",
+      "designation": "RB-102",
+      "previousApprovals": []
+    },
+    "RB-101": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:29:53.266Z",
+      "fingerprint": "03a2f5baadb50ed966a43a8519c24e88a02660008e5486f29dce7a41d3831563",
+      "schemaVersion": 2,
+      "displayName": "Roundabout Lane — Left Exit or Through",
+      "assetPath": "/signs/ns-official/RB-101.png",
+      "designation": "RB-101",
+      "previousApprovals": []
+    },
+    "RB-100S": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:29:54.040Z",
+      "fingerprint": "a9b2da948ccc69f3f345da84288a5f1226892b599045930ac4966f2aa25a78b5",
+      "schemaVersion": 2,
+      "displayName": "Roundabout Left Lane Tab",
+      "assetPath": "/signs/ns-official/RB-100S.png",
+      "designation": "RB-100S",
+      "previousApprovals": []
+    },
+    "RB-100": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:29:55.078Z",
+      "fingerprint": "9add7a279d84afb8513a68d3d52a23fb1721ed872daf3b5575c21effdebb453f",
+      "schemaVersion": 2,
+      "displayName": "Roundabout Lane — Left Exit or Through (Island Symbol)",
+      "assetPath": "/signs/ns-official/RB-100.png",
+      "designation": "RB-100",
+      "previousApprovals": []
+    },
+    "RB-99": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:29:57.309Z",
+      "fingerprint": "8454558cc49d54d4550bbda6d99bebba95e73b14da44be796d0f9049095925af",
+      "schemaVersion": 2,
+      "displayName": "Roundabout Lane — Left Exit Only (Island Symbol)",
+      "assetPath": "/signs/ns-official/RB-99.png",
+      "designation": "RB-99",
+      "previousApprovals": []
+    },
+    "RB-98": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:58:45.402Z",
+      "fingerprint": "dbdc820bf4fa986ab1a33ef10e9f229b8a71c643b21fde5de1005039994882d6",
+      "schemaVersion": 2,
+      "displayName": "Roundabout Lane — Left, Through or Right Exit (Island Symbol)",
+      "assetPath": "/signs/ns-official/RB-98.png",
+      "designation": "RB-98",
+      "previousApprovals": []
+    },
+    "RB-97": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:58:48.129Z",
+      "fingerprint": "728f81c304909cf3e6849b85826458c34f638340309ad3d56958b7872052aa2a",
+      "schemaVersion": 2,
+      "displayName": "Roundabout Lane — Left or Right Exit (Island Symbol)",
+      "assetPath": "/signs/ns-official/RB-97.png",
+      "designation": "RB-97",
+      "previousApprovals": []
+    },
+    "RB-96": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:58:51.062Z",
+      "fingerprint": "6f530f31cc0aeac7391fb4299fb626822ab3255817b7779b1ddc0121540fe877",
+      "schemaVersion": 2,
+      "displayName": "Engine Brake Prohibited",
+      "assetPath": "/signs/ns-official/RB-96.png",
+      "designation": "RB-96",
+      "previousApprovals": []
+    },
+    "RB-94R": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:58:55.960Z",
+      "fingerprint": "a346b19ea9cc485386ebbed59676d656ee9ad11f28c483b6717e9ee98abb467e",
+      "schemaVersion": 2,
+      "displayName": "Shared Sidewalk Organization — Bicycles Keep Left, Pedestrians Keep Right",
+      "assetPath": "/signs/ns-official/RB-94R.png",
+      "designation": "RB-94R",
+      "previousApprovals": []
+    },
+    "RB-94L": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:58:57.407Z",
+      "fingerprint": "6a4ad04436237066ec392f75a12c73163bee57a8a173cfc02de28bcdd88b27ef",
+      "schemaVersion": 2,
+      "displayName": "Shared Sidewalk Organization — Pedestrians Keep Left, Bicycles Keep Right",
+      "assetPath": "/signs/ns-official/RB-94L.png",
+      "designation": "RB-94L",
+      "previousApprovals": []
+    },
+    "RB-93": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:59:00.155Z",
+      "fingerprint": "4a89920738473c25c8d8e996a29b741eb78ae067b235ddaf298009106bf60243",
+      "schemaVersion": 2,
+      "displayName": "Shared Pathway",
+      "assetPath": "/signs/ns-official/RB-93.png",
+      "designation": "RB-93",
+      "previousApprovals": []
+    },
+    "RB-92": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:59:01.191Z",
+      "fingerprint": "f2aaa13c227db26e0eceb1dba185e19195a1c24846ee1222957018a99d292f66",
+      "schemaVersion": 2,
+      "displayName": "Reserved Bicycle Lane Ends",
+      "assetPath": "/signs/ns-official/RB-92.png",
+      "designation": "RB-92",
+      "previousApprovals": []
+    },
+    "maximum-speed-50": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:59:22.849Z",
+      "fingerprint": "0519fa73ec4c08c8cc130da0c2552b92b76ea248ce6bc3dec3a90ad92d94ce7a",
+      "schemaVersion": 2,
+      "displayName": "Maximum Speed 50 km/h",
+      "assetPath": "/signs/ns-official/RB-1A.png",
+      "designation": "RB-1",
+      "previousApprovals": []
+    },
+    "RB-91": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:59:31.337Z",
+      "fingerprint": "388a98ca5e69bfdd1cb2d09e45c46490f85c503c77dd336a7cba6880fbe6e1b4",
+      "schemaVersion": 2,
+      "displayName": "Reserved Bicycle Lane — Side-Mounted",
+      "assetPath": "/signs/ns-official/RB-91.png",
+      "designation": "RB-91",
+      "previousApprovals": []
+    },
+    "RB-90": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:59:32.910Z",
+      "fingerprint": "cf302862e7b74ec1df6bda0702f06f348cb6bd01c107467e73d47a5f9db3fd0e",
+      "schemaVersion": 2,
+      "displayName": "Reserved Bicycle Lane — Overhead",
+      "assetPath": "/signs/ns-official/RB-90.png",
+      "designation": "RB-90",
+      "previousApprovals": []
+    },
+    "RB-89": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:59:36.111Z",
+      "fingerprint": "1066de8575b8a6367389c75bc36df7e1ef21bf9ee4115dd72ed7675b1b0dc85d",
+      "schemaVersion": 2,
+      "displayName": "Automobiles and Motorcycles Prohibited",
+      "assetPath": "/signs/ns-official/RB-89.png",
+      "designation": "RB-89",
+      "previousApprovals": []
+    },
+    "RB-88": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:59:37.501Z",
+      "fingerprint": "ac32e857742024eb8612148ded8e067dd52a90daa9f659b2736c7e93ad646397",
+      "schemaVersion": 2,
+      "displayName": "Automobiles Prohibited",
+      "assetPath": "/signs/ns-official/RB-88.png",
+      "designation": "RB-88",
+      "previousApprovals": []
+    },
+    "RB-87": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:59:39.761Z",
+      "fingerprint": "4ef8c2647febad513024f0dc2e9720fbc6792cf040719cb64e35048818cca266",
+      "schemaVersion": 2,
+      "displayName": "All-Terrain Vehicles Prohibited",
+      "assetPath": "/signs/ns-official/RB-87.png",
+      "designation": "RB-87",
+      "previousApprovals": []
+    },
+    "RB-86": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:59:41.126Z",
+      "fingerprint": "3a251d9174f19c0823125282404837b3607c4eb174cbef7b6c3515132178653a",
+      "schemaVersion": 2,
+      "displayName": "Pedestrians and Motorcycles Prohibited",
+      "assetPath": "/signs/ns-official/RB-86.png",
+      "designation": "RB-86",
+      "previousApprovals": []
+    },
+    "RB-85": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:59:43.667Z",
+      "fingerprint": "a60e09d45a82c20dde056362b28002d4e6b2e72794fb6200e9932d409532c8d0",
+      "schemaVersion": 2,
+      "displayName": "Motorcycles Prohibited",
+      "assetPath": "/signs/ns-official/RB-85.png",
+      "designation": "RB-85",
+      "previousApprovals": []
+    },
+    "RB-84": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:59:44.957Z",
+      "fingerprint": "7e3c35203c54002ad1bd5d93a82dffe3d4d6838d5896e914e3c3106cc6694b68",
+      "schemaVersion": 2,
+      "displayName": "In-Line Skating Prohibited",
+      "assetPath": "/signs/ns-official/RB-84.png",
+      "designation": "RB-84",
+      "previousApprovals": []
+    },
+    "RB-81A": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T18:59:58.404Z",
+      "fingerprint": "1ecbcde0ccb89a31c54598cbc3a778009c46856b31866eca1cc5c65612c35516",
+      "schemaVersion": 2,
+      "displayName": "Reserved Lane, Three or More Vehicle Types — Side-Mounted",
+      "assetPath": "/signs/ns-official/RB-81A.png",
+      "designation": "RB-81A",
+      "previousApprovals": []
+    },
+    "RB-81": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:00:03.903Z",
+      "fingerprint": "835be7f8e3be34016ca721fb65ab7526571346a51189ba6c59a3da7e9804ec18",
+      "schemaVersion": 2,
+      "displayName": "Reserved Lane — Side-Mounted",
+      "assetPath": "/signs/ns-official/RB-81.png",
+      "designation": "RB-81",
+      "previousApprovals": []
+    },
+    "RB-80S2": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:00:05.168Z",
+      "fingerprint": "df4b426249ea8d391a1d044597573801ab8d5603c762aff685dd7ec6ddf3baf9",
+      "schemaVersion": 2,
+      "displayName": "Reserved Lane Ends Tab",
+      "assetPath": "/signs/ns-official/RB-80S2.png",
+      "designation": "RB-80S2",
+      "previousApprovals": []
+    },
+    "RB-80S1": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:00:05.962Z",
+      "fingerprint": "925abe5736226335919c814c2f2530da83ec2290c24066f48f12e2b9063161d7",
+      "schemaVersion": 2,
+      "displayName": "Reserved Lane Begins Tab",
+      "assetPath": "/signs/ns-official/RB-80S1.png",
+      "designation": "RB-80S1",
+      "previousApprovals": []
+    },
+    "RB-80A": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:00:09.085Z",
+      "fingerprint": "5ae309c318019bd506c10405f4603b1f4c7d7bbbba969dadd5d0915557b5168a",
+      "schemaVersion": 2,
+      "displayName": "Reserved Lane, Three or More Vehicle Types — Overhead",
+      "assetPath": "/signs/ns-official/RB-80A.png",
+      "designation": "RB-80A",
+      "previousApprovals": []
+    },
+    "RB-80": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:00:10.250Z",
+      "fingerprint": "b67de635dcfc7e501d66ae1e881a6c682ab9be475f69c82943a6f151a0a497d4",
+      "schemaVersion": 2,
+      "displayName": "Reserved Lane — Overhead",
+      "assetPath": "/signs/ns-official/RB-80.png",
+      "designation": "RB-80",
+      "previousApprovals": []
+    },
+    "RB-79T": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:00:12.272Z",
+      "fingerprint": "a7b67bf5c79ae1947dc79704ed6d55252f6c9b1e7ee4b68472be1ce419b84bfd",
+      "schemaVersion": 2,
+      "displayName": "Dismount and Walk Tab",
+      "assetPath": "/signs/ns-official/RB-79T.png",
+      "designation": "RB-79T",
+      "previousApprovals": []
+    },
+    "RB-79": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:00:13.496Z",
+      "fingerprint": "57044f079ec29492e0572b12e7712e0c758495caefc199eeac3c574480e0eb4b",
+      "schemaVersion": 2,
+      "displayName": "Dismount and Walk",
+      "assetPath": "/signs/ns-official/RB-79.png",
+      "designation": "RB-79",
+      "previousApprovals": []
+    },
+    "RB-78": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:00:19.389Z",
+      "fingerprint": "22fb58cdd6e4a3431ea70ddcfdaf57cdd7ff89786abb5320e931685f615a76de",
+      "schemaVersion": 2,
+      "displayName": "Cycling Prohibited on Sidewalks",
+      "assetPath": "/signs/ns-official/RB-78.png",
+      "designation": "RB-78",
+      "previousApprovals": []
+    },
+    "RB-77": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:00:20.641Z",
+      "fingerprint": "342b06b05319909a38a0f712a09504f0aa179a26542f9ef09834284ff562b505",
+      "schemaVersion": 2,
+      "displayName": "Truck Inspection Station Exit",
+      "assetPath": "/signs/ns-official/RB-77.png",
+      "designation": "RB-77",
+      "previousApprovals": []
+    },
+    "RB-76": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:00:21.658Z",
+      "fingerprint": "d963c2924f25eeeea5924e94287bb36789587b740653b43d9346541ee08163c5",
+      "schemaVersion": 2,
+      "displayName": "Truck Inspection Station Ahead",
+      "assetPath": "/signs/ns-official/RB-76.png",
+      "designation": "RB-76",
+      "previousApprovals": []
+    },
+    "RB-73R": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:00:24.482Z",
+      "fingerprint": "dddfa9a7c78f6ba290b515791b38115cff362bef4996c8fa8a6ef2e6b73f1cf0",
+      "schemaVersion": 2,
+      "displayName": "Cross Other Side — Cross to the Left",
+      "assetPath": "/signs/ns-official/RB-73R.png",
+      "designation": "RB-73R",
+      "previousApprovals": []
+    },
+    "RB-73L": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:00:26.389Z",
+      "fingerprint": "0f00bbd747703080a989137044ecc495bcf0650a26ec1379323779223abd060c",
+      "schemaVersion": 2,
+      "displayName": "Cross Other Side — Cross to the Right",
+      "assetPath": "/signs/ns-official/RB-73L.png",
+      "designation": "RB-73L",
+      "previousApprovals": []
+    },
+    "RB-70": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:00:33.676Z",
+      "fingerprint": "5d86c1cd405874568c878c13fca6c2ec4e240ee48a7291bff3d7637669c7207e",
+      "schemaVersion": 2,
+      "displayName": "Dangerous Goods Prohibited",
+      "assetPath": "/signs/ns-official/RB-70.png",
+      "designation": "RB-70",
+      "previousApprovals": []
+    },
+    "RB-69": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:00:34.673Z",
+      "fingerprint": "d1e0572cd2789f8a111faf74545f73fd6d24dda92e89cf00391092e9b4138830",
+      "schemaVersion": 2,
+      "displayName": "Dangerous Goods Route",
+      "assetPath": "/signs/ns-official/RB-69.png",
+      "designation": "RB-69",
+      "previousApprovals": []
+    },
+    "RB-68": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:00:36.174Z",
+      "fingerprint": "b51ea3440834555d5fbab365a3cb31f8674be2eb706a4fa6c0b5f45bfa7af8ce",
+      "schemaVersion": 2,
+      "displayName": "Lane Use Restriction — Trucks Prohibited in Lane",
+      "assetPath": "/signs/ns-official/RB-68.png",
+      "designation": "RB-68",
+      "previousApprovals": []
+    },
+    "RB-67": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:00:38.317Z",
+      "fingerprint": "59ed9c212b74adf76828e49a2a39a051d76f89c99b2360bd5e689ad0f26a0119",
+      "schemaVersion": 2,
+      "displayName": "Cycling Prohibited",
+      "assetPath": "/signs/ns-official/RB-67.png",
+      "designation": "RB-67",
+      "previousApprovals": []
+    },
+    "RB-66": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:00:39.107Z",
+      "fingerprint": "fde9c8817913449ebe927f014e18c1d4366ad98b9a37d9c53c3d41809d96c876",
+      "schemaVersion": 2,
+      "displayName": "Pedestrians Prohibited",
+      "assetPath": "/signs/ns-official/RB-66.png",
+      "designation": "RB-66",
+      "previousApprovals": []
+    },
+    "RB-65": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:00:39.895Z",
+      "fingerprint": "7208c7cbed4837a3b3bbb2242ed6f898add22eca9d7e43061c5628ade8121fdc",
+      "schemaVersion": 2,
+      "displayName": "Snowmobiles Prohibited",
+      "assetPath": "/signs/ns-official/RB-65.png",
+      "designation": "RB-65",
+      "previousApprovals": []
+    },
+    "RB-64": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:00:41.064Z",
+      "fingerprint": "93b7ccc5861b9c2450022df40f85995bd5888108d765b5ae3db527585edd0cbf",
+      "schemaVersion": 2,
+      "displayName": "Snowmobile Route",
+      "assetPath": "/signs/ns-official/RB-64.png",
+      "designation": "RB-64",
+      "previousApprovals": []
+    },
+    "RB-63B": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:00:42.928Z",
+      "fingerprint": "b3d11219d4245ef1d7c7610c6a0fe91fe912fe4b010262cee7644cf6d0964ee7",
+      "schemaVersion": 2,
+      "displayName": "Vehicle Combination Bridge Weight Restriction",
+      "assetPath": "/signs/ns-official/RB-63B.png",
+      "designation": "RB-63B",
+      "previousApprovals": []
+    },
+    "RB-63A": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:00:43.816Z",
+      "fingerprint": "277044839a7b81ddd912933665617a716401ae15d9a2ed41781cb763943d2c4a",
+      "schemaVersion": 2,
+      "displayName": "Bridge Weight Restriction",
+      "assetPath": "/signs/ns-official/RB-63A.png",
+      "designation": "RB-63A",
+      "previousApprovals": []
+    },
+    "RB-63": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:00:44.843Z",
+      "fingerprint": "0cca22cf094785e6075fdd07b80559905252e02c84fb042fcffabd12a0ccb670",
+      "schemaVersion": 2,
+      "displayName": "Weight Limit Control",
+      "assetPath": "/signs/ns-official/RB-63.png",
+      "designation": "RB-63",
+      "previousApprovals": []
+    },
+    "RB-62": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:00:46.265Z",
+      "fingerprint": "181150335247b103044b7bf892ecfd138cbf43030c1e62e4ed3ca9515b04c8d7",
+      "schemaVersion": 2,
+      "displayName": "Truck Prohibition",
+      "assetPath": "/signs/ns-official/RB-62.png",
+      "designation": "RB-62",
+      "previousApprovals": []
+    },
+    "RB-61SC": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:00:51.001Z",
+      "fingerprint": "7ab06a571d0c6eb266f30fc2d6d3b442a03121ada6a42edf3fb562901c41fc8f",
+      "schemaVersion": 2,
+      "displayName": "Truck Route Arrows — Times Shown (White on Black)",
+      "assetPath": "/signs/ns-official/RB-61SC.png",
+      "designation": "RB-61SC",
+      "previousApprovals": []
+    },
+    "RB-61SB": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:00:52.343Z",
+      "fingerprint": "adfbe9a6bce2eae27fe7f527e944b30c29509a87928a69ec8d9e12e624b9b515",
+      "schemaVersion": 2,
+      "displayName": "Truck Route Arrows",
+      "assetPath": "/signs/ns-official/RB-61SB.png",
+      "designation": "RB-61SB",
+      "previousApprovals": []
+    },
+    "RB-61SA": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:00:53.491Z",
+      "fingerprint": "522141014f39470fc72508d8e6e2c97c625969c7e4d72384002404252472d0d7",
+      "schemaVersion": 2,
+      "displayName": "Truck Route Arrows — Times Shown",
+      "assetPath": "/signs/ns-official/RB-61SA.png",
+      "designation": "RB-61SA",
+      "previousApprovals": []
+    },
+    "RB-57A": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:00:57.120Z",
+      "fingerprint": "4da1cf778db071b371d0b6508b7e956356cb52811a36b31ff6ca3d80372936cf",
+      "schemaVersion": 2,
+      "displayName": "No Stopping on Pavement",
+      "assetPath": "/signs/ns-official/RB-57A.png",
+      "designation": "RB-57A",
+      "previousApprovals": []
+    },
+    "RB-57": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:01:00.220Z",
+      "fingerprint": "c940b0a1abff6f11cd4a0458330e55150b7fa46ba24b37e7bf015fe6c95b60c0",
+      "schemaVersion": 2,
+      "displayName": "No Stopping — Times Shown",
+      "assetPath": "/signs/ns-official/RB-57.png",
+      "designation": "RB-57",
+      "previousApprovals": []
+    },
+    "RB-53": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:01:01.789Z",
+      "fingerprint": "dfb6f357cb52c1c6c4af3dbbd0dba054812f7a6371864751c9ca577a7d589980",
+      "schemaVersion": 2,
+      "displayName": "Parking Permitted",
+      "assetPath": "/signs/ns-official/RB-53.png",
+      "designation": "RB-53",
+      "previousApprovals": []
+    },
+    "RB-52A": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:01:03.439Z",
+      "fingerprint": "a52ef037c0def797be9f30fe50e6dcf0f3f043d3be39cce68a682b67f6244467",
+      "schemaVersion": 2,
+      "displayName": "No Parking on Pavement",
+      "assetPath": "/signs/ns-official/RB-52A.png",
+      "designation": "RB-52A",
+      "previousApprovals": []
+    },
+    "RB-52": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:01:06.727Z",
+      "fingerprint": "cdee2994813f48398d04ab18a93a716603420a8c28a35aca2ce5bd0d59a5ff8f",
+      "schemaVersion": 2,
+      "displayName": "No Parking — Times Shown",
+      "assetPath": "/signs/ns-official/RB-52.png",
+      "designation": "RB-52",
+      "previousApprovals": []
+    },
+    "RB-49": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:01:08.384Z",
+      "fingerprint": "68a28135792a19388dc8a6ca31378c2bd1e5a6b5f473ca08acd4b132f8b969ed",
+      "schemaVersion": 2,
+      "displayName": "Three-Lane Control — Left Turn, Straight, Right Turn",
+      "assetPath": "/signs/ns-official/RB-49.png",
+      "designation": "RB-49",
+      "previousApprovals": []
+    },
+    "RB-48S": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:01:09.011Z",
+      "fingerprint": "1c5579583ac1d65ed8c0041f0c402a61aba9ad52a11ac34be1e02559e8ca5e00",
+      "schemaVersion": 2,
+      "displayName": "Centre Lane Tab",
+      "assetPath": "/signs/ns-official/RB-48S.png",
+      "designation": "RB-48S",
+      "previousApprovals": []
+    },
+    "RB-47R": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:01:10.005Z",
+      "fingerprint": "ab666c1c49d96a1e39c64aaa5c1980f6a052694966cf6524fa806d6331b1146e",
+      "schemaVersion": 2,
+      "displayName": "Two-Lane Control — Left Lane Straight or Right Turn, Right Lane Right Turn",
+      "assetPath": "/signs/ns-official/RB-47R.png",
+      "designation": "RB-47R",
+      "previousApprovals": []
+    },
+    "RB-47L": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:01:10.488Z",
+      "fingerprint": "cff37810725f2ab5aa28d609aaafb96d5b3fef44bc85679c6b8f4b4f33d43060",
+      "schemaVersion": 2,
+      "displayName": "Two-Lane Control — Left Lane Left Turn, Right Lane Straight or Left Turn",
+      "assetPath": "/signs/ns-official/RB-47L.png",
+      "designation": "RB-47L",
+      "previousApprovals": []
+    },
+    "RB-47E": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:01:11.753Z",
+      "fingerprint": "005001dbf25021dba4733f44a13dd9e4a5a52dbe2e7e6db9a91fb22f2d6a0a26",
+      "schemaVersion": 2,
+      "displayName": "Two-Lane Control — Left Lane Left Turn, Right Lane Straight, Left or Right Turn",
+      "assetPath": "/signs/ns-official/RB-47E.png",
+      "designation": "RB-47E",
+      "previousApprovals": []
+    },
+    "RB-47D": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:01:12.344Z",
+      "fingerprint": "34f73320f6d5e6ee284b5b2ae51b99321bd44644c4e9620595dcd8d5fe2fbbe9",
+      "schemaVersion": 2,
+      "displayName": "Two-Lane Control — Left Lane Straight or Left Turn, Right Lane Straight",
+      "assetPath": "/signs/ns-official/RB-47D.png",
+      "designation": "RB-47D",
+      "previousApprovals": []
+    },
+    "RB-47C": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:01:18.463Z",
+      "fingerprint": "06c94597fc91d2ea861f27cd6e960c88cb44c138832335efb635a31be6f63f0c",
+      "schemaVersion": 2,
+      "displayName": "Two-Lane Control — Left Lane Straight, Right Lane Straight or Right Turn",
+      "assetPath": "/signs/ns-official/RB-47C.png",
+      "designation": "RB-47C",
+      "previousApprovals": []
+    },
+    "RB-47B": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:01:21.129Z",
+      "fingerprint": "6203fd589c9c747927058d522918c278449ae8dff91e1e6605cbb476573a35bb",
+      "schemaVersion": 2,
+      "displayName": "Two-Lane Control — Left Lane Left Turn, Right Lane Straight or Right Turn",
+      "assetPath": "/signs/ns-official/RB-47B.png",
+      "designation": "RB-47B",
+      "previousApprovals": []
+    },
+    "RB-47A": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:01:22.814Z",
+      "fingerprint": "be487520f325e6d04a65814711634ef3d0851b65952eff3756cc5cf60e9889e9",
+      "schemaVersion": 2,
+      "displayName": "Two-Lane Control — Left Lane Straight or Left Turn, Right Lane Right Turn",
+      "assetPath": "/signs/ns-official/RB-47A.png",
+      "designation": "RB-47A",
+      "previousApprovals": []
+    },
+    "RB-46R": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:01:24.167Z",
+      "fingerprint": "408c6a9901a4c5b9a2e62e466e8549ffea5bb76d21bb15b4f1dae0e74968d298",
+      "schemaVersion": 2,
+      "displayName": "Two-Lane Control — Both Lanes Right Turn",
+      "assetPath": "/signs/ns-official/RB-46R.png",
+      "designation": "RB-46R",
+      "previousApprovals": []
+    },
+    "RB-46L": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:01:26.746Z",
+      "fingerprint": "4159a48823b4ea323981386cb06fb96713985db58601626b661e0cfaedcee858",
+      "schemaVersion": 2,
+      "displayName": "Two-Lane Control — Both Lanes Left Turn",
+      "assetPath": "/signs/ns-official/RB-46L.png",
+      "designation": "RB-46L",
+      "previousApprovals": []
+    },
+    "RB-46B": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:01:28.456Z",
+      "fingerprint": "882c62796cb541c04e3b946f868347a2033c5f8d4c778e304b9bc6941095751d",
+      "schemaVersion": 2,
+      "displayName": "Two-Lane Control — Left Lane Left Turn, Right Lane Straight",
+      "assetPath": "/signs/ns-official/RB-46B.png",
+      "designation": "RB-46B",
+      "previousApprovals": []
+    },
+    "RB-46A": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:01:30.579Z",
+      "fingerprint": "385c3bd043f631f5f9916c50cf34d7d6e482bb1dfc83910df114c09a3d3b6fcd",
+      "schemaVersion": 2,
+      "displayName": "Two-Lane Control — Left Lane Straight, Right Lane Right Turn",
+      "assetPath": "/signs/ns-official/RB-46A.png",
+      "designation": "RB-46A",
+      "previousApprovals": []
+    },
+    "RB-45": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:01:31.402Z",
+      "fingerprint": "cbceb8c7bfcff9d57370244430dbc5873bda5cb26037440beb1ed7d4b0d71c40",
+      "schemaVersion": 2,
+      "displayName": "Straight Ahead Only",
+      "assetPath": "/signs/ns-official/RB-45.png",
+      "designation": "RB-45",
+      "previousApprovals": []
+    },
+    "RB-44": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:01:32.828Z",
+      "fingerprint": "fab8cb3fe7c52177edc944b6deb80df3ec885b7e2ad68ac71fd4d44346d0e070",
+      "schemaVersion": 2,
+      "displayName": "Straight, Left or Right Turn",
+      "assetPath": "/signs/ns-official/RB-44.png",
+      "designation": "RB-44",
+      "previousApprovals": []
+    },
+    "RB-43": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:01:33.710Z",
+      "fingerprint": "65d57feaa123d87a61ea8fb6d9d02116fed136e955a55b5ec61d627d971cab92",
+      "schemaVersion": 2,
+      "displayName": "Left or Right Turn Only",
+      "assetPath": "/signs/ns-official/RB-43.png",
+      "designation": "RB-43",
+      "previousApprovals": []
+    },
+    "R-204": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:01:35.990Z",
+      "fingerprint": "5f1dcea6dda1ced4ec648f833c42d7511f455b84762a698808a7177a157c8277",
+      "schemaVersion": 2,
+      "displayName": "All-Terrain Vehicle Route",
+      "assetPath": "/signs/ns-official/R-204.png",
+      "designation": "R-204",
+      "previousApprovals": []
+    },
+    "R-203": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:01:37.939Z",
+      "fingerprint": "fd79729aa1c6e8831f94764f5b6a2bbdc7831d06946b1a571cfc8855c44cb70e",
+      "schemaVersion": 2,
+      "displayName": "End No Lane Change",
+      "assetPath": "/signs/ns-official/R-203.png",
+      "designation": "R-203",
+      "previousApprovals": []
+    },
+    "R-202": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:01:39.658Z",
+      "fingerprint": "7f5844cfc8dffd20f8c68fd8c4ccdc476669c5897357a3632e78f9758a243de1",
+      "schemaVersion": 2,
+      "displayName": "No Lane Change — Overhead",
+      "assetPath": "/signs/ns-official/R-202.png",
+      "designation": "R-202",
+      "previousApprovals": []
+    },
+    "R-201": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:01:40.563Z",
+      "fingerprint": "66fe6290fd5ab0cb2523f776ce1a18da37bbb73a5b6142bafbca3b5dbbed106a",
+      "schemaVersion": 2,
+      "displayName": "No Lane Change",
+      "assetPath": "/signs/ns-official/R-201.png",
+      "designation": "R-201",
+      "previousApprovals": []
+    },
+    "R-200": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:01:42.009Z",
+      "fingerprint": "4d1708e6b00e8b983df339f66be2ed66341e6a0527fc8dbb410a6b00413fad74",
+      "schemaVersion": 2,
+      "displayName": "No Lane Change Ahead",
+      "assetPath": "/signs/ns-official/R-200.png",
+      "designation": "R-200",
+      "previousApprovals": []
+    },
+    "R-130": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:01:42.965Z",
+      "fingerprint": "918aef34964343e135dda5b395b4bd28249072756a1d23426e7404837c9e7c8c",
+      "schemaVersion": 2,
+      "displayName": "Shared Sidewalk",
+      "assetPath": "/signs/ns-official/R-130.png",
+      "designation": "R-130",
+      "previousApprovals": []
+    },
+    "R-129": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:01:44.367Z",
+      "fingerprint": "c79a6aa41a9e8ae02f2655be9b74c446a1de8e6ca7385639090fb95981aaf84c",
+      "schemaVersion": 2,
+      "displayName": "Do Not Pass Here to Crosswalk",
+      "assetPath": "/signs/ns-official/R-129.png",
+      "designation": "R-129",
+      "previousApprovals": []
+    },
+    "R-128": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:01:48.631Z",
+      "fingerprint": "5d906e032eaa99d1014263cdd65f13c985d3c6d15fd7482350dba37f34d36da0",
+      "schemaVersion": 2,
+      "displayName": "Trucks Right Lane Only Next Distance Shown",
+      "assetPath": "/signs/ns-official/R-128.png",
+      "designation": "R-128",
+      "previousApprovals": []
+    },
+    "R-127": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:01:50.436Z",
+      "fingerprint": "5a7127a07adfc6991aad77bf3010b66ecca2a18c9930f993243640c583f58e70",
+      "schemaVersion": 2,
+      "displayName": "Truck Report to / Bypass Weigh Scale",
+      "assetPath": "/signs/ns-official/R-127.png",
+      "designation": "R-127",
+      "previousApprovals": []
+    },
+    "R-126": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:01:51.279Z",
+      "fingerprint": "55dfb254b4f9788dbcdbecc1d959a717134346d782f2b88c4cda06bd41933a17",
+      "schemaVersion": 2,
+      "displayName": "Report to Scale When Directed",
+      "assetPath": "/signs/ns-official/R-126.png",
+      "designation": "R-126",
+      "previousApprovals": []
+    },
+    "R-125": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:01:52.484Z",
+      "fingerprint": "2cecd5c75392aa5d51c3ec544da371c73f8a916f3b72d7a73d430ea51425af1b",
+      "schemaVersion": 2,
+      "displayName": "Trucks Over 4500 kg Report to Scale",
+      "assetPath": "/signs/ns-official/R-125.png",
+      "designation": "R-125",
+      "previousApprovals": []
+    },
+    "R-124": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:01:53.608Z",
+      "fingerprint": "b34f8593c77be4273148642678db6f129032771a7851e671dafb05e92af33fb1",
+      "schemaVersion": 2,
+      "displayName": "Shut Off Your Radio Transmitter",
+      "assetPath": "/signs/ns-official/R-124.png",
+      "designation": "R-124",
+      "previousApprovals": []
+    },
+    "R-123": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:01:58.311Z",
+      "fingerprint": "5daff96d5a885e571d77a5c4377d6a642dee21b9ad69d0c48996b5b750efb6d5",
+      "schemaVersion": 2,
+      "displayName": "Gross Weight",
+      "assetPath": "/signs/ns-official/R-123.png",
+      "designation": "R-123",
+      "previousApprovals": []
+    },
+    "R-122": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:01:59.275Z",
+      "fingerprint": "f3df2a4f96630556cae48733689eee35723cb598f5a25740014901b28ea747fb",
+      "schemaVersion": 2,
+      "displayName": "Vehicles Over 12 Tonnes 15 km/h on Bridge",
+      "assetPath": "/signs/ns-official/R-122.png",
+      "designation": "R-122",
+      "previousApprovals": []
+    },
+    "R-121": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:02:00.299Z",
+      "fingerprint": "87e38a7aaf094de3dc454ad9b549bda309560dcdc7b87cd89efee2cb16463f89",
+      "schemaVersion": 2,
+      "displayName": "Vehicles Over 12 Tonnes Reduce Speed",
+      "assetPath": "/signs/ns-official/R-121.png",
+      "designation": "R-121",
+      "previousApprovals": []
+    },
+    "R-120": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:02:01.392Z",
+      "fingerprint": "3930f80d849ea264a260ea8d80ba91d3e0f35f2a8e256ad31277679d75bec7e5",
+      "schemaVersion": 2,
+      "displayName": "All Traffic Exit Right",
+      "assetPath": "/signs/ns-official/R-120.png",
+      "designation": "R-120",
+      "previousApprovals": []
+    },
+    "R-119": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:02:02.986Z",
+      "fingerprint": "2e6a82f5ca00bddfae96f5a8a6bc258ab07a00fed8db1d98edc0c0308cfa0186",
+      "schemaVersion": 2,
+      "displayName": "All Traffic Exit Left",
+      "assetPath": "/signs/ns-official/R-119.png",
+      "designation": "R-119",
+      "previousApprovals": []
+    },
+    "R-118": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:02:04.771Z",
+      "fingerprint": "a37db4fe8b260adedab3bd2f1dca36b7c47fae2774c68cc16ad9b2839665237b",
+      "schemaVersion": 2,
+      "displayName": "Road Closed Detour — Right",
+      "assetPath": "/signs/ns-official/R-118.png",
+      "designation": "R-118",
+      "previousApprovals": []
+    },
+    "R-117": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:02:05.762Z",
+      "fingerprint": "a8f21f401af8f58f223774808e5ab15ccefab777887b68673a25bef815648e81",
+      "schemaVersion": 2,
+      "displayName": "Road Closed Detour — Left",
+      "assetPath": "/signs/ns-official/R-117.png",
+      "designation": "R-117",
+      "previousApprovals": []
+    },
+    "R-116": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:02:09.314Z",
+      "fingerprint": "4d696b37ee647ec3c2fd67b092c31ded3554fbd81fa2b4bec77afa13d7827bce",
+      "schemaVersion": 2,
+      "displayName": "Street Closed — Local Traffic Only",
+      "assetPath": "/signs/ns-official/R-116.png",
+      "designation": "R-116",
+      "previousApprovals": []
+    },
+    "R-115": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:02:11.354Z",
+      "fingerprint": "39e917c1e1686d52864336b04564a6f519ac94305e5f5ff32d39c253e881cb76",
+      "schemaVersion": 2,
+      "displayName": "Do Not Cross Median",
+      "assetPath": "/signs/ns-official/R-115.png",
+      "designation": "R-115",
+      "previousApprovals": []
+    },
+    "R-114": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:02:12.761Z",
+      "fingerprint": "dcc81d3fcc9b023fa368d7c7e87ff5014cf3faab555bf10467a662e7ef26d094",
+      "schemaVersion": 2,
+      "displayName": "Do Not Drive on Paved Shoulder",
+      "assetPath": "/signs/ns-official/R-114.png",
+      "designation": "R-114",
+      "previousApprovals": []
+    },
+    "R-113": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:02:17.186Z",
+      "fingerprint": "8f27e1b877f0dd792bced973b731beb59bb1f2e3b827d51d29f0b2f9674761e7",
+      "schemaVersion": 2,
+      "displayName": "Keep Off Median",
+      "assetPath": "/signs/ns-official/R-113.png",
+      "designation": "R-113",
+      "previousApprovals": []
+    },
+    "R-112": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:02:19.015Z",
+      "fingerprint": "38716cbd7de547bd602957289d82ec6b5c007b377bfe59b204398e24ced44e05",
+      "schemaVersion": 2,
+      "displayName": "Slow Moving Vehicles Prohibited",
+      "assetPath": "/signs/ns-official/R-112.png",
+      "designation": "R-112",
+      "previousApprovals": []
+    },
+    "R-110": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:02:20.793Z",
+      "fingerprint": "8cdbc74dcdcdc4f4d4864787c8fee7916db2a7a08b817ba7065bb3f24df75274",
+      "schemaVersion": 2,
+      "displayName": "Emergency Parking Only",
+      "assetPath": "/signs/ns-official/R-110.png",
+      "designation": "R-110",
+      "previousApprovals": []
+    },
+    "R-109": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:02:21.741Z",
+      "fingerprint": "44fc9e54475ceaf41e21a388eabed9cd76f66553f734a02157dbf52879899aee",
+      "schemaVersion": 2,
+      "displayName": "Tow-Away Zone",
+      "assetPath": "/signs/ns-official/R-109.png",
+      "designation": "R-109",
+      "previousApprovals": []
+    },
+    "R-108": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:02:22.975Z",
+      "fingerprint": "b4aa8ce040eaa581feb5b881ec972aa546c3232420b78c31f7c880873162b5bd",
+      "schemaVersion": 2,
+      "displayName": "Time Tab",
+      "assetPath": "/signs/ns-official/R-108.png",
+      "designation": "R-108",
+      "previousApprovals": []
+    },
+    "R-107": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:02:26.028Z",
+      "fingerprint": "9d5654492afdffab39230be4c953be5c9068e52df371fd66b63fb88db2e76119",
+      "schemaVersion": 2,
+      "displayName": "Except Authorized Vehicles Tab",
+      "assetPath": "/signs/ns-official/R-107.png",
+      "designation": "R-107",
+      "previousApprovals": []
+    },
+    "R-105": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:02:33.346Z",
+      "fingerprint": "9d7de847f9afb15bdb0f963f0ef66743eaa5e9f0ea4ca0ebe3dbacf322c75316",
+      "schemaVersion": 2,
+      "displayName": "Except With Green Arrow",
+      "assetPath": "/signs/ns-official/R-105.png",
+      "designation": "R-105",
+      "previousApprovals": []
+    },
+    "R-104T": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:02:37.715Z",
+      "fingerprint": "6dcfde4a220b6c50a070e9cda86fc585b7152ab92bd0c98e761961d38cb880c0",
+      "schemaVersion": 2,
+      "displayName": "School Area Maximum Speed 50 Tab",
+      "assetPath": "/signs/ns-official/R-104T.png",
+      "designation": "R-104T",
+      "previousApprovals": []
+    },
+    "R-103T": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:02:38.708Z",
+      "fingerprint": "a3caabaec4c2f4807292c0fb6663756f12ba4977ea091909d16fde4ad5ebde82",
+      "schemaVersion": 2,
+      "displayName": "School Area Maximum Speed 30 Tab",
+      "assetPath": "/signs/ns-official/R-103T.png",
+      "designation": "R-103T",
+      "previousApprovals": []
+    },
+    "R-102T": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:02:40.048Z",
+      "fingerprint": "83cd7fc8a88ea87aa3ee8eadeb007f44ed49b5d91251dafe55b66e67fd118cc7",
+      "schemaVersion": 2,
+      "displayName": "End School Area Tab",
+      "assetPath": "/signs/ns-official/R-102T.png",
+      "designation": "R-102T",
+      "previousApprovals": []
+    },
+    "R-102": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:02:45.220Z",
+      "fingerprint": "f055d47c319ea26f6a5419f8f3d6996aeb8a6c931fdc5d5f05869fc29a5b3e31",
+      "schemaVersion": 2,
+      "displayName": "End School Area",
+      "assetPath": "/signs/ns-official/R-102.png",
+      "designation": "R-102",
+      "previousApprovals": []
+    },
+    "R-101": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:02:46.247Z",
+      "fingerprint": "c4d90fb7dcc7b1ce44d97f5151a3d6b8e729d2e998f6c0d3f0dfde2b05c45db9",
+      "schemaVersion": 2,
+      "displayName": "Through Traffic Keep Right",
+      "assetPath": "/signs/ns-official/R-101.png",
+      "designation": "R-101",
+      "previousApprovals": []
+    },
+    "R-100": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:02:46.883Z",
+      "fingerprint": "f3bb3c425e0540222c82a9c9340aeba903e558b655c30e79900f68459f19df0d",
+      "schemaVersion": 2,
+      "displayName": "Wrong Way",
+      "assetPath": "/signs/ns-official/R-100.png",
+      "designation": "R-100",
+      "previousApprovals": []
+    },
+    "bicycle-route": {
+      "status": "approved",
+      "approvedAt": "2026-08-18T19:02:47.694Z",
+      "fingerprint": "b428bbef76d9ed03c4dc09210cfd91b06914f6d767f6aea7c2ecdac78f2b26e1",
+      "schemaVersion": 2,
+      "displayName": "Bicycle Route",
+      "assetPath": "/signs/ns-official/guide-bicycle-route.png",
+      "designation": "guide-bicycle-route",
+      "previousApprovals": []
+    }
+  }
+}

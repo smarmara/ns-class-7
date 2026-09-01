@@ -4,7 +4,7 @@ import {
   completeMockSection,
   loadBank,
   seedProgress,
-  startMockTest,
+  startPracticeExam,
 } from './helpers';
 
 /**
@@ -30,23 +30,23 @@ test.beforeEach(async ({ page }) => {
     }
   });
   await page.reload();
-  await expect(page.getByRole('heading', { name: 'Your readiness' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /Good (morning|afternoon|evening)/ })).toBeVisible();
 });
 
 function nav(page: Page, name: string) {
   return page.getByRole('navigation', { name: 'Primary' }).getByRole('link', { name });
 }
 
-test.describe('mock test outcome messaging', () => {
+test.describe('practice exam outcome messaging', () => {
   test('says not passed and names the failed section when Rules passes but Signs fails', async ({
     page,
   }) => {
     test.setTimeout(300_000);
-    await startMockTest(page);
+    await startPracticeExam(page);
     await completeMockSection(page, 'Rules', 'correct', bankByStem);
     await completeMockSection(page, 'Road Signs', 'incorrect', bankByStem);
 
-    await expect(page.getByRole('heading', { name: 'Mock test results' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Practice exam results' })).toBeVisible();
     await expect(page.getByRole('heading', { name: 'Not passed' })).toBeVisible();
     await expect(page.getByText(/You would need to retake: Road Signs/)).toBeVisible();
     await expect(page.locator('.result-badge')).toHaveText(['Pass', 'Fail']);
@@ -61,11 +61,11 @@ test.describe('mock test outcome messaging', () => {
     page,
   }) => {
     test.setTimeout(300_000);
-    await startMockTest(page);
+    await startPracticeExam(page);
     await completeMockSection(page, 'Rules', 'incorrect', bankByStem);
     await completeMockSection(page, 'Road Signs', 'correct', bankByStem);
 
-    await expect(page.getByRole('heading', { name: 'Mock test results' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Practice exam results' })).toBeVisible();
     await expect(page.getByRole('heading', { name: 'Not passed' })).toBeVisible();
     await expect(page.getByText(/You would need to retake: Rules/)).toBeVisible();
     await expect(page.locator('.result-badge')).toHaveText(['Fail', 'Pass']);
@@ -76,7 +76,7 @@ test.describe('mock test outcome messaging', () => {
 
   test('celebrates a pass honestly without predicting the real exam', async ({ page }) => {
     test.setTimeout(300_000);
-    await startMockTest(page);
+    await startPracticeExam(page);
     await completeMockSection(page, 'Rules', 'correct', bankByStem);
     await completeMockSection(page, 'Road Signs', 'correct', bankByStem);
 
@@ -91,7 +91,7 @@ test.describe('mock test outcome messaging', () => {
     expect(copy).toMatch(/met the threshold on both parts of this practice test/i);
 
     // Encourages the next step.
-    await expect(page.getByRole('button', { name: 'Take another mock test' })).toBeVisible();
+    await expect(page.getByRole('button', { name: 'Take another practice exam' })).toBeVisible();
   });
 });
 
@@ -159,26 +159,30 @@ test.describe('returning learner', () => {
     const expectedAnswered = Object.values(
       progress.questions as Record<string, { seen: number }>,
     ).reduce((n, s) => n + s.seen, 0);
-    const answered = page.locator('.stat', { hasText: 'Answered' }).locator('.stat-value');
+    // Home leads with the weak area it should focus on next.
+    await expect(page.getByText('Focus next')).toBeVisible();
+
+    await nav(page, 'Profile').click();
+    const answered = page.locator('.stat-cell', { hasText: 'Answered' }).locator('.stat-cell-value');
     await expect(answered).toHaveText(String(expectedAnswered));
-    await expect(page.getByText('Last mock test')).toBeVisible();
+    await expect(page.getByText('Practice exam history')).toBeVisible();
     await expect(page.locator('.result-badge').first()).toHaveText('Fail');
     await expect(page.getByText(/Rules 17\/20 · Road Signs 14\/20/)).toBeVisible();
 
-    // The dashboard prioritises the weak topic and the outstanding mistakes.
-    await expect(page.getByRole('heading', { name: 'Weak topics' })).toBeVisible();
-    await expect(page.locator('.tile-accuracy[data-band="weak"]').first()).toBeVisible();
-    await expect(page.getByRole('link', { name: /Review your mistakes/ })).toBeVisible();
+    // Progress prioritises the weak topic and the outstanding mistakes.
+    await expect(page.getByRole('heading', { name: 'Needs attention' })).toBeVisible();
+    await expect(page.locator('.row-score[data-band="weak"]').first()).toBeVisible();
+    await expect(page.getByRole('link', { name: /Mistakes/ })).toBeVisible();
 
     // Saved bookmarks are still there.
-    await nav(page, 'Review').click();
+    await nav(page, 'Profile').click();
     await page.getByRole('link', { name: /Saved questions/ }).click();
     await expect(page.getByRole('heading', { name: 'Saved questions' })).toBeVisible();
     await expect(page.locator('.choice').first()).toBeVisible();
 
     // Readiness reflects the mixed record (recent accuracy is weak-dominated).
-    await nav(page, 'Home').click();
-    await expect(page.locator('.readiness-score').first()).toHaveText(/\d+/);
+    await nav(page, 'Profile').click();
+    await expect(page.locator('.ring-value').first()).toHaveText(/\d+/);
   });
 });
 
@@ -196,7 +200,7 @@ test.describe('empty states and fallbacks', () => {
     await page.goto('/#/definitely-not-a-route');
     await expect(page.getByRole('heading', { name: /Nothing here/ })).toBeVisible();
     await page.getByRole('link', { name: /dashboard/i }).click();
-    await expect(page.getByRole('heading', { name: 'Your readiness' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: /Good (morning|afternoon|evening)/ })).toBeVisible();
   });
 
   test('exposes app and content versions on the Sources page', async ({ page }) => {
@@ -210,8 +214,8 @@ test.describe('empty states and fallbacks', () => {
 });
 
 test.describe('reset', () => {
-  test('clears an in-progress mock test along with all progress', async ({ page }) => {
-    await startMockTest(page);
+  test('clears an in-progress practice exam along with all progress', async ({ page }) => {
+    await startPracticeExam(page);
     await page.getByRole('button', { name: /Begin Rules/ }).click();
     await page.locator('.choice').first().click();
 
@@ -220,21 +224,99 @@ test.describe('reset', () => {
     await page.getByRole('button', { name: 'Reset all progress' }).click();
     await page.getByRole('button', { name: 'Erase everything' }).click();
 
-    // Returning to the mock route must not resume the old paper.
-    await page.goto('/#/mock');
-    await expect(page.getByRole('button', { name: 'Start mock test' })).toBeVisible();
+    // Returning to the practice exam must not resume the old paper.
+    await page.goto('/#/practice');
+    await expect(page.getByRole('button', { name: 'Start practice exam' })).toBeVisible();
     await expect(page.locator('.exam-timer')).toHaveCount(0);
 
     // And a reload must not resurrect it from storage either.
     await page.reload();
-    await expect(page.getByRole('button', { name: 'Start mock test' })).toBeVisible();
+    await expect(page.getByRole('button', { name: 'Start practice exam' })).toBeVisible();
   });
 });
 
 test.describe('practice accuracy', () => {
   test('marks the only correct choice as correct in practice (bank-driven)', async ({ page }) => {
-    await nav(page, 'Practice').click();
+    await page.goto('/#/practice/quick');
     const index = await answerCurrentCorrectly(page, bankByStem);
     await expect(page.locator('.choice').nth(index)).toHaveAttribute('data-state', 'correct');
+  });
+});
+
+test.describe('dark mode contrast', () => {
+  test('answer labels inherit the primary text token in dark mode, never UA ButtonText', async ({
+    page,
+  }) => {
+    // The reported bug: `<button>` answer cards fell back to the browser's
+    // near-black `ButtonText` colour, which is unreadable on the dark surface.
+    await page.emulateMedia({ colorScheme: 'dark' });
+    await page.goto('/#/practice/quick');
+    await expect(page.locator('.question-stem')).toBeVisible();
+
+    const idle = await page.locator('.choice').evaluateAll((els) =>
+      els.map((el) => {
+        const cs = getComputedStyle(el);
+        return { color: cs.color, bg: cs.backgroundColor };
+      }),
+    );
+    expect(idle.length).toBeGreaterThanOrEqual(2);
+
+    // Read the tokens from the document rather than pinning hex values, so a
+    // palette change cannot silently turn this into a no-op.
+    const tokens = await page.evaluate(() => {
+      const cs = getComputedStyle(document.documentElement);
+      const probe = (value: string) => {
+        const el = document.createElement('span');
+        el.style.color = value;
+        document.body.appendChild(el);
+        const out = getComputedStyle(el).color;
+        el.remove();
+        return out;
+      };
+      return {
+        surface: probe(cs.getPropertyValue('--surface').trim()),
+        text: probe(cs.getPropertyValue('--text').trim()),
+      };
+    });
+
+    // Dark mode is genuinely active: choices sit on the dark surface token.
+    for (const s of idle) expect(s.bg).toBe(tokens.surface);
+    // And the label uses the primary text token, not near-black ButtonText.
+    for (const s of idle) {
+      expect(s.color).toBe(tokens.text);
+      expect(s.color).not.toBe('rgb(0, 0, 0)');
+    }
+
+    // After answering, every marked state must keep the same primary text.
+    await page.locator('.choice').first().click();
+    const marked = await page.locator('.choice').evaluateAll((els) =>
+      els.map((el) => ({
+        state: el.getAttribute('data-state'),
+        color: getComputedStyle(el).color,
+      })),
+    );
+    expect(marked.some((m) => m.state === 'correct')).toBe(true);
+    for (const m of marked) expect(m.color).toBe(tokens.text);
+  });
+
+  test('light mode answer labels use the light primary text token', async ({ page }) => {
+    await page.emulateMedia({ colorScheme: 'light' });
+    await page.goto('/#/practice/quick');
+    await expect(page.locator('.question-stem')).toBeVisible();
+    const colors = await page.locator('.choice').evaluateAll((els) =>
+      els.map((el) => getComputedStyle(el).color),
+    );
+    const lightText = await page.evaluate(() => {
+      const el = document.createElement('span');
+      el.style.color = getComputedStyle(document.documentElement).getPropertyValue('--text').trim();
+      document.body.appendChild(el);
+      const out = getComputedStyle(el).color;
+      el.remove();
+      return out;
+    });
+    expect(colors.length).toBeGreaterThanOrEqual(2);
+    for (const c of colors) expect(c).toBe(lightText);
+    // The light token must actually be dark ink, not the dark-mode value.
+    expect(lightText).not.toBe('rgb(238, 241, 245)');
   });
 });

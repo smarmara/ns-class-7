@@ -1,0 +1,4 @@
+# GitHub surfaces SECURITY.md in the issue chooser automatically when the file
+# exists, so there are no contact_links here: they need absolute owner/repo URLs,
+# which would be broken placeholders until the repository is published.
+blank_issues_enabled: true

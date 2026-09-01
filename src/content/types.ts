@@ -74,6 +74,7 @@ export const SIGNS_TOPICS = [
   'signs-railway',
   'signs-pedestrian-and-cyclist',
   'pavement-markings',
+  'signs-shapes',
 ] as const;
 
 export type RulesTopic = (typeof RULES_TOPICS)[number];
@@ -114,6 +115,7 @@ export const TOPIC_LABELS: Record<Topic, string> = {
   'signs-railway': 'Railway signs',
   'signs-pedestrian-and-cyclist': 'Pedestrian and cyclist signs',
   'pavement-markings': 'Pavement markings',
+  'signs-shapes': 'Sign shapes',
 };
 
 export interface Question {

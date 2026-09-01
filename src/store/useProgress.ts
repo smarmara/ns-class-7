@@ -7,12 +7,13 @@ import {
   emptyProgress,
 } from '@/engine/learning/types';
 import { nextStat } from '@/engine/learning/scheduler';
-import { clearMockSession, clearProgress, loadProgress, saveProgress } from './persistence';
+import { clearLearnerState, saveLearnerState } from './learnerStorage';
 
 interface ProgressState {
   progress: Progress;
   hydrated: boolean;
-  hydrate: () => Promise<void>;
+  /** Install loaded state after a launch or a restored backup. */
+  install: (progress: Progress) => void;
   recordAnswer: (question: Question, correct: boolean, mode: AttemptRecord['mode']) => void;
   toggleBookmark: (questionId: string) => void;
   setFlaggedForReview: (questionId: string, flagged: boolean) => void;
@@ -48,17 +49,15 @@ function bumpStreak(progress: Progress, now: Date): Progress['streak'] {
 }
 
 /** Persist without blocking the UI. Failures are non-fatal by design. */
-function persist(progress: Progress): void {
-  void saveProgress(progress);
+function persist(): void {
+  void saveLearnerState();
 }
 
 export const useProgress = create<ProgressState>((set, get) => ({
   progress: emptyProgress(),
   hydrated: false,
 
-  hydrate: async () => {
-    if (get().hydrated) return;
-    const progress = await loadProgress();
+  install: (progress) => {
     set({ progress, hydrated: true });
   },
 
@@ -90,7 +89,7 @@ export const useProgress = create<ProgressState>((set, get) => ({
     };
 
     set({ progress });
-    persist(progress);
+    persist();
   },
 
   toggleBookmark: (questionId) => {
@@ -119,7 +118,7 @@ export const useProgress = create<ProgressState>((set, get) => ({
       questions: { ...state.questions, [questionId]: stat },
     };
     set({ progress });
-    persist(progress);
+    persist();
   },
 
   setFlaggedForReview: (questionId, flagged) => {
@@ -148,7 +147,7 @@ export const useProgress = create<ProgressState>((set, get) => ({
       questions: { ...state.questions, [questionId]: stat },
     };
     set({ progress });
-    persist(progress);
+    persist();
   },
 
   recordMockTest: (record) => {
@@ -159,12 +158,11 @@ export const useProgress = create<ProgressState>((set, get) => ({
       streak: bumpStreak(state, new Date()),
     };
     set({ progress });
-    persist(progress);
+    persist();
   },
 
   resetAll: async () => {
-    await clearProgress();
-    clearMockSession();
+    await clearLearnerState();
     set({ progress: emptyProgress() });
   },
 }));

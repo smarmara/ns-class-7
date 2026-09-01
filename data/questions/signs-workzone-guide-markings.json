@@ -20,9 +20,17 @@
       "Green with white lettering is used for guidance signs."
     ],
     "difficulty": "easy",
-    "tags": ["work zone", "sign design", "colours"],
+    "tags": [
+      "work zone",
+      "sign design",
+      "colours"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 94" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 94"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -33,7 +41,7 @@
     "type": "sign",
     "topic": "signs-work-zone",
     "subtopic": "human activity signs",
-    "question": "This sign shows a worker and has small orange flags at its lower corners. What does that combination tell you?",
+    "question": "This sign shows a worker and has small orange flags mounted above its upper corners. What does that combination tell you?",
     "signId": "wz-workers-ahead",
     "choices": [
       "Workers are present on the site right now and are at risk of being struck",
@@ -50,9 +58,16 @@
       "Survey work has its own human activity sign."
     ],
     "difficulty": "medium",
-    "tags": ["work zone", "workers"],
+    "tags": [
+      "work zone",
+      "workers"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 97, 101" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "pp. 97, 101"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -80,9 +95,16 @@
       "School crossing guards are associated with school-area signs, not orange work-zone signs."
     ],
     "difficulty": "medium",
-    "tags": ["work zone", "traffic control person"],
+    "tags": [
+      "work zone",
+      "traffic control person"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 94, 98, 101" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "pp. 94, 98, 101"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -110,9 +132,16 @@
       "The distance is to the start of the work, not its length."
     ],
     "difficulty": "medium",
-    "tags": ["work zone", "advance warning"],
+    "tags": [
+      "work zone",
+      "advance warning"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 98" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 98"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -140,9 +169,15 @@
       "The sign marks the physical end of the work zone, not a schedule."
     ],
     "difficulty": "easy",
-    "tags": ["work zone"],
+    "tags": [
+      "work zone"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 97" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 97"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -170,9 +205,16 @@
       "The stepped profile shows a height difference between lanes, not a gradient."
     ],
     "difficulty": "hard",
-    "tags": ["work zone", "road surface"],
+    "tags": [
+      "work zone",
+      "road surface"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 99" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 99"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -200,9 +242,16 @@
       "Caution mode is shown by lamps in a straight line or bar — and even then, it does not indicate that it is safe to pass."
     ],
     "difficulty": "hard",
-    "tags": ["work zone", "lane closure"],
+    "tags": [
+      "work zone",
+      "lane closure"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 102-103" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "pp. 102-103"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -229,9 +278,16 @@
       "The end of the work zone is signed END CONSTRUCTION."
     ],
     "difficulty": "hard",
-    "tags": ["work zone", "lane closure"],
+    "tags": [
+      "work zone",
+      "lane closure"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 103" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 103"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -258,9 +314,17 @@
       "It applies to all drivers."
     ],
     "difficulty": "medium",
-    "tags": ["work zone", "passing", "regulatory"],
+    "tags": [
+      "work zone",
+      "passing",
+      "regulatory"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 100" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 100"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -288,12 +352,388 @@
       "Survey work has its own specific human activity sign."
     ],
     "difficulty": "medium",
-    "tags": ["work zone"],
+    "tags": [
+      "work zone"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 97, 101" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "pp. 97, 101"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-wz-011",
+    "type": "sign",
+    "topic": "signs-work-zone",
+    "subtopic": "fresh tar",
+    "question": "What does this work-zone sign tell you about the road ahead?",
+    "signId": "tar",
+    "choices": [
+      "Tar has been sprayed and the surface may be slippery",
+      "The road has just been swept and is clear",
+      "Loose gravel has been spread across the surface",
+      "A lane is closed while lines are being painted"
+    ],
+    "correctChoice": 0,
+    "explanation": "Tar has been sprayed on the road ahead. It can make the surface slippery, and spray thrown up by tyres can stick tar to your vehicle. Slow down, keep well back, or choose another route.",
+    "incorrectChoiceExplanations": [
+      null,
+      "The sign warns of a hazard on the surface, not of work already finished.",
+      "Loose surface material is covered by a different work-zone sign.",
+      "Lane closures are shown by lane-control and arrow devices."
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "work zone",
+      "road surface"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 99"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-wz-012",
+    "type": "sign",
+    "topic": "signs-work-zone",
+    "subtopic": "lane ends",
+    "question": "You are in the right lane and see this work-zone sign. Why does the handbook say to merge as soon as it is safe?",
+    "signId": "work-right-lane-ends",
+    "choices": [
+      "Merging late is an offence that carries demerit points",
+      "Forming the single lane early avoids conflict at the last moment",
+      "The right lane reopens once the work zone ends",
+      "Drivers in the left lane must give way to you"
+    ],
+    "correctChoice": 1,
+    "explanation": "The sign gives advance notice that the right lane ends, so traffic can form a single lane in plenty of time. Merging early spreads the movement out instead of forcing vehicles together at the last possible moment. It is often posted with a Do Not Pass sign for the same reason.",
+    "incorrectChoiceExplanations": [
+      "The handbook gives a safety reason for merging early, not a penalty.",
+      null,
+      "What happens beyond the work zone does not change the need to merge now.",
+      "Merging drivers fit into gaps in the through lane; the other lane is not obliged to yield."
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "work zone",
+      "merging"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 99"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-wz-013",
+    "type": "sign",
+    "topic": "signs-work-zone",
+    "subtopic": "prepare to stop",
+    "question": "What should you expect after passing this work-zone sign?",
+    "signId": "prepare-to-stop",
+    "choices": [
+      "A stop sign posted at the end of the work zone",
+      "The road ahead closed, so you must turn back",
+      "Traffic signals controlling the work zone",
+      "Traffic may be stopped ahead by a traffic control person"
+    ],
+    "correctChoice": 3,
+    "explanation": "This sign is advance notice that traffic may be stopped ahead by a traffic control person using a stop/slow paddle. Ease off gradually rather than braking hard, so the driver behind you is not caught out.",
+    "incorrectChoiceExplanations": [
+      "The sign warns of a person directing traffic, not of a permanent stop sign.",
+      "A closed road is signed as a closure with a detour.",
+      "Work zones are controlled by people and devices rather than by traffic signals.",
+      null
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "work zone",
+      "traffic control person"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 98"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-wz-014",
+    "type": "sign",
+    "topic": "signs-work-zone",
+    "subtopic": "road surface",
+    "question": "What does this work-zone sign warn about?",
+    "signId": "road-surface-hazard",
+    "choices": [
+      "A difference in height between the lanes",
+      "The surface may be rutted or grooved",
+      "Fresh tar sprayed across the surface",
+      "The road narrows without losing a lane"
+    ],
+    "correctChoice": 1,
+    "explanation": "The surface ahead may be rutted, grooved or otherwise unsound. Two-wheeled traffic is most at risk — a bicycle or motorcycle can become unstable on a grooved surface — so slow down and leave riders extra room.",
+    "incorrectChoiceExplanations": [
+      "A step in height between lanes has its own uneven-lanes sign.",
+      null,
+      "Fresh tar is shown by a separate sign carrying the word TAR.",
+      "A narrowing that keeps the same lane count has its own sign."
+    ],
+    "difficulty": "hard",
+    "tags": [
+      "work zone",
+      "road surface"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 99"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-wz-015",
+    "type": "sign",
+    "topic": "signs-work-zone",
+    "subtopic": "road narrows",
+    "question": "What does this work-zone sign tell you about the lanes ahead?",
+    "signId": "work-road-narrows",
+    "choices": [
+      "The lanes shift sideways around the work area",
+      "One lane ends, so traffic has to merge",
+      "The road narrows but keeps the same number of lanes",
+      "Two-way traffic begins on a single carriageway"
+    ],
+    "correctChoice": 2,
+    "explanation": "The road ahead narrows, but you keep the same number of lanes — there is simply less width in each one. Slow down and keep central in your lane; a lane-ends sign is used when a lane is actually lost.",
+    "incorrectChoiceExplanations": [
+      "A lateral shift is shown by a different work-zone device.",
+      "That is the lane-ends sign, which shows one lane tapering away.",
+      null,
+      "Two-way traffic on one carriageway has its own sign."
+    ],
+    "difficulty": "hard",
+    "tags": [
+      "work zone",
+      "lane width"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 99"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-wz-016",
+    "type": "sign",
+    "topic": "signs-work-zone",
+    "subtopic": "construction traffic",
+    "question": "What does this work-zone sign warn you about?",
+    "signId": "construction-traffic",
+    "choices": [
+      "Construction vehicles may enter or leave on the right",
+      "A construction zone begins 1.5 kilometres ahead",
+      "Workers are on foot on the road surface ahead",
+      "The right lane is closed for construction work"
+    ],
+    "correctChoice": 0,
+    "explanation": "Construction traffic may be turning in or pulling out on the right, and those vehicles are often moving much more slowly than through traffic. Differences in speed are the main hazard in a work zone, so ease off early. A matching sign is used where the entrance is on the left.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Distance to a work zone is given by the construction-ahead sign with a distance on it.",
+      "Workers on foot are shown by a human-activity sign.",
+      "Lane closures are signed separately."
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "work zone",
+      "construction traffic"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 100"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-wz-017",
+    "type": "sign",
+    "topic": "signs-work-zone",
+    "subtopic": "blasting",
+    "question": "What does this work-zone sign mean, and what may you be asked to do?",
+    "signId": "blasting-ahead",
+    "choices": [
+      "Rock has fallen on the road and a lane is blocked",
+      "Blasting is under way nearby and traffic may have to stop",
+      "A quarry entrance is ahead and trucks are turning",
+      "Heavy equipment is crossing the road ahead"
+    ],
+    "correctChoice": 1,
+    "explanation": "Blasting is taking place on or near the road, and traffic may be required to stop while it happens. Debris can be thrown by a blast and the noise can startle a driver. The sign is normally used together with the Shut Off Your Radio Transmitter sign and an End Blasting Zone sign.",
+    "incorrectChoiceExplanations": [
+      "Fallen rock is a different hazard with its own warning.",
+      null,
+      "Vehicles joining the road are covered by the construction-traffic sign.",
+      "Equipment crossing is signed separately where it applies."
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "work zone",
+      "blasting"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 100"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-wz-018",
+    "type": "sign",
+    "topic": "signs-work-zone",
+    "subtopic": "survey crew",
+    "question": "What activity does this work-zone sign tell you is happening beside the road?",
+    "signId": "survey-work",
+    "choices": [
+      "A traffic control person is directing traffic",
+      "Work is going on overhead on cables",
+      "A road-maintenance vehicle is sweeping the shoulder",
+      "A survey crew is working on or near the road"
+    ],
+    "correctChoice": 3,
+    "explanation": "This is a human-activity sign showing a survey crew at work on or beside the road. Human-activity signs are posted only while workers are actually present, so treat them as a signal that people are on the site right now and a driving mistake could injure someone.",
+    "incorrectChoiceExplanations": [
+      "A traffic control person is shown by a sign with a stop/slow paddle.",
+      "Overhead cable work has its own human-activity sign.",
+      "Maintenance vehicles are covered by other work-zone signs.",
+      null
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "work zone",
+      "human activity"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 101"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-wz-019",
+    "type": "sign",
+    "topic": "signs-work-zone",
+    "subtopic": "overhead work",
+    "question": "What does this work-zone sign warn you about?",
+    "signId": "overhead-work",
+    "choices": [
+      "Work going on overhead on electrical or data cables",
+      "A low bridge that limits the height of vehicles",
+      "Overhead lane signals controlling the lanes ahead",
+      "A crane lifting loads from one side to the other"
+    ],
+    "correctChoice": 0,
+    "explanation": "Workers are above the road, working on electrical or data cables. It is a human-activity sign, so it is posted only while people are on the site. Slow down, expect equipment near the roadway, and give the crew room.",
+    "incorrectChoiceExplanations": [
+      null,
+      "Height restrictions are shown by a low-clearance sign giving the headroom.",
+      "Overhead lane-control signals are a permanent installation, not a work-zone sign.",
+      "The sign covers cable work rather than lifting operations."
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "work zone",
+      "human activity"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 102"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-wz-020",
+    "type": "sign",
+    "topic": "signs-work-zone",
+    "subtopic": "flashing light unit",
+    "question": "A flashing light unit in a work zone displays two arrow heads at the same time. What does that tell you?",
+    "signId": "flashing-double-arrow",
+    "choices": [
+      "You must pass the unit on the left only",
+      "The unit is in caution mode, so passing may not be safe",
+      "The lane ahead is closed and you may pass on either side",
+      "The lane ahead is open and no change is needed"
+    ],
+    "correctChoice": 2,
+    "explanation": "Two arrow heads shown together mean the lane ahead is closed, or something is blocking it, and it is safe to pass the unit on either side. A single arrow would mean you may pass only on the side the arrow points to, and lamps in a straight bar is caution mode, which does not tell you it is safe to pass at all.",
+    "incorrectChoiceExplanations": [
+      "A single arrow head restricts you to one side; two arrows do not.",
+      "Caution mode shows the lamps in a straight line or bar, not as arrows.",
+      null,
+      "The unit is only used when the lane ahead is closed or obstructed."
+    ],
+    "difficulty": "hard",
+    "tags": [
+      "work zone",
+      "flashing light unit"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "pp. 102-103"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
     "lawVersion": "mva"
   },
   {
@@ -318,9 +758,17 @@
       "Orange marks work zones."
     ],
     "difficulty": "easy",
-    "tags": ["guide", "sign design", "colours"],
+    "tags": [
+      "guide",
+      "sign design",
+      "colours"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 83" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 83"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -348,10 +796,22 @@
       "100-series highways are public provincial roads."
     ],
     "difficulty": "easy",
-    "tags": ["guide", "highways", "halifax"],
+    "tags": [
+      "guide",
+      "highways",
+      "halifax"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 94" },
-      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 66" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 94"
+      },
+      {
+        "sourceId": "ns-handbook-ch2",
+        "chapter": "Chapter 2",
+        "page": "p. 66"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -378,9 +838,17 @@
       "Work zones use orange signs."
     ],
     "difficulty": "medium",
-    "tags": ["guide", "sign design", "colours"],
+    "tags": [
+      "guide",
+      "sign design",
+      "colours"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 83" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 83"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -408,9 +876,17 @@
       "Route numbers appear inside a shield-shaped route marker."
     ],
     "difficulty": "easy",
-    "tags": ["guide", "distances", "halifax"],
+    "tags": [
+      "guide",
+      "distances",
+      "halifax"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 83, 94" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "pp. 83, 94"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -437,9 +913,17 @@
       "Interchanges are extensively signed precisely because two groups of drivers are changing speed at once."
     ],
     "difficulty": "medium",
-    "tags": ["guide", "highways", "merging"],
+    "tags": [
+      "guide",
+      "highways",
+      "merging"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 66" }
+      {
+        "sourceId": "ns-handbook-ch2",
+        "chapter": "Chapter 2",
+        "page": "p. 66"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -467,9 +951,16 @@
       "The sign governs your movement at the intersection, not a lane change before it."
     ],
     "difficulty": "easy",
-    "tags": ["lane use", "turning"],
+    "tags": [
+      "lane use",
+      "turning"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 93" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 93"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -497,9 +988,16 @@
       "A right turn is not among the permitted movements."
     ],
     "difficulty": "easy",
-    "tags": ["lane use", "turning"],
+    "tags": [
+      "lane use",
+      "turning"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 93" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 93"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -527,9 +1025,16 @@
       "It is not an emergency lane."
     ],
     "difficulty": "medium",
-    "tags": ["lane use", "turning"],
+    "tags": [
+      "lane use",
+      "turning"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 87, 93" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "pp. 87, 93"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -556,9 +1061,16 @@
       "The colours carry specific, distinct meanings."
     ],
     "difficulty": "easy",
-    "tags": ["pavement markings", "lane use"],
+    "tags": [
+      "pavement markings",
+      "lane use"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 84-85" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "pp. 84-85"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -586,9 +1098,16 @@
       "Yellow lines separate traffic moving in opposite directions."
     ],
     "difficulty": "easy",
-    "tags": ["pavement markings", "passing"],
+    "tags": [
+      "pavement markings",
+      "passing"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 84" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 84"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -616,9 +1135,16 @@
       "Turning lanes are marked with arrows and signs."
     ],
     "difficulty": "easy",
-    "tags": ["pavement markings", "passing"],
+    "tags": [
+      "pavement markings",
+      "passing"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 84" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 84"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -646,10 +1172,21 @@
       "Distance does not override the marking."
     ],
     "difficulty": "medium",
-    "tags": ["pavement markings", "passing"],
+    "tags": [
+      "pavement markings",
+      "passing"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 84-85" },
-      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 59" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "pp. 84-85"
+      },
+      {
+        "sourceId": "ns-handbook-ch2",
+        "chapter": "Chapter 2",
+        "page": "p. 59"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -677,9 +1214,16 @@
       "A two-way left turn lane is marked with double lines and signed with opposing left arrows."
     ],
     "difficulty": "medium",
-    "tags": ["pavement markings", "lane use"],
+    "tags": [
+      "pavement markings",
+      "lane use"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 84-85" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "pp. 84-85"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -706,9 +1250,17 @@
       "Divided highways carry one-way traffic on each roadway."
     ],
     "difficulty": "hard",
-    "tags": ["pavement markings", "divided highway", "wrong way"],
+    "tags": [
+      "pavement markings",
+      "divided highway",
+      "wrong way"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 85" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 85"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -735,9 +1287,16 @@
       "Parking spaces are marked separately and are not continuity lines."
     ],
     "difficulty": "hard",
-    "tags": ["pavement markings", "highways"],
+    "tags": [
+      "pavement markings",
+      "highways"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 86" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 86"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -764,9 +1323,16 @@
       "A slow vehicle ahead does not create a right to cross a solid line."
     ],
     "difficulty": "hard",
-    "tags": ["pavement markings", "passing"],
+    "tags": [
+      "pavement markings",
+      "passing"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 85" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 85"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -793,9 +1359,16 @@
       "Pavement markings do not authorise parking."
     ],
     "difficulty": "hard",
-    "tags": ["pavement markings", "passing"],
+    "tags": [
+      "pavement markings",
+      "passing"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 85" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 85"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -828,9 +1401,17 @@
       "White lines separate traffic moving in the same direction, so they are not centre-line markings at all."
     ],
     "difficulty": "medium",
-    "tags": ["pavement markings", "passing", "sign recognition"],
+    "tags": [
+      "pavement markings",
+      "passing",
+      "sign recognition"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 84-85" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "pp. 84-85"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",

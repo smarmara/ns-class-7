@@ -114,9 +114,11 @@ export async function completeMockSection(
   await page.getByRole('button', { name: 'Submit part', exact: true }).click();
 }
 
-export async function startMockTest(page: Page): Promise<void> {
-  await page.getByRole('navigation', { name: 'Primary' }).getByRole('link', { name: 'Mock test' }).click();
-  await page.getByRole('button', { name: 'Start mock test' }).click();
+export async function startPracticeExam(page: Page): Promise<void> {
+  // The practice exam lives on the Practice tab, so tests navigate there
+  // directly.
+  await page.goto('/#/practice');
+  await page.getByRole('button', { name: 'Start practice exam' }).click();
 }
 
 /** Seed a progress object into the origin and reload so the app hydrates it. */
@@ -125,4 +127,27 @@ export async function seedProgress(page: Page, progress: unknown): Promise<void>
     localStorage.setItem('ns-class7:progress:v1', json);
   }, JSON.stringify(progress));
   await page.reload();
+}
+
+/**
+ * Font Awesome Pro icon Kit hosts.
+ *
+ * The app's only sanctioned off-origin runtime dependency. Pro icon artwork is
+ * licensed per seat and cannot be redistributed through a public repository, so
+ * those glyphs are fetched from the maintainer's Kit at runtime instead of
+ * being bundled. `kit.fontawesome.com` serves the loader; `ka-p.fontawesome.com`
+ * serves the payload it then requests.
+ *
+ * Tests that assert "nothing leaves the origin" use this to exempt exactly
+ * those two hosts and nothing else. The icons are decorative — every one sits
+ * beside a text label — and `font-awesome-kit.spec.ts` proves the app works
+ * when the Kit is blocked entirely.
+ */
+export function isIconKit(url: string): boolean {
+  return /^https:\/\/(?:kit|ka-p)\.fontawesome\.com\//.test(url);
+}
+
+/** Blocks the icon Kit for a page, simulating a learner who cannot reach it. */
+export async function blockIconKit(page: Page): Promise<void> {
+  await page.route('**/*.fontawesome.com/**', (route) => route.abort());
 }

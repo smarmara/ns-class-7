@@ -8,12 +8,18 @@
  *
  * Usage: pnpm content:validate
  */
+import path from 'node:path';
+import { cropKeyFor } from '../src/signs/cropKey';
 import {
   EXAM_CONFIG_PATH,
   LEGAL_STATUS_PATH,
   MANIFEST_PATH,
+  OFFICIAL_CROPS_DIR,
   SIGN_META_PATH,
+  SIGN_FIDELITY_PATH,
   daysSince,
+  fileExists,
+  loadOfficialCropDesignations,
   loadQuestions,
   loadSignArtIds,
   normaliseText,
@@ -126,7 +132,7 @@ const NUMERIC_FACT =
   /\b\d+(?:[.,]\d+)?\s*(?:km\/h|km|metres?|m\b|centimetres?|cm|millimetres?|mm|kg|hours?|minutes?|days?|weeks?|months?|years?|per cent|%|\$)/i;
 
 async function main() {
-  const [questionsRaw, manifest, examConfig, legal, signMeta, signArtIds] = await Promise.all([
+  const [questionsRaw, manifest, examConfig, legal, signMeta, signFidelity, signArtIds, officialCropDesignations] = await Promise.all([
     loadQuestions(),
     readJson<SourceManifest>(MANIFEST_PATH),
     readJson<ExamConfig>(EXAM_CONFIG_PATH),
@@ -134,15 +140,46 @@ async function main() {
     readJson<{ signs: Record<string, { label: string; visualDescription: string }> }>(
       SIGN_META_PATH,
     ),
+    readJson<{
+      verifiedAt: string;
+      sources: Record<string, string>;
+      signs: Record<string, {
+        designation?: string;
+        variant?: string;
+        /** Crop key for this variant's image on variable-number signs. */
+        asset?: string;
+        schedulePage?: number;
+        dimensions?: string;
+        sourceId: string;
+        status: 'official-crop' | 'legacy-pending-crop' | 'needs-rebuild' | 'incorrect' | 'ambiguous' | 'unresolved' | 'handbook-concept-svg' | 'pavement-concept-svg';
+      }>;
+    }>(SIGN_FIDELITY_PATH),
     loadSignArtIds(),
+    loadOfficialCropDesignations(),
   ]);
 
   const questions = questionsRaw as unknown as (Question & { file: string })[];
   const sourceIds = new Set(manifest.sources.map((s) => s.id));
   const knownTopics = new Set<string>(ALL_TOPICS);
   const signIds = new Set(Object.keys(signMeta.signs));
+  const fidelityIds = new Set(Object.keys(signFidelity.signs));
   const lawById = new Map(legal.lawVersions.map((v) => [v.id, v]));
   const today = new Date();
+
+  /* ------------------------------- sign artwork resolution (SVG or crop) -- */
+
+  const officialCropSignIds = new Set(
+    Object.entries(signFidelity.signs)
+      .filter(([, entry]) => entry.status === 'official-crop')
+      .map(([id]) => id),
+  );
+  const conceptSvgSignIds = new Set(
+    Object.entries(signFidelity.signs)
+      .filter(([, entry]) => entry.status === 'handbook-concept-svg' || entry.status === 'pavement-concept-svg')
+      .map(([id]) => id),
+  );
+  // A sign is servable if it has SVG artwork, is wired to an official crop, or is a concept SVG.
+  const hasArt = (id: string) => signArtIds.has(id) || officialCropSignIds.has(id) || conceptSvgSignIds.has(id);
 
   /* --------------------------------------------------- per-question checks */
 
@@ -288,8 +325,13 @@ async function main() {
       if (!signIds.has(q.signId)) {
         error('unknown-sign', where, `signId "${q.signId}" is not in data/signs/sign-meta.json.`);
       }
-      if (!signArtIds.has(q.signId)) {
-        error('missing-sign-art', where, `No SVG artwork registered for sign "${q.signId}".`);
+      if (!hasArt(q.signId)) {
+        error('missing-sign-art', where, `No artwork registered for sign "${q.signId}" (no SVG and no official crop).`);
+      }
+      const fidelity = signFidelity.signs[q.signId];
+      if (!fidelity) error('missing-sign-fidelity', where, `signId "${q.signId}" is absent from sign-fidelity.json.`);
+      else if (fidelity.status === 'unresolved' || fidelity.status === 'incorrect' || fidelity.status === 'needs-rebuild') {
+        error('unverified-active-sign', where, `signId "${q.signId}" has blocked fidelity status "${fidelity.status}".`);
       }
     }
     if (q.choiceSignIds) {
@@ -304,8 +346,13 @@ async function main() {
         if (!signIds.has(id)) {
           error('unknown-sign', where, `choiceSignIds refers to unknown sign "${id}".`);
         }
-        if (!signArtIds.has(id)) {
-          error('missing-sign-art', where, `No SVG artwork registered for sign "${id}".`);
+        if (!hasArt(id)) {
+          error('missing-sign-art', where, `No artwork registered for sign "${id}" (no SVG and no official crop).`);
+        }
+        const fidelity = signFidelity.signs[id];
+        if (!fidelity) error('missing-sign-fidelity', where, `choiceSignIds sign "${id}" is absent from sign-fidelity.json.`);
+        else if (fidelity.status === 'unresolved' || fidelity.status === 'incorrect' || fidelity.status === 'needs-rebuild') {
+          error('unverified-active-sign', where, `choice sign "${id}" has blocked fidelity status "${fidelity.status}".`);
         }
       }
       // The visible choice text is the accessible name for a sign option, so
@@ -468,9 +515,59 @@ async function main() {
 
   /* ------------------------------------------------------------ orphan art */
 
+  if (!ISO_DATE.test(signFidelity.verifiedAt)) {
+    error('sign-verification-date', 'sign-fidelity.json', 'verifiedAt must be a YYYY-MM-DD date.');
+  }
+  const designations = new Map<string, string>();
+  for (const [id, entry] of Object.entries(signFidelity.signs)) {
+    if (!signIds.has(id)) error('orphan-sign-fidelity', id, 'Fidelity entry has no sign-meta entry.');
+    if (!hasArt(id)) error('missing-sign-art', id, 'Fidelity entry has no registered artwork (no SVG and no official crop).');
+    if (!signFidelity.sources[entry.sourceId]) error('missing-sign-source', id, `Unknown sourceId "${entry.sourceId}".`);
+    if (entry.sourceId === 'ns-traffic-signs-regulations') {
+      if (!entry.designation || !entry.schedulePage || !entry.dimensions) {
+        error('incomplete-official-sign', id, 'Schedule signs require designation, schedulePage and dimensions.');
+      }
+      if (entry.designation) {
+        const key = `${entry.designation}::${entry.variant ?? ''}`;
+        const prior = designations.get(key);
+        if (prior) error('duplicate-sign-designation', id, `${key} is already mapped to "${prior}".`);
+        designations.set(key, id);
+      }
+    }
+  }
+
+  // An official-crop sign is servable only if the Province's image is actually
+  // present on disk. No silent fallback: a missing crop is a hard error naming
+  // the sign, the missing file, and the questions that would display it.
+  for (const [id, entry] of Object.entries(signFidelity.signs)) {
+    if (entry.status !== 'official-crop') continue;
+    // Variable-number signs name their variant image with `asset`; everything
+    // else draws from `<designation>.png`.
+    const cropKey = cropKeyFor(entry);
+    const filename = cropKey ? `${cropKey}.png` : null;
+    if (!filename || !cropKey) {
+      error('missing-official-crop', id, 'Status is official-crop but no designation is recorded.');
+      continue;
+    }
+    if (!officialCropDesignations.has(cropKey)) {
+      error('missing-official-crop', id, `Crop for "${cropKey}" is not registered in the artwork registry.`);
+      continue;
+    }
+    if (!(await fileExists(path.join(OFFICIAL_CROPS_DIR, filename)))) {
+      const usedBy = questions
+        .filter((q) => q.signId === id || (q.choiceSignIds ?? []).includes(id))
+        .map((q) => q.id);
+      const where = usedBy.length > 0 ? `question(s): ${usedBy.join(', ')}` : 'no question references';
+      error('missing-official-crop', id, `Crop file "${filename}" is missing but "${id}" is wired to it. Affected ${where}.`);
+    }
+  }
+
   for (const id of signIds) {
-    if (!signArtIds.has(id)) {
-      error('missing-sign-art', id, 'Declared in sign-meta.json but has no SVG artwork.');
+    if (!hasArt(id)) {
+      error('missing-sign-art', id, 'Declared in sign-meta.json but has no artwork (no SVG and no official crop).');
+    }
+    if (!fidelityIds.has(id)) {
+      error('missing-sign-fidelity', id, 'Declared in sign-meta.json but absent from sign-fidelity.json.');
     }
   }
   for (const id of signArtIds) {

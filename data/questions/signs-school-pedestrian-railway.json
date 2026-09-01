@@ -21,10 +21,21 @@
       "There is no separate daycare sign in the handbook."
     ],
     "difficulty": "easy",
-    "tags": ["school", "speed limits", "sign recognition"],
+    "tags": [
+      "school",
+      "speed limits",
+      "sign recognition"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 80" },
-      { "sourceId": "ns-handbook-landing", "note": "Amendment: school zone speeds" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 80"
+      },
+      {
+        "sourceId": "ns-handbook-landing",
+        "note": "Amendment: school zone speeds"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -51,9 +62,17 @@
       "Orange marks temporary conditions in work zones."
     ],
     "difficulty": "medium",
-    "tags": ["school", "shapes", "sign design"],
+    "tags": [
+      "school",
+      "shapes",
+      "sign design"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 80, 104" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "pp. 80, 104"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -81,10 +100,21 @@
       "Playgrounds have their own diamond sign."
     ],
     "difficulty": "easy",
-    "tags": ["school", "crosswalks"],
+    "tags": [
+      "school",
+      "crosswalks"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 88" },
-      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "p. 69" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 88"
+      },
+      {
+        "sourceId": "ns-handbook-ch2",
+        "chapter": "Chapter 2",
+        "page": "p. 69"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -96,12 +126,17 @@
     "topic": "signs-school",
     "subtopic": "recognising the school sign",
     "question": "Which of these signs tells you that reduced school-area speed limits may apply?",
-    "choiceSignIds": ["school-area", "playground", "pedestrian-crosswalk", "bicycle-route"],
+    "choiceSignIds": [
+      "school-area",
+      "playground",
+      "pedestrian-crosswalk",
+      "bicycle-route"
+    ],
     "choices": [
       "A five-sided sign with a fluorescent yellow-green background and two black figures of children walking.",
       "A fluorescent yellow-green diamond with the black silhouette of a running child.",
-      "A sign with a black figure of a walking person, above a striped crossing.",
-      "A yellow diamond with the black silhouette of a bicycle."
+      "A tall white rectangular sign with a black figure of a pedestrian walking toward the roadway centre above a baseline.",
+      "A green rectangular sign with a white bicycle symbol and route information."
     ],
     "correctChoice": 0,
     "explanation": "Only the five-sided fluorescent yellow-green sign marks a school area. The others warn you to watch for particular road users but do not set a school-area speed limit.",
@@ -112,9 +147,17 @@
       "The bicycle symbol tells you to share the road with cyclists."
     ],
     "difficulty": "medium",
-    "tags": ["school", "sign recognition", "speed limits"],
+    "tags": [
+      "school",
+      "sign recognition",
+      "speed limits"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "pp. 80, 88" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "pp. 80, 88"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -142,9 +185,16 @@
       "Bus stops are marked separately."
     ],
     "difficulty": "easy",
-    "tags": ["pedestrians", "crosswalks"],
+    "tags": [
+      "pedestrians",
+      "crosswalks"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 88" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 88"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -172,10 +222,22 @@
       "The sign requires a change in how you drive."
     ],
     "difficulty": "easy",
-    "tags": ["pedestrians", "children", "speed"],
+    "tags": [
+      "pedestrians",
+      "children",
+      "speed"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 88" },
-      { "sourceId": "ns-handbook-ch4", "chapter": "Chapter 4", "page": "p. 127" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 88"
+      },
+      {
+        "sourceId": "ns-handbook-ch4",
+        "chapter": "Chapter 4",
+        "page": "p. 127"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -203,9 +265,17 @@
       "Bicycles are road vehicles, not sidewalk traffic."
     ],
     "difficulty": "easy",
-    "tags": ["bicycles", "sharing the road", "halifax"],
+    "tags": [
+      "bicycles",
+      "sharing the road",
+      "halifax"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch2", "chapter": "Chapter 2", "page": "pp. 69-70" }
+      {
+        "sourceId": "ns-handbook-ch2",
+        "chapter": "Chapter 2",
+        "page": "pp. 69-70"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -233,9 +303,16 @@
       "Road hazards are marked with hazard markers or keep-right signs."
     ],
     "difficulty": "easy",
-    "tags": ["railway", "sign recognition"],
+    "tags": [
+      "railway",
+      "sign recognition"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 81" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 81"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -263,9 +340,15 @@
       "It is not a speed limit."
     ],
     "difficulty": "medium",
-    "tags": ["railway"],
+    "tags": [
+      "railway"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 81" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 81"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -292,9 +375,16 @@
       "The horn does nothing to make the crossing safe."
     ],
     "difficulty": "easy",
-    "tags": ["railway", "stopping"],
+    "tags": [
+      "railway",
+      "stopping"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 81" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 81"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -321,9 +411,16 @@
       "The slow-moving-vehicle sign indicates a vehicle that cannot exceed 40 km/h; it is unrelated to this rule."
     ],
     "difficulty": "hard",
-    "tags": ["railway", "following distance"],
+    "tags": [
+      "railway",
+      "following distance"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 81" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 81"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -350,9 +447,15 @@
       "Following blindly means you are relying on another driver's check rather than your own."
     ],
     "difficulty": "medium",
-    "tags": ["railway"],
+    "tags": [
+      "railway"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 81" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 81"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
@@ -379,12 +482,56 @@
       "By the time the lights activate, a train is already approaching."
     ],
     "difficulty": "medium",
-    "tags": ["railway", "traffic"],
+    "tags": [
+      "railway",
+      "traffic"
+    ],
     "sourceRefs": [
-      { "sourceId": "ns-handbook-ch3", "chapter": "Chapter 3", "page": "p. 82" }
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 82"
+      }
     ],
     "legalStatus": "current",
     "verifiedAt": "2026-08-17",
+    "lawVersion": "mva"
+  },
+  {
+    "id": "signs-rail-007",
+    "type": "sign",
+    "topic": "signs-railway",
+    "subtopic": "advance warning",
+    "question": "You see this yellow sign some distance before you reach any tracks. What is it telling you?",
+    "signId": "railway-crossing-ahead",
+    "choices": [
+      "You have reached the crossing and must stop at this sign",
+      "A train is occupying the crossing further ahead",
+      "A railway crossing is ahead — look and listen as you approach",
+      "The road ahead runs alongside a railway line"
+    ],
+    "correctChoice": 2,
+    "explanation": "This is the advance warning sign for a railway crossing. It tells you a crossing is coming up, so look both ways and listen as you approach, because you may have to stop. The angle of the symbol on the sign reflects the angle at which the tracks cross the road. The crossing itself is marked by the crossbuck.",
+    "incorrectChoiceExplanations": [
+      "The crossbuck marks the crossing itself; this sign is posted in advance of it.",
+      "The sign is permanent and says nothing about whether a train is present.",
+      null,
+      "It warns of tracks crossing the road, not running beside it."
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "railway",
+      "advance warning"
+    ],
+    "sourceRefs": [
+      {
+        "sourceId": "ns-handbook-ch3",
+        "chapter": "Chapter 3",
+        "page": "p. 81"
+      }
+    ],
+    "legalStatus": "current",
+    "verifiedAt": "2026-08-19",
     "lawVersion": "mva"
   }
 ]

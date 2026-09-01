@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
   activeQuestions,
@@ -12,13 +12,99 @@ import {
 } from '@/content';
 import { useProgress } from '@/store/useProgress';
 import { useMockExam } from '@/store/useMockExam';
+import { useEngagement } from '@/store/useEngagement';
+import {
+  buildBackupJson,
+  discardPreservedCorrupt,
+  hasPreservedCorrupt,
+  parseBackup,
+  restoreBackup,
+  type PersistedLearnerState,
+} from '@/store/learnerStorage';
 import { appVersion, contentVersion } from '@/version';
+import { isNativeApp, saveBackupFile } from '@/native';
 import { Banner, Card, PageHead } from '@/ui/components';
+
+function backupErrorText(reason: string): string {
+  if (reason === 'unsupported-schema') {
+    return 'This backup was made by a newer version of the app and cannot be read yet.';
+  }
+  return "This doesn't appear to be a valid NS Class 7 progress backup.";
+}
 
 export function Sources() {
   const resetAll = useProgress((s) => s.resetAll);
   const abandonMock = useMockExam((s) => s.abandon);
+  const resetEngagement = useEngagement((s) => s.resetAll);
   const [confirmReset, setConfirmReset] = useState(false);
+  const [restorePending, setRestorePending] = useState<PersistedLearnerState | null>(null);
+  const [restoreError, setRestoreError] = useState<string | null>(null);
+  const [notice, setNotice] = useState<string | null>(null);
+  const [showCorrupt, setShowCorrupt] = useState(() => hasPreservedCorrupt());
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
+  /*
+   * The backup itself is identical on every platform — same envelope, same
+   * schema — so a file made in the browser restores on a phone and the other
+   * way round. Only the delivery differs: a browser downloads, a native app
+   * hands the file to the system share sheet, because `<a download>` does
+   * nothing inside a WebView.
+   */
+  const downloadBackup = async () => {
+    setNotice(null);
+    const progress = useProgress.getState().progress;
+    const engagement = useEngagement.getState().engagement;
+    const json = buildBackupJson(progress, engagement);
+    const filename = `ns-class7-progress-${new Date().toISOString().slice(0, 10)}.json`;
+
+    const result = await saveBackupFile(filename, json);
+    if (result.ok) {
+      setNotice(result.via === 'share' ? 'Backup ready to save or share.' : 'Backup downloaded.');
+    } else if (result.reason === 'failed') {
+      setNotice('Could not save the backup. Please try again.');
+    }
+    // 'cancelled' is the learner closing the share sheet — not a failure to report.
+  };
+
+  const pickRestoreFile = () => {
+    setRestoreError(null);
+    fileInputRef.current?.click();
+  };
+
+  const onRestoreFile = async (file: File | undefined) => {
+    setRestoreError(null);
+    if (!file) return;
+    let text: string;
+    try {
+      text = await file.text();
+    } catch {
+      setRestoreError("This doesn't appear to be a valid NS Class 7 progress backup.");
+      return;
+    }
+    const parsed = parseBackup(text);
+    if (!parsed.ok) {
+      setRestoreError(backupErrorText(parsed.reason));
+      return;
+    }
+    setRestorePending(parsed.state);
+  };
+
+  const confirmRestore = async () => {
+    if (!restorePending) return;
+    const result = await restoreBackup(JSON.stringify(restorePending));
+    if (!result.ok) {
+      setRestoreError(backupErrorText(result.reason));
+      setRestorePending(null);
+      return;
+    }
+    useProgress.getState().install(result.state.progress);
+    useEngagement.getState().install(result.state.engagement);
+    abandonMock();
+    void discardPreservedCorrupt();
+    setShowCorrupt(false);
+    setNotice('Progress restored from your backup.');
+    setRestorePending(null);
+  };
 
   const used = sourcesInUse();
   const counts = legalStatusCounts();
@@ -178,19 +264,131 @@ export function Sources() {
 
       <Card className="section-gap" title="Copyright and original material">
         <p className="small">
-          The practice questions, explanations, study text, interface and road-sign artwork in this
-          app are original work. Official Nova Scotia material is used as a factual research layer
-          and is cited, not republished. The sign drawings are built from the shapes, colours and
-          legends specified in the Traffic Signs Regulations rather than reproduced from Crown
+          The practice questions, explanations, study text, interface and original road-sign artwork
+          in this app are original work. Official Nova Scotia material is used as a factual research
+          layer and is cited, not republished, except that a subset of signs is displayed using the
+          government's own published Schedule images, which are reproduced as-is for the purpose of
+          accurate sign recognition. The remaining sign drawings are built from the shapes, colours
+          and legends specified in the Traffic Signs Regulations rather than reproduced from Crown
           illustrations. No government logos or branding are used.
         </p>
       </Card>
 
-      <Card className="section-gap" title="Your data">
+      <Card className="section-gap" title="Privacy">
         <p className="small">
-          Everything you do here stays on this device. There is no account, no server and nothing is
-          sent anywhere.
+          Everything you do in this app stays on this device. There is no account to create, no
+          server to sign in to, and no copy of your answers, progress or profile is ever sent
+          anywhere. We could not look at your study history if we wanted to — it never leaves your
+          phone or browser.
         </p>
+        <ul className="small" style={{ paddingLeft: 20, margin: '0 0 10px' }}>
+          <li>No accounts, no sign-in, no email address.</li>
+          <li>No analytics, tracking, advertising or telemetry of any kind.</li>
+          <li>
+            No backend service. Every question, explanation, sign image and font is stored in the
+            app, so studying works with the network switched off.
+          </li>
+          <li>
+            Your display name and appearance choice are stored on this device only, alongside your
+            study progress.
+          </li>
+          <li>
+            One thing does load from elsewhere: the interface icons come from Font Awesome
+            (fontawesome.com) when the app opens. That request contains nothing about you or your
+            studying — it fetches the icons and nothing more. If it is blocked or you are offline,
+            the icons are simply missing and everything else works as normal.
+          </li>
+          <li>
+            Official source links open the Government of Nova Scotia and Nova Scotia Legislature
+            websites, which have their own privacy policies. Nothing about you is passed to them.
+          </li>
+        </ul>
+        <p className="small muted" style={{ marginBottom: 0 }}>
+          Because nothing is stored off the device, there is no cloud copy to recover from. If you
+          want your progress to survive a reinstall or a new phone, back it up below.
+        </p>
+      </Card>
+
+      <Card className="section-gap" title="Your progress">
+        <p className="small">
+          Your study progress is saved automatically on this device. No account is required, and
+          your study history is not sent to us.{' '}
+          {isNativeApp()
+            ? 'Uninstalling the app, or clearing its storage in system settings, deletes it permanently — there is no cloud copy to restore from. Installing an update from the store keeps it.'
+            : "Clearing this site's data, or using private browsing, may remove it."}{' '}
+          You can create a backup if you want to keep a portable copy.
+        </p>
+        <p className="small muted" role="status">
+          Saved on this device
+        </p>
+
+        {notice && (
+          <p className="small" role="status">
+            {notice}
+          </p>
+        )}
+        {showCorrupt && (
+          <p className="small">
+            A previously saved copy could not be read and was set aside. You can restore a backup
+            below, or reset to start fresh.
+          </p>
+        )}
+
+        <input
+          ref={fileInputRef}
+          type="file"
+          accept="application/json,.json"
+          className="sr-only"
+          onChange={(e) => void onRestoreFile(e.target.files?.[0])}
+          aria-label="Choose a progress backup file"
+        />
+
+        {!restorePending && !restoreError && (
+          <div className="btn-row">
+            <button type="button" className="btn" onClick={() => void downloadBackup()}>
+              Back up progress
+            </button>
+            <button type="button" className="btn btn-secondary" onClick={pickRestoreFile}>
+              Restore progress
+            </button>
+          </div>
+        )}
+
+        {restoreError && (
+          <div>
+            <p className="small" style={{ marginBottom: 12 }}>
+              {restoreError}
+            </p>
+            <div className="btn-row">
+              <button type="button" className="btn btn-secondary" onClick={pickRestoreFile}>
+                Choose another file
+              </button>
+              <button type="button" className="btn btn-secondary" onClick={() => setRestoreError(null)}>
+                Cancel
+              </button>
+            </div>
+          </div>
+        )}
+
+        {restorePending && (
+          <div>
+            <p className="small" style={{ marginBottom: 12 }}>
+              Restoring this backup will replace the progress currently saved on this device.
+              There is no undo.
+            </p>
+            <div className="btn-row">
+              <button type="button" className="btn btn-secondary" onClick={() => setRestorePending(null)}>
+                Cancel
+              </button>
+              <button type="button" className="btn" onClick={() => void confirmRestore()}>
+                Restore this backup
+              </button>
+            </div>
+          </div>
+        )}
+
+        <hr className="section-gap" />
+
         {!confirmReset ? (
           <button type="button" className="btn btn-secondary" onClick={() => setConfirmReset(true)}>
             Reset all progress
@@ -198,8 +396,8 @@ export function Sources() {
         ) : (
           <div>
             <p className="small" style={{ marginBottom: 12 }}>
-              This permanently deletes your study progress, history, saved questions and any mock
-              test in progress. There is no undo.
+              This permanently deletes your study progress, history, saved questions, XP, streak,
+              any practice exam in progress and the backup copy kept on this device. There is no undo.
             </p>
             <div className="btn-row">
               <button
@@ -215,6 +413,9 @@ export function Sources() {
                 onClick={() => {
                   void resetAll();
                   abandonMock();
+                  void resetEngagement();
+                  setShowCorrupt(false);
+                  setNotice(null);
                   setConfirmReset(false);
                 }}
               >

@@ -10,32 +10,32 @@
     "yield": {
       "label": "Yield",
       "category": "regulatory",
-      "visualDescription": "A downward-pointing triangle with a red border and a white centre, containing the word YIELD.",
+      "visualDescription": "A downward-pointing triangle with a broad red border and a white centre.",
       "basis": "Traffic Signs Regulations: red inverted triangle with a white centre; Driver's Handbook ch.3 p.80."
     },
     "maximum-speed-50": {
       "label": "Maximum speed 50 km/h",
       "category": "regulatory",
-      "visualDescription": "A white rectangular sign with black lettering reading MAXIMUM, the number 50, and km/h.",
+      "visualDescription": "A white rectangular sign with black lettering reading MAXIMUM above the number 50.",
       "basis": "Driver's Handbook ch.3 p.90; Traffic Signs Regulations RB-1."
     },
     "maximum-speed-80": {
       "label": "Maximum speed 80 km/h",
       "category": "regulatory",
-      "visualDescription": "A white rectangular sign with black lettering reading MAXIMUM, the number 80, and km/h.",
+      "visualDescription": "A white rectangular sign with black lettering reading MAXIMUM above the number 80.",
       "basis": "Driver's Handbook ch.3 p.90; Traffic Signs Regulations RB-1."
     },
     "speed-limit-change-ahead": {
       "label": "Change in maximum speed limit ahead",
       "category": "warning",
-      "visualDescription": "A yellow diamond containing a small white speed-limit panel showing MAXIMUM 50 km/h.",
-      "basis": "Driver's Handbook ch.3 p.90."
+      "visualDescription": "A white rectangular sign with a black upward arrow above the number 50.",
+      "basis": "Traffic Signs Regulations RB-5, Schedule p.1; Driver's Handbook ch.3 p.90."
     },
     "one-way": {
       "label": "One way — traffic may travel only in the direction of the arrow",
       "category": "regulatory",
-      "visualDescription": "A wide black rectangular sign with a white arrow pointing right and the words ONE WAY.",
-      "basis": "Driver's Handbook ch.3 p.89."
+      "visualDescription": "A wide black rectangular sign with a large white arrow pointing right.",
+      "basis": "Traffic Signs Regulations RB-21, Schedule p.1; Driver's Handbook ch.3 p.89."
     },
     "do-not-enter": {
       "label": "Do not enter",
@@ -70,8 +70,8 @@
     "no-right-turn-on-red": {
       "label": "No right turn on a red signal — wait for the green light",
       "category": "prohibition",
-      "visualDescription": "A white sign with a right-curving arrow crossed out in red, above the words ON RED.",
-      "basis": "Driver's Handbook ch.3 p.89."
+      "visualDescription": "A tall white sign with a right-curving arrow crossed out in red above a black traffic-signal head showing a red lamp.",
+      "basis": "Traffic Signs Regulations RB-17R, Schedule p.1; Driver's Handbook ch.3 p.89."
     },
     "no-u-turn": {
       "label": "No U-turn",
@@ -94,20 +94,20 @@
     "no-stopping": {
       "label": "No stopping",
       "category": "prohibition",
-      "visualDescription": "A white sign with the letter S inside a red circle with a red diagonal line through it, and arrows pointing both ways beneath.",
-      "basis": "Driver's Handbook ch.3 p.89."
+      "visualDescription": "A white sign with a black octagon inside a red circle with a red diagonal line through it, and arrows pointing both ways beneath.",
+      "basis": "Traffic Signs Regulations RB-55, Schedule p.3; Driver's Handbook ch.3 p.89."
     },
     "accessible-parking": {
       "label": "Parking reserved for persons with a mobility disability",
       "category": "regulatory",
-      "visualDescription": "A sign with a blue background and a white symbol of a person seated in a wheelchair.",
-      "basis": "Driver's Handbook ch.3 p.83."
+      "visualDescription": "A tall white sign with a crossed-out black P above a blue-and-white wheelchair symbol and the words ACCESSIBLE PARKING BY PERMIT ONLY, with arrows beneath.",
+      "basis": "Traffic Signs Regulations RB-52B, Schedule p.3; Driver's Handbook ch.3 p.83."
     },
     "truck-route": {
       "label": "Truck route — trucks may proceed only in the direction of the arrow",
       "category": "guide",
-      "visualDescription": "A white rectangular sign reading TRUCK ROUTE with a black truck symbol and a right-pointing arrow.",
-      "basis": "Driver's Handbook ch.3 p.88."
+      "visualDescription": "A white sign with a black truck inside a green circle, above a black right-pointing arrow.",
+      "basis": "Traffic Signs Regulations RB-61 with RB-61SA, Schedule p.3; Driver's Handbook ch.3 p.88."
     },
     "keep-right-of-island": {
       "label": "Keep to the right of the traffic island or obstruction",
@@ -238,14 +238,14 @@
     "school-crosswalk": {
       "label": "School crosswalk",
       "category": "school",
-      "visualDescription": "A five-sided fluorescent yellow-green sign with black figures of children above a striped crossing.",
-      "basis": "Driver's Handbook ch.3 p.88."
+      "visualDescription": "A tall white rectangular sign with black figures of two schoolchildren walking toward the roadway centre above a baseline.",
+      "basis": "Traffic Signs Regulations RA-3L, Schedule p.1; Driver's Handbook ch.3 p.88."
     },
     "pedestrian-crosswalk": {
       "label": "Pedestrian crosswalk",
       "category": "pedestrian-cyclist",
-      "visualDescription": "A sign with a black figure of a walking person, above a striped crossing.",
-      "basis": "Driver's Handbook ch.3 p.88; Traffic Signs Regulations: black symbol of a pedestrian on a white background."
+      "visualDescription": "A tall white rectangular sign with a black figure of a pedestrian walking toward the roadway centre above a baseline.",
+      "basis": "Traffic Signs Regulations RA-4L, Schedule p.1; Driver's Handbook ch.3 p.88."
     },
     "playground": {
       "label": "Playground ahead — reduce speed and watch for children",
@@ -256,7 +256,7 @@
     "bicycle-route": {
       "label": "Bicycle route — share the road with cyclists",
       "category": "pedestrian-cyclist",
-      "visualDescription": "A yellow diamond with the black silhouette of a bicycle.",
+      "visualDescription": "A green rectangular sign with a white bicycle symbol and route information.",
       "basis": "Driver's Handbook ch.2 pp.69-70: cyclists have the same rights and responsibilities as motorists and drivers must share the road."
     },
     "railway-crossbuck": {
@@ -304,8 +304,8 @@
     "two-way-traffic": {
       "label": "Two-way traffic — normal two-way rules of the road apply",
       "category": "warning",
-      "visualDescription": "A yellow diamond with two black arrows side by side, one pointing up and one pointing down.",
-      "basis": "Driver's Handbook ch.3 p.94."
+      "visualDescription": "A tall white rectangular sign with two black arrows side by side, one pointing up and one pointing down, separated by a broken centre line.",
+      "basis": "Traffic Signs Regulations RB-24, Schedule p.2; Driver's Handbook ch.3 p.94."
     },
     "wz-construction-ahead": {
       "label": "Construction ahead — prepare for unusual road conditions",
@@ -316,13 +316,13 @@
     "wz-workers-ahead": {
       "label": "Workers are active at the site",
       "category": "work-zone",
-      "visualDescription": "An orange diamond with a black figure of a worker, with small orange flags mounted at its lower corners.",
+      "visualDescription": "An orange diamond with a black figure of a worker shovelling, with small orange flags above its upper corners.",
       "basis": "Driver's Handbook ch.3 p.101: human activity signs are used only when workers are present; red/orange flags are used on them."
     },
     "wz-traffic-control-person": {
       "label": "Traffic control person ahead",
       "category": "work-zone",
-      "visualDescription": "An orange diamond with a black figure holding a paddle on a pole.",
+      "visualDescription": "An orange diamond with a black figure holding a paddle on a pole, one arm raised, with small orange flags above its upper corners.",
       "basis": "Driver's Handbook ch.3 p.101."
     },
     "wz-construction-distance-ahead": {
@@ -372,6 +372,126 @@
       "category": "pavement-marking",
       "visualDescription": "A grey road surface with a dashed white line between two lanes and solid white edge lines.",
       "basis": "Driver's Handbook ch.3 pp.84-85."
+    },
+    "railway-crossing-ahead": {
+      "label": "Railway crossing ahead — slow down and be prepared to stop",
+      "category": "warning",
+      "visualDescription": "A yellow diamond with a black steam locomotive symbol.",
+      "basis": "Driver's Handbook ch.3 p.81."
+    },
+    "fire-truck-entrance": {
+      "label": "Fire truck entrance — watch for emergency vehicles entering the road",
+      "category": "warning",
+      "visualDescription": "A yellow diamond with a black fire truck symbol.",
+      "basis": "Driver's Handbook ch.3 p.83."
+    },
+    "bridge-opening": {
+      "label": "Bridge may open — be prepared to stop",
+      "category": "warning",
+      "visualDescription": "A yellow diamond with a black drawbridge symbol.",
+      "basis": "Driver's Handbook ch.3 p.93."
+    },
+    "hazard-marker-keep-left": {
+      "label": "Hazard marker — drive to the left of this sign",
+      "category": "regulatory",
+      "visualDescription": "A tall yellow rectangular sign with black diagonal stripes sloping down to the left.",
+      "basis": "Driver's Handbook ch.3 p.90."
+    },
+    "tar": {
+      "label": "Fresh tar — drive carefully on the treated surface",
+      "category": "work-zone",
+      "visualDescription": "An orange diamond with a black upward arrow above the word TAR.",
+      "basis": "Temporary Workplace Traffic Control Manual."
+    },
+    "work-right-lane-ends": {
+      "label": "Right lane ends in the work zone — merge left",
+      "category": "work-zone",
+      "visualDescription": "An orange diamond showing the right lane tapering and ending.",
+      "basis": "Temporary Workplace Traffic Control Manual."
+    },
+    "prepare-to-stop": {
+      "label": "Prepare to stop — traffic control ahead in the work zone",
+      "category": "work-zone",
+      "visualDescription": "Two orange diamonds side by side on a dark backing board: the left shows a black figure holding a paddle below an upward arrow, the right reads BE PREPARED TO STOP. Small orange flags are mounted along the top.",
+      "basis": "Temporary Workplace Traffic Control Manual."
+    },
+    "road-surface-hazard": {
+      "label": "Road surface hazard — uneven or damaged pavement in the work zone",
+      "category": "work-zone",
+      "visualDescription": "An orange diamond showing a black motorcycle and rider above a band of small bumps.",
+      "basis": "Temporary Workplace Traffic Control Manual."
+    },
+    "work-road-narrows": {
+      "label": "Road narrows in the work zone",
+      "category": "work-zone",
+      "visualDescription": "An orange diamond with two black lines that angle inward toward each other.",
+      "basis": "Temporary Workplace Traffic Control Manual."
+    },
+    "construction-traffic": {
+      "label": "Construction traffic entering the roadway",
+      "category": "work-zone",
+      "visualDescription": "An orange diamond with a black truck symbol on a side road joining the main road.",
+      "basis": "Temporary Workplace Traffic Control Manual."
+    },
+    "blasting-ahead": {
+      "label": "Blasting operations ahead — be prepared to stop",
+      "category": "work-zone",
+      "visualDescription": "A square white sign reading DANGER BLASTING AHEAD, with BLASTING in red and the other words in black.",
+      "basis": "Temporary Workplace Traffic Control Manual."
+    },
+    "survey-work": {
+      "label": "Survey crew working on or near the roadway",
+      "category": "work-zone",
+      "visualDescription": "An orange diamond showing a black figure bending to look through an instrument on a tripod, with small orange flags above its upper corners.",
+      "basis": "Temporary Workplace Traffic Control Manual."
+    },
+    "overhead-work": {
+      "label": "Overhead work in progress — watch for workers above",
+      "category": "work-zone",
+      "visualDescription": "An orange diamond showing a black truck with a raised boom and a worker in a bucket at the top, with small orange flags above its upper corners.",
+      "basis": "Temporary Workplace Traffic Control Manual."
+    },
+    "flashing-double-arrow": {
+      "label": "Flashing light unit with double arrow — traffic may pass on either side",
+      "category": "work-zone",
+      "visualDescription": "A black panel with bright lamps forming arrows pointing both left and right.",
+      "basis": "Temporary Workplace Traffic Control Manual."
+    },
+    "shape-guide-sign": {
+      "label": "Guide sign — horizontal rectangle",
+      "category": "sign-shape",
+      "visualDescription": "A horizontal rectangular silhouette.",
+      "basis": "Driver's Handbook ch.3 p.80: sign shapes convey meaning; horizontal rectangles are used for guide signs."
+    },
+    "shape-regulatory-sign": {
+      "label": "Regulatory sign — vertical rectangle",
+      "category": "sign-shape",
+      "visualDescription": "A vertical rectangular silhouette.",
+      "basis": "Driver's Handbook ch.3 p.80: sign shapes convey meaning; vertical rectangles are used for regulatory signs."
+    },
+    "shape-school-zone": {
+      "label": "School zone sign — pentagon",
+      "category": "sign-shape",
+      "visualDescription": "A five-sided school-house-shaped silhouette.",
+      "basis": "Driver's Handbook ch.3 p.80: sign shapes convey meaning; the pentagon shape is reserved for school zone signs."
+    },
+    "shape-stop": {
+      "label": "Stop sign — octagon",
+      "category": "sign-shape",
+      "visualDescription": "An eight-sided silhouette.",
+      "basis": "Driver's Handbook ch.3 p.80: sign shapes convey meaning; the octagon shape is reserved for stop signs."
+    },
+    "shape-yield": {
+      "label": "Yield sign — inverted triangle",
+      "category": "sign-shape",
+      "visualDescription": "An inverted triangular silhouette.",
+      "basis": "Driver's Handbook ch.3 p.80: sign shapes convey meaning; the inverted triangle shape is reserved for yield signs."
+    },
+    "shape-warning-sign": {
+      "label": "Warning sign — diamond",
+      "category": "sign-shape",
+      "visualDescription": "A diamond-shaped silhouette.",
+      "basis": "Driver's Handbook ch.3 p.80: sign shapes convey meaning; diamond shapes are used for warning signs."
     }
   }
 }

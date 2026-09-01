@@ -1,0 +1,88 @@
+name: Content or source correction
+description: Something the app teaches looks wrong, out of date, or unsupported by its source
+title: '[Content]: '
+labels: ['content', 'needs-source-check']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you — this is the most valuable kind of report this project gets.
+
+        People use this app to prepare for a licence that lets them drive. A wrong
+        speed limit or right-of-way rule is a safety problem, so corrections are
+        taken seriously and acted on quickly.
+
+        **The one thing we need is a source.** Without an official citation a
+        correction cannot be verified, and an unverified change is exactly what
+        this project is built to avoid.
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What appears to be wrong
+      description: Quote the question, explanation or sign as it appears in the app.
+      placeholder: |
+        Topic: School zones and school buses
+        Question: "A school zone begins on a road where the approaching speed limit is 70 km/h..."
+        The app says the limit is X, but I believe it is Y.
+    validations:
+      required: true
+
+  - type: input
+    id: where
+    attributes:
+      label: Where in the app
+      description: Screen, topic, or the question id if it is visible.
+      placeholder: Learn → School zones and school buses
+    validations:
+      required: true
+
+  - type: input
+    id: source-url
+    attributes:
+      label: Authoritative source URL
+      description: |
+        Government of Nova Scotia or Nova Scotia Legislature only — novascotia.ca
+        or nslegislature.ca. Driving-school sites, practice-test sites, forums and
+        other provinces' rules cannot be used, however confident they sound.
+      placeholder: https://nslegislature.ca/legislative-business/bills-statutes/consolidated-public-statutes/motor-vehicle-act
+    validations:
+      required: true
+
+  - type: input
+    id: citation
+    attributes:
+      label: Section, regulation or page
+      description: |
+        Where exactly in that source. A numeric fact needs a locatable citation —
+        naming the document is not enough to check it.
+      placeholder: Motor Vehicle Act s.103(2)(a)(ii) — or Driver's Handbook ch.3 p.80
+    validations:
+      required: true
+
+  - type: input
+    id: checked
+    attributes:
+      label: Date you checked the source
+      description: Official pages change. Knowing when you looked matters.
+      placeholder: 2026-08-31
+    validations:
+      required: true
+
+  - type: textarea
+    id: quote
+    attributes:
+      label: What the source actually says
+      description: A short quote or close paraphrase of the relevant passage.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Before submitting
+      options:
+        - label: My source is a Government of Nova Scotia or Nova Scotia Legislature page.
+          required: true
+        - label: I have checked that the source is current, not an archived or superseded version.
+          required: true
