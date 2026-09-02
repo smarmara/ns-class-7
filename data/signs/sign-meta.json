@@ -343,10 +343,10 @@
       "visualDescription": "An orange diamond with a black stepped profile showing one surface higher than the next.",
       "basis": "Driver's Handbook ch.3 p.99."
     },
-    "wz-flashing-arrow-right": {
-      "label": "Flashing light unit with a right arrow — the lane ahead is closed, move over",
+    "wz-flashing-arrow-left": {
+      "label": "Flashing light unit with a left arrow — the lane ahead is closed, move over",
       "category": "work-zone",
-      "visualDescription": "A black panel with a bright arrow of lamps pointing to the right.",
+      "visualDescription": "A black panel with a bright arrow of lamps pointing to the left.",
       "basis": "Driver's Handbook ch.3 p.103."
     },
     "pm-double-solid-yellow": {

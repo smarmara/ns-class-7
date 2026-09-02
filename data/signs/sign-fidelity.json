@@ -68,7 +68,7 @@
     "wz-uneven-lanes": {"designation":"work-uneven-lanes","sourceId":"ns-work-zone-manual","status":"official-crop"},
     "wz-workers-ahead": {"designation":"work-workers-ahead","sourceId":"ns-work-zone-manual","status":"official-crop"},
     "wz-traffic-control-person": {"designation":"work-traffic-control-person","sourceId":"ns-work-zone-manual","status":"official-crop"},
-    "wz-flashing-arrow-right": {"designation":"work-flashing-directional-arrow","sourceId":"ns-work-zone-manual","status":"official-crop"},
+    "wz-flashing-arrow-left": {"designation":"work-flashing-directional-arrow","sourceId":"ns-work-zone-manual","status":"official-crop"},
     "tar": {"designation":"work-tar","sourceId":"ns-work-zone-manual","status":"official-crop"},
     "work-right-lane-ends": {"designation":"work-right-lane-ends","sourceId":"ns-work-zone-manual","status":"official-crop"},
     "prepare-to-stop": {"designation":"work-prepare-to-stop","sourceId":"ns-work-zone-manual","status":"official-crop"},
