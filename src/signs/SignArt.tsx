@@ -85,6 +85,11 @@ export function SignArt({
         size={size}
         decorative={decorative}
         className={className}
+        // The canonical description, so a shape is named the same way every
+        // other sign is. It is also colour-free ("An eight-sided silhouette"),
+        // which matters now that the shape is near-black in light mode and
+        // pale in dark: nothing announces a colour the learner may not see.
+        ariaLabel={accessibleName}
       />
     );
   }

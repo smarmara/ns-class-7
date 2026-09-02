@@ -37,7 +37,7 @@
       "contentHash": "b662437ea1335c92e4680b5bf2460dd83123a4f85629a1a6f3538041ac9f16cc",
       "previousHash": null,
       "http": {
-        "lastModified": "Wed, 19 Aug 2026 16:15:48 GMT",
+        "lastModified": "Wed, 02 Sep 2026 04:02:26 GMT",
         "etag": null
       }
     },
@@ -547,10 +547,10 @@
       "precedence": 9,
       "status": "future",
       "retrievedAt": "2026-08-17",
-      "verifiedAt": "2026-08-17",
-      "notes": "Enacted as S.N.S. 2025, c. 20. Royal Assent alone does not bring it into force.",
-      "contentHash": "a25569f80f8e74d1a73207ae5ff9180a898546eacf4001752c00b4c904b2d348",
-      "previousHash": null,
+      "verifiedAt": "2026-09-02",
+      "notes": "Enacted as S.N.S. 2025, c. 20. Royal Assent alone does not bring it into force. Re-verified 2026-09-02: the nslegislature.ca site footer gained an 'Observances' navigation item across the whole site; this was the only difference in the normalized content. The live page still lists Traffic Safety Act 2025, c. 20 and 2018, c. 29 as NOT PROCLAIMED IN FORCE, so data/exam-config/legal-status.json is unchanged and no question was touched.",
+      "contentHash": "8b0bd56e1a93819b730216b9dfbf2b5d2f4092dfbd4e9466343514fb8ed34cc2",
+      "previousHash": "a25569f80f8e74d1a73207ae5ff9180a898546eacf4001752c00b4c904b2d348",
       "http": {
         "lastModified": null,
         "etag": null
@@ -566,11 +566,11 @@
       "precedence": 9,
       "status": "monitoring",
       "retrievedAt": "2026-08-17",
-      "verifiedAt": "2026-08-17",
-      "notes": "THE commencement gate. As retrieved 2026-08-17 this page lists 'Traffic Safety Act 2025, c. 20 -- NOT PROCLAIMED IN FORCE' (and likewise the earlier Traffic Safety Act 2018, c. 29). data/exam-config/legal-status.json mirrors this and is what the app and validator read. When this page changes, `pnpm sources:check` flags it and a maintainer must review before any `future` content is promoted.",
+      "verifiedAt": "2026-09-02",
+      "notes": "THE commencement gate. As retrieved 2026-08-17 this page lists 'Traffic Safety Act 2025, c. 20 -- NOT PROCLAIMED IN FORCE' (and likewise the earlier Traffic Safety Act 2018, c. 29). data/exam-config/legal-status.json mirrors this and is what the app and validator read. When this page changes, `pnpm sources:check` flags it and a maintainer must review before any `future` content is promoted. Re-verified 2026-09-02: the nslegislature.ca site footer gained an 'Observances' navigation item across the whole site; this was the only difference in the normalized content. The live page still lists Traffic Safety Act 2025, c. 20 and 2018, c. 29 as NOT PROCLAIMED IN FORCE, so data/exam-config/legal-status.json is unchanged and no question was touched.",
       "watchFor": "Traffic Safety Act",
-      "contentHash": "1b028bbce54aaa0720641d5bb971a0face0529b17103c481344e0ec307582c0d",
-      "previousHash": null,
+      "contentHash": "ed4cbd8e696ba20b42ea9569e5af007c3b8f2effe62e56398fea8a070fd9fd91",
+      "previousHash": "1b028bbce54aaa0720641d5bb971a0face0529b17103c481344e0ec307582c0d",
       "http": {
         "lastModified": null,
         "etag": null

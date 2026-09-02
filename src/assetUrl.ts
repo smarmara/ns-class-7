@@ -16,7 +16,7 @@
  *
  * `import.meta.env.BASE_URL` is Vite's build-time base:
  *   - `/`                    development, and any root deployment
- *   - `/ns-class-7-study/`   a GitHub Pages project site
+ *   - `/ns-class-7/`   a GitHub Pages project site
  *   - `/`                    a future custom domain
  *
  * Assets imported through the bundler (fonts, medal SVGs, icons) are rewritten

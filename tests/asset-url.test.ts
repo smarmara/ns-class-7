@@ -16,7 +16,7 @@ import approvalsJson from '@data/signs/visual-approvals.json';
  * stubbed in a unit test: a test that tried would only be asserting against its
  * own mock. So the *rule* is tested here as a pure function, and the wiring is
  * proved against a real subdirectory build in `e2e/pages-deployment.spec.ts`,
- * which loads the app at `/ns-class-7-study/` and fails on any 404.
+ * which loads the app at `/ns-class-7/` and fails on any 404.
  */
 
 describe('joinBase — the rebasing rule', () => {
@@ -27,8 +27,8 @@ describe('joinBase — the rebasing rule', () => {
   it('prefixes the base when the app is served from a subdirectory', () => {
     // The GitHub Pages project-site case. Without this the browser would ask
     // for https://owner.github.io/signs/... and get a 404.
-    expect(joinBase('/ns-class-7-study/', '/signs/ns-official/RB-1.png')).toBe(
-      '/ns-class-7-study/signs/ns-official/RB-1.png',
+    expect(joinBase('/ns-class-7/', '/signs/ns-official/RB-1.png')).toBe(
+      '/ns-class-7/signs/ns-official/RB-1.png',
     );
   });
 
@@ -39,12 +39,12 @@ describe('joinBase — the rebasing rule', () => {
   });
 
   it('never produces a double slash at the join', () => {
-    expect(joinBase('/ns-class-7-study/', '/icons/icon-192.png')).not.toContain('//');
+    expect(joinBase('/ns-class-7/', '/icons/icon-192.png')).not.toContain('//');
     expect(joinBase('/deep/nested/', '/signs/x.png')).toBe('/deep/nested/signs/x.png');
   });
 
   it('tolerates a base with no trailing slash', () => {
-    expect(joinBase('/ns-class-7-study', '/signs/x.png')).toBe('/ns-class-7-study/signs/x.png');
+    expect(joinBase('/ns-class-7', '/signs/x.png')).toBe('/ns-class-7/signs/x.png');
   });
 
   it('falls back to the root for an empty base', () => {
@@ -53,15 +53,15 @@ describe('joinBase — the rebasing rule', () => {
 
   it('leaves bundler-resolved and relative paths untouched', () => {
     // Vite already rewrote these; rebasing them again would corrupt them.
-    expect(joinBase('/ns-class-7-study/', './favicon.svg')).toBe('./favicon.svg');
-    expect(joinBase('/ns-class-7-study/', 'assets/index.js')).toBe('assets/index.js');
+    expect(joinBase('/ns-class-7/', './favicon.svg')).toBe('./favicon.svg');
+    expect(joinBase('/ns-class-7/', 'assets/index.js')).toBe('assets/index.js');
   });
 
   it('leaves protocol-relative and data URLs untouched', () => {
-    expect(joinBase('/ns-class-7-study/', '//cdn.example.com/x.png')).toBe(
+    expect(joinBase('/ns-class-7/', '//cdn.example.com/x.png')).toBe(
       '//cdn.example.com/x.png',
     );
-    expect(joinBase('/ns-class-7-study/', 'data:image/png;base64,AAAA')).toBe(
+    expect(joinBase('/ns-class-7/', 'data:image/png;base64,AAAA')).toBe(
       'data:image/png;base64,AAAA',
     );
   });
@@ -108,8 +108,8 @@ describe('sign artwork resolution', () => {
       const recorded = approvals.approvals[id]!.assetPath!;
       expect(artwork.src).toBe(joinBase(deploymentBase(), recorded));
       // And it would land under a subdirectory deployment too.
-      expect(joinBase('/ns-class-7-study/', recorded)).toBe(
-        `/ns-class-7-study${recorded}`,
+      expect(joinBase('/ns-class-7/', recorded)).toBe(
+        `/ns-class-7${recorded}`,
       );
     }
   });

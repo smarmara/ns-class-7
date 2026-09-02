@@ -66,7 +66,7 @@ pnpm content:quality   # authoring quality warnings
 pnpm content:syllabus  # syllabus coverage
 pnpm content:progression
 pnpm signs:learner-audit
-pnpm pages:preview     # serve the built app at /ns-class-7-study/
+pnpm pages:preview     # serve the built app at /ns-class-7/
 ```
 
 ---

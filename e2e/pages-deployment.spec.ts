@@ -5,7 +5,7 @@ import { isIconKit } from './helpers';
  * GitHub Pages subdirectory regression suite.
  *
  * Everything here runs against a real production build mounted at
- * `/ns-class-7-study/` rather than at the domain root — the shape a GitHub
+ * `/ns-class-7/` rather than at the domain root — the shape a GitHub
  * Pages *project* site actually has. That distinction is the whole point:
  * `pnpm dev` and `pnpm preview` both serve from `/`, so a root-absolute asset
  * path, a wrong PWA scope or a service worker registered at the wrong URL all
@@ -16,7 +16,7 @@ import { isIconKit } from './helpers';
  * it.
  */
 
-const BASE = '/ns-class-7-study/';
+const BASE = '/ns-class-7/';
 
 /** Records every response that failed, so a missing asset cannot pass silently. */
 function trackFailures(page: Page) {
@@ -207,7 +207,7 @@ test.describe('hash routing on a static host', () => {
     test(`${route} survives a direct load and a refresh`, async ({ page }) => {
       /*
        * The reason this app uses hash routing. On a static host there is no
-       * server to rewrite `/ns-class-7-study/learn` back to index.html, so a
+       * server to rewrite `/ns-class-7/learn` back to index.html, so a
        * history route would 404 on refresh. The hash never reaches the server.
        */
       const failures = trackFailures(page);
@@ -233,9 +233,9 @@ test.describe('production hygiene on the deployed build', () => {
   /*
    * The Kit must survive subdirectory hosting.
    *
-   * Every other asset in this build is rebased under /ns-class-7-study/, which
+   * Every other asset in this build is rebased under /ns-class-7/, which
    * is exactly the bug to look for: a Kit URL that got treated as a local path
-   * would become /ns-class-7-study/kit.fontawesome.com/… and silently 404,
+   * would become /ns-class-7/kit.fontawesome.com/… and silently 404,
    * leaving a fork with no icons and no error to explain it. The Kit is
    * absolute by construction — this test is what keeps it that way.
    */

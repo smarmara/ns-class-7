@@ -5,12 +5,16 @@ import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 import path from 'node:path';
 import { computeContentVersion, type ContentVersionInput } from './scripts/lib/content-version';
+import { normaliseBase } from './scripts/lib/deploy-base';
 import { cropKeyFor } from './src/signs/cropKey';
 
 const pkg = JSON.parse(readFileSync(new URL('./package.json', import.meta.url), 'utf8'));
 const identity = JSON.parse(
   readFileSync(new URL('./app.identity.json', import.meta.url), 'utf8'),
-) as { fontAwesomeKit: { url: string } };
+) as {
+  fontAwesomeKit: { url: string };
+  web?: { customDomain?: string; productionUrl?: string };
+};
 
 /**
  * Font Awesome Pro hosted Kit.
@@ -29,6 +33,27 @@ function fontAwesomeKitTag(): string {
   const url = (process.env.FA_KIT_URL ?? identity.fontAwesomeKit.url).trim();
   if (!url) return '';
   return `    <script src="${url}" crossorigin="anonymous" referrerpolicy="origin"></script>
+`;
+}
+
+/**
+ * Canonical and og:url for the production site.
+ *
+ * The same page will answer on more than one address — the apex domain, `www.`,
+ * and the old `<owner>.github.io/<repo>/` project URL that GitHub keeps
+ * redirecting. Declaring one canonical address is what stops those being
+ * treated as separate pages, and gives a shared link a stable URL.
+ *
+ * Only emitted for a root build with a production URL declared. A project-site
+ * build is a fork or a preview, not the canonical copy of anything, so it gets
+ * no tag rather than a tag pointing at somebody else's domain. `SITE_URL`
+ * overrides the declared value for a fork with its own domain.
+ */
+function canonicalTags(base: string): string {
+  const url = (process.env.SITE_URL ?? identity.web?.productionUrl ?? '').trim();
+  if (!url || base !== '/') return '';
+  return `    <link rel="canonical" href="${url}" />
+    <meta property="og:url" content="${url}" />
 `;
 }
 
@@ -122,22 +147,23 @@ function activeOfficialCropFiles(): string[] {
  * decision, not an application one — and nothing in src/ knows or cares which
  * host it is on. `VITE_BASE_PATH` is the single place that decision is made:
  *
- *   unset                    `/`  — dev server, and any root deployment
- *                                   (custom domain, Netlify, Cloudflare Pages)
- *   `/ns-class-7-study/`          — a GitHub Pages *project* site, where the
- *                                   repository name is part of the URL
+ *   unset or `/`     a root deployment — the dev server, and production at
+ *                    https://roadlearn.ca/ (also Netlify, Cloudflare Pages…)
+ *   `/ns-class-7/`   a GitHub Pages *project* site, where the repository name
+ *                    is part of the URL
  *
- * The Pages workflow derives it from the repository name rather than hard-coding
- * one, so a fork deploys to its own path with no edits. Moving to a custom
- * domain later is a matter of dropping the variable — there is no code to change.
+ * Production resolves this in the Pages workflow via `pnpm deploy:base`: a
+ * custom domain declared in app.identity.json means a root build, and anything
+ * else falls back to what GitHub Pages reports, so a fork deploys to its own
+ * project URL with no edits.
  *
- * Normalised to always start and end with `/`, because Vite, the PWA manifest
- * `scope` and the service-worker registration all depend on that shape.
+ * `normaliseBase` is shared with that resolver rather than reimplemented here.
+ * The two had drifted: this copy lacked the Windows guard, so a hand-run
+ * `VITE_BASE_PATH=/ pnpm build` in Git Bash silently produced a manifest scoped
+ * to `/C:/Program Files/Git/` — a build that looks fine and is unusable.
  */
 function basePath(): string {
-  const raw = process.env.VITE_BASE_PATH?.trim();
-  if (!raw || raw === '/') return '/';
-  return `/${raw.replace(/^\/+|\/+$/g, '')}/`;
+  return normaliseBase(process.env.VITE_BASE_PATH);
 }
 
 const base = basePath();
@@ -156,11 +182,12 @@ export default defineConfig({
   },
   plugins: [
     {
-      // Injects the Font Awesome Kit script into the built HTML.
-      name: 'font-awesome-kit',
+      // Injects the Font Awesome Kit script and the canonical URL into the
+      // built HTML, so both have exactly one source (app.identity.json).
+      name: 'deployment-head-tags',
       transformIndexHtml(html: string) {
-        const tag = fontAwesomeKitTag();
-        return tag ? html.replace('</head>', `${tag}  </head>`) : html;
+        const tags = `${canonicalTags(base)}${fontAwesomeKitTag()}`;
+        return tags ? html.replace('</head>', `${tags}  </head>`) : html;
       },
     },
     react(),
@@ -209,7 +236,7 @@ export default defineConfig({
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,woff2}'],
         // Resolved against the base for the same reason as `scope`: under
-        // /ns-class-7-study/ the fallback document is not at the domain root.
+        // /ns-class-7/ the fallback document is not at the domain root.
         navigateFallback: `${base}index.html`,
         cleanupOutdatedCaches: true,
       },

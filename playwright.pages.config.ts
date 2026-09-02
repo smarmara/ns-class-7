@@ -5,7 +5,7 @@ import { defineConfig, devices } from '@playwright/test';
  *
  * Kept in its own config, and its own build output, for two reasons:
  *
- *  - the app has to be built for `/ns-class-7-study/`, which is a different
+ *  - the app has to be built for `/ns-class-7/`, which is a different
  *    artifact from the root build the main suite serves. Sharing `dist/` would
  *    mean the two suites silently clobber each other;
  *  - it is a deployment check, not a product check, so it should not add a
@@ -40,7 +40,7 @@ export default defineConfig({
   webServer: {
     // Builds into dist-pages/ so the root build in dist/ is left alone.
     command: 'pnpm pages:serve',
-    url: 'http://localhost:4180/ns-class-7-study/',
+    url: 'http://localhost:4180/ns-class-7/',
     reuseExistingServer: !process.env.CI,
     timeout: 180_000,
   },

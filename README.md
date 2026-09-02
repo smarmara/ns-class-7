@@ -14,12 +14,12 @@ entirely in your browser, works offline, and needs no account.
 
 ## Try it
 
-**Deployment URL: configured after the repository is published.**
+### **[roadlearn.ca](https://roadlearn.ca/)**
 
-Once GitHub Pages is enabled, the app lives at
-`https://<owner>.github.io/<repository>/` and opens straight into Home — no
-sign-up, no onboarding, nothing between you and the first question.
+It opens straight into Home — no sign-up, no onboarding, nothing between you and
+the first question. Add it to your home screen and it works offline.
 
+Source and issues: [github.com/smarmara/ns-class-7](https://github.com/smarmara/ns-class-7).
 Running it locally takes two commands: see [Development](#development).
 
 ---
@@ -153,9 +153,14 @@ the icon fetch itself, and the app sends nothing to Font Awesome. It is the only
 third-party host the app contacts, and blocking it costs you the icons and
 nothing else.
 
-Because storage is per-origin, progress does not follow you between
-`localhost`, a Pages URL and a future custom domain. Use the backup file to move
-it.
+Because browser storage is per-origin, progress does not follow you between
+`localhost`, `smarmara.github.io` and `roadlearn.ca` — they are three different
+origins as far as the browser is concerned, and no site can read another's
+storage. That is the web working correctly, not a bug.
+
+If you studied on the old `smarmara.github.io/ns-class-7/` address before the
+move to roadlearn.ca, your progress is still there: open the old URL, use
+Sources → *Back up progress*, then restore that file on roadlearn.ca.
 
 ---
 
@@ -207,7 +212,7 @@ pnpm test:e2e            # browser tests, mobile and desktop
 pnpm content:validate    # question bank integrity
 pnpm content:progression # every topic can reach Complete and Mastered
 pnpm signs:approval:check
-pnpm pages:preview       # serve the built app at /ns-class-7-study/
+pnpm pages:preview       # serve the built app at /ns-class-7/ (fork / project-site shape)
 pnpm release:audit       # is this repository safe to publish?
 ```
 
@@ -261,11 +266,20 @@ static web host.
 - `.github/workflows/deploy-pages.yml` runs the same verification on `main`, then
   builds and publishes. **A failed verification stops the deployment.**
 
-The base path is configurable, never hard-coded: the Pages workflow derives it
-from the repository name, so a fork deploys to its own URL with no edits, and a
-custom domain needs only for the variable to be unset. Routing is hash-based
-(`#/learn`), which is what lets a static host serve deep links and refreshes
-without any server rewrite rules.
+Production is [roadlearn.ca](https://roadlearn.ca/) — a GitHub Pages site on a
+custom domain, so the app is mounted at `/`.
+
+The base path is configurable, never hard-coded. `pnpm deploy:base` resolves it
+at deploy time: a custom domain declared in `app.identity.json` means a root
+build, and anything else falls back to what GitHub Pages reports, so a **fork
+deploys to its own `https://<owner>.github.io/<repo>/` with no edits**. Both
+shapes have their own regression suite (`e2e/root-deployment.spec.ts` and
+`e2e/pages-deployment.spec.ts`), and `pnpm deploy:check` verifies the built
+artifact actually matches the base it was built for — a mistake there produces a
+bundle that passes every test and then 404s its own JavaScript in production.
+
+Routing is hash-based (`#/learn`), which is what lets a static host serve deep
+links and refreshes without any server rewrite rules.
 
 One deployment detail that is not in the code: the Font Awesome Kit is
 restricted to an allow-list of domains, so a new host has to be added in the

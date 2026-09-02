@@ -43,9 +43,11 @@
     "native:live": "tsx scripts/native-live-reload.ts",
     "native:doctor": "tsx scripts/native-doctor.ts",
     "native:version": "tsx scripts/native-version-sync.ts",
+    "deploy:base": "tsx scripts/deploy-base.ts",
+    "deploy:check": "tsx scripts/deploy-check.ts",
     "pages:build": "tsc -b && tsx scripts/pages.ts build",
-    "pages:preview": "tsc -b && tsx scripts/pages.ts preview --base ns-class-7-study --out dist-pages",
-    "pages:serve": "tsx scripts/pages.ts preview --base ns-class-7-study --out dist-pages",
+    "pages:preview": "tsc -b && tsx scripts/pages.ts preview --base ns-class-7 --out dist-pages",
+    "pages:serve": "tsx scripts/pages.ts preview --base ns-class-7 --out dist-pages",
     "pages:test": "playwright test --config=playwright.pages.config.ts",
     "release:audit": "tsx scripts/release-audit.ts"
   },

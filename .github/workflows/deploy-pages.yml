@@ -87,15 +87,34 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
-      - name: Build
-        # The base path is derived from the repository, never hard-coded, so a
-        # fork deploys to its own URL with no edits. `configure-pages` reports
-        # the real base_path — '' for a user/organisation site or a custom
-        # domain, '/<repo>' for a project site — which is exactly the
-        # distinction the app needs.
+      - name: Resolve base path
+        id: base
+        # Production serves from a custom domain at the root, so it must build
+        # for `/`. `configure-pages` derives a base from the repository's Pages
+        # settings, which is right for a fork and is precisely what could keep
+        # building `/ns-class-7/` here if the custom domain were not yet
+        # propagated or were briefly cleared — a blank page for every learner.
+        #
+        # So a declared custom domain wins and the derived value is the
+        # fallback. See scripts/lib/deploy-base.ts for the rule and
+        # tests/deploy-base.test.ts for what it guarantees. This step prints the
+        # target it resolved; its only inputs are a public domain and URL path.
         env:
-          VITE_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          DERIVED_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+        run: pnpm deploy:base
+
+      - name: Build
+        env:
+          VITE_BASE_PATH: ${{ steps.base.outputs.base }}
         run: pnpm build
+
+      - name: Check the build matches the deployment target
+        # A base-path mistake produces a bundle that builds and tests clean and
+        # then 404s in production, so it is confirmed against the artifact
+        # itself rather than assumed from the environment variable.
+        env:
+          EXPECTED_BASE: ${{ steps.base.outputs.base }}
+        run: pnpm deploy:check
 
       - name: Offline audit
         # The deployed bundle must need no network to teach. Runs against the

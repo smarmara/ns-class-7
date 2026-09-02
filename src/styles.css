@@ -182,6 +182,19 @@
   --cat-other: #3d4a86;
   --cat-other-soft: #eaecf8;
 
+  /* -- sign-shape concept diagrams --------------------------------------
+     The abstract silhouettes that teach sign geometry (octagon, inverted
+     triangle, diamond…). These are learner diagrams, not real signs, so they
+     take the interface theme: a near-black shape is right on a light page and
+     invisible on a dark one.
+
+     Official sign artwork is exempt and always keeps the Province's real
+     colours — see the note on the category accents above. Shape communicates
+     the meaning here, so all six shapes share one treatment; colour is only
+     doing contrast. */
+  --sign-shape-fill: #16181d;
+  --sign-shape-stroke: #16181d;
+
   --focus: var(--accent);
 
   --shadow-sm: 0 1px 2px rgb(16 24 40 / 0.05), 0 1px 3px rgb(16 24 40 / 0.04);
@@ -255,6 +268,13 @@
     --cat-other: #a3adde;
     --cat-other-soft: #1f2340;
 
+
+    /* Lifted well clear of every dark surface, from --bg #0e1014 up to
+       --surface-3 #2b313c. Pale blue-grey rather than pure white so a large
+       filled octagon does not glare on a dark page; the mid-tone stroke keeps
+       the edge crisp at small sizes instead of letting the shape bloom. */
+    --sign-shape-fill: #ccd6e4;
+    --sign-shape-stroke: #93a2b6;
     --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.35);
     --shadow-md: 0 6px 16px rgb(0 0 0 / 0.45);
     --shadow-lg: 0 16px 36px rgb(0 0 0 / 0.55);
@@ -313,6 +333,13 @@
   --cat-other: #a3adde;
   --cat-other-soft: #1f2340;
 
+
+  /* Lifted well clear of every dark surface, from --bg #0e1014 up to
+     --surface-3 #2b313c. Pale blue-grey rather than pure white so a large
+     filled octagon does not glare on a dark page; the mid-tone stroke keeps
+     the edge crisp at small sizes instead of letting the shape bloom. */
+  --sign-shape-fill: #ccd6e4;
+  --sign-shape-stroke: #93a2b6;
   --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.35);
   --shadow-md: 0 6px 16px rgb(0 0 0 / 0.45);
   --shadow-lg: 0 16px 36px rgb(0 0 0 / 0.55);
@@ -1367,6 +1394,41 @@ button,
 .sign-card-art img,
 .sign-card-art svg {
   object-fit: contain;
+}
+
+/*
+ * Sign-shape concept diagrams take the interface theme.
+ *
+ * These are the abstract silhouettes that teach sign geometry, not real signs,
+ * so a fixed near-black fill was correct on a light page and near-invisible on
+ * a dark one (#16181d on #191d23). The component ships that near-black as a
+ * presentation attribute — the reviewed default, and what the QA gallery and
+ * the approval fingerprint render — and CSS, which wins over a presentation
+ * attribute, re-paints it per theme here.
+ *
+ * Every shape gets the same treatment on purpose. Shape is what carries the
+ * meaning in these questions; colour is only doing contrast, so giving the
+ * octagon and the diamond different colours would invent a distinction the
+ * learning content does not make.
+ *
+ * Scoped to `.sign-shape`, which only `SignShapeArt` sets. Official artwork is
+ * never reached: crops are <img> (unaffected by `fill`) and registry signs
+ * carry their real colours in their own markup. No filter, invert or blend is
+ * used anywhere in this rule — an official sign must survive a theme switch
+ * unchanged, and a rule that tinted whole elements could not promise that.
+ */
+.sign-shape :is(path, polygon, rect, circle, ellipse, line, polyline) {
+  fill: var(--sign-shape-fill);
+  stroke: var(--sign-shape-stroke);
+  /*
+   * A hairline in user units, so it scales with the shape rather than growing
+   * heavy on a 44px catalogue thumbnail. In light mode the stroke matches the
+   * fill and is invisible; in dark it is the edge that stops a pale silhouette
+   * looking washed out against the card.
+   */
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
 }
 .sign-gallery figcaption {
   font-size: 0.74rem;

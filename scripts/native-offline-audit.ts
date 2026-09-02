@@ -45,6 +45,24 @@ const CITATION_HOSTS = new Set(['novascotia.ca', 'www.novascotia.ca', 'nslegisla
 const ICON_KIT_HOSTS = new Set(['kit.fontawesome.com', 'ka-p.fontawesome.com']);
 
 /**
+ * The site's own production address, from app.identity.json.
+ *
+ * It appears in the built HTML as `<link rel="canonical">` and `og:url`. Neither
+ * is ever fetched: they are metadata telling a crawler or a link preview which
+ * address this page calls its own, and they exist because the same page answers
+ * at the apex, at www, and at the old GitHub Pages project URL.
+ *
+ * Exempted by exact URL rather than by host, so a real remote resource on the
+ * same domain would still be caught.
+ */
+const SELF_URL = (() => {
+  const identity = JSON.parse(readFileSync(path.join(ROOT, 'app.identity.json'), 'utf8')) as {
+    web?: { productionUrl?: string };
+  };
+  return identity.web?.productionUrl?.trim() ?? '';
+})();
+
+/**
  * Strings that look like URLs but are never fetched.
  *
  * Three kinds, all verified by reading the surrounding bytes in the bundle:
@@ -121,6 +139,8 @@ function main() {
     for (const match of text.matchAll(/https?:\/\/[a-zA-Z0-9._~:/?#@!$&'()*+,;=%-]+/g)) {
       const url = match[0];
       if (NON_FETCH.some((re) => re.test(url))) continue;
+      // The canonical/og:url self-reference. Metadata, not a request.
+      if (SELF_URL && url === SELF_URL) continue;
       const rel = path.relative(ROOT, file);
       if (!external.has(url)) external.set(url, new Set());
       external.get(url)!.add(rel);
@@ -169,11 +189,22 @@ function main() {
     [/\bimportScripts\(\s*["'`]https?:\/\//g, 'importScripts() from a remote URL'],
     [/\bnew\s+EventSource\(\s*["'`]https?:\/\//g, 'EventSource to a remote URL'],
     [/\bnew\s+WebSocket\(\s*["'`]wss?:\/\//g, 'WebSocket to a remote URL'],
-    // The Font Awesome Kit loader is the one permitted remote script; anything
-    // else pulling script or CSS off-origin is a defect.
+    /*
+     * The Font Awesome Kit loader is the one permitted remote script; anything
+     * else pulling script or CSS off-origin is a defect.
+     *
+     * `rel="canonical"` is excluded because it names the page rather than
+     * loading anything — the browser never requests it. The exclusion is on the
+     * rel, not on the URL, so a genuine remote stylesheet or script on the same
+     * host is still caught.
+     */
     [
-      /<(?:script|link)[^>]+(?:src|href)=["']https?:\/\/(?!kit\.fontawesome\.com\/)/g,
-      'remote script or stylesheet element',
+      /<script[^>]+src=["']https?:\/\/(?!kit\.fontawesome\.com\/)/g,
+      'remote script element',
+    ],
+    [
+      /<link(?![^>]*rel=["']canonical["'])[^>]+href=["']https?:\/\//g,
+      'remote stylesheet or preload element',
     ],
     [/@import\s+(?:url\()?["']?https?:\/\//g, 'remote CSS @import'],
   ];
@@ -191,7 +222,10 @@ function main() {
   /* ------------------------------------------- index.html loads only local */
 
   const html = readFileSync(path.join(DIST, 'index.html'), 'utf8');
-  for (const match of html.matchAll(/(?:src|href)="([^"]+)"/g)) {
+  // Drop the canonical link first: it is metadata, and matching it here would
+  // report the site's own address as a runtime dependency on itself.
+  const fetchedHtml = html.replace(/<link[^>]*rel=["']canonical["'][^>]*>/gi, '');
+  for (const match of fetchedHtml.matchAll(/(?:src|href)="([^"]+)"/g)) {
     const ref = match[1]!;
     if (!/^https?:\/\//i.test(ref)) continue;
     let host = '';

@@ -22,6 +22,29 @@
     "light": "#f8fafc",
     "dark": "#101317"
   },
+  "web": {
+    "$comment": [
+      "Where the web app is deployed. Deployment configuration, not application",
+      "architecture: nothing in src/ reads this, and the app stays host-agnostic.",
+      "",
+      "`customDomain` is what makes the production build a ROOT deployment. When it is",
+      "set, the Pages workflow builds with VITE_BASE_PATH=/ instead of deriving a",
+      "project-site subpath from the repository name. Clear it and the workflow falls",
+      "back to whatever GitHub Pages reports — which is how a fork gets a working",
+      "https://<owner>.github.io/<repo>/ deployment with no edits.",
+      "",
+      "`productionUrl` is used only for the canonical and og:url tags in the built",
+      "HTML, so the same page reachable at the apex, at www and at the old project",
+      "URL declares one address. Override at build time with SITE_URL.",
+      "",
+      "The custom domain itself is configured in the repository's Settings -> Pages.",
+      "That is deliberately the ONLY mechanism: this project ships no CNAME file, so",
+      "there is nothing that can disagree with the setting. See docs/OPEN_SOURCE_RELEASE.md."
+    ],
+    "repository": "smarmara/ns-class-7",
+    "customDomain": "roadlearn.ca",
+    "productionUrl": "https://roadlearn.ca/"
+  },
   "fontAwesomeKit": {
     "$comment": [
       "Font Awesome Pro hosted Kit, used by the deployed web app under the maintainer's",
