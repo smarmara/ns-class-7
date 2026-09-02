@@ -779,12 +779,12 @@
       "category": "other",
       "displayName": "Flashing Double Arrow — Pass Either Side"
     },
-    "wz-flashing-arrow-right": {
+    "wz-flashing-arrow-left": {
       "scope": "core",
       "hasMeta": true,
       "inQuiz": true,
       "category": "work-zone",
-      "displayName": "Flashing Arrow — Keep Right"
+      "displayName": "Flashing Arrow — Keep Left"
     },
     "construction-traffic": {
       "scope": "core",

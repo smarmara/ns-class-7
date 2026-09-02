@@ -204,7 +204,7 @@
     "wz-construction-ahead": "work-zone",
     "wz-construction-distance-ahead": "work-zone",
     "wz-end-construction": "work-zone",
-    "wz-flashing-arrow-right": "work-zone",
+    "wz-flashing-arrow-left": "work-zone",
     "wz-traffic-control-person": "work-zone",
     "wz-uneven-lanes": "work-zone",
     "wz-workers-ahead": "work-zone",

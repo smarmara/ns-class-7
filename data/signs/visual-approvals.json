@@ -1089,7 +1089,7 @@
       "designation": "work-flashing-double-arrow",
       "previousApprovals": []
     },
-    "wz-flashing-arrow-right": {
+    "wz-flashing-arrow-left": {
       "status": "approved",
       "approvedAt": "2026-08-18T18:29:19.135Z",
       "fingerprint": "4cec510d4730a69fd6ca2bf4cd2c1903f3151384fa1b8e5a661bff32297e623a",

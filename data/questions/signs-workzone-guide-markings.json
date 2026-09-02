@@ -225,8 +225,8 @@
     "type": "sign",
     "topic": "signs-work-zone",
     "subtopic": "flashing arrow board",
-    "question": "A flashing light unit at a work zone displays a single arrow pointing right. What does it mean?",
-    "signId": "wz-flashing-arrow-right",
+    "question": "A flashing light unit at a work zone displays a single arrow pointing left. What does it mean?",
+    "signId": "wz-flashing-arrow-left",
     "choices": [
       "The lane ahead is closed or obstructed — move over, passing only on the side the arrow indicates",
       "Traffic may pass on either side of the unit",
