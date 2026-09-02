@@ -235,11 +235,52 @@ export function parseEnvelope(parsed: unknown): ParseResult {
     return fail('bad-engagement');
   }
 
+  // Bounded before anything downstream walks them. See MAX_BACKUP_ENTRIES.
+  if (
+    progress.attempts.length > MAX_BACKUP_ENTRIES ||
+    progress.mockTests.length > MAX_BACKUP_ENTRIES ||
+    engagement.daily.length > MAX_BACKUP_ENTRIES ||
+    Object.keys(progress.questions).length > MAX_BACKUP_ENTRIES
+  ) {
+    return fail('too-large');
+  }
+
   return { ok: true, state: migrateEnvelope(parsed) };
 }
 
+/**
+ * Largest backup worth attempting to parse.
+ *
+ * A restore file is chosen by the learner from their own disk, so this is not
+ * defending against an attacker so much as against a mistake: picking the wrong
+ * file, or being handed a hostile one. `JSON.parse` is synchronous and blocks
+ * the main thread, so a few hundred megabytes of nonsense freezes the tab with
+ * no error and no way back.
+ *
+ * 8 MB is far beyond any real backup. A learner who answered every question in
+ * the bank a hundred times over produces a file in the low hundreds of
+ * kilobytes, so this rejects nothing legitimate.
+ */
+export const MAX_BACKUP_BYTES = 8 * 1024 * 1024;
+
+/**
+ * Upper bound on the collections a backup can carry.
+ *
+ * Length is checked before the data reaches the stores, because everything
+ * downstream — scoring, mastery, the review queues, the rendered lists — walks
+ * these arrays. A file declaring ten million attempts is not a valid history;
+ * it is a way to make the app hang while it renders one.
+ */
+export const MAX_BACKUP_ENTRIES = 100_000;
+
 /** Parse and validate a backup/restore payload (JSON text). */
 export function parseBackup(json: string): ParseResult {
+  // Measured in bytes rather than characters: a JSON file is bytes on disk, and
+  // a multi-byte character must not count as one.
+  if (typeof json !== 'string') return fail('not-json');
+  const bytes = new TextEncoder().encode(json).length;
+  if (bytes > MAX_BACKUP_BYTES) return fail('too-large');
+
   let parsed: unknown;
   try {
     parsed = JSON.parse(json);

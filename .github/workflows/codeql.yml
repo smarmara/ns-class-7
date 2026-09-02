@@ -1,0 +1,56 @@
+name: CodeQL
+
+# Static analysis for the application and its tooling.
+#
+# Deliberately a separate workflow from ci.yml and deploy-pages.yml. CodeQL
+# takes minutes rather than seconds, and a security scan that made every push
+# slow — or that could block a deployment on an analysis hiccup — would end up
+# being switched off. Deployment gating stays with the verification suite;
+# this reports findings to the Security tab.
+#
+# Findings appear under Security -> Code scanning alerts.
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  schedule:
+    # Weekly, so a newly published query pattern is applied to existing code
+    # rather than only to whatever happens to change next.
+    - cron: '41 5 * * 2'
+  workflow_dispatch:
+
+# Least privilege. The only write this needs is the one that files alerts.
+permissions:
+  contents: read
+  security-events: write
+
+jobs:
+  analyze:
+    name: Analyze JavaScript/TypeScript
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: javascript-typescript
+          # `security-extended` over the default: this is a small codebase where
+          # the extra queries cost little, and the classes it adds — unsafe DOM
+          # sinks, prototype pollution, incomplete sanitisation — are precisely
+          # the ones that matter for an app whose entire trust boundary is the
+          # browser.
+          queries: security-extended
+
+      # No build step. The analysis reads the TypeScript and React source
+      # directly, which is what should be reviewed; a bundled artifact would
+      # only obscure it.
+      - name: Perform CodeQL analysis
+        uses: github/codeql-action/analyze@v3
+        with:
+          category: /language:javascript-typescript

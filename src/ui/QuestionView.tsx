@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { safeExternalHref } from '@/safeUrl';
 import { TOPIC_LABELS, getSource, getSignMeta } from '@/content';
 import type { Question, SourceReference } from '@/content/types';
 import {
@@ -247,10 +248,12 @@ export function SourceRefs({ refs, compact = false }: { refs: SourceReference[];
     const first = refs[0]!;
     const source = getSource(first.sourceId);
     const where = [first.section, first.chapter, first.page].filter(Boolean).join(', ');
+    const href = safeExternalHref(first.url ?? source?.url);
+    if (!href) return null;
     return (
       <a
         className="source-link"
-        href={first.url ?? source?.url}
+        href={href}
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -270,12 +273,18 @@ export function SourceRefs({ refs, compact = false }: { refs: SourceReference[];
           const where = [ref.section, ref.chapter, ref.page].filter(Boolean).join(', ');
           return (
             <li key={`${ref.sourceId}-${i}`}>
-              {source ? (
-                <a href={ref.url ?? source.url} target="_blank" rel="noopener noreferrer">
+              {source && safeExternalHref(ref.url ?? source.url) ? (
+                <a
+                  href={safeExternalHref(ref.url ?? source.url)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   {source.title}
                 </a>
               ) : (
-                <span>{ref.sourceId}</span>
+                // No link rather than an unusable one: the citation still names
+                // its source, which is what the learner needs to verify it.
+                <span>{source ? source.title : ref.sourceId}</span>
               )}
               {where && <span className="src-where"> — {where}</span>}
               {ref.note && <div className="tiny faint">{ref.note}</div>}

@@ -17,10 +17,12 @@ import {
   buildBackupJson,
   discardPreservedCorrupt,
   hasPreservedCorrupt,
+  MAX_BACKUP_BYTES,
   parseBackup,
   restoreBackup,
   type PersistedLearnerState,
 } from '@/store/learnerStorage';
+import { safeExternalHref } from '@/safeUrl';
 import { appVersion, contentVersion } from '@/version';
 import { isNativeApp, saveBackupFile } from '@/native';
 import { Banner, Card, PageHead } from '@/ui/components';
@@ -28,6 +30,9 @@ import { Banner, Card, PageHead } from '@/ui/components';
 function backupErrorText(reason: string): string {
   if (reason === 'unsupported-schema') {
     return 'This backup was made by a newer version of the app and cannot be read yet.';
+  }
+  if (reason === 'too-large') {
+    return 'That file is far too large to be a progress backup, so it was not opened.';
   }
   return "This doesn't appear to be a valid NS Class 7 progress backup.";
 }
@@ -74,6 +79,16 @@ export function Sources() {
   const onRestoreFile = async (file: File | undefined) => {
     setRestoreError(null);
     if (!file) return;
+    /*
+     * Checked before the file is read, not after. `file.text()` pulls the whole
+     * thing into memory and `JSON.parse` then blocks the main thread, so a
+     * mis-picked video file would freeze the tab before any validation ran.
+     */
+    if (file.size > MAX_BACKUP_BYTES) {
+      setRestoreError(backupErrorText('too-large'));
+      return;
+    }
+
     let text: string;
     try {
       text = await file.text();
@@ -195,7 +210,7 @@ export function Sources() {
             <li key={source.id}>
               <a
                 className="tile"
-                href={source.documentUrl ?? source.url}
+                href={safeExternalHref(source.documentUrl ?? source.url)}
                 target="_blank"
                 rel="noopener noreferrer"
               >

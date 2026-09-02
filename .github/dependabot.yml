@@ -1,0 +1,49 @@
+# Dependency update alerts for a public, single-maintainer project.
+#
+# The point here is not to stay on the newest of everything — it is to be told
+# when something this project ships or builds with picks up a published
+# vulnerability, without having to remember to go and look.
+#
+# Nothing is merged automatically. Every update arrives as a pull request that
+# runs the full CI gate (lint, typecheck, content validation, sign approvals,
+# unit, end-to-end and subpath tests) and waits for a person. That matters more
+# than usual here: a dependency bump that quietly changed rendering or storage
+# behaviour would be a content-integrity problem, not just a build problem.
+version: 2
+
+updates:
+  # The application and its build tooling.
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 5
+    labels:
+      - dependencies
+    groups:
+      # One PR for the routine patch traffic, so genuine security bumps are not
+      # buried among version noise.
+      minor-and-patch:
+        update-types:
+          - minor
+          - patch
+    ignore:
+      # Majors are deliberate migrations, reviewed on their own terms rather
+      # than arriving as an automated PR. Security advisories are unaffected:
+      # Dependabot security updates ignore this filter.
+      - dependency-name: '*'
+        update-types:
+          - version-update:semver-major
+
+  # GitHub Actions themselves are supply chain. A compromised or abandoned
+  # action runs with whatever permissions the workflow grants it, so knowing
+  # when one moves matters as much as knowing about an npm package.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    labels:
+      - dependencies
+      - github-actions
