@@ -42,7 +42,65 @@ So the interesting categories are:
 - Losing progress after clearing site data or uninstalling. Documented behaviour;
   the app offers an explicit backup for this.
 - Official source links pointing to government websites. Those are the point.
-- Missing security headers that GitHub Pages does not let a static site control.
+- Missing security *headers*. GitHub Pages serves static files and does not let
+  a site set response headers, so the parts of a security posture that live in
+  headers are outside this project's control. See the section below for exactly
+  what is and is not enforced.
+
+## What is enforced, and what cannot be
+
+The app ships a Content Security Policy as an HTML `<meta>` tag, because a
+static host has no other way to declare one. Being honest about what that does:
+
+**Enforced**
+
+- Scripts and styles may load only from this origin and `kit.fontawesome.com`,
+  so an injected `<script src="https://elsewhere">` is refused.
+- `connect-src` limits where the page may send anything to this origin and the
+  Font Awesome payload host — there is no endpoint an exfiltration attempt
+  could reach.
+- `object-src 'none'`, `base-uri 'self'` and `form-action 'self'` close the
+  plugin, `<base>`-hijack and form-exfiltration routes.
+
+**Not enforced, and why**
+
+- `frame-ancestors` is ignored in a meta policy by specification, so
+  **clickjacking protection is not in place**. It needs a host that can set
+  response headers. JavaScript frame-busting is not a substitute and is not
+  used here.
+- `script-src` includes `'unsafe-inline'`. The hosted Font Awesome Pro Kit
+  fetches its payload and evaluates it as an injected inline script, so without
+  it every Pro icon disappears. A static site cannot issue per-request nonces,
+  and a fixed nonce in a static file is readable by anyone and protects
+  nothing. This is the weakest part of the policy and is a deliberate,
+  documented trade.
+- `Strict-Transport-Security`, `X-Content-Type-Options` and `Permissions-Policy`
+  are response headers and cannot be set from markup.
+
+The real defence against script injection is upstream of the policy: the app has
+no HTML injection sink. Learner text is rendered by React as text, the only
+`dangerouslySetInnerHTML` use takes build-time SVG assets and no runtime data,
+and every external link is scheme-checked in `src/safeUrl.ts`. The policy is
+defence in depth, not the primary control.
+
+## Third-party code in the browser
+
+One third-party script runs in this origin: the Font Awesome Pro Kit
+(`kit.fontawesome.com`, which then fetches from `ka-p.fontawesome.com`). It
+renders the Pro icons, which cannot be bundled because Pro artwork is licensed
+per seat and this repository is public.
+
+It executes with the same privileges as the app, so a compromise of that Kit is
+genuinely part of this app's threat model. Two things bound it: the Kit is
+restricted to an allow-list of domains in the Font Awesome account, and nothing
+about a learner is ever sent to it — the requests carry the icon fetch and
+nothing else. Subresource Integrity is not usable, because a Kit's contents are
+generated per account and change without notice, so a pinned hash would break
+the icons rather than protect them.
+
+If the Kit does not load, the app is fully usable: every icon sits beside a text
+label, and `e2e/font-awesome-kit.spec.ts` proves the whole learner journey works
+with `*.fontawesome.com` blocked.
 
 ## Content errors
 

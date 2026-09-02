@@ -19,13 +19,37 @@ export interface LearnerProfile {
 export const MAX_DISPLAY_NAME = 24;
 
 /**
+ * C0/C1 control characters, plus the Unicode bidirectional overrides and
+ * isolates (U+200E/200F, U+202A-202E, U+2066-2069).
+ *
+ * Written as escapes rather than literal characters so the pattern stays
+ * readable and cannot be mangled by an editor or a copy-paste.
+ */
+// eslint-disable-next-line no-control-regex
+const CONTROL_AND_BIDI = /[\u0000-\u001F\u007F-\u009F\u200E\u200F\u202A-\u202E\u2066-\u2069]/g;
+
+/**
  * Clean a name typed into the profile form.
  *
  * Returns null when nothing usable remains, which is how "no profile" is
  * represented — an empty name is not a profile.
  */
 export function normaliseDisplayName(raw: string): string | null {
-  const trimmed = raw.trim().replace(/\s+/g, ' ');
+  /*
+   * Control and bidirectional-override characters are stripped first.
+   *
+   * Not an escaping concern — React renders this as text, so markup in a name
+   * is inert and shows up literally. The problem is display: U+202E and its
+   * relatives reverse the direction of everything that follows them, so a name
+   * containing one can visually rearrange the interface around it, and NUL and
+   * friends render as nothing while still counting toward the length. Neither
+   * belongs in a name someone chose for themselves.
+   *
+   * Stripped rather than rejected: a learner who pastes a name with a stray
+   * character gets the name they meant, not an error they cannot interpret.
+   */
+  const withoutControls = raw.replace(CONTROL_AND_BIDI, '');
+  const trimmed = withoutControls.trim().replace(/\s+/g, ' ');
   if (trimmed.length === 0) return null;
   return trimmed.slice(0, MAX_DISPLAY_NAME);
 }

@@ -109,6 +109,28 @@ const FORBIDDEN = [
   /amplitude/i,
 ];
 
+/**
+ * HTML that could actually cause a request.
+ *
+ * Two parts of a document mention URLs without ever fetching them, and both
+ * would otherwise be reported as runtime dependencies:
+ *
+ *  - **Comments.** The Content Security Policy in index.html is documented at
+ *    length, and that explanation names hosts and shows an example
+ *    `<script src="https://…">` that must never be mistaken for a real tag.
+ *  - **The CSP itself.** `script-src 'self' https://kit.fontawesome.com` is a
+ *    rule about what the browser may load. It is the opposite of a dependency:
+ *    it is the sentence that restricts them.
+ *
+ * Removing both before scanning keeps the audit honest in the direction that
+ * matters — it can still only ever miss a comment, never a real tag.
+ */
+function fetchableHtml(text: string): string {
+  return text
+    .replace(/<!--[\s\S]*?-->/g, '')
+    .replace(/<meta[^>]+http-equiv=["']Content-Security-Policy["'][^>]*>/gi, '');
+}
+
 const problems: string[] = [];
 const notes: string[] = [];
 
@@ -135,7 +157,8 @@ function main() {
   const external = new Map<string, Set<string>>();
   let kitReferences = 0;
   for (const file of codeFiles) {
-    const text = readFileSync(file, 'utf8');
+    const raw = readFileSync(file, 'utf8');
+    const text = file.endsWith('.html') ? fetchableHtml(raw) : raw;
     for (const match of text.matchAll(/https?:\/\/[a-zA-Z0-9._~:/?#@!$&'()*+,;=%-]+/g)) {
       const url = match[0];
       if (NON_FETCH.some((re) => re.test(url))) continue;
@@ -210,7 +233,8 @@ function main() {
   ];
 
   for (const file of codeFiles) {
-    const text = readFileSync(file, 'utf8');
+    const raw = readFileSync(file, 'utf8');
+    const text = file.endsWith('.html') ? fetchableHtml(raw) : raw;
     for (const [shape, label] of FETCH_SHAPES) {
       for (const hit of text.matchAll(shape)) {
         problems.push(`${path.relative(ROOT, file)}: ${label} — ${hit[0].slice(0, 80)}`);
@@ -222,9 +246,12 @@ function main() {
   /* ------------------------------------------- index.html loads only local */
 
   const html = readFileSync(path.join(DIST, 'index.html'), 'utf8');
-  // Drop the canonical link first: it is metadata, and matching it here would
+  // Drop the canonical link too: it is metadata, and matching it here would
   // report the site's own address as a runtime dependency on itself.
-  const fetchedHtml = html.replace(/<link[^>]*rel=["']canonical["'][^>]*>/gi, '');
+  const fetchedHtml = fetchableHtml(html).replace(
+    /<link[^>]*rel=["']canonical["'][^>]*>/gi,
+    '',
+  );
   for (const match of fetchedHtml.matchAll(/(?:src|href)="([^"]+)"/g)) {
     const ref = match[1]!;
     if (!/^https?:\/\//i.test(ref)) continue;

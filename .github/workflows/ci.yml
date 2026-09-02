@@ -13,6 +13,17 @@ on:
     # even during a quiet period with no pull requests.
     - cron: '17 9 * * 1'
 
+# Least privilege: this workflow only ever reads the repository. It never
+# deploys, never writes contents, never touches Pages and uses no secrets, so
+# it needs nothing beyond read access. Stated explicitly rather than inherited
+# from the repository default, which can be read/write — a compromised
+# dependency or action in a CI run would otherwise hold a token that can push.
+#
+# Deployment lives in deploy-pages.yml, which runs only from `main` and is the
+# only workflow holding `pages: write`. A pull request cannot reach it.
+permissions:
+  contents: read
+
 concurrency:
   group: ci-${{ github.ref }}
   cancel-in-progress: true

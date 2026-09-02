@@ -12,6 +12,72 @@
     <meta name="color-scheme" content="light dark" />
 
     <!--
+      Content Security Policy, and an honest account of what it does.
+
+      GitHub Pages serves static files and gives no control over response
+      headers, so this is a <meta> policy. That costs two things, and they are
+      worth stating plainly rather than discovering later:
+
+        - `frame-ancestors` is ignored in a meta policy (it is header-only, by
+          specification). Clickjacking protection is therefore NOT enforced
+          here. It would need a host that can set headers. JavaScript
+          frame-busting is not a substitute and is not used.
+        - Nor can Strict-Transport-Security, X-Content-Type-Options or
+          Permissions-Policy be set from markup. GitHub Pages sends HSTS for
+          the apex domain itself and serves correct content types; the rest is
+          simply outside this project's control.
+
+      `script-src` carries 'unsafe-inline', which is the single biggest
+      weakness in this policy and is not an oversight. The Font Awesome Pro Kit
+      fetches its payload and evaluates it as an injected inline <script>, so a
+      policy without 'unsafe-inline' removes every Pro icon. A static site
+      cannot issue per-request nonces, and a fixed nonce in a static file is
+      readable by anyone and protects nothing.
+
+      What the policy still buys, which is not nothing:
+        - script and style may only come from this origin and the Kit host, so
+          an injected <script src="https://elsewhere"> is blocked
+        - connect-src bounds where the page may send data, which is the
+          directive that matters most for a privacy-first app: there is no
+          endpoint an exfiltration attempt could reach
+        - object-src 'none' removes the plugin/embed surface entirely
+        - base-uri 'self' stops a <base> tag re-pointing every relative URL
+        - form-action 'self' stops a form posting learner data off-origin
+
+      The app's actual defence against XSS is upstream of all of this: it has
+      no HTML injection sink. Learner text is rendered by React as text, the
+      only dangerouslySetInnerHTML use takes build-time SVG assets, and every
+      external href is scheme-checked in src/safeUrl.ts.
+
+      Kit hosts, from observed traffic rather than documentation:
+        kit.fontawesome.com   the loader script
+        ka-p.fontawesome.com  the Pro payload and per-icon SVGs it fetches
+    -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+               script-src 'self' 'unsafe-inline' https://kit.fontawesome.com;
+               style-src 'self' 'unsafe-inline';
+               img-src 'self' data:;
+               font-src 'self';
+               connect-src 'self' https://ka-p.fontawesome.com;
+               manifest-src 'self';
+               worker-src 'self';
+               object-src 'none';
+               base-uri 'self';
+               form-action 'self';
+               frame-src 'none'"
+    />
+
+    <!--
+      Official source links leave for novascotia.ca and nslegislature.ca. They
+      have no need for the page that sent the learner, so send the origin and
+      nothing more. (Fragments are never sent in a Referer regardless, so the
+      learner's route was never leaking; this covers the path.)
+    -->
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!--
       Social preview. Deliberately minimal: enough for a shared link to look
       like something rather than a bare URL, and no more. There is no image
       because there is no marketing site to point one at — the app is the
