@@ -35,15 +35,15 @@ jobs:
     timeout-minutes: 30
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Set up pnpm
         # Version comes from `packageManager` in package.json, so there is one
         # place to change it.
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@v6
 
       - name: Set up Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version-file: .nvmrc
           cache: pnpm
@@ -109,20 +109,33 @@ jobs:
     name: Official source monitor
     runs-on: ubuntu-latest
     timeout-minutes: 15
-    # A separate job, deliberately: it makes live requests to novascotia.ca and
-    # nslegislature.ca, so when it fails you can see at a glance that the code
-    # is fine and it is the *source material* that moved.
+
+    # Never on a pull request.
     #
-    # It is allowed to fail the run. That is the point of the whole
-    # source-monitoring architecture: if Nova Scotia changes a rule the app
-    # teaches, somebody must read the diff and decide what it means before the
-    # question bank is trusted again. A red build is the mechanism that makes
-    # that happen instead of the change going unnoticed.
+    # This job answers "has Nova Scotia changed something?" — a question about
+    # the world, not about the change being proposed. Gating a pull request on
+    # it was a category error: the regulations index tracks weekly petroleum
+    # price orders and moves most days, so every open branch went red on a
+    # schedule set by the Registrar of Regulations rather than by anything in
+    # the branch. A gate that fires for reasons unrelated to the work is a gate
+    # people learn to wave through, which is the opposite of what this one is
+    # for.
+    #
+    # So it runs on the schedule and on demand, where a failure means exactly
+    # one thing and there is no unrelated work waiting behind it. Deployment
+    # already excludes it for a related reason (see deploy-pages.yml).
+    if: github.event_name != 'pull_request'
+
+    # Only to file the notice below. Nothing here ever writes to the repository
+    # or accepts a source change.
+    permissions:
+      contents: read
+      issues: write
 
     steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v7
         with:
           node-version-file: .nvmrc
           cache: pnpm
@@ -142,3 +155,62 @@ jobs:
           path: .sources/reports/
           retention-days: 30
           if-no-files-found: ignore
+
+      - name: Open an issue when a source has moved
+        # A failed scheduled run is an email that is easy to miss, and this is
+        # the one signal the project cannot afford to lose: it is how a change
+        # in Nova Scotia law reaches the question bank. An issue is a to-do that
+        # stays visible until somebody closes it.
+        #
+        # Deliberately does not accept anything, quote any diff into the issue
+        # body, or touch content. It says which sources moved and how to review
+        # them; reading the diff and deciding what it means stays a human job.
+        if: failure() && github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          TITLE="Official sources changed — review required"
+
+          # Self-healing: the label may not exist yet in a fresh fork.
+          gh label create source-monitor             --description "The official source monitor found a change to review"             --color D93F0B 2>/dev/null || true
+
+          # One open issue at a time: reopening the same thread each fortnight
+          # beats accumulating a pile of identical ones.
+          EXISTING=$(gh issue list --state open --label source-monitor \
+            --json number --jq '.[0].number // empty')
+
+          BODY=$(cat <<'EOF'
+          The scheduled source monitor found at least one official source that no
+          longer matches its recorded snapshot.
+
+          **Nothing has been accepted and no question has been changed.** This is a
+          prompt to review, not a failure of the app.
+
+          To triage locally:
+
+          ```bash
+          pnpm sources:check          # writes a full diff report to .sources/reports/
+          ```
+
+          Read the diff and decide what actually moved:
+
+          - If a rule this app teaches has changed, set the affected questions to
+            `legalStatus: "under_review"` with a `reviewReason` and re-verify each
+            against the new text.
+          - If it is cosmetic — site chrome, a new regulation under an unrelated
+            Act — record why in the manifest notes, bump `verifiedAt`, and then
+            `pnpm sources:check --accept`.
+
+          The full report is attached to the workflow run as an artifact.
+          EOF
+          )
+          BODY="${BODY}"$'\n\n'"Run: ${RUN_URL}"
+
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body "$BODY"
+            echo "Commented on existing issue #${EXISTING}"
+          else
+            gh issue create --title "$TITLE" --label source-monitor --body "$BODY"
+          fi
