@@ -37,7 +37,7 @@
       "contentHash": "b662437ea1335c92e4680b5bf2460dd83123a4f85629a1a6f3538041ac9f16cc",
       "previousHash": null,
       "http": {
-        "lastModified": "Wed, 02 Sep 2026 04:02:26 GMT",
+        "lastModified": "Tue, 08 Sep 2026 17:49:54 GMT",
         "etag": null
       }
     },
@@ -361,7 +361,7 @@
       "previousHash": null,
       "http": {
         "lastModified": "Fri, 06 Sep 2024 14:31:14 GMT",
-        "etag": "\"a327586d690db1:0\""
+        "etag": "\"0e5206d690db1:0\""
       }
     },
     {
@@ -467,7 +467,7 @@
       "previousHash": "",
       "http": {
         "lastModified": "Fri, 08 Jan 2021 19:36:34 GMT",
-        "etag": "\"cde7d192f5e5d61:0\""
+        "etag": "\"04d6792f5e5d61:0\""
       }
     },
     {
@@ -496,7 +496,7 @@
       "previousHash": "",
       "http": {
         "lastModified": "Sun, 10 Dec 2017 22:20:38 GMT",
-        "etag": "\"5d9a421b572d31:0\""
+        "etag": "\"0bf291b572d31:0\""
       }
     },
     {
@@ -509,13 +509,13 @@
       "precedence": 9,
       "status": "monitoring",
       "retrievedAt": "2026-08-31",
-      "verifiedAt": "2026-08-31",
-      "notes": "Watched so that a NEW regulation appearing under the Motor Vehicle Act (or the Traffic Safety Act) is noticed. Not itself a basis for any question. Triage 2026-08-31: index updated with N.S. Reg. 190/2026-194/2026 (Marshland variation order, offshore petroleum, employment support and income assistance). The Motor Vehicle Act section was diffed line by line against the stored snapshot and is byte-identical, so no regulation this app depends on was added, removed or amended. No question affected.",
-      "contentHash": "3a190a807d95d78f97dfaf7194a4a8653b59ce35007800424a135d003826a29f",
-      "previousHash": "6f857d88f55a573baeeeda6498e8de23f6bb59e430cbb47701ddb23a502592c0",
+      "verifiedAt": "2026-09-08",
+      "notes": "Watched so that a NEW regulation appearing under the Motor Vehicle Act (or the Traffic Safety Act) is noticed. Not itself a basis for any question. Triage 2026-08-31: index updated with N.S. Reg. 190/2026-194/2026 (Marshland variation order, offshore petroleum, employment support and income assistance). The Motor Vehicle Act section was diffed line by line against the stored snapshot and is byte-identical, so no regulation this app depends on was added, removed or amended. No question affected. Re-verified 2026-09-08: index entries updated for the Costs and Fees Act (N.S. Reg. 181/2026 consolidated), Endangered Species Act (200/2026), IWK Health Centre bylaws (182/2026), Non-resident Deed Transfer Tax (185/2026) and Prescribed Petroleum Products Prices (198/2026). The Motor Vehicle Act section was compared line by line against the stored snapshot using the project's own normaliser and is byte-identical across all 214 lines: Traffic Signs 165/2012 am. 178/2023, Classification of Drivers' Licenses 174/1982 am. 163/2024, School Areas 164/2012, Seat Belt and Child Restraint 221/2005 am. 188/2020, Studded Tires 45/1979 am. 73/2014, Yield to Transit Buses 163/2011 — all unchanged. No question was modified. Re-checked later the same day after a further update: the only difference against the snapshot was two added lines, both under the Mortgage Regulation Act (Forms Regulations amended by N.S. Reg. 201/2026, and Mortgage Lender, Brokerage, Broker and Administrator Licensing Regulations by 202/2026, both effective 1 December 2026). No lines were removed. The Motor Vehicle Act section was compared again and is still byte-identical across all 214 lines.",
+      "contentHash": "68617ad8259a6187fc66fc189ab67c086b831a8bd89c70225c57a0c228eafd1a",
+      "previousHash": "2099f30013ae369147abd51f1d90f6c0ed159a422b9b91aec0a2fe7bbdaecd46",
       "http": {
-        "lastModified": "Wed, 26 Aug 2026 11:57:31 GMT",
-        "etag": "\"4bceb135235dd1:0\""
+        "lastModified": "Tue, 08 Sep 2026 16:41:23 GMT",
+        "etag": "\"a01e3ae2b03fdd1:0\""
       }
     },
     {
@@ -547,10 +547,10 @@
       "precedence": 9,
       "status": "future",
       "retrievedAt": "2026-08-17",
-      "verifiedAt": "2026-09-02",
-      "notes": "Enacted as S.N.S. 2025, c. 20. Royal Assent alone does not bring it into force. Re-verified 2026-09-02: the nslegislature.ca site footer gained an 'Observances' navigation item across the whole site; this was the only difference in the normalized content. The live page still lists Traffic Safety Act 2025, c. 20 and 2018, c. 29 as NOT PROCLAIMED IN FORCE, so data/exam-config/legal-status.json is unchanged and no question was touched.",
-      "contentHash": "8b0bd56e1a93819b730216b9dfbf2b5d2f4092dfbd4e9466343514fb8ed34cc2",
-      "previousHash": "a25569f80f8e74d1a73207ae5ff9180a898546eacf4001752c00b4c904b2d348",
+      "verifiedAt": "2026-09-08",
+      "notes": "Enacted as S.N.S. 2025, c. 20. Royal Assent alone does not bring it into force. Re-verified 2026-09-02: the nslegislature.ca site footer gained an 'Observances' navigation item across the whole site; this was the only difference in the normalized content. The live page still lists Traffic Safety Act 2025, c. 20 and 2018, c. 29 as NOT PROCLAIMED IN FORCE, so data/exam-config/legal-status.json is unchanged and no question was touched. Re-verified 2026-09-08: the 'Observances' footer item accepted on 2026-09-02 has been removed again, so this page has reverted to exactly its earlier content — the new hash is byte-identical to the one recorded before that change. Site chrome only; no legislative content moved.",
+      "contentHash": "a25569f80f8e74d1a73207ae5ff9180a898546eacf4001752c00b4c904b2d348",
+      "previousHash": "8b0bd56e1a93819b730216b9dfbf2b5d2f4092dfbd4e9466343514fb8ed34cc2",
       "http": {
         "lastModified": null,
         "etag": null
@@ -566,11 +566,11 @@
       "precedence": 9,
       "status": "monitoring",
       "retrievedAt": "2026-08-17",
-      "verifiedAt": "2026-09-02",
-      "notes": "THE commencement gate. As retrieved 2026-08-17 this page lists 'Traffic Safety Act 2025, c. 20 -- NOT PROCLAIMED IN FORCE' (and likewise the earlier Traffic Safety Act 2018, c. 29). data/exam-config/legal-status.json mirrors this and is what the app and validator read. When this page changes, `pnpm sources:check` flags it and a maintainer must review before any `future` content is promoted. Re-verified 2026-09-02: the nslegislature.ca site footer gained an 'Observances' navigation item across the whole site; this was the only difference in the normalized content. The live page still lists Traffic Safety Act 2025, c. 20 and 2018, c. 29 as NOT PROCLAIMED IN FORCE, so data/exam-config/legal-status.json is unchanged and no question was touched.",
+      "verifiedAt": "2026-09-08",
+      "notes": "THE commencement gate. As retrieved 2026-08-17 this page lists 'Traffic Safety Act 2025, c. 20 -- NOT PROCLAIMED IN FORCE' (and likewise the earlier Traffic Safety Act 2018, c. 29). data/exam-config/legal-status.json mirrors this and is what the app and validator read. When this page changes, `pnpm sources:check` flags it and a maintainer must review before any `future` content is promoted. Re-verified 2026-09-02: the nslegislature.ca site footer gained an 'Observances' navigation item across the whole site; this was the only difference in the normalized content. The live page still lists Traffic Safety Act 2025, c. 20 and 2018, c. 29 as NOT PROCLAIMED IN FORCE, so data/exam-config/legal-status.json is unchanged and no question was touched. Re-verified 2026-09-08: the 'Observances' footer item accepted on 2026-09-02 has been removed again, so this page has reverted to exactly its earlier content — the new hash is byte-identical to the one recorded before that change. The live page was read directly to confirm the gate rather than inferring it from the diff: Traffic Safety Act 2025, c. 20 and 2018, c. 29 both still read NOT PROCLAIMED IN FORCE, so data/exam-config/legal-status.json is unchanged.",
       "watchFor": "Traffic Safety Act",
-      "contentHash": "ed4cbd8e696ba20b42ea9569e5af007c3b8f2effe62e56398fea8a070fd9fd91",
-      "previousHash": "1b028bbce54aaa0720641d5bb971a0face0529b17103c481344e0ec307582c0d",
+      "contentHash": "1b028bbce54aaa0720641d5bb971a0face0529b17103c481344e0ec307582c0d",
+      "previousHash": "ed4cbd8e696ba20b42ea9569e5af007c3b8f2effe62e56398fea8a070fd9fd91",
       "http": {
         "lastModified": null,
         "etag": null
@@ -586,13 +586,13 @@
       "precedence": 9,
       "status": "monitoring",
       "retrievedAt": "2026-08-21",
-      "verifiedAt": "2026-08-21",
-      "notes": "Newly filed regulations appear here before consolidated regulation pages are rebuilt, so this is watched as an early-warning feed for changes that have not yet reached the pages above. Triage 2026-08-21: Issue No. 17 (N.S. Reg. 179/2026-187/2026) added. Reviewed against the issue PDF - the regulations are made under the Municipal Government, Costs and Fees, Health Authorities, Income Tax, Petroleum Products Pricing, Land Registration and Non-resident Deed Transfer Tax Acts. Nothing under the Motor Vehicle Act or the Traffic Safety Act, so no question is affected.",
-      "contentHash": "15eb2f073f304dc5b226a7d8f71fba7af31fe748a24b6f11a265092eb758800f",
-      "previousHash": "58f17a1023668133b531a53d067a5909ae242461c6d65e07a7764a6141d38801",
+      "verifiedAt": "2026-09-08",
+      "notes": "Newly filed regulations appear here before consolidated regulation pages are rebuilt, so this is watched as an early-warning feed for changes that have not yet reached the pages above. Triage 2026-08-21: Issue No. 17 (N.S. Reg. 179/2026-187/2026) added. Reviewed against the issue PDF - the regulations are made under the Municipal Government, Costs and Fees, Health Authorities, Income Tax, Petroleum Products Pricing, Land Registration and Non-resident Deed Transfer Tax Acts. Nothing under the Motor Vehicle Act or the Traffic Safety Act, so no question is affected. Re-verified 2026-09-08: Issue No. 18 (4 September 2026) added, carrying N.S. Reg. 188/2026-194/2026. Read the issue: 188 and 190 are Prescribed Petroleum Products Prices, 189 Teachers' Pension Act, 191 Agricultural Marshland Conservation Act, 192 Municipal Government Act, 193 Employment Support and Income Assistance Act, 194 Canada-Nova Scotia Offshore Petroleum. No Motor Vehicle Act regulation, and no mention anywhere in the issue of driver licensing, traffic signs, school areas, seat belts, studded tires or transit buses. No question was modified.",
+      "contentHash": "43cbc3398483d40c24555b9d4be79646eec47fde115c3e9b202b8a0276a7f914",
+      "previousHash": "15eb2f073f304dc5b226a7d8f71fba7af31fe748a24b6f11a265092eb758800f",
       "http": {
-        "lastModified": "Fri, 21 Aug 2026 12:17:45 GMT",
-        "etag": "\"5c96b0126731dd1:0\""
+        "lastModified": "Fri, 04 Sep 2026 12:08:37 GMT",
+        "etag": "\"35b9b61d663cdd1:0\""
       }
     },
     {

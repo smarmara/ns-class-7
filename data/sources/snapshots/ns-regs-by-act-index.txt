@@ -1041,10 +1041,9 @@ Cosmetology Regulations
 N.S. Reg. 184/2020
 Costs and Fees Act
 (Justice)
-Fees and Allowances under Part I and Part II of the Act
-Amended to N.S. Reg. 86/2017
+Fees and Allowances under Parts I and II of the Costs and Fees Act
+Amended to N.S. Reg. 181/2026
 (Note: Fees for party and party costs are determined by the Costs and Fees Committee under subsection 2(3) of the Act, and are published in the Royal Gazette Part 1, and reproduced in the Civil Procedure Rules.)
-Effective September 1, 2026, these regulations are amended by N.S. Reg. 181/2026.
 Fee Waivers for Victims Regulations
 N.S. Reg. 190/2009
 Counselling Therapists Act
@@ -1292,6 +1291,8 @@ Employment Support and Income Assistance Regulations
 N.S. Reg. 195/2019 amended to N.S. Reg. 248/2024
 Effective August 25, 2026, these regulations are amended by N.S. Reg. 193/2026.
 Click here for a PDF of N.S. Reg. 193/2026 , filed with the Office of the Registrar of Regulations.
+Effective September 3, 2026, these regulations are amended by N.S. Reg. 200/2026.
+Click here for a PDF of N.S. Reg. 200/2026 , filed with the Office of the Registrar of Regulations.
 Endangered Species Act
 (Natural Resources)
 Categorized List of Species at Risk
@@ -1720,8 +1721,7 @@ N.S. Reg. 16/2015 amended to N.S. Reg. 252/2016
 Health Authorities Ministerial Regulations
 N.S. Reg. 64/2015
 IWK Health Centre Corporate Bylaws
-N.S. Reg. 126/2016 amended to N.S. Reg. 220/2022
-Effective August 5, 2026, these regulations are amended by N.S. Reg. 182/2026.
+N.S. Reg. 126/2016 amended to N.S. Reg. 182/2026
 IWK Health Centre Medical, Dental and Affiliated Staff Bylaws
 N.S. Reg. 4/2016, 5/2016, 6/2016 amended to N.S. Reg. 152/2021
 Nova Scotia Health Authority Corporate Bylaws
@@ -2213,10 +2213,12 @@ Compliance Officers Regulations
 N.S. Reg. 123/2020 amended to 145/2024
 Forms Regulations
 N.S. Reg. 132/2020 amended to N.S. Reg. 169/2025
+Effective December 1, 2026, these regulations are amended by N.S. Reg. 201/2026.
 General Disclosure Regulations
 N.S. Reg. 124/2020 amended to N.S. Reg. 215/2022
 Mortgage Lender, Brokerage, Broker and Administrator Licensing Regulations
 N.S. Reg. 121/2020 amended to N.S. Reg. 147/2024
+Effective December 1, 2026, these regulations are amended by N.S. Reg. 202/2026.
 Mortgage Regulation Act Exemption Regulations
 N.S. Reg. 120/2020 amended to N.S. Reg. 272/2025
 Mortgage Regulation Act General Regulations
@@ -2696,9 +2698,7 @@ N.S. Reg. 181/2010 amended to N.S. Reg. 112/2022
 Non-resident Deed Transfer Tax Act
 (Finance and Treasury Board)
 Non-resident Deed Transfer Tax Regulations
-N.S. Reg. 41/2023
-Effective August 6, 2026, these regulations are replaced by N.S. Reg. 185/2026. Text is being prepared.
-Click here for a PDF of N.S. Reg. 185/2026 , filed with the Office of the Registrar of Regulations.
+N.S. Reg. 185/2026
 North Queens Nursing Home Act
 (Opportunities and Social Development)
 North Queens Nursing Home By-laws
@@ -2835,8 +2835,8 @@ N.S. Reg. 286/2009 amended to N.S. Reg. 33/2025
 Petroleum Products Pricing Information Regulations
 N.S. Reg. 144/2005
 Prescribed Petroleum Products Prices
-N.S. Reg. 190/2026
-Effective August 21, 2026, replaces N.S. Reg. 188/2026.
+N.S. Reg. 198/2026
+Effective September 4, 2026, replaces N.S. Reg. 197/2026.
 There is no consolidated version of this regulation. Click here for a PDF of these regulations as filed with the Office of the Registrar of Regulations.
 Petroleum Resources Act
 (Energy)
