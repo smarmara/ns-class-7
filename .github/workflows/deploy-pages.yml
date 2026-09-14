@@ -141,7 +141,7 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
 
 # Note: the official source monitor (`pnpm sources:check:ci`) is deliberately
 # NOT part of this workflow. It makes live requests to novascotia.ca and
