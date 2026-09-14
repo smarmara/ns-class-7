@@ -124,7 +124,7 @@ jobs:
       - name: Upload Pages artifact
         # Only dist/ is published: no source, tests, docs, native projects,
         # source snapshots or git history reach the public site.
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: dist
 
